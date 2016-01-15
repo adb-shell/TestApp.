@@ -1,8 +1,8 @@
-# MaterialDemoApp
+# AnimationsDemoApp
 
-Here are few gif's of the application.<br/>
+Few animations that are  implemented in this App.<br/>
 <br/>
-Material loading of image from black and white to color.<br/>
+Loading of image from black and white to color.<br/>
 ![alt tag](https://github.com/callmekarthik/MaterialDemoApp/blob/master/Art-gif/first.gif)<br/>
 <br/>
 Facebook shimmer effect to the each grid view items.<br/>
