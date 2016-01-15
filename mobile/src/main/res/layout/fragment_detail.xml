@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karthik.imager.MainActivity"
+    android:background="@color/detail_screen_background"
+    >
+
+    <!--Actual layout-->
+    <RelativeLayout
+        android:id="@+id/non_reveal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:transitionName="@string/transistion_anim"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/detail_fab"
+            android:layout_width="@dimen/fab_size"
+            android:layout_height="@dimen/fab_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/fab_margin_bottom"
+            android:layout_marginRight="@dimen/fab_margin_right"
+            app:rippleColor="@color/primary_dark"
+            android:transitionName="@string/transistion_fab"
+            android:src="@mipmap/more"/>
+    </RelativeLayout>
+
+
+    <!--layout when the fab is revelaed-->
+    <LinearLayout
+        android:id="@+id/reveal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/accent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin_bottom"
+            android:layout_marginLeft="@dimen/fab_margin_bottom"
+            android:layout_marginRight="@dimen/fab_margin_bottom"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/image_cancel"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/like_margin"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cross"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:id="@+id/image_reveal1"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@mipmap/wallpaper"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_below="@id/image_reveal1"
+                android:id="@+id/text_reveal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/wall"
+                style="?android:textAppearanceMedium"
+                android:textColor="@color/cardview_light_background"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/image_reveal2"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@mipmap/about"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_below="@id/image_reveal2"
+                android:id="@+id/text_reveal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                style="?android:textAppearanceMedium"
+                android:textColor="@color/cardview_light_background"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/image_reveal3"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@mipmap/download"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_below="@id/image_reveal3"
+                android:id="@+id/text_reveal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download"
+                android:layout_centerHorizontal="true"
+                style="?android:textAppearanceMedium"
+                android:textColor="@color/cardview_light_background"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
