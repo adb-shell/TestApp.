@@ -12,6 +12,7 @@ import com.karthik.imager.MainActivity;
 import com.karthik.imager.R;
 import com.karthik.imager.Recycler.GridItemDividerDecoration;
 import com.karthik.imager.Recycler.PhotoClickListner;
+import com.wang.avi.AVLoadingIndicatorView;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -63,8 +64,8 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
     @Bind(R.id.recyclerView)
     RecyclerView recyclerView;
 
-    @Bind(R.id.progress)
-    ProgressBar progressBar;
+    @Bind(R.id.avloadingIndicatorView)
+    AVLoadingIndicatorView progressView;
 
     //workaround: keep reference so that shared animation works else each new view/adapter loaded.
     //TODO find a better soloution for this piece of code.
@@ -112,7 +113,7 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
                 if (response.isSuccess()) {
                     convertUnsplashGridItems(response.body());
                 } else {
-                    showSnackBar("Please check your network connection", null);
+                    Toast.makeText(mContext,"Please check your network connection",Toast.LENGTH_SHORT).show();
                 }
                 getFivehunService();
             }
@@ -120,7 +121,7 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
             @Override
             public void onFailure(Throwable t) {
                 getFivehunService();
-                showSnackBar("Please check your network connection", null);
+                Toast.makeText(mContext,"Please check your network connection",Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -180,7 +181,7 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
 
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setHasFixedSize(true);
-        progressBar.setVisibility(View.GONE);
+        progressView.setVisibility(View.GONE);
     }
 
 
@@ -239,18 +240,6 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
     }
 
 
-    public void showSnackBar(String message,String colorCode) {
-        Snackbar snackbar = Snackbar.make(progressBar, message, Snackbar.LENGTH_LONG);
-        if(colorCode==null){
-            snackbar.setAction("Action", null).show();
-        }else{
-            View snackbarView = snackbar.getView();
-            TextView textView = (TextView)snackbarView .findViewById(android.support.design.R.id.snackbar_text);
-            snackbarView.setBackgroundColor(ContextCompat.getColor(mContext, Color.parseColor(colorCode)));
-            textView.setTextColor(ContextCompat.getColor(mContext, R.color.primary_dark));
-            snackbar.show();
-        }
-    }
 
     @Override
     public void onPhotoClick(RecyclerView.ViewHolder holder, int position) {
