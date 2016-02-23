@@ -2,6 +2,8 @@ package com.karthik.imager.APIService.Unsplash.Model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+
 /**
  * Created by karthikrk on 20/12/15.
  */
@@ -23,6 +25,9 @@ public class Photos {
 
     @SerializedName("urls")
     public Urls urls;
+
+    @SerializedName("categories")
+    public ArrayList<Categories> categories = new ArrayList<>();
 
     @SerializedName("links")
     public PhotoLinks links;

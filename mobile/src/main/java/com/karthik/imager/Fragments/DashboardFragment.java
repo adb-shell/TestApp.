@@ -1,14 +1,13 @@
 package com.karthik.imager.Fragments;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos;
 import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse;
 import com.karthik.imager.APIService.GridItem;
 import com.karthik.imager.APIService.Unsplash.Model.Photos;
-import com.karthik.imager.APIService.Unsplash.UnsplashService;
 import com.karthik.imager.Adapter;
 import com.karthik.imager.DetailsTransition;
-import com.karthik.imager.MainActivity;
 import com.karthik.imager.R;
 import com.karthik.imager.Recycler.GridItemDividerDecoration;
 import com.karthik.imager.Recycler.PhotoClickListner;
@@ -16,36 +15,29 @@ import com.wang.avi.AVLoadingIndicatorView;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Reader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.transition.Fade;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.OvershootInterpolator;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import retrofit.Callback;
-import retrofit.GsonConverterFactory;
-import retrofit.Response;
-import retrofit.Retrofit;
+import okhttp3.Call;
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.ResponseBody;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -53,8 +45,8 @@ import retrofit.Retrofit;
 public class DashboardFragment extends Fragment implements PhotoClickListner{
 
     //register your application at unsplash.com and get the client id
-    private final String unsplash_client_Id = "";
-    private final String UNSPLASHBASEURL = "https://api.unsplash.com";
+    private final String unsplash_client_Id = "ac86565306b813a0190fd19e8b9600022dd58b6e40dc1dca43f9712819d5893a";
+    private final String UNSPLASHBASEURL = "https://api.unsplash.com/photos/";
 
 
     private Context mContext;
@@ -95,33 +87,45 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
 
 
     private void getUnspalashService(){
+        OkHttpClient client = new OkHttpClient();
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(UNSPLASHBASEURL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        UnsplashService service = retrofit.create(UnsplashService.class);
-
-        retrofit.Call<List<Photos>> photos = service.getPhotos(unsplash_client_Id);
-
-        //in case more api calls simply call.clone.enqueue()
-        //To call execute that is synchronus and should be outside the main thread.
-        photos.enqueue(new Callback<List<Photos>>() {
+        //adding query parameters.
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(UNSPLASHBASEURL).newBuilder();
+        urlBuilder.addQueryParameter("client_id",unsplash_client_Id);
+        String url = urlBuilder.build().toString();
+        Request request = new Request.Builder()
+                         .url(url)
+                         .build();
+        
+        client.newCall(request).enqueue(new okhttp3.Callback() {
             @Override
-            public void onResponse(Response<List<Photos>> response, Retrofit retrofit) {
-                if (response.isSuccess()) {
-                    convertUnsplashGridItems(response.body());
-                } else {
-                    Toast.makeText(mContext,"Please check your network connection",Toast.LENGTH_SHORT).show();
-                }
+            public void onFailure(Call call, IOException e) {
+                Log.e("TAG","API CALL FAIL");
                 getFivehunService();
+                Toast.makeText(mContext, "Please check your network connection", Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public void onFailure(Throwable t) {
-                getFivehunService();
-                Toast.makeText(mContext,"Please check your network connection",Toast.LENGTH_SHORT).show();
+            public void onResponse(Call call, okhttp3.Response response) throws IOException {
+                if(response.isSuccessful()){
+                    Gson gson = new Gson();
+                    TypeToken<List<Photos>> PhotoList = new TypeToken<List<Photos>>() {};
+                    ResponseBody body = response.body();
+                    Reader charStream = body.charStream();
+                    final List<Photos> photoList = gson.fromJson(charStream, PhotoList.getType());
+
+                    //run the handler in the main thread.
+                    new Handler(mContext.getMainLooper()).post(new Runnable() {
+                        @Override
+                        public void run() {
+                            convertUnsplashGridItems(photoList);
+                            getFivehunService();
+                        }
+                    });
+                    body.close();
+                }else{
+                    Log.e("TAG","RESPONSE IS NOT SUCCESSFUL");
+                }
             }
         });
     }
