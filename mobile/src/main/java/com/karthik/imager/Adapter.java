@@ -2,10 +2,12 @@ package com.karthik.imager;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.github.florent37.materialimageloading.MaterialImageLoading;
+import com.jakewharton.picasso.OkHttp3Downloader;
 import com.karthik.imager.APIService.GridItem;
 import com.karthik.imager.Recycler.LikeButtonView;
 import com.karthik.imager.Recycler.PhotoClickListner;
 import com.squareup.picasso.Callback;
+import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
 import java.util.List;
 import android.content.Context;
@@ -19,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import okhttp3.OkHttpClient;
 
 /**
  * Created by karthikrk on 21/12/15.
@@ -27,6 +30,8 @@ public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<GridItem> photosList;
     private Context mContext;
     private PhotoClickListner photoClickListner;
+    private OkHttpClient okHttpClient;
+    private Picasso picasso;
 
     //hold temporary liked items
     private boolean[] isLiked;
@@ -42,6 +47,10 @@ public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         this.photosList = photosList;
         mContext = context;
         photoClickListner = listner;
+        okHttpClient = ((ImagerApp)((MainActivity)mContext).getApplication()).getOkHttpInstance();
+        picasso = new Picasso.Builder(mContext)
+                .downloader(new OkHttp3Downloader(okHttpClient))
+                .build();
         isLiked = new boolean[photosList.size()];
     }
 
@@ -93,7 +102,9 @@ public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         shimmerConfig(holder);
 
         holder.shimmerFrameLayout.startShimmerAnimation();
-        Picasso.with(mContext).load(photosList.get(position).getImageUrl()).fit().centerCrop().into(holder.imageView, new Callback() {
+
+
+        picasso.load(photosList.get(position).getImageUrl()).fit().centerCrop().into(holder.imageView, new Callback() {
 
             @Override
             public void onSuccess() {
@@ -118,7 +129,7 @@ public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         shimmerConfig(holder);
 
         holder.shimmerFrameLayout.startShimmerAnimation();
-        Picasso.with(mContext).load(photosList.get(position).getImageUrl()).fit().centerCrop().into(holder.imageView, new Callback() {
+        picasso.load(photosList.get(position).getImageUrl()).fit().centerCrop().into(holder.imageView, new Callback() {
 
             @Override
             public void onSuccess() {

@@ -1,5 +1,5 @@
 package com.karthik.imager.Fragments;
-
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos;
@@ -8,6 +8,8 @@ import com.karthik.imager.APIService.GridItem;
 import com.karthik.imager.APIService.Unsplash.Model.Photos;
 import com.karthik.imager.Adapter;
 import com.karthik.imager.DetailsTransition;
+import com.karthik.imager.ImagerApp;
+import com.karthik.imager.MainActivity;
 import com.karthik.imager.R;
 import com.karthik.imager.Recycler.GridItemDividerDecoration;
 import com.karthik.imager.Recycler.PhotoClickListner;
@@ -35,6 +37,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import okhttp3.Call;
 import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.ResponseBody;
@@ -52,6 +55,10 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
     private Context mContext;
     private List<GridItem> gridItems;
     private Adapter gridAdapter;
+
+    //communicate with the UI threads
+    private Handler mainUIThread;
+
 
     @Bind(R.id.recyclerView)
     RecyclerView recyclerView;
@@ -74,6 +81,7 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
             rootView =  inflater.inflate(R.layout.fragment_main, container, false);
 
             mContext = getActivity();
+            
             ButterKnife.bind(this, rootView);
             if(gridItems==null){
                 getUnspalashService();
@@ -87,7 +95,8 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
 
 
     private void getUnspalashService(){
-        OkHttpClient client = new OkHttpClient();
+
+        OkHttpClient client = ((ImagerApp)((MainActivity)mContext).getApplication()).getOkHttpInstance();
 
         //adding query parameters.
         HttpUrl.Builder urlBuilder = HttpUrl.parse(UNSPLASHBASEURL).newBuilder();
@@ -96,7 +105,7 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
         Request request = new Request.Builder()
                          .url(url)
                          .build();
-        
+
         client.newCall(request).enqueue(new okhttp3.Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -124,7 +133,15 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
                     });
                     body.close();
                 }else{
-                    Log.e("TAG","RESPONSE IS NOT SUCCESSFUL");
+                    //run on the main thread
+                    new Handler(mContext.getMainLooper()).post(new Runnable() {
+                        @Override
+                        public void run() {
+                            Log.e("TAG","API CALL FAIL");
+                            getFivehunService();
+                            Toast.makeText(mContext, "Please check your network connection", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
             }
         });
