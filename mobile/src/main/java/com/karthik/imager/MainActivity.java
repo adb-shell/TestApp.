@@ -1,16 +1,20 @@
 package com.karthik.imager;
 
+import com.karthik.imager.APIService.DummyObject;
 import com.karthik.imager.Fragments.DashboardFragment;
 import com.karthik.imager.Fragments.DetailsFragment;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 import butterknife.ButterKnife;
+import io.realm.Realm;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -49,8 +53,12 @@ public class MainActivity extends AppCompatActivity{
      such that we view values in the storage of chrome inspector
      as such it has no significance.
      **/
-    private void fillDummyValuesInDB(){
-
+    public void fillDummyValuesInDB(){
+        //caching the response values.
+        Realm realm = Realm.getInstance(mContext);
+        realm.beginTransaction();
+        realm.copyToRealm(new DummyObject("DummyTitle","DummyDesc"));
+        realm.commitTransaction();
     }
 
     /**
@@ -59,7 +67,14 @@ public class MainActivity extends AppCompatActivity{
      as such it has no significance.
      **/
     private void fillDummyValuesInSharedPreferences(){
-
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        String[] strings = new String[]{"one","two","three","four","five","six","seven","eight","nine","ten"};
+        for(int i=0;i<strings.length;i++){
+            editor.putInt(strings[i], i);
+        }
+        editor.putString("String","This is awesome");
+        editor.commit();
     }
 
 

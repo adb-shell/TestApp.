@@ -1,5 +1,4 @@
 package com.karthik.imager.Fragments;
-import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos;
@@ -35,9 +34,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import io.realm.Realm;
 import okhttp3.Call;
 import okhttp3.HttpUrl;
-import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.ResponseBody;
@@ -55,7 +54,7 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
     private Context mContext;
     private List<GridItem> gridItems;
     private Adapter gridAdapter;
-
+    private Handler mainUIThread;
 
     @Bind(R.id.recyclerView)
     RecyclerView recyclerView;
@@ -78,7 +77,10 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
             rootView =  inflater.inflate(R.layout.fragment_main, container, false);
 
             mContext = getActivity();
-            
+
+            //handler that communicates with the UI Thread
+            mainUIThread = new Handler(mContext.getMainLooper());
+
             ButterKnife.bind(this, rootView);
             if(gridItems==null){
                 getUnspalashService();
@@ -100,28 +102,32 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
         urlBuilder.addQueryParameter("client_id",unsplash_client_Id);
         String url = urlBuilder.build().toString();
         Request request = new Request.Builder()
-                         .url(url)
-                         .build();
+                .url(url)
+                .build();
 
         client.newCall(request).enqueue(new okhttp3.Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                Log.e("TAG","API CALL FAIL");
-                getFivehunService();
-                Toast.makeText(mContext, "Please check your network connection", Toast.LENGTH_SHORT).show();
+                mainUIThread.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(mContext, "Please check your network connection", Toast.LENGTH_SHORT).show();
+                        getFivehunService();
+                    }
+                });
             }
 
             @Override
-            public void onResponse(Call call, okhttp3.Response response) throws IOException {
+            public void onResponse(Call call, final okhttp3.Response response) throws IOException {
+                final Gson gson = new Gson();
+                final TypeToken<List<Photos>> PhotoList = new TypeToken<List<Photos>>() {};
+
                 if(response.isSuccessful()){
-                    Gson gson = new Gson();
-                    TypeToken<List<Photos>> PhotoList = new TypeToken<List<Photos>>() {};
                     ResponseBody body = response.body();
                     Reader charStream = body.charStream();
                     final List<Photos> photoList = gson.fromJson(charStream, PhotoList.getType());
-
                     //run the handler in the main thread.
-                    new Handler(mContext.getMainLooper()).post(new Runnable() {
+                    mainUIThread.post(new Runnable() {
                         @Override
                         public void run() {
                             convertUnsplashGridItems(photoList);
@@ -130,13 +136,10 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
                     });
                     body.close();
                 }else{
-                    //run on the main thread
-                    new Handler(mContext.getMainLooper()).post(new Runnable() {
+                    mainUIThread.post(new Runnable() {
                         @Override
                         public void run() {
-                            Log.e("TAG","API CALL FAIL");
                             getFivehunService();
-                            Toast.makeText(mContext, "Please check your network connection", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
