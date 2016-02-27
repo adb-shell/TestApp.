@@ -25,10 +25,15 @@ public class MainActivity extends AppCompatActivity{
         mContext = this;
 
         if(savedInstanceState==null){
+            //dummy methods
+            fillDummyValuesInDB();
+            fillDummyValuesInSharedPreferences();
+
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container,new DashboardFragment())
                     .addToBackStack("")
                     .commit();
+
         }
     }
 
@@ -38,6 +43,25 @@ public class MainActivity extends AppCompatActivity{
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
+    /**
+     This method is used to demonstrate stetho functionality
+     such that we view values in the storage of chrome inspector
+     as such it has no significance.
+     **/
+    private void fillDummyValuesInDB(){
+
+    }
+
+    /**
+     This method is used to demonstrate particular stetho functionality.
+     such that we view values in the local storage of chrome inspector
+     as such it has no significance.
+     **/
+    private void fillDummyValuesInSharedPreferences(){
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
