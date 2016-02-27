@@ -19,7 +19,7 @@ Shared transistion animation in fragments <br/>
 Arc motion of the fab button along with circular reveal animation <br/>
 ![alt tag](https://github.com/callmekarthik/MaterialDemoApp/blob/master/Art-gif/fifth.gif)<br/>
 <br/>
-Facebook  Stetho library is also implemented.
+Facebook  Stetho library is also implemented.<br/>
 ![alt tag](https://github.com/callmekarthik/AnimationsDemo/blob/master/Art-gif/stetho-network.gif)<br/>
 ![alt tag](https://github.com/callmekarthik/AnimationsDemo/blob/master/Art-gif/stetho-inspect1.gif)<br/>
 
