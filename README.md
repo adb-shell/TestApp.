@@ -1,6 +1,6 @@
-# AnimationsDemoApp
+# Playground App
 
-Few animations that are  implemented in this App.<br/>
+Sample Android application used for experimentation purpose.<br/>
 <br/>
 Loading of image from black and white to color.<br/>
 ![alt tag](https://github.com/callmekarthik/MaterialDemoApp/blob/master/Art-gif/first.gif)<br/>
