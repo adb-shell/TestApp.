@@ -1,0 +1,65 @@
+digraph iCFG {
+15 [label="15:  method_body \n   n$6=*&$irvar1:double  [line 12]\n  *&return:double =n$6 [line 12]\n  REMOVE_TEMPS(n$6); [line 12]\n  NULLIFY(&$irvar1,false); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="box"]
+	
+
+	 15 -> 8 ;
+	 15 -> 9 [color="red" ];
+14 [label="14:  Call double Math.min(double,double) \n   n$3=*&$irvar0:double  [line 12]\n  n$4=*&high:double  [line 12]\n  n$5=_fun_double Math.min(double,double)(n$3:double ,n$4:double ) [line 12]\n  *&$irvar1:double =n$5 [line 12]\n  REMOVE_TEMPS(n$3,n$4,n$5); [line 12]\n  NULLIFY(&$irvar0,false); [line 12]\n  NULLIFY(&high,false); [line 12]\n " shape="box"]
+	
+
+	 14 -> 15 ;
+	 14 -> 9 [color="red" ];
+13 [label="13:  Call double Math.max(double,double) \n   n$0=*&value:double  [line 12]\n  n$1=*&low:double  [line 12]\n  n$2=_fun_double Math.max(double,double)(n$0:double ,n$1:double ) [line 12]\n  *&$irvar0:double =n$2 [line 12]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 12]\n  NULLIFY(&low,false); [line 12]\n  NULLIFY(&value,false); [line 12]\n " shape="box"]
+	
+
+	 13 -> 14 ;
+	 13 -> 9 [color="red" ];
+12 [label="12:  method_body \n   APPLY_ABSTRACTION; [line 6]\n " shape="box"]
+	
+
+	 12 -> 5 ;
+	 12 -> 6 [color="red" ];
+11 [label="11:  Call Object.<init>() \n   n$0=*&this:class com.karthik.imager.Recycler.Utils * [line 6]\n  _fun_Object.<init>()(n$0:class com.karthik.imager.Recycler.Utils *) [line 6]\n  REMOVE_TEMPS(n$0); [line 6]\n  NULLIFY(&this,false); [line 6]\n " shape="box"]
+	
+
+	 11 -> 12 ;
+	 11 -> 6 [color="red" ];
+10 [label="10:  method_body \n   n$0=*&toLow:double  [line 8]\n  n$1=*&value:double  [line 8]\n  n$2=*&fromLow:double  [line 8]\n  n$3=*&fromHigh:double  [line 8]\n  n$4=*&fromLow:double  [line 8]\n  n$5=*&toHigh:double  [line 8]\n  n$6=*&toLow:double  [line 8]\n  *&return:double =(n$0 + (((n$1 - n$2) / (n$3 - n$4)) * (n$5 - n$6))) [line 8]\n  REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4,n$5,n$6); [line 8]\n  NULLIFY(&fromHigh,false); [line 8]\n  NULLIFY(&fromLow,false); [line 8]\n  NULLIFY(&toHigh,false); [line 8]\n  NULLIFY(&toLow,false); [line 8]\n  NULLIFY(&value,false); [line 8]\n  APPLY_ABSTRACTION; [line 8]\n " shape="box"]
+	
+
+	 10 -> 2 ;
+	 10 -> 3 [color="red" ];
+9 [label="9:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 12]\n  NULLIFY(&$irvar1,false); [line 12]\n  NULLIFY(&high,false); [line 12]\n  APPLY_ABSTRACTION; [line 12]\n " shape="box"]
+	
+
+	 9 -> 8 ;
+8 [label="8: Exit double Utils.clamp(double,double,double) \n  " color=yellow style=filled]
+	
+
+7 [label="7: Start double Utils.clamp(double,double,double)\nFormals:  value:double  low:double  high:double \nLocals:  $irvar0:void  $irvar1:void  \n   DECLARE_LOCALS(&return,&$irvar0,&$irvar1); [line 11]\n  NULLIFY(&$irvar0,false); [line 11]\n  NULLIFY(&$irvar1,false); [line 11]\n " color=yellow style=filled]
+	
+
+	 7 -> 13 ;
+6 [label="6:  exceptions sink \n   APPLY_ABSTRACTION; [line 6]\n " shape="box"]
+	
+
+	 6 -> 5 ;
+5 [label="5: Exit Utils.<init>() \n  " color=yellow style=filled]
+	
+
+4 [label="4: Start Utils.<init>()\nFormals:  this:class com.karthik.imager.Recycler.Utils *\nLocals:  \n   DECLARE_LOCALS(&return); [line 6]\n " color=yellow style=filled]
+	
+
+	 4 -> 11 ;
+3 [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 8]\n " shape="box"]
+	
+
+	 3 -> 2 ;
+2 [label="2: Exit double Utils.mapValueFromRangeToRange(double,double,double,double,double) \n  " color=yellow style=filled]
+	
+
+1 [label="1: Start double Utils.mapValueFromRangeToRange(double,double,double,double,double)\nFormals:  value:double  fromLow:double  fromHigh:double  toLow:double  toHigh:double \nLocals:  \n   DECLARE_LOCALS(&return); [line 7]\n " color=yellow style=filled]
+	
+
+	 1 -> 10 ;
+}

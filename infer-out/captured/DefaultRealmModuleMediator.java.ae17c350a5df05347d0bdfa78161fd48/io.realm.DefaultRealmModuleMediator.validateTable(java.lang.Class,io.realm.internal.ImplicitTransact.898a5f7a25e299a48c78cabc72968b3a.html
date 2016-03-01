@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>io.realm.DefaultRealmModuleMediator.validateTable(java.lang.Class,io.realm.internal.ImplicitTransact.898a5f7a25e299a48c78cabc72968b3a</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Procedure  <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE43">ColumnInfo DefaultRealmModuleMediator.validateTable(Class,ImplicitTransaction)</a></h1></center>
+ <a href="./nodes/node19.html"><span class='visited'>S_19<span class='expansion'>node19 preds: succs:72 exn:20 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 43];
+NULLIFY(&amp;$irvar0,false); [line 43];
+NULLIFY(&amp;this,false); [line 43];
+</span></span></a> <a href="./nodes/node20.html"><span class='visited'>E_20<span class='expansion'>node20 preds:79 77 21 succs: exn: Exit
+</span></span></a> <a href="./nodes/node21.html"><span class='visited'>I_21<span class='expansion'>node21 preds: succs:20 exn:20 Instructions
+NULLIFY(&amp;$irvar0,false); [line 49];
+NULLIFY(&amp;clazz,false); [line 49];
+NULLIFY(&amp;transaction,false); [line 49];
+APPLY_ABSTRACTION; [line 49];
+</span></span></a> <a href="./nodes/node72.html"><span class='visited'>I_72<span class='expansion'>node72 preds:19 succs:73 exn:21 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 44];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 44];
+REMOVE_TEMPS(n$0); [line 44];
+</span></span></a> <a href="./nodes/node73.html"><span class='visited'>I_73<span class='expansion'>node73 preds:72 succs:74 75 exn:21 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 46];
+n$2=*n$1:class java.lang.Class  [line 46];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 46];
+*&amp;$irvar0:_Bool =n$3 [line 46];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 46];
+</span></span></a> <a href="./nodes/node74.html"><span class='visited'>C_74<span class='expansion'>node74 preds:73 succs:76 exn:21 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 46];
+PRUNE(!(n$4 == 0), true); [line 46];
+REMOVE_TEMPS(n$4); [line 46];
+</span></span></a> <a href="./nodes/node75.html"><span class='visited'>C_75<span class='expansion'>node75 preds:73 succs:78 exn:21 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 46];
+PRUNE((n$4 == 0), false); [line 46];
+REMOVE_TEMPS(n$4); [line 46];
+</span></span></a> <a href="./nodes/node76.html"><span class='visited'>I_76<span class='expansion'>node76 preds:74 succs:77 exn:21 Instructions
+NULLIFY(&amp;$irvar0,false); [line 47];
+NULLIFY(&amp;clazz,false); [line 47];
+n$5=*&amp;transaction:class io.realm.internal.ImplicitTransaction * [line 47];
+n$6=_fun_DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)(n$5:class io.realm.internal.ImplicitTransaction *) [line 47];
+*&amp;$irvar0:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=n$6 [line 47];
+REMOVE_TEMPS(n$5,n$6); [line 47];
+NULLIFY(&amp;transaction,false); [line 47];
+</span></span></a> <a href="./nodes/node77.html"><span class='visited'>I_77<span class='expansion'>node77 preds:76 succs:20 exn:21 Instructions
+n$7=*&amp;$irvar0:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 47];
+*&amp;return:class io.realm.internal.ColumnInfo *=n$7 [line 47];
+REMOVE_TEMPS(n$7); [line 47];
+NULLIFY(&amp;$irvar0,false); [line 47];
+APPLY_ABSTRACTION; [line 47];
+</span></span></a> <a href="./nodes/node78.html"><span class='visited'>I_78<span class='expansion'>node78 preds:75 succs:79 exn:21 Instructions
+NULLIFY(&amp;$irvar0,false); [line 49];
+NULLIFY(&amp;transaction,false); [line 49];
+n$8=*&amp;clazz:class java.lang.Class * [line 49];
+n$9=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$8:class java.lang.Class *) [line 49];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$9 [line 49];
+REMOVE_TEMPS(n$8,n$9); [line 49];
+NULLIFY(&amp;clazz,false); [line 49];
+</span></span></a> <a href="./nodes/node79.html"><span class='visited'>I_79<span class='expansion'>node79 preds:78 succs:20 exn:21 Instructions
+n$10=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 49];
+*&amp;return:class io.realm.internal.ColumnInfo *=EXN n$10 [line 49];
+REMOVE_TEMPS(n$10); [line 49];
+NULLIFY(&amp;$irvar0,false); [line 49];
+APPLY_ABSTRACTION; [line 49];
+</span></span></a><span class='color_black'>
+class io.realm.internal.ColumnInfo *ColumnInfo DefaultRealmModuleMediator.validateTable(Class,ImplicitTransaction)(class io.realm.DefaultRealmModuleMediator *this, class java.lang.Class *clazz, class io.realm.internal.ImplicitTransaction *transaction)
+Timestamp: 1
+Status: INACTIVE
+Phase: RE_EXECUTION
+Dependency_map: 
+</span><hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)  <a href="./nodes/node78.html#session5">node78#session5</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE49">49</a>)<br>SKIP_FUNCTION boolean Object.equals(Object)  <a href="./nodes/node73.html#session3">node73#session3</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE46">46</a>)<br>SKIP_FUNCTION DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)  <a href="./nodes/node76.html#session8">node76#session8</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE47">47</a>)<br>SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)  <a href="./nodes/node72.html#session2">node72#session2</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE44">44</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)  <a href="./nodes/node72.html#session13">node72#session13</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE44">44</a>)<br>SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)  <a href="./nodes/node78.html#session16">node78#session16</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE49">49</a>)<br>SKIP_FUNCTION boolean Object.equals(Object)  <a href="./nodes/node73.html#session14">node73#session14</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE46">46</a>)<br>SKIP_FUNCTION DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)  <a href="./nodes/node76.html#session26">node76#session26</a>( <a href="./../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE47">47</a>)<hr width="100%">
+<LISTING>
+--------------------------- 1 of 1 [nvisited: 43 44 46 47 49] ---------------------------
+PRE:
+<span class='color_blue'>transaction = val$1 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ;
+clazz|->{} <span class='color_orange'>rearrange:(z)46</span>:class java.lang.Class ( sub )</span>
+POST 1 of 2:
+<span class='color_red'>return != 0</span> ;  <span class='color_red'>UND &lt; DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction) &gt; :47(return)</span> ;
+<span class='color_blue'>transaction = val$1 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+<span class='color_blue'>this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+<span class='color_red'>return = val$4 <span class='color_orange'>update:47</span>:class io.realm.internal.ColumnInfo *</span> ; 
+<span class='color_blue'>clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ;
+<span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+POST 2 of 2:
+<span class='color_red'>val$4 != 0</span> ;  <span class='color_red'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :49(val$4)</span> ;
+<span class='color_blue'>transaction = val$1 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+<span class='color_blue'>this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+<span class='color_red'>return = EXN val$4 <span class='color_orange'>update:49</span>:class io.realm.internal.ColumnInfo *</span> ; 
+<span class='color_blue'>clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ;
+<span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+----------------------------------------------------------------<br>
+</LISTING>
+</body>
+</html>

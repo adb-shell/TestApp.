@@ -1,0 +1,960 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node9</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DetailsTransition.java.1c28fb69fa4bf2eef154b9753ede6f69.html#LINE14">9</a></h1></center>PROC:  <a href="./../com.karthik.imager.DetailsTransition.<init>().394e1c96dadfae9dfe0f4e9ea17df8c9.html">DetailsTransition.&lt;init&gt;()</a> LINE: <a href="./../../DetailsTransition.java.1c28fb69fa4bf2eef154b9753ede6f69.html#LINE14">14</a>
+<br>PREDS:
+ <a href="./../nodes/node8.html"><span class='visited'>N_8<span class='expansion'>node8 preds:7 succs:9 exn:3 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_10<span class='expansion'>node10 preds:9 succs:11 exn:3 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_3<span class='expansion'>node3 preds: succs:2 exn:2 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$10=*&amp;$irvar1:class android.transition.TransitionSet * [line 14];
+                          n$11=*n$10:class android.transition.TransitionSet  [line 14];
+                          n$12=*&amp;$irvar2:class android.transition.ChangeTransform * [line 14];
+                          n$13=_fun_TransitionSet TransitionSet.addTransition(Transition)(n$10:class android.transition.TransitionSet *,n$12:class android.transition.ChangeTransform *) virtual [line 14];
+                          *&amp;$irvar3:class android.transition.TransitionSet *=n$13 [line 14];
+                          REMOVE_TEMPS(n$10,n$11,n$12,n$13); [line 14];
+                          NULLIFY(&amp;$irvar1,false); [line 14];
+                          NULLIFY(&amp;$irvar2,false); [line 14];
+                          </span><hr width="100%">
+ <a name="session7"href="./../nodes/node9.html#session7">node9#session7</a>( <a href="./../../DetailsTransition.java.1c28fb69fa4bf2eef154b9753ede6f69.html#LINE14">14</a>)<LISTING><span class='color_black'>**** [FP:0] DetailsTransition.<init>() Node: 9, Procedure: DetailsTransition.<init>(), Session: 7, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>@f$2 != 0</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_red'>$irvar1 != 0</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+  <span class='color_red'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+  [footprint
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+     <span class='color_red'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+     <span class='color_red'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+     <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$10=*&amp;$irvar1:class android.transition.TransitionSet * [line 14];
+  n$11=*n$10:class android.transition.TransitionSet  [line 14];
+  n$12=*&amp;$irvar2:class android.transition.ChangeTransform * [line 14];
+  n$13=_fun_TransitionSet TransitionSet.addTransition(Transition)(n$10:class android.transition.TransitionSet *,n$12:class android.transition.ChangeTransform *) virtual [line 14];
+  *&amp;$irvar3:class android.transition.TransitionSet *=n$13 [line 14];
+  REMOVE_TEMPS(n$10,n$11,n$12,n$13); [line 14];
+  NULLIFY(&amp;$irvar1,false); [line 14];
+  NULLIFY(&amp;$irvar2,false); [line 14];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$10=*&amp;$irvar1:class android.transition.TransitionSet * [line 14]</span>
+    in vpath_find exp:n$27
+    vpath_find: cannot find n$27
+    in vpath_find exp:n$26
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$26
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$27) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  $irvar1 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$25 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$26 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+       $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+       $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar1
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$27) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  $irvar1 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$25 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$26 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+       $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+       $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$27)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = n$25 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$26 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$10 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$11=*n$10:class android.transition.TransitionSet  [line 14]</span>
+    in vpath_find exp:n$30
+    vpath_find: cannot find n$30
+    in vpath_find exp:n$29
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$29
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>n$10 = $irvar1 ;
+    MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$30) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  $irvar1 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$29 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+       $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+       $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+       <span class='color_red'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$12=*&amp;$irvar2:class android.transition.ChangeTransform * [line 14]</span>
+    in vpath_find exp:n$33
+    vpath_find: cannot find n$33
+    in vpath_find exp:n$32
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$32
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>n$10 = $irvar1 ;
+    MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$33) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  $irvar1 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$31 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$32 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+       $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+       $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar2
+    prop before:
+    <span class='color_blue'>n$10 = $irvar1 ;
+    MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$33) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  $irvar1 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$31 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$32 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+       $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+       $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$33)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = n$31 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$32 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$12 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$13=_fun_TransitionSet TransitionSet.addTransition(Transition)(n$10:class android.transition.TransitionSet *,n$12:class android.transition.ChangeTransform *) virtual [line 14]</span>
+    in vpath_find exp:n$35
+    vpath_find: cannot find n$35
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$12
+    Undefined function TransitionSet TransitionSet.addTransition(Transition), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(n$13)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$12 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar3:class android.transition.TransitionSet *=n$13 [line 14]</span>
+    in vpath_find exp:n$37
+    vpath_find: cannot find n$37
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$12
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar3
+    Prop: 
+    <span class='color_blue'>n$10 = $irvar1 ;
+    MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$37) ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(n$13) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  $irvar1 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$36 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$12 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+       $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+       $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar3
+    prop before:
+    <span class='color_blue'>n$10 = $irvar1 ;
+    MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$37) ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(n$13) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  $irvar1 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$36 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$12 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+       $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+       $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$37)</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(n$13)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = n$36 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$12 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>n$13 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$12 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$10,n$11,n$12,n$13); [line 14]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$12
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span> ;  <span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14</span>($irvar3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>_t$1 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>_t$2 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 14]</span>
+    in vpath_find exp:_t$3
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$2
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar3)</span> ;  <span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$2 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>_t$0 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 14]</span>
+    in vpath_find exp:_t$3
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$0
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$0
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3) ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar3) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0) ;  @f$2 != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2) ;  @f$0 != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(@f$0) ;
+      old_this = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+      return = _t$2 <span class='color_orange'>initial</span>:void  ; 
+      $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar3 = _t$1 <span class='color_orange'>update:14</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      @f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub ) ; 
+      old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+      _t$0|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+      [footprint
+         this = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+         $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ; 
+         $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub ) ;
+         @f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub ) ; 
+         old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )  ]</span>
+      PREDICATE:
+      _t$0|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+      ATTRIBUTE: MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 14]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span> ;  <span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14</span>($irvar3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>_t$0 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($irvar3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13(@f$2)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>_t$0 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.transition.TransitionSet *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class android.transition.TransitionSet *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:14</span>:class android.transition.TransitionSet ( sub )</span> ; 
+       <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.DetailsTransition ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session18"href="./../nodes/node9.html#session18">node9#session18</a>( <a href="./../../DetailsTransition.java.1c28fb69fa4bf2eef154b9753ede6f69.html#LINE14">14</a>)<LISTING><span class='color_black'>**** [RE:0] DetailsTransition.<init>() Node: 9, Procedure: DetailsTransition.<init>(), Session: 18, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = val$3 <span class='color_orange'>update:14</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+  <span class='color_red'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+  <span class='color_red'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+  <span class='color_red'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+  <span class='color_red'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$10=*&amp;$irvar1:class android.transition.TransitionSet * [line 14];
+  n$11=*n$10:class android.transition.TransitionSet  [line 14];
+  n$12=*&amp;$irvar2:class android.transition.ChangeTransform * [line 14];
+  n$13=_fun_TransitionSet TransitionSet.addTransition(Transition)(n$10:class android.transition.TransitionSet *,n$12:class android.transition.ChangeTransform *) virtual [line 14];
+  *&amp;$irvar3:class android.transition.TransitionSet *=n$13 [line 14];
+  REMOVE_TEMPS(n$10,n$11,n$12,n$13); [line 14];
+  NULLIFY(&amp;$irvar1,false); [line 14];
+  NULLIFY(&amp;$irvar2,false); [line 14];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$10=*&amp;$irvar1:class android.transition.TransitionSet * [line 14]</span>
+    in vpath_find exp:n$27
+    vpath_find: cannot find n$27
+    in vpath_find exp:n$26
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$26
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar) ;  $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$27) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$25 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$26 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = val$3 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ; 
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ;
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform  ; 
+    old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$10 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = <span class='color_red'>n$10 <span class='color_orange'>formal</span></span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_red'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span></span>
+    
+    Instruction <span class='color_green'>n$11=*n$10:class android.transition.TransitionSet  [line 14]</span>
+    in vpath_find exp:n$30
+    vpath_find: cannot find n$30
+    in vpath_find exp:n$29
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$29
+    .... Rearrangement Start ....
+    Exp: n$10
+    Prop: 
+    <span class='color_blue'>val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar ;
+    $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$30) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$29 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = n$10 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ; 
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ;
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform  ; 
+    old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$10 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span></span>
+    
+    Instruction <span class='color_green'>n$12=*&amp;$irvar2:class android.transition.ChangeTransform * [line 14]</span>
+    in vpath_find exp:n$33
+    vpath_find: cannot find n$33
+    in vpath_find exp:n$32
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$32
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar ;
+    $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$33) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$31 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$32 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = n$10 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ; 
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ;
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform  ; 
+    old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$12 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$10 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$13=_fun_TransitionSet TransitionSet.addTransition(Transition)(n$10:class android.transition.TransitionSet *,n$12:class android.transition.ChangeTransform *) virtual [line 14]</span>
+    in vpath_find exp:n$35
+    vpath_find: cannot find n$35
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$12
+    Undefined function TransitionSet TransitionSet.addTransition(Transition), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$13 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar</span> ;  <span class='color_blue'>val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$12 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$10 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar3:class android.transition.TransitionSet *=n$13 [line 14]</span>
+    in vpath_find exp:n$37
+    vpath_find: cannot find n$37
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$12
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar3
+    Prop: 
+    <span class='color_blue'>n$13 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar ;  val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar ;
+    $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(n$37) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+    return = n$36 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$12 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar1 = n$10 <span class='color_orange'>update:14</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ; 
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ;
+    $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub ) ; 
+    $irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform  ; 
+    old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$13 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar</span> ;  <span class='color_blue'>val$3 = $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>n$10 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$12 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$10 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$10,n$11,n$12,n$13); [line 14]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$12
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>val$3 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>_t$1 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>val$3 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_red'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 14]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = val$3 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$1 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 14]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$1
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2) ;  MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;  $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar) ;  $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0 ;  UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar) ;
+      old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar3 = val$3 <span class='color_orange'>update:14</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ; 
+      $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub ) ;
+      old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub ) ; 
+      $RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub ) ; 
+      _t$1|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform </span>
+      PREDICATE:
+      _t$1|->{android.transition.Transition.mAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCanRemoveViews:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mCurrentAnimators:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mDuration:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEndValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mEnded:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mInterpolator:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mListeners:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mName:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mNumInstances:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mParent:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mPaused:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mSceneRoot:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartDelay:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mStartValues:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIdExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetIds:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeChildExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargetTypeExcludes:0 <span class='color_orange'>alloc</span>, android.transition.Transition.mTargets:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class android.transition.ChangeTransform 
+      ATTRIBUTE: MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 14]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = val$3 <span class='color_orange'>update:14</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:14 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.addTransition(Transition) &gt; :14($RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; TransitionSet TransitionSet.setOrdering(int) &gt; :13($RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.DetailsTransition *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>val$3 <span class='color_orange'>update:14</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.setOrdering(int):android.transition.TransitionSet|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.transition.TransitionSet *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.DetailsTransition ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.transition.TransitionSet.addTransition(android.transition.Transition):android.transition.TransitionSet|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.transition.TransitionSet ( sub )</span></span>
+    
+    
+    
+  

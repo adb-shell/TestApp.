@@ -1,0 +1,1934 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>DotsView.java.47641df395b5347ee3507ca82f352fdd</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File mobile/src/main/java/com/karthik/imager/Recycler/DotsView.java</h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.karthik.imager.Recycler;</td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import android.animation.ArgbEvaluator;</td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import android.content.Context;</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import android.graphics.Canvas;</td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import android.graphics.Paint;</td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import android.util.AttributeSet;</td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import android.util.Property;</td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import android.view.View;</td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">/**</td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line"> * Created by karthikrk on 05/01/16.</td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line"> */</td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">public class DotsView extends View {</td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">    private static final int DOTS_COUNT = 7;</td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">    private static final int OUTER_DOTS_POSITION_ANGLE = 51;</td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">    private static final int COLOR_4 = 0xFFE5E5E5;</td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">    private static final int COLOR_3 = 0xFFA5A5A5;</td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">    private static final int COLOR_2 = 0xFF656565;</td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">    private static final int COLOR_1 = 0xFF4B4B4B;</td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">    private final Paint[] circlePaints = new Paint[4]; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node243.html"><span class='visitedproof'>I_243<span class='expansion'>node243 preds:242 succs:244 exn:60 Instructions
+n$3=_fun___new_array(sizeof(class android.graphics.Paint *[4]):class android.graphics.Paint *(*)[_t$0]) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0]=n$3 [line 23];
+REMOVE_TEMPS(n$3); [line 23];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node244.html"><span class='visitedproof'>I_244<span class='expansion'>node244 preds:243 succs:245 exn:60 Instructions
+n$4=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 23];
+n$5=*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0] [line 23];
+*n$4.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView =n$5 [line 23];
+REMOVE_TEMPS(n$4,n$5); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node159.html"><span class='visitedproof'>I_159<span class='expansion'>node159 preds:158 succs:160 exn:51 Instructions
+n$5=_fun___new_array(sizeof(class android.graphics.Paint *[4]):class android.graphics.Paint *(*)[_t$0]) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0]=n$5 [line 23];
+REMOVE_TEMPS(n$5); [line 23];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node160.html"><span class='visitedproof'>I_160<span class='expansion'>node160 preds:159 succs:161 exn:51 Instructions
+n$6=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 23];
+n$7=*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0] [line 23];
+*n$6.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView =n$7 [line 23];
+REMOVE_TEMPS(n$6,n$7); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node111.html"><span class='visitedproof'>I_111<span class='expansion'>node111 preds:110 succs:112 exn:39 Instructions
+n$2=_fun___new_array(sizeof(class android.graphics.Paint *[4]):class android.graphics.Paint *(*)[_t$0]) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0]=n$2 [line 23];
+REMOVE_TEMPS(n$2); [line 23];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node112.html"><span class='visitedproof'>I_112<span class='expansion'>node112 preds:111 succs:113 exn:39 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 23];
+n$4=*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0] [line 23];
+*n$3.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView =n$4 [line 23];
+REMOVE_TEMPS(n$3,n$4); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node80.html"><span class='visitedproof'>I_80<span class='expansion'>node80 preds:79 succs:81 exn:33 Instructions
+n$4=_fun___new_array(sizeof(class android.graphics.Paint *[4]):class android.graphics.Paint *(*)[_t$0]) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0]=n$4 [line 23];
+REMOVE_TEMPS(n$4); [line 23];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node81.html"><span class='visitedproof'>I_81<span class='expansion'>node81 preds:80 succs:82 exn:33 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 23];
+n$6=*&amp;$irvar0:class android.graphics.Paint *(*)[_t$0] [line 23];
+*n$5.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView =n$6 [line 23];
+REMOVE_TEMPS(n$5,n$6); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">    private int centerX;</td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">    private int centerY;</td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">    private float maxOuterDotsRadius;</td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">    private float maxInnerDotsRadius;</td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">    private float maxDotSize;</td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">    private float currentProgress = 0; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node245.html"><span class='visitedproof'>I_245<span class='expansion'>node245 preds:244 succs:246 exn:60 Instructions
+n$6=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 32];
+*n$6.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView =0.000000 [line 32];
+REMOVE_TEMPS(n$6); [line 32];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node161.html"><span class='visitedproof'>I_161<span class='expansion'>node161 preds:160 succs:162 exn:51 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 32];
+*n$8.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView =0.000000 [line 32];
+REMOVE_TEMPS(n$8); [line 32];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node113.html"><span class='visitedproof'>I_113<span class='expansion'>node113 preds:112 succs:114 exn:39 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 32];
+*n$5.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView =0.000000 [line 32];
+REMOVE_TEMPS(n$5); [line 32];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node82.html"><span class='visitedproof'>I_82<span class='expansion'>node82 preds:81 succs:83 exn:33 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 32];
+*n$7.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView =0.000000 [line 32];
+REMOVE_TEMPS(n$7); [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">    private float currentRadius1 = 0; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node246.html"><span class='visitedproof'>I_246<span class='expansion'>node246 preds:245 succs:247 exn:60 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 34];
+*n$7.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 34];
+REMOVE_TEMPS(n$7); [line 34];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node162.html"><span class='visitedproof'>I_162<span class='expansion'>node162 preds:161 succs:163 exn:51 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 34];
+*n$9.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 34];
+REMOVE_TEMPS(n$9); [line 34];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node114.html"><span class='visitedproof'>I_114<span class='expansion'>node114 preds:113 succs:115 exn:39 Instructions
+n$6=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 34];
+*n$6.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 34];
+REMOVE_TEMPS(n$6); [line 34];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node83.html"><span class='visitedproof'>I_83<span class='expansion'>node83 preds:82 succs:84 exn:33 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 34];
+*n$8.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 34];
+REMOVE_TEMPS(n$8); [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">    private float currentDotSize1 = 0; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node247.html"><span class='visitedproof'>I_247<span class='expansion'>node247 preds:246 succs:248 exn:60 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 35];
+*n$8.com.karthik.imager.Recycler.DotsView.currentDotSize1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 35];
+REMOVE_TEMPS(n$8); [line 35];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node163.html"><span class='visitedproof'>I_163<span class='expansion'>node163 preds:162 succs:164 exn:51 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 35];
+*n$10.com.karthik.imager.Recycler.DotsView.currentDotSize1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 35];
+REMOVE_TEMPS(n$10); [line 35];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node115.html"><span class='visitedproof'>I_115<span class='expansion'>node115 preds:114 succs:116 exn:39 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 35];
+*n$7.com.karthik.imager.Recycler.DotsView.currentDotSize1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 35];
+REMOVE_TEMPS(n$7); [line 35];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node84.html"><span class='visitedproof'>I_84<span class='expansion'>node84 preds:83 succs:85 exn:33 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 35];
+*n$9.com.karthik.imager.Recycler.DotsView.currentDotSize1:class com.karthik.imager.Recycler.DotsView =0.000000 [line 35];
+REMOVE_TEMPS(n$9); [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">    private float currentDotSize2 = 0; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node248.html"><span class='visitedproof'>I_248<span class='expansion'>node248 preds:247 succs:249 exn:60 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 37];
+*n$9.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 37];
+REMOVE_TEMPS(n$9); [line 37];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node164.html"><span class='visitedproof'>I_164<span class='expansion'>node164 preds:163 succs:165 exn:51 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 37];
+*n$11.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 37];
+REMOVE_TEMPS(n$11); [line 37];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node116.html"><span class='visitedproof'>I_116<span class='expansion'>node116 preds:115 succs:117 exn:39 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 37];
+*n$8.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 37];
+REMOVE_TEMPS(n$8); [line 37];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node85.html"><span class='visitedproof'>I_85<span class='expansion'>node85 preds:84 succs:86 exn:33 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 37];
+*n$10.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 37];
+REMOVE_TEMPS(n$10); [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">    private float currentRadius2 = 0; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node249.html"><span class='visitedproof'>I_249<span class='expansion'>node249 preds:248 succs:250 exn:60 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 38];
+*n$10.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 38];
+REMOVE_TEMPS(n$10); [line 38];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node165.html"><span class='visitedproof'>I_165<span class='expansion'>node165 preds:164 succs:166 exn:51 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 38];
+*n$12.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 38];
+REMOVE_TEMPS(n$12); [line 38];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node117.html"><span class='visitedproof'>I_117<span class='expansion'>node117 preds:116 succs:118 exn:39 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 38];
+*n$9.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 38];
+REMOVE_TEMPS(n$9); [line 38];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node86.html"><span class='visitedproof'>I_86<span class='expansion'>node86 preds:85 succs:87 exn:33 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 38];
+*n$11.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView =0.000000 [line 38];
+REMOVE_TEMPS(n$11); [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">    private ArgbEvaluator argbEvaluator = new ArgbEvaluator(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node250.html"><span class='visitedproof'>I_250<span class='expansion'>node250 preds:249 succs:251 exn:60 Instructions
+n$11=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 40];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$11:class android.animation.ArgbEvaluator *) [line 40];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$11 [line 40];
+REMOVE_TEMPS(n$11); [line 40];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node251.html"><span class='visitedproof'>I_251<span class='expansion'>node251 preds:250 succs:252 exn:60 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 40];
+n$13=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 40];
+*n$12.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView =n$13 [line 40];
+REMOVE_TEMPS(n$12,n$13); [line 40];
+NULLIFY(&amp;$irvar0,false); [line 40];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node166.html"><span class='visitedproof'>I_166<span class='expansion'>node166 preds:165 succs:167 exn:51 Instructions
+n$13=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 40];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$13:class android.animation.ArgbEvaluator *) [line 40];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$13 [line 40];
+REMOVE_TEMPS(n$13); [line 40];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node167.html"><span class='visitedproof'>I_167<span class='expansion'>node167 preds:166 succs:168 exn:51 Instructions
+n$14=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 40];
+n$15=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 40];
+*n$14.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView =n$15 [line 40];
+REMOVE_TEMPS(n$14,n$15); [line 40];
+NULLIFY(&amp;$irvar0,false); [line 40];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node118.html"><span class='visitedproof'>I_118<span class='expansion'>node118 preds:117 succs:119 exn:39 Instructions
+n$10=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 40];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$10:class android.animation.ArgbEvaluator *) [line 40];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$10 [line 40];
+REMOVE_TEMPS(n$10); [line 40];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node119.html"><span class='visitedproof'>I_119<span class='expansion'>node119 preds:118 succs:120 exn:39 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 40];
+n$12=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 40];
+*n$11.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView =n$12 [line 40];
+REMOVE_TEMPS(n$11,n$12); [line 40];
+NULLIFY(&amp;$irvar0,false); [line 40];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node87.html"><span class='visitedproof'>I_87<span class='expansion'>node87 preds:86 succs:88 exn:33 Instructions
+n$12=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 40];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$12:class android.animation.ArgbEvaluator *) [line 40];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$12 [line 40];
+REMOVE_TEMPS(n$12); [line 40];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node88.html"><span class='visitedproof'>I_88<span class='expansion'>node88 preds:87 succs:89 exn:33 Instructions
+n$13=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 40];
+n$14=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 40];
+*n$13.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView =n$14 [line 40];
+REMOVE_TEMPS(n$13,n$14); [line 40];
+NULLIFY(&amp;$irvar0,false); [line 40];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ArgbEvaluator.<init>()</div></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">    public DotsView(Context context) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node37.html"><span class='visitedproof'>S_37<span class='expansion'>node37 preds: succs:110 exn:38 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 42];
+NULLIFY(&amp;$irvar0,false); [line 42];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.<init>(android.content.Context).3138a6225f6024ac6607db419ae0d8d8.html">DotsView.&lt;init&gt;(Context): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">        super(context); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node110.html"><span class='visitedproof'>I_110<span class='expansion'>node110 preds:37 succs:111 exn:39 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 43];
+n$1=*&amp;context:class android.content.Context * [line 43];
+_fun_View.&lt;init&gt;(Context)(n$0:class com.karthik.imager.Recycler.DotsView *,n$1:class android.content.Context *) [line 43];
+REMOVE_TEMPS(n$0,n$1); [line 43];
+NULLIFY(&amp;context,false); [line 43];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context)</div></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">        init(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node120.html"><span class='visitedproof'>I_120<span class='expansion'>node120 preds:119 succs:121 exn:39 Instructions
+n$13=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 44];
+_fun_void DotsView.init()(n$13:class com.karthik.imager.Recycler.DotsView *) [line 44];
+REMOVE_TEMPS(n$13); [line 44];
+NULLIFY(&amp;this,false); [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node38.html"><span class='visitedproof'>E_38<span class='expansion'>node38 preds:121 39 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_39<span class='expansion'>node39 preds: succs:38 exn:38 Instructions
+NULLIFY(&amp;$irvar0,false); [line 45];
+NULLIFY(&amp;this,false); [line 45];
+APPLY_ABSTRACTION; [line 45];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node121.html"><span class='visitedproof'>I_121<span class='expansion'>node121 preds:120 succs:38 exn:39 Instructions
+APPLY_ABSTRACTION; [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">    public DotsView(Context context, AttributeSet attrs) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node58.html"><span class='visitedproof'>S_58<span class='expansion'>node58 preds: succs:242 exn:59 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 47];
+NULLIFY(&amp;$irvar0,false); [line 47];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.<init>(android.content.Context,android.util.AttributeSet).0098b9d1430933cbcb780d6088e99b16.html">DotsView.&lt;init&gt;(Context,AttributeSet): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">        super(context, attrs); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node242.html"><span class='visitedproof'>I_242<span class='expansion'>node242 preds:58 succs:243 exn:60 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 48];
+n$1=*&amp;context:class android.content.Context * [line 48];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 48];
+_fun_View.&lt;init&gt;(Context,AttributeSet)(n$0:class com.karthik.imager.Recycler.DotsView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *) [line 48];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 48];
+NULLIFY(&amp;attrs,false); [line 48];
+NULLIFY(&amp;context,false); [line 48];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context,AttributeSet)</div></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">        init(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node252.html"><span class='visitedproof'>I_252<span class='expansion'>node252 preds:251 succs:253 exn:60 Instructions
+n$14=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 49];
+_fun_void DotsView.init()(n$14:class com.karthik.imager.Recycler.DotsView *) [line 49];
+REMOVE_TEMPS(n$14); [line 49];
+NULLIFY(&amp;this,false); [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node59.html"><span class='visitedproof'>E_59<span class='expansion'>node59 preds:253 60 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_60<span class='expansion'>node60 preds: succs:59 exn:59 Instructions
+NULLIFY(&amp;$irvar0,false); [line 50];
+NULLIFY(&amp;this,false); [line 50];
+APPLY_ABSTRACTION; [line 50];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node253.html"><span class='visitedproof'>I_253<span class='expansion'>node253 preds:252 succs:59 exn:60 Instructions
+APPLY_ABSTRACTION; [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">    public DotsView(Context context, AttributeSet attrs, int defStyleAttr) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node31.html"><span class='visitedproof'>S_31<span class='expansion'>node31 preds: succs:79 exn:32 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 52];
+NULLIFY(&amp;$irvar0,false); [line 52];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.<init>(android.content.Context,android.util.AttributeSet,int).afe926a5eb436607d822cd4d98b8c5b4.html">DotsView.&lt;init&gt;(Context,AttributeSet,int): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">        super(context, attrs, defStyleAttr); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node79.html"><span class='visitedproof'>I_79<span class='expansion'>node79 preds:31 succs:80 exn:33 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 53];
+n$1=*&amp;context:class android.content.Context * [line 53];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 53];
+n$3=*&amp;defStyleAttr:int  [line 53];
+_fun_View.&lt;init&gt;(Context,AttributeSet,int)(n$0:class com.karthik.imager.Recycler.DotsView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *,n$3:int ) [line 53];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3); [line 53];
+NULLIFY(&amp;attrs,false); [line 53];
+NULLIFY(&amp;context,false); [line 53];
+NULLIFY(&amp;defStyleAttr,false); [line 53];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context,AttributeSet,int)</div></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">        init(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node89.html"><span class='visitedproof'>I_89<span class='expansion'>node89 preds:88 succs:90 exn:33 Instructions
+n$15=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 54];
+_fun_void DotsView.init()(n$15:class com.karthik.imager.Recycler.DotsView *) [line 54];
+REMOVE_TEMPS(n$15); [line 54];
+NULLIFY(&amp;this,false); [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node32.html"><span class='visitedproof'>E_32<span class='expansion'>node32 preds:90 33 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_33<span class='expansion'>node33 preds: succs:32 exn:32 Instructions
+NULLIFY(&amp;$irvar0,false); [line 55];
+NULLIFY(&amp;this,false); [line 55];
+APPLY_ABSTRACTION; [line 55];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node90.html"><span class='visitedproof'>I_90<span class='expansion'>node90 preds:89 succs:32 exn:33 Instructions
+APPLY_ABSTRACTION; [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">    public DotsView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node49.html"><span class='visitedproof'>S_49<span class='expansion'>node49 preds: succs:158 exn:50 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 57];
+NULLIFY(&amp;$irvar0,false); [line 57];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.<init>(android.content.Context,android.util.AttributeSet,int,in.1f5fdedbda239213a0fdeeb05d7aadc3.html">DotsView.&lt;init&gt;(Context,AttributeSet,int,int): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">        super(context, attrs, defStyleAttr, defStyleRes); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node158.html"><span class='visitedproof'>I_158<span class='expansion'>node158 preds:49 succs:159 exn:51 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 58];
+n$1=*&amp;context:class android.content.Context * [line 58];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 58];
+n$3=*&amp;defStyleAttr:int  [line 58];
+n$4=*&amp;defStyleRes:int  [line 58];
+_fun_View.&lt;init&gt;(Context,AttributeSet,int,int)(n$0:class com.karthik.imager.Recycler.DotsView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *,n$3:int ,n$4:int ) [line 58];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 58];
+NULLIFY(&amp;attrs,false); [line 58];
+NULLIFY(&amp;context,false); [line 58];
+NULLIFY(&amp;defStyleAttr,false); [line 58];
+NULLIFY(&amp;defStyleRes,false); [line 58];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context,AttributeSet,int,int)</div></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">        init(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node168.html"><span class='visitedproof'>I_168<span class='expansion'>node168 preds:167 succs:169 exn:51 Instructions
+n$16=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 59];
+_fun_void DotsView.init()(n$16:class com.karthik.imager.Recycler.DotsView *) [line 59];
+REMOVE_TEMPS(n$16); [line 59];
+NULLIFY(&amp;this,false); [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node50.html"><span class='visitedproof'>E_50<span class='expansion'>node50 preds:169 51 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_51<span class='expansion'>node51 preds: succs:50 exn:50 Instructions
+NULLIFY(&amp;$irvar0,false); [line 60];
+NULLIFY(&amp;this,false); [line 60];
+APPLY_ABSTRACTION; [line 60];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node169.html"><span class='visitedproof'>I_169<span class='expansion'>node169 preds:168 succs:50 exn:51 Instructions
+APPLY_ABSTRACTION; [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">    private void init() { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node40.html"><span class='visitedproof'>S_40<span class='expansion'>node40 preds: succs:122 exn:41 Start
+DECLARE_LOCALS(&amp;return,&amp;i,&amp;$irvar0,&amp;$irvar1); [line 62];
+NULLIFY(&amp;$irvar0,false); [line 62];
+NULLIFY(&amp;$irvar1,false); [line 62];
+NULLIFY(&amp;i,false); [line 62];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.init():void.0c4dca2da9ffd22ac2537ebcb72bd7b6.html">void DotsView.init(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">        for (int i = 0; i &lt; circlePaints.length; i++) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node122.html"><span class='visitedproof'>I_122<span class='expansion'>node122 preds:40 succs:125 exn:42 Instructions
+*&amp;i:int =0 [line 63];
+APPLY_ABSTRACTION; [line 63];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node123.html"><span class='visitedproof'>C_123<span class='expansion'>node123 preds:125 succs:126 exn:42 Conditional method_body
+n$0=*&amp;i:int  [line 63];
+n$1=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 63];
+n$2=*n$1.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 63];
+n$3=*n$2:class android.graphics.Paint *[_t$0] [line 63];
+n$4=_fun___get_array_size(n$2:class android.graphics.Paint *(*)[_t$0]) [line 63];
+PRUNE(!(n$0  &gt;=  n$4), true); [line 63];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 63];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node124.html"><span class='visitedproof'>C_124<span class='expansion'>node124 preds:125 succs:132 exn:42 Conditional method_body
+n$0=*&amp;i:int  [line 63];
+n$1=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 63];
+n$2=*n$1.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 63];
+n$3=*n$2:class android.graphics.Paint *[_t$0] [line 63];
+n$4=_fun___get_array_size(n$2:class android.graphics.Paint *(*)[_t$0]) [line 63];
+PRUNE((n$0  &gt;=  n$4), false); [line 63];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 63];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node125.html"><span class='visitedproof'>J_125<span class='expansion'>node125 preds:131 122 succs:123 124 exn: Join
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node131.html"><span class='visitedproof'>I_131<span class='expansion'>node131 preds:130 succs:125 exn:42 Instructions
+n$19=*&amp;i:int  [line 63];
+*&amp;i:int =(n$19 + 1) [line 63];
+REMOVE_TEMPS(n$19); [line 63];
+APPLY_ABSTRACTION; [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">            circlePaints[i] = new Paint(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node126.html"><span class='visitedproof'>I_126<span class='expansion'>node126 preds:123 succs:127 exn:42 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 64];
+n$6=*n$5.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 64];
+*&amp;$irvar0:class android.graphics.Paint *(*)[_t$3]=n$6 [line 64];
+REMOVE_TEMPS(n$5,n$6); [line 64];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node127.html"><span class='visitedproof'>I_127<span class='expansion'>node127 preds:126 succs:128 exn:42 Instructions
+n$7=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 64];
+_fun_Paint.&lt;init&gt;()(n$7:class android.graphics.Paint *) [line 64];
+*&amp;$irvar1:class android.graphics.Paint *=n$7 [line 64];
+REMOVE_TEMPS(n$7); [line 64];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node128.html"><span class='visitedproof'>I_128<span class='expansion'>node128 preds:127 succs:129 exn:42 Instructions
+n$8=*&amp;$irvar0:class android.graphics.Paint *(*)[_t$3] [line 64];
+n$9=*&amp;i:int  [line 64];
+n$10=*&amp;$irvar1:class android.graphics.Paint * [line 64];
+*n$8[n$9]:class android.graphics.Paint *[_t$3]=n$10 [line 64];
+REMOVE_TEMPS(n$8,n$9,n$10); [line 64];
+NULLIFY(&amp;$irvar0,false); [line 64];
+NULLIFY(&amp;$irvar1,false); [line 64];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Paint.<init>()</div></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">            circlePaints[i].setStyle(Paint.Style.FILL); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node129.html"><span class='visitedproof'>I_129<span class='expansion'>node129 preds:128 succs:130 exn:42 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 65];
+n$12=*n$11.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 65];
+n$14=*n$12:class android.graphics.Paint *[_t$6] [line 65];
+n$13=*&amp;i:int  [line 65];
+n$15=*n$12[n$13]:class android.graphics.Paint * [line 65];
+*&amp;$irvar0:class android.graphics.Paint *=n$15 [line 65];
+REMOVE_TEMPS(n$11,n$12,n$13,n$14,n$15); [line 65];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node130.html"><span class='visitedproof'>I_130<span class='expansion'>node130 preds:129 succs:131 exn:42 Instructions
+n$16=*&amp;$irvar0:class android.graphics.Paint * [line 65];
+n$17=*n$16:class android.graphics.Paint  [line 65];
+n$18=*&amp;#GB$android.graphics.Paint$Style.android.graphics.Paint$Style.FILL:class android.graphics.Paint$Style  [line 65];
+_fun_void Paint.setStyle(Paint$Style)(n$16:class android.graphics.Paint *,n$18:class android.graphics.Paint$Style *) virtual [line 65];
+REMOVE_TEMPS(n$16,n$17,n$18); [line 65];
+NULLIFY(&amp;$irvar0,false); [line 65];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setStyle(Paint$Style)</div>
+<div class="msg" style="margin-left:9ex">Symexec_memory_error </div></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node41.html"><span class='visitedproof'>E_41<span class='expansion'>node41 preds:132 42 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_42<span class='expansion'>node42 preds: succs:41 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 67];
+NULLIFY(&amp;$irvar1,false); [line 67];
+NULLIFY(&amp;i,false); [line 67];
+NULLIFY(&amp;this,false); [line 67];
+APPLY_ABSTRACTION; [line 67];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node132.html"><span class='visitedproof'>I_132<span class='expansion'>node132 preds:124 succs:41 exn:42 Instructions
+NULLIFY(&amp;i,false); [line 67];
+NULLIFY(&amp;this,false); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">    protected void onSizeChanged(int w, int h, int oldw, int oldh) {</td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        super.onSizeChanged(w, h, oldw, oldh); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node52.html"><span class='visitedproof'>S_52<span class='expansion'>node52 preds: succs:170 exn:53 Start
+DECLARE_LOCALS(&amp;return); [line 71];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node170.html"><span class='visitedproof'>I_170<span class='expansion'>node170 preds:52 succs:171 exn:54 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 71];
+n$1=*&amp;w:int  [line 71];
+n$2=*&amp;h:int  [line 71];
+n$3=*&amp;oldw:int  [line 71];
+n$4=*&amp;oldh:int  [line 71];
+_fun_void View.onSizeChanged(int,int,int,int)(n$0:class com.karthik.imager.Recycler.DotsView *,n$1:int ,n$2:int ,n$3:int ,n$4:int ) [line 71];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 71];
+NULLIFY(&amp;oldh,false); [line 71];
+NULLIFY(&amp;oldw,false); [line 71];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.onSizeChanged(int,int,int,int):void.425af3189ca85a92c4a2da75c32da791.html">void DotsView.onSizeChanged(int,int,int,int): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.onSizeChanged(int,int,int,int)</div></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">        centerX = w / 2; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node171.html"><span class='visitedproof'>I_171<span class='expansion'>node171 preds:170 succs:172 exn:54 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 72];
+n$6=*&amp;w:int  [line 72];
+*n$5.com.karthik.imager.Recycler.DotsView.centerX:class com.karthik.imager.Recycler.DotsView =(n$6 / 2) [line 72];
+REMOVE_TEMPS(n$5,n$6); [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">        centerY = h / 2; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node172.html"><span class='visitedproof'>I_172<span class='expansion'>node172 preds:171 succs:173 exn:54 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 73];
+n$8=*&amp;h:int  [line 73];
+*n$7.com.karthik.imager.Recycler.DotsView.centerY:class com.karthik.imager.Recycler.DotsView =(n$8 / 2) [line 73];
+REMOVE_TEMPS(n$7,n$8); [line 73];
+NULLIFY(&amp;h,false); [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">        maxDotSize = 20; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node173.html"><span class='visitedproof'>I_173<span class='expansion'>node173 preds:172 succs:174 exn:54 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 74];
+*n$9.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView =20.000000 [line 74];
+REMOVE_TEMPS(n$9); [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">        maxOuterDotsRadius = w / 2 - maxDotSize * 2; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node174.html"><span class='visitedproof'>I_174<span class='expansion'>node174 preds:173 succs:175 exn:54 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 75];
+n$11=*&amp;w:int  [line 75];
+n$12=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 75];
+n$13=*n$12.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView  [line 75];
+*n$10.com.karthik.imager.Recycler.DotsView.maxOuterDotsRadius:class com.karthik.imager.Recycler.DotsView =((float )(n$11 / 2) - (n$13 * 2.000000)) [line 75];
+REMOVE_TEMPS(n$10,n$11,n$12,n$13); [line 75];
+NULLIFY(&amp;w,false); [line 75];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">        maxInnerDotsRadius = 0.8f * maxOuterDotsRadius; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node175.html"><span class='visitedproof'>I_175<span class='expansion'>node175 preds:174 succs:176 exn:54 Instructions
+n$14=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 76];
+n$15=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 76];
+n$16=*n$15.com.karthik.imager.Recycler.DotsView.maxOuterDotsRadius:class com.karthik.imager.Recycler.DotsView  [line 76];
+*n$14.com.karthik.imager.Recycler.DotsView.maxInnerDotsRadius:class com.karthik.imager.Recycler.DotsView =(0.800000 * n$16) [line 76];
+REMOVE_TEMPS(n$14,n$15,n$16); [line 76];
+NULLIFY(&amp;this,false); [line 76];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node53.html"><span class='visitedproof'>E_53<span class='expansion'>node53 preds:176 54 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_54<span class='expansion'>node54 preds: succs:53 exn:53 Instructions
+NULLIFY(&amp;h,false); [line 77];
+NULLIFY(&amp;this,false); [line 77];
+NULLIFY(&amp;w,false); [line 77];
+APPLY_ABSTRACTION; [line 77];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node176.html"><span class='visitedproof'>I_176<span class='expansion'>node176 preds:175 succs:53 exn:54 Instructions
+APPLY_ABSTRACTION; [line 77];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">    protected void onDraw(Canvas canvas) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node73.html"><span class='visitedproof'>S_73<span class='expansion'>node73 preds: succs:299 exn:74 Start
+DECLARE_LOCALS(&amp;return); [line 80];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.onDraw(android.graphics.Canvas):void.8a8cc59e7ca97247eb616dd14e17d625.html">void DotsView.onDraw(Canvas): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">        drawOuterDotsFrame(canvas); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node299.html"><span class='visitedproof'>I_299<span class='expansion'>node299 preds:73 succs:300 exn:75 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 81];
+n$1=*&amp;canvas:class android.graphics.Canvas * [line 81];
+_fun_void DotsView.drawOuterDotsFrame(Canvas)(n$0:class com.karthik.imager.Recycler.DotsView *,n$1:class android.graphics.Canvas *) [line 81];
+REMOVE_TEMPS(n$0,n$1); [line 81];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">        drawInnerDotsFrame(canvas); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node300.html"><span class='visitedproof'>I_300<span class='expansion'>node300 preds:299 succs:301 exn:75 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 82];
+n$3=*&amp;canvas:class android.graphics.Canvas * [line 82];
+_fun_void DotsView.drawInnerDotsFrame(Canvas)(n$2:class com.karthik.imager.Recycler.DotsView *,n$3:class android.graphics.Canvas *) [line 82];
+REMOVE_TEMPS(n$2,n$3); [line 82];
+NULLIFY(&amp;canvas,false); [line 82];
+NULLIFY(&amp;this,false); [line 82];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void DotsView.drawInnerDotsFrame(Canvas)</div></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node74.html"><span class='visitedproof'>E_74<span class='expansion'>node74 preds:301 75 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_75<span class='expansion'>node75 preds: succs:74 exn:74 Instructions
+NULLIFY(&amp;canvas,false); [line 83];
+NULLIFY(&amp;this,false); [line 83];
+APPLY_ABSTRACTION; [line 83];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node301.html"><span class='visitedproof'>I_301<span class='expansion'>node301 preds:300 succs:74 exn:75 Instructions
+APPLY_ABSTRACTION; [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">    private void drawOuterDotsFrame(Canvas canvas) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node43.html"><span class='visitedproof'>S_43<span class='expansion'>node43 preds: succs:133 exn:44 Start
+DECLARE_LOCALS(&amp;return,&amp;i,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2,&amp;cX,&amp;cY); [line 85];
+NULLIFY(&amp;$irvar0,false); [line 85];
+NULLIFY(&amp;$irvar1,false); [line 85];
+NULLIFY(&amp;$irvar2,false); [line 85];
+NULLIFY(&amp;cX,false); [line 85];
+NULLIFY(&amp;cY,false); [line 85];
+NULLIFY(&amp;i,false); [line 85];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.drawOuterDotsFrame(android.graphics.Canvas):void.e82648a5a5d5541710f0a86cee39f8b9.html">void DotsView.drawOuterDotsFrame(Canvas): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">        for (int i = 0; i &lt; DOTS_COUNT; i++) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node133.html"><span class='visitedproof'>I_133<span class='expansion'>node133 preds:43 succs:136 exn:45 Instructions
+*&amp;i:int =0 [line 86];
+APPLY_ABSTRACTION; [line 86];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node134.html"><span class='visitedproof'>C_134<span class='expansion'>node134 preds:136 succs:137 exn:45 Conditional method_body
+n$0=*&amp;i:int  [line 86];
+PRUNE(!(n$0  &gt;=  7), true); [line 86];
+REMOVE_TEMPS(n$0); [line 86];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node135.html"><span class='visitedproof'>C_135<span class='expansion'>node135 preds:136 succs:147 exn:45 Conditional method_body
+n$0=*&amp;i:int  [line 86];
+PRUNE((n$0  &gt;=  7), false); [line 86];
+REMOVE_TEMPS(n$0); [line 86];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node136.html"><span class='visitedproof'>J_136<span class='expansion'>node136 preds:146 133 succs:134 135 exn: Join
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node146.html"><span class='visitedproof'>I_146<span class='expansion'>node146 preds:145 succs:136 exn:45 Instructions
+n$34=*&amp;i:int  [line 86];
+*&amp;i:int =(n$34 + 1) [line 86];
+REMOVE_TEMPS(n$34); [line 86];
+APPLY_ABSTRACTION; [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">            int cX = (int) (centerX + currentRadius1 * Math.cos(i * OUTER_DOTS_POSITION_ANGLE * Math.PI / 180)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node137.html"><span class='visitedproof'>I_137<span class='expansion'>node137 preds:134 succs:138 exn:45 Instructions
+n$1=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 87];
+n$2=*n$1.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView  [line 87];
+*&amp;$irvar1:double =(double )n$2 [line 87];
+REMOVE_TEMPS(n$1,n$2); [line 87];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node138.html"><span class='visitedproof'>I_138<span class='expansion'>node138 preds:137 succs:139 exn:45 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 87];
+n$4=*n$3.com.karthik.imager.Recycler.DotsView.centerX:class com.karthik.imager.Recycler.DotsView  [line 87];
+*&amp;$irvar0:double =(double )n$4 [line 87];
+REMOVE_TEMPS(n$3,n$4); [line 87];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node139.html"><span class='visitedproof'>I_139<span class='expansion'>node139 preds:138 succs:140 exn:45 Instructions
+n$5=*&amp;i:int  [line 87];
+n$6=_fun_double Math.cos(double)((((double )(n$5 * 51) * 3.141593) / 180.000000):double ) [line 87];
+*&amp;$irvar2:double =n$6 [line 87];
+REMOVE_TEMPS(n$5,n$6); [line 87];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node140.html"><span class='visitedproof'>I_140<span class='expansion'>node140 preds:139 succs:141 exn:45 Instructions
+n$7=*&amp;$irvar0:double  [line 87];
+n$8=*&amp;$irvar1:double  [line 87];
+n$9=*&amp;$irvar2:double  [line 87];
+*&amp;cX:int =(int )(n$7 + (n$8 * n$9)) [line 87];
+REMOVE_TEMPS(n$7,n$8,n$9); [line 87];
+NULLIFY(&amp;$irvar0,false); [line 87];
+NULLIFY(&amp;$irvar1,false); [line 87];
+NULLIFY(&amp;$irvar2,false); [line 87];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION double Math.cos(double)</div></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">            int cY = (int) (centerY + currentRadius1 * Math.sin(i * OUTER_DOTS_POSITION_ANGLE * Math.PI / 180)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node141.html"><span class='visitedproof'>I_141<span class='expansion'>node141 preds:140 succs:142 exn:45 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 88];
+n$11=*n$10.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView  [line 88];
+*&amp;$irvar1:double =(double )n$11 [line 88];
+REMOVE_TEMPS(n$10,n$11); [line 88];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node142.html"><span class='visitedproof'>I_142<span class='expansion'>node142 preds:141 succs:143 exn:45 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 88];
+n$13=*n$12.com.karthik.imager.Recycler.DotsView.centerY:class com.karthik.imager.Recycler.DotsView  [line 88];
+*&amp;$irvar0:double =(double )n$13 [line 88];
+REMOVE_TEMPS(n$12,n$13); [line 88];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node143.html"><span class='visitedproof'>I_143<span class='expansion'>node143 preds:142 succs:144 exn:45 Instructions
+n$14=*&amp;i:int  [line 88];
+n$15=_fun_double Math.sin(double)((((double )(n$14 * 51) * 3.141593) / 180.000000):double ) [line 88];
+*&amp;$irvar2:double =n$15 [line 88];
+REMOVE_TEMPS(n$14,n$15); [line 88];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node144.html"><span class='visitedproof'>I_144<span class='expansion'>node144 preds:143 succs:145 exn:45 Instructions
+n$16=*&amp;$irvar0:double  [line 88];
+n$17=*&amp;$irvar1:double  [line 88];
+n$18=*&amp;$irvar2:double  [line 88];
+*&amp;cY:int =(int )(n$16 + (n$17 * n$18)) [line 88];
+REMOVE_TEMPS(n$16,n$17,n$18); [line 88];
+NULLIFY(&amp;$irvar0,false); [line 88];
+NULLIFY(&amp;$irvar1,false); [line 88];
+NULLIFY(&amp;$irvar2,false); [line 88];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION double Math.sin(double)</div></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">            canvas.drawCircle(cX, cY, currentDotSize1, circlePaints[i &#37; circlePaints.length]); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node145.html"><span class='visitedproof'>I_145<span class='expansion'>node145 preds:144 succs:146 exn:45 Instructions
+n$19=*&amp;canvas:class android.graphics.Canvas * [line 89];
+n$20=*n$19:class android.graphics.Canvas  [line 89];
+n$21=*&amp;cX:int  [line 89];
+n$22=*&amp;cY:int  [line 89];
+n$23=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 89];
+n$24=*n$23.com.karthik.imager.Recycler.DotsView.currentDotSize1:class com.karthik.imager.Recycler.DotsView  [line 89];
+n$25=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 89];
+n$26=*n$25.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 89];
+n$32=*n$26:class android.graphics.Paint *[_t$4] [line 89];
+n$27=*&amp;i:int  [line 89];
+n$28=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 89];
+n$29=*n$28.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 89];
+n$30=*n$29:class android.graphics.Paint *[_t$2] [line 89];
+n$31=_fun___get_array_size(n$29:class android.graphics.Paint *(*)[_t$2]) [line 89];
+n$33=*n$26[(n$27 % n$31)]:class android.graphics.Paint * [line 89];
+_fun_void Canvas.drawCircle(float,float,float,Paint)(n$19:class android.graphics.Canvas *,(float )n$21:float ,(float )n$22:float ,n$24:float ,n$33:class android.graphics.Paint *) virtual [line 89];
+REMOVE_TEMPS(n$19,n$20,n$21,n$22,n$23,n$24,n$25,n$26,n$27,n$28,n$29,n$30,n$31,n$32,n$33); [line 89];
+NULLIFY(&amp;cX,false); [line 89];
+NULLIFY(&amp;cY,false); [line 89];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)</div></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node44.html"><span class='visitedproof'>E_44<span class='expansion'>node44 preds:147 45 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_45<span class='expansion'>node45 preds: succs:44 exn:44 Instructions
+NULLIFY(&amp;$irvar0,false); [line 91];
+NULLIFY(&amp;$irvar1,false); [line 91];
+NULLIFY(&amp;$irvar2,false); [line 91];
+NULLIFY(&amp;cX,false); [line 91];
+NULLIFY(&amp;cY,false); [line 91];
+NULLIFY(&amp;canvas,false); [line 91];
+NULLIFY(&amp;i,false); [line 91];
+NULLIFY(&amp;this,false); [line 91];
+APPLY_ABSTRACTION; [line 91];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node147.html"><span class='visitedproof'>I_147<span class='expansion'>node147 preds:135 succs:44 exn:45 Instructions
+NULLIFY(&amp;canvas,false); [line 91];
+NULLIFY(&amp;i,false); [line 91];
+NULLIFY(&amp;this,false); [line 91];
+APPLY_ABSTRACTION; [line 91];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">    private void drawInnerDotsFrame(Canvas canvas) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node64.html"><span class='visited'>S_64<span class='expansion'>node64 preds: succs:276 exn:65 Start
+DECLARE_LOCALS(&amp;return,&amp;i,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2,&amp;cX,&amp;cY); [line 93];
+NULLIFY(&amp;$irvar0,false); [line 93];
+NULLIFY(&amp;$irvar1,false); [line 93];
+NULLIFY(&amp;$irvar2,false); [line 93];
+NULLIFY(&amp;cX,false); [line 93];
+NULLIFY(&amp;cY,false); [line 93];
+NULLIFY(&amp;i,false); [line 93];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.drawInnerDotsFrame(android.graphics.Canvas):void.827f0edbc36a7e2444b184517eb14bd9.html">void DotsView.drawInnerDotsFrame(Canvas): 0 specs</a></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">        for (int i = 0; i &lt; DOTS_COUNT; i++) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node276.html"><span class='visited'>I_276<span class='expansion'>node276 preds:64 succs:279 exn:66 Instructions
+*&amp;i:int =0 [line 94];
+APPLY_ABSTRACTION; [line 94];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node277.html"><span class='visited'>C_277<span class='expansion'>node277 preds:279 succs:280 exn:66 Conditional method_body
+n$0=*&amp;i:int  [line 94];
+PRUNE(!(n$0  &gt;=  7), true); [line 94];
+REMOVE_TEMPS(n$0); [line 94];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node278.html"><span class='visited'>C_278<span class='expansion'>node278 preds:279 succs:290 exn:66 Conditional method_body
+n$0=*&amp;i:int  [line 94];
+PRUNE((n$0  &gt;=  7), false); [line 94];
+REMOVE_TEMPS(n$0); [line 94];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node279.html"><span class='visited'>J_279<span class='expansion'>node279 preds:289 276 succs:277 278 exn: Join
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node289.html"><span class='visited'>I_289<span class='expansion'>node289 preds:288 succs:279 exn:66 Instructions
+n$34=*&amp;i:int  [line 94];
+*&amp;i:int =(n$34 + 1) [line 94];
+REMOVE_TEMPS(n$34); [line 94];
+APPLY_ABSTRACTION; [line 94];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">            int cX = (int) (centerX + currentRadius2 * Math.cos((i * OUTER_DOTS_POSITION_ANGLE - 10) * Math.PI / 180)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node280.html"><span class='visited'>I_280<span class='expansion'>node280 preds:277 succs:281 exn:66 Instructions
+n$1=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 95];
+n$2=*n$1.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView  [line 95];
+*&amp;$irvar1:double =(double )n$2 [line 95];
+REMOVE_TEMPS(n$1,n$2); [line 95];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node281.html"><span class='visited'>I_281<span class='expansion'>node281 preds:280 succs:282 exn:66 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 95];
+n$4=*n$3.com.karthik.imager.Recycler.DotsView.centerX:class com.karthik.imager.Recycler.DotsView  [line 95];
+*&amp;$irvar0:double =(double )n$4 [line 95];
+REMOVE_TEMPS(n$3,n$4); [line 95];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node282.html"><span class='visited'>I_282<span class='expansion'>node282 preds:281 succs:283 exn:66 Instructions
+n$5=*&amp;i:int  [line 95];
+n$6=_fun_double Math.cos(double)((((double )((n$5 * 51) - 10) * 3.141593) / 180.000000):double ) [line 95];
+*&amp;$irvar2:double =n$6 [line 95];
+REMOVE_TEMPS(n$5,n$6); [line 95];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node283.html"><span class='visited'>I_283<span class='expansion'>node283 preds:282 succs:284 exn:66 Instructions
+n$7=*&amp;$irvar0:double  [line 95];
+n$8=*&amp;$irvar1:double  [line 95];
+n$9=*&amp;$irvar2:double  [line 95];
+*&amp;cX:int =(int )(n$7 + (n$8 * n$9)) [line 95];
+REMOVE_TEMPS(n$7,n$8,n$9); [line 95];
+NULLIFY(&amp;$irvar0,false); [line 95];
+NULLIFY(&amp;$irvar1,false); [line 95];
+NULLIFY(&amp;$irvar2,false); [line 95];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION double Math.cos(double)</div></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">            int cY = (int) (centerY + currentRadius2 * Math.sin((i * OUTER_DOTS_POSITION_ANGLE - 10) * Math.PI / 180)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node284.html"><span class='visited'>I_284<span class='expansion'>node284 preds:283 succs:285 exn:66 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 96];
+n$11=*n$10.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView  [line 96];
+*&amp;$irvar1:double =(double )n$11 [line 96];
+REMOVE_TEMPS(n$10,n$11); [line 96];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node285.html"><span class='visited'>I_285<span class='expansion'>node285 preds:284 succs:286 exn:66 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 96];
+n$13=*n$12.com.karthik.imager.Recycler.DotsView.centerY:class com.karthik.imager.Recycler.DotsView  [line 96];
+*&amp;$irvar0:double =(double )n$13 [line 96];
+REMOVE_TEMPS(n$12,n$13); [line 96];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node286.html"><span class='visited'>I_286<span class='expansion'>node286 preds:285 succs:287 exn:66 Instructions
+n$14=*&amp;i:int  [line 96];
+n$15=_fun_double Math.sin(double)((((double )((n$14 * 51) - 10) * 3.141593) / 180.000000):double ) [line 96];
+*&amp;$irvar2:double =n$15 [line 96];
+REMOVE_TEMPS(n$14,n$15); [line 96];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node287.html"><span class='visited'>I_287<span class='expansion'>node287 preds:286 succs:288 exn:66 Instructions
+n$16=*&amp;$irvar0:double  [line 96];
+n$17=*&amp;$irvar1:double  [line 96];
+n$18=*&amp;$irvar2:double  [line 96];
+*&amp;cY:int =(int )(n$16 + (n$17 * n$18)) [line 96];
+REMOVE_TEMPS(n$16,n$17,n$18); [line 96];
+NULLIFY(&amp;$irvar0,false); [line 96];
+NULLIFY(&amp;$irvar1,false); [line 96];
+NULLIFY(&amp;$irvar2,false); [line 96];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION double Math.sin(double)</div></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">            canvas.drawCircle(cX, cY, currentDotSize2, circlePaints[(i + 1) &#37; circlePaints.length]); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node288.html"><span class='visited'>I_288<span class='expansion'>node288 preds:287 succs:289 exn:66 Instructions
+n$19=*&amp;canvas:class android.graphics.Canvas * [line 97];
+n$20=*n$19:class android.graphics.Canvas  [line 97];
+n$21=*&amp;cX:int  [line 97];
+n$22=*&amp;cY:int  [line 97];
+n$23=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 97];
+n$24=*n$23.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView  [line 97];
+n$25=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 97];
+n$26=*n$25.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 97];
+n$32=*n$26:class android.graphics.Paint *[_t$4] [line 97];
+n$27=*&amp;i:int  [line 97];
+n$28=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 97];
+n$29=*n$28.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 97];
+n$30=*n$29:class android.graphics.Paint *[_t$2] [line 97];
+n$31=_fun___get_array_size(n$29:class android.graphics.Paint *(*)[_t$2]) [line 97];
+n$33=*n$26[((n$27 + 1) % n$31)]:class android.graphics.Paint * [line 97];
+_fun_void Canvas.drawCircle(float,float,float,Paint)(n$19:class android.graphics.Canvas *,(float )n$21:float ,(float )n$22:float ,n$24:float ,n$33:class android.graphics.Paint *) virtual [line 97];
+REMOVE_TEMPS(n$19,n$20,n$21,n$22,n$23,n$24,n$25,n$26,n$27,n$28,n$29,n$30,n$31,n$32,n$33); [line 97];
+NULLIFY(&amp;cX,false); [line 97];
+NULLIFY(&amp;cY,false); [line 97];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)</div></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node65.html"><span class='visited'>E_65<span class='expansion'>node65 preds:290 66 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_66<span class='expansion'>node66 preds: succs:65 exn:65 Instructions
+NULLIFY(&amp;$irvar0,false); [line 99];
+NULLIFY(&amp;$irvar1,false); [line 99];
+NULLIFY(&amp;$irvar2,false); [line 99];
+NULLIFY(&amp;cX,false); [line 99];
+NULLIFY(&amp;cY,false); [line 99];
+NULLIFY(&amp;canvas,false); [line 99];
+NULLIFY(&amp;i,false); [line 99];
+NULLIFY(&amp;this,false); [line 99];
+APPLY_ABSTRACTION; [line 99];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node290.html"><span class='visited'>I_290<span class='expansion'>node290 preds:278 succs:65 exn:66 Instructions
+NULLIFY(&amp;canvas,false); [line 99];
+NULLIFY(&amp;i,false); [line 99];
+NULLIFY(&amp;this,false); [line 99];
+APPLY_ABSTRACTION; [line 99];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">    public void setCurrentProgress(float currentProgress) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node70.html"><span class='visited'>S_70<span class='expansion'>node70 preds: succs:292 exn:71 Start
+DECLARE_LOCALS(&amp;return); [line 101];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.setCurrentProgress(float):void.dacaacc4ada92fdaee24448aba7c3c69.html">void DotsView.setCurrentProgress(float): 0 specs</a></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">        this.currentProgress = currentProgress; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node292.html"><span class='visited'>I_292<span class='expansion'>node292 preds:70 succs:293 exn:72 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 102];
+n$1=*&amp;currentProgress:float  [line 102];
+*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView =n$1 [line 102];
+REMOVE_TEMPS(n$0,n$1); [line 102];
+NULLIFY(&amp;currentProgress,false); [line 102];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">        updateInnerDotsPosition(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node293.html"><span class='visited'>I_293<span class='expansion'>node293 preds:292 succs:294 exn:72 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 104];
+_fun_void DotsView.updateInnerDotsPosition()(n$2:class com.karthik.imager.Recycler.DotsView *) [line 104];
+REMOVE_TEMPS(n$2); [line 104];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">        updateOuterDotsPosition(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node294.html"><span class='visited'>I_294<span class='expansion'>node294 preds:293 succs:295 exn:72 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 105];
+_fun_void DotsView.updateOuterDotsPosition()(n$3:class com.karthik.imager.Recycler.DotsView *) [line 105];
+REMOVE_TEMPS(n$3); [line 105];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">        updateDotsPaints(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node295.html"><span class='visited'>I_295<span class='expansion'>node295 preds:294 succs:296 exn:72 Instructions
+n$4=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 106];
+_fun_void DotsView.updateDotsPaints()(n$4:class com.karthik.imager.Recycler.DotsView *) [line 106];
+REMOVE_TEMPS(n$4); [line 106];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void DotsView.updateDotsPaints()</div></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">        updateDotsAlpha(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node296.html"><span class='visited'>I_296<span class='expansion'>node296 preds:295 succs:297 exn:72 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 107];
+_fun_void DotsView.updateDotsAlpha()(n$5:class com.karthik.imager.Recycler.DotsView *) [line 107];
+REMOVE_TEMPS(n$5); [line 107];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void DotsView.updateDotsAlpha()</div></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">        postInvalidate(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node297.html"><span class='visited'>I_297<span class='expansion'>node297 preds:296 succs:298 exn:72 Instructions
+n$6=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 109];
+n$7=*n$6:class com.karthik.imager.Recycler.DotsView  [line 109];
+_fun_void View.postInvalidate()(n$6:class com.karthik.imager.Recycler.DotsView *) virtual [line 109];
+REMOVE_TEMPS(n$6,n$7); [line 109];
+NULLIFY(&amp;this,false); [line 109];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.postInvalidate()</div></td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node71.html"><span class='visited'>E_71<span class='expansion'>node71 preds:298 72 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_72<span class='expansion'>node72 preds: succs:71 exn:71 Instructions
+NULLIFY(&amp;this,false); [line 110];
+APPLY_ABSTRACTION; [line 110];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node298.html"><span class='visited'>I_298<span class='expansion'>node298 preds:297 succs:71 exn:72 Instructions
+APPLY_ABSTRACTION; [line 110];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">    public float getCurrentProgress() { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node67.html"><span class='visitedproof'>S_67<span class='expansion'>node67 preds: succs:291 exn:68 Start
+DECLARE_LOCALS(&amp;return); [line 112];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node4.html"><span class='visitedproof'>S_4<span class='expansion'>node4 preds: succs:19 exn:5 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 112];
+NULLIFY(&amp;$irvar0,false); [line 112];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.getCurrentProgress():float.f94e15fe4d83ecbc402b74fcb9aefa9f.html">float DotsView.getCurrentProgress(): 1 specs</a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView$1.get(java.lang.Object):java.lang.Object.2ffbad54c7b901d9c8e0b674a00ce7ff.html">Object DotsView$1.get(Object): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">        return currentProgress; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node68.html"><span class='visitedproof'>E_68<span class='expansion'>node68 preds:291 69 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_69<span class='expansion'>node69 preds: succs:68 exn:68 Instructions
+APPLY_ABSTRACTION; [line 113];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node291.html"><span class='visitedproof'>I_291<span class='expansion'>node291 preds:67 succs:68 exn:69 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 113];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 113];
+*&amp;return:float =n$1 [line 113];
+REMOVE_TEMPS(n$0,n$1); [line 113];
+NULLIFY(&amp;this,false); [line 113];
+APPLY_ABSTRACTION; [line 113];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">    private void updateInnerDotsPosition() { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node61.html"><span class='visitedproof'>S_61<span class='expansion'>node61 preds: succs:254 255 exn:62 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2,&amp;$irvar3); [line 116];
+NULLIFY(&amp;$irvar0,false); [line 116];
+NULLIFY(&amp;$irvar1,false); [line 116];
+NULLIFY(&amp;$irvar2,false); [line 116];
+NULLIFY(&amp;$irvar3,false); [line 116];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.updateInnerDotsPosition():void.79cb43fb0704afdaffc576b32217ce85.html">void DotsView.updateInnerDotsPosition(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">        if (currentProgress &lt; 0.3f) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node254.html"><span class='visitedproof'>C_254<span class='expansion'>node254 preds:61 succs:256 exn:63 Conditional method_body
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 117];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 117];
+PRUNE(!(n$1  &gt;=  0.300000), true); [line 117];
+REMOVE_TEMPS(n$0,n$1); [line 117];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node255.html"><span class='visitedproof'>C_255<span class='expansion'>node255 preds:61 succs:260 exn:63 Conditional method_body
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 117];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 117];
+PRUNE((n$1  &gt;=  0.300000), false); [line 117];
+REMOVE_TEMPS(n$0,n$1); [line 117];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">            this.currentRadius2 = (float) Utils.mapValueFromRangeToRange(currentProgress, 0, 0.3f, 0.f, maxInnerDotsRadius); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node256.html"><span class='visitedproof'>I_256<span class='expansion'>node256 preds:254 succs:257 exn:63 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 118];
+n$3=*n$2.com.karthik.imager.Recycler.DotsView.maxInnerDotsRadius:class com.karthik.imager.Recycler.DotsView  [line 118];
+*&amp;$irvar1:double =(double )n$3 [line 118];
+REMOVE_TEMPS(n$2,n$3); [line 118];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node257.html"><span class='visitedproof'>I_257<span class='expansion'>node257 preds:256 succs:258 exn:63 Instructions
+n$4=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 118];
+n$5=*n$4.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 118];
+*&amp;$irvar0:double =(double )n$5 [line 118];
+REMOVE_TEMPS(n$4,n$5); [line 118];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node258.html"><span class='visitedproof'>I_258<span class='expansion'>node258 preds:257 succs:259 exn:63 Instructions
+n$6=*&amp;$irvar0:double  [line 118];
+n$7=*&amp;$irvar1:double  [line 118];
+n$8=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$6:double ,0.000000:double ,0.300000:double ,0.000000:double ,n$7:double ) [line 118];
+*&amp;$irvar2:double =n$8 [line 118];
+REMOVE_TEMPS(n$6,n$7,n$8); [line 118];
+NULLIFY(&amp;$irvar0,false); [line 118];
+NULLIFY(&amp;$irvar1,false); [line 118];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node259.html"><span class='visitedproof'>I_259<span class='expansion'>node259 preds:258 succs:261 262 exn:63 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 118];
+n$10=*&amp;$irvar2:double  [line 118];
+*n$9.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView =(float )n$10 [line 118];
+REMOVE_TEMPS(n$9,n$10); [line 118];
+NULLIFY(&amp;$irvar2,false); [line 118];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line">            this.currentRadius2 = maxInnerDotsRadius; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node260.html"><span class='visitedproof'>I_260<span class='expansion'>node260 preds:255 succs:261 262 exn:63 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 120];
+n$12=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 120];
+n$13=*n$12.com.karthik.imager.Recycler.DotsView.maxInnerDotsRadius:class com.karthik.imager.Recycler.DotsView  [line 120];
+*n$11.com.karthik.imager.Recycler.DotsView.currentRadius2:class com.karthik.imager.Recycler.DotsView =n$13 [line 120];
+REMOVE_TEMPS(n$11,n$12,n$13); [line 120];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">        if (currentProgress &lt; 0.2) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node261.html"><span class='visitedproof'>C_261<span class='expansion'>node261 preds:260 259 succs:263 exn:63 Conditional method_body
+n$14=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 123];
+n$15=*n$14.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 123];
+PRUNE(!((double )n$15  &gt;=  0.200000), true); [line 123];
+REMOVE_TEMPS(n$14,n$15); [line 123];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node262.html"><span class='visitedproof'>C_262<span class='expansion'>node262 preds:260 259 succs:264 265 exn:63 Conditional method_body
+n$14=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 123];
+n$15=*n$14.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 123];
+PRUNE(((double )n$15  &gt;=  0.200000), false); [line 123];
+REMOVE_TEMPS(n$14,n$15); [line 123];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">            this.currentDotSize2 = maxDotSize; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node263.html"><span class='visitedproof'>I_263<span class='expansion'>node263 preds:261 succs:275 exn:63 Instructions
+n$16=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 124];
+n$17=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 124];
+n$18=*n$17.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView  [line 124];
+*n$16.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView =n$18 [line 124];
+REMOVE_TEMPS(n$16,n$17,n$18); [line 124];
+NULLIFY(&amp;this,false); [line 124];
+APPLY_ABSTRACTION; [line 124];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">        } else if (currentProgress &lt; 0.5) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node264.html"><span class='visitedproof'>C_264<span class='expansion'>node264 preds:262 succs:266 exn:63 Conditional method_body
+n$19=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 125];
+n$20=*n$19.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 125];
+PRUNE(!((double )n$20  &gt;=  0.500000), true); [line 125];
+REMOVE_TEMPS(n$19,n$20); [line 125];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node265.html"><span class='visitedproof'>C_265<span class='expansion'>node265 preds:262 succs:271 exn:63 Conditional method_body
+n$19=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 125];
+n$20=*n$19.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 125];
+PRUNE(((double )n$20  &gt;=  0.500000), false); [line 125];
+REMOVE_TEMPS(n$19,n$20); [line 125];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">            this.currentDotSize2 = (float) Utils.mapValueFromRangeToRange(currentProgress, 0.2f, 0.5f, maxDotSize, 0.3 * maxDotSize); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node266.html"><span class='visitedproof'>I_266<span class='expansion'>node266 preds:264 succs:267 exn:63 Instructions
+n$21=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 126];
+n$22=*n$21.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView  [line 126];
+*&amp;$irvar2:double =(0.300000 * (double )n$22) [line 126];
+REMOVE_TEMPS(n$21,n$22); [line 126];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node267.html"><span class='visitedproof'>I_267<span class='expansion'>node267 preds:266 succs:268 exn:63 Instructions
+n$23=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 126];
+n$24=*n$23.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView  [line 126];
+*&amp;$irvar1:double =(double )n$24 [line 126];
+REMOVE_TEMPS(n$23,n$24); [line 126];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node268.html"><span class='visitedproof'>I_268<span class='expansion'>node268 preds:267 succs:269 exn:63 Instructions
+n$25=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 126];
+n$26=*n$25.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 126];
+*&amp;$irvar0:double =(double )n$26 [line 126];
+REMOVE_TEMPS(n$25,n$26); [line 126];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node269.html"><span class='visitedproof'>I_269<span class='expansion'>node269 preds:268 succs:270 exn:63 Instructions
+n$27=*&amp;$irvar0:double  [line 126];
+n$28=*&amp;$irvar1:double  [line 126];
+n$29=*&amp;$irvar2:double  [line 126];
+n$30=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$27:double ,0.200000:double ,0.500000:double ,n$28:double ,n$29:double ) [line 126];
+*&amp;$irvar3:double =n$30 [line 126];
+REMOVE_TEMPS(n$27,n$28,n$29,n$30); [line 126];
+NULLIFY(&amp;$irvar0,false); [line 126];
+NULLIFY(&amp;$irvar1,false); [line 126];
+NULLIFY(&amp;$irvar2,false); [line 126];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node270.html"><span class='visitedproof'>I_270<span class='expansion'>node270 preds:269 succs:275 exn:63 Instructions
+n$31=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 126];
+n$32=*&amp;$irvar3:double  [line 126];
+*n$31.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView =(float )n$32 [line 126];
+REMOVE_TEMPS(n$31,n$32); [line 126];
+NULLIFY(&amp;$irvar3,false); [line 126];
+NULLIFY(&amp;this,false); [line 126];
+APPLY_ABSTRACTION; [line 126];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">            this.currentDotSize2 = (float) Utils.mapValueFromRangeToRange(currentProgress, 0.5f, 1f, maxDotSize * 0.3f, 0); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node271.html"><span class='visitedproof'>I_271<span class='expansion'>node271 preds:265 succs:272 exn:63 Instructions
+n$33=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 128];
+n$34=*n$33.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView  [line 128];
+*&amp;$irvar1:double =(double )(n$34 * 0.300000) [line 128];
+REMOVE_TEMPS(n$33,n$34); [line 128];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node272.html"><span class='visitedproof'>I_272<span class='expansion'>node272 preds:271 succs:273 exn:63 Instructions
+n$35=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 128];
+n$36=*n$35.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 128];
+*&amp;$irvar0:double =(double )n$36 [line 128];
+REMOVE_TEMPS(n$35,n$36); [line 128];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node273.html"><span class='visitedproof'>I_273<span class='expansion'>node273 preds:272 succs:274 exn:63 Instructions
+n$37=*&amp;$irvar0:double  [line 128];
+n$38=*&amp;$irvar1:double  [line 128];
+n$39=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$37:double ,0.500000:double ,1.000000:double ,n$38:double ,0.000000:double ) [line 128];
+*&amp;$irvar2:double =n$39 [line 128];
+REMOVE_TEMPS(n$37,n$38,n$39); [line 128];
+NULLIFY(&amp;$irvar0,false); [line 128];
+NULLIFY(&amp;$irvar1,false); [line 128];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node274.html"><span class='visitedproof'>I_274<span class='expansion'>node274 preds:273 succs:275 exn:63 Instructions
+n$40=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 128];
+n$41=*&amp;$irvar2:double  [line 128];
+*n$40.com.karthik.imager.Recycler.DotsView.currentDotSize2:class com.karthik.imager.Recycler.DotsView =(float )n$41 [line 128];
+REMOVE_TEMPS(n$40,n$41); [line 128];
+NULLIFY(&amp;$irvar2,false); [line 128];
+NULLIFY(&amp;this,false); [line 128];
+APPLY_ABSTRACTION; [line 128];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node62.html"><span class='visitedproof'>E_62<span class='expansion'>node62 preds:275 63 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_63<span class='expansion'>node63 preds: succs:62 exn:62 Instructions
+NULLIFY(&amp;$irvar0,false); [line 131];
+NULLIFY(&amp;$irvar1,false); [line 131];
+NULLIFY(&amp;$irvar2,false); [line 131];
+NULLIFY(&amp;$irvar3,false); [line 131];
+NULLIFY(&amp;this,false); [line 131];
+APPLY_ABSTRACTION; [line 131];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node275.html"><span class='visitedproof'>I_275<span class='expansion'>node275 preds:274 270 263 succs:62 exn:63 Instructions
+APPLY_ABSTRACTION; [line 131];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line">    private void updateOuterDotsPosition() { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node34.html"><span class='visitedproof'>S_34<span class='expansion'>node34 preds: succs:91 92 exn:35 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2,&amp;$irvar3); [line 133];
+NULLIFY(&amp;$irvar0,false); [line 133];
+NULLIFY(&amp;$irvar1,false); [line 133];
+NULLIFY(&amp;$irvar2,false); [line 133];
+NULLIFY(&amp;$irvar3,false); [line 133];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.updateOuterDotsPosition():void.0a74c90ec84e270fd31ae7596438740f.html">void DotsView.updateOuterDotsPosition(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">        if (currentProgress &lt; 0.3f) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node91.html"><span class='visitedproof'>C_91<span class='expansion'>node91 preds:34 succs:93 exn:36 Conditional method_body
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 134];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 134];
+PRUNE(!(n$1  &gt;=  0.300000), true); [line 134];
+REMOVE_TEMPS(n$0,n$1); [line 134];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node92.html"><span class='visitedproof'>C_92<span class='expansion'>node92 preds:34 succs:97 exn:36 Conditional method_body
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 134];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 134];
+PRUNE((n$1  &gt;=  0.300000), false); [line 134];
+REMOVE_TEMPS(n$0,n$1); [line 134];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">            this.currentRadius1 = (float) Utils.mapValueFromRangeToRange(currentProgress, 0.0f, 0.3f, 0, maxOuterDotsRadius * 0.8f); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node93.html"><span class='visitedproof'>I_93<span class='expansion'>node93 preds:91 succs:94 exn:36 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 135];
+n$3=*n$2.com.karthik.imager.Recycler.DotsView.maxOuterDotsRadius:class com.karthik.imager.Recycler.DotsView  [line 135];
+*&amp;$irvar1:double =(double )(n$3 * 0.800000) [line 135];
+REMOVE_TEMPS(n$2,n$3); [line 135];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node94.html"><span class='visitedproof'>I_94<span class='expansion'>node94 preds:93 succs:95 exn:36 Instructions
+n$4=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 135];
+n$5=*n$4.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 135];
+*&amp;$irvar0:double =(double )n$5 [line 135];
+REMOVE_TEMPS(n$4,n$5); [line 135];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node95.html"><span class='visitedproof'>I_95<span class='expansion'>node95 preds:94 succs:96 exn:36 Instructions
+n$6=*&amp;$irvar0:double  [line 135];
+n$7=*&amp;$irvar1:double  [line 135];
+n$8=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$6:double ,0.000000:double ,0.300000:double ,0.000000:double ,n$7:double ) [line 135];
+*&amp;$irvar2:double =n$8 [line 135];
+REMOVE_TEMPS(n$6,n$7,n$8); [line 135];
+NULLIFY(&amp;$irvar0,false); [line 135];
+NULLIFY(&amp;$irvar1,false); [line 135];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node96.html"><span class='visitedproof'>I_96<span class='expansion'>node96 preds:95 succs:102 103 exn:36 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 135];
+n$10=*&amp;$irvar2:double  [line 135];
+*n$9.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView =(float )n$10 [line 135];
+REMOVE_TEMPS(n$9,n$10); [line 135];
+NULLIFY(&amp;$irvar2,false); [line 135];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line">            this.currentRadius1 = (float) Utils.mapValueFromRangeToRange(currentProgress, 0.3f, 1f, 0.8f * maxOuterDotsRadius, maxOuterDotsRadius); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node97.html"><span class='visitedproof'>I_97<span class='expansion'>node97 preds:92 succs:98 exn:36 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 137];
+n$12=*n$11.com.karthik.imager.Recycler.DotsView.maxOuterDotsRadius:class com.karthik.imager.Recycler.DotsView  [line 137];
+*&amp;$irvar2:double =(double )n$12 [line 137];
+REMOVE_TEMPS(n$11,n$12); [line 137];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node98.html"><span class='visitedproof'>I_98<span class='expansion'>node98 preds:97 succs:99 exn:36 Instructions
+n$13=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 137];
+n$14=*n$13.com.karthik.imager.Recycler.DotsView.maxOuterDotsRadius:class com.karthik.imager.Recycler.DotsView  [line 137];
+*&amp;$irvar1:double =(double )(0.800000 * n$14) [line 137];
+REMOVE_TEMPS(n$13,n$14); [line 137];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node99.html"><span class='visitedproof'>I_99<span class='expansion'>node99 preds:98 succs:100 exn:36 Instructions
+n$15=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 137];
+n$16=*n$15.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 137];
+*&amp;$irvar0:double =(double )n$16 [line 137];
+REMOVE_TEMPS(n$15,n$16); [line 137];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node100.html"><span class='visitedproof'>I_100<span class='expansion'>node100 preds:99 succs:101 exn:36 Instructions
+n$17=*&amp;$irvar0:double  [line 137];
+n$18=*&amp;$irvar1:double  [line 137];
+n$19=*&amp;$irvar2:double  [line 137];
+n$20=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$17:double ,0.300000:double ,1.000000:double ,n$18:double ,n$19:double ) [line 137];
+*&amp;$irvar3:double =n$20 [line 137];
+REMOVE_TEMPS(n$17,n$18,n$19,n$20); [line 137];
+NULLIFY(&amp;$irvar0,false); [line 137];
+NULLIFY(&amp;$irvar1,false); [line 137];
+NULLIFY(&amp;$irvar2,false); [line 137];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node101.html"><span class='visitedproof'>I_101<span class='expansion'>node101 preds:100 succs:102 103 exn:36 Instructions
+n$21=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 137];
+n$22=*&amp;$irvar3:double  [line 137];
+*n$21.com.karthik.imager.Recycler.DotsView.currentRadius1:class com.karthik.imager.Recycler.DotsView =(float )n$22 [line 137];
+REMOVE_TEMPS(n$21,n$22); [line 137];
+NULLIFY(&amp;$irvar3,false); [line 137];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line">        if (currentProgress &lt; 0.7) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node102.html"><span class='visitedproof'>C_102<span class='expansion'>node102 preds:101 96 succs:104 exn:36 Conditional method_body
+n$23=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 140];
+n$24=*n$23.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 140];
+PRUNE(!((double )n$24  &gt;=  0.700000), true); [line 140];
+REMOVE_TEMPS(n$23,n$24); [line 140];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node103.html"><span class='visitedproof'>C_103<span class='expansion'>node103 preds:101 96 succs:105 exn:36 Conditional method_body
+n$23=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 140];
+n$24=*n$23.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 140];
+PRUNE(((double )n$24  &gt;=  0.700000), false); [line 140];
+REMOVE_TEMPS(n$23,n$24); [line 140];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">            this.currentDotSize1 = maxDotSize; <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node104.html"><span class='visitedproof'>I_104<span class='expansion'>node104 preds:102 succs:109 exn:36 Instructions
+n$25=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 141];
+n$26=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 141];
+n$27=*n$26.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView  [line 141];
+*n$25.com.karthik.imager.Recycler.DotsView.currentDotSize1:class com.karthik.imager.Recycler.DotsView =n$27 [line 141];
+REMOVE_TEMPS(n$25,n$26,n$27); [line 141];
+NULLIFY(&amp;this,false); [line 141];
+APPLY_ABSTRACTION; [line 141];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE142">142</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE143">143</td><td class="line">            this.currentDotSize1 = (float) Utils.mapValueFromRangeToRange(currentProgress, 0.7f, 1f, maxDotSize, 0); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node105.html"><span class='visitedproof'>I_105<span class='expansion'>node105 preds:103 succs:106 exn:36 Instructions
+n$28=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 143];
+n$29=*n$28.com.karthik.imager.Recycler.DotsView.maxDotSize:class com.karthik.imager.Recycler.DotsView  [line 143];
+*&amp;$irvar1:double =(double )n$29 [line 143];
+REMOVE_TEMPS(n$28,n$29); [line 143];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node106.html"><span class='visitedproof'>I_106<span class='expansion'>node106 preds:105 succs:107 exn:36 Instructions
+n$30=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 143];
+n$31=*n$30.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 143];
+*&amp;$irvar0:double =(double )n$31 [line 143];
+REMOVE_TEMPS(n$30,n$31); [line 143];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node107.html"><span class='visitedproof'>I_107<span class='expansion'>node107 preds:106 succs:108 exn:36 Instructions
+n$32=*&amp;$irvar0:double  [line 143];
+n$33=*&amp;$irvar1:double  [line 143];
+n$34=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$32:double ,0.700000:double ,1.000000:double ,n$33:double ,0.000000:double ) [line 143];
+*&amp;$irvar2:double =n$34 [line 143];
+REMOVE_TEMPS(n$32,n$33,n$34); [line 143];
+NULLIFY(&amp;$irvar0,false); [line 143];
+NULLIFY(&amp;$irvar1,false); [line 143];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node108.html"><span class='visitedproof'>I_108<span class='expansion'>node108 preds:107 succs:109 exn:36 Instructions
+n$35=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 143];
+n$36=*&amp;$irvar2:double  [line 143];
+*n$35.com.karthik.imager.Recycler.DotsView.currentDotSize1:class com.karthik.imager.Recycler.DotsView =(float )n$36 [line 143];
+REMOVE_TEMPS(n$35,n$36); [line 143];
+NULLIFY(&amp;$irvar2,false); [line 143];
+NULLIFY(&amp;this,false); [line 143];
+APPLY_ABSTRACTION; [line 143];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE144">144</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE145">145</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node35.html"><span class='visitedproof'>E_35<span class='expansion'>node35 preds:109 36 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_36<span class='expansion'>node36 preds: succs:35 exn:35 Instructions
+NULLIFY(&amp;$irvar0,false); [line 145];
+NULLIFY(&amp;$irvar1,false); [line 145];
+NULLIFY(&amp;$irvar2,false); [line 145];
+NULLIFY(&amp;$irvar3,false); [line 145];
+NULLIFY(&amp;this,false); [line 145];
+APPLY_ABSTRACTION; [line 145];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node109.html"><span class='visitedproof'>I_109<span class='expansion'>node109 preds:108 104 succs:35 exn:36 Instructions
+APPLY_ABSTRACTION; [line 145];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE146">146</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE147">147</td><td class="line">    private void updateDotsPaints() { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node55.html"><span class='visited'>S_55<span class='expansion'>node55 preds: succs:177 178 exn:56 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;progress,&amp;$irvar2,&amp;$irvar3,&amp;$irvar4,&amp;$irvar5); [line 147];
+NULLIFY(&amp;$irvar0,false); [line 147];
+NULLIFY(&amp;$irvar1,false); [line 147];
+NULLIFY(&amp;$irvar2,false); [line 147];
+NULLIFY(&amp;$irvar3,false); [line 147];
+NULLIFY(&amp;$irvar4,false); [line 147];
+NULLIFY(&amp;$irvar5,false); [line 147];
+NULLIFY(&amp;progress,false); [line 147];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.updateDotsPaints():void.802b510a9d1bd709c5df314bfa2d50cc.html">void DotsView.updateDotsPaints(): 0 specs</a></td></tr>
+<tr><td class="num" id="LINE148">148</td><td class="line">        if (currentProgress &lt; 0.5f) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node177.html"><span class='visited'>C_177<span class='expansion'>node177 preds:55 succs:179 exn:57 Conditional method_body
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 148];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 148];
+PRUNE(!(n$1  &gt;=  0.500000), true); [line 148];
+REMOVE_TEMPS(n$0,n$1); [line 148];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node178.html"><span class='visited'>C_178<span class='expansion'>node178 preds:55 succs:210 exn:57 Conditional method_body
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 148];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 148];
+PRUNE((n$1  &gt;=  0.500000), false); [line 148];
+REMOVE_TEMPS(n$0,n$1); [line 148];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE149">149</td><td class="line">            float progress = (float) Utils.mapValueFromRangeToRange(currentProgress, 0f, 0.5f, 0, 1f); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node179.html"><span class='visited'>I_179<span class='expansion'>node179 preds:177 succs:180 exn:57 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 149];
+n$3=*n$2.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 149];
+*&amp;$irvar0:double =(double )n$3 [line 149];
+REMOVE_TEMPS(n$2,n$3); [line 149];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node180.html"><span class='visited'>I_180<span class='expansion'>node180 preds:179 succs:181 exn:57 Instructions
+n$4=*&amp;$irvar0:double  [line 149];
+n$5=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$4:double ,0.000000:double ,0.500000:double ,0.000000:double ,1.000000:double ) [line 149];
+*&amp;$irvar1:double =n$5 [line 149];
+REMOVE_TEMPS(n$4,n$5); [line 149];
+NULLIFY(&amp;$irvar0,false); [line 149];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node181.html"><span class='visited'>I_181<span class='expansion'>node181 preds:180 succs:182 exn:57 Instructions
+n$6=*&amp;$irvar1:double  [line 149];
+*&amp;progress:float =(float )n$6 [line 149];
+REMOVE_TEMPS(n$6); [line 149];
+NULLIFY(&amp;$irvar1,false); [line 149];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE150">150</td><td class="line">            circlePaints[0].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_1, COLOR_2)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node182.html"><span class='visited'>I_182<span class='expansion'>node182 preds:181 succs:183 exn:57 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 150];
+n$8=*n$7.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 150];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$8 [line 150];
+REMOVE_TEMPS(n$7,n$8); [line 150];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node183.html"><span class='visited'>I_183<span class='expansion'>node183 preds:182 succs:184 exn:57 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 150];
+n$10=*n$9.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 150];
+n$11=*n$10:class android.graphics.Paint *[_t$2] [line 150];
+n$12=*n$10[0]:class android.graphics.Paint * [line 150];
+*&amp;$irvar0:class android.graphics.Paint *=n$12 [line 150];
+REMOVE_TEMPS(n$9,n$10,n$11,n$12); [line 150];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node184.html"><span class='visited'>I_184<span class='expansion'>node184 preds:183 succs:185 exn:57 Instructions
+n$13=_fun_Integer Integer.valueOf(int)(-11842741:int ) [line 150];
+*&amp;$irvar2:class java.lang.Integer *=n$13 [line 150];
+REMOVE_TEMPS(n$13); [line 150];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node185.html"><span class='visited'>I_185<span class='expansion'>node185 preds:184 succs:186 exn:57 Instructions
+n$14=_fun_Integer Integer.valueOf(int)(-10132123:int ) [line 150];
+*&amp;$irvar3:class java.lang.Integer *=n$14 [line 150];
+REMOVE_TEMPS(n$14); [line 150];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node186.html"><span class='visited'>I_186<span class='expansion'>node186 preds:185 succs:187 exn:57 Instructions
+n$15=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 150];
+n$16=*n$15:class android.animation.ArgbEvaluator  [line 150];
+n$17=*&amp;progress:float  [line 150];
+n$18=*&amp;$irvar2:class java.lang.Integer * [line 150];
+n$19=*&amp;$irvar3:class java.lang.Integer * [line 150];
+n$20=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$15:class android.animation.ArgbEvaluator *,n$17:float ,n$18:class java.lang.Integer *,n$19:class java.lang.Integer *) virtual [line 150];
+*&amp;$irvar4:class java.lang.Object *=n$20 [line 150];
+REMOVE_TEMPS(n$15,n$16,n$17,n$18,n$19,n$20); [line 150];
+NULLIFY(&amp;$irvar1,false); [line 150];
+NULLIFY(&amp;$irvar2,false); [line 150];
+NULLIFY(&amp;$irvar3,false); [line 150];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node187.html"><span class='visited'>I_187<span class='expansion'>node187 preds:186 succs:188 exn:57 Instructions
+n$21=*&amp;$irvar4:class java.lang.Object * [line 150];
+n$22=_fun___cast(n$21:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 150];
+n$23=*n$22:class java.lang.Integer  [line 150];
+n$24=_fun_int Integer.intValue()(n$22:class java.lang.Integer *) virtual [line 150];
+*&amp;$irvar5:int =n$24 [line 150];
+REMOVE_TEMPS(n$21,n$22,n$23,n$24); [line 150];
+NULLIFY(&amp;$irvar4,false); [line 150];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node188.html"><span class='visited'>I_188<span class='expansion'>node188 preds:187 succs:189 exn:57 Instructions
+n$25=*&amp;$irvar0:class android.graphics.Paint * [line 150];
+n$26=*n$25:class android.graphics.Paint  [line 150];
+n$27=*&amp;$irvar5:int  [line 150];
+_fun_void Paint.setColor(int)(n$25:class android.graphics.Paint *,n$27:int ) virtual [line 150];
+REMOVE_TEMPS(n$25,n$26,n$27); [line 150];
+NULLIFY(&amp;$irvar0,false); [line 150];
+NULLIFY(&amp;$irvar5,false); [line 150];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setColor(int)</div></td></tr>
+<tr><td class="num" id="LINE151">151</td><td class="line">            circlePaints[1].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_2, COLOR_3)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node189.html"><span class='visited'>I_189<span class='expansion'>node189 preds:188 succs:190 exn:57 Instructions
+n$28=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 151];
+n$29=*n$28.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 151];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$29 [line 151];
+REMOVE_TEMPS(n$28,n$29); [line 151];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node190.html"><span class='visited'>I_190<span class='expansion'>node190 preds:189 succs:191 exn:57 Instructions
+n$30=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 151];
+n$31=*n$30.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 151];
+n$32=*n$31:class android.graphics.Paint *[_t$6] [line 151];
+n$33=*n$31[1]:class android.graphics.Paint * [line 151];
+*&amp;$irvar0:class android.graphics.Paint *=n$33 [line 151];
+REMOVE_TEMPS(n$30,n$31,n$32,n$33); [line 151];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node191.html"><span class='visited'>I_191<span class='expansion'>node191 preds:190 succs:192 exn:57 Instructions
+n$34=_fun_Integer Integer.valueOf(int)(-10132123:int ) [line 151];
+*&amp;$irvar2:class java.lang.Integer *=n$34 [line 151];
+REMOVE_TEMPS(n$34); [line 151];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node192.html"><span class='visited'>I_192<span class='expansion'>node192 preds:191 succs:193 exn:57 Instructions
+n$35=_fun_Integer Integer.valueOf(int)(-5921371:int ) [line 151];
+*&amp;$irvar3:class java.lang.Integer *=n$35 [line 151];
+REMOVE_TEMPS(n$35); [line 151];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node193.html"><span class='visited'>I_193<span class='expansion'>node193 preds:192 succs:194 exn:57 Instructions
+n$36=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 151];
+n$37=*n$36:class android.animation.ArgbEvaluator  [line 151];
+n$38=*&amp;progress:float  [line 151];
+n$39=*&amp;$irvar2:class java.lang.Integer * [line 151];
+n$40=*&amp;$irvar3:class java.lang.Integer * [line 151];
+n$41=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$36:class android.animation.ArgbEvaluator *,n$38:float ,n$39:class java.lang.Integer *,n$40:class java.lang.Integer *) virtual [line 151];
+*&amp;$irvar4:class java.lang.Object *=n$41 [line 151];
+REMOVE_TEMPS(n$36,n$37,n$38,n$39,n$40,n$41); [line 151];
+NULLIFY(&amp;$irvar1,false); [line 151];
+NULLIFY(&amp;$irvar2,false); [line 151];
+NULLIFY(&amp;$irvar3,false); [line 151];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node194.html"><span class='visited'>I_194<span class='expansion'>node194 preds:193 succs:195 exn:57 Instructions
+n$42=*&amp;$irvar4:class java.lang.Object * [line 151];
+n$43=_fun___cast(n$42:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 151];
+n$44=*n$43:class java.lang.Integer  [line 151];
+n$45=_fun_int Integer.intValue()(n$43:class java.lang.Integer *) virtual [line 151];
+*&amp;$irvar5:int =n$45 [line 151];
+REMOVE_TEMPS(n$42,n$43,n$44,n$45); [line 151];
+NULLIFY(&amp;$irvar4,false); [line 151];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node195.html"><span class='visited'>I_195<span class='expansion'>node195 preds:194 succs:196 exn:57 Instructions
+n$46=*&amp;$irvar0:class android.graphics.Paint * [line 151];
+n$47=*n$46:class android.graphics.Paint  [line 151];
+n$48=*&amp;$irvar5:int  [line 151];
+_fun_void Paint.setColor(int)(n$46:class android.graphics.Paint *,n$48:int ) virtual [line 151];
+REMOVE_TEMPS(n$46,n$47,n$48); [line 151];
+NULLIFY(&amp;$irvar0,false); [line 151];
+NULLIFY(&amp;$irvar5,false); [line 151];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setColor(int)</div></td></tr>
+<tr><td class="num" id="LINE152">152</td><td class="line">            circlePaints[2].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_3, COLOR_4)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node196.html"><span class='visited'>I_196<span class='expansion'>node196 preds:195 succs:197 exn:57 Instructions
+n$49=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 152];
+n$50=*n$49.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 152];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$50 [line 152];
+REMOVE_TEMPS(n$49,n$50); [line 152];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node197.html"><span class='visited'>I_197<span class='expansion'>node197 preds:196 succs:198 exn:57 Instructions
+n$51=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 152];
+n$52=*n$51.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 152];
+n$53=*n$52:class android.graphics.Paint *[_t$10] [line 152];
+n$54=*n$52[2]:class android.graphics.Paint * [line 152];
+*&amp;$irvar0:class android.graphics.Paint *=n$54 [line 152];
+REMOVE_TEMPS(n$51,n$52,n$53,n$54); [line 152];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node198.html"><span class='visited'>I_198<span class='expansion'>node198 preds:197 succs:199 exn:57 Instructions
+n$55=_fun_Integer Integer.valueOf(int)(-5921371:int ) [line 152];
+*&amp;$irvar2:class java.lang.Integer *=n$55 [line 152];
+REMOVE_TEMPS(n$55); [line 152];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node199.html"><span class='visited'>I_199<span class='expansion'>node199 preds:198 succs:200 exn:57 Instructions
+n$56=_fun_Integer Integer.valueOf(int)(-1710619:int ) [line 152];
+*&amp;$irvar3:class java.lang.Integer *=n$56 [line 152];
+REMOVE_TEMPS(n$56); [line 152];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node200.html"><span class='visited'>I_200<span class='expansion'>node200 preds:199 succs:201 exn:57 Instructions
+n$57=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 152];
+n$58=*n$57:class android.animation.ArgbEvaluator  [line 152];
+n$59=*&amp;progress:float  [line 152];
+n$60=*&amp;$irvar2:class java.lang.Integer * [line 152];
+n$61=*&amp;$irvar3:class java.lang.Integer * [line 152];
+n$62=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$57:class android.animation.ArgbEvaluator *,n$59:float ,n$60:class java.lang.Integer *,n$61:class java.lang.Integer *) virtual [line 152];
+*&amp;$irvar4:class java.lang.Object *=n$62 [line 152];
+REMOVE_TEMPS(n$57,n$58,n$59,n$60,n$61,n$62); [line 152];
+NULLIFY(&amp;$irvar1,false); [line 152];
+NULLIFY(&amp;$irvar2,false); [line 152];
+NULLIFY(&amp;$irvar3,false); [line 152];
+</span></span></a> <span class='dangling'>I_201<span class='expansion'>node201 preds:200 succs:202 exn:57 Instructions
+n$63=*&amp;$irvar4:class java.lang.Object * [line 152];
+n$64=_fun___cast(n$63:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 152];
+n$65=*n$64:class java.lang.Integer  [line 152];
+n$66=_fun_int Integer.intValue()(n$64:class java.lang.Integer *) virtual [line 152];
+*&amp;$irvar5:int =n$66 [line 152];
+REMOVE_TEMPS(n$63,n$64,n$65,n$66); [line 152];
+NULLIFY(&amp;$irvar4,false); [line 152];
+
+NOT VISITED</span></span> <span class='dangling'>I_202<span class='expansion'>node202 preds:201 succs:203 exn:57 Instructions
+n$67=*&amp;$irvar0:class android.graphics.Paint * [line 152];
+n$68=*n$67:class android.graphics.Paint  [line 152];
+n$69=*&amp;$irvar5:int  [line 152];
+_fun_void Paint.setColor(int)(n$67:class android.graphics.Paint *,n$69:int ) virtual [line 152];
+REMOVE_TEMPS(n$67,n$68,n$69); [line 152];
+NULLIFY(&amp;$irvar0,false); [line 152];
+NULLIFY(&amp;$irvar5,false); [line 152];
+
+NOT VISITED</span></span></td></tr>
+<tr><td class="num" id="LINE153">153</td><td class="line">            circlePaints[3].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_4, COLOR_1)); <span class='dangling'>I_203<span class='expansion'>node203 preds:202 succs:204 exn:57 Instructions
+n$70=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 153];
+n$71=*n$70.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 153];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$71 [line 153];
+REMOVE_TEMPS(n$70,n$71); [line 153];
+
+NOT VISITED</span></span> <span class='dangling'>I_204<span class='expansion'>node204 preds:203 succs:205 exn:57 Instructions
+n$72=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 153];
+n$73=*n$72.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 153];
+n$74=*n$73:class android.graphics.Paint *[_t$14] [line 153];
+n$75=*n$73[3]:class android.graphics.Paint * [line 153];
+*&amp;$irvar0:class android.graphics.Paint *=n$75 [line 153];
+REMOVE_TEMPS(n$72,n$73,n$74,n$75); [line 153];
+NULLIFY(&amp;this,false); [line 153];
+
+NOT VISITED</span></span> <span class='dangling'>I_205<span class='expansion'>node205 preds:204 succs:206 exn:57 Instructions
+n$76=_fun_Integer Integer.valueOf(int)(-1710619:int ) [line 153];
+*&amp;$irvar2:class java.lang.Integer *=n$76 [line 153];
+REMOVE_TEMPS(n$76); [line 153];
+
+NOT VISITED</span></span> <span class='dangling'>I_206<span class='expansion'>node206 preds:205 succs:207 exn:57 Instructions
+n$77=_fun_Integer Integer.valueOf(int)(-11842741:int ) [line 153];
+*&amp;$irvar3:class java.lang.Integer *=n$77 [line 153];
+REMOVE_TEMPS(n$77); [line 153];
+
+NOT VISITED</span></span> <span class='dangling'>I_207<span class='expansion'>node207 preds:206 succs:208 exn:57 Instructions
+n$78=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 153];
+n$79=*n$78:class android.animation.ArgbEvaluator  [line 153];
+n$80=*&amp;progress:float  [line 153];
+n$81=*&amp;$irvar2:class java.lang.Integer * [line 153];
+n$82=*&amp;$irvar3:class java.lang.Integer * [line 153];
+n$83=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$78:class android.animation.ArgbEvaluator *,n$80:float ,n$81:class java.lang.Integer *,n$82:class java.lang.Integer *) virtual [line 153];
+*&amp;$irvar4:class java.lang.Object *=n$83 [line 153];
+REMOVE_TEMPS(n$78,n$79,n$80,n$81,n$82,n$83); [line 153];
+NULLIFY(&amp;$irvar1,false); [line 153];
+NULLIFY(&amp;$irvar2,false); [line 153];
+NULLIFY(&amp;$irvar3,false); [line 153];
+NULLIFY(&amp;progress,false); [line 153];
+
+NOT VISITED</span></span> <span class='dangling'>I_208<span class='expansion'>node208 preds:207 succs:209 exn:57 Instructions
+n$84=*&amp;$irvar4:class java.lang.Object * [line 153];
+n$85=_fun___cast(n$84:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 153];
+n$86=*n$85:class java.lang.Integer  [line 153];
+n$87=_fun_int Integer.intValue()(n$85:class java.lang.Integer *) virtual [line 153];
+*&amp;$irvar5:int =n$87 [line 153];
+REMOVE_TEMPS(n$84,n$85,n$86,n$87); [line 153];
+NULLIFY(&amp;$irvar4,false); [line 153];
+
+NOT VISITED</span></span> <span class='dangling'>I_209<span class='expansion'>node209 preds:208 succs:241 exn:57 Instructions
+n$88=*&amp;$irvar0:class android.graphics.Paint * [line 153];
+n$89=*n$88:class android.graphics.Paint  [line 153];
+n$90=*&amp;$irvar5:int  [line 153];
+_fun_void Paint.setColor(int)(n$88:class android.graphics.Paint *,n$90:int ) virtual [line 153];
+REMOVE_TEMPS(n$88,n$89,n$90); [line 153];
+NULLIFY(&amp;$irvar0,false); [line 153];
+NULLIFY(&amp;$irvar5,false); [line 153];
+APPLY_ABSTRACTION; [line 153];
+
+NOT VISITED</span></span></td></tr>
+<tr><td class="num" id="LINE154">154</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE155">155</td><td class="line">            float progress = (float) Utils.mapValueFromRangeToRange(currentProgress, 0.5f, 1f, 0, 1f); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node210.html"><span class='visited'>I_210<span class='expansion'>node210 preds:178 succs:211 exn:57 Instructions
+n$91=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 155];
+n$92=*n$91.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 155];
+*&amp;$irvar0:double =(double )n$92 [line 155];
+REMOVE_TEMPS(n$91,n$92); [line 155];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node211.html"><span class='visited'>I_211<span class='expansion'>node211 preds:210 succs:212 exn:57 Instructions
+n$93=*&amp;$irvar0:double  [line 155];
+n$94=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)(n$93:double ,0.500000:double ,1.000000:double ,0.000000:double ,1.000000:double ) [line 155];
+*&amp;$irvar1:double =n$94 [line 155];
+REMOVE_TEMPS(n$93,n$94); [line 155];
+NULLIFY(&amp;$irvar0,false); [line 155];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node212.html"><span class='visited'>I_212<span class='expansion'>node212 preds:211 succs:213 exn:57 Instructions
+n$95=*&amp;$irvar1:double  [line 155];
+*&amp;progress:float =(float )n$95 [line 155];
+REMOVE_TEMPS(n$95); [line 155];
+NULLIFY(&amp;$irvar1,false); [line 155];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE156">156</td><td class="line">            circlePaints[0].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_2, COLOR_3)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node213.html"><span class='visited'>I_213<span class='expansion'>node213 preds:212 succs:214 exn:57 Instructions
+n$96=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 156];
+n$97=*n$96.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 156];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$97 [line 156];
+REMOVE_TEMPS(n$96,n$97); [line 156];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node214.html"><span class='visited'>I_214<span class='expansion'>node214 preds:213 succs:215 exn:57 Instructions
+n$98=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 156];
+n$99=*n$98.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 156];
+n$100=*n$99:class android.graphics.Paint *[_t$18] [line 156];
+n$101=*n$99[0]:class android.graphics.Paint * [line 156];
+*&amp;$irvar0:class android.graphics.Paint *=n$101 [line 156];
+REMOVE_TEMPS(n$98,n$99,n$100,n$101); [line 156];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node215.html"><span class='visited'>I_215<span class='expansion'>node215 preds:214 succs:216 exn:57 Instructions
+n$102=_fun_Integer Integer.valueOf(int)(-10132123:int ) [line 156];
+*&amp;$irvar2:class java.lang.Integer *=n$102 [line 156];
+REMOVE_TEMPS(n$102); [line 156];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node216.html"><span class='visited'>I_216<span class='expansion'>node216 preds:215 succs:217 exn:57 Instructions
+n$103=_fun_Integer Integer.valueOf(int)(-5921371:int ) [line 156];
+*&amp;$irvar3:class java.lang.Integer *=n$103 [line 156];
+REMOVE_TEMPS(n$103); [line 156];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node217.html"><span class='visited'>I_217<span class='expansion'>node217 preds:216 succs:218 exn:57 Instructions
+n$104=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 156];
+n$105=*n$104:class android.animation.ArgbEvaluator  [line 156];
+n$106=*&amp;progress:float  [line 156];
+n$107=*&amp;$irvar2:class java.lang.Integer * [line 156];
+n$108=*&amp;$irvar3:class java.lang.Integer * [line 156];
+n$109=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$104:class android.animation.ArgbEvaluator *,n$106:float ,n$107:class java.lang.Integer *,n$108:class java.lang.Integer *) virtual [line 156];
+*&amp;$irvar4:class java.lang.Object *=n$109 [line 156];
+REMOVE_TEMPS(n$104,n$105,n$106,n$107,n$108,n$109); [line 156];
+NULLIFY(&amp;$irvar1,false); [line 156];
+NULLIFY(&amp;$irvar2,false); [line 156];
+NULLIFY(&amp;$irvar3,false); [line 156];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node218.html"><span class='visited'>I_218<span class='expansion'>node218 preds:217 succs:219 exn:57 Instructions
+n$110=*&amp;$irvar4:class java.lang.Object * [line 156];
+n$111=_fun___cast(n$110:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 156];
+n$112=*n$111:class java.lang.Integer  [line 156];
+n$113=_fun_int Integer.intValue()(n$111:class java.lang.Integer *) virtual [line 156];
+*&amp;$irvar5:int =n$113 [line 156];
+REMOVE_TEMPS(n$110,n$111,n$112,n$113); [line 156];
+NULLIFY(&amp;$irvar4,false); [line 156];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node219.html"><span class='visited'>I_219<span class='expansion'>node219 preds:218 succs:220 exn:57 Instructions
+n$114=*&amp;$irvar0:class android.graphics.Paint * [line 156];
+n$115=*n$114:class android.graphics.Paint  [line 156];
+n$116=*&amp;$irvar5:int  [line 156];
+_fun_void Paint.setColor(int)(n$114:class android.graphics.Paint *,n$116:int ) virtual [line 156];
+REMOVE_TEMPS(n$114,n$115,n$116); [line 156];
+NULLIFY(&amp;$irvar0,false); [line 156];
+NULLIFY(&amp;$irvar5,false); [line 156];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setColor(int)</div></td></tr>
+<tr><td class="num" id="LINE157">157</td><td class="line">            circlePaints[1].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_3, COLOR_4)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node220.html"><span class='visited'>I_220<span class='expansion'>node220 preds:219 succs:221 exn:57 Instructions
+n$117=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 157];
+n$118=*n$117.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 157];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$118 [line 157];
+REMOVE_TEMPS(n$117,n$118); [line 157];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node221.html"><span class='visited'>I_221<span class='expansion'>node221 preds:220 succs:222 exn:57 Instructions
+n$119=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 157];
+n$120=*n$119.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 157];
+n$121=*n$120:class android.graphics.Paint *[_t$22] [line 157];
+n$122=*n$120[1]:class android.graphics.Paint * [line 157];
+*&amp;$irvar0:class android.graphics.Paint *=n$122 [line 157];
+REMOVE_TEMPS(n$119,n$120,n$121,n$122); [line 157];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node222.html"><span class='visited'>I_222<span class='expansion'>node222 preds:221 succs:223 exn:57 Instructions
+n$123=_fun_Integer Integer.valueOf(int)(-5921371:int ) [line 157];
+*&amp;$irvar2:class java.lang.Integer *=n$123 [line 157];
+REMOVE_TEMPS(n$123); [line 157];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node223.html"><span class='visited'>I_223<span class='expansion'>node223 preds:222 succs:224 exn:57 Instructions
+n$124=_fun_Integer Integer.valueOf(int)(-1710619:int ) [line 157];
+*&amp;$irvar3:class java.lang.Integer *=n$124 [line 157];
+REMOVE_TEMPS(n$124); [line 157];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node224.html"><span class='visited'>I_224<span class='expansion'>node224 preds:223 succs:225 exn:57 Instructions
+n$125=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 157];
+n$126=*n$125:class android.animation.ArgbEvaluator  [line 157];
+n$127=*&amp;progress:float  [line 157];
+n$128=*&amp;$irvar2:class java.lang.Integer * [line 157];
+n$129=*&amp;$irvar3:class java.lang.Integer * [line 157];
+n$130=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$125:class android.animation.ArgbEvaluator *,n$127:float ,n$128:class java.lang.Integer *,n$129:class java.lang.Integer *) virtual [line 157];
+*&amp;$irvar4:class java.lang.Object *=n$130 [line 157];
+REMOVE_TEMPS(n$125,n$126,n$127,n$128,n$129,n$130); [line 157];
+NULLIFY(&amp;$irvar1,false); [line 157];
+NULLIFY(&amp;$irvar2,false); [line 157];
+NULLIFY(&amp;$irvar3,false); [line 157];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node225.html"><span class='visited'>I_225<span class='expansion'>node225 preds:224 succs:226 exn:57 Instructions
+n$131=*&amp;$irvar4:class java.lang.Object * [line 157];
+n$132=_fun___cast(n$131:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 157];
+n$133=*n$132:class java.lang.Integer  [line 157];
+n$134=_fun_int Integer.intValue()(n$132:class java.lang.Integer *) virtual [line 157];
+*&amp;$irvar5:int =n$134 [line 157];
+REMOVE_TEMPS(n$131,n$132,n$133,n$134); [line 157];
+NULLIFY(&amp;$irvar4,false); [line 157];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node226.html"><span class='visited'>I_226<span class='expansion'>node226 preds:225 succs:227 exn:57 Instructions
+n$135=*&amp;$irvar0:class android.graphics.Paint * [line 157];
+n$136=*n$135:class android.graphics.Paint  [line 157];
+n$137=*&amp;$irvar5:int  [line 157];
+_fun_void Paint.setColor(int)(n$135:class android.graphics.Paint *,n$137:int ) virtual [line 157];
+REMOVE_TEMPS(n$135,n$136,n$137); [line 157];
+NULLIFY(&amp;$irvar0,false); [line 157];
+NULLIFY(&amp;$irvar5,false); [line 157];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setColor(int)</div></td></tr>
+<tr><td class="num" id="LINE158">158</td><td class="line">            circlePaints[2].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_4, COLOR_1)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node227.html"><span class='visited'>I_227<span class='expansion'>node227 preds:226 succs:228 exn:57 Instructions
+n$138=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 158];
+n$139=*n$138.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 158];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$139 [line 158];
+REMOVE_TEMPS(n$138,n$139); [line 158];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node228.html"><span class='visited'>I_228<span class='expansion'>node228 preds:227 succs:229 exn:57 Instructions
+n$140=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 158];
+n$141=*n$140.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 158];
+n$142=*n$141:class android.graphics.Paint *[_t$26] [line 158];
+n$143=*n$141[2]:class android.graphics.Paint * [line 158];
+*&amp;$irvar0:class android.graphics.Paint *=n$143 [line 158];
+REMOVE_TEMPS(n$140,n$141,n$142,n$143); [line 158];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node229.html"><span class='visited'>I_229<span class='expansion'>node229 preds:228 succs:230 exn:57 Instructions
+n$144=_fun_Integer Integer.valueOf(int)(-1710619:int ) [line 158];
+*&amp;$irvar2:class java.lang.Integer *=n$144 [line 158];
+REMOVE_TEMPS(n$144); [line 158];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node230.html"><span class='visited'>I_230<span class='expansion'>node230 preds:229 succs:231 exn:57 Instructions
+n$145=_fun_Integer Integer.valueOf(int)(-11842741:int ) [line 158];
+*&amp;$irvar3:class java.lang.Integer *=n$145 [line 158];
+REMOVE_TEMPS(n$145); [line 158];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node231.html"><span class='visited'>I_231<span class='expansion'>node231 preds:230 succs:232 exn:57 Instructions
+n$146=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 158];
+n$147=*n$146:class android.animation.ArgbEvaluator  [line 158];
+n$148=*&amp;progress:float  [line 158];
+n$149=*&amp;$irvar2:class java.lang.Integer * [line 158];
+n$150=*&amp;$irvar3:class java.lang.Integer * [line 158];
+n$151=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$146:class android.animation.ArgbEvaluator *,n$148:float ,n$149:class java.lang.Integer *,n$150:class java.lang.Integer *) virtual [line 158];
+*&amp;$irvar4:class java.lang.Object *=n$151 [line 158];
+REMOVE_TEMPS(n$146,n$147,n$148,n$149,n$150,n$151); [line 158];
+NULLIFY(&amp;$irvar1,false); [line 158];
+NULLIFY(&amp;$irvar2,false); [line 158];
+NULLIFY(&amp;$irvar3,false); [line 158];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node232.html"><span class='visited'>I_232<span class='expansion'>node232 preds:231 succs:233 exn:57 Instructions
+n$152=*&amp;$irvar4:class java.lang.Object * [line 158];
+n$153=_fun___cast(n$152:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 158];
+n$154=*n$153:class java.lang.Integer  [line 158];
+n$155=_fun_int Integer.intValue()(n$153:class java.lang.Integer *) virtual [line 158];
+*&amp;$irvar5:int =n$155 [line 158];
+REMOVE_TEMPS(n$152,n$153,n$154,n$155); [line 158];
+NULLIFY(&amp;$irvar4,false); [line 158];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node233.html"><span class='visited'>I_233<span class='expansion'>node233 preds:232 succs:234 exn:57 Instructions
+n$156=*&amp;$irvar0:class android.graphics.Paint * [line 158];
+n$157=*n$156:class android.graphics.Paint  [line 158];
+n$158=*&amp;$irvar5:int  [line 158];
+_fun_void Paint.setColor(int)(n$156:class android.graphics.Paint *,n$158:int ) virtual [line 158];
+REMOVE_TEMPS(n$156,n$157,n$158); [line 158];
+NULLIFY(&amp;$irvar0,false); [line 158];
+NULLIFY(&amp;$irvar5,false); [line 158];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setColor(int)</div></td></tr>
+<tr><td class="num" id="LINE159">159</td><td class="line">            circlePaints[3].setColor((Integer) argbEvaluator.evaluate(progress, COLOR_1, COLOR_2)); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node234.html"><span class='visited'>I_234<span class='expansion'>node234 preds:233 succs:235 exn:57 Instructions
+n$159=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 159];
+n$160=*n$159.com.karthik.imager.Recycler.DotsView.argbEvaluator:class com.karthik.imager.Recycler.DotsView  [line 159];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$160 [line 159];
+REMOVE_TEMPS(n$159,n$160); [line 159];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node235.html"><span class='visited'>I_235<span class='expansion'>node235 preds:234 succs:236 exn:57 Instructions
+n$161=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 159];
+n$162=*n$161.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 159];
+n$163=*n$162:class android.graphics.Paint *[_t$30] [line 159];
+n$164=*n$162[3]:class android.graphics.Paint * [line 159];
+*&amp;$irvar0:class android.graphics.Paint *=n$164 [line 159];
+REMOVE_TEMPS(n$161,n$162,n$163,n$164); [line 159];
+NULLIFY(&amp;this,false); [line 159];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node236.html"><span class='visited'>I_236<span class='expansion'>node236 preds:235 succs:237 exn:57 Instructions
+n$165=_fun_Integer Integer.valueOf(int)(-11842741:int ) [line 159];
+*&amp;$irvar2:class java.lang.Integer *=n$165 [line 159];
+REMOVE_TEMPS(n$165); [line 159];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node237.html"><span class='visited'>I_237<span class='expansion'>node237 preds:236 succs:238 exn:57 Instructions
+n$166=_fun_Integer Integer.valueOf(int)(-10132123:int ) [line 159];
+*&amp;$irvar3:class java.lang.Integer *=n$166 [line 159];
+REMOVE_TEMPS(n$166); [line 159];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node238.html"><span class='visited'>I_238<span class='expansion'>node238 preds:237 succs:239 exn:57 Instructions
+n$167=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 159];
+n$168=*n$167:class android.animation.ArgbEvaluator  [line 159];
+n$169=*&amp;progress:float  [line 159];
+n$170=*&amp;$irvar2:class java.lang.Integer * [line 159];
+n$171=*&amp;$irvar3:class java.lang.Integer * [line 159];
+n$172=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$167:class android.animation.ArgbEvaluator *,n$169:float ,n$170:class java.lang.Integer *,n$171:class java.lang.Integer *) virtual [line 159];
+*&amp;$irvar4:class java.lang.Object *=n$172 [line 159];
+REMOVE_TEMPS(n$167,n$168,n$169,n$170,n$171,n$172); [line 159];
+NULLIFY(&amp;$irvar1,false); [line 159];
+NULLIFY(&amp;$irvar2,false); [line 159];
+NULLIFY(&amp;$irvar3,false); [line 159];
+NULLIFY(&amp;progress,false); [line 159];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node239.html"><span class='visited'>I_239<span class='expansion'>node239 preds:238 succs:240 exn:57 Instructions
+n$173=*&amp;$irvar4:class java.lang.Object * [line 159];
+n$174=_fun___cast(n$173:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 159];
+n$175=*n$174:class java.lang.Integer  [line 159];
+n$176=_fun_int Integer.intValue()(n$174:class java.lang.Integer *) virtual [line 159];
+*&amp;$irvar5:int =n$176 [line 159];
+REMOVE_TEMPS(n$173,n$174,n$175,n$176); [line 159];
+NULLIFY(&amp;$irvar4,false); [line 159];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node240.html"><span class='visited'>I_240<span class='expansion'>node240 preds:239 succs:241 exn:57 Instructions
+n$177=*&amp;$irvar0:class android.graphics.Paint * [line 159];
+n$178=*n$177:class android.graphics.Paint  [line 159];
+n$179=*&amp;$irvar5:int  [line 159];
+_fun_void Paint.setColor(int)(n$177:class android.graphics.Paint *,n$179:int ) virtual [line 159];
+REMOVE_TEMPS(n$177,n$178,n$179); [line 159];
+NULLIFY(&amp;$irvar0,false); [line 159];
+NULLIFY(&amp;$irvar5,false); [line 159];
+APPLY_ABSTRACTION; [line 159];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setColor(int)</div></td></tr>
+<tr><td class="num" id="LINE160">160</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE161">161</td><td class="line">    } <span class='dangling'>E_56<span class='expansion'>node56 preds:241 57 succs: exn: Exit
+
+NOT VISITED</span></span> <span class='dangling'>I_57<span class='expansion'>node57 preds: succs:56 exn:56 Instructions
+NULLIFY(&amp;$irvar0,false); [line 161];
+NULLIFY(&amp;$irvar1,false); [line 161];
+NULLIFY(&amp;$irvar2,false); [line 161];
+NULLIFY(&amp;$irvar3,false); [line 161];
+NULLIFY(&amp;$irvar4,false); [line 161];
+NULLIFY(&amp;$irvar5,false); [line 161];
+NULLIFY(&amp;progress,false); [line 161];
+NULLIFY(&amp;this,false); [line 161];
+APPLY_ABSTRACTION; [line 161];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node241.html"><span class='visited'>I_241<span class='expansion'>node241 preds:240 209 succs:56 exn:57 Instructions
+APPLY_ABSTRACTION; [line 161];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE162">162</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE163">163</td><td class="line">    private void updateDotsAlpha() { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node46.html"><span class='visited'>S_46<span class='expansion'>node46 preds: succs:148 exn:47 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;progress,&amp;alpha); [line 163];
+NULLIFY(&amp;$irvar0,false); [line 163];
+NULLIFY(&amp;$irvar1,false); [line 163];
+NULLIFY(&amp;alpha,false); [line 163];
+NULLIFY(&amp;progress,false); [line 163];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.updateDotsAlpha():void.59fd45e16d7725b718355127f6eaf1a3.html">void DotsView.updateDotsAlpha(): 0 specs</a></td></tr>
+<tr><td class="num" id="LINE164">164</td><td class="line">        float progress = (float) Utils.clamp(currentProgress, 0.6f, 1f); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node148.html"><span class='visited'>I_148<span class='expansion'>node148 preds:46 succs:149 exn:48 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 164];
+n$1=*n$0.com.karthik.imager.Recycler.DotsView.currentProgress:class com.karthik.imager.Recycler.DotsView  [line 164];
+*&amp;$irvar0:double =(double )n$1 [line 164];
+REMOVE_TEMPS(n$0,n$1); [line 164];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node149.html"><span class='visited'>I_149<span class='expansion'>node149 preds:148 succs:150 exn:48 Instructions
+n$2=*&amp;$irvar0:double  [line 164];
+n$3=_fun_double Utils.clamp(double,double,double)(n$2:double ,0.600000:double ,1.000000:double ) [line 164];
+*&amp;$irvar1:double =n$3 [line 164];
+REMOVE_TEMPS(n$2,n$3); [line 164];
+NULLIFY(&amp;$irvar0,false); [line 164];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node150.html"><span class='visited'>I_150<span class='expansion'>node150 preds:149 succs:151 exn:48 Instructions
+n$4=*&amp;$irvar1:double  [line 164];
+*&amp;progress:float =(float )n$4 [line 164];
+REMOVE_TEMPS(n$4); [line 164];
+NULLIFY(&amp;$irvar1,false); [line 164];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE165">165</td><td class="line">        int alpha = (int) Utils.mapValueFromRangeToRange(progress, 0.6f, 1f, 255, 0); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node151.html"><span class='visited'>I_151<span class='expansion'>node151 preds:150 succs:152 exn:48 Instructions
+n$5=*&amp;progress:float  [line 165];
+n$6=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)((double )n$5:double ,0.600000:double ,1.000000:double ,255.000000:double ,0.000000:double ) [line 165];
+*&amp;$irvar0:double =n$6 [line 165];
+REMOVE_TEMPS(n$5,n$6); [line 165];
+NULLIFY(&amp;progress,false); [line 165];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node152.html"><span class='visited'>I_152<span class='expansion'>node152 preds:151 succs:153 exn:48 Instructions
+n$7=*&amp;$irvar0:double  [line 165];
+*&amp;alpha:int =(int )n$7 [line 165];
+REMOVE_TEMPS(n$7); [line 165];
+NULLIFY(&amp;$irvar0,false); [line 165];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE166">166</td><td class="line">        circlePaints[0].setAlpha(alpha); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node153.html"><span class='visited'>I_153<span class='expansion'>node153 preds:152 succs:154 exn:48 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 166];
+n$9=*n$8.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 166];
+n$10=*n$9:class android.graphics.Paint *[_t$3] [line 166];
+n$11=*n$9[0]:class android.graphics.Paint * [line 166];
+n$12=*n$11:class android.graphics.Paint  [line 166];
+n$13=*&amp;alpha:int  [line 166];
+_fun_void Paint.setAlpha(int)(n$11:class android.graphics.Paint *,n$13:int ) virtual [line 166];
+REMOVE_TEMPS(n$8,n$9,n$10,n$11,n$12,n$13); [line 166];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setAlpha(int)</div>
+<div class="msg" style="margin-left:9ex">Symexec_memory_error </div></td></tr>
+<tr><td class="num" id="LINE167">167</td><td class="line">        circlePaints[1].setAlpha(alpha); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node7.html"><span class='visitedproof'>S_7<span class='expansion'>node7 preds: succs:21 exn:8 Start
+DECLARE_LOCALS(&amp;return); [line 167];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node154.html"><span class='visited'>I_154<span class='expansion'>node154 preds:153 succs:155 exn:48 Instructions
+n$14=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 167];
+n$15=*n$14.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 167];
+n$16=*n$15:class android.graphics.Paint *[_t$7] [line 167];
+n$17=*n$15[1]:class android.graphics.Paint * [line 167];
+n$18=*n$17:class android.graphics.Paint  [line 167];
+n$19=*&amp;alpha:int  [line 167];
+_fun_void Paint.setAlpha(int)(n$17:class android.graphics.Paint *,n$19:int ) virtual [line 167];
+REMOVE_TEMPS(n$14,n$15,n$16,n$17,n$18,n$19); [line 167];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView$1.<init>(java.lang.Class,java.lang.String).94f7f12ae95ce3af8bc1131dfc016c15.html">DotsView$1.&lt;init&gt;(Class,String): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setAlpha(int)</div></td></tr>
+<tr><td class="num" id="LINE168">168</td><td class="line">        circlePaints[2].setAlpha(alpha); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node155.html"><span class='visited'>I_155<span class='expansion'>node155 preds:154 succs:156 exn:48 Instructions
+n$20=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 168];
+n$21=*n$20.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 168];
+n$22=*n$21:class android.graphics.Paint *[_t$11] [line 168];
+n$23=*n$21[2]:class android.graphics.Paint * [line 168];
+n$24=*n$23:class android.graphics.Paint  [line 168];
+n$25=*&amp;alpha:int  [line 168];
+_fun_void Paint.setAlpha(int)(n$23:class android.graphics.Paint *,n$25:int ) virtual [line 168];
+REMOVE_TEMPS(n$20,n$21,n$22,n$23,n$24,n$25); [line 168];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setAlpha(int)</div></td></tr>
+<tr><td class="num" id="LINE169">169</td><td class="line">        circlePaints[3].setAlpha(alpha); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node13.html"><span class='visitedproof'>S_13<span class='expansion'>node13 preds: succs:26 exn:14 Start
+DECLARE_LOCALS(&amp;return); [line 169];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node156.html"><span class='visited'>I_156<span class='expansion'>node156 preds:155 succs:157 exn:48 Instructions
+n$26=*&amp;this:class com.karthik.imager.Recycler.DotsView * [line 169];
+n$27=*n$26.com.karthik.imager.Recycler.DotsView.circlePaints:class com.karthik.imager.Recycler.DotsView  [line 169];
+n$28=*n$27:class android.graphics.Paint *[_t$15] [line 169];
+n$29=*n$27[3]:class android.graphics.Paint * [line 169];
+n$30=*n$29:class android.graphics.Paint  [line 169];
+n$31=*&amp;alpha:int  [line 169];
+_fun_void Paint.setAlpha(int)(n$29:class android.graphics.Paint *,n$31:int ) virtual [line 169];
+REMOVE_TEMPS(n$26,n$27,n$28,n$29,n$30,n$31); [line 169];
+NULLIFY(&amp;alpha,false); [line 169];
+NULLIFY(&amp;this,false); [line 169];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView$1.set(java.lang.Object,java.lang.Object):void.b0f70273d1075c103fa715feeb2715b9.html">void DotsView$1.set(Object,Object): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setAlpha(int)</div></td></tr>
+<tr><td class="num" id="LINE170">170</td><td class="line">    } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node47.html"><span class='visited'>E_47<span class='expansion'>node47 preds:157 48 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_48<span class='expansion'>node48 preds: succs:47 exn:47 Instructions
+NULLIFY(&amp;$irvar0,false); [line 170];
+NULLIFY(&amp;$irvar1,false); [line 170];
+NULLIFY(&amp;alpha,false); [line 170];
+NULLIFY(&amp;progress,false); [line 170];
+NULLIFY(&amp;this,false); [line 170];
+APPLY_ABSTRACTION; [line 170];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node157.html"><span class='visited'>I_157<span class='expansion'>node157 preds:156 succs:47 exn:48 Instructions
+APPLY_ABSTRACTION; [line 170];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE171">171</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE172">172</td><td class="line">    public static final Property&lt;DotsView, Float&gt; DOTS_PROGRESS = new Property&lt;DotsView, Float&gt;(Float.class, &quot;dotsProgress&quot;) { <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node28.html"><span class='visitedproof'>S_28<span class='expansion'>node28 preds: succs:76 exn:29 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 172];
+NULLIFY(&amp;$irvar0,false); [line 172];
+NULLIFY(&amp;field,false); [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node29.html"><span class='visitedproof'>E_29<span class='expansion'>node29 preds:78 30 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_30<span class='expansion'>node30 preds: succs:29 exn:29 Instructions
+NULLIFY(&amp;$irvar0,false); [line 172];
+APPLY_ABSTRACTION; [line 172];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node76.html"><span class='visitedproof'>I_76<span class='expansion'>node76 preds:28 succs:77 exn:30 Instructions
+n$0=_fun___new(sizeof(class com.karthik.imager.Recycler.DotsView$1 ):class com.karthik.imager.Recycler.DotsView$1 *) [line 172];
+_fun_DotsView$1.&lt;init&gt;(Class,String)(n$0:class com.karthik.imager.Recycler.DotsView$1 *,java.lang.Float:class java.lang.Class *,"dotsProgress":class java.lang.String *) [line 172];
+*&amp;$irvar0:class com.karthik.imager.Recycler.DotsView$1 *=n$0 [line 172];
+REMOVE_TEMPS(n$0); [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node77.html"><span class='visitedproof'>I_77<span class='expansion'>node77 preds:76 succs:78 exn:30 Instructions
+n$1=*&amp;$irvar0:class com.karthik.imager.Recycler.DotsView$1 * [line 172];
+*&amp;#GB$com.karthik.imager.Recycler.DotsView.com.karthik.imager.Recycler.DotsView.DOTS_PROGRESS:class com.karthik.imager.Recycler.DotsView =n$1 [line 172];
+REMOVE_TEMPS(n$1); [line 172];
+NULLIFY(&amp;$irvar0,false); [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node78.html"><span class='visitedproof'>I_78<span class='expansion'>node78 preds:77 succs:29 exn:30 Instructions
+APPLY_ABSTRACTION; [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node5.html"><span class='visitedproof'>E_5<span class='expansion'>node5 preds:20 6 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_6<span class='expansion'>node6 preds: succs:5 exn:5 Instructions
+NULLIFY(&amp;$irvar0,false); [line 172];
+APPLY_ABSTRACTION; [line 172];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node19.html"><span class='visitedproof'>I_19<span class='expansion'>node19 preds:4 succs:20 exn:6 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView$1 * [line 172];
+n$1=*n$0:class com.karthik.imager.Recycler.DotsView$1  [line 172];
+n$2=*&amp;$bcvar1:class java.lang.Object * [line 172];
+n$3=_fun___cast(n$2:class java.lang.Object *,sizeof(class com.karthik.imager.Recycler.DotsView ( sub )(cast)):void ) [line 172];
+n$4=_fun_Float DotsView$1.get(DotsView)(n$0:class com.karthik.imager.Recycler.DotsView$1 *,n$3:class com.karthik.imager.Recycler.DotsView *) virtual [line 172];
+*&amp;$irvar0:class java.lang.Float *=n$4 [line 172];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 172];
+NULLIFY(&amp;$bcvar1,false); [line 172];
+NULLIFY(&amp;this,false); [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node20.html"><span class='visitedproof'>I_20<span class='expansion'>node20 preds:19 succs:5 exn:6 Instructions
+n$5=*&amp;$irvar0:class java.lang.Float * [line 172];
+*&amp;return:class java.lang.Object *=n$5 [line 172];
+REMOVE_TEMPS(n$5); [line 172];
+NULLIFY(&amp;$irvar0,false); [line 172];
+APPLY_ABSTRACTION; [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node8.html"><span class='visitedproof'>E_8<span class='expansion'>node8 preds:22 9 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_9<span class='expansion'>node9 preds: succs:8 exn:8 Instructions
+APPLY_ABSTRACTION; [line 172];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node21.html"><span class='visitedproof'>I_21<span class='expansion'>node21 preds:7 succs:22 exn:9 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView$1 * [line 172];
+n$1=*&amp;x0:class java.lang.Class * [line 172];
+n$2=*&amp;x1:class java.lang.String * [line 172];
+_fun_Property.&lt;init&gt;(Class,String)(n$0:class com.karthik.imager.Recycler.DotsView$1 *,n$1:class java.lang.Class *,n$2:class java.lang.String *) [line 172];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 172];
+NULLIFY(&amp;this,false); [line 172];
+NULLIFY(&amp;x0,false); [line 172];
+NULLIFY(&amp;x1,false); [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node22.html"><span class='visitedproof'>I_22<span class='expansion'>node22 preds:21 succs:8 exn:9 Instructions
+APPLY_ABSTRACTION; [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node14.html"><span class='visitedproof'>E_14<span class='expansion'>node14 preds:27 15 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_15<span class='expansion'>node15 preds: succs:14 exn:14 Instructions
+APPLY_ABSTRACTION; [line 172];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node26.html"><span class='visitedproof'>I_26<span class='expansion'>node26 preds:13 succs:27 exn:15 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.DotsView$1 * [line 172];
+n$1=*n$0:class com.karthik.imager.Recycler.DotsView$1  [line 172];
+n$2=*&amp;$bcvar1:class java.lang.Object * [line 172];
+n$3=_fun___cast(n$2:class java.lang.Object *,sizeof(class com.karthik.imager.Recycler.DotsView ( sub )(cast)):void ) [line 172];
+n$4=*&amp;$bcvar2:class java.lang.Object * [line 172];
+n$5=_fun___cast(n$4:class java.lang.Object *,sizeof(class java.lang.Float ( sub )(cast)):void ) [line 172];
+_fun_void DotsView$1.set(DotsView,Float)(n$0:class com.karthik.imager.Recycler.DotsView$1 *,n$3:class com.karthik.imager.Recycler.DotsView *,n$5:class java.lang.Float *) virtual [line 172];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4,n$5); [line 172];
+NULLIFY(&amp;$bcvar1,false); [line 172];
+NULLIFY(&amp;$bcvar2,false); [line 172];
+NULLIFY(&amp;this,false); [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node27.html"><span class='visitedproof'>I_27<span class='expansion'>node27 preds:26 succs:14 exn:15 Instructions
+APPLY_ABSTRACTION; [line 172];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView.<clinit>():void.ae76d5e97d5301d1001f45ebba6668c3.html">void DotsView.&lt;clinit&gt;(): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Property.<init>(Class,String)</div></td></tr>
+<tr><td class="num" id="LINE173">173</td><td class="line">        @Override</td></tr>
+<tr><td class="num" id="LINE174">174</td><td class="line">        public Float get(DotsView object) {</td></tr>
+<tr><td class="num" id="LINE175">175</td><td class="line">            return object.getCurrentProgress(); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node1.html"><span class='visitedproof'>S_1<span class='expansion'>node1 preds: succs:16 exn:2 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1); [line 175];
+NULLIFY(&amp;$irvar0,false); [line 175];
+NULLIFY(&amp;$irvar1,false); [line 175];
+NULLIFY(&amp;this,false); [line 175];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node2.html"><span class='visitedproof'>E_2<span class='expansion'>node2 preds:18 3 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_3<span class='expansion'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar0,false); [line 175];
+NULLIFY(&amp;$irvar1,false); [line 175];
+APPLY_ABSTRACTION; [line 175];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node16.html"><span class='visitedproof'>I_16<span class='expansion'>node16 preds:1 succs:17 exn:3 Instructions
+n$0=*&amp;object:class com.karthik.imager.Recycler.DotsView * [line 175];
+n$1=*n$0:class com.karthik.imager.Recycler.DotsView  [line 175];
+n$2=_fun_float DotsView.getCurrentProgress()(n$0:class com.karthik.imager.Recycler.DotsView *) virtual [line 175];
+*&amp;$irvar0:float =n$2 [line 175];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 175];
+NULLIFY(&amp;object,false); [line 175];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node17.html"><span class='visitedproof'>I_17<span class='expansion'>node17 preds:16 succs:18 exn:3 Instructions
+n$3=*&amp;$irvar0:float  [line 175];
+n$4=_fun_Float Float.valueOf(float)(n$3:float ) [line 175];
+*&amp;$irvar1:class java.lang.Float *=n$4 [line 175];
+REMOVE_TEMPS(n$3,n$4); [line 175];
+NULLIFY(&amp;$irvar0,false); [line 175];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node18.html"><span class='visitedproof'>I_18<span class='expansion'>node18 preds:17 succs:2 exn:3 Instructions
+n$5=*&amp;$irvar1:class java.lang.Float * [line 175];
+*&amp;return:class java.lang.Float *=n$5 [line 175];
+REMOVE_TEMPS(n$5); [line 175];
+NULLIFY(&amp;$irvar1,false); [line 175];
+APPLY_ABSTRACTION; [line 175];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView$1.get(com.karthik.imager.Recycler.DotsView):java.lang.Float.071b2c8bf4863ea62f569f51b9fad3c2.html">Float DotsView$1.get(DotsView): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Float Float.valueOf(float)</div></td></tr>
+<tr><td class="num" id="LINE176">176</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE177">177</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE178">178</td><td class="line">        @Override</td></tr>
+<tr><td class="num" id="LINE179">179</td><td class="line">        public void set(DotsView object, Float value) {</td></tr>
+<tr><td class="num" id="LINE180">180</td><td class="line">            object.setCurrentProgress(value); <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node10.html"><span class='visitedproof'>S_10<span class='expansion'>node10 preds: succs:23 exn:11 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 180];
+NULLIFY(&amp;$irvar0,false); [line 180];
+NULLIFY(&amp;this,false); [line 180];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node23.html"><span class='visitedproof'>I_23<span class='expansion'>node23 preds:10 succs:24 exn:12 Instructions
+n$0=*&amp;value:class java.lang.Float * [line 180];
+n$1=*n$0:class java.lang.Float  [line 180];
+n$2=_fun_float Float.floatValue()(n$0:class java.lang.Float *) virtual [line 180];
+*&amp;$irvar0:float =n$2 [line 180];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 180];
+NULLIFY(&amp;value,false); [line 180];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node24.html"><span class='visitedproof'>I_24<span class='expansion'>node24 preds:23 succs:25 exn:12 Instructions
+n$3=*&amp;object:class com.karthik.imager.Recycler.DotsView * [line 180];
+n$4=*n$3:class com.karthik.imager.Recycler.DotsView  [line 180];
+n$5=*&amp;$irvar0:float  [line 180];
+_fun_void DotsView.setCurrentProgress(float)(n$3:class com.karthik.imager.Recycler.DotsView *,n$5:float ) virtual [line 180];
+REMOVE_TEMPS(n$3,n$4,n$5); [line 180];
+NULLIFY(&amp;$irvar0,false); [line 180];
+NULLIFY(&amp;object,false); [line 180];
+</span></span></a> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/com.karthik.imager.Recycler.DotsView$1.set(com.karthik.imager.Recycler.DotsView,java.lang.Float):voi.772cea99a587a1d434049907de372f5f.html">void DotsView$1.set(DotsView,Float): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION float Float.floatValue()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void DotsView.setCurrentProgress(float)</div></td></tr>
+<tr><td class="num" id="LINE181">181</td><td class="line">        } <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node11.html"><span class='visitedproof'>E_11<span class='expansion'>node11 preds:25 12 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_12<span class='expansion'>node12 preds: succs:11 exn:11 Instructions
+NULLIFY(&amp;$irvar0,false); [line 181];
+NULLIFY(&amp;object,false); [line 181];
+APPLY_ABSTRACTION; [line 181];
+
+NOT VISITED</span></span> <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node25.html"><span class='visitedproof'>I_25<span class='expansion'>node25 preds:24 succs:11 exn:12 Instructions
+APPLY_ABSTRACTION; [line 181];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE182">182</td><td class="line">    };</td></tr>
+<tr><td class="num" id="LINE183">183</td><td class="line">}</td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<br>Symexec_memory_error   <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node130.html#session119">node130#session119</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE65">65</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node153.html#session19">node153#session19</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE166">166</a>)<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION float Float.floatValue()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node23.html#session2">node23#session2</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE180">180</a>)<br>SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node145.html#session14">node145#session14</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE89">89</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node288.html#session14">node288#session14</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE97">97</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node242.html#session2">node242#session2</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE48">48</a>)<br>SKIP_FUNCTION void DotsView.setCurrentProgress(float)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node24.html#session3">node24#session3</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE180">180</a>)<br>SKIP_FUNCTION void Paint.setColor(int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node188.html#session45">node188#session45</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE150">150</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node195.html#session52">node195#session52</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE151">151</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node219.html#session12">node219#session12</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE156">156</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node226.html#session19">node226#session19</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE157">157</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node233.html#session26">node233#session26</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE158">158</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node240.html#session33">node240#session33</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE159">159</a>)<br>SKIP_FUNCTION void DotsView.updateDotsPaints()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node295.html#session5">node295#session5</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE106">106</a>)<br>SKIP_FUNCTION Paint.<init>()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node127.html#session8">node127#session8</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE64">64</a>)<br>SKIP_FUNCTION ArgbEvaluator.<init>()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node87.html#session10">node87#session10</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE40">40</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node79.html#session2">node79#session2</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE53">53</a>)<br>SKIP_FUNCTION void View.onSizeChanged(int,int,int,int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node170.html#session2">node170#session2</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE71">71</a>)<br>SKIP_FUNCTION void Paint.setStyle(Paint$Style)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node130.html#session11">node130#session11</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE65">65</a>)<br>SKIP_FUNCTION void Paint.setAlpha(int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node153.html#session7">node153#session7</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE166">166</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node154.html#session8">node154#session8</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE167">167</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node155.html#session9">node155#session9</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE168">168</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node156.html#session10">node156#session10</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE169">169</a>)<br>SKIP_FUNCTION void DotsView.drawInnerDotsFrame(Canvas)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node300.html#session3">node300#session3</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE82">82</a>)<br>SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node186.html#session43">node186#session43</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE150">150</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node193.html#session50">node193#session50</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE151">151</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node217.html#session10">node217#session10</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE156">156</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node224.html#session17">node224#session17</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE157">157</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node231.html#session24">node231#session24</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE158">158</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node238.html#session31">node238#session31</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE159">159</a>)<br>SKIP_FUNCTION void DotsView.updateDotsAlpha()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node296.html#session6">node296#session6</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE107">107</a>)<br>SKIP_FUNCTION Float Float.valueOf(float)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node17.html#session3">node17#session3</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE175">175</a>)<br>SKIP_FUNCTION View.<init>(Context)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node110.html#session2">node110#session2</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE43">43</a>)<br>SKIP_FUNCTION double Math.cos(double)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node139.html#session8">node139#session8</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE87">87</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node282.html#session8">node282#session8</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE95">95</a>)<br>SKIP_FUNCTION void View.postInvalidate()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node297.html#session7">node297#session7</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE109">109</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int,int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node158.html#session2">node158#session2</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE58">58</a>)<br>SKIP_FUNCTION Property.<init>(Class,String)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node21.html#session2">node21#session2</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE172">172</a>)<br>SKIP_FUNCTION double Math.sin(double)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node143.html#session12">node143#session12</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE88">88</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node286.html#session12">node286#session12</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE96">96</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION void DotsView.setCurrentProgress(float)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node24.html#session8">node24#session8</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE180">180</a>)<br>SKIP_FUNCTION void View.postInvalidate()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node297.html#session16">node297#session16</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE109">109</a>)<br>SKIP_FUNCTION void DotsView.updateDotsPaints()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node295.html#session14">node295#session14</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE106">106</a>)<br>SKIP_FUNCTION Property.<init>(Class,String)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node21.html#session6">node21#session6</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE172">172</a>)<br>SKIP_FUNCTION double Math.cos(double)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node139.html#session65">node139#session65</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE87">87</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node282.html#session65">node282#session65</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE95">95</a>)<br>SKIP_FUNCTION Float Float.valueOf(float)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node17.html#session8">node17#session8</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE175">175</a>)<br>SKIP_FUNCTION void DotsView.updateDotsAlpha()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node296.html#session15">node296#session15</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE107">107</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node242.html#session16">node242#session16</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE48">48</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int,int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node158.html#session16">node158#session16</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE58">58</a>)<br>SKIP_FUNCTION float Float.floatValue()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node23.html#session7">node23#session7</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE180">180</a>)<br>SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node145.html#session71">node145#session71</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE89">89</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node288.html#session71">node288#session71</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE97">97</a>)<br>SKIP_FUNCTION Paint.<init>()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node127.html#session62">node127#session62</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE64">64</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node79.html#session16">node79#session16</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE53">53</a>)<br>SKIP_FUNCTION void Paint.setStyle(Paint$Style)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node130.html#session65">node130#session65</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE65">65</a>)<br>SKIP_FUNCTION void View.onSizeChanged(int,int,int,int)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node170.html#session11">node170#session11</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE71">71</a>)<br>SKIP_FUNCTION void DotsView.drawInnerDotsFrame(Canvas)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node300.html#session8">node300#session8</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE82">82</a>)<br>SKIP_FUNCTION View.<init>(Context)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node110.html#session16">node110#session16</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE43">43</a>)<br>SKIP_FUNCTION ArgbEvaluator.<init>()  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node87.html#session24">node87#session24</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE40">40</a>)<br>SKIP_FUNCTION double Math.sin(double)  <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node143.html#session69">node143#session69</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE88">88</a>) <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/nodes/node286.html#session69">node286#session69</a>( <a href="./DotsView.java.47641df395b5347ee3507ca82f352fdd/../DotsView.java.47641df395b5347ee3507ca82f352fdd.html#LINE96">96</a>)</body>
+</html>

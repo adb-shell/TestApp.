@@ -1,0 +1,44 @@
+digraph iCFG {
+10 [label="10:  method_body \n   APPLY_ABSTRACTION; [line 14]\n " shape="box"]
+	
+
+	 10 -> 5 ;
+	 10 -> 6 [color="red" ];
+9 [label="9:  Call void Assert.assertEquals(long,long) \n   _fun_void Assert.assertEquals(long,long)(4:long ,4:long ) [line 13]\n " shape="box"]
+	
+
+	 9 -> 10 ;
+	 9 -> 6 [color="red" ];
+8 [label="8:  method_body \n   APPLY_ABSTRACTION; [line 10]\n " shape="box"]
+	
+
+	 8 -> 2 ;
+	 8 -> 3 [color="red" ];
+7 [label="7:  Call Object.<init>() \n   n$0=*&this:class com.karthik.imager.ExampleUnitTest * [line 10]\n  _fun_Object.<init>()(n$0:class com.karthik.imager.ExampleUnitTest *) [line 10]\n  REMOVE_TEMPS(n$0); [line 10]\n  NULLIFY(&this,false); [line 10]\n " shape="box"]
+	
+
+	 7 -> 8 ;
+	 7 -> 3 [color="red" ];
+6 [label="6:  exceptions sink \n   APPLY_ABSTRACTION; [line 14]\n " shape="box"]
+	
+
+	 6 -> 5 ;
+5 [label="5: Exit void ExampleUnitTest.addition_isCorrect() \n  " color=yellow style=filled]
+	
+
+4 [label="4: Start void ExampleUnitTest.addition_isCorrect()\nFormals:  this:class com.karthik.imager.ExampleUnitTest *\nLocals:  \n   DECLARE_LOCALS(&return); [line 12]\n  NULLIFY(&this,false); [line 12]\n " color=yellow style=filled]
+	
+
+	 4 -> 9 ;
+3 [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 10]\n " shape="box"]
+	
+
+	 3 -> 2 ;
+2 [label="2: Exit ExampleUnitTest.<init>() \n  " color=yellow style=filled]
+	
+
+1 [label="1: Start ExampleUnitTest.<init>()\nFormals:  this:class com.karthik.imager.ExampleUnitTest *\nLocals:  \n   DECLARE_LOCALS(&return); [line 10]\n " color=yellow style=filled]
+	
+
+	 1 -> 7 ;
+}

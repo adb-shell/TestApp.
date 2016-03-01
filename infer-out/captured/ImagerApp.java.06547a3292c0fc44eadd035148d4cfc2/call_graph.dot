@@ -1,0 +1,31 @@
+digraph {
+"android.app.Application.<init>().95a845270cbde675e44250903f404e23" [shape=box,label="Application.<init>() | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.karthik.imager.ImagerApp.<init>().230f4a871a29f9957d6a1012542567cc" [shape=box,label="ImagerApp.<init>() | calls=0 1 | specs=-1)",color=green,shape=box]
+"okhttp3.OkHttpClient$Builder.<init>().d1655baf7cbfe409c6b9f3d27a8962fc" [shape=box,label="OkHttpClient$Builder.<init>() | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.facebook.stetho.okhttp3.StethoInterceptor.<init>().b7de5fe9b46d4636aa3243cf3c2360d0" [shape=box,label="StethoInterceptor.<init>() | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder.17bbfbdcf57877187d22fc506eba85ac" [shape=box,label="OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient.7154654c5a7ad0d591db995db0223e33" [shape=box,label="OkHttpClient OkHttpClient$Builder.build() | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer.21475b116934b052ebe5ab2daa0310f5" [shape=box,label="Stetho$Initializer Stetho$InitializerBuilder.build() | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.1465e982c9b40a38205c36e6d5759fac" [shape=box,label="DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.ste.3e584b64abc9ff3ed674e7b5895da19f" [shape=box,label="InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvide.c88170ab790387c301ef5229e085483f" [shape=box,label="Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorMod.da66e1c1f234ed7e09b73d7cbb361401" [shape=box,label="Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.karthik.imager.ImagerApp.getOkHttpInstance():okhttp3.OkHttpClient.7b7c112244cf11d1aa30906c22574769" [shape=box,label="OkHttpClient ImagerApp.getOkHttpInstance() | calls=0 4 | specs=-1)",color=green,shape=box]
+"com.facebook.stetho.Stetho.initialize(com.facebook.stetho.Stetho$Initializer):void.449b8d9862bf77ccbb835f5c5de77b0c" [shape=box,label="void Stetho.initialize(Stetho$Initializer) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho.25ce3a51bdceb11750ed3ec4c22bfb9d" [shape=box,label="Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"android.app.Application.onCreate():void.2541c5523741ab49500b1566dd287fb4" [shape=box,label="void Application.onCreate() | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" [shape=box,label="void ImagerApp.onCreate() | calls=0 8 | specs=-1)",color=green,shape=box]
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "android.app.Application.onCreate():void.2541c5523741ab49500b1566dd287fb4"
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho.25ce3a51bdceb11750ed3ec4c22bfb9d"
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "com.facebook.stetho.Stetho.initialize(com.facebook.stetho.Stetho$Initializer):void.449b8d9862bf77ccbb835f5c5de77b0c"
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorMod.da66e1c1f234ed7e09b73d7cbb361401"
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvide.c88170ab790387c301ef5229e085483f"
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.ste.3e584b64abc9ff3ed674e7b5895da19f"
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.1465e982c9b40a38205c36e6d5759fac"
+"com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077" -> "com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer.21475b116934b052ebe5ab2daa0310f5"
+"com.karthik.imager.ImagerApp.getOkHttpInstance():okhttp3.OkHttpClient.7b7c112244cf11d1aa30906c22574769" -> "okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient.7154654c5a7ad0d591db995db0223e33"
+"com.karthik.imager.ImagerApp.getOkHttpInstance():okhttp3.OkHttpClient.7b7c112244cf11d1aa30906c22574769" -> "okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder.17bbfbdcf57877187d22fc506eba85ac"
+"com.karthik.imager.ImagerApp.getOkHttpInstance():okhttp3.OkHttpClient.7b7c112244cf11d1aa30906c22574769" -> "com.facebook.stetho.okhttp3.StethoInterceptor.<init>().b7de5fe9b46d4636aa3243cf3c2360d0"
+"com.karthik.imager.ImagerApp.getOkHttpInstance():okhttp3.OkHttpClient.7b7c112244cf11d1aa30906c22574769" -> "okhttp3.OkHttpClient$Builder.<init>().d1655baf7cbfe409c6b9f3d27a8962fc"
+"com.karthik.imager.ImagerApp.<init>().230f4a871a29f9957d6a1012542567cc" -> "android.app.Application.<init>().95a845270cbde675e44250903f404e23"
+}

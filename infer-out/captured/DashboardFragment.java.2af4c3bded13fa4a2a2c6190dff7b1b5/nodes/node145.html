@@ -1,0 +1,625 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node145</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE253">145</a></h1></center>PROC:  <a href="./../com.karthik.imager.Fragments.DashboardFragment.getBestPossibleImage(com.karthik.imager.APIService.Un.37618fd074dc079ae6e2754c20d00b30.html">String DashboardFragment.getBestPossibleImage(Photos)</a> LINE: <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE253">253</a>
+<br>PREDS:
+ <a href="./../nodes/node79.html"><span class='visited'>N_79<span class='expansion'>node79 preds: succs:145 146 exn:80 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_147<span class='expansion'>node147 preds:145 succs:149 exn:81 
+NOT VISITED</span></span> <span class='dangling'>N_148<span class='expansion'>node148 preds:145 succs:150 exn:81 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_81<span class='expansion'>node81 preds: succs:80 exn:80 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253];
+                          n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253];
+                          n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253];
+                          PRUNE(!(n$2 != null), true); [line 253];
+                          REMOVE_TEMPS(n$0,n$1,n$2); [line 253];
+                          </span><hr width="100%">
+ <a name="session4"href="./../nodes/node145.html#session4">node145#session4</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE253">253</a>)<LISTING><span class='color_black'>**** [FP:0] String DashboardFragment.getBestPossibleImage(Photos) Node: 145, Procedure: String DashboardFragment.getBestPossibleImage(Photos), Session: 4, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+  <span class='color_red'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+  <span class='color_red'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span>
+  [footprint
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+     <span class='color_red'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253];
+  n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253];
+  n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253];
+  PRUNE(!(n$2 != null), true); [line 253];
+  REMOVE_TEMPS(n$0,n$1,n$2); [line 253];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;photo
+    Prop: 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$19 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;photo
+    prop before:
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$19 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$19 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$0 = photo</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: @f$1.com.karthik.imager.APIService.Unsplash.Model.Photos.urls
+    Prop: 
+    <span class='color_blue'>n$0 = photo ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$20 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$1|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = photo</span> ;  <span class='color_red'>n$1 = @f$2</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+       <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: @f$2.com.karthik.imager.APIService.Unsplash.Model.Urls.small
+    Prop: 
+    <span class='color_blue'>n$0 = photo ;  n$1 = @f$2 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$21 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+       photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:@f$3 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = photo</span> ;  <span class='color_blue'>n$1 = @f$2</span> ;  <span class='color_red'>n$2 = @f$3</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_red'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:@f$3 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+       <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+       <span class='color_red'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:@f$3 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>PRUNE(!(n$2 != null), true); [line 253]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$3 = null</span> ;  <span class='color_blue'>n$0 = photo</span> ;  <span class='color_blue'>n$1 = @f$2</span> ;  <span class='color_blue'>n$2 = <span class='color_red'>null</span></span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:<span class='color_red'>null <span class='color_orange'>rearrange:(z)253</span></span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$3 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+       <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:<span class='color_red'>null <span class='color_orange'>rearrange:(z)253</span></span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$0,n$1,n$2); [line 253]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+       <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$3 = null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_red'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$3 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>photo = @f$1 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+       <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:@f$2 <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+       <span class='color_red'>@f$2|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>rearrange:(z)253</span>} <span class='color_orange'>rearrange:(z)253</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session13"href="./../nodes/node145.html#session13">node145#session13</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE253">253</a>)<LISTING><span class='color_black'>**** [RE:0] String DashboardFragment.getBestPossibleImage(Photos) Node: 145, Procedure: String DashboardFragment.getBestPossibleImage(Photos), Session: 13, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>val$4 != null</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+  <span class='color_red'>old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+  <span class='color_red'>photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+  <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+  <span class='color_red'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253];
+  n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253];
+  n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253];
+  PRUNE(!(n$2 != null), true); [line 253];
+  REMOVE_TEMPS(n$0,n$1,n$2); [line 253];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;photo
+    Prop: 
+    <span class='color_blue'>val$4 != null ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$19 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = photo</span> ;
+    <span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls
+    Prop: 
+    <span class='color_blue'>val$2 = photo ;
+    val$4 != null ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$20 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = photo</span> ;  <span class='color_red'>val$3 = n$1</span> ;
+    <span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:<span class='color_red'>n$1 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_red'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small
+    Prop: 
+    <span class='color_blue'>val$2 = photo ;  val$3 = n$1 ;
+    val$4 != null ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$21 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = photo</span> ;  <span class='color_blue'>val$3 = n$1</span> ;  <span class='color_blue'>val$4 = n$2</span> ;
+    <span class='color_red'>n$2 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.small:<span class='color_red'>n$2 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>PRUNE(!(n$2 != null), true); [line 253]</span>
+    Instruction Returns
+    
+    .... After Symbolic Execution ....
+    
+    
+    
+  <hr width="100%">
+ <a name="session17"href="./../nodes/node145.html#session17">node145#session17</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE253">253</a>)<LISTING><span class='color_black'>**** [RE:0] String DashboardFragment.getBestPossibleImage(Photos) Node: 145, Procedure: String DashboardFragment.getBestPossibleImage(Photos), Session: 17, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>val$4 != null</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+  <span class='color_red'>old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+  <span class='color_red'>photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+  <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+  <span class='color_red'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253];
+  n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253];
+  n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253];
+  PRUNE(!(n$2 != null), true); [line 253];
+  REMOVE_TEMPS(n$0,n$1,n$2); [line 253];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;photo
+    Prop: 
+    <span class='color_blue'>val$4 != null ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = photo</span> ;
+    <span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls
+    Prop: 
+    <span class='color_blue'>val$2 = photo ;
+    val$4 != null ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = photo</span> ;  <span class='color_red'>val$3 = n$1</span> ;
+    <span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:<span class='color_red'>n$1 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_red'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small
+    Prop: 
+    <span class='color_blue'>val$2 = photo ;  val$3 = n$1 ;
+    val$4 != null ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$2 = null</span> ;  <span class='color_blue'>val$2 = photo</span> ;  <span class='color_blue'>val$3 = n$1</span> ;
+    <span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>PRUNE(!(n$2 != null), true); [line 253]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = null</span> ;  <span class='color_blue'>val$2 = photo</span> ;  <span class='color_blue'>val$3 = n$1</span> ;
+    <span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$0,n$1,n$2); [line 253]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_red'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.regular:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session24"href="./../nodes/node145.html#session24">node145#session24</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE253">253</a>)<LISTING><span class='color_black'>**** [RE:0] String DashboardFragment.getBestPossibleImage(Photos) Node: 145, Procedure: String DashboardFragment.getBestPossibleImage(Photos), Session: 24, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+  <span class='color_red'>old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+  <span class='color_red'>photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+  <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+  <span class='color_red'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253];
+  n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253];
+  n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253];
+  PRUNE(!(n$2 != null), true); [line 253];
+  REMOVE_TEMPS(n$0,n$1,n$2); [line 253];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;photo
+    Prop: 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$47 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = photo</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls
+    Prop: 
+    <span class='color_blue'>val$2 = photo ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$48 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = photo</span> ;  <span class='color_red'>val$3 = n$1</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:<span class='color_red'>n$1 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_red'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253]</span>
+    .... Rearrangement Start ....
+    Exp: n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small
+    Prop: 
+    <span class='color_blue'>val$2 = photo ;  val$3 = n$1 ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$49 <span class='color_orange'>initial</span>:class java.lang.String * ; 
+    old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ; 
+    photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub ) ;
+    photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub ) ; 
+    n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$2 = null</span> ;  <span class='color_blue'>val$2 = photo</span> ;  <span class='color_blue'>val$3 = n$1</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>PRUNE(!(n$2 != null), true); [line 253]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = null</span> ;  <span class='color_blue'>val$2 = photo</span> ;  <span class='color_blue'>val$3 = n$1</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$0,n$1,n$2); [line 253]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_red'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_red'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.String *</span> ; 
+    <span class='color_blue'>old_photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ; 
+    <span class='color_blue'>photo = val$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos *( sub )</span> ;
+    <span class='color_blue'>photo|->{com.karthik.imager.APIService.Unsplash.Model.Photos.urls:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{com.karthik.imager.APIService.Unsplash.Model.Urls.full:val$4 <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.regular:null <span class='color_orange'>formal</span>, com.karthik.imager.APIService.Unsplash.Model.Urls.small:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.Unsplash.Model.Urls ( sub )</span></span>
+    
+    
+    
+  

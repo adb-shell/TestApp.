@@ -1,0 +1,1482 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node103</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">103</a></h1></center>PROC:  <a href="./../com.karthik.imager.Recycler.CircleView.updateCircleColor():void.38269750035cd65a689962420fc395a6.html">void CircleView.updateCircleColor()</a> LINE: <a href="./../../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">94</a>
+<br>PREDS:
+ <a href="./../nodes/node102.html"><span class='visited'>N_102<span class='expansion'>node102 preds:101 succs:103 exn:39 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_104<span class='expansion'>node104 preds:103 succs:105 exn:39 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_39<span class='expansion'>node39 preds: succs:38 exn:38 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$14=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 94];
+                          n$15=*n$14:class android.animation.ArgbEvaluator  [line 94];
+                          n$16=*&amp;colorProgress:float  [line 94];
+                          n$17=*&amp;$irvar2:class java.lang.Integer * [line 94];
+                          n$18=*&amp;$irvar3:class java.lang.Integer * [line 94];
+                          n$19=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$14:class android.animation.ArgbEvaluator *,n$16:float ,n$17:class java.lang.Integer *,n$18:class java.lang.Integer *) virtual [line 94];
+                          *&amp;$irvar4:class java.lang.Object *=n$19 [line 94];
+                          REMOVE_TEMPS(n$14,n$15,n$16,n$17,n$18,n$19); [line 94];
+                          NULLIFY(&amp;$irvar1,false); [line 94];
+                          NULLIFY(&amp;$irvar2,false); [line 94];
+                          NULLIFY(&amp;$irvar3,false); [line 94];
+                          NULLIFY(&amp;colorProgress,false); [line 94];
+                          </span><hr width="100%">
+ <a name="session11"href="./../nodes/node103.html#session11">node103#session11</a>( <a href="./../../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">94</a>)<LISTING><span class='color_black'>**** [FP:0] void CircleView.updateCircleColor() Node: 103, Procedure: void CircleView.updateCircleColor(), Session: 11, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+  <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+  <span class='color_red'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+  [footprint
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+     <span class='color_red'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$14=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 94];
+  n$15=*n$14:class android.animation.ArgbEvaluator  [line 94];
+  n$16=*&amp;colorProgress:float  [line 94];
+  n$17=*&amp;$irvar2:class java.lang.Integer * [line 94];
+  n$18=*&amp;$irvar3:class java.lang.Integer * [line 94];
+  n$19=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$14:class android.animation.ArgbEvaluator *,n$16:float ,n$17:class java.lang.Integer *,n$18:class java.lang.Integer *) virtual [line 94];
+  *&amp;$irvar4:class java.lang.Object *=n$19 [line 94];
+  REMOVE_TEMPS(n$14,n$15,n$16,n$17,n$18,n$19); [line 94];
+  NULLIFY(&amp;$irvar1,false); [line 94];
+  NULLIFY(&amp;$irvar2,false); [line 94];
+  NULLIFY(&amp;$irvar3,false); [line 94];
+  NULLIFY(&amp;colorProgress,false); [line 94];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$14=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 94]</span>
+    in vpath_find exp:n$55
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$55
+    in vpath_find exp:n$54
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$54
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(n$56) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$52 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$53 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$54 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$55 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar1
+    prop before:
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(n$56) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$52 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$53 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$54 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$55 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(n$56)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = n$52 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$53 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$54 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$55 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$14 = $irvar1</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$15=*n$14:class android.animation.ArgbEvaluator  [line 94]</span>
+    in vpath_find exp:n$60
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$60
+    in vpath_find exp:n$59
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$59
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>n$14 = $irvar1 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$61) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$57 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$58 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$59 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$60 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_red'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$16=*&amp;colorProgress:float  [line 94]</span>
+    in vpath_find exp:n$65
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$65
+    in vpath_find exp:n$64
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$64
+    .... Rearrangement Start ....
+    Exp: &amp;colorProgress
+    Prop: 
+    <span class='color_blue'>n$14 = $irvar1 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$66) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$62 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$63 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$64 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$65 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;colorProgress
+    prop before:
+    <span class='color_blue'>n$14 = $irvar1 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$66) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$62 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$63 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$64 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$65 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(n$66)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = n$62 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$63 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$64 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$65 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>n$16 <span class='color_orange'>update:93</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>_t$1 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>_t$2 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:<span class='color_red'>-8421505 <span class='color_orange'>update:(z)94</span></span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$17=*&amp;$irvar2:class java.lang.Integer * [line 94]</span>
+    in vpath_find exp:n$69
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$69
+    in vpath_find exp:n$68
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$68
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>n$14 = $irvar1 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$70) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$67 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$68 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$69 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar2
+    prop before:
+    <span class='color_blue'>n$14 = $irvar1 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$70) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$67 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$68 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$69 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(n$70)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = n$67 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$68 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$69 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$17 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$18=*&amp;$irvar3:class java.lang.Integer * [line 94]</span>
+    in vpath_find exp:n$72
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$72
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar3
+    Prop: 
+    <span class='color_blue'>n$14 = $irvar1 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$73) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$71 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$72 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$17 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar3
+    prop before:
+    <span class='color_blue'>n$14 = $irvar1 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$73) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$71 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$72 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$17 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(n$73)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = n$71 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$72 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$1)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>n$18 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$19=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$14:class android.animation.ArgbEvaluator *,n$16:float ,n$17:class java.lang.Integer *,n$18:class java.lang.Integer *) virtual [line 94]</span>
+    in vpath_find exp:n$18
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$18
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    <span class='color_blue'>INFO: SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</span>
+    Undefined function Object ArgbEvaluator.evaluate(float,Object,Object), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$19 = @f$36
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;  <span class='color_red'>n$19 = @f$4</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$1)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$18 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_red'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar4:class java.lang.Object *=n$19 [line 94]</span>
+    in vpath_find exp:n$18
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$18
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar4
+    Prop: 
+    <span class='color_blue'>n$14 = $irvar1 ;  n$19 = @f$4 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$77) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$4 != 0 ;  UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$76 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$18 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$17 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+       $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar4
+    prop before:
+    <span class='color_blue'>n$14 = $irvar1 ;  n$19 = @f$4 ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$77) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  @f$4 != 0 ;  UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$76 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$18 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$17 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = @f$1 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+       $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+       $irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;  <span class='color_blue'>n$19 = @f$4</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(n$77)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = n$76 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$18 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = $irvar1</span> ;  <span class='color_blue'>n$19 = $irvar4</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$1)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>$irvar4 != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>@f$4 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$18 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$14,n$15,n$16,n$17,n$18,n$19); [line 94]</span>
+    in vpath_find exp:n$18
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$18
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$irvar4 != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>_t$1 <span class='color_orange'>update:93</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = @f$4 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>_t$2 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>_t$3 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_red'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>$irvar1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 94]</span>
+    in vpath_find exp:_t$3
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$2
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find _t$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$irvar4 != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = @f$4 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 94]</span>
+    in vpath_find exp:_t$3
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$2
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find _t$2
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  $irvar4 != 0 ;  UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4) ;
+      old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      colorProgress = _t$1 <span class='color_orange'>update:93</span>:void  ; 
+      $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar4 = @f$4 <span class='color_orange'>update:94</span>:void  ; 
+      $irvar3 = _t$2 <span class='color_orange'>update:94</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+      old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+      @f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+      $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+      _t$3|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+      [footprint
+         this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+         $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+         old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+         @f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+      PREDICATE:
+      _t$3|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+      ATTRIBUTE: MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 94]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'><span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span></span>(_t$4)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$irvar4 != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = @f$4 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar3,false); [line 94]</span>
+    in vpath_find exp:_t$4
+    vpath_find: cannot find _t$4
+    in vpath_find exp:_t$2
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find _t$2
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$4) ;  UND &lt; double Math.min(double,double) &gt; :12(_t$3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2) ;  $irvar4 != 0 ;  UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4) ;
+      old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      colorProgress = _t$1 <span class='color_orange'>update:93</span>:void  ; 
+      $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar4 = @f$4 <span class='color_orange'>update:94</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = @f$2 <span class='color_orange'>update:94</span>:void  ;
+      old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+      @f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+      _t$2|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+      [footprint
+         this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+         $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+         old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+         @f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )  ]</span>
+      PREDICATE:
+      _t$2|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+      ATTRIBUTE: MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar3,false); [line 94]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$4)</span> ;  <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$irvar4 != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = @f$4 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;colorProgress,false); [line 94]</span>
+    in vpath_find exp:_t$4
+    vpath_find: cannot find _t$4
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'><span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span></span>(_t$3)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar4 != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = @f$4 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$irvar4 != 0</span> ;  <span class='color_red'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($irvar4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>@f$4 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:94</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+       <span class='color_red'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:@f$1 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>rearrange:94</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:@f$3 <span class='color_orange'>rearrange:(z)92</span>} <span class='color_orange'>rearrange:(z)92</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+       <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:(z)94</span>:class android.animation.ArgbEvaluator ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session26"href="./../nodes/node103.html#session26">node103#session26</a>( <a href="./../../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">94</a>)<LISTING><span class='color_black'>**** [RE:0] void CircleView.updateCircleColor() Node: 103, Procedure: void CircleView.updateCircleColor(), Session: 26, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_red'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = val$2 <span class='color_orange'>update:94</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+  <span class='color_red'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+  <span class='color_red'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+  <span class='color_red'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+  <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+  <span class='color_red'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$14=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 94];
+  n$15=*n$14:class android.animation.ArgbEvaluator  [line 94];
+  n$16=*&amp;colorProgress:float  [line 94];
+  n$17=*&amp;$irvar2:class java.lang.Integer * [line 94];
+  n$18=*&amp;$irvar3:class java.lang.Integer * [line 94];
+  n$19=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$14:class android.animation.ArgbEvaluator *,n$16:float ,n$17:class java.lang.Integer *,n$18:class java.lang.Integer *) virtual [line 94];
+  *&amp;$irvar4:class java.lang.Object *=n$19 [line 94];
+  REMOVE_TEMPS(n$14,n$15,n$16,n$17,n$18,n$19); [line 94];
+  NULLIFY(&amp;$irvar1,false); [line 94];
+  NULLIFY(&amp;$irvar2,false); [line 94];
+  NULLIFY(&amp;$irvar3,false); [line 94];
+  NULLIFY(&amp;colorProgress,false); [line 94];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$14=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 94]</span>
+    in vpath_find exp:n$55
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$55
+    in vpath_find exp:n$54
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$54
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; double Math.min(double,double) &gt; :12(n$56) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$52 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$53 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$54 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$55 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = val$2 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = $irvar1</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$14 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_red'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:<span class='color_red'>$irvar1 <span class='color_orange'>formal</span></span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+    
+    Instruction <span class='color_green'>n$15=*n$14:class android.animation.ArgbEvaluator  [line 94]</span>
+    in vpath_find exp:n$60
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$60
+    in vpath_find exp:n$59
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$59
+    .... Rearrangement Start ....
+    Exp: n$14
+    Prop: 
+    <span class='color_blue'>val$2 = $irvar1 ;
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; double Math.min(double,double) &gt; :12(n$61) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$57 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$58 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$59 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$60 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $irvar1</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$14 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+    
+    Instruction <span class='color_green'>n$16=*&amp;colorProgress:float  [line 94]</span>
+    in vpath_find exp:n$65
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$65
+    in vpath_find exp:n$64
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$64
+    .... Rearrangement Start ....
+    Exp: &amp;colorProgress
+    Prop: 
+    <span class='color_blue'>val$2 = $irvar1 ;
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; double Math.min(double,double) &gt; :12(n$66) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$62 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$63 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$64 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$65 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $irvar1</span> ;
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>n$16 <span class='color_orange'>update:93</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>_t$1 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>_t$2 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$14 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+    <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:<span class='color_red'>-8421505 <span class='color_orange'>update:(z)94</span></span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+    
+    Instruction <span class='color_green'>n$17=*&amp;$irvar2:class java.lang.Integer * [line 94]</span>
+    in vpath_find exp:n$69
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$69
+    in vpath_find exp:n$68
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$68
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>val$2 = $irvar1 ;
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; double Math.min(double,double) &gt; :12(n$70) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$67 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$68 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$69 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $irvar1</span> ;
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$1 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$17 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$14 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+    
+    Instruction <span class='color_green'>n$18=*&amp;$irvar3:class java.lang.Integer * [line 94]</span>
+    in vpath_find exp:n$72
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$72
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar3
+    Prop: 
+    <span class='color_blue'>val$2 = $irvar1 ;
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; double Math.min(double,double) &gt; :12(n$73) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$71 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$72 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$17 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $irvar1</span> ;
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>n$18 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$14 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$19=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$14:class android.animation.ArgbEvaluator *,n$16:float ,n$17:class java.lang.Integer *,n$18:class java.lang.Integer *) virtual [line 94]</span>
+    in vpath_find exp:n$18
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$18
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    <span class='color_blue'>INFO: SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</span>
+    Undefined function Object ArgbEvaluator.evaluate(float,Object,Object), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $irvar1</span> ;  <span class='color_blue'>val$5 = $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$1)</span> ;  <span class='color_red'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$18 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$14 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>n$19 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar4:class java.lang.Object *=n$19 [line 94]</span>
+    in vpath_find exp:n$18
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$18
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar4
+    Prop: 
+    <span class='color_blue'>val$2 = $irvar1 ;  val$5 = $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar ;
+    UND &lt; double Math.min(double,double) &gt; :12(n$77) ;  $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+    return = n$76 <span class='color_orange'>initial</span>:void  ; 
+    colorProgress = n$16 <span class='color_orange'>update:93</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = n$18 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar2 = n$17 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:94</span>:void  ; 
+    $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+    $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = n$19 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+    $irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+    old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $irvar1</span> ;  <span class='color_blue'>val$5 = $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$1)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = n$16 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>n$19 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = n$18 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$17 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$14 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = n$19 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:$irvar1 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$14,n$15,n$16,n$17,n$18,n$19); [line 94]</span>
+    in vpath_find exp:n$18
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find n$18
+    in vpath_find exp:n$17
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find n$17
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>_t$1 <span class='color_orange'>update:93</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>val$5 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>_t$2 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>_t$3 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>val$2 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>val$5 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:<span class='color_red'>$irvar1 <span class='color_orange'>formal</span></span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+    <span class='color_red'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_red'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 94]</span>
+    in vpath_find exp:_t$3
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$2
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find _t$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar2)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = val$5 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = _t$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:val$2 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span> ; 
+    <span class='color_blue'>$irvar2|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 94]</span>
+    in vpath_find exp:_t$3
+    vpath_find do_sexp: no match on Eexp &amp;$irvar2
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$2
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find _t$2
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$4) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3) ;  $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;
+      old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      colorProgress = _t$1 <span class='color_orange'>update:93</span>:void  ; 
+      $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar4 = val$5 <span class='color_orange'>update:94</span>:void  ; 
+      $irvar3 = _t$2 <span class='color_orange'>update:94</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+      $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+      old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:val$2 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+      val$2|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+      $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub ) ; 
+      $irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer  ; 
+      _t$3|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+      PREDICATE:
+      _t$3|->{java.lang.Integer.value:-8421505 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+      ATTRIBUTE: MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 94]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'><span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span></span>(_t$4)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>($irvar3)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = val$5 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = _t$2 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:val$2 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span> ; 
+    <span class='color_blue'>$irvar3|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar3,false); [line 94]</span>
+    in vpath_find exp:_t$4
+    vpath_find: cannot find _t$4
+    in vpath_find exp:_t$2
+    vpath_find do_sexp: no match on Eexp &amp;$irvar3
+    vpath_find: cannot find _t$2
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$4) ;  UND &lt; double Math.min(double,double) &gt; :12(_t$3) ;  MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2) ;  $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;
+      old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      colorProgress = _t$1 <span class='color_orange'>update:93</span>:void  ; 
+      $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar4 = val$5 <span class='color_orange'>update:94</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = val$3 <span class='color_orange'>update:94</span>:void  ; 
+      $RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+      old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:val$2 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub ) ; 
+      val$2|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub ) ; 
+      $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub ) ; 
+      _t$2|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer </span>
+      PREDICATE:
+      _t$2|->{java.lang.Integer.value:-1710619 <span class='color_orange'>update:(z)94</span>} <span class='color_orange'>formal(z)</span>:class java.lang.Integer 
+      ATTRIBUTE: MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar3,false); [line 94]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$4)</span> ;  <span class='color_blue'>UND &lt; double Math.min(double,double) &gt; :12(_t$3)</span> ;  <span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = _t$1 <span class='color_orange'>update:93</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = val$5 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:val$2 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;colorProgress,false); [line 94]</span>
+    in vpath_find exp:_t$4
+    vpath_find: cannot find _t$4
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'><span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span></span>(_t$3)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = val$5 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:val$2 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$3)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; double Math.min(double,double) &gt; :12</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; Integer Integer.valueOf(int):94 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Object ArgbEvaluator.evaluate(float,Object,Object) &gt; :94</span>($RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Recycler.CircleView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>colorProgress = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>val$5 <span class='color_orange'>update:94</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$3 <span class='color_orange'>update:94</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.animation.ArgbEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Recycler.CircleView.argbEvaluator:val$2 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.circlePaint:$irvar0 <span class='color_orange'>formal</span>, com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.CircleView ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class android.animation.ArgbEvaluator ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.graphics.Paint ( sub )</span></span>
+    
+    
+    
+  

@@ -1,0 +1,1364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File mobile/src/main/java/com/karthik/imager/Recycler/LikeButtonView.java</h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.karthik.imager.Recycler;</td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.karthik.imager.Adapter;</td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import com.karthik.imager.R;</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import android.animation.Animator;</td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import android.animation.AnimatorListenerAdapter;</td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import android.animation.AnimatorSet;</td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import android.animation.ObjectAnimator;</td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import android.annotation.TargetApi;</td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import android.content.Context;</td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import android.os.Build;</td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import android.util.AttributeSet;</td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import android.view.LayoutInflater;</td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import android.view.MotionEvent;</td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import android.view.View;</td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import android.view.animation.AccelerateDecelerateInterpolator;</td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import android.view.animation.DecelerateInterpolator;</td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">import android.view.animation.OvershootInterpolator;</td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">import android.widget.FrameLayout;</td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">import android.widget.ImageView;</td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">import butterknife.Bind;</td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">import butterknife.ButterKnife;</td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">/**</td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line"> * Created by karthikrk on 01/01/16.</td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line"> */</td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">public class LikeButtonView extends FrameLayout{</td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">    private static final DecelerateInterpolator DECCELERATE_INTERPOLATOR = new DecelerateInterpolator(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node16.html"><span class='visitedproof'>S_16<span class='expansion'>node16 preds: succs:43 exn:17 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 30];
+NULLIFY(&amp;$irvar0,false); [line 30];
+NULLIFY(&amp;field,false); [line 30];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node43.html"><span class='visitedproof'>I_43<span class='expansion'>node43 preds:16 succs:44 exn:18 Instructions
+n$0=_fun___new(sizeof(class android.view.animation.DecelerateInterpolator ):class android.view.animation.DecelerateInterpolator *) [line 30];
+_fun_DecelerateInterpolator.&lt;init&gt;()(n$0:class android.view.animation.DecelerateInterpolator *) [line 30];
+*&amp;$irvar0:class android.view.animation.DecelerateInterpolator *=n$0 [line 30];
+REMOVE_TEMPS(n$0); [line 30];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node44.html"><span class='visitedproof'>I_44<span class='expansion'>node44 preds:43 succs:45 exn:18 Instructions
+n$1=*&amp;$irvar0:class android.view.animation.DecelerateInterpolator * [line 30];
+*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.DECCELERATE_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView =n$1 [line 30];
+REMOVE_TEMPS(n$1); [line 30];
+NULLIFY(&amp;$irvar0,false); [line 30];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.<clinit>():void.a14b36a55beefc37c351cdfd4106b4da.html">void LikeButtonView.&lt;clinit&gt;(): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION DecelerateInterpolator.<init>()</div></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">    private static final AccelerateDecelerateInterpolator ACCELERATE_DECELERATE_INTERPOLATOR = new AccelerateDecelerateInterpolator(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node45.html"><span class='visitedproof'>I_45<span class='expansion'>node45 preds:44 succs:46 exn:18 Instructions
+n$2=_fun___new(sizeof(class android.view.animation.AccelerateDecelerateInterpolator ):class android.view.animation.AccelerateDecelerateInterpolator *) [line 31];
+_fun_AccelerateDecelerateInterpolator.&lt;init&gt;()(n$2:class android.view.animation.AccelerateDecelerateInterpolator *) [line 31];
+*&amp;$irvar0:class android.view.animation.AccelerateDecelerateInterpolator *=n$2 [line 31];
+REMOVE_TEMPS(n$2); [line 31];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node46.html"><span class='visitedproof'>I_46<span class='expansion'>node46 preds:45 succs:47 exn:18 Instructions
+n$3=*&amp;$irvar0:class android.view.animation.AccelerateDecelerateInterpolator * [line 31];
+*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.ACCELERATE_DECELERATE_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView =n$3 [line 31];
+REMOVE_TEMPS(n$3); [line 31];
+NULLIFY(&amp;$irvar0,false); [line 31];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION AccelerateDecelerateInterpolator.<init>()</div></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">    private static final OvershootInterpolator OVERSHOOT_INTERPOLATOR = new OvershootInterpolator(4); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node17.html"><span class='visitedproof'>E_17<span class='expansion'>node17 preds:49 18 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_18<span class='expansion'>node18 preds: succs:17 exn:17 Instructions
+NULLIFY(&amp;$irvar0,false); [line 32];
+APPLY_ABSTRACTION; [line 32];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node47.html"><span class='visitedproof'>I_47<span class='expansion'>node47 preds:46 succs:48 exn:18 Instructions
+n$4=_fun___new(sizeof(class android.view.animation.OvershootInterpolator ):class android.view.animation.OvershootInterpolator *) [line 32];
+_fun_OvershootInterpolator.&lt;init&gt;(float)(n$4:class android.view.animation.OvershootInterpolator *,4.000000:float ) [line 32];
+*&amp;$irvar0:class android.view.animation.OvershootInterpolator *=n$4 [line 32];
+REMOVE_TEMPS(n$4); [line 32];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node48.html"><span class='visitedproof'>I_48<span class='expansion'>node48 preds:47 succs:49 exn:18 Instructions
+n$5=*&amp;$irvar0:class android.view.animation.OvershootInterpolator * [line 32];
+*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.OVERSHOOT_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView =n$5 [line 32];
+REMOVE_TEMPS(n$5); [line 32];
+NULLIFY(&amp;$irvar0,false); [line 32];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node49.html"><span class='visitedproof'>I_49<span class='expansion'>node49 preds:48 succs:17 exn:18 Instructions
+APPLY_ABSTRACTION; [line 32];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION OvershootInterpolator.<init>(float)</div></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">    @Bind(R.id.ivStar)</td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">    ImageView ivStar;</td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">    @Bind(R.id.vDotsView)</td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">    DotsView vDotsView;</td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">    @Bind(R.id.vCircle)</td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">    CircleView vCircle;</td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">    private AnimatorSet animatorSet;</td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">    public LikeButtonView(Context context) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node22.html"><span class='visitedproof'>S_22<span class='expansion'>node22 preds: succs:53 exn:23 Start
+DECLARE_LOCALS(&amp;return); [line 45];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.<init>(android.content.Context).616d5c1be5d3b20e5af95a5bc45ed66a.html">LikeButtonView.&lt;init&gt;(Context): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        super(context); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node53.html"><span class='visitedproof'>I_53<span class='expansion'>node53 preds:22 succs:54 exn:24 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 46];
+n$1=*&amp;context:class android.content.Context * [line 46];
+_fun_FrameLayout.&lt;init&gt;(Context)(n$0:class com.karthik.imager.Recycler.LikeButtonView *,n$1:class android.content.Context *) [line 46];
+REMOVE_TEMPS(n$0,n$1); [line 46];
+NULLIFY(&amp;context,false); [line 46];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FrameLayout.<init>(Context)</div></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">        init(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node54.html"><span class='visitedproof'>I_54<span class='expansion'>node54 preds:53 succs:55 exn:24 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 47];
+_fun_void LikeButtonView.init()(n$2:class com.karthik.imager.Recycler.LikeButtonView *) [line 47];
+REMOVE_TEMPS(n$2); [line 47];
+NULLIFY(&amp;this,false); [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">    } <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node23.html"><span class='visitedproof'>E_23<span class='expansion'>node23 preds:55 24 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_24<span class='expansion'>node24 preds: succs:23 exn:23 Instructions
+NULLIFY(&amp;this,false); [line 48];
+APPLY_ABSTRACTION; [line 48];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node55.html"><span class='visitedproof'>I_55<span class='expansion'>node55 preds:54 succs:23 exn:24 Instructions
+APPLY_ABSTRACTION; [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">    public LikeButtonView(Context context, AttributeSet attrs) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node40.html"><span class='visitedproof'>S_40<span class='expansion'>node40 preds: succs:193 exn:41 Start
+DECLARE_LOCALS(&amp;return); [line 50];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.<init>(android.content.Context,android.util.AttributeSet).7e89575a69340c6c7849724008fe26bc.html">LikeButtonView.&lt;init&gt;(Context,AttributeSet): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">        super(context, attrs); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node193.html"><span class='visitedproof'>I_193<span class='expansion'>node193 preds:40 succs:194 exn:42 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 51];
+n$1=*&amp;context:class android.content.Context * [line 51];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 51];
+_fun_FrameLayout.&lt;init&gt;(Context,AttributeSet)(n$0:class com.karthik.imager.Recycler.LikeButtonView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *) [line 51];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 51];
+NULLIFY(&amp;attrs,false); [line 51];
+NULLIFY(&amp;context,false); [line 51];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet)</div></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">        init(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node194.html"><span class='visitedproof'>I_194<span class='expansion'>node194 preds:193 succs:195 exn:42 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 52];
+_fun_void LikeButtonView.init()(n$3:class com.karthik.imager.Recycler.LikeButtonView *) [line 52];
+REMOVE_TEMPS(n$3); [line 52];
+NULLIFY(&amp;this,false); [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">    } <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node41.html"><span class='visitedproof'>E_41<span class='expansion'>node41 preds:195 42 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_42<span class='expansion'>node42 preds: succs:41 exn:41 Instructions
+NULLIFY(&amp;this,false); [line 53];
+APPLY_ABSTRACTION; [line 53];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node195.html"><span class='visitedproof'>I_195<span class='expansion'>node195 preds:194 succs:41 exn:42 Instructions
+APPLY_ABSTRACTION; [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">    public LikeButtonView(Context context, AttributeSet attrs, int defStyleAttr) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node19.html"><span class='visitedproof'>S_19<span class='expansion'>node19 preds: succs:50 exn:20 Start
+DECLARE_LOCALS(&amp;return); [line 55];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.<init>(android.content.Context,android.util.AttributeSet,.9bb74f7f1a4bd58498d1f194ff9e97fe.html">LikeButtonView.&lt;init&gt;(Context,AttributeSet,int): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">        super(context, attrs, defStyleAttr); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node50.html"><span class='visitedproof'>I_50<span class='expansion'>node50 preds:19 succs:51 exn:21 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 56];
+n$1=*&amp;context:class android.content.Context * [line 56];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 56];
+n$3=*&amp;defStyleAttr:int  [line 56];
+_fun_FrameLayout.&lt;init&gt;(Context,AttributeSet,int)(n$0:class com.karthik.imager.Recycler.LikeButtonView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *,n$3:int ) [line 56];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3); [line 56];
+NULLIFY(&amp;attrs,false); [line 56];
+NULLIFY(&amp;context,false); [line 56];
+NULLIFY(&amp;defStyleAttr,false); [line 56];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet,int)</div></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">        init(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node51.html"><span class='visitedproof'>I_51<span class='expansion'>node51 preds:50 succs:52 exn:21 Instructions
+n$4=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 57];
+_fun_void LikeButtonView.init()(n$4:class com.karthik.imager.Recycler.LikeButtonView *) [line 57];
+REMOVE_TEMPS(n$4); [line 57];
+NULLIFY(&amp;this,false); [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">    } <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node20.html"><span class='visitedproof'>E_20<span class='expansion'>node20 preds:52 21 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_21<span class='expansion'>node21 preds: succs:20 exn:20 Instructions
+NULLIFY(&amp;this,false); [line 58];
+APPLY_ABSTRACTION; [line 58];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node52.html"><span class='visitedproof'>I_52<span class='expansion'>node52 preds:51 succs:20 exn:21 Instructions
+APPLY_ABSTRACTION; [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">    @TargetApi(Build.VERSION_CODES.LOLLIPOP)</td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">    public LikeButtonView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node34.html"><span class='visitedproof'>S_34<span class='expansion'>node34 preds: succs:112 exn:35 Start
+DECLARE_LOCALS(&amp;return); [line 61];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.<init>(android.content.Context,android.util.AttributeSet,.715c101d42169db3c271b5b963201bef.html">LikeButtonView.&lt;init&gt;(Context,AttributeSet,int,int): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">        super(context, attrs, defStyleAttr, defStyleRes); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node112.html"><span class='visitedproof'>I_112<span class='expansion'>node112 preds:34 succs:113 exn:36 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 62];
+n$1=*&amp;context:class android.content.Context * [line 62];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 62];
+n$3=*&amp;defStyleAttr:int  [line 62];
+n$4=*&amp;defStyleRes:int  [line 62];
+_fun_FrameLayout.&lt;init&gt;(Context,AttributeSet,int,int)(n$0:class com.karthik.imager.Recycler.LikeButtonView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *,n$3:int ,n$4:int ) [line 62];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 62];
+NULLIFY(&amp;attrs,false); [line 62];
+NULLIFY(&amp;context,false); [line 62];
+NULLIFY(&amp;defStyleAttr,false); [line 62];
+NULLIFY(&amp;defStyleRes,false); [line 62];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet,int,int)</div></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">        init(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node113.html"><span class='visitedproof'>I_113<span class='expansion'>node113 preds:112 succs:114 exn:36 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 63];
+_fun_void LikeButtonView.init()(n$5:class com.karthik.imager.Recycler.LikeButtonView *) [line 63];
+REMOVE_TEMPS(n$5); [line 63];
+NULLIFY(&amp;this,false); [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">    } <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node35.html"><span class='visitedproof'>E_35<span class='expansion'>node35 preds:114 36 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_36<span class='expansion'>node36 preds: succs:35 exn:35 Instructions
+NULLIFY(&amp;this,false); [line 64];
+APPLY_ABSTRACTION; [line 64];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node114.html"><span class='visitedproof'>I_114<span class='expansion'>node114 preds:113 succs:35 exn:36 Instructions
+APPLY_ABSTRACTION; [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">    private void init() { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node25.html"><span class='visitedproof'>S_25<span class='expansion'>node25 preds: succs:56 exn:26 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2); [line 66];
+NULLIFY(&amp;$irvar0,false); [line 66];
+NULLIFY(&amp;$irvar1,false); [line 66];
+NULLIFY(&amp;$irvar2,false); [line 66];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.init():void.9672b714ea683065a6ae0ccd7ff851d5.html">void LikeButtonView.init(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">        LayoutInflater.from(getContext()).inflate(R.layout.view_like_button, this, true); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node56.html"><span class='visitedproof'>I_56<span class='expansion'>node56 preds:25 succs:57 exn:27 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 67];
+n$1=*n$0:class com.karthik.imager.Recycler.LikeButtonView  [line 67];
+n$2=_fun_Context View.getContext()(n$0:class com.karthik.imager.Recycler.LikeButtonView *) virtual [line 67];
+*&amp;$irvar0:class android.content.Context *=n$2 [line 67];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 67];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node57.html"><span class='visitedproof'>I_57<span class='expansion'>node57 preds:56 succs:58 exn:27 Instructions
+n$3=*&amp;$irvar0:class android.content.Context * [line 67];
+n$4=_fun_LayoutInflater LayoutInflater.from(Context)(n$3:class android.content.Context *) [line 67];
+*&amp;$irvar1:class android.view.LayoutInflater *=n$4 [line 67];
+REMOVE_TEMPS(n$3,n$4); [line 67];
+NULLIFY(&amp;$irvar0,false); [line 67];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node58.html"><span class='visitedproof'>I_58<span class='expansion'>node58 preds:57 succs:59 exn:27 Instructions
+n$5=*&amp;$irvar1:class android.view.LayoutInflater * [line 67];
+n$6=*n$5:class android.view.LayoutInflater  [line 67];
+n$7=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 67];
+n$8=_fun_View LayoutInflater.inflate(int,ViewGroup,boolean)(n$5:class android.view.LayoutInflater *,2130968629:int ,n$7:class com.karthik.imager.Recycler.LikeButtonView *,1:int ) virtual [line 67];
+*&amp;$irvar2:class android.view.View *=n$8 [line 67];
+REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 67];
+NULLIFY(&amp;$irvar1,false); [line 67];
+NULLIFY(&amp;$irvar2,false); [line 67];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Context View.getContext()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION LayoutInflater LayoutInflater.from(Context)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View LayoutInflater.inflate(int,ViewGroup,boolean)</div></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">        ButterKnife.bind(this); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node59.html"><span class='visitedproof'>I_59<span class='expansion'>node59 preds:58 succs:60 exn:27 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 68];
+_fun_void ButterKnife.bind(View)(n$9:class com.karthik.imager.Recycler.LikeButtonView *) [line 68];
+REMOVE_TEMPS(n$9); [line 68];
+NULLIFY(&amp;this,false); [line 68];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ButterKnife.bind(View)</div></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">    } <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node26.html"><span class='visitedproof'>E_26<span class='expansion'>node26 preds:60 27 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_27<span class='expansion'>node27 preds: succs:26 exn:26 Instructions
+NULLIFY(&amp;$irvar0,false); [line 69];
+NULLIFY(&amp;$irvar1,false); [line 69];
+NULLIFY(&amp;this,false); [line 69];
+APPLY_ABSTRACTION; [line 69];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node60.html"><span class='visitedproof'>I_60<span class='expansion'>node60 preds:59 succs:26 exn:27 Instructions
+APPLY_ABSTRACTION; [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">    //this method is  called esch time onBind is called in adapter.</td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">    public void setIsLikedImageresource(boolean isChecked){ <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node31.html"><span class='visitedproof'>S_31<span class='expansion'>node31 preds: succs:103 exn:32 Start
+DECLARE_LOCALS(&amp;return,&amp;$T0_13,&amp;$T0_15,&amp;$T1_15); [line 72];
+NULLIFY(&amp;$T0_13,false); [line 72];
+NULLIFY(&amp;$T0_15,false); [line 72];
+NULLIFY(&amp;$T1_15,false); [line 72];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.setIsLikedImageresource(boolean):void.6322ba1e69960a11d93235ac274b50b8.html">void LikeButtonView.setIsLikedImageresource(boolean): 2 specs</a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">        ivStar.setImageResource(isChecked ? R.mipmap.heart : R.mipmap.heartdefault); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node103.html"><span class='visitedproof'>I_103<span class='expansion'>node103 preds:31 succs:104 105 exn:33 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 73];
+n$1=*n$0.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 73];
+*&amp;$T0_13:class android.widget.ImageView *=n$1 [line 73];
+REMOVE_TEMPS(n$0,n$1); [line 73];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node104.html"><span class='visitedproof'>C_104<span class='expansion'>node104 preds:103 succs:106 exn:33 Conditional method_body
+n$2=*&amp;isChecked:_Bool  [line 73];
+PRUNE(!(n$2 == 0), true); [line 73];
+REMOVE_TEMPS(n$2); [line 73];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node105.html"><span class='visitedproof'>C_105<span class='expansion'>node105 preds:103 succs:108 exn:33 Conditional method_body
+n$2=*&amp;isChecked:_Bool  [line 73];
+PRUNE((n$2 == 0), false); [line 73];
+REMOVE_TEMPS(n$2); [line 73];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node106.html"><span class='visitedproof'>I_106<span class='expansion'>node106 preds:104 succs:107 exn:33 Instructions
+NULLIFY(&amp;$T0_13,false); [line 73];
+NULLIFY(&amp;isChecked,false); [line 73];
+*&amp;$T0_15:int =2130903043 [line 73];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node107.html"><span class='visitedproof'>I_107<span class='expansion'>node107 preds:106 succs:110 exn:33 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 73];
+n$4=*n$3.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 73];
+*&amp;$T1_15:class android.widget.ImageView *=n$4 [line 73];
+REMOVE_TEMPS(n$3,n$4); [line 73];
+NULLIFY(&amp;this,false); [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node108.html"><span class='visitedproof'>I_108<span class='expansion'>node108 preds:105 succs:109 exn:33 Instructions
+NULLIFY(&amp;isChecked,false); [line 73];
+NULLIFY(&amp;this,false); [line 73];
+*&amp;$T0_15:int =2130903044 [line 73];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node109.html"><span class='visitedproof'>I_109<span class='expansion'>node109 preds:108 succs:110 exn:33 Instructions
+n$5=*&amp;$T0_13:class android.widget.ImageView * [line 73];
+*&amp;$T1_15:class android.widget.ImageView *=n$5 [line 73];
+REMOVE_TEMPS(n$5); [line 73];
+NULLIFY(&amp;$T0_13,false); [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node110.html"><span class='visitedproof'>I_110<span class='expansion'>node110 preds:109 107 succs:111 exn:33 Instructions
+n$6=*&amp;$T1_15:class android.widget.ImageView * [line 73];
+n$7=*n$6:class android.widget.ImageView  [line 73];
+n$8=*&amp;$T0_15:int  [line 73];
+_fun_void ImageView.setImageResource(int)(n$6:class android.widget.ImageView *,n$8:int ) virtual [line 73];
+REMOVE_TEMPS(n$6,n$7,n$8); [line 73];
+NULLIFY(&amp;$T0_15,false); [line 73];
+NULLIFY(&amp;$T1_15,false); [line 73];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ImageView.setImageResource(int)</div></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">    } <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node32.html"><span class='visitedproof'>E_32<span class='expansion'>node32 preds:111 33 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_33<span class='expansion'>node33 preds: succs:32 exn:32 Instructions
+NULLIFY(&amp;$T0_13,false); [line 74];
+NULLIFY(&amp;$T0_15,false); [line 74];
+NULLIFY(&amp;$T1_15,false); [line 74];
+NULLIFY(&amp;isChecked,false); [line 74];
+NULLIFY(&amp;this,false); [line 74];
+APPLY_ABSTRACTION; [line 74];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node111.html"><span class='visitedproof'>I_111<span class='expansion'>node111 preds:110 succs:32 exn:33 Instructions
+APPLY_ABSTRACTION; [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">    //this method is only called in case of onclick listner for anim purpose.</td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">    public void AnimClick(boolean isChecked){ <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node37.html"><span class='visited'>S_37<span class='expansion'>node37 preds: succs:115 exn:38 Start
+DECLARE_LOCALS(&amp;return,&amp;$T0_13,&amp;$T0_15,&amp;$T1_15,&amp;$irvar0,&amp;$irvar1,&amp;outerCircleAnimator,&amp;$irvar2,&amp;innerCircleAnimator,&amp;starScaleYAnimator,&amp;starScaleXAnimator,&amp;dotsAnimator); [line 78];
+NULLIFY(&amp;$T0_13,false); [line 78];
+NULLIFY(&amp;$T0_15,false); [line 78];
+NULLIFY(&amp;$T1_15,false); [line 78];
+NULLIFY(&amp;$irvar0,false); [line 78];
+NULLIFY(&amp;$irvar1,false); [line 78];
+NULLIFY(&amp;$irvar2,false); [line 78];
+NULLIFY(&amp;dotsAnimator,false); [line 78];
+NULLIFY(&amp;innerCircleAnimator,false); [line 78];
+NULLIFY(&amp;outerCircleAnimator,false); [line 78];
+NULLIFY(&amp;starScaleXAnimator,false); [line 78];
+NULLIFY(&amp;starScaleYAnimator,false); [line 78];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.AnimClick(boolean):void.98fe745b546c22be6d7025bbcaf4cad3.html">void LikeButtonView.AnimClick(boolean): 0 specs</a></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">        ivStar.setImageResource(isChecked ? R.mipmap.heart : R.mipmap.heartdefault); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node115.html"><span class='visited'>I_115<span class='expansion'>node115 preds:37 succs:116 117 exn:39 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 80];
+n$1=*n$0.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 80];
+*&amp;$T0_13:class android.widget.ImageView *=n$1 [line 80];
+REMOVE_TEMPS(n$0,n$1); [line 80];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node116.html"><span class='visited'>C_116<span class='expansion'>node116 preds:115 succs:118 exn:39 Conditional method_body
+n$2=*&amp;isChecked:_Bool  [line 80];
+PRUNE(!(n$2 == 0), true); [line 80];
+REMOVE_TEMPS(n$2); [line 80];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node117.html"><span class='visited'>C_117<span class='expansion'>node117 preds:115 succs:120 exn:39 Conditional method_body
+n$2=*&amp;isChecked:_Bool  [line 80];
+PRUNE((n$2 == 0), false); [line 80];
+REMOVE_TEMPS(n$2); [line 80];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node118.html"><span class='visited'>I_118<span class='expansion'>node118 preds:116 succs:119 exn:39 Instructions
+NULLIFY(&amp;$T0_13,false); [line 80];
+*&amp;$T0_15:int =2130903043 [line 80];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node119.html"><span class='visited'>I_119<span class='expansion'>node119 preds:118 succs:122 exn:39 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 80];
+n$4=*n$3.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 80];
+*&amp;$T1_15:class android.widget.ImageView *=n$4 [line 80];
+REMOVE_TEMPS(n$3,n$4); [line 80];
+APPLY_ABSTRACTION; [line 80];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node120.html"><span class='visited'>I_120<span class='expansion'>node120 preds:117 succs:121 exn:39 Instructions
+*&amp;$T0_15:int =2130903044 [line 80];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node121.html"><span class='visited'>I_121<span class='expansion'>node121 preds:120 succs:122 exn:39 Instructions
+n$5=*&amp;$T0_13:class android.widget.ImageView * [line 80];
+*&amp;$T1_15:class android.widget.ImageView *=n$5 [line 80];
+REMOVE_TEMPS(n$5); [line 80];
+NULLIFY(&amp;$T0_13,false); [line 80];
+APPLY_ABSTRACTION; [line 80];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node122.html"><span class='visited'>I_122<span class='expansion'>node122 preds:121 119 succs:123 124 exn:39 Instructions
+n$6=*&amp;$T1_15:class android.widget.ImageView * [line 80];
+n$7=*n$6:class android.widget.ImageView  [line 80];
+n$8=*&amp;$T0_15:int  [line 80];
+_fun_void ImageView.setImageResource(int)(n$6:class android.widget.ImageView *,n$8:int ) virtual [line 80];
+REMOVE_TEMPS(n$6,n$7,n$8); [line 80];
+NULLIFY(&amp;$T0_15,false); [line 80];
+NULLIFY(&amp;$T1_15,false); [line 80];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ImageView.setImageResource(int)</div></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">        if (animatorSet != null) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node123.html"><span class='visited'>C_123<span class='expansion'>node123 preds:122 succs:125 exn:39 Conditional method_body
+n$9=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 82];
+n$10=*n$9.com.karthik.imager.Recycler.LikeButtonView.animatorSet:class com.karthik.imager.Recycler.LikeButtonView  [line 82];
+PRUNE(!(n$10 == null), true); [line 82];
+REMOVE_TEMPS(n$9,n$10); [line 82];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node124.html"><span class='visited'>C_124<span class='expansion'>node124 preds:122 succs:126 127 exn:39 Conditional method_body
+n$9=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 82];
+n$10=*n$9.com.karthik.imager.Recycler.LikeButtonView.animatorSet:class com.karthik.imager.Recycler.LikeButtonView  [line 82];
+PRUNE((n$10 == null), false); [line 82];
+REMOVE_TEMPS(n$9,n$10); [line 82];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">            animatorSet.cancel(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node125.html"><span class='visited'>I_125<span class='expansion'>node125 preds:123 succs:126 127 exn:39 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 83];
+n$12=*n$11.com.karthik.imager.Recycler.LikeButtonView.animatorSet:class com.karthik.imager.Recycler.LikeButtonView  [line 83];
+n$13=*n$12:class android.animation.AnimatorSet  [line 83];
+_fun_void AnimatorSet.cancel()(n$12:class android.animation.AnimatorSet *) virtual [line 83];
+REMOVE_TEMPS(n$11,n$12,n$13); [line 83];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void AnimatorSet.cancel()</div></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">        if (isChecked) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node126.html"><span class='visited'>C_126<span class='expansion'>node126 preds:125 124 succs:128 exn:39 Conditional method_body
+n$14=*&amp;isChecked:_Bool  [line 86];
+PRUNE(!(n$14 == 0), true); [line 86];
+REMOVE_TEMPS(n$14); [line 86];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node127.html"><span class='visited'>C_127<span class='expansion'>node127 preds:125 124 succs:192 exn:39 Conditional method_body
+n$14=*&amp;isChecked:_Bool  [line 86];
+PRUNE((n$14 == 0), false); [line 86];
+REMOVE_TEMPS(n$14); [line 86];
+APPLY_ABSTRACTION; [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">            ivStar.animate().cancel(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node128.html"><span class='visited'>I_128<span class='expansion'>node128 preds:126 succs:129 exn:39 Instructions
+NULLIFY(&amp;isChecked,false); [line 87];
+n$15=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 87];
+n$16=*n$15.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 87];
+n$17=*n$16:class android.widget.ImageView  [line 87];
+n$18=_fun_ViewPropertyAnimator View.animate()(n$16:class android.widget.ImageView *) virtual [line 87];
+*&amp;$irvar0:class android.view.ViewPropertyAnimator *=n$18 [line 87];
+REMOVE_TEMPS(n$15,n$16,n$17,n$18); [line 87];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node129.html"><span class='visited'>I_129<span class='expansion'>node129 preds:128 succs:130 exn:39 Instructions
+n$19=*&amp;$irvar0:class android.view.ViewPropertyAnimator * [line 87];
+n$20=*n$19:class android.view.ViewPropertyAnimator  [line 87];
+_fun_void ViewPropertyAnimator.cancel()(n$19:class android.view.ViewPropertyAnimator *) virtual [line 87];
+REMOVE_TEMPS(n$19,n$20); [line 87];
+NULLIFY(&amp;$irvar0,false); [line 87];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator View.animate()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ViewPropertyAnimator.cancel()</div></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">            ivStar.setScaleX(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node130.html"><span class='visited'>I_130<span class='expansion'>node130 preds:129 succs:131 exn:39 Instructions
+n$21=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 88];
+n$22=*n$21.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 88];
+n$23=*n$22:class android.widget.ImageView  [line 88];
+_fun_void View.setScaleX(float)(n$22:class android.widget.ImageView *,0.000000:float ) virtual [line 88];
+REMOVE_TEMPS(n$21,n$22,n$23); [line 88];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.setScaleX(float)</div></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">            ivStar.setScaleY(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node131.html"><span class='visited'>I_131<span class='expansion'>node131 preds:130 succs:132 exn:39 Instructions
+n$24=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 89];
+n$25=*n$24.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 89];
+n$26=*n$25:class android.widget.ImageView  [line 89];
+_fun_void View.setScaleY(float)(n$25:class android.widget.ImageView *,0.000000:float ) virtual [line 89];
+REMOVE_TEMPS(n$24,n$25,n$26); [line 89];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.setScaleY(float)</div></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">            vCircle.setInnerCircleRadiusProgress(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node132.html"><span class='visited'>I_132<span class='expansion'>node132 preds:131 succs:133 exn:39 Instructions
+n$27=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 90];
+n$28=*n$27.com.karthik.imager.Recycler.LikeButtonView.vCircle:class com.karthik.imager.Recycler.LikeButtonView  [line 90];
+n$29=*n$28:class com.karthik.imager.Recycler.CircleView  [line 90];
+_fun_void CircleView.setInnerCircleRadiusProgress(float)(n$28:class com.karthik.imager.Recycler.CircleView *,0.000000:float ) virtual [line 90];
+REMOVE_TEMPS(n$27,n$28,n$29); [line 90];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">            vCircle.setOuterCircleRadiusProgress(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node133.html"><span class='visited'>I_133<span class='expansion'>node133 preds:132 succs:134 exn:39 Instructions
+n$30=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 91];
+n$31=*n$30.com.karthik.imager.Recycler.LikeButtonView.vCircle:class com.karthik.imager.Recycler.LikeButtonView  [line 91];
+n$32=*n$31:class com.karthik.imager.Recycler.CircleView  [line 91];
+_fun_void CircleView.setOuterCircleRadiusProgress(float)(n$31:class com.karthik.imager.Recycler.CircleView *,0.000000:float ) virtual [line 91];
+REMOVE_TEMPS(n$30,n$31,n$32); [line 91];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">            vDotsView.setCurrentProgress(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node134.html"><span class='visited'>I_134<span class='expansion'>node134 preds:133 succs:135 exn:39 Instructions
+n$33=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 92];
+n$34=*n$33.com.karthik.imager.Recycler.LikeButtonView.vDotsView:class com.karthik.imager.Recycler.LikeButtonView  [line 92];
+n$35=*n$34:class com.karthik.imager.Recycler.DotsView  [line 92];
+_fun_void DotsView.setCurrentProgress(float)(n$34:class com.karthik.imager.Recycler.DotsView *,0.000000:float ) virtual [line 92];
+REMOVE_TEMPS(n$33,n$34,n$35); [line 92];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void DotsView.setCurrentProgress(float)</div></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">            animatorSet = new AnimatorSet(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node135.html"><span class='visited'>I_135<span class='expansion'>node135 preds:134 succs:136 exn:39 Instructions
+n$36=_fun___new(sizeof(class android.animation.AnimatorSet ):class android.animation.AnimatorSet *) [line 94];
+_fun_AnimatorSet.&lt;init&gt;()(n$36:class android.animation.AnimatorSet *) [line 94];
+*&amp;$irvar0:class android.animation.AnimatorSet *=n$36 [line 94];
+REMOVE_TEMPS(n$36); [line 94];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node136.html"><span class='visited'>I_136<span class='expansion'>node136 preds:135 succs:137 exn:39 Instructions
+n$37=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 94];
+n$38=*&amp;$irvar0:class android.animation.AnimatorSet * [line 94];
+*n$37.com.karthik.imager.Recycler.LikeButtonView.animatorSet:class com.karthik.imager.Recycler.LikeButtonView =n$38 [line 94];
+REMOVE_TEMPS(n$37,n$38); [line 94];
+NULLIFY(&amp;$irvar0,false); [line 94];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION AnimatorSet.<init>()</div></td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">            ObjectAnimator outerCircleAnimator = ObjectAnimator.ofFloat(vCircle, CircleView.OUTER_CIRCLE_RADIUS_PROGRESS, 0.1f, 1f); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node137.html"><span class='visited'>I_137<span class='expansion'>node137 preds:136 succs:138 exn:39 Instructions
+n$39=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 96];
+n$40=*n$39.com.karthik.imager.Recycler.LikeButtonView.vCircle:class com.karthik.imager.Recycler.LikeButtonView  [line 96];
+*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView *=n$40 [line 96];
+REMOVE_TEMPS(n$39,n$40); [line 96];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node138.html"><span class='visited'>I_138<span class='expansion'>node138 preds:137 succs:139 exn:39 Instructions
+n$41=_fun___new_array(sizeof(float [2]):float (*)[_t$0]) [line 96];
+*&amp;$irvar1:float (*)[_t$0]=n$41 [line 96];
+REMOVE_TEMPS(n$41); [line 96];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node139.html"><span class='visited'>I_139<span class='expansion'>node139 preds:138 succs:140 exn:39 Instructions
+n$42=*&amp;$irvar1:float (*)[_t$0] [line 96];
+*n$42[0]:float [_t$0]=0.100000 [line 96];
+REMOVE_TEMPS(n$42); [line 96];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node140.html"><span class='visited'>I_140<span class='expansion'>node140 preds:139 succs:141 exn:39 Instructions
+n$43=*&amp;$irvar1:float (*)[_t$0] [line 96];
+*n$43[1]:float [_t$0]=1.000000 [line 96];
+REMOVE_TEMPS(n$43); [line 96];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node141.html"><span class='visited'>I_141<span class='expansion'>node141 preds:140 succs:142 exn:39 Instructions
+n$44=*&amp;#GB$com.karthik.imager.Recycler.CircleView.com.karthik.imager.Recycler.CircleView.OUTER_CIRCLE_RADIUS_PROGRESS:class com.karthik.imager.Recycler.CircleView  [line 96];
+*&amp;$irvar2:class android.util.Property *=n$44 [line 96];
+REMOVE_TEMPS(n$44); [line 96];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node142.html"><span class='visited'>I_142<span class='expansion'>node142 preds:141 succs:143 exn:39 Instructions
+n$45=*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView * [line 96];
+n$46=*&amp;$irvar2:class android.util.Property * [line 96];
+n$47=*&amp;$irvar1:float (*)[_t$0] [line 96];
+n$48=_fun_ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])(n$45:class com.karthik.imager.Recycler.CircleView *,n$46:class android.util.Property *,n$47:float (*)[_t$0]) [line 96];
+*&amp;outerCircleAnimator:class android.animation.ObjectAnimator *=n$48 [line 96];
+REMOVE_TEMPS(n$45,n$46,n$47,n$48); [line 96];
+NULLIFY(&amp;$irvar0,false); [line 96];
+NULLIFY(&amp;$irvar1,false); [line 96];
+NULLIFY(&amp;$irvar2,false); [line 96];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])</div></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">            outerCircleAnimator.setDuration(250); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node143.html"><span class='visited'>I_143<span class='expansion'>node143 preds:142 succs:144 exn:39 Instructions
+n$49=*&amp;outerCircleAnimator:class android.animation.ObjectAnimator * [line 97];
+n$50=*n$49:class android.animation.ObjectAnimator  [line 97];
+n$51=_fun_ObjectAnimator ObjectAnimator.setDuration(long)(n$49:class android.animation.ObjectAnimator *,250:long ) virtual [line 97];
+*&amp;$irvar0:class android.animation.ObjectAnimator *=n$51 [line 97];
+REMOVE_TEMPS(n$49,n$50,n$51); [line 97];
+NULLIFY(&amp;$irvar0,false); [line 97];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.setDuration(long)</div></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">            outerCircleAnimator.setInterpolator(DECCELERATE_INTERPOLATOR); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node144.html"><span class='visited'>I_144<span class='expansion'>node144 preds:143 succs:145 exn:39 Instructions
+n$52=*&amp;outerCircleAnimator:class android.animation.ObjectAnimator * [line 98];
+n$53=*n$52:class android.animation.ObjectAnimator  [line 98];
+n$54=*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.DECCELERATE_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView  [line 98];
+_fun_void ValueAnimator.setInterpolator(TimeInterpolator)(n$52:class android.animation.ObjectAnimator *,n$54:class android.view.animation.DecelerateInterpolator *) virtual [line 98];
+REMOVE_TEMPS(n$52,n$53,n$54); [line 98];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setInterpolator(TimeInterpolator)</div></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">            ObjectAnimator innerCircleAnimator = ObjectAnimator.ofFloat(vCircle, CircleView.INNER_CIRCLE_RADIUS_PROGRESS, 0.1f, 1f); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node145.html"><span class='visited'>I_145<span class='expansion'>node145 preds:144 succs:146 exn:39 Instructions
+n$55=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 100];
+n$56=*n$55.com.karthik.imager.Recycler.LikeButtonView.vCircle:class com.karthik.imager.Recycler.LikeButtonView  [line 100];
+*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView *=n$56 [line 100];
+REMOVE_TEMPS(n$55,n$56); [line 100];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node146.html"><span class='visited'>I_146<span class='expansion'>node146 preds:145 succs:147 exn:39 Instructions
+n$57=_fun___new_array(sizeof(float [2]):float (*)[_t$1]) [line 100];
+*&amp;$irvar1:float (*)[_t$1]=n$57 [line 100];
+REMOVE_TEMPS(n$57); [line 100];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node147.html"><span class='visited'>I_147<span class='expansion'>node147 preds:146 succs:148 exn:39 Instructions
+n$58=*&amp;$irvar1:float (*)[_t$1] [line 100];
+*n$58[0]:float [_t$1]=0.100000 [line 100];
+REMOVE_TEMPS(n$58); [line 100];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node148.html"><span class='visited'>I_148<span class='expansion'>node148 preds:147 succs:149 exn:39 Instructions
+n$59=*&amp;$irvar1:float (*)[_t$1] [line 100];
+*n$59[1]:float [_t$1]=1.000000 [line 100];
+REMOVE_TEMPS(n$59); [line 100];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node149.html"><span class='visited'>I_149<span class='expansion'>node149 preds:148 succs:150 exn:39 Instructions
+n$60=*&amp;#GB$com.karthik.imager.Recycler.CircleView.com.karthik.imager.Recycler.CircleView.INNER_CIRCLE_RADIUS_PROGRESS:class com.karthik.imager.Recycler.CircleView  [line 100];
+*&amp;$irvar2:class android.util.Property *=n$60 [line 100];
+REMOVE_TEMPS(n$60); [line 100];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node150.html"><span class='visited'>I_150<span class='expansion'>node150 preds:149 succs:151 exn:39 Instructions
+n$61=*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView * [line 100];
+n$62=*&amp;$irvar2:class android.util.Property * [line 100];
+n$63=*&amp;$irvar1:float (*)[_t$1] [line 100];
+n$64=_fun_ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])(n$61:class com.karthik.imager.Recycler.CircleView *,n$62:class android.util.Property *,n$63:float (*)[_t$1]) [line 100];
+*&amp;innerCircleAnimator:class android.animation.ObjectAnimator *=n$64 [line 100];
+REMOVE_TEMPS(n$61,n$62,n$63,n$64); [line 100];
+NULLIFY(&amp;$irvar0,false); [line 100];
+NULLIFY(&amp;$irvar1,false); [line 100];
+NULLIFY(&amp;$irvar2,false); [line 100];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])</div></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">            innerCircleAnimator.setDuration(200); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node151.html"><span class='visited'>I_151<span class='expansion'>node151 preds:150 succs:152 exn:39 Instructions
+n$65=*&amp;innerCircleAnimator:class android.animation.ObjectAnimator * [line 101];
+n$66=*n$65:class android.animation.ObjectAnimator  [line 101];
+n$67=_fun_ObjectAnimator ObjectAnimator.setDuration(long)(n$65:class android.animation.ObjectAnimator *,200:long ) virtual [line 101];
+*&amp;$irvar0:class android.animation.ObjectAnimator *=n$67 [line 101];
+REMOVE_TEMPS(n$65,n$66,n$67); [line 101];
+NULLIFY(&amp;$irvar0,false); [line 101];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.setDuration(long)</div></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">            innerCircleAnimator.setStartDelay(200); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node152.html"><span class='visited'>I_152<span class='expansion'>node152 preds:151 succs:153 exn:39 Instructions
+n$68=*&amp;innerCircleAnimator:class android.animation.ObjectAnimator * [line 102];
+n$69=*n$68:class android.animation.ObjectAnimator  [line 102];
+_fun_void ValueAnimator.setStartDelay(long)(n$68:class android.animation.ObjectAnimator *,200:long ) virtual [line 102];
+REMOVE_TEMPS(n$68,n$69); [line 102];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setStartDelay(long)</div></td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">            innerCircleAnimator.setInterpolator(DECCELERATE_INTERPOLATOR); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node153.html"><span class='visited'>I_153<span class='expansion'>node153 preds:152 succs:154 exn:39 Instructions
+n$70=*&amp;innerCircleAnimator:class android.animation.ObjectAnimator * [line 103];
+n$71=*n$70:class android.animation.ObjectAnimator  [line 103];
+n$72=*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.DECCELERATE_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView  [line 103];
+_fun_void ValueAnimator.setInterpolator(TimeInterpolator)(n$70:class android.animation.ObjectAnimator *,n$72:class android.view.animation.DecelerateInterpolator *) virtual [line 103];
+REMOVE_TEMPS(n$70,n$71,n$72); [line 103];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setInterpolator(TimeInterpolator)</div></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">            ObjectAnimator starScaleYAnimator = ObjectAnimator.ofFloat(ivStar, ImageView.SCALE_Y, 0.2f, 1f); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node154.html"><span class='visited'>I_154<span class='expansion'>node154 preds:153 succs:155 exn:39 Instructions
+n$73=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 105];
+n$74=*n$73.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 105];
+*&amp;$irvar0:class android.widget.ImageView *=n$74 [line 105];
+REMOVE_TEMPS(n$73,n$74); [line 105];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node155.html"><span class='visited'>I_155<span class='expansion'>node155 preds:154 succs:156 exn:39 Instructions
+n$75=_fun___new_array(sizeof(float [2]):float (*)[_t$2]) [line 105];
+*&amp;$irvar1:float (*)[_t$2]=n$75 [line 105];
+REMOVE_TEMPS(n$75); [line 105];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node156.html"><span class='visited'>I_156<span class='expansion'>node156 preds:155 succs:157 exn:39 Instructions
+n$76=*&amp;$irvar1:float (*)[_t$2] [line 105];
+*n$76[0]:float [_t$2]=0.200000 [line 105];
+REMOVE_TEMPS(n$76); [line 105];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node157.html"><span class='visited'>I_157<span class='expansion'>node157 preds:156 succs:158 exn:39 Instructions
+n$77=*&amp;$irvar1:float (*)[_t$2] [line 105];
+*n$77[1]:float [_t$2]=1.000000 [line 105];
+REMOVE_TEMPS(n$77); [line 105];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node158.html"><span class='visited'>I_158<span class='expansion'>node158 preds:157 succs:159 exn:39 Instructions
+n$78=*&amp;#GB$android.widget.ImageView.android.view.View.SCALE_Y:class android.widget.ImageView  [line 105];
+*&amp;$irvar2:class android.util.Property *=n$78 [line 105];
+REMOVE_TEMPS(n$78); [line 105];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node159.html"><span class='visited'>I_159<span class='expansion'>node159 preds:158 succs:160 exn:39 Instructions
+n$79=*&amp;$irvar0:class android.widget.ImageView * [line 105];
+n$80=*&amp;$irvar2:class android.util.Property * [line 105];
+n$81=*&amp;$irvar1:float (*)[_t$2] [line 105];
+n$82=_fun_ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])(n$79:class android.widget.ImageView *,n$80:class android.util.Property *,n$81:float (*)[_t$2]) [line 105];
+*&amp;starScaleYAnimator:class android.animation.ObjectAnimator *=n$82 [line 105];
+REMOVE_TEMPS(n$79,n$80,n$81,n$82); [line 105];
+NULLIFY(&amp;$irvar0,false); [line 105];
+NULLIFY(&amp;$irvar1,false); [line 105];
+NULLIFY(&amp;$irvar2,false); [line 105];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])</div></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">            starScaleYAnimator.setDuration(350); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node160.html"><span class='visited'>I_160<span class='expansion'>node160 preds:159 succs:161 exn:39 Instructions
+n$83=*&amp;starScaleYAnimator:class android.animation.ObjectAnimator * [line 106];
+n$84=*n$83:class android.animation.ObjectAnimator  [line 106];
+n$85=_fun_ObjectAnimator ObjectAnimator.setDuration(long)(n$83:class android.animation.ObjectAnimator *,350:long ) virtual [line 106];
+*&amp;$irvar0:class android.animation.ObjectAnimator *=n$85 [line 106];
+REMOVE_TEMPS(n$83,n$84,n$85); [line 106];
+NULLIFY(&amp;$irvar0,false); [line 106];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.setDuration(long)</div></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">            starScaleYAnimator.setStartDelay(250); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node161.html"><span class='visited'>I_161<span class='expansion'>node161 preds:160 succs:162 exn:39 Instructions
+n$86=*&amp;starScaleYAnimator:class android.animation.ObjectAnimator * [line 107];
+n$87=*n$86:class android.animation.ObjectAnimator  [line 107];
+_fun_void ValueAnimator.setStartDelay(long)(n$86:class android.animation.ObjectAnimator *,250:long ) virtual [line 107];
+REMOVE_TEMPS(n$86,n$87); [line 107];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setStartDelay(long)</div></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">            starScaleYAnimator.setInterpolator(OVERSHOOT_INTERPOLATOR); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node162.html"><span class='visited'>I_162<span class='expansion'>node162 preds:161 succs:163 exn:39 Instructions
+n$88=*&amp;starScaleYAnimator:class android.animation.ObjectAnimator * [line 108];
+n$89=*n$88:class android.animation.ObjectAnimator  [line 108];
+n$90=*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.OVERSHOOT_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView  [line 108];
+_fun_void ValueAnimator.setInterpolator(TimeInterpolator)(n$88:class android.animation.ObjectAnimator *,n$90:class android.view.animation.OvershootInterpolator *) virtual [line 108];
+REMOVE_TEMPS(n$88,n$89,n$90); [line 108];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setInterpolator(TimeInterpolator)</div></td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">            ObjectAnimator starScaleXAnimator = ObjectAnimator.ofFloat(ivStar, ImageView.SCALE_X, 0.2f, 1f); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node163.html"><span class='visited'>I_163<span class='expansion'>node163 preds:162 succs:164 exn:39 Instructions
+n$91=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 110];
+n$92=*n$91.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 110];
+*&amp;$irvar0:class android.widget.ImageView *=n$92 [line 110];
+REMOVE_TEMPS(n$91,n$92); [line 110];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node164.html"><span class='visited'>I_164<span class='expansion'>node164 preds:163 succs:165 exn:39 Instructions
+n$93=_fun___new_array(sizeof(float [2]):float (*)[_t$3]) [line 110];
+*&amp;$irvar1:float (*)[_t$3]=n$93 [line 110];
+REMOVE_TEMPS(n$93); [line 110];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node165.html"><span class='visited'>I_165<span class='expansion'>node165 preds:164 succs:166 exn:39 Instructions
+n$94=*&amp;$irvar1:float (*)[_t$3] [line 110];
+*n$94[0]:float [_t$3]=0.200000 [line 110];
+REMOVE_TEMPS(n$94); [line 110];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node166.html"><span class='visited'>I_166<span class='expansion'>node166 preds:165 succs:167 exn:39 Instructions
+n$95=*&amp;$irvar1:float (*)[_t$3] [line 110];
+*n$95[1]:float [_t$3]=1.000000 [line 110];
+REMOVE_TEMPS(n$95); [line 110];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node167.html"><span class='visited'>I_167<span class='expansion'>node167 preds:166 succs:168 exn:39 Instructions
+n$96=*&amp;#GB$android.widget.ImageView.android.view.View.SCALE_X:class android.widget.ImageView  [line 110];
+*&amp;$irvar2:class android.util.Property *=n$96 [line 110];
+REMOVE_TEMPS(n$96); [line 110];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node168.html"><span class='visited'>I_168<span class='expansion'>node168 preds:167 succs:169 exn:39 Instructions
+n$97=*&amp;$irvar0:class android.widget.ImageView * [line 110];
+n$98=*&amp;$irvar2:class android.util.Property * [line 110];
+n$99=*&amp;$irvar1:float (*)[_t$3] [line 110];
+n$100=_fun_ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])(n$97:class android.widget.ImageView *,n$98:class android.util.Property *,n$99:float (*)[_t$3]) [line 110];
+*&amp;starScaleXAnimator:class android.animation.ObjectAnimator *=n$100 [line 110];
+REMOVE_TEMPS(n$97,n$98,n$99,n$100); [line 110];
+NULLIFY(&amp;$irvar0,false); [line 110];
+NULLIFY(&amp;$irvar1,false); [line 110];
+NULLIFY(&amp;$irvar2,false); [line 110];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])</div></td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">            starScaleXAnimator.setDuration(350); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node169.html"><span class='visited'>I_169<span class='expansion'>node169 preds:168 succs:170 exn:39 Instructions
+n$101=*&amp;starScaleXAnimator:class android.animation.ObjectAnimator * [line 111];
+n$102=*n$101:class android.animation.ObjectAnimator  [line 111];
+n$103=_fun_ObjectAnimator ObjectAnimator.setDuration(long)(n$101:class android.animation.ObjectAnimator *,350:long ) virtual [line 111];
+*&amp;$irvar0:class android.animation.ObjectAnimator *=n$103 [line 111];
+REMOVE_TEMPS(n$101,n$102,n$103); [line 111];
+NULLIFY(&amp;$irvar0,false); [line 111];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.setDuration(long)</div></td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">            starScaleXAnimator.setStartDelay(250); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node170.html"><span class='visited'>I_170<span class='expansion'>node170 preds:169 succs:171 exn:39 Instructions
+n$104=*&amp;starScaleXAnimator:class android.animation.ObjectAnimator * [line 112];
+n$105=*n$104:class android.animation.ObjectAnimator  [line 112];
+_fun_void ValueAnimator.setStartDelay(long)(n$104:class android.animation.ObjectAnimator *,250:long ) virtual [line 112];
+REMOVE_TEMPS(n$104,n$105); [line 112];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setStartDelay(long)</div></td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">            starScaleXAnimator.setInterpolator(OVERSHOOT_INTERPOLATOR); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node171.html"><span class='visited'>I_171<span class='expansion'>node171 preds:170 succs:172 exn:39 Instructions
+n$106=*&amp;starScaleXAnimator:class android.animation.ObjectAnimator * [line 113];
+n$107=*n$106:class android.animation.ObjectAnimator  [line 113];
+n$108=*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.OVERSHOOT_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView  [line 113];
+_fun_void ValueAnimator.setInterpolator(TimeInterpolator)(n$106:class android.animation.ObjectAnimator *,n$108:class android.view.animation.OvershootInterpolator *) virtual [line 113];
+REMOVE_TEMPS(n$106,n$107,n$108); [line 113];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setInterpolator(TimeInterpolator)</div></td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">            ObjectAnimator dotsAnimator = ObjectAnimator.ofFloat(vDotsView, DotsView.DOTS_PROGRESS, 0, 1f); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node172.html"><span class='visited'>I_172<span class='expansion'>node172 preds:171 succs:173 exn:39 Instructions
+n$109=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 115];
+n$110=*n$109.com.karthik.imager.Recycler.LikeButtonView.vDotsView:class com.karthik.imager.Recycler.LikeButtonView  [line 115];
+*&amp;$irvar0:class com.karthik.imager.Recycler.DotsView *=n$110 [line 115];
+REMOVE_TEMPS(n$109,n$110); [line 115];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node173.html"><span class='visited'>I_173<span class='expansion'>node173 preds:172 succs:174 exn:39 Instructions
+n$111=_fun___new_array(sizeof(float [2]):float (*)[_t$4]) [line 115];
+*&amp;$irvar1:float (*)[_t$4]=n$111 [line 115];
+REMOVE_TEMPS(n$111); [line 115];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node174.html"><span class='visited'>I_174<span class='expansion'>node174 preds:173 succs:175 exn:39 Instructions
+n$112=*&amp;$irvar1:float (*)[_t$4] [line 115];
+*n$112[0]:float [_t$4]=0.000000 [line 115];
+REMOVE_TEMPS(n$112); [line 115];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node175.html"><span class='visited'>I_175<span class='expansion'>node175 preds:174 succs:176 exn:39 Instructions
+n$113=*&amp;$irvar1:float (*)[_t$4] [line 115];
+*n$113[1]:float [_t$4]=1.000000 [line 115];
+REMOVE_TEMPS(n$113); [line 115];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node176.html"><span class='visited'>I_176<span class='expansion'>node176 preds:175 succs:177 exn:39 Instructions
+n$114=*&amp;#GB$com.karthik.imager.Recycler.DotsView.com.karthik.imager.Recycler.DotsView.DOTS_PROGRESS:class com.karthik.imager.Recycler.DotsView  [line 115];
+*&amp;$irvar2:class android.util.Property *=n$114 [line 115];
+REMOVE_TEMPS(n$114); [line 115];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node177.html"><span class='visited'>I_177<span class='expansion'>node177 preds:176 succs:178 exn:39 Instructions
+n$115=*&amp;$irvar0:class com.karthik.imager.Recycler.DotsView * [line 115];
+n$116=*&amp;$irvar2:class android.util.Property * [line 115];
+n$117=*&amp;$irvar1:float (*)[_t$4] [line 115];
+n$118=_fun_ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])(n$115:class com.karthik.imager.Recycler.DotsView *,n$116:class android.util.Property *,n$117:float (*)[_t$4]) [line 115];
+*&amp;dotsAnimator:class android.animation.ObjectAnimator *=n$118 [line 115];
+REMOVE_TEMPS(n$115,n$116,n$117,n$118); [line 115];
+NULLIFY(&amp;$irvar0,false); [line 115];
+NULLIFY(&amp;$irvar1,false); [line 115];
+NULLIFY(&amp;$irvar2,false); [line 115];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node4.html"><span class='visitedproof'>S_4<span class='expansion'>node4 preds: succs:13 exn:5 Start
+DECLARE_LOCALS(&amp;return); [line 115];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView$1.<init>(com.karthik.imager.Recycler.LikeButtonView).06ffba3d35e597e5faf8194b8a0e2cf1.html">LikeButtonView$1.&lt;init&gt;(LikeButtonView): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])</div></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">            dotsAnimator.setDuration(900); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node178.html"><span class='visited'>I_178<span class='expansion'>node178 preds:177 succs:179 exn:39 Instructions
+n$119=*&amp;dotsAnimator:class android.animation.ObjectAnimator * [line 116];
+n$120=*n$119:class android.animation.ObjectAnimator  [line 116];
+n$121=_fun_ObjectAnimator ObjectAnimator.setDuration(long)(n$119:class android.animation.ObjectAnimator *,900:long ) virtual [line 116];
+*&amp;$irvar0:class android.animation.ObjectAnimator *=n$121 [line 116];
+REMOVE_TEMPS(n$119,n$120,n$121); [line 116];
+NULLIFY(&amp;$irvar0,false); [line 116];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ObjectAnimator ObjectAnimator.setDuration(long)</div></td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">            dotsAnimator.setStartDelay(50); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node179.html"><span class='visited'>I_179<span class='expansion'>node179 preds:178 succs:180 exn:39 Instructions
+n$122=*&amp;dotsAnimator:class android.animation.ObjectAnimator * [line 117];
+n$123=*n$122:class android.animation.ObjectAnimator  [line 117];
+_fun_void ValueAnimator.setStartDelay(long)(n$122:class android.animation.ObjectAnimator *,50:long ) virtual [line 117];
+REMOVE_TEMPS(n$122,n$123); [line 117];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ValueAnimator.setStartDelay(long)</div></td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">            dotsAnimator.setInterpolator(ACCELERATE_DECELERATE_INTERPOLATOR); <span class='dangling'>I_180<span class='expansion'>node180 preds:179 succs:181 exn:39 Instructions
+n$124=*&amp;dotsAnimator:class android.animation.ObjectAnimator * [line 118];
+n$125=*n$124:class android.animation.ObjectAnimator  [line 118];
+n$126=*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.ACCELERATE_DECELERATE_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView  [line 118];
+_fun_void ValueAnimator.setInterpolator(TimeInterpolator)(n$124:class android.animation.ObjectAnimator *,n$126:class android.view.animation.AccelerateDecelerateInterpolator *) virtual [line 118];
+REMOVE_TEMPS(n$124,n$125,n$126); [line 118];
+
+NOT VISITED</span></span></td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line">            animatorSet.playTogether( <span class='dangling'>I_181<span class='expansion'>node181 preds:180 succs:182 exn:39 Instructions
+n$127=_fun___new_array(sizeof(class android.animation.Animator *[5]):class android.animation.Animator *(*)[_t$5]) [line 120];
+*&amp;$irvar0:class android.animation.Animator *(*)[_t$5]=n$127 [line 120];
+REMOVE_TEMPS(n$127); [line 120];
+
+NOT VISITED</span></span> <span class='dangling'>I_182<span class='expansion'>node182 preds:181 succs:183 exn:39 Instructions
+n$128=*&amp;$irvar0:class android.animation.Animator *(*)[_t$5] [line 120];
+n$129=*&amp;outerCircleAnimator:class android.animation.ObjectAnimator * [line 120];
+*n$128[0]:class android.animation.Animator *[_t$5]=n$129 [line 120];
+REMOVE_TEMPS(n$128,n$129); [line 120];
+NULLIFY(&amp;outerCircleAnimator,false); [line 120];
+
+NOT VISITED</span></span> <span class='dangling'>I_183<span class='expansion'>node183 preds:182 succs:184 exn:39 Instructions
+n$130=*&amp;$irvar0:class android.animation.Animator *(*)[_t$5] [line 120];
+n$131=*&amp;innerCircleAnimator:class android.animation.ObjectAnimator * [line 120];
+*n$130[1]:class android.animation.Animator *[_t$5]=n$131 [line 120];
+REMOVE_TEMPS(n$130,n$131); [line 120];
+NULLIFY(&amp;innerCircleAnimator,false); [line 120];
+
+NOT VISITED</span></span> <span class='dangling'>I_184<span class='expansion'>node184 preds:183 succs:185 exn:39 Instructions
+n$132=*&amp;$irvar0:class android.animation.Animator *(*)[_t$5] [line 120];
+n$133=*&amp;starScaleYAnimator:class android.animation.ObjectAnimator * [line 120];
+*n$132[2]:class android.animation.Animator *[_t$5]=n$133 [line 120];
+REMOVE_TEMPS(n$132,n$133); [line 120];
+NULLIFY(&amp;starScaleYAnimator,false); [line 120];
+
+NOT VISITED</span></span> <span class='dangling'>I_185<span class='expansion'>node185 preds:184 succs:186 exn:39 Instructions
+n$134=*&amp;$irvar0:class android.animation.Animator *(*)[_t$5] [line 120];
+n$135=*&amp;starScaleXAnimator:class android.animation.ObjectAnimator * [line 120];
+*n$134[3]:class android.animation.Animator *[_t$5]=n$135 [line 120];
+REMOVE_TEMPS(n$134,n$135); [line 120];
+NULLIFY(&amp;starScaleXAnimator,false); [line 120];
+
+NOT VISITED</span></span> <span class='dangling'>I_186<span class='expansion'>node186 preds:185 succs:187 exn:39 Instructions
+n$136=*&amp;$irvar0:class android.animation.Animator *(*)[_t$5] [line 120];
+n$137=*&amp;dotsAnimator:class android.animation.ObjectAnimator * [line 120];
+*n$136[4]:class android.animation.Animator *[_t$5]=n$137 [line 120];
+REMOVE_TEMPS(n$136,n$137); [line 120];
+NULLIFY(&amp;dotsAnimator,false); [line 120];
+
+NOT VISITED</span></span> <span class='dangling'>I_187<span class='expansion'>node187 preds:186 succs:188 exn:39 Instructions
+n$138=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 120];
+n$139=*n$138.com.karthik.imager.Recycler.LikeButtonView.animatorSet:class com.karthik.imager.Recycler.LikeButtonView  [line 120];
+n$140=*n$139:class android.animation.AnimatorSet  [line 120];
+n$141=*&amp;$irvar0:class android.animation.Animator *(*)[_t$5] [line 120];
+_fun_void AnimatorSet.playTogether(android.animation.Animator[])(n$139:class android.animation.AnimatorSet *,n$141:class android.animation.Animator *(*)[_t$5]) virtual [line 120];
+REMOVE_TEMPS(n$138,n$139,n$140,n$141); [line 120];
+NULLIFY(&amp;$irvar0,false); [line 120];
+
+NOT VISITED</span></span></td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">                    outerCircleAnimator,</td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">                    innerCircleAnimator,</td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">                    starScaleYAnimator,</td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">                    starScaleXAnimator,</td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">                    dotsAnimator</td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">            );</td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">            animatorSet.addListener(new AnimatorListenerAdapter() { <span class='dangling'>I_188<span class='expansion'>node188 preds:187 succs:189 exn:39 Instructions
+n$142=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 128];
+n$143=*n$142.com.karthik.imager.Recycler.LikeButtonView.animatorSet:class com.karthik.imager.Recycler.LikeButtonView  [line 128];
+*&amp;$irvar0:class android.animation.AnimatorSet *=n$143 [line 128];
+REMOVE_TEMPS(n$142,n$143); [line 128];
+
+NOT VISITED</span></span> <span class='dangling'>I_189<span class='expansion'>node189 preds:188 succs:190 exn:39 Instructions
+n$144=_fun___new(sizeof(class com.karthik.imager.Recycler.LikeButtonView$1 ):class com.karthik.imager.Recycler.LikeButtonView$1 *) [line 128];
+n$145=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 128];
+_fun_LikeButtonView$1.&lt;init&gt;(LikeButtonView)(n$144:class com.karthik.imager.Recycler.LikeButtonView$1 *,n$145:class com.karthik.imager.Recycler.LikeButtonView *) [line 128];
+*&amp;$irvar1:class com.karthik.imager.Recycler.LikeButtonView$1 *=n$144 [line 128];
+REMOVE_TEMPS(n$144,n$145); [line 128];
+
+NOT VISITED</span></span> <span class='dangling'>I_190<span class='expansion'>node190 preds:189 succs:191 exn:39 Instructions
+n$146=*&amp;$irvar0:class android.animation.AnimatorSet * [line 128];
+n$147=*n$146:class android.animation.AnimatorSet  [line 128];
+n$148=*&amp;$irvar1:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 128];
+_fun_void Animator.addListener(Animator$AnimatorListener)(n$146:class android.animation.AnimatorSet *,n$148:class com.karthik.imager.Recycler.LikeButtonView$1 *) virtual [line 128];
+REMOVE_TEMPS(n$146,n$147,n$148); [line 128];
+NULLIFY(&amp;$irvar0,false); [line 128];
+NULLIFY(&amp;$irvar1,false); [line 128];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node5.html"><span class='visitedproof'>E_5<span class='expansion'>node5 preds:15 6 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_6<span class='expansion'>node6 preds: succs:5 exn:5 Instructions
+NULLIFY(&amp;this,false); [line 128];
+APPLY_ABSTRACTION; [line 128];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node13.html"><span class='visitedproof'>I_13<span class='expansion'>node13 preds:4 succs:14 exn:6 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 128];
+n$1=*&amp;$bcvar1:class com.karthik.imager.Recycler.LikeButtonView * [line 128];
+*n$0.com.karthik.imager.Recycler.LikeButtonView$1.this$0:class com.karthik.imager.Recycler.LikeButtonView$1 =n$1 [line 128];
+REMOVE_TEMPS(n$0,n$1); [line 128];
+NULLIFY(&amp;$bcvar1,false); [line 128];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node14.html"><span class='visitedproof'>I_14<span class='expansion'>node14 preds:13 succs:15 exn:6 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 128];
+_fun_AnimatorListenerAdapter.&lt;init&gt;()(n$2:class com.karthik.imager.Recycler.LikeButtonView$1 *) [line 128];
+REMOVE_TEMPS(n$2); [line 128];
+NULLIFY(&amp;this,false); [line 128];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node15.html"><span class='visitedproof'>I_15<span class='expansion'>node15 preds:14 succs:5 exn:6 Instructions
+APPLY_ABSTRACTION; [line 128];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION AnimatorListenerAdapter.<init>()</div></td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">                @Override</td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line">                public void onAnimationCancel(Animator animation) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node1.html"><span class='visitedproof'>S_1<span class='expansion'>node1 preds: succs:7 exn:2 Start
+DECLARE_LOCALS(&amp;return); [line 130];
+NULLIFY(&amp;animation,false); [line 130];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView$1.onAnimationCancel(android.animation.Animator):void.5cdfaabf6727497879c8e8b98b230987.html">void LikeButtonView$1.onAnimationCancel(Animator): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">                    vCircle.setInnerCircleRadiusProgress(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node7.html"><span class='visitedproof'>I_7<span class='expansion'>node7 preds:1 succs:8 exn:3 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 131];
+n$1=*n$0.com.karthik.imager.Recycler.LikeButtonView$1.this$0:class com.karthik.imager.Recycler.LikeButtonView$1  [line 131];
+n$2=*n$1.com.karthik.imager.Recycler.LikeButtonView.vCircle:class com.karthik.imager.Recycler.LikeButtonView  [line 131];
+n$3=*n$2:class com.karthik.imager.Recycler.CircleView  [line 131];
+_fun_void CircleView.setInnerCircleRadiusProgress(float)(n$2:class com.karthik.imager.Recycler.CircleView *,0.000000:float ) virtual [line 131];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3); [line 131];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line">                    vCircle.setOuterCircleRadiusProgress(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node8.html"><span class='visitedproof'>I_8<span class='expansion'>node8 preds:7 succs:9 exn:3 Instructions
+n$4=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 132];
+n$5=*n$4.com.karthik.imager.Recycler.LikeButtonView$1.this$0:class com.karthik.imager.Recycler.LikeButtonView$1  [line 132];
+n$6=*n$5.com.karthik.imager.Recycler.LikeButtonView.vCircle:class com.karthik.imager.Recycler.LikeButtonView  [line 132];
+n$7=*n$6:class com.karthik.imager.Recycler.CircleView  [line 132];
+_fun_void CircleView.setOuterCircleRadiusProgress(float)(n$6:class com.karthik.imager.Recycler.CircleView *,0.000000:float ) virtual [line 132];
+REMOVE_TEMPS(n$4,n$5,n$6,n$7); [line 132];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line">                    vDotsView.setCurrentProgress(0); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node9.html"><span class='visitedproof'>I_9<span class='expansion'>node9 preds:8 succs:10 exn:3 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 133];
+n$9=*n$8.com.karthik.imager.Recycler.LikeButtonView$1.this$0:class com.karthik.imager.Recycler.LikeButtonView$1  [line 133];
+n$10=*n$9.com.karthik.imager.Recycler.LikeButtonView.vDotsView:class com.karthik.imager.Recycler.LikeButtonView  [line 133];
+n$11=*n$10:class com.karthik.imager.Recycler.DotsView  [line 133];
+_fun_void DotsView.setCurrentProgress(float)(n$10:class com.karthik.imager.Recycler.DotsView *,0.000000:float ) virtual [line 133];
+REMOVE_TEMPS(n$8,n$9,n$10,n$11); [line 133];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void DotsView.setCurrentProgress(float)</div></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">                    ivStar.setScaleX(1); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node10.html"><span class='visitedproof'>I_10<span class='expansion'>node10 preds:9 succs:11 exn:3 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 134];
+n$13=*n$12.com.karthik.imager.Recycler.LikeButtonView$1.this$0:class com.karthik.imager.Recycler.LikeButtonView$1  [line 134];
+n$14=*n$13.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 134];
+n$15=*n$14:class android.widget.ImageView  [line 134];
+_fun_void View.setScaleX(float)(n$14:class android.widget.ImageView *,1.000000:float ) virtual [line 134];
+REMOVE_TEMPS(n$12,n$13,n$14,n$15); [line 134];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.setScaleX(float)</div></td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">                    ivStar.setScaleY(1); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node11.html"><span class='visitedproof'>I_11<span class='expansion'>node11 preds:10 succs:12 exn:3 Instructions
+n$16=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView$1 * [line 135];
+n$17=*n$16.com.karthik.imager.Recycler.LikeButtonView$1.this$0:class com.karthik.imager.Recycler.LikeButtonView$1  [line 135];
+n$18=*n$17.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 135];
+n$19=*n$18:class android.widget.ImageView  [line 135];
+_fun_void View.setScaleY(float)(n$18:class android.widget.ImageView *,1.000000:float ) virtual [line 135];
+REMOVE_TEMPS(n$16,n$17,n$18,n$19); [line 135];
+NULLIFY(&amp;this,false); [line 135];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.setScaleY(float)</div></td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">                } <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node2.html"><span class='visitedproof'>E_2<span class='expansion'>node2 preds:12 3 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_3<span class='expansion'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;this,false); [line 136];
+APPLY_ABSTRACTION; [line 136];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node12.html"><span class='visitedproof'>I_12<span class='expansion'>node12 preds:11 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 136];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line">            });</td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line">            animatorSet.start(); <span class='dangling'>I_191<span class='expansion'>node191 preds:190 succs:192 exn:39 Instructions
+n$149=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 139];
+n$150=*n$149.com.karthik.imager.Recycler.LikeButtonView.animatorSet:class com.karthik.imager.Recycler.LikeButtonView  [line 139];
+n$151=*n$150:class android.animation.AnimatorSet  [line 139];
+_fun_void AnimatorSet.start()(n$150:class android.animation.AnimatorSet *) virtual [line 139];
+REMOVE_TEMPS(n$149,n$150,n$151); [line 139];
+NULLIFY(&amp;this,false); [line 139];
+APPLY_ABSTRACTION; [line 139];
+
+NOT VISITED</span></span></td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">    } <span class='dangling'>E_38<span class='expansion'>node38 preds:192 39 succs: exn: Exit
+
+NOT VISITED</span></span> <span class='dangling'>I_39<span class='expansion'>node39 preds: succs:38 exn:38 Instructions
+NULLIFY(&amp;$T0_13,false); [line 141];
+NULLIFY(&amp;$T0_15,false); [line 141];
+NULLIFY(&amp;$T1_15,false); [line 141];
+NULLIFY(&amp;$irvar0,false); [line 141];
+NULLIFY(&amp;$irvar1,false); [line 141];
+NULLIFY(&amp;$irvar2,false); [line 141];
+NULLIFY(&amp;dotsAnimator,false); [line 141];
+NULLIFY(&amp;innerCircleAnimator,false); [line 141];
+NULLIFY(&amp;isChecked,false); [line 141];
+NULLIFY(&amp;outerCircleAnimator,false); [line 141];
+NULLIFY(&amp;starScaleXAnimator,false); [line 141];
+NULLIFY(&amp;starScaleYAnimator,false); [line 141];
+NULLIFY(&amp;this,false); [line 141];
+APPLY_ABSTRACTION; [line 141];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node192.html"><span class='visited'>I_192<span class='expansion'>node192 preds:191 127 succs:38 exn:39 Instructions
+NULLIFY(&amp;isChecked,false); [line 141];
+NULLIFY(&amp;this,false); [line 141];
+APPLY_ABSTRACTION; [line 141];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE142">142</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE143">143</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE144">144</td><td class="line">    public boolean onTouchEvent(MotionEvent event) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node28.html"><span class='visited'>S_28<span class='expansion'>node28 preds: succs:61 exn:29 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2,&amp;$irvar3,&amp;$irvar4,&amp;x,&amp;y,&amp;$T0_117,&amp;isInside); [line 144];
+NULLIFY(&amp;$T0_117,false); [line 144];
+NULLIFY(&amp;$irvar0,false); [line 144];
+NULLIFY(&amp;$irvar1,false); [line 144];
+NULLIFY(&amp;$irvar2,false); [line 144];
+NULLIFY(&amp;$irvar3,false); [line 144];
+NULLIFY(&amp;$irvar4,false); [line 144];
+NULLIFY(&amp;isInside,false); [line 144];
+NULLIFY(&amp;x,false); [line 144];
+NULLIFY(&amp;y,false); [line 144];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/com.karthik.imager.Recycler.LikeButtonView.onTouchEvent(android.view.MotionEvent):boolean.cce3ddbd87a050de24931a143f3f13d5.html">boolean LikeButtonView.onTouchEvent(MotionEvent): 0 specs</a></td></tr>
+<tr><td class="num" id="LINE145">145</td><td class="line">        switch (event.getAction()) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node61.html"><span class='visited'>I_61<span class='expansion'>node61 preds:28 succs:62 63 exn:30 Instructions
+n$0=*&amp;event:class android.view.MotionEvent * [line 145];
+n$1=*n$0:class android.view.MotionEvent  [line 145];
+n$2=_fun_int MotionEvent.getAction()(n$0:class android.view.MotionEvent *) virtual [line 145];
+*&amp;$irvar0:int =n$2 [line 145];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 145];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node62.html"><span class='visited'>C_62<span class='expansion'>node62 preds:61 succs:64 65 exn:30 Conditional method_body
+n$3=*&amp;$irvar0:int  [line 145];
+PRUNE(!(n$3 == 0), true); [line 145];
+REMOVE_TEMPS(n$3); [line 145];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node63.html"><span class='visited'>C_63<span class='expansion'>node63 preds:61 succs:68 exn:30 Conditional method_body
+n$3=*&amp;$irvar0:int  [line 145];
+PRUNE((n$3 == 0), false); [line 145];
+REMOVE_TEMPS(n$3); [line 145];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node64.html"><span class='visited'>C_64<span class='expansion'>node64 preds:62 succs:66 67 exn:30 Conditional method_body
+n$4=*&amp;$irvar0:int  [line 145];
+PRUNE(!(n$4 == 1), true); [line 145];
+REMOVE_TEMPS(n$4); [line 145];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node65.html"><span class='visited'>C_65<span class='expansion'>node65 preds:62 succs:93 exn:30 Conditional method_body
+n$4=*&amp;$irvar0:int  [line 145];
+PRUNE((n$4 == 1), false); [line 145];
+REMOVE_TEMPS(n$4); [line 145];
+</span></span></a> <span class='dangling'>C_66<span class='expansion'>node66 preds:64 succs:102 exn:30 Conditional method_body
+n$5=*&amp;$irvar0:int  [line 145];
+PRUNE(!(n$5 == 2), true); [line 145];
+REMOVE_TEMPS(n$5); [line 145];
+APPLY_ABSTRACTION; [line 145];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node67.html"><span class='visited'>C_67<span class='expansion'>node67 preds:64 succs:74 exn:30 Conditional method_body
+n$5=*&amp;$irvar0:int  [line 145];
+PRUNE((n$5 == 2), false); [line 145];
+REMOVE_TEMPS(n$5); [line 145];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int MotionEvent.getAction()</div></td></tr>
+<tr><td class="num" id="LINE146">146</td><td class="line">            case MotionEvent.ACTION_DOWN:</td></tr>
+<tr><td class="num" id="LINE147">147</td><td class="line">                ivStar.animate().scaleX(0.7f).scaleY(0.7f).setDuration(150).setInterpolator(DECCELERATE_INTERPOLATOR); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node68.html"><span class='visited'>I_68<span class='expansion'>node68 preds:63 succs:69 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 147];
+NULLIFY(&amp;event,false); [line 147];
+n$6=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 147];
+n$7=*n$6.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 147];
+n$8=*n$7:class android.widget.ImageView  [line 147];
+n$9=_fun_ViewPropertyAnimator View.animate()(n$7:class android.widget.ImageView *) virtual [line 147];
+*&amp;$irvar0:class android.view.ViewPropertyAnimator *=n$9 [line 147];
+REMOVE_TEMPS(n$6,n$7,n$8,n$9); [line 147];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node69.html"><span class='visited'>I_69<span class='expansion'>node69 preds:68 succs:70 exn:30 Instructions
+n$10=*&amp;$irvar0:class android.view.ViewPropertyAnimator * [line 147];
+n$11=*n$10:class android.view.ViewPropertyAnimator  [line 147];
+n$12=_fun_ViewPropertyAnimator ViewPropertyAnimator.scaleX(float)(n$10:class android.view.ViewPropertyAnimator *,0.700000:float ) virtual [line 147];
+*&amp;$irvar1:class android.view.ViewPropertyAnimator *=n$12 [line 147];
+REMOVE_TEMPS(n$10,n$11,n$12); [line 147];
+NULLIFY(&amp;$irvar0,false); [line 147];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node70.html"><span class='visited'>I_70<span class='expansion'>node70 preds:69 succs:71 exn:30 Instructions
+n$13=*&amp;$irvar1:class android.view.ViewPropertyAnimator * [line 147];
+n$14=*n$13:class android.view.ViewPropertyAnimator  [line 147];
+n$15=_fun_ViewPropertyAnimator ViewPropertyAnimator.scaleY(float)(n$13:class android.view.ViewPropertyAnimator *,0.700000:float ) virtual [line 147];
+*&amp;$irvar2:class android.view.ViewPropertyAnimator *=n$15 [line 147];
+REMOVE_TEMPS(n$13,n$14,n$15); [line 147];
+NULLIFY(&amp;$irvar1,false); [line 147];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node71.html"><span class='visited'>I_71<span class='expansion'>node71 preds:70 succs:72 exn:30 Instructions
+n$16=*&amp;$irvar2:class android.view.ViewPropertyAnimator * [line 147];
+n$17=*n$16:class android.view.ViewPropertyAnimator  [line 147];
+n$18=_fun_ViewPropertyAnimator ViewPropertyAnimator.setDuration(long)(n$16:class android.view.ViewPropertyAnimator *,150:long ) virtual [line 147];
+*&amp;$irvar3:class android.view.ViewPropertyAnimator *=n$18 [line 147];
+REMOVE_TEMPS(n$16,n$17,n$18); [line 147];
+NULLIFY(&amp;$irvar2,false); [line 147];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node72.html"><span class='visited'>I_72<span class='expansion'>node72 preds:71 succs:73 exn:30 Instructions
+n$19=*&amp;$irvar3:class android.view.ViewPropertyAnimator * [line 147];
+n$20=*n$19:class android.view.ViewPropertyAnimator  [line 147];
+n$21=*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.DECCELERATE_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView  [line 147];
+n$22=_fun_ViewPropertyAnimator ViewPropertyAnimator.setInterpolator(TimeInterpolator)(n$19:class android.view.ViewPropertyAnimator *,n$21:class android.view.animation.DecelerateInterpolator *) virtual [line 147];
+*&amp;$irvar4:class android.view.ViewPropertyAnimator *=n$22 [line 147];
+REMOVE_TEMPS(n$19,n$20,n$21,n$22); [line 147];
+NULLIFY(&amp;$irvar3,false); [line 147];
+NULLIFY(&amp;$irvar4,false); [line 147];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator View.animate()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.scaleX(float)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.scaleY(float)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.setDuration(long)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.setInterpolator(TimeInterpolator)</div></td></tr>
+<tr><td class="num" id="LINE148">148</td><td class="line">                setPressed(true); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node73.html"><span class='visited'>I_73<span class='expansion'>node73 preds:72 succs:102 exn:30 Instructions
+n$23=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 148];
+n$24=*n$23:class com.karthik.imager.Recycler.LikeButtonView  [line 148];
+_fun_void View.setPressed(boolean)(n$23:class com.karthik.imager.Recycler.LikeButtonView *,1:int ) virtual [line 148];
+REMOVE_TEMPS(n$23,n$24); [line 148];
+NULLIFY(&amp;this,false); [line 148];
+APPLY_ABSTRACTION; [line 148];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.setPressed(boolean)</div></td></tr>
+<tr><td class="num" id="LINE149">149</td><td class="line">                break;</td></tr>
+<tr><td class="num" id="LINE150">150</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE151">151</td><td class="line">            case MotionEvent.ACTION_MOVE:</td></tr>
+<tr><td class="num" id="LINE152">152</td><td class="line">                float x = event.getX(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node74.html"><span class='visited'>I_74<span class='expansion'>node74 preds:67 succs:75 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 152];
+n$25=*&amp;event:class android.view.MotionEvent * [line 152];
+n$26=*n$25:class android.view.MotionEvent  [line 152];
+n$27=_fun_float MotionEvent.getX()(n$25:class android.view.MotionEvent *) virtual [line 152];
+*&amp;x:float =n$27 [line 152];
+REMOVE_TEMPS(n$25,n$26,n$27); [line 152];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION float MotionEvent.getX()</div></td></tr>
+<tr><td class="num" id="LINE153">153</td><td class="line">                float y = event.getY(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node75.html"><span class='visited'>I_75<span class='expansion'>node75 preds:74 succs:76 77 exn:30 Instructions
+n$28=*&amp;event:class android.view.MotionEvent * [line 153];
+n$29=*n$28:class android.view.MotionEvent  [line 153];
+n$30=_fun_float MotionEvent.getY()(n$28:class android.view.MotionEvent *) virtual [line 153];
+*&amp;y:float =n$30 [line 153];
+REMOVE_TEMPS(n$28,n$29,n$30); [line 153];
+NULLIFY(&amp;event,false); [line 153];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION float MotionEvent.getY()</div></td></tr>
+<tr><td class="num" id="LINE154">154</td><td class="line">                boolean isInside = (x &gt; 0 &amp;&amp; x &lt; getWidth() &amp;&amp; y &gt; 0 &amp;&amp; y &lt; getHeight()); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node76.html"><span class='visited'>C_76<span class='expansion'>node76 preds:75 succs:78 exn:30 Conditional method_body
+n$31=*&amp;x:float  [line 154];
+PRUNE(!(n$31  &lt;=  0.000000), true); [line 154];
+REMOVE_TEMPS(n$31); [line 154];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node77.html"><span class='visited'>C_77<span class='expansion'>node77 preds:75 succs:87 exn:30 Conditional method_body
+n$31=*&amp;x:float  [line 154];
+PRUNE((n$31  &lt;=  0.000000), false); [line 154];
+REMOVE_TEMPS(n$31); [line 154];
+APPLY_ABSTRACTION; [line 154];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node78.html"><span class='visited'>I_78<span class='expansion'>node78 preds:76 succs:79 80 exn:30 Instructions
+n$32=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 154];
+n$33=*n$32:class com.karthik.imager.Recycler.LikeButtonView  [line 154];
+n$34=_fun_int View.getWidth()(n$32:class com.karthik.imager.Recycler.LikeButtonView *) virtual [line 154];
+*&amp;$irvar0:int =n$34 [line 154];
+REMOVE_TEMPS(n$32,n$33,n$34); [line 154];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node79.html"><span class='visited'>C_79<span class='expansion'>node79 preds:78 succs:81 82 exn:30 Conditional method_body
+n$35=*&amp;x:float  [line 154];
+n$36=*&amp;$irvar0:int  [line 154];
+PRUNE(!(n$35  &gt;=  (float )n$36), true); [line 154];
+REMOVE_TEMPS(n$35,n$36); [line 154];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node80.html"><span class='visited'>C_80<span class='expansion'>node80 preds:78 succs:87 exn:30 Conditional method_body
+n$35=*&amp;x:float  [line 154];
+n$36=*&amp;$irvar0:int  [line 154];
+PRUNE((n$35  &gt;=  (float )n$36), false); [line 154];
+REMOVE_TEMPS(n$35,n$36); [line 154];
+APPLY_ABSTRACTION; [line 154];
+</span></span></a> <span class='dangling'>C_81<span class='expansion'>node81 preds:79 succs:83 exn:30 Conditional method_body
+n$37=*&amp;y:float  [line 154];
+PRUNE(!(n$37  &lt;=  0.000000), true); [line 154];
+REMOVE_TEMPS(n$37); [line 154];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node82.html"><span class='visited'>C_82<span class='expansion'>node82 preds:79 succs:87 exn:30 Conditional method_body
+n$37=*&amp;y:float  [line 154];
+PRUNE((n$37  &lt;=  0.000000), false); [line 154];
+REMOVE_TEMPS(n$37); [line 154];
+APPLY_ABSTRACTION; [line 154];
+</span></span></a> <span class='dangling'>I_83<span class='expansion'>node83 preds:81 succs:84 85 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 154];
+NULLIFY(&amp;x,false); [line 154];
+n$38=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 154];
+n$39=*n$38:class com.karthik.imager.Recycler.LikeButtonView  [line 154];
+n$40=_fun_int View.getHeight()(n$38:class com.karthik.imager.Recycler.LikeButtonView *) virtual [line 154];
+*&amp;$irvar0:int =n$40 [line 154];
+REMOVE_TEMPS(n$38,n$39,n$40); [line 154];
+
+NOT VISITED</span></span> <span class='dangling'>C_84<span class='expansion'>node84 preds:83 succs:86 exn:30 Conditional method_body
+n$41=*&amp;y:float  [line 154];
+n$42=*&amp;$irvar0:int  [line 154];
+PRUNE(!(n$41  &gt;=  (float )n$42), true); [line 154];
+REMOVE_TEMPS(n$41,n$42); [line 154];
+
+NOT VISITED</span></span> <span class='dangling'>C_85<span class='expansion'>node85 preds:83 succs:87 exn:30 Conditional method_body
+n$41=*&amp;y:float  [line 154];
+n$42=*&amp;$irvar0:int  [line 154];
+PRUNE((n$41  &gt;=  (float )n$42), false); [line 154];
+REMOVE_TEMPS(n$41,n$42); [line 154];
+APPLY_ABSTRACTION; [line 154];
+
+NOT VISITED</span></span> <span class='dangling'>I_86<span class='expansion'>node86 preds:84 succs:88 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 154];
+NULLIFY(&amp;y,false); [line 154];
+*&amp;$T0_117:int =1 [line 154];
+APPLY_ABSTRACTION; [line 154];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node87.html"><span class='visited'>I_87<span class='expansion'>node87 preds:85 82 80 77 succs:88 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 154];
+NULLIFY(&amp;y,false); [line 154];
+NULLIFY(&amp;x,false); [line 154];
+*&amp;$T0_117:int =0 [line 154];
+APPLY_ABSTRACTION; [line 154];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node88.html"><span class='visited'>I_88<span class='expansion'>node88 preds:87 86 succs:89 exn:30 Instructions
+n$43=*&amp;$T0_117:int  [line 154];
+*&amp;isInside:int =n$43 [line 154];
+REMOVE_TEMPS(n$43); [line 154];
+NULLIFY(&amp;$T0_117,false); [line 154];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int View.getWidth()</div></td></tr>
+<tr><td class="num" id="LINE155">155</td><td class="line">                if (isPressed() != isInside) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node89.html"><span class='visited'>I_89<span class='expansion'>node89 preds:88 succs:90 91 exn:30 Instructions
+n$44=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 155];
+n$45=*n$44:class com.karthik.imager.Recycler.LikeButtonView  [line 155];
+n$46=_fun_boolean View.isPressed()(n$44:class com.karthik.imager.Recycler.LikeButtonView *) virtual [line 155];
+*&amp;$irvar0:_Bool =n$46 [line 155];
+REMOVE_TEMPS(n$44,n$45,n$46); [line 155];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node90.html"><span class='visited'>C_90<span class='expansion'>node90 preds:89 succs:92 exn:30 Conditional method_body
+n$47=*&amp;$irvar0:_Bool  [line 155];
+n$48=*&amp;isInside:int  [line 155];
+PRUNE(!(n$47 == n$48), true); [line 155];
+REMOVE_TEMPS(n$47,n$48); [line 155];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node91.html"><span class='visited'>C_91<span class='expansion'>node91 preds:89 succs:102 exn:30 Conditional method_body
+n$47=*&amp;$irvar0:_Bool  [line 155];
+n$48=*&amp;isInside:int  [line 155];
+PRUNE((n$47 == n$48), false); [line 155];
+REMOVE_TEMPS(n$47,n$48); [line 155];
+APPLY_ABSTRACTION; [line 155];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean View.isPressed()</div></td></tr>
+<tr><td class="num" id="LINE156">156</td><td class="line">                    setPressed(isInside); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node92.html"><span class='visited'>I_92<span class='expansion'>node92 preds:90 succs:102 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 156];
+n$49=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 156];
+n$50=*n$49:class com.karthik.imager.Recycler.LikeButtonView  [line 156];
+n$51=*&amp;isInside:int  [line 156];
+_fun_void View.setPressed(boolean)(n$49:class com.karthik.imager.Recycler.LikeButtonView *,n$51:int ) virtual [line 156];
+REMOVE_TEMPS(n$49,n$50,n$51); [line 156];
+NULLIFY(&amp;isInside,false); [line 156];
+NULLIFY(&amp;this,false); [line 156];
+APPLY_ABSTRACTION; [line 156];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.setPressed(boolean)</div></td></tr>
+<tr><td class="num" id="LINE157">157</td><td class="line">                }</td></tr>
+<tr><td class="num" id="LINE158">158</td><td class="line">                break;</td></tr>
+<tr><td class="num" id="LINE159">159</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE160">160</td><td class="line">            case MotionEvent.ACTION_UP:</td></tr>
+<tr><td class="num" id="LINE161">161</td><td class="line">                ivStar.animate().scaleX(1).scaleY(1).setInterpolator(DECCELERATE_INTERPOLATOR); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node93.html"><span class='visited'>I_93<span class='expansion'>node93 preds:65 succs:94 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 161];
+NULLIFY(&amp;event,false); [line 161];
+n$52=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 161];
+n$53=*n$52.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 161];
+n$54=*n$53:class android.widget.ImageView  [line 161];
+n$55=_fun_ViewPropertyAnimator View.animate()(n$53:class android.widget.ImageView *) virtual [line 161];
+*&amp;$irvar0:class android.view.ViewPropertyAnimator *=n$55 [line 161];
+REMOVE_TEMPS(n$52,n$53,n$54,n$55); [line 161];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node94.html"><span class='visited'>I_94<span class='expansion'>node94 preds:93 succs:95 exn:30 Instructions
+n$56=*&amp;$irvar0:class android.view.ViewPropertyAnimator * [line 161];
+n$57=*n$56:class android.view.ViewPropertyAnimator  [line 161];
+n$58=_fun_ViewPropertyAnimator ViewPropertyAnimator.scaleX(float)(n$56:class android.view.ViewPropertyAnimator *,1.000000:float ) virtual [line 161];
+*&amp;$irvar1:class android.view.ViewPropertyAnimator *=n$58 [line 161];
+REMOVE_TEMPS(n$56,n$57,n$58); [line 161];
+NULLIFY(&amp;$irvar0,false); [line 161];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node95.html"><span class='visited'>I_95<span class='expansion'>node95 preds:94 succs:96 exn:30 Instructions
+n$59=*&amp;$irvar1:class android.view.ViewPropertyAnimator * [line 161];
+n$60=*n$59:class android.view.ViewPropertyAnimator  [line 161];
+n$61=_fun_ViewPropertyAnimator ViewPropertyAnimator.scaleY(float)(n$59:class android.view.ViewPropertyAnimator *,1.000000:float ) virtual [line 161];
+*&amp;$irvar2:class android.view.ViewPropertyAnimator *=n$61 [line 161];
+REMOVE_TEMPS(n$59,n$60,n$61); [line 161];
+NULLIFY(&amp;$irvar1,false); [line 161];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node96.html"><span class='visited'>I_96<span class='expansion'>node96 preds:95 succs:97 exn:30 Instructions
+n$62=*&amp;$irvar2:class android.view.ViewPropertyAnimator * [line 161];
+n$63=*n$62:class android.view.ViewPropertyAnimator  [line 161];
+n$64=*&amp;#GB$com.karthik.imager.Recycler.LikeButtonView.com.karthik.imager.Recycler.LikeButtonView.DECCELERATE_INTERPOLATOR:class com.karthik.imager.Recycler.LikeButtonView  [line 161];
+n$65=_fun_ViewPropertyAnimator ViewPropertyAnimator.setInterpolator(TimeInterpolator)(n$62:class android.view.ViewPropertyAnimator *,n$64:class android.view.animation.DecelerateInterpolator *) virtual [line 161];
+*&amp;$irvar3:class android.view.ViewPropertyAnimator *=n$65 [line 161];
+REMOVE_TEMPS(n$62,n$63,n$64,n$65); [line 161];
+NULLIFY(&amp;$irvar2,false); [line 161];
+NULLIFY(&amp;$irvar3,false); [line 161];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator View.animate()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.scaleX(float)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.scaleY(float)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.setInterpolator(TimeInterpolator)</div></td></tr>
+<tr><td class="num" id="LINE162">162</td><td class="line">                if (isPressed()) { <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node97.html"><span class='visited'>I_97<span class='expansion'>node97 preds:96 succs:98 99 exn:30 Instructions
+n$66=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 162];
+n$67=*n$66:class com.karthik.imager.Recycler.LikeButtonView  [line 162];
+n$68=_fun_boolean View.isPressed()(n$66:class com.karthik.imager.Recycler.LikeButtonView *) virtual [line 162];
+*&amp;$irvar0:_Bool =n$68 [line 162];
+REMOVE_TEMPS(n$66,n$67,n$68); [line 162];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node98.html"><span class='visited'>C_98<span class='expansion'>node98 preds:97 succs:100 exn:30 Conditional method_body
+n$69=*&amp;$irvar0:_Bool  [line 162];
+PRUNE(!(n$69 == 0), true); [line 162];
+REMOVE_TEMPS(n$69); [line 162];
+</span></span></a> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node99.html"><span class='visited'>C_99<span class='expansion'>node99 preds:97 succs:102 exn:30 Conditional method_body
+n$69=*&amp;$irvar0:_Bool  [line 162];
+PRUNE((n$69 == 0), false); [line 162];
+REMOVE_TEMPS(n$69); [line 162];
+APPLY_ABSTRACTION; [line 162];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean View.isPressed()</div></td></tr>
+<tr><td class="num" id="LINE163">163</td><td class="line">                    performClick(); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node100.html"><span class='visited'>I_100<span class='expansion'>node100 preds:98 succs:101 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 163];
+n$70=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 163];
+n$71=*n$70:class com.karthik.imager.Recycler.LikeButtonView  [line 163];
+n$72=_fun_boolean View.performClick()(n$70:class com.karthik.imager.Recycler.LikeButtonView *) virtual [line 163];
+*&amp;$irvar0:_Bool =n$72 [line 163];
+REMOVE_TEMPS(n$70,n$71,n$72); [line 163];
+NULLIFY(&amp;$irvar0,false); [line 163];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean View.performClick()</div></td></tr>
+<tr><td class="num" id="LINE164">164</td><td class="line">                    setPressed(false); <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node101.html"><span class='visited'>I_101<span class='expansion'>node101 preds:100 succs:102 exn:30 Instructions
+n$73=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 164];
+n$74=*n$73:class com.karthik.imager.Recycler.LikeButtonView  [line 164];
+_fun_void View.setPressed(boolean)(n$73:class com.karthik.imager.Recycler.LikeButtonView *,0:int ) virtual [line 164];
+REMOVE_TEMPS(n$73,n$74); [line 164];
+NULLIFY(&amp;this,false); [line 164];
+APPLY_ABSTRACTION; [line 164];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.setPressed(boolean)</div></td></tr>
+<tr><td class="num" id="LINE165">165</td><td class="line">                }</td></tr>
+<tr><td class="num" id="LINE166">166</td><td class="line">                break;</td></tr>
+<tr><td class="num" id="LINE167">167</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE168">168</td><td class="line">        return true; <span class='dangling'>E_29<span class='expansion'>node29 preds:102 30 succs: exn: Exit
+
+NOT VISITED</span></span> <span class='dangling'>I_30<span class='expansion'>node30 preds: succs:29 exn:29 Instructions
+NULLIFY(&amp;$T0_117,false); [line 168];
+NULLIFY(&amp;$irvar0,false); [line 168];
+NULLIFY(&amp;$irvar1,false); [line 168];
+NULLIFY(&amp;$irvar2,false); [line 168];
+NULLIFY(&amp;$irvar3,false); [line 168];
+NULLIFY(&amp;event,false); [line 168];
+NULLIFY(&amp;isInside,false); [line 168];
+NULLIFY(&amp;this,false); [line 168];
+NULLIFY(&amp;x,false); [line 168];
+NULLIFY(&amp;y,false); [line 168];
+APPLY_ABSTRACTION; [line 168];
+
+NOT VISITED</span></span> <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node102.html"><span class='visited'>I_102<span class='expansion'>node102 preds:101 99 92 91 73 66 succs:29 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 168];
+NULLIFY(&amp;event,false); [line 168];
+NULLIFY(&amp;isInside,false); [line 168];
+NULLIFY(&amp;this,false); [line 168];
+*&amp;return:_Bool =1 [line 168];
+APPLY_ABSTRACTION; [line 168];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE169">169</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE170">170</td><td class="line">}</td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION LayoutInflater LayoutInflater.from(Context)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node57.html#session3">node57#session3</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE67">67</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet,int)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node50.html#session2">node50#session2</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE56">56</a>)<br>SKIP_FUNCTION int MotionEvent.getAction()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node61.html#session2">node61#session2</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE145">145</a>)<br>SKIP_FUNCTION DecelerateInterpolator.<init>()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node43.html#session2">node43#session2</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE30">30</a>)<br>SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.scaleX(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node69.html#session5">node69#session5</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">147</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node94.html#session14">node94#session14</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE161">161</a>)<br>SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.setDuration(long)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node71.html#session7">node71#session7</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">147</a>)<br>SKIP_FUNCTION float MotionEvent.getY()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node75.html#session27">node75#session27</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE153">153</a>)<br>SKIP_FUNCTION void ValueAnimator.setInterpolator(TimeInterpolator)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node144.html#session39">node144#session39</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE98">98</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node153.html#session48">node153#session48</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE103">103</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node162.html#session57">node162#session57</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE108">108</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node171.html#session66">node171#session66</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE113">113</a>)<br>SKIP_FUNCTION void View.setPressed(boolean)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node73.html#session9">node73#session9</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE148">148</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node92.html#session35">node92#session35</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE156">156</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node101.html#session22">node101#session22</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE164">164</a>)<br>SKIP_FUNCTION AnimatorSet.<init>()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node135.html#session30">node135#session30</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE94">94</a>)<br>SKIP_FUNCTION ViewPropertyAnimator View.animate()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node128.html#session23">node128#session23</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE87">87</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node68.html#session4">node68#session4</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">147</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node93.html#session13">node93#session13</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE161">161</a>)<br>SKIP_FUNCTION void ViewPropertyAnimator.cancel()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node129.html#session24">node129#session24</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE87">87</a>)<br>SKIP_FUNCTION float MotionEvent.getX()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node74.html#session26">node74#session26</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE152">152</a>)<br>SKIP_FUNCTION void DotsView.setCurrentProgress(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node134.html#session29">node134#session29</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE92">92</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node9.html#session4">node9#session4</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE133">133</a>)<br>SKIP_FUNCTION View LayoutInflater.inflate(int,ViewGroup,boolean)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node58.html#session4">node58#session4</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE67">67</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node53.html#session2">node53#session2</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE46">46</a>)<br>SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.setInterpolator(TimeInterpolator)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node72.html#session8">node72#session8</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">147</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node96.html#session16">node96#session16</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE161">161</a>)<br>SKIP_FUNCTION ObjectAnimator ObjectAnimator.setDuration(long)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node143.html#session38">node143#session38</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE97">97</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node151.html#session46">node151#session46</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE101">101</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node160.html#session55">node160#session55</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE106">106</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node169.html#session64">node169#session64</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE111">111</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node178.html#session73">node178#session73</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE116">116</a>)<br>SKIP_FUNCTION boolean View.isPressed()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node89.html#session31">node89#session31</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE155">155</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node97.html#session17">node97#session17</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE162">162</a>)<br>SKIP_FUNCTION AccelerateDecelerateInterpolator.<init>()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node45.html#session4">node45#session4</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE31">31</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet,int,int)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node112.html#session2">node112#session2</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE62">62</a>)<br>SKIP_FUNCTION void View.setScaleX(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node130.html#session25">node130#session25</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE88">88</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node10.html#session5">node10#session5</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE134">134</a>)<br>SKIP_FUNCTION void ValueAnimator.setStartDelay(long)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node152.html#session47">node152#session47</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE102">102</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node161.html#session56">node161#session56</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE107">107</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node170.html#session65">node170#session65</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE112">112</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node179.html#session74">node179#session74</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE117">117</a>)<br>SKIP_FUNCTION ViewPropertyAnimator ViewPropertyAnimator.scaleY(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node70.html#session6">node70#session6</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">147</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node95.html#session15">node95#session15</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE161">161</a>)<br>SKIP_FUNCTION ObjectAnimator ObjectAnimator.ofFloat(Object,Property,float[])  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node142.html#session37">node142#session37</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE96">96</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node150.html#session45">node150#session45</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE100">100</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node159.html#session54">node159#session54</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE105">105</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node168.html#session63">node168#session63</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE110">110</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node177.html#session72">node177#session72</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE115">115</a>)<br>SKIP_FUNCTION int View.getWidth()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node78.html#session38">node78#session38</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE154">154</a>)<br>SKIP_FUNCTION void View.setScaleY(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node131.html#session26">node131#session26</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE89">89</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node11.html#session6">node11#session6</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE135">135</a>)<br>SKIP_FUNCTION OvershootInterpolator.<init>(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node47.html#session6">node47#session6</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE32">32</a>)<br>SKIP_FUNCTION void AnimatorSet.cancel()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node125.html#session12">node125#session12</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE83">83</a>)<br>SKIP_FUNCTION boolean View.performClick()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node100.html#session21">node100#session21</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE163">163</a>)<br>SKIP_FUNCTION void ImageView.setImageResource(int)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node110.html#session6">node110#session6</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE73">73</a>) <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node122.html#session6">node122#session6</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE80">80</a>)<br>SKIP_FUNCTION Context View.getContext()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node56.html#session2">node56#session2</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE67">67</a>)<br>SKIP_FUNCTION void ButterKnife.bind(View)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node59.html#session5">node59#session5</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE68">68</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node193.html#session2">node193#session2</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE51">51</a>)<br>SKIP_FUNCTION AnimatorListenerAdapter.<init>()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node14.html#session3">node14#session3</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE128">128</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION void DotsView.setCurrentProgress(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node9.html#session12">node9#session12</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE133">133</a>)<br>SKIP_FUNCTION Context View.getContext()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node56.html#session9">node56#session9</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE67">67</a>)<br>SKIP_FUNCTION AnimatorListenerAdapter.<init>()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node14.html#session8">node14#session8</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE128">128</a>)<br>SKIP_FUNCTION LayoutInflater LayoutInflater.from(Context)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node57.html#session10">node57#session10</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE67">67</a>)<br>SKIP_FUNCTION void View.setScaleY(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node11.html#session14">node11#session14</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE135">135</a>)<br>SKIP_FUNCTION OvershootInterpolator.<init>(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node47.html#session15">node47#session15</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE32">32</a>)<br>SKIP_FUNCTION void View.setScaleX(float)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node10.html#session13">node10#session13</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE134">134</a>)<br>SKIP_FUNCTION void ButterKnife.bind(View)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node59.html#session12">node59#session12</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE68">68</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node193.html#session7">node193#session7</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE51">51</a>)<br>SKIP_FUNCTION DecelerateInterpolator.<init>()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node43.html#session11">node43#session11</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE30">30</a>)<br>SKIP_FUNCTION View LayoutInflater.inflate(int,ViewGroup,boolean)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node58.html#session11">node58#session11</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE67">67</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node53.html#session7">node53#session7</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE46">46</a>)<br>SKIP_FUNCTION void ImageView.setImageResource(int)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node110.html#session19">node110#session19</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE73">73</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet,int)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node50.html#session7">node50#session7</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE56">56</a>)<br>SKIP_FUNCTION AccelerateDecelerateInterpolator.<init>()  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node45.html#session13">node45#session13</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE31">31</a>)<br>SKIP_FUNCTION FrameLayout.<init>(Context,AttributeSet,int,int)  <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/nodes/node112.html#session7">node112#session7</a>( <a href="./LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca/../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE62">62</a>)</body>
+</html>

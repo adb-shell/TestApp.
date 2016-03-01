@@ -1,0 +1,23 @@
+digraph iCFG {
+5 [label="5:  method_body \n   APPLY_ABSTRACTION; [line 5]\n " shape="box"]
+	
+
+	 5 -> 2 ;
+	 5 -> 3 [color="red" ];
+4 [label="4:  Call Object.<init>() \n   n$0=*&this:class io.realm.DefaultRealmModule * [line 5]\n  _fun_Object.<init>()(n$0:class io.realm.DefaultRealmModule *) [line 5]\n  REMOVE_TEMPS(n$0); [line 5]\n  NULLIFY(&this,false); [line 5]\n " shape="box"]
+	
+
+	 4 -> 5 ;
+	 4 -> 3 [color="red" ];
+3 [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 5]\n " shape="box"]
+	
+
+	 3 -> 2 ;
+2 [label="2: Exit DefaultRealmModule.<init>() \n  " color=yellow style=filled]
+	
+
+1 [label="1: Start DefaultRealmModule.<init>()\nFormals:  this:class io.realm.DefaultRealmModule *\nLocals:  \n   DECLARE_LOCALS(&return); [line 5]\n " color=yellow style=filled]
+	
+
+	 1 -> 4 ;
+}

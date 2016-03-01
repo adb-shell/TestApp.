@@ -1,0 +1,958 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node71</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE176">71</a></h1></center>PROC:  <a href="./../com.karthik.imager.Adapter.attachFullViewHolderData(com.karthik.imager.Adapter$FullViewHolder,int):v.9f94194b7eccf1c9a744b25afc5f3730.html">void Adapter.attachFullViewHolderData(Adapter$FullViewHolder,int)</a> LINE: <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE176">176</a>
+<br>PREDS:
+ <a href="./../nodes/node70.html"><span class='visited'>N_70<span class='expansion'>node70 preds:69 succs:71 exn:16 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_72<span class='expansion'>node72 preds:71 succs:73 exn:16 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_16<span class='expansion'>node16 preds: succs:15 exn:15 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$12=*&amp;$irvar4:class java.lang.StringBuilder * [line 176];
+                          n$13=*n$12:class java.lang.StringBuilder  [line 176];
+                          n$14=_fun_String StringBuilder.toString()(n$12:class java.lang.StringBuilder *) virtual [line 176];
+                          *&amp;$irvar5:class java.lang.String *=n$14 [line 176];
+                          REMOVE_TEMPS(n$12,n$13,n$14); [line 176];
+                          NULLIFY(&amp;$irvar4,false); [line 176];
+                          </span><hr width="100%">
+ <a name="session7"href="./../nodes/node71.html#session7">node71#session7</a>( <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE176">176</a>)<LISTING><span class='color_black'>**** [FP:0] void Adapter.attachFullViewHolderData(Adapter$FullViewHolder,int) Node: 71, Procedure: void Adapter.attachFullViewHolderData(Adapter$FullViewHolder,int), Session: 7, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; String String.valueOf(int) &gt; :176(@f$5)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+  <span class='color_red'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+  <span class='color_red'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = _t$0 <span class='color_orange'>update:176</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+  <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+  <span class='color_red'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>
+  [footprint
+     <span class='color_red'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+     <span class='color_red'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+     <span class='color_red'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+     <span class='color_red'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+     <span class='color_red'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+     <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+     <span class='color_red'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$12=*&amp;$irvar4:class java.lang.StringBuilder * [line 176];
+  n$13=*n$12:class java.lang.StringBuilder  [line 176];
+  n$14=_fun_String StringBuilder.toString()(n$12:class java.lang.StringBuilder *) virtual [line 176];
+  *&amp;$irvar5:class java.lang.String *=n$14 [line 176];
+  REMOVE_TEMPS(n$12,n$13,n$14); [line 176];
+  NULLIFY(&amp;$irvar4,false); [line 176];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$12=*&amp;$irvar4:class java.lang.StringBuilder * [line 176]</span>
+    in vpath_find exp:n$30
+    vpath_find: cannot find n$30
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar4
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$30) ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4) ;  @f$5 != 0 ;  UND &lt; String String.valueOf(int) &gt; :176(@f$5) ;  @f$0 != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:void  ; 
+    old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = n$29 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:176</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+       $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub ) ; 
+       $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+       holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar4
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$30) ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4) ;  @f$5 != 0 ;  UND &lt; String String.valueOf(int) &gt; :176(@f$5) ;  @f$0 != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:void  ; 
+    old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = n$29 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:176</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+       $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub ) ; 
+       $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+       holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$30)</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176(@f$5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = n$28 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$29 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176(@f$5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>n$12 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$13=*n$12:class java.lang.StringBuilder  [line 176]</span>
+    in vpath_find exp:n$32
+    vpath_find: cannot find n$32
+    .... Rearrangement Start ....
+    Exp: n$12
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$32) ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4) ;  @f$5 != 0 ;  UND &lt; String String.valueOf(int) &gt; :176(@f$5) ;  @f$0 != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$31 <span class='color_orange'>initial</span>:void  ; 
+    old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = n$12 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:176</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+       $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub ) ; 
+       $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+       holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>n$12|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176(@f$5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$12 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_red'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+       <span class='color_red'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$14=_fun_String StringBuilder.toString()(n$12:class java.lang.StringBuilder *) virtual [line 176]</span>
+    in vpath_find exp:n$34
+    vpath_find: cannot find n$34
+    <span class='color_blue'>INFO: SKIP_FUNCTION String StringBuilder.toString()</span>
+    Undefined function String StringBuilder.toString(), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$14 = @f$6
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$14 = @f$5</span> ;
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_red'>@f$6 != 0</span> ;  <span class='color_red'>UND &lt; String String.valueOf(int) &gt; :176(@f$6)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; String StringBuilder.toString() &gt; :176</span>(@f$5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$12 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_red'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = <span class='color_red'>@f$6 <span class='color_orange'>none</span></span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+       <span class='color_blue'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar5:class java.lang.String *=n$14 [line 176]</span>
+    in vpath_find exp:n$36
+    vpath_find: cannot find n$36
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar5
+    Prop: 
+    <span class='color_blue'>n$14 = @f$5 ;
+    MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$36) ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4) ;  @f$6 != 0 ;  UND &lt; String String.valueOf(int) &gt; :176(@f$6) ;  @f$5 != 0 ;  UND &lt; String StringBuilder.toString() &gt; :176(@f$5) ;  @f$0 != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$35 <span class='color_orange'>initial</span>:void  ; 
+    old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = n$12 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:176</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+    $irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+       $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub ) ; 
+       $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+       holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+       $irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar5
+    prop before:
+    <span class='color_blue'>n$14 = @f$5 ;
+    MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$36) ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4) ;  @f$6 != 0 ;  UND &lt; String String.valueOf(int) &gt; :176(@f$6) ;  @f$5 != 0 ;  UND &lt; String StringBuilder.toString() &gt; :176(@f$5) ;  @f$0 != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$35 <span class='color_orange'>initial</span>:void  ; 
+    old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = n$12 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:176</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+    $irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       position = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+       $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub ) ; 
+       $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+       holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+       $irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = @f$5</span> ;
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$36)</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176(@f$6)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; String StringBuilder.toString() &gt; :176(@f$5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = n$35 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$12 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+       <span class='color_blue'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$14 = <span class='color_red'>$irvar5</span></span> ;
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176(@f$6)</span> ;  <span class='color_red'>$irvar5 != 0</span> ;  <span class='color_red'>UND &lt; String StringBuilder.toString() &gt; :176($irvar5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>@f$2 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$12 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_red'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_red'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+       <span class='color_blue'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$12,n$13,n$14); [line 176]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    .... Prop with garbage in footprint part ....
+      PROP:
+      <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4) ;  MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;  @f$6 != 0 ;  UND &lt; String String.valueOf(int) &gt; :176(@f$6) ;  $irvar5 != 0 ;  UND &lt; String StringBuilder.toString() &gt; :176($irvar5) ;  @f$0 != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0) ;
+      old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+      this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      old_position = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+      position = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+      old_holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+      holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+      $irvar5 = @f$2 <span class='color_orange'>update:176</span>:void  ; 
+      $irvar4 = _t$66 <span class='color_orange'>update:176</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = @f$1 <span class='color_orange'>update:176</span>:void  ;
+      @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+      holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+      $irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )
+      [footprint
+         this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+         position = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+         holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+         $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+         $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub ) ; 
+         $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ;
+         @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+         holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+         @f$7|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )  ]</span>
+      PREDICATE:
+      @f$7|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )
+      explain_leak: case not matched in instr <span class='color_green'>REMOVE_TEMPS(n$12,n$13,n$14); [line 176]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($irvar4)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176(@f$6)</span> ;  <span class='color_blue'>$irvar5 != 0</span> ;  <span class='color_blue'>UND &lt; String StringBuilder.toString() &gt; :176($irvar5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$1 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>old_position = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = @f$2 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>_t$0 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_red'>$irvar4|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar4,false); [line 176]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2) ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(_t$0) ;  @f$6 != 0 ;  UND &lt; String String.valueOf(int) &gt; :176(@f$6) ;  $irvar5 != 0 ;  UND &lt; String StringBuilder.toString() &gt; :176($irvar5) ;  @f$0 != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0) ;
+      old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+      this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+      return = _t$1 <span class='color_orange'>initial</span>:void  ; 
+      old_position = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+      position = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+      old_holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+      holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+      $irvar5 = @f$2 <span class='color_orange'>update:176</span>:void  ; 
+      $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = @f$1 <span class='color_orange'>update:176</span>:void  ;
+      @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+      holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+      _t$0|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )
+      [footprint
+         this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+         position = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+         holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+         $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+         $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub ) ; 
+         $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ;
+         @f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub ) ; 
+         holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )  ]</span>
+      PREDICATE:
+      _t$0|->{} <span class='color_orange'>rearrange:(z)176</span>:class java.lang.StringBuilder ( sub )
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar4,false); [line 176]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'><span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176(@f$6)</span> ;  <span class='color_blue'>$irvar5 != 0</span> ;  <span class='color_blue'>UND &lt; String StringBuilder.toString() &gt; :176($irvar5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>old_position = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = @f$2 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(_t$1)</span> ;  <span class='color_red'>@f$6 != 0</span> ;  <span class='color_red'>UND &lt; String String.valueOf(int) &gt; :176(@f$6)</span> ;  <span class='color_red'>$irvar5 != 0</span> ;  <span class='color_red'>UND &lt; String StringBuilder.toString() &gt; :176($irvar5)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>old_position = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>@f$2 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:176</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_red'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>position = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+       <span class='color_blue'>holder = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+       <span class='color_red'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class java.lang.StringBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = <span class='color_red'>@f$6 <span class='color_orange'>none</span></span>:class java.lang.String *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:176</span>:class java.lang.StringBuilder ( sub )</span> ; 
+       <span class='color_red'>holder|->{com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>rearrange:(z)176</span>} <span class='color_orange'>rearrange:(z)176</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session27"href="./../nodes/node71.html#session27">node71#session27</a>( <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE176">176</a>)<LISTING><span class='color_black'>**** [RE:0] void Adapter.attachFullViewHolderData(Adapter$FullViewHolder,int) Node: 71, Procedure: void Adapter.attachFullViewHolderData(Adapter$FullViewHolder,int), Session: 27, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_red'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;  <span class='color_red'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+  <span class='color_red'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = val$10 <span class='color_orange'>update:176</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+  <span class='color_red'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = val$9 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = val$10 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+  <span class='color_red'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+  <span class='color_red'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+  <span class='color_red'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+  <span class='color_red'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+  <span class='color_red'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+  <span class='color_red'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$12=*&amp;$irvar4:class java.lang.StringBuilder * [line 176];
+  n$13=*n$12:class java.lang.StringBuilder  [line 176];
+  n$14=_fun_String StringBuilder.toString()(n$12:class java.lang.StringBuilder *) virtual [line 176];
+  *&amp;$irvar5:class java.lang.String *=n$14 [line 176];
+  REMOVE_TEMPS(n$12,n$13,n$14); [line 176];
+  NULLIFY(&amp;$irvar4,false); [line 176];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$12=*&amp;$irvar4:class java.lang.StringBuilder * [line 176]</span>
+    in vpath_find exp:n$29
+    vpath_find: cannot find n$29
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar4
+    Prop: 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0 ;  UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar) ;  $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar) ;  $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$29) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:void  ; 
+    old_position = val$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = val$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = val$10 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = val$6 <span class='color_orange'>update:176</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = val$9 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = val$10 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub ) ; 
+    $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+    this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+    val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub ) ; 
+    val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub ) ; 
+    $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$10 = $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>n$12 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = val$9 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = <span class='color_red'>n$12 <span class='color_orange'>formal</span></span>:class java.lang.StringBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+    <span class='color_red'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$13=*n$12:class java.lang.StringBuilder  [line 176]</span>
+    in vpath_find exp:n$31
+    vpath_find: cannot find n$31
+    .... Rearrangement Start ....
+    Exp: n$12
+    Prop: 
+    <span class='color_blue'>val$10 = $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar ;
+    $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0 ;  UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar) ;  $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$31) ;  $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$30 <span class='color_orange'>initial</span>:void  ; 
+    old_position = val$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = val$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = n$12 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = val$6 <span class='color_orange'>update:176</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = val$9 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = n$12 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub ) ; 
+    $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+    $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub ) ; 
+    this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+    val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub ) ; 
+    val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$10 = $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$12 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = val$9 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = n$12 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$14=_fun_String StringBuilder.toString()(n$12:class java.lang.StringBuilder *) virtual [line 176]</span>
+    in vpath_find exp:n$33
+    vpath_find: cannot find n$33
+    <span class='color_blue'>INFO: SKIP_FUNCTION String StringBuilder.toString()</span>
+    Undefined function String StringBuilder.toString(), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$9 = $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar</span> ;  <span class='color_blue'>val$10 = $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; String StringBuilder.toString() &gt; :176($RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$12 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = <span class='color_red'>n$14 <span class='color_orange'>formal</span></span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = n$12 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar5:class java.lang.String *=n$14 [line 176]</span>
+    in vpath_find exp:n$35
+    vpath_find: cannot find n$35
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar5
+    Prop: 
+    <span class='color_blue'>val$9 = $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar ;  val$10 = $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar ;
+    $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0 ;  UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar) ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(n$35) ;  $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0 ;  UND &lt; String StringBuilder.toString() &gt; :176($RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar) ;  $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0 ;  UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$34 <span class='color_orange'>initial</span>:void  ; 
+    old_position = val$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    position = val$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub ) ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = n$12 <span class='color_orange'>update:176</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = val$6 <span class='color_orange'>update:176</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = n$14 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = n$12 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub ) ; 
+    $RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+    $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub ) ; 
+    this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub ) ; 
+    holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub ) ; 
+    val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub ) ; 
+    val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$9 = $RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar</span> ;  <span class='color_blue'>val$10 = $RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String StringBuilder.toString() &gt; :176($RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>n$14 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = n$12 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = n$14 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = n$12 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$12,n$13,n$14); [line 176]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String StringBuilder.toString() &gt; :176($RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>val$9 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>val$10 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = <span class='color_red'>val$9 <span class='color_orange'>formal</span></span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = <span class='color_red'>val$10 <span class='color_orange'>formal</span></span>:class java.lang.StringBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span> ; 
+    <span class='color_red'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar4,false); [line 176]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String StringBuilder.toString() &gt; :176($RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = val$9 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = val$9 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = val$10 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:176 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; String String.valueOf(int) &gt; :176($RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; StringBuilder StringBuilder.append(String) &gt; :176($RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; String StringBuilder.toString() &gt; :176</span>($RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>position = val$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>holder = val$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter$FullViewHolder *( sub )</span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>val$9 <span class='color_orange'>update:176</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:176</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.toString():java.lang.String|abductedRetvar = val$9 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar = val$10 <span class='color_orange'>formal</span>:class java.lang.StringBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.String.valueOf(int):java.lang.String|abductedRetvar = val$11 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Adapter.photosList:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal(z)</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>holder|->{com.karthik.imager.Adapter$FullViewHolder.heartLike_full:val$5 <span class='color_orange'>formal</span>, com.karthik.imager.Adapter$FullViewHolder.imageView:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.Adapter$FullViewHolder.txtView:val$7 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter$FullViewHolder ( sub )</span> ; 
+    <span class='color_blue'>val$5|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>val$7|->{} <span class='color_orange'>formal(z)</span>:class android.widget.TextView ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.StringBuilder.append(java.lang.String):java.lang.StringBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.lang.StringBuilder ( sub )</span></span>
+    
+    
+    
+  

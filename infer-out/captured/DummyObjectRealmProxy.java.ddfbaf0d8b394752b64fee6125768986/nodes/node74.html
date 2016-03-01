@@ -1,0 +1,552 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node74</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE52">74</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.<clinit>():void.95eda42bdf99112320a9453e572c04dc.html">void DummyObjectRealmProxy.&lt;clinit&gt;()</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE52">52</a>
+<br>PREDS:
+ <a href="./../nodes/node73.html"><span class='visited'>N_73<span class='expansion'>node73 preds:72 succs:74 exn:20 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_75<span class='expansion'>node75 preds:74 succs:76 exn:20 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_20<span class='expansion'>node20 preds: succs:19 exn:19 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$4=*&amp;fieldNames:class java.util.ArrayList * [line 52];
+                          n$5=*n$4:class java.util.ArrayList  [line 52];
+                          n$6=_fun_boolean ArrayList.add(Object)(n$4:class java.util.ArrayList *,"dummyDesc":class java.lang.String *) virtual [line 52];
+                          *&amp;$irvar0:_Bool =n$6 [line 52];
+                          REMOVE_TEMPS(n$4,n$5,n$6); [line 52];
+                          NULLIFY(&amp;$irvar0,false); [line 52];
+                          </span><hr width="100%">
+ <a name="session4"href="./../nodes/node74.html#session4">node74#session4</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE52">52</a>)<LISTING><span class='color_black'>**** [FP:0] void DummyObjectRealmProxy.<clinit>() Node: 74, Procedure: void DummyObjectRealmProxy.<clinit>(), Session: 4, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1)</span> ;
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+  <span class='color_red'>fieldNames = _t$1 <span class='color_orange'>update:50</span>:void </span> ; 
+  <span class='color_red'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+  [footprint
+     <span class='color_red'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+     <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$4=*&amp;fieldNames:class java.util.ArrayList * [line 52];
+  n$5=*n$4:class java.util.ArrayList  [line 52];
+  n$6=_fun_boolean ArrayList.add(Object)(n$4:class java.util.ArrayList *,"dummyDesc":class java.lang.String *) virtual [line 52];
+  *&amp;$irvar0:_Bool =n$6 [line 52];
+  REMOVE_TEMPS(n$4,n$5,n$6); [line 52];
+  NULLIFY(&amp;$irvar0,false); [line 52];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$4=*&amp;fieldNames:class java.util.ArrayList * [line 52]</span>
+    in vpath_find exp:n$10
+    vpath_find: found fieldNames : void 
+    .... Rearrangement Start ....
+    Exp: &amp;fieldNames
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;  UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1) ;
+    return = n$9 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    fieldNames = n$10 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList 
+    [footprint
+       field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;fieldNames
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;  UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1) ;
+    return = n$9 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    fieldNames = n$10 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList 
+    [footprint
+       field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1)</span> ;
+    <span class='color_blue'>return = n$9 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = n$10 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = <span class='color_red'>n$4 <span class='color_orange'>update:50</span></span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_red'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$5=*n$4:class java.util.ArrayList  [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    .... Rearrangement Start ....
+    Exp: n$4
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;  UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1) ;
+    return = n$11 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    fieldNames = n$4 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList 
+    [footprint
+       field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: n$4
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;  UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1) ;
+    return = n$11 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    fieldNames = n$4 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList 
+    [footprint
+       field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1)</span> ;
+    <span class='color_blue'>return = n$11 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$1)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$6=_fun_boolean ArrayList.add(Object)(n$4:class java.util.ArrayList *,"dummyDesc":class java.lang.String *) virtual [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    <span class='color_blue'>INFO: SKIP_FUNCTION boolean ArrayList.add(Object)</span>
+    Undefined function boolean ArrayList.add(Object), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$6 = @f$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$6 = @f$1</span> ;
+    <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52(@f$1)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:_Bool ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:_Bool =n$6 [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>n$6 = @f$1 ;
+    MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;  UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2) ;  UND &lt; boolean ArrayList.add(Object) &gt; :52(@f$1) ;
+    return = n$13 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    fieldNames = n$4 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList 
+    [footprint
+       field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>n$6 = @f$1 ;
+    MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;  UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2) ;  UND &lt; boolean ArrayList.add(Object) &gt; :52(@f$1) ;
+    return = n$13 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    fieldNames = n$4 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList 
+    [footprint
+       field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$6 = @f$1</span> ;
+    <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52(@f$1)</span> ;
+    <span class='color_blue'>return = n$13 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$6 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52($irvar0)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$1 <span class='color_orange'>update:52</span></span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$4,n$5,n$6); [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52($irvar0)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = <span class='color_red'>_t$1 <span class='color_orange'>update:50</span></span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:52</span>:void </span> ;
+    <span class='color_red'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 52]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found fieldNames : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52(@f$1)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = _t$1 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :51(@f$2)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52(@f$1)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>fieldNames = _t$1 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    [footprint
+       <span class='color_blue'>field = @f$0 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$1 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:_Bool ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session12"href="./../nodes/node74.html#session12">node74#session12</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE52">52</a>)<LISTING><span class='color_black'>**** [RE:0] void DummyObjectRealmProxy.<clinit>() Node: 74, Procedure: void DummyObjectRealmProxy.<clinit>(), Session: 12, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+  <span class='color_red'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+  <span class='color_red'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+  <span class='color_red'>fieldNames = _t$1 <span class='color_orange'>update:50</span>:void </span> ; 
+  <span class='color_red'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+  <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+  <span class='color_red'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$4=*&amp;fieldNames:class java.util.ArrayList * [line 52];
+  n$5=*n$4:class java.util.ArrayList  [line 52];
+  n$6=_fun_boolean ArrayList.add(Object)(n$4:class java.util.ArrayList *,"dummyDesc":class java.lang.String *) virtual [line 52];
+  *&amp;$irvar0:_Bool =n$6 [line 52];
+  REMOVE_TEMPS(n$4,n$5,n$6); [line 52];
+  NULLIFY(&amp;$irvar0,false); [line 52];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$4=*&amp;fieldNames:class java.util.ArrayList * [line 52]</span>
+    in vpath_find exp:n$10
+    vpath_find: found fieldNames : void 
+    .... Rearrangement Start ....
+    Exp: &amp;fieldNames
+    Prop: 
+    <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar) ;  MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;
+    return = n$9 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    #GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    fieldNames = n$10 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_red'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>fieldNames = <span class='color_red'>n$4 <span class='color_orange'>update:50</span></span>:void </span> ; 
+    <span class='color_blue'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_red'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+    
+    Instruction <span class='color_green'>n$5=*n$4:class java.util.ArrayList  [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    .... Rearrangement Start ....
+    Exp: n$4
+    Prop: 
+    <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar) ;  MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;
+    return = n$11 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    #GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    fieldNames = n$4 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+    
+    Instruction <span class='color_green'>n$6=_fun_boolean ArrayList.add(Object)(n$4:class java.util.ArrayList *,"dummyDesc":class java.lang.String *) virtual [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    <span class='color_blue'>INFO: SKIP_FUNCTION boolean ArrayList.add(Object)</span>
+    Undefined function boolean ArrayList.add(Object), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$4 = $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar</span> ;
+    <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :52($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>n$6 <span class='color_orange'>formal</span></span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:_Bool =n$6 [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>val$4 = $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar ;
+    UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar) ;  UND &lt; boolean ArrayList.add(Object) &gt; :52($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar) ;  MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames) ;
+    return = n$13 <span class='color_orange'>initial</span>:class java.lang.Object * ; 
+    old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    #GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    fieldNames = n$4 <span class='color_orange'>update:50</span>:void  ; 
+    old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = n$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar</span> ;
+    <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>fieldNames = n$4 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$6 <span class='color_orange'>update:52</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = n$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$4,n$5,n$6); [line 52]</span>
+    in vpath_find exp:n$4
+    vpath_find: found fieldNames : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>fieldNames = <span class='color_red'>_t$1 <span class='color_orange'>update:50</span></span>:void </span> ; 
+    <span class='color_blue'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$4 <span class='color_orange'>update:52</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>val$4 <span class='color_orange'>formal</span></span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_red'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 52]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found fieldNames : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :52($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>fieldNames = _t$1 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:50 &gt;  <span class='color_orange'>{vpath: fieldNames}</span>(fieldNames)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :51($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :52($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class java.lang.Object *</span> ; 
+    <span class='color_blue'>old_io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>#GB$io.realm.DummyObjectRealmProxy = {io.realm.DummyObjectRealmProxy.FIELD_NAMES:val$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>fieldNames = _t$1 <span class='color_orange'>update:50</span>:void </span> ; 
+    <span class='color_blue'>old_field = val$2 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>field = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.Collections.unmodifiableList(java.util.List):java.util.List|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>fieldNames|->{java.util.AbstractList.modCount:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.array:0 <span class='color_orange'>alloc</span>, java.util.ArrayList.size:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.ArrayList </span></span>
+    
+    
+    
+  

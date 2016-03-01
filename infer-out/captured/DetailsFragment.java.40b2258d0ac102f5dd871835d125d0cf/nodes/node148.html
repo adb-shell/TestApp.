@@ -1,0 +1,923 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node148</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DetailsFragment.java.40b2258d0ac102f5dd871835d125d0cf.html#LINE300">148</a></h1></center>PROC:  <a href="./../com.karthik.imager.Fragments.DetailsFragment.getinPixels(android.content.Context,int):float.689a66e673e303f9eff9e4c54900404f.html">float DetailsFragment.getinPixels(Context,int)</a> LINE: <a href="./../../DetailsFragment.java.40b2258d0ac102f5dd871835d125d0cf.html#LINE300">300</a>
+<br>PREDS:
+ <a href="./../nodes/node147.html"><span class='visited'>N_147<span class='expansion'>node147 preds:146 succs:148 exn:45 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_44<span class='expansion'>node44 preds:148 45 succs: exn: 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_45<span class='expansion'>node45 preds: succs:44 exn:44 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$6=*&amp;dp:int  [line 300];
+                          n$7=*&amp;displayMetrics:class android.util.DisplayMetrics * [line 300];
+                          n$8=*n$7.android.util.DisplayMetrics.density:class android.util.DisplayMetrics  [line 300];
+                          *&amp;return:float =(((float )n$6 * n$8) + 0.500000) [line 300];
+                          REMOVE_TEMPS(n$6,n$7,n$8); [line 300];
+                          NULLIFY(&amp;displayMetrics,false); [line 300];
+                          NULLIFY(&amp;dp,false); [line 300];
+                          APPLY_ABSTRACTION; [line 300];
+                          </span><hr width="100%">
+ <a name="session4"href="./../nodes/node148.html#session4">node148#session4</a>( <a href="./../../DetailsFragment.java.40b2258d0ac102f5dd871835d125d0cf.html#LINE300">300</a>)<LISTING><span class='color_black'>**** [FP:0] float DetailsFragment.getinPixels(Context,int) Node: 148, Procedure: float DetailsFragment.getinPixels(Context,int), Session: 4, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>displayMetrics != 0</span> ;  <span class='color_red'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+  <span class='color_red'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+  <span class='color_red'>old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+  <span class='color_red'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+  <span class='color_red'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+  <span class='color_red'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+  [footprint
+     <span class='color_red'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+     <span class='color_red'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+     <span class='color_red'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+     <span class='color_red'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+     <span class='color_red'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+     <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+     <span class='color_red'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$6=*&amp;dp:int  [line 300];
+  n$7=*&amp;displayMetrics:class android.util.DisplayMetrics * [line 300];
+  n$8=*n$7.android.util.DisplayMetrics.density:class android.util.DisplayMetrics  [line 300];
+  *&amp;return:float =(((float )n$6 * n$8) + 0.500000) [line 300];
+  REMOVE_TEMPS(n$6,n$7,n$8); [line 300];
+  NULLIFY(&amp;displayMetrics,false); [line 300];
+  NULLIFY(&amp;dp,false); [line 300];
+  APPLY_ABSTRACTION; [line 300];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$6=*&amp;dp:int  [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;dp
+    Prop: 
+    <span class='color_blue'>displayMetrics != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics) ;  @f$0 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$11 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;dp
+    prop before:
+    <span class='color_blue'>displayMetrics != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics) ;  @f$0 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$11 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$11 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$6 = dp</span> ;
+    <span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$7=*&amp;displayMetrics:class android.util.DisplayMetrics * [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;displayMetrics
+    Prop: 
+    <span class='color_blue'>n$6 = dp ;
+    displayMetrics != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics) ;  @f$0 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$12 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;displayMetrics
+    prop before:
+    <span class='color_blue'>n$6 = dp ;
+    displayMetrics != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics) ;  @f$0 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$12 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$6 = dp</span> ;
+    <span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$12 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$6 = dp</span> ;  <span class='color_red'>n$7 = displayMetrics</span> ;
+    <span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$3 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$8=*n$7.android.util.DisplayMetrics.density:class android.util.DisplayMetrics  [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: @f$2.android.util.DisplayMetrics.density
+    Prop: 
+    <span class='color_blue'>n$6 = dp ;  n$7 = displayMetrics ;
+    displayMetrics != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics) ;  @f$0 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$13 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$3 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$2|->{android.util.DisplayMetrics.density:@f$5 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$6 = <span class='color_red'>dp</span></span> ;  <span class='color_blue'>n$7 = displayMetrics</span> ;  <span class='color_red'>n$8 = @f$3</span> ;
+    <span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_red'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+       <span class='color_red'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;return:float =(((float )n$6 * n$8) + 0.500000) [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;return
+    Prop: 
+    <span class='color_blue'>n$6 = dp ;  n$7 = displayMetrics ;  n$8 = @f$3 ;
+    displayMetrics != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics) ;  @f$0 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$0) ;
+    old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$14 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub ) ; 
+    displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )
+    [footprint
+       this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub ) ; 
+       displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;return
+    prop before:
+    <span class='color_blue'>n$6 = dp ;  n$7 = displayMetrics ;  n$8 = @f$3 ;
+    displayMetrics != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics) ;  @f$0 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$0) ;
+    old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$14 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub ) ; 
+    displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )
+    [footprint
+       this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub ) ; 
+       displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$6 = dp</span> ;  <span class='color_blue'>n$7 = displayMetrics</span> ;  <span class='color_blue'>n$8 = @f$3</span> ;
+    <span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$14 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+       <span class='color_blue'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$6 = dp</span> ;  <span class='color_blue'>n$7 = displayMetrics</span> ;  <span class='color_blue'>n$8 = @f$3</span> ;
+    <span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>((dp * @f$3) + 0.500000) <span class='color_orange'>update:300</span></span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+       <span class='color_blue'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$6,n$7,n$8); [line 300]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>displayMetrics != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(displayMetrics)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = ((dp * @f$3) + 0.500000) <span class='color_orange'>update:300</span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = @f$2 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$1 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span> ; 
+       <span class='color_blue'>displayMetrics|->{android.util.DisplayMetrics.density:@f$3 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;displayMetrics,false); [line 300]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Resources Context.getResources() &gt; :299</span>(@f$2)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>((dp * @f$1) + 0.500000) <span class='color_orange'>update:300</span></span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>old_context = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{<span class='color_red'>android.util.DisplayMetrics.density:@f$1 <span class='color_orange'>rearrange:300</span></span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_red'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{<span class='color_red'>android.util.DisplayMetrics.density:@f$1 <span class='color_orange'>rearrange:300</span></span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_red'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;dp,false); [line 300]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$1 != 0</span> ;  <span class='color_red'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Resources Context.getResources() &gt; :299</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>((old_dp * @f$2) + 0.500000) <span class='color_orange'>update:300</span></span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_red'>@f$1|->{android.util.DisplayMetrics.density:@f$2 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = <span class='color_red'>@f$1 <span class='color_orange'>none</span></span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_red'>@f$1|->{android.util.DisplayMetrics.density:@f$2 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 300]</span>
+    <span class='color_blue'>@f$2 != 0 ;  UND &lt; Resources Context.getResources() &gt; :299(@f$2) ;  @f$0 != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(@f$0) ;
+    old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = ((old_dp * @f$1) + 0.500000) <span class='color_orange'>update:300</span>:float  ; 
+    old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    displayMetrics = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_context = @f$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{android.util.DisplayMetrics.density:@f$1 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+    old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )
+    [footprint
+       this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+       dp = @f$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       context = @f$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+       $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub ) ; 
+       $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub ) ;
+       @f$0|->{android.util.DisplayMetrics.density:@f$1 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub ) ; 
+       old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )  ]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = ((old_dp * @f$2) + 0.500000) <span class='color_orange'>update:300</span>:float </span> ; 
+    <span class='color_blue'>old_dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_context = @f$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{android.util.DisplayMetrics.density:@f$2 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$5 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = @f$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = @f$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{android.util.DisplayMetrics.density:@f$2 <span class='color_orange'>rearrange:300</span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+       <span class='color_blue'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Resources Context.getResources() &gt; :299</span>(@f$2)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>((old_dp * @f$1) + 0.500000) <span class='color_orange'>update:300</span></span>:float </span> ; 
+    <span class='color_blue'>old_dp = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>old_context = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{<span class='color_red'>android.util.DisplayMetrics.density:@f$1 <span class='color_orange'>rearrange:300</span></span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+    <span class='color_red'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+       <span class='color_blue'>dp = <span class='color_red'>@f$4 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+       <span class='color_blue'>context = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class android.content.Context *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class android.util.DisplayMetrics *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class android.content.res.Resources *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{<span class='color_red'>android.util.DisplayMetrics.density:@f$1 <span class='color_orange'>rearrange:300</span></span>} <span class='color_orange'>rearrange:300</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+       <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:299</span>:class android.content.res.Resources ( sub )</span> ; 
+       <span class='color_red'>old_context|->{} <span class='color_orange'>rearrange:(z)299</span>:class android.content.Context ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session9"href="./../nodes/node148.html#session9">node148#session9</a>( <a href="./../../DetailsFragment.java.40b2258d0ac102f5dd871835d125d0cf.html#LINE300">300</a>)<LISTING><span class='color_black'>**** [RE:0] float DetailsFragment.getinPixels(Context,int) Node: 148, Procedure: float DetailsFragment.getinPixels(Context,int), Session: 9, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+  <span class='color_red'>old_dp = val$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>dp = val$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>displayMetrics = val$4 <span class='color_orange'>update:299</span>:void </span> ; 
+  <span class='color_red'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+  <span class='color_red'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+  <span class='color_red'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$6=*&amp;dp:int  [line 300];
+  n$7=*&amp;displayMetrics:class android.util.DisplayMetrics * [line 300];
+  n$8=*n$7.android.util.DisplayMetrics.density:class android.util.DisplayMetrics  [line 300];
+  *&amp;return:float =(((float )n$6 * n$8) + 0.500000) [line 300];
+  REMOVE_TEMPS(n$6,n$7,n$8); [line 300];
+  NULLIFY(&amp;displayMetrics,false); [line 300];
+  NULLIFY(&amp;dp,false); [line 300];
+  APPLY_ABSTRACTION; [line 300];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$6=*&amp;dp:int  [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;dp
+    Prop: 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0 ;  UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar) ;  $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$11 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = val$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = val$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = val$4 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub ) ;
+    old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub ) ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = dp</span> ;
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = <span class='color_red'>n$6 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = <span class='color_red'>n$6 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = val$4 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$7=*&amp;displayMetrics:class android.util.DisplayMetrics * [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;displayMetrics
+    Prop: 
+    <span class='color_blue'>val$2 = dp ;
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0 ;  UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar) ;  $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$12 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = n$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = n$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = val$4 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub ) ;
+    old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub ) ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = dp</span> ;  <span class='color_blue'>val$4 = $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = n$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = n$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = <span class='color_red'>n$7 <span class='color_orange'>update:299</span></span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = <span class='color_red'>n$7 <span class='color_orange'>formal</span></span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_red'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$8=*n$7.android.util.DisplayMetrics.density:class android.util.DisplayMetrics  [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: n$7.android.util.DisplayMetrics.density
+    Prop: 
+    <span class='color_blue'>val$2 = dp ;  val$4 = $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar ;
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0 ;  UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar) ;  $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$13 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = n$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = n$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = n$7 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub ) ;
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub ) ; 
+    old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = dp</span> ;  <span class='color_blue'>val$4 = $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar</span> ;  <span class='color_red'>val$5 = n$8</span> ;
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:float </span> ; 
+    <span class='color_blue'>old_dp = n$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = n$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = n$7 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:<span class='color_red'>n$8 <span class='color_orange'>formal</span></span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;return:float =(((float )n$6 * n$8) + 0.500000) [line 300]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;return
+    Prop: 
+    <span class='color_blue'>val$2 = dp ;  val$4 = $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar ;  val$5 = n$8 ;
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0 ;  UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar) ;  $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = n$14 <span class='color_orange'>initial</span>:float  ; 
+    old_dp = n$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = n$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    displayMetrics = n$7 <span class='color_orange'>update:299</span>:void  ; 
+    old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub ) ;
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:n$8 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub ) ; 
+    old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = dp</span> ;  <span class='color_blue'>val$4 = $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar</span> ;  <span class='color_blue'>val$5 = n$8</span> ;
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>((dp * n$8) + 0.500000) <span class='color_orange'>update:300</span></span>:float </span> ; 
+    <span class='color_blue'>old_dp = n$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = n$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = n$7 <span class='color_orange'>update:299</span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:n$8 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$6,n$7,n$8); [line 300]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>((dp * val$5) + 0.500000) <span class='color_orange'>update:300</span></span>:float </span> ; 
+    <span class='color_blue'>old_dp = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = <span class='color_red'>val$4 <span class='color_orange'>update:299</span></span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = <span class='color_red'>val$4 <span class='color_orange'>formal</span></span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_red'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;displayMetrics,false); [line 300]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = ((dp * val$5) + 0.500000) <span class='color_orange'>update:300</span>:float </span> ; 
+    <span class='color_blue'>old_dp = val$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = val$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;dp,false); [line 300]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = ((old_dp * val$5) + 0.500000) <span class='color_orange'>update:300</span>:float </span> ; 
+    <span class='color_blue'>old_dp = val$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 300]</span>
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0 ;  UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar) ;  $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0 ;  UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+    return = ((old_dp * val$5) + 0.500000) <span class='color_orange'>update:300</span>:float  ; 
+    old_dp = val$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    dp = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    displayMetrics = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub ) ; 
+    context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub ) ;
+    old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub ) ; 
+    $RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub ) ; 
+    $RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = ((old_dp * val$5) + 0.500000) <span class='color_orange'>update:300</span>:float </span> ; 
+    <span class='color_blue'>old_dp = val$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Resources Context.getResources() &gt; :299($RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DisplayMetrics Resources.getDisplayMetrics() &gt; :299($RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Fragments.DetailsFragment *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>((old_dp * val$5) + 0.500000) <span class='color_orange'>update:300</span></span>:float </span> ; 
+    <span class='color_blue'>old_dp = val$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>dp = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:int ( sub )</span> ; 
+    <span class='color_blue'>displayMetrics = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>old_context = val$3 <span class='color_orange'>formal</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>context = 0 <span class='color_orange'>nullify</span>:class android.content.Context *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.util.DisplayMetrics *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.res.Resources *( sub )</span> ;
+    <span class='color_blue'>old_context|->{} <span class='color_orange'>formal(z)</span>:class android.content.Context ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.res.Resources.getDisplayMetrics():android.util.DisplayMetrics|abductedRetvar|->{android.util.DisplayMetrics.density:val$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal</span>:class android.util.DisplayMetrics ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.Context.getResources():android.content.res.Resources|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.res.Resources ( sub )</span></span>
+    
+    
+    
+  

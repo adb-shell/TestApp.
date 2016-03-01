@@ -1,0 +1,147 @@
+#### Dotty version:  ####
+
+
+
+digraph main { 
+node [shape=box]; 
+
+ compound = true; 
+
+ subgraph cluster_952 { color=blue 
+
+ state953L0 [label="SPEC 1 ",  style=filled, color= lightblue]
+
+ subgraph cluster_prop_2 { color=black 
+
+ PRE956L0 [label="PRE 1 ",  style=filled, color= yellow]
+subgraph {
+ node [shape=box]; 
+ state_pi_2 [label="STACK \n\n val$17 != 0 ;  val$16 != 0 ;  val$15 != 0 ;  val$14 != 0 ;  holder != 0" color=orange style=filled]
+  inv_11 [style=invis]
+  inv_111 [style=invis]
+  inv_1111 [style=invis]
+  inv_12 [style=invis]
+  inv_122 [style=invis]
+  inv_1222 [style=invis]
+  inv_13 [style=invis]
+  inv_133 [style=invis]
+  inv_1333 [style=invis]
+  inv_14 [style=invis]
+  inv_144 [style=invis]
+  inv_1444 [style=invis]
+  state_pi_2 -> inv_11 [style=invis]
+  inv_11 -> inv_111 [style=invis]
+  inv_111 -> inv_1111 [style=invis]
+  state_pi_2 -> inv_12 [style=invis]
+  inv_12 -> inv_122 [style=invis]
+  inv_122 -> inv_1222 [style=invis]
+  state_pi_2 -> inv_13 [style=invis]
+  inv_13 -> inv_133 [style=invis]
+  inv_133 -> inv_1333 [style=invis]
+  state_pi_2 -> inv_14 [style=invis]
+  inv_14 -> inv_144 [style=invis]
+  inv_144 -> inv_1444 [style=invis]
+}
+
+ } 
+
+ subgraph cluster_prop_3 { color=black 
+
+ POST981L0 [label="POST 1 ",  style=filled, color= yellow]
+subgraph {
+ node [shape=box]; 
+ state_pi_3 [label="STACK \n\n holder != 0" color=orange style=filled]
+}
+
+ } 
+  inv_1111 -> state_pi_3 [style=invis]
+  inv_1222 -> state_pi_3 [style=invis]
+  inv_1333 -> state_pi_3 [style=invis]
+  inv_1444 -> state_pi_3 [style=invis]
+
+ subgraph cluster_prop_4 { color=black 
+
+ POST1007L0 [label="POST 2 ",  style=filled, color= yellow]
+subgraph {
+ node [shape=box]; 
+ state_pi_4 [label="STACK \n\n position = 0 ;  holder != 0" color=orange style=filled]
+}
+
+ } 
+  inv_1111 -> state_pi_4 [style=invis]
+  inv_1222 -> state_pi_4 [style=invis]
+  inv_1333 -> state_pi_4 [style=invis]
+  inv_1444 -> state_pi_4 [style=invis]
+
+ } 
+
+ subgraph cluster_1032 { color=blue 
+
+ state1033L0 [label="SPEC 2 ",  style=filled, color= lightblue]
+
+ subgraph cluster_prop_6 { color=black 
+
+ PRE1036L0 [label="PRE 2 ",  style=filled, color= yellow]
+subgraph {
+ node [shape=box]; 
+ state_pi_6 [label="STACK \n\n holder != 0 ;  val$8 != 0" color=orange style=filled]
+  inv_21 [style=invis]
+  inv_211 [style=invis]
+  inv_2111 [style=invis]
+  inv_22 [style=invis]
+  inv_222 [style=invis]
+  inv_2222 [style=invis]
+  inv_23 [style=invis]
+  inv_233 [style=invis]
+  inv_2333 [style=invis]
+  inv_24 [style=invis]
+  inv_244 [style=invis]
+  inv_2444 [style=invis]
+  state_pi_6 -> inv_21 [style=invis]
+  inv_21 -> inv_211 [style=invis]
+  inv_211 -> inv_2111 [style=invis]
+  state_pi_6 -> inv_22 [style=invis]
+  inv_22 -> inv_222 [style=invis]
+  inv_222 -> inv_2222 [style=invis]
+  state_pi_6 -> inv_23 [style=invis]
+  inv_23 -> inv_233 [style=invis]
+  inv_233 -> inv_2333 [style=invis]
+  state_pi_6 -> inv_24 [style=invis]
+  inv_24 -> inv_244 [style=invis]
+  inv_244 -> inv_2444 [style=invis]
+}
+
+ } 
+
+ subgraph cluster_prop_7 { color=black 
+
+ POST1060L0 [label="POST 1 ",  style=filled, color= yellow]
+subgraph {
+ node [shape=box]; 
+ state_pi_7 [label="STACK \n\n holder != 0 ;  val$8 != 0" color=orange style=filled]
+}
+
+ } 
+  inv_2111 -> state_pi_7 [style=invis]
+  inv_2222 -> state_pi_7 [style=invis]
+  inv_2333 -> state_pi_7 [style=invis]
+  inv_2444 -> state_pi_7 [style=invis]
+
+ subgraph cluster_prop_8 { color=black 
+
+ POST1085L0 [label="POST 2 ",  style=filled, color= yellow]
+subgraph {
+ node [shape=box]; 
+ state_pi_8 [label="STACK \n\n position = 0 ;  holder != 0 ;  val$8 != 0" color=orange style=filled]
+}
+
+ } 
+  inv_2111 -> state_pi_8 [style=invis]
+  inv_2222 -> state_pi_8 [style=invis]
+  inv_2333 -> state_pi_8 [style=invis]
+  inv_2444 -> state_pi_8 [style=invis]
+
+ } 
+
+}
+

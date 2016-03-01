@@ -1,0 +1,1170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CircleView.java.55262cf419c5e6ebb455998362c8451b</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File mobile/src/main/java/com/karthik/imager/Recycler/CircleView.java</h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.karthik.imager.Recycler;</td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import android.animation.ArgbEvaluator;</td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import android.content.Context;</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import android.graphics.Bitmap;</td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import android.graphics.Canvas;</td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import android.graphics.Paint;</td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import android.graphics.PorterDuff;</td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import android.graphics.PorterDuffXfermode;</td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import android.util.AttributeSet;</td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import android.util.Property;</td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import android.view.View;</td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">/**</td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> * Created by karthikrk on 05/01/16.</td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line"> */</td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">public class CircleView extends View {</td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">    private static final int START_COLOR = 0xFF7F7F7F;</td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">    private static final int END_COLOR = 0xFFE5E5E5;</td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">    private ArgbEvaluator argbEvaluator = new ArgbEvaluator(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node84.html"><span class='visitedproof'>I_84<span class='expansion'>node84 preds:83 succs:85 exn:36 Instructions
+n$2=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 21];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$2:class android.animation.ArgbEvaluator *) [line 21];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$2 [line 21];
+REMOVE_TEMPS(n$2); [line 21];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node85.html"><span class='visitedproof'>I_85<span class='expansion'>node85 preds:84 succs:86 exn:36 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 21];
+n$4=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 21];
+*n$3.com.karthik.imager.Recycler.CircleView.argbEvaluator:class com.karthik.imager.Recycler.CircleView =n$4 [line 21];
+REMOVE_TEMPS(n$3,n$4); [line 21];
+NULLIFY(&amp;$irvar0,false); [line 21];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node73.html"><span class='visitedproof'>I_73<span class='expansion'>node73 preds:72 succs:74 exn:33 Instructions
+n$4=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 21];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$4:class android.animation.ArgbEvaluator *) [line 21];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$4 [line 21];
+REMOVE_TEMPS(n$4); [line 21];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node74.html"><span class='visitedproof'>I_74<span class='expansion'>node74 preds:73 succs:75 exn:33 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 21];
+n$6=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 21];
+*n$5.com.karthik.imager.Recycler.CircleView.argbEvaluator:class com.karthik.imager.Recycler.CircleView =n$6 [line 21];
+REMOVE_TEMPS(n$5,n$6); [line 21];
+NULLIFY(&amp;$irvar0,false); [line 21];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node143.html"><span class='visitedproof'>I_143<span class='expansion'>node143 preds:142 succs:144 exn:60 Instructions
+n$3=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 21];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$3:class android.animation.ArgbEvaluator *) [line 21];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$3 [line 21];
+REMOVE_TEMPS(n$3); [line 21];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node144.html"><span class='visitedproof'>I_144<span class='expansion'>node144 preds:143 succs:145 exn:60 Instructions
+n$4=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 21];
+n$5=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 21];
+*n$4.com.karthik.imager.Recycler.CircleView.argbEvaluator:class com.karthik.imager.Recycler.CircleView =n$5 [line 21];
+REMOVE_TEMPS(n$4,n$5); [line 21];
+NULLIFY(&amp;$irvar0,false); [line 21];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node119.html"><span class='visitedproof'>I_119<span class='expansion'>node119 preds:118 succs:120 exn:51 Instructions
+n$5=_fun___new(sizeof(class android.animation.ArgbEvaluator ):class android.animation.ArgbEvaluator *) [line 21];
+_fun_ArgbEvaluator.&lt;init&gt;()(n$5:class android.animation.ArgbEvaluator *) [line 21];
+*&amp;$irvar0:class android.animation.ArgbEvaluator *=n$5 [line 21];
+REMOVE_TEMPS(n$5); [line 21];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node120.html"><span class='visitedproof'>I_120<span class='expansion'>node120 preds:119 succs:121 exn:51 Instructions
+n$6=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 21];
+n$7=*&amp;$irvar0:class android.animation.ArgbEvaluator * [line 21];
+*n$6.com.karthik.imager.Recycler.CircleView.argbEvaluator:class com.karthik.imager.Recycler.CircleView =n$7 [line 21];
+REMOVE_TEMPS(n$6,n$7); [line 21];
+NULLIFY(&amp;$irvar0,false); [line 21];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ArgbEvaluator.<init>()</div></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">    private Paint circlePaint = new Paint(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node86.html"><span class='visitedproof'>I_86<span class='expansion'>node86 preds:85 succs:87 exn:36 Instructions
+n$5=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 23];
+_fun_Paint.&lt;init&gt;()(n$5:class android.graphics.Paint *) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *=n$5 [line 23];
+REMOVE_TEMPS(n$5); [line 23];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node87.html"><span class='visitedproof'>I_87<span class='expansion'>node87 preds:86 succs:88 exn:36 Instructions
+n$6=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 23];
+n$7=*&amp;$irvar0:class android.graphics.Paint * [line 23];
+*n$6.com.karthik.imager.Recycler.CircleView.circlePaint:class com.karthik.imager.Recycler.CircleView =n$7 [line 23];
+REMOVE_TEMPS(n$6,n$7); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node75.html"><span class='visitedproof'>I_75<span class='expansion'>node75 preds:74 succs:76 exn:33 Instructions
+n$7=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 23];
+_fun_Paint.&lt;init&gt;()(n$7:class android.graphics.Paint *) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *=n$7 [line 23];
+REMOVE_TEMPS(n$7); [line 23];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node76.html"><span class='visitedproof'>I_76<span class='expansion'>node76 preds:75 succs:77 exn:33 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 23];
+n$9=*&amp;$irvar0:class android.graphics.Paint * [line 23];
+*n$8.com.karthik.imager.Recycler.CircleView.circlePaint:class com.karthik.imager.Recycler.CircleView =n$9 [line 23];
+REMOVE_TEMPS(n$8,n$9); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node145.html"><span class='visitedproof'>I_145<span class='expansion'>node145 preds:144 succs:146 exn:60 Instructions
+n$6=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 23];
+_fun_Paint.&lt;init&gt;()(n$6:class android.graphics.Paint *) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *=n$6 [line 23];
+REMOVE_TEMPS(n$6); [line 23];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node146.html"><span class='visitedproof'>I_146<span class='expansion'>node146 preds:145 succs:147 exn:60 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 23];
+n$8=*&amp;$irvar0:class android.graphics.Paint * [line 23];
+*n$7.com.karthik.imager.Recycler.CircleView.circlePaint:class com.karthik.imager.Recycler.CircleView =n$8 [line 23];
+REMOVE_TEMPS(n$7,n$8); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node121.html"><span class='visitedproof'>I_121<span class='expansion'>node121 preds:120 succs:122 exn:51 Instructions
+n$8=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 23];
+_fun_Paint.&lt;init&gt;()(n$8:class android.graphics.Paint *) [line 23];
+*&amp;$irvar0:class android.graphics.Paint *=n$8 [line 23];
+REMOVE_TEMPS(n$8); [line 23];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node122.html"><span class='visitedproof'>I_122<span class='expansion'>node122 preds:121 succs:123 exn:51 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 23];
+n$10=*&amp;$irvar0:class android.graphics.Paint * [line 23];
+*n$9.com.karthik.imager.Recycler.CircleView.circlePaint:class com.karthik.imager.Recycler.CircleView =n$10 [line 23];
+REMOVE_TEMPS(n$9,n$10); [line 23];
+NULLIFY(&amp;$irvar0,false); [line 23];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Paint.<init>()</div></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">    private Paint maskPaint = new Paint(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node88.html"><span class='visitedproof'>I_88<span class='expansion'>node88 preds:87 succs:89 exn:36 Instructions
+n$8=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 24];
+_fun_Paint.&lt;init&gt;()(n$8:class android.graphics.Paint *) [line 24];
+*&amp;$irvar0:class android.graphics.Paint *=n$8 [line 24];
+REMOVE_TEMPS(n$8); [line 24];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node89.html"><span class='visitedproof'>I_89<span class='expansion'>node89 preds:88 succs:90 exn:36 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 24];
+n$10=*&amp;$irvar0:class android.graphics.Paint * [line 24];
+*n$9.com.karthik.imager.Recycler.CircleView.maskPaint:class com.karthik.imager.Recycler.CircleView =n$10 [line 24];
+REMOVE_TEMPS(n$9,n$10); [line 24];
+NULLIFY(&amp;$irvar0,false); [line 24];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node77.html"><span class='visitedproof'>I_77<span class='expansion'>node77 preds:76 succs:78 exn:33 Instructions
+n$10=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 24];
+_fun_Paint.&lt;init&gt;()(n$10:class android.graphics.Paint *) [line 24];
+*&amp;$irvar0:class android.graphics.Paint *=n$10 [line 24];
+REMOVE_TEMPS(n$10); [line 24];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node78.html"><span class='visitedproof'>I_78<span class='expansion'>node78 preds:77 succs:79 exn:33 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 24];
+n$12=*&amp;$irvar0:class android.graphics.Paint * [line 24];
+*n$11.com.karthik.imager.Recycler.CircleView.maskPaint:class com.karthik.imager.Recycler.CircleView =n$12 [line 24];
+REMOVE_TEMPS(n$11,n$12); [line 24];
+NULLIFY(&amp;$irvar0,false); [line 24];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node147.html"><span class='visitedproof'>I_147<span class='expansion'>node147 preds:146 succs:148 exn:60 Instructions
+n$9=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 24];
+_fun_Paint.&lt;init&gt;()(n$9:class android.graphics.Paint *) [line 24];
+*&amp;$irvar0:class android.graphics.Paint *=n$9 [line 24];
+REMOVE_TEMPS(n$9); [line 24];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node148.html"><span class='visitedproof'>I_148<span class='expansion'>node148 preds:147 succs:149 exn:60 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 24];
+n$11=*&amp;$irvar0:class android.graphics.Paint * [line 24];
+*n$10.com.karthik.imager.Recycler.CircleView.maskPaint:class com.karthik.imager.Recycler.CircleView =n$11 [line 24];
+REMOVE_TEMPS(n$10,n$11); [line 24];
+NULLIFY(&amp;$irvar0,false); [line 24];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node123.html"><span class='visitedproof'>I_123<span class='expansion'>node123 preds:122 succs:124 exn:51 Instructions
+n$11=_fun___new(sizeof(class android.graphics.Paint ):class android.graphics.Paint *) [line 24];
+_fun_Paint.&lt;init&gt;()(n$11:class android.graphics.Paint *) [line 24];
+*&amp;$irvar0:class android.graphics.Paint *=n$11 [line 24];
+REMOVE_TEMPS(n$11); [line 24];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node124.html"><span class='visitedproof'>I_124<span class='expansion'>node124 preds:123 succs:125 exn:51 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 24];
+n$13=*&amp;$irvar0:class android.graphics.Paint * [line 24];
+*n$12.com.karthik.imager.Recycler.CircleView.maskPaint:class com.karthik.imager.Recycler.CircleView =n$13 [line 24];
+REMOVE_TEMPS(n$12,n$13); [line 24];
+NULLIFY(&amp;$irvar0,false); [line 24];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Paint.<init>()</div></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">    private Bitmap tempBitmap;</td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">    private Canvas tempCanvas;</td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">    private float outerCircleRadiusProgress = 0f; <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node90.html"><span class='visitedproof'>I_90<span class='expansion'>node90 preds:89 succs:91 exn:36 Instructions
+n$11=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 29];
+*n$11.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 29];
+REMOVE_TEMPS(n$11); [line 29];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node79.html"><span class='visitedproof'>I_79<span class='expansion'>node79 preds:78 succs:80 exn:33 Instructions
+n$13=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 29];
+*n$13.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 29];
+REMOVE_TEMPS(n$13); [line 29];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node149.html"><span class='visitedproof'>I_149<span class='expansion'>node149 preds:148 succs:150 exn:60 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 29];
+*n$12.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 29];
+REMOVE_TEMPS(n$12); [line 29];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node125.html"><span class='visitedproof'>I_125<span class='expansion'>node125 preds:124 succs:126 exn:51 Instructions
+n$14=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 29];
+*n$14.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 29];
+REMOVE_TEMPS(n$14); [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">    private float innerCircleRadiusProgress = 0f; <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node91.html"><span class='visitedproof'>I_91<span class='expansion'>node91 preds:90 succs:92 exn:36 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 30];
+*n$12.com.karthik.imager.Recycler.CircleView.innerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 30];
+REMOVE_TEMPS(n$12); [line 30];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node80.html"><span class='visitedproof'>I_80<span class='expansion'>node80 preds:79 succs:81 exn:33 Instructions
+n$14=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 30];
+*n$14.com.karthik.imager.Recycler.CircleView.innerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 30];
+REMOVE_TEMPS(n$14); [line 30];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node150.html"><span class='visitedproof'>I_150<span class='expansion'>node150 preds:149 succs:151 exn:60 Instructions
+n$13=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 30];
+*n$13.com.karthik.imager.Recycler.CircleView.innerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 30];
+REMOVE_TEMPS(n$13); [line 30];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node126.html"><span class='visitedproof'>I_126<span class='expansion'>node126 preds:125 succs:127 exn:51 Instructions
+n$15=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 30];
+*n$15.com.karthik.imager.Recycler.CircleView.innerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =0.000000 [line 30];
+REMOVE_TEMPS(n$15); [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">    private int maxCircleSize;</td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">    public CircleView(Context context) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node34.html"><span class='visitedproof'>S_34<span class='expansion'>node34 preds: succs:83 exn:35 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 34];
+NULLIFY(&amp;$irvar0,false); [line 34];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.<init>(android.content.Context).091d454332b416bb18c74315a3e6236e.html">CircleView.&lt;init&gt;(Context): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">        super(context); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node83.html"><span class='visitedproof'>I_83<span class='expansion'>node83 preds:34 succs:84 exn:36 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 35];
+n$1=*&amp;context:class android.content.Context * [line 35];
+_fun_View.&lt;init&gt;(Context)(n$0:class com.karthik.imager.Recycler.CircleView *,n$1:class android.content.Context *) [line 35];
+REMOVE_TEMPS(n$0,n$1); [line 35];
+NULLIFY(&amp;context,false); [line 35];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context)</div></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">        init(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node92.html"><span class='visitedproof'>I_92<span class='expansion'>node92 preds:91 succs:93 exn:36 Instructions
+n$13=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 36];
+_fun_void CircleView.init()(n$13:class com.karthik.imager.Recycler.CircleView *) [line 36];
+REMOVE_TEMPS(n$13); [line 36];
+NULLIFY(&amp;this,false); [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node35.html"><span class='visitedproof'>E_35<span class='expansion'>node35 preds:93 36 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_36<span class='expansion'>node36 preds: succs:35 exn:35 Instructions
+NULLIFY(&amp;$irvar0,false); [line 37];
+NULLIFY(&amp;this,false); [line 37];
+APPLY_ABSTRACTION; [line 37];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node93.html"><span class='visitedproof'>I_93<span class='expansion'>node93 preds:92 succs:35 exn:36 Instructions
+APPLY_ABSTRACTION; [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">    public CircleView(Context context, AttributeSet attrs) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node58.html"><span class='visitedproof'>S_58<span class='expansion'>node58 preds: succs:142 exn:59 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 39];
+NULLIFY(&amp;$irvar0,false); [line 39];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.<init>(android.content.Context,android.util.AttributeSet).b681b4e7cd9c2f263090ea2bdaadae67.html">CircleView.&lt;init&gt;(Context,AttributeSet): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">        super(context, attrs); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node142.html"><span class='visitedproof'>I_142<span class='expansion'>node142 preds:58 succs:143 exn:60 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 40];
+n$1=*&amp;context:class android.content.Context * [line 40];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 40];
+_fun_View.&lt;init&gt;(Context,AttributeSet)(n$0:class com.karthik.imager.Recycler.CircleView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *) [line 40];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 40];
+NULLIFY(&amp;attrs,false); [line 40];
+NULLIFY(&amp;context,false); [line 40];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context,AttributeSet)</div></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">        init(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node151.html"><span class='visitedproof'>I_151<span class='expansion'>node151 preds:150 succs:152 exn:60 Instructions
+n$14=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 41];
+_fun_void CircleView.init()(n$14:class com.karthik.imager.Recycler.CircleView *) [line 41];
+REMOVE_TEMPS(n$14); [line 41];
+NULLIFY(&amp;this,false); [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node59.html"><span class='visitedproof'>E_59<span class='expansion'>node59 preds:152 60 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_60<span class='expansion'>node60 preds: succs:59 exn:59 Instructions
+NULLIFY(&amp;$irvar0,false); [line 42];
+NULLIFY(&amp;this,false); [line 42];
+APPLY_ABSTRACTION; [line 42];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node152.html"><span class='visitedproof'>I_152<span class='expansion'>node152 preds:151 succs:59 exn:60 Instructions
+APPLY_ABSTRACTION; [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">    public CircleView(Context context, AttributeSet attrs, int defStyleAttr) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node31.html"><span class='visitedproof'>S_31<span class='expansion'>node31 preds: succs:72 exn:32 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 44];
+NULLIFY(&amp;$irvar0,false); [line 44];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.<init>(android.content.Context,android.util.AttributeSet,int).c5105b331f76e78d9cc15a8a055c66d2.html">CircleView.&lt;init&gt;(Context,AttributeSet,int): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">        super(context, attrs, defStyleAttr); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node72.html"><span class='visitedproof'>I_72<span class='expansion'>node72 preds:31 succs:73 exn:33 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 45];
+n$1=*&amp;context:class android.content.Context * [line 45];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 45];
+n$3=*&amp;defStyleAttr:int  [line 45];
+_fun_View.&lt;init&gt;(Context,AttributeSet,int)(n$0:class com.karthik.imager.Recycler.CircleView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *,n$3:int ) [line 45];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3); [line 45];
+NULLIFY(&amp;attrs,false); [line 45];
+NULLIFY(&amp;context,false); [line 45];
+NULLIFY(&amp;defStyleAttr,false); [line 45];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context,AttributeSet,int)</div></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        init(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node81.html"><span class='visitedproof'>I_81<span class='expansion'>node81 preds:80 succs:82 exn:33 Instructions
+n$15=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 46];
+_fun_void CircleView.init()(n$15:class com.karthik.imager.Recycler.CircleView *) [line 46];
+REMOVE_TEMPS(n$15); [line 46];
+NULLIFY(&amp;this,false); [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node32.html"><span class='visitedproof'>E_32<span class='expansion'>node32 preds:82 33 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_33<span class='expansion'>node33 preds: succs:32 exn:32 Instructions
+NULLIFY(&amp;$irvar0,false); [line 47];
+NULLIFY(&amp;this,false); [line 47];
+APPLY_ABSTRACTION; [line 47];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node82.html"><span class='visitedproof'>I_82<span class='expansion'>node82 preds:81 succs:32 exn:33 Instructions
+APPLY_ABSTRACTION; [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">    public CircleView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node49.html"><span class='visitedproof'>S_49<span class='expansion'>node49 preds: succs:118 exn:50 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 49];
+NULLIFY(&amp;$irvar0,false); [line 49];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.<init>(android.content.Context,android.util.AttributeSet,int,.6b5db8efe96241bf405ee99b3af39674.html">CircleView.&lt;init&gt;(Context,AttributeSet,int,int): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">        super(context, attrs, defStyleAttr, defStyleRes); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node118.html"><span class='visitedproof'>I_118<span class='expansion'>node118 preds:49 succs:119 exn:51 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 50];
+n$1=*&amp;context:class android.content.Context * [line 50];
+n$2=*&amp;attrs:class android.util.AttributeSet * [line 50];
+n$3=*&amp;defStyleAttr:int  [line 50];
+n$4=*&amp;defStyleRes:int  [line 50];
+_fun_View.&lt;init&gt;(Context,AttributeSet,int,int)(n$0:class com.karthik.imager.Recycler.CircleView *,n$1:class android.content.Context *,n$2:class android.util.AttributeSet *,n$3:int ,n$4:int ) [line 50];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 50];
+NULLIFY(&amp;attrs,false); [line 50];
+NULLIFY(&amp;context,false); [line 50];
+NULLIFY(&amp;defStyleAttr,false); [line 50];
+NULLIFY(&amp;defStyleRes,false); [line 50];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION View.<init>(Context,AttributeSet,int,int)</div></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">        init(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node127.html"><span class='visitedproof'>I_127<span class='expansion'>node127 preds:126 succs:128 exn:51 Instructions
+n$16=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 51];
+_fun_void CircleView.init()(n$16:class com.karthik.imager.Recycler.CircleView *) [line 51];
+REMOVE_TEMPS(n$16); [line 51];
+NULLIFY(&amp;this,false); [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node50.html"><span class='visitedproof'>E_50<span class='expansion'>node50 preds:128 51 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_51<span class='expansion'>node51 preds: succs:50 exn:50 Instructions
+NULLIFY(&amp;$irvar0,false); [line 52];
+NULLIFY(&amp;this,false); [line 52];
+APPLY_ABSTRACTION; [line 52];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node128.html"><span class='visitedproof'>I_128<span class='expansion'>node128 preds:127 succs:50 exn:51 Instructions
+APPLY_ABSTRACTION; [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">    private void init() { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node40.html"><span class='visitedproof'>S_40<span class='expansion'>node40 preds: succs:107 exn:41 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2); [line 54];
+NULLIFY(&amp;$irvar0,false); [line 54];
+NULLIFY(&amp;$irvar1,false); [line 54];
+NULLIFY(&amp;$irvar2,false); [line 54];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.init():void.0fc515b058c4870c98e87e5273606627.html">void CircleView.init(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">        circlePaint.setStyle(Paint.Style.FILL); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node107.html"><span class='visitedproof'>I_107<span class='expansion'>node107 preds:40 succs:108 exn:42 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 55];
+n$1=*n$0.com.karthik.imager.Recycler.CircleView.circlePaint:class com.karthik.imager.Recycler.CircleView  [line 55];
+*&amp;$irvar0:class android.graphics.Paint *=n$1 [line 55];
+REMOVE_TEMPS(n$0,n$1); [line 55];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node108.html"><span class='visitedproof'>I_108<span class='expansion'>node108 preds:107 succs:109 exn:42 Instructions
+n$2=*&amp;$irvar0:class android.graphics.Paint * [line 55];
+n$3=*n$2:class android.graphics.Paint  [line 55];
+n$4=*&amp;#GB$android.graphics.Paint$Style.android.graphics.Paint$Style.FILL:class android.graphics.Paint$Style  [line 55];
+_fun_void Paint.setStyle(Paint$Style)(n$2:class android.graphics.Paint *,n$4:class android.graphics.Paint$Style *) virtual [line 55];
+REMOVE_TEMPS(n$2,n$3,n$4); [line 55];
+NULLIFY(&amp;$irvar0,false); [line 55];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setStyle(Paint$Style)</div></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">        maskPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR)); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node109.html"><span class='visitedproof'>I_109<span class='expansion'>node109 preds:108 succs:110 exn:42 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 56];
+n$6=*n$5.com.karthik.imager.Recycler.CircleView.maskPaint:class com.karthik.imager.Recycler.CircleView  [line 56];
+*&amp;$irvar0:class android.graphics.Paint *=n$6 [line 56];
+REMOVE_TEMPS(n$5,n$6); [line 56];
+NULLIFY(&amp;this,false); [line 56];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node110.html"><span class='visitedproof'>I_110<span class='expansion'>node110 preds:109 succs:111 exn:42 Instructions
+n$7=_fun___new(sizeof(class android.graphics.PorterDuffXfermode ):class android.graphics.PorterDuffXfermode *) [line 56];
+n$8=*&amp;#GB$android.graphics.PorterDuff$Mode.android.graphics.PorterDuff$Mode.CLEAR:class android.graphics.PorterDuff$Mode  [line 56];
+_fun_PorterDuffXfermode.&lt;init&gt;(PorterDuff$Mode)(n$7:class android.graphics.PorterDuffXfermode *,n$8:class android.graphics.PorterDuff$Mode *) [line 56];
+*&amp;$irvar1:class android.graphics.PorterDuffXfermode *=n$7 [line 56];
+REMOVE_TEMPS(n$7,n$8); [line 56];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node111.html"><span class='visitedproof'>I_111<span class='expansion'>node111 preds:110 succs:112 exn:42 Instructions
+n$9=*&amp;$irvar0:class android.graphics.Paint * [line 56];
+n$10=*n$9:class android.graphics.Paint  [line 56];
+n$11=*&amp;$irvar1:class android.graphics.PorterDuffXfermode * [line 56];
+n$12=_fun_Xfermode Paint.setXfermode(Xfermode)(n$9:class android.graphics.Paint *,n$11:class android.graphics.PorterDuffXfermode *) virtual [line 56];
+*&amp;$irvar2:class android.graphics.Xfermode *=n$12 [line 56];
+REMOVE_TEMPS(n$9,n$10,n$11,n$12); [line 56];
+NULLIFY(&amp;$irvar0,false); [line 56];
+NULLIFY(&amp;$irvar1,false); [line 56];
+NULLIFY(&amp;$irvar2,false); [line 56];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION PorterDuffXfermode.<init>(PorterDuff$Mode)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Xfermode Paint.setXfermode(Xfermode)</div></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node41.html"><span class='visitedproof'>E_41<span class='expansion'>node41 preds:112 42 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_42<span class='expansion'>node42 preds: succs:41 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 57];
+NULLIFY(&amp;$irvar1,false); [line 57];
+NULLIFY(&amp;this,false); [line 57];
+APPLY_ABSTRACTION; [line 57];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node112.html"><span class='visitedproof'>I_112<span class='expansion'>node112 preds:111 succs:41 exn:42 Instructions
+APPLY_ABSTRACTION; [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">    protected void onSizeChanged(int w, int h, int oldw, int oldh) {</td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">        super.onSizeChanged(w, h, oldw, oldh); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node52.html"><span class='visitedproof'>S_52<span class='expansion'>node52 preds: succs:129 exn:53 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2,&amp;$irvar3); [line 61];
+NULLIFY(&amp;$irvar0,false); [line 61];
+NULLIFY(&amp;$irvar1,false); [line 61];
+NULLIFY(&amp;$irvar2,false); [line 61];
+NULLIFY(&amp;$irvar3,false); [line 61];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node129.html"><span class='visitedproof'>I_129<span class='expansion'>node129 preds:52 succs:130 exn:54 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 61];
+n$1=*&amp;w:int  [line 61];
+n$2=*&amp;h:int  [line 61];
+n$3=*&amp;oldw:int  [line 61];
+n$4=*&amp;oldh:int  [line 61];
+_fun_void View.onSizeChanged(int,int,int,int)(n$0:class com.karthik.imager.Recycler.CircleView *,n$1:int ,n$2:int ,n$3:int ,n$4:int ) [line 61];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 61];
+NULLIFY(&amp;h,false); [line 61];
+NULLIFY(&amp;oldh,false); [line 61];
+NULLIFY(&amp;oldw,false); [line 61];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.onSizeChanged(int,int,int,int):void.096bccba4a5a8611a7b5eaee8f4660fe.html">void CircleView.onSizeChanged(int,int,int,int): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.onSizeChanged(int,int,int,int)</div></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">        maxCircleSize = w / 2; <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node130.html"><span class='visitedproof'>I_130<span class='expansion'>node130 preds:129 succs:131 exn:54 Instructions
+n$5=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 62];
+n$6=*&amp;w:int  [line 62];
+*n$5.com.karthik.imager.Recycler.CircleView.maxCircleSize:class com.karthik.imager.Recycler.CircleView =(n$6 / 2) [line 62];
+REMOVE_TEMPS(n$5,n$6); [line 62];
+NULLIFY(&amp;w,false); [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">        tempBitmap = Bitmap.createBitmap(getWidth(), getWidth(), Bitmap.Config.ARGB_8888); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node131.html"><span class='visitedproof'>I_131<span class='expansion'>node131 preds:130 succs:132 exn:54 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 63];
+n$8=*n$7:class com.karthik.imager.Recycler.CircleView  [line 63];
+n$9=_fun_int View.getWidth()(n$7:class com.karthik.imager.Recycler.CircleView *) virtual [line 63];
+*&amp;$irvar0:int =n$9 [line 63];
+REMOVE_TEMPS(n$7,n$8,n$9); [line 63];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node132.html"><span class='visitedproof'>I_132<span class='expansion'>node132 preds:131 succs:133 exn:54 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 63];
+n$11=*n$10:class com.karthik.imager.Recycler.CircleView  [line 63];
+n$12=_fun_int View.getWidth()(n$10:class com.karthik.imager.Recycler.CircleView *) virtual [line 63];
+*&amp;$irvar1:int =n$12 [line 63];
+REMOVE_TEMPS(n$10,n$11,n$12); [line 63];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node133.html"><span class='visitedproof'>I_133<span class='expansion'>node133 preds:132 succs:134 exn:54 Instructions
+n$13=*&amp;#GB$android.graphics.Bitmap$Config.android.graphics.Bitmap$Config.ARGB_8888:class android.graphics.Bitmap$Config  [line 63];
+*&amp;$irvar2:class android.graphics.Bitmap$Config *=n$13 [line 63];
+REMOVE_TEMPS(n$13); [line 63];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node134.html"><span class='visitedproof'>I_134<span class='expansion'>node134 preds:133 succs:135 exn:54 Instructions
+n$14=*&amp;$irvar0:int  [line 63];
+n$15=*&amp;$irvar1:int  [line 63];
+n$16=*&amp;$irvar2:class android.graphics.Bitmap$Config * [line 63];
+n$17=_fun_Bitmap Bitmap.createBitmap(int,int,Bitmap$Config)(n$14:int ,n$15:int ,n$16:class android.graphics.Bitmap$Config *) [line 63];
+*&amp;$irvar3:class android.graphics.Bitmap *=n$17 [line 63];
+REMOVE_TEMPS(n$14,n$15,n$16,n$17); [line 63];
+NULLIFY(&amp;$irvar0,false); [line 63];
+NULLIFY(&amp;$irvar1,false); [line 63];
+NULLIFY(&amp;$irvar2,false); [line 63];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node135.html"><span class='visitedproof'>I_135<span class='expansion'>node135 preds:134 succs:136 exn:54 Instructions
+n$18=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 63];
+n$19=*&amp;$irvar3:class android.graphics.Bitmap * [line 63];
+*n$18.com.karthik.imager.Recycler.CircleView.tempBitmap:class com.karthik.imager.Recycler.CircleView =n$19 [line 63];
+REMOVE_TEMPS(n$18,n$19); [line 63];
+NULLIFY(&amp;$irvar3,false); [line 63];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Bitmap Bitmap.createBitmap(int,int,Bitmap$Config)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int View.getWidth()</div></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">        tempCanvas = new Canvas(tempBitmap); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node136.html"><span class='visitedproof'>I_136<span class='expansion'>node136 preds:135 succs:137 exn:54 Instructions
+n$20=_fun___new(sizeof(class android.graphics.Canvas ):class android.graphics.Canvas *) [line 64];
+n$21=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 64];
+n$22=*n$21.com.karthik.imager.Recycler.CircleView.tempBitmap:class com.karthik.imager.Recycler.CircleView  [line 64];
+_fun_Canvas.&lt;init&gt;(Bitmap)(n$20:class android.graphics.Canvas *,n$22:class android.graphics.Bitmap *) [line 64];
+*&amp;$irvar0:class android.graphics.Canvas *=n$20 [line 64];
+REMOVE_TEMPS(n$20,n$21,n$22); [line 64];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node137.html"><span class='visitedproof'>I_137<span class='expansion'>node137 preds:136 succs:138 exn:54 Instructions
+n$23=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 64];
+n$24=*&amp;$irvar0:class android.graphics.Canvas * [line 64];
+*n$23.com.karthik.imager.Recycler.CircleView.tempCanvas:class com.karthik.imager.Recycler.CircleView =n$24 [line 64];
+REMOVE_TEMPS(n$23,n$24); [line 64];
+NULLIFY(&amp;$irvar0,false); [line 64];
+NULLIFY(&amp;this,false); [line 64];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Canvas.<init>(Bitmap)</div></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node53.html"><span class='visitedproof'>E_53<span class='expansion'>node53 preds:138 54 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_54<span class='expansion'>node54 preds: succs:53 exn:53 Instructions
+NULLIFY(&amp;$irvar0,false); [line 65];
+NULLIFY(&amp;$irvar1,false); [line 65];
+NULLIFY(&amp;$irvar2,false); [line 65];
+NULLIFY(&amp;$irvar3,false); [line 65];
+NULLIFY(&amp;this,false); [line 65];
+NULLIFY(&amp;w,false); [line 65];
+APPLY_ABSTRACTION; [line 65];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node138.html"><span class='visitedproof'>I_138<span class='expansion'>node138 preds:137 succs:53 exn:54 Instructions
+APPLY_ABSTRACTION; [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">    protected void onDraw(Canvas canvas) {</td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">        super.onDraw(canvas); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node64.html"><span class='visitedproof'>S_64<span class='expansion'>node64 preds: succs:154 exn:65 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2); [line 69];
+NULLIFY(&amp;$irvar0,false); [line 69];
+NULLIFY(&amp;$irvar1,false); [line 69];
+NULLIFY(&amp;$irvar2,false); [line 69];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node154.html"><span class='visitedproof'>I_154<span class='expansion'>node154 preds:64 succs:155 exn:66 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 69];
+n$1=*&amp;canvas:class android.graphics.Canvas * [line 69];
+_fun_void View.onDraw(Canvas)(n$0:class com.karthik.imager.Recycler.CircleView *,n$1:class android.graphics.Canvas *) [line 69];
+REMOVE_TEMPS(n$0,n$1); [line 69];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.onDraw(android.graphics.Canvas):void.dded94c26fa838e9a842d799f3f87984.html">void CircleView.onDraw(Canvas): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.onDraw(Canvas)</div></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">        tempCanvas.drawColor(0xffffff, PorterDuff.Mode.CLEAR); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node155.html"><span class='visitedproof'>I_155<span class='expansion'>node155 preds:154 succs:156 exn:66 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 70];
+n$3=*n$2.com.karthik.imager.Recycler.CircleView.tempCanvas:class com.karthik.imager.Recycler.CircleView  [line 70];
+*&amp;$irvar0:class android.graphics.Canvas *=n$3 [line 70];
+REMOVE_TEMPS(n$2,n$3); [line 70];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node156.html"><span class='visitedproof'>I_156<span class='expansion'>node156 preds:155 succs:157 exn:66 Instructions
+n$4=*&amp;$irvar0:class android.graphics.Canvas * [line 70];
+n$5=*n$4:class android.graphics.Canvas  [line 70];
+n$6=*&amp;#GB$android.graphics.PorterDuff$Mode.android.graphics.PorterDuff$Mode.CLEAR:class android.graphics.PorterDuff$Mode  [line 70];
+_fun_void Canvas.drawColor(int,PorterDuff$Mode)(n$4:class android.graphics.Canvas *,16777215:int ,n$6:class android.graphics.PorterDuff$Mode *) virtual [line 70];
+REMOVE_TEMPS(n$4,n$5,n$6); [line 70];
+NULLIFY(&amp;$irvar0,false); [line 70];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Canvas.drawColor(int,PorterDuff$Mode)</div></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        tempCanvas.drawCircle(getWidth() / 2, getHeight() / 2, outerCircleRadiusProgress * maxCircleSize, circlePaint); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node157.html"><span class='visitedproof'>I_157<span class='expansion'>node157 preds:156 succs:158 exn:66 Instructions
+n$7=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 71];
+n$8=*n$7.com.karthik.imager.Recycler.CircleView.tempCanvas:class com.karthik.imager.Recycler.CircleView  [line 71];
+*&amp;$irvar1:class android.graphics.Canvas *=n$8 [line 71];
+REMOVE_TEMPS(n$7,n$8); [line 71];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node158.html"><span class='visitedproof'>I_158<span class='expansion'>node158 preds:157 succs:159 exn:66 Instructions
+n$9=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 71];
+n$10=*n$9:class com.karthik.imager.Recycler.CircleView  [line 71];
+n$11=_fun_int View.getWidth()(n$9:class com.karthik.imager.Recycler.CircleView *) virtual [line 71];
+*&amp;$irvar0:int =n$11 [line 71];
+REMOVE_TEMPS(n$9,n$10,n$11); [line 71];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node159.html"><span class='visitedproof'>I_159<span class='expansion'>node159 preds:158 succs:160 exn:66 Instructions
+n$12=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 71];
+n$13=*n$12:class com.karthik.imager.Recycler.CircleView  [line 71];
+n$14=_fun_int View.getHeight()(n$12:class com.karthik.imager.Recycler.CircleView *) virtual [line 71];
+*&amp;$irvar2:int =n$14 [line 71];
+REMOVE_TEMPS(n$12,n$13,n$14); [line 71];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node160.html"><span class='visitedproof'>I_160<span class='expansion'>node160 preds:159 succs:161 exn:66 Instructions
+n$15=*&amp;$irvar1:class android.graphics.Canvas * [line 71];
+n$16=*n$15:class android.graphics.Canvas  [line 71];
+n$17=*&amp;$irvar0:int  [line 71];
+n$18=*&amp;$irvar2:int  [line 71];
+n$19=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 71];
+n$20=*n$19.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView  [line 71];
+n$21=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 71];
+n$22=*n$21.com.karthik.imager.Recycler.CircleView.maxCircleSize:class com.karthik.imager.Recycler.CircleView  [line 71];
+n$23=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 71];
+n$24=*n$23.com.karthik.imager.Recycler.CircleView.circlePaint:class com.karthik.imager.Recycler.CircleView  [line 71];
+_fun_void Canvas.drawCircle(float,float,float,Paint)(n$15:class android.graphics.Canvas *,(float )(n$17 / 2):float ,(float )(n$18 / 2):float ,(n$20 * (float )n$22):float ,n$24:class android.graphics.Paint *) virtual [line 71];
+REMOVE_TEMPS(n$15,n$16,n$17,n$18,n$19,n$20,n$21,n$22,n$23,n$24); [line 71];
+NULLIFY(&amp;$irvar0,false); [line 71];
+NULLIFY(&amp;$irvar1,false); [line 71];
+NULLIFY(&amp;$irvar2,false); [line 71];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int View.getHeight()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int View.getWidth()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)</div></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">        tempCanvas.drawCircle(getWidth() / 2, getHeight() / 2, innerCircleRadiusProgress * maxCircleSize, maskPaint); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node7.html"><span class='visitedproof'>S_7<span class='expansion'>node7 preds: succs:21 exn:8 Start
+DECLARE_LOCALS(&amp;return); [line 72];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node161.html"><span class='visitedproof'>I_161<span class='expansion'>node161 preds:160 succs:162 exn:66 Instructions
+n$25=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 72];
+n$26=*n$25.com.karthik.imager.Recycler.CircleView.tempCanvas:class com.karthik.imager.Recycler.CircleView  [line 72];
+*&amp;$irvar1:class android.graphics.Canvas *=n$26 [line 72];
+REMOVE_TEMPS(n$25,n$26); [line 72];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node162.html"><span class='visitedproof'>I_162<span class='expansion'>node162 preds:161 succs:163 exn:66 Instructions
+n$27=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 72];
+n$28=*n$27:class com.karthik.imager.Recycler.CircleView  [line 72];
+n$29=_fun_int View.getWidth()(n$27:class com.karthik.imager.Recycler.CircleView *) virtual [line 72];
+*&amp;$irvar0:int =n$29 [line 72];
+REMOVE_TEMPS(n$27,n$28,n$29); [line 72];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node163.html"><span class='visitedproof'>I_163<span class='expansion'>node163 preds:162 succs:164 exn:66 Instructions
+n$30=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 72];
+n$31=*n$30:class com.karthik.imager.Recycler.CircleView  [line 72];
+n$32=_fun_int View.getHeight()(n$30:class com.karthik.imager.Recycler.CircleView *) virtual [line 72];
+*&amp;$irvar2:int =n$32 [line 72];
+REMOVE_TEMPS(n$30,n$31,n$32); [line 72];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node164.html"><span class='visitedproof'>I_164<span class='expansion'>node164 preds:163 succs:165 exn:66 Instructions
+n$33=*&amp;$irvar1:class android.graphics.Canvas * [line 72];
+n$34=*n$33:class android.graphics.Canvas  [line 72];
+n$35=*&amp;$irvar0:int  [line 72];
+n$36=*&amp;$irvar2:int  [line 72];
+n$37=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 72];
+n$38=*n$37.com.karthik.imager.Recycler.CircleView.innerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView  [line 72];
+n$39=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 72];
+n$40=*n$39.com.karthik.imager.Recycler.CircleView.maxCircleSize:class com.karthik.imager.Recycler.CircleView  [line 72];
+n$41=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 72];
+n$42=*n$41.com.karthik.imager.Recycler.CircleView.maskPaint:class com.karthik.imager.Recycler.CircleView  [line 72];
+_fun_void Canvas.drawCircle(float,float,float,Paint)(n$33:class android.graphics.Canvas *,(float )(n$35 / 2):float ,(float )(n$36 / 2):float ,(n$38 * (float )n$40):float ,n$42:class android.graphics.Paint *) virtual [line 72];
+REMOVE_TEMPS(n$33,n$34,n$35,n$36,n$37,n$38,n$39,n$40,n$41,n$42); [line 72];
+NULLIFY(&amp;$irvar0,false); [line 72];
+NULLIFY(&amp;$irvar1,false); [line 72];
+NULLIFY(&amp;$irvar2,false); [line 72];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$2.<init>(java.lang.Class,java.lang.String).472ba017a15892f0c487869d3b1cb537.html">CircleView$2.&lt;init&gt;(Class,String): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int View.getHeight()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int View.getWidth()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)</div></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">        canvas.drawBitmap(tempBitmap, 0, 0, null); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node165.html"><span class='visitedproof'>I_165<span class='expansion'>node165 preds:164 succs:166 exn:66 Instructions
+n$43=*&amp;canvas:class android.graphics.Canvas * [line 73];
+n$44=*n$43:class android.graphics.Canvas  [line 73];
+n$45=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 73];
+n$46=*n$45.com.karthik.imager.Recycler.CircleView.tempBitmap:class com.karthik.imager.Recycler.CircleView  [line 73];
+_fun_void Canvas.drawBitmap(Bitmap,float,float,Paint)(n$43:class android.graphics.Canvas *,n$46:class android.graphics.Bitmap *,0.000000:float ,0.000000:float ,null:class java.lang.Object *) virtual [line 73];
+REMOVE_TEMPS(n$43,n$44,n$45,n$46); [line 73];
+NULLIFY(&amp;canvas,false); [line 73];
+NULLIFY(&amp;this,false); [line 73];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Canvas.drawBitmap(Bitmap,float,float,Paint)</div></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node65.html"><span class='visitedproof'>E_65<span class='expansion'>node65 preds:166 66 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_66<span class='expansion'>node66 preds: succs:65 exn:65 Instructions
+NULLIFY(&amp;$irvar0,false); [line 74];
+NULLIFY(&amp;$irvar1,false); [line 74];
+NULLIFY(&amp;$irvar2,false); [line 74];
+NULLIFY(&amp;canvas,false); [line 74];
+NULLIFY(&amp;this,false); [line 74];
+APPLY_ABSTRACTION; [line 74];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node166.html"><span class='visitedproof'>I_166<span class='expansion'>node166 preds:165 succs:65 exn:66 Instructions
+APPLY_ABSTRACTION; [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">    public void setInnerCircleRadiusProgress(float innerCircleRadiusProgress) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node55.html"><span class='visitedproof'>S_55<span class='expansion'>node55 preds: succs:139 exn:56 Start
+DECLARE_LOCALS(&amp;return); [line 76];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.setInnerCircleRadiusProgress(float):void.717f35e10a9ca155777a7cd6d3aa6542.html">void CircleView.setInnerCircleRadiusProgress(float): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">        this.innerCircleRadiusProgress = innerCircleRadiusProgress; <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node139.html"><span class='visitedproof'>I_139<span class='expansion'>node139 preds:55 succs:140 exn:57 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 77];
+n$1=*&amp;innerCircleRadiusProgress:float  [line 77];
+*n$0.com.karthik.imager.Recycler.CircleView.innerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =n$1 [line 77];
+REMOVE_TEMPS(n$0,n$1); [line 77];
+NULLIFY(&amp;innerCircleRadiusProgress,false); [line 77];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">        postInvalidate(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node140.html"><span class='visitedproof'>I_140<span class='expansion'>node140 preds:139 succs:141 exn:57 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 78];
+n$3=*n$2:class com.karthik.imager.Recycler.CircleView  [line 78];
+_fun_void View.postInvalidate()(n$2:class com.karthik.imager.Recycler.CircleView *) virtual [line 78];
+REMOVE_TEMPS(n$2,n$3); [line 78];
+NULLIFY(&amp;this,false); [line 78];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.postInvalidate()</div></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node56.html"><span class='visitedproof'>E_56<span class='expansion'>node56 preds:141 57 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_57<span class='expansion'>node57 preds: succs:56 exn:56 Instructions
+NULLIFY(&amp;this,false); [line 79];
+APPLY_ABSTRACTION; [line 79];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node141.html"><span class='visitedproof'>I_141<span class='expansion'>node141 preds:140 succs:56 exn:57 Instructions
+APPLY_ABSTRACTION; [line 79];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">    public float getInnerCircleRadiusProgress() { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node61.html"><span class='visitedproof'>S_61<span class='expansion'>node61 preds: succs:153 exn:62 Start
+DECLARE_LOCALS(&amp;return); [line 81];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.getInnerCircleRadiusProgress():float.198b9fb47afaf6f75c815cf8bb9015b1.html">float CircleView.getInnerCircleRadiusProgress(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">        return innerCircleRadiusProgress; <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node62.html"><span class='visitedproof'>E_62<span class='expansion'>node62 preds:153 63 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_63<span class='expansion'>node63 preds: succs:62 exn:62 Instructions
+APPLY_ABSTRACTION; [line 82];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node153.html"><span class='visitedproof'>I_153<span class='expansion'>node153 preds:61 succs:62 exn:63 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 82];
+n$1=*n$0.com.karthik.imager.Recycler.CircleView.innerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView  [line 82];
+*&amp;return:float =n$1 [line 82];
+REMOVE_TEMPS(n$0,n$1); [line 82];
+NULLIFY(&amp;this,false); [line 82];
+APPLY_ABSTRACTION; [line 82];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">    public void setOuterCircleRadiusProgress(float outerCircleRadiusProgress) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node46.html"><span class='visitedproof'>S_46<span class='expansion'>node46 preds: succs:114 exn:47 Start
+DECLARE_LOCALS(&amp;return); [line 85];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.setOuterCircleRadiusProgress(float):void.f331962fb6f59978a995af146dc89c3a.html">void CircleView.setOuterCircleRadiusProgress(float): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">        this.outerCircleRadiusProgress = outerCircleRadiusProgress; <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node114.html"><span class='visitedproof'>I_114<span class='expansion'>node114 preds:46 succs:115 exn:48 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 86];
+n$1=*&amp;outerCircleRadiusProgress:float  [line 86];
+*n$0.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView =n$1 [line 86];
+REMOVE_TEMPS(n$0,n$1); [line 86];
+NULLIFY(&amp;outerCircleRadiusProgress,false); [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">        updateCircleColor(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node115.html"><span class='visitedproof'>I_115<span class='expansion'>node115 preds:114 succs:116 exn:48 Instructions
+n$2=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 87];
+_fun_void CircleView.updateCircleColor()(n$2:class com.karthik.imager.Recycler.CircleView *) [line 87];
+REMOVE_TEMPS(n$2); [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">        postInvalidate(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node116.html"><span class='visitedproof'>I_116<span class='expansion'>node116 preds:115 succs:117 exn:48 Instructions
+n$3=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 88];
+n$4=*n$3:class com.karthik.imager.Recycler.CircleView  [line 88];
+_fun_void View.postInvalidate()(n$3:class com.karthik.imager.Recycler.CircleView *) virtual [line 88];
+REMOVE_TEMPS(n$3,n$4); [line 88];
+NULLIFY(&amp;this,false); [line 88];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void View.postInvalidate()</div></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node47.html"><span class='visitedproof'>E_47<span class='expansion'>node47 preds:117 48 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_48<span class='expansion'>node48 preds: succs:47 exn:47 Instructions
+NULLIFY(&amp;this,false); [line 89];
+APPLY_ABSTRACTION; [line 89];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node117.html"><span class='visitedproof'>I_117<span class='expansion'>node117 preds:116 succs:47 exn:48 Instructions
+APPLY_ABSTRACTION; [line 89];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">    private void updateCircleColor() { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node37.html"><span class='visitedproof'>S_37<span class='expansion'>node37 preds: succs:94 exn:38 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;colorProgress,&amp;$irvar2,&amp;$irvar3,&amp;$irvar4,&amp;$irvar5); [line 91];
+NULLIFY(&amp;$irvar0,false); [line 91];
+NULLIFY(&amp;$irvar1,false); [line 91];
+NULLIFY(&amp;$irvar2,false); [line 91];
+NULLIFY(&amp;$irvar3,false); [line 91];
+NULLIFY(&amp;$irvar4,false); [line 91];
+NULLIFY(&amp;$irvar5,false); [line 91];
+NULLIFY(&amp;colorProgress,false); [line 91];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.updateCircleColor():void.38269750035cd65a689962420fc395a6.html">void CircleView.updateCircleColor(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">        float colorProgress = (float) Utils.clamp(outerCircleRadiusProgress, 0.5, 1); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node94.html"><span class='visitedproof'>I_94<span class='expansion'>node94 preds:37 succs:95 exn:39 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 92];
+n$1=*n$0.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView  [line 92];
+*&amp;$irvar0:double =(double )n$1 [line 92];
+REMOVE_TEMPS(n$0,n$1); [line 92];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node95.html"><span class='visitedproof'>I_95<span class='expansion'>node95 preds:94 succs:96 exn:39 Instructions
+n$2=*&amp;$irvar0:double  [line 92];
+n$3=_fun_double Utils.clamp(double,double,double)(n$2:double ,0.500000:double ,1.000000:double ) [line 92];
+*&amp;$irvar1:double =n$3 [line 92];
+REMOVE_TEMPS(n$2,n$3); [line 92];
+NULLIFY(&amp;$irvar0,false); [line 92];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node96.html"><span class='visitedproof'>I_96<span class='expansion'>node96 preds:95 succs:97 exn:39 Instructions
+n$4=*&amp;$irvar1:double  [line 92];
+*&amp;colorProgress:float =(float )n$4 [line 92];
+REMOVE_TEMPS(n$4); [line 92];
+NULLIFY(&amp;$irvar1,false); [line 92];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">        colorProgress = (float) Utils.mapValueFromRangeToRange(colorProgress, 0.5f, 1f, 0f, 1f); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node97.html"><span class='visitedproof'>I_97<span class='expansion'>node97 preds:96 succs:98 exn:39 Instructions
+n$5=*&amp;colorProgress:float  [line 93];
+n$6=_fun_double Utils.mapValueFromRangeToRange(double,double,double,double,double)((double )n$5:double ,0.500000:double ,1.000000:double ,0.000000:double ,1.000000:double ) [line 93];
+*&amp;$irvar0:double =n$6 [line 93];
+REMOVE_TEMPS(n$5,n$6); [line 93];
+NULLIFY(&amp;colorProgress,false); [line 93];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node98.html"><span class='visitedproof'>I_98<span class='expansion'>node98 preds:97 succs:99 exn:39 Instructions
+n$7=*&amp;$irvar0:double  [line 93];
+*&amp;colorProgress:float =(float )n$7 [line 93];
+REMOVE_TEMPS(n$7); [line 93];
+NULLIFY(&amp;$irvar0,false); [line 93];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node173.html"><span class='visitedproof'>S_173<span class='expansion'>node173 preds: succs:187 exn:174 Start
+DECLARE_LOCALS(&amp;return); [line 93];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$1.<init>(java.lang.Class,java.lang.String).81e377df40ad2e28a0aa786a2ae5868d.html">CircleView$1.&lt;init&gt;(Class,String): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">        this.circlePaint.setColor((Integer) argbEvaluator.evaluate(colorProgress, START_COLOR, END_COLOR)); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node99.html"><span class='visitedproof'>I_99<span class='expansion'>node99 preds:98 succs:100 exn:39 Instructions
+n$8=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 94];
+n$9=*n$8.com.karthik.imager.Recycler.CircleView.argbEvaluator:class com.karthik.imager.Recycler.CircleView  [line 94];
+*&amp;$irvar1:class android.animation.ArgbEvaluator *=n$9 [line 94];
+REMOVE_TEMPS(n$8,n$9); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node100.html"><span class='visitedproof'>I_100<span class='expansion'>node100 preds:99 succs:101 exn:39 Instructions
+n$10=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 94];
+n$11=*n$10.com.karthik.imager.Recycler.CircleView.circlePaint:class com.karthik.imager.Recycler.CircleView  [line 94];
+*&amp;$irvar0:class android.graphics.Paint *=n$11 [line 94];
+REMOVE_TEMPS(n$10,n$11); [line 94];
+NULLIFY(&amp;this,false); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node101.html"><span class='visitedproof'>I_101<span class='expansion'>node101 preds:100 succs:102 exn:39 Instructions
+n$12=_fun_Integer Integer.valueOf(int)(-8421505:int ) [line 94];
+*&amp;$irvar2:class java.lang.Integer *=n$12 [line 94];
+REMOVE_TEMPS(n$12); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node102.html"><span class='visitedproof'>I_102<span class='expansion'>node102 preds:101 succs:103 exn:39 Instructions
+n$13=_fun_Integer Integer.valueOf(int)(-1710619:int ) [line 94];
+*&amp;$irvar3:class java.lang.Integer *=n$13 [line 94];
+REMOVE_TEMPS(n$13); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node103.html"><span class='visitedproof'>I_103<span class='expansion'>node103 preds:102 succs:104 exn:39 Instructions
+n$14=*&amp;$irvar1:class android.animation.ArgbEvaluator * [line 94];
+n$15=*n$14:class android.animation.ArgbEvaluator  [line 94];
+n$16=*&amp;colorProgress:float  [line 94];
+n$17=*&amp;$irvar2:class java.lang.Integer * [line 94];
+n$18=*&amp;$irvar3:class java.lang.Integer * [line 94];
+n$19=_fun_Object ArgbEvaluator.evaluate(float,Object,Object)(n$14:class android.animation.ArgbEvaluator *,n$16:float ,n$17:class java.lang.Integer *,n$18:class java.lang.Integer *) virtual [line 94];
+*&amp;$irvar4:class java.lang.Object *=n$19 [line 94];
+REMOVE_TEMPS(n$14,n$15,n$16,n$17,n$18,n$19); [line 94];
+NULLIFY(&amp;$irvar1,false); [line 94];
+NULLIFY(&amp;$irvar2,false); [line 94];
+NULLIFY(&amp;$irvar3,false); [line 94];
+NULLIFY(&amp;colorProgress,false); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node104.html"><span class='visitedproof'>I_104<span class='expansion'>node104 preds:103 succs:105 exn:39 Instructions
+n$20=*&amp;$irvar4:class java.lang.Object * [line 94];
+n$21=_fun___cast(n$20:class java.lang.Object *,sizeof(class java.lang.Integer ( sub )(cast)):void ) [line 94];
+n$22=*n$21:class java.lang.Integer  [line 94];
+n$23=_fun_int Integer.intValue()(n$21:class java.lang.Integer *) virtual [line 94];
+*&amp;$irvar5:int =n$23 [line 94];
+REMOVE_TEMPS(n$20,n$21,n$22,n$23); [line 94];
+NULLIFY(&amp;$irvar4,false); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node105.html"><span class='visitedproof'>I_105<span class='expansion'>node105 preds:104 succs:106 exn:39 Instructions
+n$24=*&amp;$irvar0:class android.graphics.Paint * [line 94];
+n$25=*n$24:class android.graphics.Paint  [line 94];
+n$26=*&amp;$irvar5:int  [line 94];
+_fun_void Paint.setColor(int)(n$24:class android.graphics.Paint *,n$26:int ) virtual [line 94];
+REMOVE_TEMPS(n$24,n$25,n$26); [line 94];
+NULLIFY(&amp;$irvar0,false); [line 94];
+NULLIFY(&amp;$irvar5,false); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node179.html"><span class='visitedproof'>S_179<span class='expansion'>node179 preds: succs:192 exn:180 Start
+DECLARE_LOCALS(&amp;return); [line 94];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$1.set(java.lang.Object,java.lang.Object):void.dd36c3e12209a6a0d335207f13a71c9c.html">void CircleView$1.set(Object,Object): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Paint.setColor(int)</div></td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">    } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node38.html"><span class='visitedproof'>E_38<span class='expansion'>node38 preds:106 39 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_39<span class='expansion'>node39 preds: succs:38 exn:38 Instructions
+NULLIFY(&amp;$irvar0,false); [line 95];
+NULLIFY(&amp;$irvar1,false); [line 95];
+NULLIFY(&amp;$irvar2,false); [line 95];
+NULLIFY(&amp;$irvar3,false); [line 95];
+NULLIFY(&amp;$irvar4,false); [line 95];
+NULLIFY(&amp;$irvar5,false); [line 95];
+NULLIFY(&amp;colorProgress,false); [line 95];
+NULLIFY(&amp;this,false); [line 95];
+APPLY_ABSTRACTION; [line 95];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node106.html"><span class='visitedproof'>I_106<span class='expansion'>node106 preds:105 succs:38 exn:39 Instructions
+APPLY_ABSTRACTION; [line 95];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">    public float getOuterCircleRadiusProgress() { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node43.html"><span class='visitedproof'>S_43<span class='expansion'>node43 preds: succs:113 exn:44 Start
+DECLARE_LOCALS(&amp;return); [line 97];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node170.html"><span class='visitedproof'>S_170<span class='expansion'>node170 preds: succs:185 exn:171 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 97];
+NULLIFY(&amp;$irvar0,false); [line 97];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.getOuterCircleRadiusProgress():float.d34c59d8070fd505e4752497e129a363.html">float CircleView.getOuterCircleRadiusProgress(): 1 specs</a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$1.get(java.lang.Object):java.lang.Object.bf851f15e4e2cd64534c48387241725e.html">Object CircleView$1.get(Object): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">        return outerCircleRadiusProgress; <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node44.html"><span class='visitedproof'>E_44<span class='expansion'>node44 preds:113 45 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_45<span class='expansion'>node45 preds: succs:44 exn:44 Instructions
+APPLY_ABSTRACTION; [line 98];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node113.html"><span class='visitedproof'>I_113<span class='expansion'>node113 preds:43 succs:44 exn:45 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView * [line 98];
+n$1=*n$0.com.karthik.imager.Recycler.CircleView.outerCircleRadiusProgress:class com.karthik.imager.Recycler.CircleView  [line 98];
+*&amp;return:float =n$1 [line 98];
+REMOVE_TEMPS(n$0,n$1); [line 98];
+NULLIFY(&amp;this,false); [line 98];
+APPLY_ABSTRACTION; [line 98];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">    public static final Property&lt;CircleView, Float&gt; INNER_CIRCLE_RADIUS_PROGRESS = <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node28.html"><span class='visitedproof'>S_28<span class='expansion'>node28 preds: succs:67 exn:29 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 101];
+NULLIFY(&amp;$irvar0,false); [line 101];
+NULLIFY(&amp;field,false); [line 101];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node67.html"><span class='visitedproof'>I_67<span class='expansion'>node67 preds:28 succs:68 exn:30 Instructions
+n$0=_fun___new(sizeof(class com.karthik.imager.Recycler.CircleView$1 ):class com.karthik.imager.Recycler.CircleView$1 *) [line 101];
+_fun_CircleView$1.&lt;init&gt;(Class,String)(n$0:class com.karthik.imager.Recycler.CircleView$1 *,java.lang.Float:class java.lang.Class *,"innerCircleRadiusProgress":class java.lang.String *) [line 101];
+*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView$1 *=n$0 [line 101];
+REMOVE_TEMPS(n$0); [line 101];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node68.html"><span class='visitedproof'>I_68<span class='expansion'>node68 preds:67 succs:69 exn:30 Instructions
+n$1=*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView$1 * [line 101];
+*&amp;#GB$com.karthik.imager.Recycler.CircleView.com.karthik.imager.Recycler.CircleView.INNER_CIRCLE_RADIUS_PROGRESS:class com.karthik.imager.Recycler.CircleView =n$1 [line 101];
+REMOVE_TEMPS(n$1); [line 101];
+NULLIFY(&amp;$irvar0,false); [line 101];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView.<clinit>():void.a926be9d67a0d14b1f3a903cab5dd67c.html">void CircleView.&lt;clinit&gt;(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">            new Property&lt;CircleView, Float&gt;(Float.class, &quot;innerCircleRadiusProgress&quot;) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node180.html"><span class='visitedproof'>E_180<span class='expansion'>node180 preds:193 181 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_181<span class='expansion'>node181 preds: succs:180 exn:180 Instructions
+APPLY_ABSTRACTION; [line 102];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node192.html"><span class='visitedproof'>I_192<span class='expansion'>node192 preds:179 succs:193 exn:181 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView$1 * [line 102];
+n$1=*n$0:class com.karthik.imager.Recycler.CircleView$1  [line 102];
+n$2=*&amp;$bcvar1:class java.lang.Object * [line 102];
+n$3=_fun___cast(n$2:class java.lang.Object *,sizeof(class com.karthik.imager.Recycler.CircleView ( sub )(cast)):void ) [line 102];
+n$4=*&amp;$bcvar2:class java.lang.Object * [line 102];
+n$5=_fun___cast(n$4:class java.lang.Object *,sizeof(class java.lang.Float ( sub )(cast)):void ) [line 102];
+_fun_void CircleView$1.set(CircleView,Float)(n$0:class com.karthik.imager.Recycler.CircleView$1 *,n$3:class com.karthik.imager.Recycler.CircleView *,n$5:class java.lang.Float *) virtual [line 102];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4,n$5); [line 102];
+NULLIFY(&amp;$bcvar1,false); [line 102];
+NULLIFY(&amp;$bcvar2,false); [line 102];
+NULLIFY(&amp;this,false); [line 102];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node193.html"><span class='visitedproof'>I_193<span class='expansion'>node193 preds:192 succs:180 exn:181 Instructions
+APPLY_ABSTRACTION; [line 102];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node174.html"><span class='visitedproof'>E_174<span class='expansion'>node174 preds:188 175 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_175<span class='expansion'>node175 preds: succs:174 exn:174 Instructions
+APPLY_ABSTRACTION; [line 102];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node187.html"><span class='visitedproof'>I_187<span class='expansion'>node187 preds:173 succs:188 exn:175 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView$1 * [line 102];
+n$1=*&amp;x0:class java.lang.Class * [line 102];
+n$2=*&amp;x1:class java.lang.String * [line 102];
+_fun_Property.&lt;init&gt;(Class,String)(n$0:class com.karthik.imager.Recycler.CircleView$1 *,n$1:class java.lang.Class *,n$2:class java.lang.String *) [line 102];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 102];
+NULLIFY(&amp;this,false); [line 102];
+NULLIFY(&amp;x0,false); [line 102];
+NULLIFY(&amp;x1,false); [line 102];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node188.html"><span class='visitedproof'>I_188<span class='expansion'>node188 preds:187 succs:174 exn:175 Instructions
+APPLY_ABSTRACTION; [line 102];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node171.html"><span class='visitedproof'>E_171<span class='expansion'>node171 preds:186 172 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_172<span class='expansion'>node172 preds: succs:171 exn:171 Instructions
+NULLIFY(&amp;$irvar0,false); [line 102];
+APPLY_ABSTRACTION; [line 102];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node185.html"><span class='visitedproof'>I_185<span class='expansion'>node185 preds:170 succs:186 exn:172 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView$1 * [line 102];
+n$1=*n$0:class com.karthik.imager.Recycler.CircleView$1  [line 102];
+n$2=*&amp;$bcvar1:class java.lang.Object * [line 102];
+n$3=_fun___cast(n$2:class java.lang.Object *,sizeof(class com.karthik.imager.Recycler.CircleView ( sub )(cast)):void ) [line 102];
+n$4=_fun_Float CircleView$1.get(CircleView)(n$0:class com.karthik.imager.Recycler.CircleView$1 *,n$3:class com.karthik.imager.Recycler.CircleView *) virtual [line 102];
+*&amp;$irvar0:class java.lang.Float *=n$4 [line 102];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 102];
+NULLIFY(&amp;$bcvar1,false); [line 102];
+NULLIFY(&amp;this,false); [line 102];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node186.html"><span class='visitedproof'>I_186<span class='expansion'>node186 preds:185 succs:171 exn:172 Instructions
+n$5=*&amp;$irvar0:class java.lang.Float * [line 102];
+*&amp;return:class java.lang.Object *=n$5 [line 102];
+REMOVE_TEMPS(n$5); [line 102];
+NULLIFY(&amp;$irvar0,false); [line 102];
+APPLY_ABSTRACTION; [line 102];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Property.<init>(Class,String)</div></td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">                @Override</td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">                public Float get(CircleView object) {</td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">                    return object.getInnerCircleRadiusProgress(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node4.html"><span class='visitedproof'>S_4<span class='expansion'>node4 preds: succs:19 exn:5 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 105];
+NULLIFY(&amp;$irvar0,false); [line 105];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node167.html"><span class='visitedproof'>S_167<span class='expansion'>node167 preds: succs:182 exn:168 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1); [line 105];
+NULLIFY(&amp;$irvar0,false); [line 105];
+NULLIFY(&amp;$irvar1,false); [line 105];
+NULLIFY(&amp;this,false); [line 105];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node168.html"><span class='visitedproof'>E_168<span class='expansion'>node168 preds:184 169 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_169<span class='expansion'>node169 preds: succs:168 exn:168 Instructions
+NULLIFY(&amp;$irvar0,false); [line 105];
+NULLIFY(&amp;$irvar1,false); [line 105];
+APPLY_ABSTRACTION; [line 105];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node182.html"><span class='visitedproof'>I_182<span class='expansion'>node182 preds:167 succs:183 exn:169 Instructions
+n$0=*&amp;object:class com.karthik.imager.Recycler.CircleView * [line 105];
+n$1=*n$0:class com.karthik.imager.Recycler.CircleView  [line 105];
+n$2=_fun_float CircleView.getInnerCircleRadiusProgress()(n$0:class com.karthik.imager.Recycler.CircleView *) virtual [line 105];
+*&amp;$irvar0:float =n$2 [line 105];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 105];
+NULLIFY(&amp;object,false); [line 105];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node183.html"><span class='visitedproof'>I_183<span class='expansion'>node183 preds:182 succs:184 exn:169 Instructions
+n$3=*&amp;$irvar0:float  [line 105];
+n$4=_fun_Float Float.valueOf(float)(n$3:float ) [line 105];
+*&amp;$irvar1:class java.lang.Float *=n$4 [line 105];
+REMOVE_TEMPS(n$3,n$4); [line 105];
+NULLIFY(&amp;$irvar0,false); [line 105];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node184.html"><span class='visitedproof'>I_184<span class='expansion'>node184 preds:183 succs:168 exn:169 Instructions
+n$5=*&amp;$irvar1:class java.lang.Float * [line 105];
+*&amp;return:class java.lang.Float *=n$5 [line 105];
+REMOVE_TEMPS(n$5); [line 105];
+NULLIFY(&amp;$irvar1,false); [line 105];
+APPLY_ABSTRACTION; [line 105];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$2.get(java.lang.Object):java.lang.Object.65d15d958d69b0735d11756a799666e1.html">Object CircleView$2.get(Object): 1 specs</a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$1.get(com.karthik.imager.Recycler.CircleView):java.lang.Float.d2b1fe5b14c20cb8034277f8c3adb80c.html">Float CircleView$1.get(CircleView): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Float Float.valueOf(float)</div></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">                }</td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">                @Override</td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">                public void set(CircleView object, Float value) {</td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">                    object.setInnerCircleRadiusProgress(value); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node13.html"><span class='visitedproof'>S_13<span class='expansion'>node13 preds: succs:26 exn:14 Start
+DECLARE_LOCALS(&amp;return); [line 110];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node176.html"><span class='visitedproof'>S_176<span class='expansion'>node176 preds: succs:189 exn:177 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 110];
+NULLIFY(&amp;$irvar0,false); [line 110];
+NULLIFY(&amp;this,false); [line 110];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node189.html"><span class='visitedproof'>I_189<span class='expansion'>node189 preds:176 succs:190 exn:178 Instructions
+n$0=*&amp;value:class java.lang.Float * [line 110];
+n$1=*n$0:class java.lang.Float  [line 110];
+n$2=_fun_float Float.floatValue()(n$0:class java.lang.Float *) virtual [line 110];
+*&amp;$irvar0:float =n$2 [line 110];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 110];
+NULLIFY(&amp;value,false); [line 110];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node190.html"><span class='visitedproof'>I_190<span class='expansion'>node190 preds:189 succs:191 exn:178 Instructions
+n$3=*&amp;object:class com.karthik.imager.Recycler.CircleView * [line 110];
+n$4=*n$3:class com.karthik.imager.Recycler.CircleView  [line 110];
+n$5=*&amp;$irvar0:float  [line 110];
+_fun_void CircleView.setInnerCircleRadiusProgress(float)(n$3:class com.karthik.imager.Recycler.CircleView *,n$5:float ) virtual [line 110];
+REMOVE_TEMPS(n$3,n$4,n$5); [line 110];
+NULLIFY(&amp;$irvar0,false); [line 110];
+NULLIFY(&amp;object,false); [line 110];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$2.set(java.lang.Object,java.lang.Object):void.87eab5fca65f341afa2f157b097a42ec.html">void CircleView$2.set(Object,Object): 1 specs</a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$1.set(com.karthik.imager.Recycler.CircleView,java.lang.Float).43f11afc5a04cc72bed75a44c99a6fd3.html">void CircleView$1.set(CircleView,Float): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION float Float.floatValue()</div></td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">                } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node177.html"><span class='visitedproof'>E_177<span class='expansion'>node177 preds:191 178 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_178<span class='expansion'>node178 preds: succs:177 exn:177 Instructions
+NULLIFY(&amp;$irvar0,false); [line 111];
+NULLIFY(&amp;object,false); [line 111];
+APPLY_ABSTRACTION; [line 111];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node191.html"><span class='visitedproof'>I_191<span class='expansion'>node191 preds:190 succs:177 exn:178 Instructions
+APPLY_ABSTRACTION; [line 111];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">            };</td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">    public static final Property&lt;CircleView, Float&gt; OUTER_CIRCLE_RADIUS_PROGRESS = <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node29.html"><span class='visitedproof'>E_29<span class='expansion'>node29 preds:71 30 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_30<span class='expansion'>node30 preds: succs:29 exn:29 Instructions
+NULLIFY(&amp;$irvar0,false); [line 114];
+APPLY_ABSTRACTION; [line 114];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node69.html"><span class='visitedproof'>I_69<span class='expansion'>node69 preds:68 succs:70 exn:30 Instructions
+n$2=_fun___new(sizeof(class com.karthik.imager.Recycler.CircleView$2 ):class com.karthik.imager.Recycler.CircleView$2 *) [line 114];
+_fun_CircleView$2.&lt;init&gt;(Class,String)(n$2:class com.karthik.imager.Recycler.CircleView$2 *,java.lang.Float:class java.lang.Class *,"outerCircleRadiusProgress":class java.lang.String *) [line 114];
+*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView$2 *=n$2 [line 114];
+REMOVE_TEMPS(n$2); [line 114];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node70.html"><span class='visitedproof'>I_70<span class='expansion'>node70 preds:69 succs:71 exn:30 Instructions
+n$3=*&amp;$irvar0:class com.karthik.imager.Recycler.CircleView$2 * [line 114];
+*&amp;#GB$com.karthik.imager.Recycler.CircleView.com.karthik.imager.Recycler.CircleView.OUTER_CIRCLE_RADIUS_PROGRESS:class com.karthik.imager.Recycler.CircleView =n$3 [line 114];
+REMOVE_TEMPS(n$3); [line 114];
+NULLIFY(&amp;$irvar0,false); [line 114];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node71.html"><span class='visitedproof'>I_71<span class='expansion'>node71 preds:70 succs:29 exn:30 Instructions
+APPLY_ABSTRACTION; [line 114];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">            new Property&lt;CircleView, Float&gt;(Float.class, &quot;outerCircleRadiusProgress&quot;) { <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node5.html"><span class='visitedproof'>E_5<span class='expansion'>node5 preds:20 6 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_6<span class='expansion'>node6 preds: succs:5 exn:5 Instructions
+NULLIFY(&amp;$irvar0,false); [line 115];
+APPLY_ABSTRACTION; [line 115];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node19.html"><span class='visitedproof'>I_19<span class='expansion'>node19 preds:4 succs:20 exn:6 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView$2 * [line 115];
+n$1=*n$0:class com.karthik.imager.Recycler.CircleView$2  [line 115];
+n$2=*&amp;$bcvar1:class java.lang.Object * [line 115];
+n$3=_fun___cast(n$2:class java.lang.Object *,sizeof(class com.karthik.imager.Recycler.CircleView ( sub )(cast)):void ) [line 115];
+n$4=_fun_Float CircleView$2.get(CircleView)(n$0:class com.karthik.imager.Recycler.CircleView$2 *,n$3:class com.karthik.imager.Recycler.CircleView *) virtual [line 115];
+*&amp;$irvar0:class java.lang.Float *=n$4 [line 115];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 115];
+NULLIFY(&amp;$bcvar1,false); [line 115];
+NULLIFY(&amp;this,false); [line 115];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node20.html"><span class='visitedproof'>I_20<span class='expansion'>node20 preds:19 succs:5 exn:6 Instructions
+n$5=*&amp;$irvar0:class java.lang.Float * [line 115];
+*&amp;return:class java.lang.Object *=n$5 [line 115];
+REMOVE_TEMPS(n$5); [line 115];
+NULLIFY(&amp;$irvar0,false); [line 115];
+APPLY_ABSTRACTION; [line 115];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node14.html"><span class='visitedproof'>E_14<span class='expansion'>node14 preds:27 15 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_15<span class='expansion'>node15 preds: succs:14 exn:14 Instructions
+APPLY_ABSTRACTION; [line 115];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node26.html"><span class='visitedproof'>I_26<span class='expansion'>node26 preds:13 succs:27 exn:15 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView$2 * [line 115];
+n$1=*n$0:class com.karthik.imager.Recycler.CircleView$2  [line 115];
+n$2=*&amp;$bcvar1:class java.lang.Object * [line 115];
+n$3=_fun___cast(n$2:class java.lang.Object *,sizeof(class com.karthik.imager.Recycler.CircleView ( sub )(cast)):void ) [line 115];
+n$4=*&amp;$bcvar2:class java.lang.Object * [line 115];
+n$5=_fun___cast(n$4:class java.lang.Object *,sizeof(class java.lang.Float ( sub )(cast)):void ) [line 115];
+_fun_void CircleView$2.set(CircleView,Float)(n$0:class com.karthik.imager.Recycler.CircleView$2 *,n$3:class com.karthik.imager.Recycler.CircleView *,n$5:class java.lang.Float *) virtual [line 115];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4,n$5); [line 115];
+NULLIFY(&amp;$bcvar1,false); [line 115];
+NULLIFY(&amp;$bcvar2,false); [line 115];
+NULLIFY(&amp;this,false); [line 115];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node27.html"><span class='visitedproof'>I_27<span class='expansion'>node27 preds:26 succs:14 exn:15 Instructions
+APPLY_ABSTRACTION; [line 115];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node8.html"><span class='visitedproof'>E_8<span class='expansion'>node8 preds:22 9 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_9<span class='expansion'>node9 preds: succs:8 exn:8 Instructions
+APPLY_ABSTRACTION; [line 115];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node21.html"><span class='visitedproof'>I_21<span class='expansion'>node21 preds:7 succs:22 exn:9 Instructions
+n$0=*&amp;this:class com.karthik.imager.Recycler.CircleView$2 * [line 115];
+n$1=*&amp;x0:class java.lang.Class * [line 115];
+n$2=*&amp;x1:class java.lang.String * [line 115];
+_fun_Property.&lt;init&gt;(Class,String)(n$0:class com.karthik.imager.Recycler.CircleView$2 *,n$1:class java.lang.Class *,n$2:class java.lang.String *) [line 115];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 115];
+NULLIFY(&amp;this,false); [line 115];
+NULLIFY(&amp;x0,false); [line 115];
+NULLIFY(&amp;x1,false); [line 115];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node22.html"><span class='visitedproof'>I_22<span class='expansion'>node22 preds:21 succs:8 exn:9 Instructions
+APPLY_ABSTRACTION; [line 115];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Property.<init>(Class,String)</div></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">                @Override</td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">                public Float get(CircleView object) {</td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">                    return object.getOuterCircleRadiusProgress(); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node1.html"><span class='visitedproof'>S_1<span class='expansion'>node1 preds: succs:16 exn:2 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1); [line 118];
+NULLIFY(&amp;$irvar0,false); [line 118];
+NULLIFY(&amp;$irvar1,false); [line 118];
+NULLIFY(&amp;this,false); [line 118];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node2.html"><span class='visitedproof'>E_2<span class='expansion'>node2 preds:18 3 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_3<span class='expansion'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar0,false); [line 118];
+NULLIFY(&amp;$irvar1,false); [line 118];
+APPLY_ABSTRACTION; [line 118];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node16.html"><span class='visitedproof'>I_16<span class='expansion'>node16 preds:1 succs:17 exn:3 Instructions
+n$0=*&amp;object:class com.karthik.imager.Recycler.CircleView * [line 118];
+n$1=*n$0:class com.karthik.imager.Recycler.CircleView  [line 118];
+n$2=_fun_float CircleView.getOuterCircleRadiusProgress()(n$0:class com.karthik.imager.Recycler.CircleView *) virtual [line 118];
+*&amp;$irvar0:float =n$2 [line 118];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 118];
+NULLIFY(&amp;object,false); [line 118];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node17.html"><span class='visitedproof'>I_17<span class='expansion'>node17 preds:16 succs:18 exn:3 Instructions
+n$3=*&amp;$irvar0:float  [line 118];
+n$4=_fun_Float Float.valueOf(float)(n$3:float ) [line 118];
+*&amp;$irvar1:class java.lang.Float *=n$4 [line 118];
+REMOVE_TEMPS(n$3,n$4); [line 118];
+NULLIFY(&amp;$irvar0,false); [line 118];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node18.html"><span class='visitedproof'>I_18<span class='expansion'>node18 preds:17 succs:2 exn:3 Instructions
+n$5=*&amp;$irvar1:class java.lang.Float * [line 118];
+*&amp;return:class java.lang.Float *=n$5 [line 118];
+REMOVE_TEMPS(n$5); [line 118];
+NULLIFY(&amp;$irvar1,false); [line 118];
+APPLY_ABSTRACTION; [line 118];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$2.get(com.karthik.imager.Recycler.CircleView):java.lang.Float.45b29715e2adf0f4f0378fe1adb86a83.html">Float CircleView$2.get(CircleView): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Float Float.valueOf(float)</div></td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">                }</td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">                @Override</td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">                public void set(CircleView object, Float value) {</td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">                    object.setOuterCircleRadiusProgress(value); <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node10.html"><span class='visitedproof'>S_10<span class='expansion'>node10 preds: succs:23 exn:11 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 123];
+NULLIFY(&amp;$irvar0,false); [line 123];
+NULLIFY(&amp;this,false); [line 123];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node23.html"><span class='visitedproof'>I_23<span class='expansion'>node23 preds:10 succs:24 exn:12 Instructions
+n$0=*&amp;value:class java.lang.Float * [line 123];
+n$1=*n$0:class java.lang.Float  [line 123];
+n$2=_fun_float Float.floatValue()(n$0:class java.lang.Float *) virtual [line 123];
+*&amp;$irvar0:float =n$2 [line 123];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 123];
+NULLIFY(&amp;value,false); [line 123];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node24.html"><span class='visitedproof'>I_24<span class='expansion'>node24 preds:23 succs:25 exn:12 Instructions
+n$3=*&amp;object:class com.karthik.imager.Recycler.CircleView * [line 123];
+n$4=*n$3:class com.karthik.imager.Recycler.CircleView  [line 123];
+n$5=*&amp;$irvar0:float  [line 123];
+_fun_void CircleView.setOuterCircleRadiusProgress(float)(n$3:class com.karthik.imager.Recycler.CircleView *,n$5:float ) virtual [line 123];
+REMOVE_TEMPS(n$3,n$4,n$5); [line 123];
+NULLIFY(&amp;$irvar0,false); [line 123];
+NULLIFY(&amp;object,false); [line 123];
+</span></span></a> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/com.karthik.imager.Recycler.CircleView$2.set(com.karthik.imager.Recycler.CircleView,java.lang.Float).b9aafa6cc38827c8f9275a53fbcec800.html">void CircleView$2.set(CircleView,Float): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION float Float.floatValue()</div></td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">                } <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node11.html"><span class='visitedproof'>E_11<span class='expansion'>node11 preds:25 12 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_12<span class='expansion'>node12 preds: succs:11 exn:11 Instructions
+NULLIFY(&amp;$irvar0,false); [line 124];
+NULLIFY(&amp;object,false); [line 124];
+APPLY_ABSTRACTION; [line 124];
+
+NOT VISITED</span></span> <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node25.html"><span class='visitedproof'>I_25<span class='expansion'>node25 preds:24 succs:11 exn:12 Instructions
+APPLY_ABSTRACTION; [line 124];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">            };</td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">}</td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION float Float.floatValue()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node189.html#session2">node189#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE110">110</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node23.html#session2">node23#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE123">123</a>)<br>SKIP_FUNCTION int View.getHeight()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node159.html#session7">node159#session7</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE71">71</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node163.html#session11">node163#session11</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE72">72</a>)<br>SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node160.html#session8">node160#session8</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE71">71</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node164.html#session12">node164#session12</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE72">72</a>)<br>SKIP_FUNCTION PorterDuffXfermode.<init>(PorterDuff$Mode)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node110.html#session5">node110#session5</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE56">56</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node142.html#session2">node142#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE40">40</a>)<br>SKIP_FUNCTION void Canvas.drawBitmap(Bitmap,float,float,Paint)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node165.html#session13">node165#session13</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE73">73</a>)<br>SKIP_FUNCTION Xfermode Paint.setXfermode(Xfermode)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node111.html#session6">node111#session6</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE56">56</a>)<br>SKIP_FUNCTION void Paint.setColor(int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node105.html#session13">node105#session13</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">94</a>)<br>SKIP_FUNCTION Paint.<init>()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node121.html#session5">node121#session5</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE23">23</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node123.html#session7">node123#session7</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE24">24</a>)<br>SKIP_FUNCTION void View.onDraw(Canvas)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node154.html#session2">node154#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE69">69</a>)<br>SKIP_FUNCTION ArgbEvaluator.<init>()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node119.html#session3">node119#session3</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE21">21</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node72.html#session2">node72#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE45">45</a>)<br>SKIP_FUNCTION void View.onSizeChanged(int,int,int,int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node129.html#session2">node129#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE61">61</a>)<br>SKIP_FUNCTION void Paint.setStyle(Paint$Style)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node108.html#session3">node108#session3</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE55">55</a>)<br>SKIP_FUNCTION Bitmap Bitmap.createBitmap(int,int,Bitmap$Config)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node134.html#session7">node134#session7</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE63">63</a>)<br>SKIP_FUNCTION int View.getWidth()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node131.html#session4">node131#session4</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE63">63</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node158.html#session6">node158#session6</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE71">71</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node162.html#session10">node162#session10</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE72">72</a>)<br>SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node103.html#session11">node103#session11</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">94</a>)<br>SKIP_FUNCTION View.<init>(Context)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node83.html#session2">node83#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE35">35</a>)<br>SKIP_FUNCTION Canvas.<init>(Bitmap)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node136.html#session9">node136#session9</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE64">64</a>)<br>SKIP_FUNCTION Float Float.valueOf(float)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node183.html#session3">node183#session3</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE105">105</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node17.html#session3">node17#session3</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE118">118</a>)<br>SKIP_FUNCTION void View.postInvalidate()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node140.html#session3">node140#session3</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE78">78</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node116.html#session4">node116#session4</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE88">88</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int,int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node118.html#session2">node118#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE50">50</a>)<br>SKIP_FUNCTION void Canvas.drawColor(int,PorterDuff$Mode)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node156.html#session4">node156#session4</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE70">70</a>)<br>SKIP_FUNCTION Property.<init>(Class,String)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node187.html#session2">node187#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE102">102</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node21.html#session2">node21#session2</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE115">115</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION void View.postInvalidate()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node140.html#session8">node140#session8</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE78">78</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node116.html#session10">node116#session10</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE88">88</a>)<br>SKIP_FUNCTION void Canvas.drawBitmap(Bitmap,float,float,Paint)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node165.html#session28">node165#session28</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE73">73</a>)<br>SKIP_FUNCTION Property.<init>(Class,String)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node187.html#session6">node187#session6</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE102">102</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node21.html#session6">node21#session6</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE115">115</a>)<br>SKIP_FUNCTION Float Float.valueOf(float)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node183.html#session8">node183#session8</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE105">105</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node17.html#session8">node17#session8</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE118">118</a>)<br>SKIP_FUNCTION void Paint.setColor(int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node105.html#session28">node105#session28</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">94</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node142.html#session15">node142#session15</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE40">40</a>)<br>SKIP_FUNCTION void View.onDraw(Canvas)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node154.html#session17">node154#session17</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE69">69</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int,int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node118.html#session15">node118#session15</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE50">50</a>)<br>SKIP_FUNCTION float Float.floatValue()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node189.html#session7">node189#session7</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE110">110</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node23.html#session7">node23#session7</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE123">123</a>)<br>SKIP_FUNCTION void Canvas.drawColor(int,PorterDuff$Mode)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node156.html#session19">node156#session19</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE70">70</a>)<br>SKIP_FUNCTION Bitmap Bitmap.createBitmap(int,int,Bitmap$Config)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node134.html#session19">node134#session19</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE63">63</a>)<br>SKIP_FUNCTION void Canvas.drawCircle(float,float,float,Paint)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node160.html#session23">node160#session23</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE71">71</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node164.html#session27">node164#session27</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE72">72</a>)<br>SKIP_FUNCTION Paint.<init>()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node121.html#session18">node121#session18</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE23">23</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node123.html#session20">node123#session20</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE24">24</a>)<br>SKIP_FUNCTION View.<init>(Context,AttributeSet,int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node72.html#session15">node72#session15</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE45">45</a>)<br>SKIP_FUNCTION void Paint.setStyle(Paint$Style)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node108.html#session11">node108#session11</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE55">55</a>)<br>SKIP_FUNCTION void View.onSizeChanged(int,int,int,int)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node129.html#session14">node129#session14</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE61">61</a>)<br>SKIP_FUNCTION View.<init>(Context)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node83.html#session15">node83#session15</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE35">35</a>)<br>SKIP_FUNCTION PorterDuffXfermode.<init>(PorterDuff$Mode)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node110.html#session13">node110#session13</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE56">56</a>)<br>SKIP_FUNCTION ArgbEvaluator.<init>()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node119.html#session16">node119#session16</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE21">21</a>)<br>SKIP_FUNCTION int View.getHeight()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node159.html#session22">node159#session22</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE71">71</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node163.html#session26">node163#session26</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE72">72</a>)<br>SKIP_FUNCTION Canvas.<init>(Bitmap)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node136.html#session21">node136#session21</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE64">64</a>)<br>SKIP_FUNCTION Object ArgbEvaluator.evaluate(float,Object,Object)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node103.html#session26">node103#session26</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE94">94</a>)<br>SKIP_FUNCTION Xfermode Paint.setXfermode(Xfermode)  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node111.html#session14">node111#session14</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE56">56</a>)<br>SKIP_FUNCTION int View.getWidth()  <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node131.html#session16">node131#session16</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE63">63</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node158.html#session21">node158#session21</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE71">71</a>) <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/nodes/node162.html#session25">node162#session25</a>( <a href="./CircleView.java.55262cf419c5e6ebb455998362c8451b/../CircleView.java.55262cf419c5e6ebb455998362c8451b.html#LINE72">72</a>)</body>
+</html>

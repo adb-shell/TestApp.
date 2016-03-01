@@ -1,0 +1,531 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node20</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE20">20</a></h1></center>PROC:  <a href="./../com.karthik.imager.ImagerApp.onCreate():void.9a76296ed4df1e6f66254b202c39f077.html">void ImagerApp.onCreate()</a> LINE: <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE20">20</a>
+<br>PREDS:
+ <a href="./../nodes/node19.html"><span class='visited'>N_19<span class='expansion'>node19 preds:18 succs:20 exn:6 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_21<span class='expansion'>node21 preds:20 succs:5 exn:6 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_6<span class='expansion'>node6 preds: succs:5 exn:5 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$20=*&amp;$irvar5:class com.facebook.stetho.Stetho$Initializer * [line 20];
+                          _fun_void Stetho.initialize(Stetho$Initializer)(n$20:class com.facebook.stetho.Stetho$Initializer *) [line 20];
+                          REMOVE_TEMPS(n$20); [line 20];
+                          NULLIFY(&amp;$irvar5,false); [line 20];
+                          </span><hr width="100%">
+ <a name="session10"href="./../nodes/node20.html#session10">node20#session10</a>( <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE20">20</a>)<LISTING><span class='color_black'>**** [FP:0] void ImagerApp.onCreate() Node: 20, Procedure: void ImagerApp.onCreate(), Session: 10, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$7 != 0</span> ;  <span class='color_red'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20(@f$7)</span> ;  <span class='color_red'>@f$6 != 0</span> ;  <span class='color_red'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$6)</span> ;  <span class='color_red'>$irvar5 != 0</span> ;  <span class='color_red'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($irvar5)</span> ;  <span class='color_red'>@f$2 != 0</span> ;  <span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20(@f$2)</span> ;  <span class='color_red'>@f$1 != 0</span> ;  <span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20(@f$0)</span> ;
+  <span class='color_red'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = @f$3 <span class='color_orange'>update:20</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+  <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+  <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+  <span class='color_red'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+  [footprint
+     <span class='color_red'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+     <span class='color_red'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+     <span class='color_red'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+     <span class='color_red'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+     <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+     <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+     <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+     <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+     <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+     <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+     <span class='color_red'>old_this|->{com.karthik.imager.ImagerApp.mContext:@f$5 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$20=*&amp;$irvar5:class com.facebook.stetho.Stetho$Initializer * [line 20];
+  _fun_void Stetho.initialize(Stetho$Initializer)(n$20:class com.facebook.stetho.Stetho$Initializer *) [line 20];
+  REMOVE_TEMPS(n$20); [line 20];
+  NULLIFY(&amp;$irvar5,false); [line 20];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$20=*&amp;$irvar5:class com.facebook.stetho.Stetho$Initializer * [line 20]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar5
+    Prop: 
+    <span class='color_blue'>@f$7 != 0 ;  UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20(@f$7) ;  @f$6 != 0 ;  UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$6) ;  $irvar5 != 0 ;  UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($irvar5) ;  @f$2 != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20(@f$2) ;  @f$1 != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1) ;  @f$0 != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = @f$3 <span class='color_orange'>update:20</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class com.facebook.stetho.InspectorModulesProvider *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class com.facebook.stetho.DumperPluginsProvider *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$Initializer *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+       old_this|->{com.karthik.imager.ImagerApp.mContext:@f$5 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar5
+    prop before:
+    <span class='color_blue'>@f$7 != 0 ;  UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20(@f$7) ;  @f$6 != 0 ;  UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$6) ;  $irvar5 != 0 ;  UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($irvar5) ;  @f$2 != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20(@f$2) ;  @f$1 != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1) ;  @f$0 != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20(@f$0) ;
+    old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = @f$3 <span class='color_orange'>update:20</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )
+    [footprint
+       this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class com.facebook.stetho.InspectorModulesProvider *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class com.facebook.stetho.DumperPluginsProvider *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+       $RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$Initializer *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+       old_this|->{com.karthik.imager.ImagerApp.mContext:@f$5 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20(@f$7)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$6)</span> ;  <span class='color_blue'>$irvar5 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($irvar5)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20(@f$2)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = n$29 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = @f$3 <span class='color_orange'>update:20</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:@f$5 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$20 = $irvar5</span> ;
+    <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20(@f$7)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$6)</span> ;  <span class='color_blue'>$irvar5 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($irvar5)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20</span>(@f$2)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = @f$3 <span class='color_orange'>update:20</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:@f$5 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>_fun_void Stetho.initialize(Stetho$Initializer)(n$20:class com.facebook.stetho.Stetho$Initializer *) [line 20]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION void Stetho.initialize(Stetho$Initializer)</span>
+    Undefined function void Stetho.initialize(Stetho$Initializer), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$20 = $irvar5</span> ;
+    <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20(@f$7)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$6)</span> ;  <span class='color_blue'>$irvar5 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($irvar5)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20</span>(@f$2)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = @f$3 <span class='color_orange'>update:20</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:@f$5 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$20); [line 20]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20(@f$7)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$6)</span> ;  <span class='color_blue'>$irvar5 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($irvar5)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20</span>(@f$2)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = @f$3 <span class='color_orange'>update:20</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:@f$5 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar5,false); [line 20]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20</span>(@f$7)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20</span>(@f$6)</span> ;  <span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$5)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20</span>(@f$2)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_red'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = <span class='color_red'>@f$5 <span class='color_orange'>none</span></span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = <span class='color_red'>@f$6 <span class='color_orange'>none</span></span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = <span class='color_red'>@f$7 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_red'>old_this|->{com.karthik.imager.ImagerApp.mContext:@f$4 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20</span>(@f$7)</span> ;  <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20</span>(@f$6)</span> ;  <span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20(@f$5)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20</span>(@f$2)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20(@f$1)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20</span>(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_red'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = <span class='color_red'>@f$5 <span class='color_orange'>none</span></span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = <span class='color_red'>@f$6 <span class='color_orange'>none</span></span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = <span class='color_red'>@f$7 <span class='color_orange'>none</span></span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:20</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+       <span class='color_red'>old_this|->{com.karthik.imager.ImagerApp.mContext:@f$4 <span class='color_orange'>rearrange:(z)18</span>} <span class='color_orange'>rearrange:(z)18</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session22"href="./../nodes/node20.html#session22">node20#session22</a>( <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE20">20</a>)<LISTING><span class='color_black'>**** [RE:0] void ImagerApp.onCreate() Node: 20, Procedure: void ImagerApp.onCreate(), Session: 22, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar)</span> ;  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_red'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar)</span> ;  <span class='color_red'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar)</span> ;  <span class='color_red'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20($RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = val$8 <span class='color_orange'>update:20</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$20=*&amp;$irvar5:class com.facebook.stetho.Stetho$Initializer * [line 20];
+  _fun_void Stetho.initialize(Stetho$Initializer)(n$20:class com.facebook.stetho.Stetho$Initializer *) [line 20];
+  REMOVE_TEMPS(n$20); [line 20];
+  NULLIFY(&amp;$irvar5,false); [line 20];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$20=*&amp;$irvar5:class com.facebook.stetho.Stetho$Initializer * [line 20]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar5
+    Prop: 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar != 0 ;  UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar) ;  $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar) ;  $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar) ;  $RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar != 0 ;  UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar) ;  $RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar != 0 ;  UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar) ;  $RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0 ;  UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20($RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:void  ; 
+    $irvar5 = val$8 <span class='color_orange'>update:20</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+    $RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class com.facebook.stetho.InspectorModulesProvider *( sub ) ; 
+    $RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class com.facebook.stetho.DumperPluginsProvider *( sub ) ; 
+    $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+    $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub ) ; 
+    $RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$Initializer *( sub ) ;
+    old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub ) ; 
+    $RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub ) ; 
+    $RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$8 = $RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20($RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_red'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>n$20 <span class='color_orange'>update:20</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = <span class='color_red'>n$20 <span class='color_orange'>formal</span></span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span></span>
+    
+    Instruction <span class='color_green'>_fun_void Stetho.initialize(Stetho$Initializer)(n$20:class com.facebook.stetho.Stetho$Initializer *) [line 20]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION void Stetho.initialize(Stetho$Initializer)</span>
+    Undefined function void Stetho.initialize(Stetho$Initializer), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$8 = $RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20($RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = n$20 <span class='color_orange'>update:20</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = n$20 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$20); [line 20]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20($RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>val$8 <span class='color_orange'>update:20</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = <span class='color_red'>val$8 <span class='color_orange'>formal</span></span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar5,false); [line 20]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20($RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$Initializer Stetho$InitializerBuilder.build() &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableDumpapp(DumperPluginsProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho$InitializerBuilder.enableWebKitInspector(InspectorModulesProvider) &gt; :20($RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DumperPluginsProvider Stetho.defaultDumperPluginsProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; InspectorModulesProvider Stetho.defaultInspectorModulesProvider(Context) &gt; :20($RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar)</span> ;  <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Stetho$InitializerBuilder Stetho.newInitializerBuilder(Context) &gt; :20($RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultInspectorModulesProvider(android.content.Context):com.facebook.stetho.InspectorModulesProvider|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class com.facebook.stetho.InspectorModulesProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.defaultDumperPluginsProvider(android.content.Context):com.facebook.stetho.DumperPluginsProvider|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class com.facebook.stetho.DumperPluginsProvider *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder *( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.build():com.facebook.stetho.Stetho$Initializer|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$Initializer *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.ImagerApp.mContext:old_this <span class='color_orange'>update:(z)18</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho.newInitializerBuilder(android.content.Context):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableWebKitInspector(com.facebook.stetho.InspectorModulesProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.facebook.stetho.Stetho$InitializerBuilder.enableDumpapp(com.facebook.stetho.DumperPluginsProvider):com.facebook.stetho.Stetho$InitializerBuilder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class com.facebook.stetho.Stetho$InitializerBuilder ( sub )</span></span>
+    
+    
+    
+  

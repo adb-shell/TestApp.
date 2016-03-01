@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File mobile/src/main/java/com/karthik/imager/Animutils/PathEvaluator.java</h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">/*</td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> * Copyright (C) 2012 The Android Open Source Project</td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line"> *</td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"> * you may not use this file except in compliance with the License.</td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line"> * You may obtain a copy of the License at</td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line"> *</td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line"> *      http://www.apache.org/licenses/LICENSE-2.0</td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line"> *</td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line"> * Unless required by applicable law or agreed to in writing, software</td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line"> * See the License for the specific language governing permissions and</td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line"> * limitations under the License.</td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> */</td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">package com.karthik.imager.Animutils;</td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import android.animation.TypeEvaluator;</td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">/**</td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line"> * This evaluator interpolates between two PathPoint values given the value t, the</td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line"> * proportion traveled between those points. The value of the interpolation depends</td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line"> * on the operation specified by the endValue (the operation for the interval between</td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"> * PathPoints is always specified by the end point of that interval).</td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line"> */</td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">public class PathEvaluator implements TypeEvaluator&lt;PathPoint&gt; { <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node7.html"><span class='visitedproof'>S_7<span class='expansion'>node7 preds: succs:25 exn:8 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 26];
+NULLIFY(&amp;$irvar0,false); [line 26];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node8.html"><span class='visitedproof'>E_8<span class='expansion'>node8 preds:26 9 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_9<span class='expansion'>node9 preds: succs:8 exn:8 Instructions
+NULLIFY(&amp;$irvar0,false); [line 26];
+APPLY_ABSTRACTION; [line 26];
+
+NOT VISITED</span></span> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node25.html"><span class='visitedproof'>I_25<span class='expansion'>node25 preds:7 succs:26 exn:9 Instructions
+n$0=*&amp;this:class com.karthik.imager.Animutils.PathEvaluator * [line 26];
+n$1=*n$0:class com.karthik.imager.Animutils.PathEvaluator  [line 26];
+n$2=*&amp;$bcvar1:float  [line 26];
+n$3=*&amp;$bcvar2:class java.lang.Object * [line 26];
+n$4=_fun___cast(n$3:class java.lang.Object *,sizeof(class com.karthik.imager.Animutils.PathPoint ( sub )(cast)):void ) [line 26];
+n$5=*&amp;$bcvar3:class java.lang.Object * [line 26];
+n$6=_fun___cast(n$5:class java.lang.Object *,sizeof(class com.karthik.imager.Animutils.PathPoint ( sub )(cast)):void ) [line 26];
+n$7=_fun_PathPoint PathEvaluator.evaluate(float,PathPoint,PathPoint)(n$0:class com.karthik.imager.Animutils.PathEvaluator *,n$2:float ,n$4:class com.karthik.imager.Animutils.PathPoint *,n$6:class com.karthik.imager.Animutils.PathPoint *) virtual [line 26];
+*&amp;$irvar0:class com.karthik.imager.Animutils.PathPoint *=n$7 [line 26];
+REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4,n$5,n$6,n$7); [line 26];
+NULLIFY(&amp;$bcvar1,false); [line 26];
+NULLIFY(&amp;$bcvar2,false); [line 26];
+NULLIFY(&amp;$bcvar3,false); [line 26];
+NULLIFY(&amp;this,false); [line 26];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node26.html"><span class='visitedproof'>I_26<span class='expansion'>node26 preds:25 succs:8 exn:9 Instructions
+n$8=*&amp;$irvar0:class com.karthik.imager.Animutils.PathPoint * [line 26];
+*&amp;return:class java.lang.Object *=n$8 [line 26];
+REMOVE_TEMPS(n$8); [line 26];
+NULLIFY(&amp;$irvar0,false); [line 26];
+APPLY_ABSTRACTION; [line 26];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node1.html"><span class='visitedproof'>S_1<span class='expansion'>node1 preds: succs:10 exn:2 Start
+DECLARE_LOCALS(&amp;return); [line 26];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node2.html"><span class='visitedproof'>E_2<span class='expansion'>node2 preds:11 3 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_3<span class='expansion'>node3 preds: succs:2 exn:2 Instructions
+APPLY_ABSTRACTION; [line 26];
+
+NOT VISITED</span></span> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node10.html"><span class='visitedproof'>I_10<span class='expansion'>node10 preds:1 succs:11 exn:3 Instructions
+n$0=*&amp;this:class com.karthik.imager.Animutils.PathEvaluator * [line 26];
+_fun_Object.&lt;init&gt;()(n$0:class com.karthik.imager.Animutils.PathEvaluator *) [line 26];
+REMOVE_TEMPS(n$0); [line 26];
+NULLIFY(&amp;this,false); [line 26];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node11.html"><span class='visitedproof'>I_11<span class='expansion'>node11 preds:10 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 26];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/com.karthik.imager.Animutils.PathEvaluator.evaluate(float,java.lang.Object,java.lang.Object):java.la.d2f4e7e3d8828d6ec5bb7970687c1ae1.html">Object PathEvaluator.evaluate(float,Object,Object): 3 specs</a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/com.karthik.imager.Animutils.PathEvaluator.<init>().852ef829bcaf09c212babb18ac911252.html">PathEvaluator.&lt;init&gt;(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">    public PathPoint evaluate(float t, PathPoint startValue, PathPoint endValue) { <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node4.html"><span class='visitedproof'>S_4<span class='expansion'>node4 preds: succs:12 13 exn:5 Start
+DECLARE_LOCALS(&amp;return,&amp;oneMinusT,&amp;x,&amp;y,&amp;$irvar0); [line 28];
+NULLIFY(&amp;$irvar0,false); [line 28];
+NULLIFY(&amp;oneMinusT,false); [line 28];
+NULLIFY(&amp;this,false); [line 28];
+NULLIFY(&amp;x,false); [line 28];
+NULLIFY(&amp;y,false); [line 28];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/com.karthik.imager.Animutils.PathEvaluator.evaluate(float,com.karthik.imager.Animutils.PathPoint,com.ced6e80f9ff45d3cbf2646283b0b4447.html">PathPoint PathEvaluator.evaluate(float,PathPoint,PathPoint): 3 specs</a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">        float x, y;</td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">        if (endValue.mOperation == PathPoint.CURVE) { <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node12.html"><span class='visitedproof'>C_12<span class='expansion'>node12 preds:4 succs:14 exn:6 Conditional method_body
+n$0=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 30];
+n$1=*n$0.com.karthik.imager.Animutils.PathPoint.mOperation:class com.karthik.imager.Animutils.PathPoint  [line 30];
+PRUNE(!(n$1 != 2), true); [line 30];
+REMOVE_TEMPS(n$0,n$1); [line 30];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node13.html"><span class='visitedproof'>C_13<span class='expansion'>node13 preds:4 succs:17 18 exn:6 Conditional method_body
+n$0=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 30];
+n$1=*n$0.com.karthik.imager.Animutils.PathPoint.mOperation:class com.karthik.imager.Animutils.PathPoint  [line 30];
+PRUNE((n$1 != 2), false); [line 30];
+REMOVE_TEMPS(n$0,n$1); [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">            float oneMinusT = 1 - t; <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node14.html"><span class='visitedproof'>I_14<span class='expansion'>node14 preds:12 succs:15 exn:6 Instructions
+n$2=*&amp;t:float  [line 31];
+*&amp;oneMinusT:float =(1.000000 - n$2) [line 31];
+REMOVE_TEMPS(n$2); [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">            x = oneMinusT * oneMinusT * oneMinusT * startValue.mX + <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node15.html"><span class='visitedproof'>I_15<span class='expansion'>node15 preds:14 succs:16 exn:6 Instructions
+n$3=*&amp;oneMinusT:float  [line 32];
+n$4=*&amp;oneMinusT:float  [line 32];
+n$5=*&amp;oneMinusT:float  [line 32];
+n$6=*&amp;startValue:class com.karthik.imager.Animutils.PathPoint * [line 32];
+n$7=*n$6.com.karthik.imager.Animutils.PathPoint.mX:class com.karthik.imager.Animutils.PathPoint  [line 32];
+n$8=*&amp;oneMinusT:float  [line 32];
+n$9=*&amp;oneMinusT:float  [line 32];
+n$10=*&amp;t:float  [line 32];
+n$11=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 32];
+n$12=*n$11.com.karthik.imager.Animutils.PathPoint.mControl0X:class com.karthik.imager.Animutils.PathPoint  [line 32];
+n$13=*&amp;oneMinusT:float  [line 32];
+n$14=*&amp;t:float  [line 32];
+n$15=*&amp;t:float  [line 32];
+n$16=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 32];
+n$17=*n$16.com.karthik.imager.Animutils.PathPoint.mControl1X:class com.karthik.imager.Animutils.PathPoint  [line 32];
+n$18=*&amp;t:float  [line 32];
+n$19=*&amp;t:float  [line 32];
+n$20=*&amp;t:float  [line 32];
+n$21=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 32];
+n$22=*n$21.com.karthik.imager.Animutils.PathPoint.mX:class com.karthik.imager.Animutils.PathPoint  [line 32];
+*&amp;x:float =((((((n$3 * n$4) * n$5) * n$7) + ((((3.000000 * n$8) * n$9) * n$10) * n$12)) + ((((3.000000 * n$13) * n$14) * n$15) * n$17)) + (((n$18 * n$19) * n$20) * n$22)) [line 32];
+REMOVE_TEMPS(n$3,n$4,n$5,n$6,n$7,n$8,n$9,n$10,n$11,n$12,n$13,n$14,n$15,n$16,n$17,n$18,n$19,n$20,n$21,n$22); [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">                    3 * oneMinusT * oneMinusT * t * endValue.mControl0X +</td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">                    3 * oneMinusT * t * t * endValue.mControl1X +</td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">                    t * t * t * endValue.mX;</td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">            y = oneMinusT * oneMinusT * oneMinusT * startValue.mY + <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node16.html"><span class='visitedproof'>I_16<span class='expansion'>node16 preds:15 succs:23 exn:6 Instructions
+n$23=*&amp;oneMinusT:float  [line 36];
+n$24=*&amp;oneMinusT:float  [line 36];
+n$25=*&amp;oneMinusT:float  [line 36];
+n$26=*&amp;startValue:class com.karthik.imager.Animutils.PathPoint * [line 36];
+n$27=*n$26.com.karthik.imager.Animutils.PathPoint.mY:class com.karthik.imager.Animutils.PathPoint  [line 36];
+n$28=*&amp;oneMinusT:float  [line 36];
+n$29=*&amp;oneMinusT:float  [line 36];
+n$30=*&amp;t:float  [line 36];
+n$31=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 36];
+n$32=*n$31.com.karthik.imager.Animutils.PathPoint.mControl0Y:class com.karthik.imager.Animutils.PathPoint  [line 36];
+n$33=*&amp;oneMinusT:float  [line 36];
+n$34=*&amp;t:float  [line 36];
+n$35=*&amp;t:float  [line 36];
+n$36=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 36];
+n$37=*n$36.com.karthik.imager.Animutils.PathPoint.mControl1Y:class com.karthik.imager.Animutils.PathPoint  [line 36];
+n$38=*&amp;t:float  [line 36];
+n$39=*&amp;t:float  [line 36];
+n$40=*&amp;t:float  [line 36];
+n$41=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 36];
+n$42=*n$41.com.karthik.imager.Animutils.PathPoint.mY:class com.karthik.imager.Animutils.PathPoint  [line 36];
+*&amp;y:float =((((((n$23 * n$24) * n$25) * n$27) + ((((3.000000 * n$28) * n$29) * n$30) * n$32)) + ((((3.000000 * n$33) * n$34) * n$35) * n$37)) + (((n$38 * n$39) * n$40) * n$42)) [line 36];
+REMOVE_TEMPS(n$23,n$24,n$25,n$26,n$27,n$28,n$29,n$30,n$31,n$32,n$33,n$34,n$35,n$36,n$37,n$38,n$39,n$40,n$41,n$42); [line 36];
+NULLIFY(&amp;endValue,false); [line 36];
+NULLIFY(&amp;oneMinusT,false); [line 36];
+NULLIFY(&amp;startValue,false); [line 36];
+NULLIFY(&amp;t,false); [line 36];
+APPLY_ABSTRACTION; [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">                    3 * oneMinusT * oneMinusT * t * endValue.mControl0Y +</td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">                    3 * oneMinusT * t * t * endValue.mControl1Y +</td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">                    t * t * t * endValue.mY;</td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">        } else if (endValue.mOperation == PathPoint.LINE) { <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node17.html"><span class='visitedproof'>C_17<span class='expansion'>node17 preds:13 succs:19 exn:6 Conditional method_body
+n$43=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 40];
+n$44=*n$43.com.karthik.imager.Animutils.PathPoint.mOperation:class com.karthik.imager.Animutils.PathPoint  [line 40];
+PRUNE(!(n$44 != 1), true); [line 40];
+REMOVE_TEMPS(n$43,n$44); [line 40];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node18.html"><span class='visitedproof'>C_18<span class='expansion'>node18 preds:13 succs:21 exn:6 Conditional method_body
+n$43=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 40];
+n$44=*n$43.com.karthik.imager.Animutils.PathPoint.mOperation:class com.karthik.imager.Animutils.PathPoint  [line 40];
+PRUNE((n$44 != 1), false); [line 40];
+REMOVE_TEMPS(n$43,n$44); [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">            x = startValue.mX + t * (endValue.mX - startValue.mX); <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node19.html"><span class='visitedproof'>I_19<span class='expansion'>node19 preds:17 succs:20 exn:6 Instructions
+n$45=*&amp;startValue:class com.karthik.imager.Animutils.PathPoint * [line 41];
+n$46=*n$45.com.karthik.imager.Animutils.PathPoint.mX:class com.karthik.imager.Animutils.PathPoint  [line 41];
+n$47=*&amp;t:float  [line 41];
+n$48=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 41];
+n$49=*n$48.com.karthik.imager.Animutils.PathPoint.mX:class com.karthik.imager.Animutils.PathPoint  [line 41];
+n$50=*&amp;startValue:class com.karthik.imager.Animutils.PathPoint * [line 41];
+n$51=*n$50.com.karthik.imager.Animutils.PathPoint.mX:class com.karthik.imager.Animutils.PathPoint  [line 41];
+*&amp;x:float =(n$46 + (n$47 * (n$49 - n$51))) [line 41];
+REMOVE_TEMPS(n$45,n$46,n$47,n$48,n$49,n$50,n$51); [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">            y = startValue.mY + t * (endValue.mY - startValue.mY); <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node20.html"><span class='visitedproof'>I_20<span class='expansion'>node20 preds:19 succs:23 exn:6 Instructions
+n$52=*&amp;startValue:class com.karthik.imager.Animutils.PathPoint * [line 42];
+n$53=*n$52.com.karthik.imager.Animutils.PathPoint.mY:class com.karthik.imager.Animutils.PathPoint  [line 42];
+n$54=*&amp;t:float  [line 42];
+n$55=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 42];
+n$56=*n$55.com.karthik.imager.Animutils.PathPoint.mY:class com.karthik.imager.Animutils.PathPoint  [line 42];
+n$57=*&amp;startValue:class com.karthik.imager.Animutils.PathPoint * [line 42];
+n$58=*n$57.com.karthik.imager.Animutils.PathPoint.mY:class com.karthik.imager.Animutils.PathPoint  [line 42];
+*&amp;y:float =(n$53 + (n$54 * (n$56 - n$58))) [line 42];
+REMOVE_TEMPS(n$52,n$53,n$54,n$55,n$56,n$57,n$58); [line 42];
+NULLIFY(&amp;endValue,false); [line 42];
+NULLIFY(&amp;startValue,false); [line 42];
+NULLIFY(&amp;t,false); [line 42];
+APPLY_ABSTRACTION; [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">            x = endValue.mX; <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node21.html"><span class='visitedproof'>I_21<span class='expansion'>node21 preds:18 succs:22 exn:6 Instructions
+NULLIFY(&amp;startValue,false); [line 44];
+NULLIFY(&amp;t,false); [line 44];
+n$59=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 44];
+n$60=*n$59.com.karthik.imager.Animutils.PathPoint.mX:class com.karthik.imager.Animutils.PathPoint  [line 44];
+*&amp;x:float =n$60 [line 44];
+REMOVE_TEMPS(n$59,n$60); [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">            y = endValue.mY; <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node22.html"><span class='visitedproof'>I_22<span class='expansion'>node22 preds:21 succs:23 exn:6 Instructions
+n$61=*&amp;endValue:class com.karthik.imager.Animutils.PathPoint * [line 45];
+n$62=*n$61.com.karthik.imager.Animutils.PathPoint.mY:class com.karthik.imager.Animutils.PathPoint  [line 45];
+*&amp;y:float =n$62 [line 45];
+REMOVE_TEMPS(n$61,n$62); [line 45];
+NULLIFY(&amp;endValue,false); [line 45];
+APPLY_ABSTRACTION; [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">        return PathPoint.moveTo(x, y); <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node5.html"><span class='visitedproof'>E_5<span class='expansion'>node5 preds:24 6 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_6<span class='expansion'>node6 preds: succs:5 exn:5 Instructions
+NULLIFY(&amp;$irvar0,false); [line 47];
+NULLIFY(&amp;endValue,false); [line 47];
+NULLIFY(&amp;oneMinusT,false); [line 47];
+NULLIFY(&amp;startValue,false); [line 47];
+NULLIFY(&amp;t,false); [line 47];
+NULLIFY(&amp;x,false); [line 47];
+NULLIFY(&amp;y,false); [line 47];
+APPLY_ABSTRACTION; [line 47];
+
+NOT VISITED</span></span> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node23.html"><span class='visitedproof'>I_23<span class='expansion'>node23 preds:22 20 16 succs:24 exn:6 Instructions
+n$63=*&amp;x:float  [line 47];
+n$64=*&amp;y:float  [line 47];
+n$65=_fun_PathPoint PathPoint.moveTo(float,float)(n$63:float ,n$64:float ) [line 47];
+*&amp;$irvar0:class com.karthik.imager.Animutils.PathPoint *=n$65 [line 47];
+REMOVE_TEMPS(n$63,n$64,n$65); [line 47];
+NULLIFY(&amp;x,false); [line 47];
+NULLIFY(&amp;y,false); [line 47];
+</span></span></a> <a href="./PathEvaluator.java.47d9c8d3748974357bc7efc9b00ad2df/nodes/node24.html"><span class='visitedproof'>I_24<span class='expansion'>node24 preds:23 succs:5 exn:6 Instructions
+n$66=*&amp;$irvar0:class com.karthik.imager.Animutils.PathPoint * [line 47];
+*&amp;return:class com.karthik.imager.Animutils.PathPoint *=n$66 [line 47];
+REMOVE_TEMPS(n$66); [line 47];
+NULLIFY(&amp;$irvar0,false); [line 47];
+APPLY_ABSTRACTION; [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">}</td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<hr width="100%">
+INFOS DURING RE-EXECUTION
+</body>
+</html>

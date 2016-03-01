@@ -1,0 +1,576 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node49</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">49</a></h1></center>PROC:  <a href="./../com.karthik.imager.MainActivity.onCreateOptionsMenu(android.view.Menu):boolean.cdd869b88d21341a872afd8d17e2ca7c.html">boolean MainActivity.onCreateOptionsMenu(Menu)</a> LINE: <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">47</a>
+<br>PREDS:
+ <a href="./../nodes/node48.html"><span class='visited'>N_48<span class='expansion'>node48 preds:13 succs:49 exn:15 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_50<span class='expansion'>node50 preds:49 succs:14 exn:15 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_15<span class='expansion'>node15 preds: succs:14 exn:14 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$3=*&amp;$irvar0:class android.view.MenuInflater * [line 47];
+                          n$4=*n$3:class android.view.MenuInflater  [line 47];
+                          n$5=*&amp;menu:class android.view.Menu * [line 47];
+                          _fun_void MenuInflater.inflate(int,Menu)(n$3:class android.view.MenuInflater *,2131623936:int ,n$5:class android.view.Menu *) virtual [line 47];
+                          REMOVE_TEMPS(n$3,n$4,n$5); [line 47];
+                          NULLIFY(&amp;$irvar0,false); [line 47];
+                          NULLIFY(&amp;menu,false); [line 47];
+                          </span><hr width="100%">
+ <a name="session3"href="./../nodes/node49.html#session3">node49#session3</a>( <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">47</a>)<LISTING><span class='color_black'>**** [FP:0] boolean MainActivity.onCreateOptionsMenu(Menu) Node: 49, Procedure: boolean MainActivity.onCreateOptionsMenu(Menu), Session: 3, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$irvar0 != 0</span> ;  <span class='color_red'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+  <span class='color_red'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+  <span class='color_red'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+  <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>
+  [footprint
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+     <span class='color_red'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+     <span class='color_red'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+     <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$3=*&amp;$irvar0:class android.view.MenuInflater * [line 47];
+  n$4=*n$3:class android.view.MenuInflater  [line 47];
+  n$5=*&amp;menu:class android.view.Menu * [line 47];
+  _fun_void MenuInflater.inflate(int,Menu)(n$3:class android.view.MenuInflater *,2131623936:int ,n$5:class android.view.Menu *) virtual [line 47];
+  REMOVE_TEMPS(n$3,n$4,n$5); [line 47];
+  NULLIFY(&amp;$irvar0,false); [line 47];
+  NULLIFY(&amp;menu,false); [line 47];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$3=*&amp;$irvar0:class android.view.MenuInflater * [line 47]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>$irvar0 != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$7 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:47</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+       $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>$irvar0 != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$7 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:47</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+       $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = n$7 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$3 = $irvar0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$4=*n$3:class android.view.MenuInflater  [line 47]</span>
+    .... Rearrangement Start ....
+    Exp: @f$2
+    Prop: 
+    <span class='color_blue'>n$3 = $irvar0 ;
+    $irvar0 != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$8 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:47</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+       $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$3 = $irvar0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_red'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_red'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$5=*&amp;menu:class android.view.Menu * [line 47]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;menu
+    Prop: 
+    <span class='color_blue'>n$3 = $irvar0 ;
+    $irvar0 != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$9 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:47</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+       $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+       $irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;menu
+    prop before:
+    <span class='color_blue'>n$3 = $irvar0 ;
+    $irvar0 != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$9 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = @f$2 <span class='color_orange'>update:47</span>:void  ;
+    old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+       $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub ) ;
+       old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+       $irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$3 = $irvar0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = n$9 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$3 = $irvar0</span> ;  <span class='color_red'>n$5 = menu</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>_fun_void MenuInflater.inflate(int,Menu)(n$3:class android.view.MenuInflater *,2131623936:int ,n$5:class android.view.Menu *) virtual [line 47]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION void MenuInflater.inflate(int,Menu)</span>
+    Undefined function void MenuInflater.inflate(int,Menu), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$3 = $irvar0</span> ;  <span class='color_blue'>n$5 = menu</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$3,n$4,n$5); [line 47]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:47</span>:void </span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 47]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;menu,false); [line 47]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span> ; 
+    <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>menu = @f$1 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class android.view.MenuInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:47</span>:class android.view.MenuInflater ( sub )</span> ; 
+       <span class='color_red'>old_this|->{} <span class='color_orange'>rearrange:(z)47</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session8"href="./../nodes/node49.html#session8">node49#session8</a>( <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">47</a>)<LISTING><span class='color_black'>**** [RE:0] boolean MainActivity.onCreateOptionsMenu(Menu) Node: 49, Procedure: boolean MainActivity.onCreateOptionsMenu(Menu), Session: 8, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+  <span class='color_red'>old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+  <span class='color_red'>menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = val$3 <span class='color_orange'>update:47</span>:void </span> ; 
+  <span class='color_red'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub )</span> ;
+  <span class='color_red'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$3=*&amp;$irvar0:class android.view.MenuInflater * [line 47];
+  n$4=*n$3:class android.view.MenuInflater  [line 47];
+  n$5=*&amp;menu:class android.view.Menu * [line 47];
+  _fun_void MenuInflater.inflate(int,Menu)(n$3:class android.view.MenuInflater *,2131623936:int ,n$5:class android.view.Menu *) virtual [line 47];
+  REMOVE_TEMPS(n$3,n$4,n$5); [line 47];
+  NULLIFY(&amp;$irvar0,false); [line 47];
+  NULLIFY(&amp;menu,false); [line 47];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$3=*&amp;$irvar0:class android.view.MenuInflater * [line 47]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$7 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = val$3 <span class='color_orange'>update:47</span>:void  ; 
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub ) ;
+    old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar</span> ;
+    <span class='color_red'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$3 <span class='color_orange'>update:47</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = <span class='color_red'>n$3 <span class='color_orange'>formal</span></span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_red'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$4=*n$3:class android.view.MenuInflater  [line 47]</span>
+    .... Rearrangement Start ....
+    Exp: n$3
+    Prop: 
+    <span class='color_blue'>val$3 = $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar ;
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$8 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = n$3 <span class='color_orange'>update:47</span>:void  ; 
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = n$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub ) ;
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub ) ; 
+    old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = n$3 <span class='color_orange'>update:47</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = n$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$5=*&amp;menu:class android.view.Menu * [line 47]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;menu
+    Prop: 
+    <span class='color_blue'>val$3 = $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar ;
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0 ;  UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$9 <span class='color_orange'>initial</span>:_Bool  ; 
+    old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub ) ; 
+    $irvar0 = n$3 <span class='color_orange'>update:47</span>:void  ; 
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = n$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub ) ;
+    $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub ) ; 
+    old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = menu</span> ;  <span class='color_blue'>val$3 = $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = <span class='color_red'>n$5 <span class='color_orange'>formal</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = <span class='color_red'>n$5 <span class='color_orange'>formal</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = n$3 <span class='color_orange'>update:47</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = n$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span></span>
+    
+    Instruction <span class='color_green'>_fun_void MenuInflater.inflate(int,Menu)(n$3:class android.view.MenuInflater *,2131623936:int ,n$5:class android.view.Menu *) virtual [line 47]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION void MenuInflater.inflate(int,Menu)</span>
+    Undefined function void MenuInflater.inflate(int,Menu), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = menu</span> ;  <span class='color_blue'>val$3 = $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = n$5 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = n$5 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = n$3 <span class='color_orange'>update:47</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = n$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$3,n$4,n$5); [line 47]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$3 <span class='color_orange'>update:47</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_red'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 47]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;menu,false); [line 47]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; MenuInflater AppCompatActivity.getMenuInflater() &gt; :47($RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>old_menu = val$2 <span class='color_orange'>formal</span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>menu = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.view.Menu *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.view.MenuInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.MenuInflater ( sub )</span></span>
+    
+    
+    
+  

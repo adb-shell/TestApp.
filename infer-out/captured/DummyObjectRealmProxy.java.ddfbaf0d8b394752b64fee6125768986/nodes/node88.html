@@ -1,0 +1,565 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node88</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE223">88</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.createDetachedCopy(com.karthik.imager.APIService.DummyObject,int,int,.34e590277a3496035d1523fe55eee1fe.html">DummyObject DummyObjectRealmProxy.createDetachedCopy(DummyObject,int,int,Map)</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE223">223</a>
+<br>PREDS:
+ <a href="./../nodes/node86.html"><span class='visited'>N_86<span class='expansion'>node86 preds:85 succs:88 89 exn:26 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_90<span class='expansion'>node90 preds:88 succs:25 exn:26 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_26<span class='expansion'>node26 preds: succs:25 exn:25 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$10=*&amp;currentDepth:int  [line 223];
+                          n$11=*&amp;cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 223];
+                          n$12=*n$11.io.realm.internal.RealmObjectProxy$CacheData.minDepth:class io.realm.internal.RealmObjectProxy$CacheData  [line 223];
+                          PRUNE(!(n$10  &lt;  n$12), true); [line 223];
+                          REMOVE_TEMPS(n$10,n$11,n$12); [line 223];
+                          </span><hr width="100%">
+ <a name="session18"href="./../nodes/node88.html#session18">node88#session18</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE223">223</a>)<LISTING><span class='color_black'>**** [FP:0] DummyObject DummyObjectRealmProxy.createDetachedCopy(DummyObject,int,int,Map) Node: 88, Procedure: DummyObject DummyObjectRealmProxy.createDetachedCopy(DummyObject,int,int,Map), Session: 18, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_red'>cachedObject != 0</span> ;  <span class='color_red'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_red'>realmObject != null</span> ;
+  <span class='color_red'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+  <span class='color_red'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+  <span class='color_red'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+  <span class='color_red'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+  <span class='color_red'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+  <span class='color_red'>old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+  <span class='color_red'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+  <span class='color_red'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+  [footprint
+     <span class='color_red'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_red'>realmObject != null</span> *
+     <span class='color_red'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+     <span class='color_red'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+     <span class='color_red'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+     <span class='color_red'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+     <span class='color_red'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+     <span class='color_red'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$10=*&amp;currentDepth:int  [line 223];
+  n$11=*&amp;cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 223];
+  n$12=*n$11.io.realm.internal.RealmObjectProxy$CacheData.minDepth:class io.realm.internal.RealmObjectProxy$CacheData  [line 223];
+  PRUNE(!(n$10  &lt;  n$12), true); [line 223];
+  REMOVE_TEMPS(n$10,n$11,n$12); [line 223];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$10=*&amp;currentDepth:int  [line 223]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;currentDepth
+    Prop: 
+    <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0) ;  cachedObject != 0 ;  UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject) ;  realmObject != null ;
+    standaloneObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$52 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    cachedObject = @f$3 <span class='color_orange'>update:219</span>:void  ; 
+    old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast) ; 
+    cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )
+    [footprint
+       ((currentDepth - old_maxDepth)  &lt;=  0) ;  realmObject != null *
+       realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;currentDepth
+    prop before:
+    <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0) ;  cachedObject != 0 ;  UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject) ;  realmObject != null ;
+    standaloneObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$52 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    cachedObject = @f$3 <span class='color_orange'>update:219</span>:void  ; 
+    old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast) ; 
+    cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )
+    [footprint
+       ((currentDepth - old_maxDepth)  &lt;=  0) ;  realmObject != null *
+       realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$52 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$10 = currentDepth</span> ;
+    <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$11=*&amp;cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 223]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;cachedObject
+    Prop: 
+    <span class='color_blue'>n$10 = currentDepth ;
+    ((currentDepth - old_maxDepth)  &lt;=  0) ;  cachedObject != 0 ;  UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject) ;  realmObject != null ;
+    standaloneObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$53 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    cachedObject = @f$3 <span class='color_orange'>update:219</span>:void  ; 
+    old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast) ; 
+    cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )
+    [footprint
+       ((currentDepth - old_maxDepth)  &lt;=  0) ;  realmObject != null *
+       realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;cachedObject
+    prop before:
+    <span class='color_blue'>n$10 = currentDepth ;
+    ((currentDepth - old_maxDepth)  &lt;=  0) ;  cachedObject != 0 ;  UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject) ;  realmObject != null ;
+    standaloneObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$53 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    cachedObject = @f$3 <span class='color_orange'>update:219</span>:void  ; 
+    old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast) ; 
+    cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )
+    [footprint
+       ((currentDepth - old_maxDepth)  &lt;=  0) ;  realmObject != null *
+       realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = currentDepth</span> ;
+    <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$53 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = currentDepth</span> ;  <span class='color_red'>n$11 = cachedObject</span> ;
+    <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$12=*n$11.io.realm.internal.RealmObjectProxy$CacheData.minDepth:class io.realm.internal.RealmObjectProxy$CacheData  [line 223]</span>
+    .... Rearrangement Start ....
+    Exp: @f$3.io.realm.internal.RealmObjectProxy$CacheData.minDepth
+    Prop: 
+    <span class='color_blue'>n$10 = currentDepth ;  n$11 = cachedObject ;
+    ((currentDepth - old_maxDepth)  &lt;=  0) ;  cachedObject != 0 ;  UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject) ;  realmObject != null ;
+    standaloneObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$54 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    cachedObject = @f$3 <span class='color_orange'>update:219</span>:void  ; 
+    old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast) ; 
+    cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )
+    [footprint
+       ((currentDepth - old_maxDepth)  &lt;=  0) ;  realmObject != null *
+       realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )  ]</span>
+    
+    <span class='color_orange'>WARNING: Cannot extend </span>@f$3.io.realm.internal.RealmObjectProxy$CacheData.minDepth in
+    <span class='color_blue'>n$10 = currentDepth ;  n$11 = cachedObject ;
+    ((currentDepth - old_maxDepth)  &lt;=  0) ;  cachedObject != 0 ;  UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject) ;  realmObject != null ;
+    standaloneObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$54 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    cachedObject = @f$3 <span class='color_orange'>update:219</span>:void  ; 
+    old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast) ; 
+    cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )
+    [footprint
+       ((currentDepth - old_maxDepth)  &lt;=  0) ;  realmObject != null *
+       realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )  ]</span>
+    in prop_iter_extend_ptsto lexp: @f$3.io.realm.internal.RealmObjectProxy$CacheData.minDepth
+    prop before:
+    <span class='color_blue'>n$10 = currentDepth ;  n$11 = cachedObject ;
+    ((currentDepth - old_maxDepth)  &lt;=  0) ;  cachedObject != 0 ;  UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject) ;  realmObject != null ;
+    standaloneObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$54 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    cachedObject = @f$3 <span class='color_orange'>update:219</span>:void  ; 
+    old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    cachedObject|->{} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast) ; 
+    cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )
+    [footprint
+       ((currentDepth - old_maxDepth)  &lt;=  0) ;  realmObject != null *
+       realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = currentDepth</span> ;  <span class='color_blue'>n$11 = cachedObject</span> ;
+    <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$54 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{<span class='color_red'>io.realm.internal.RealmObjectProxy$CacheData.minDepth:@f$55 <span class='color_orange'>rearrange:223</span></span>} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = @f$4 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = currentDepth</span> ;  <span class='color_blue'>n$11 = cachedObject</span> ;  <span class='color_red'>n$12 = @f$4</span> ;
+    <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{<span class='color_red'>io.realm.internal.RealmObjectProxy$CacheData.minDepth:@f$4 <span class='color_orange'>rearrange:223</span></span>} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_red'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_red'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>PRUNE(!(n$10  &lt;  n$12), true); [line 223]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$10 = currentDepth</span> ;  <span class='color_blue'>n$11 = cachedObject</span> ;  <span class='color_blue'>n$12 = @f$4</span> ;
+    <span class='color_red'>((@f$4 - currentDepth)  &lt;=  0)</span> ;  <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{io.realm.internal.RealmObjectProxy$CacheData.minDepth:@f$4 <span class='color_orange'>rearrange:223</span>} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_red'>((@f$4 - currentDepth)  &lt;=  0)</span> ;  <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$10,n$11,n$12); [line 223]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>((@f$4 - currentDepth)  &lt;=  0)</span> ;  <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{io.realm.internal.RealmObjectProxy$CacheData.minDepth:@f$4 <span class='color_orange'>rearrange:223</span>} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>((@f$4 - currentDepth)  &lt;=  0)</span> ;  <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>((@f$4 - currentDepth)  &lt;=  0)</span> ;  <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>cachedObject != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.get(Object) &gt; :219(cachedObject)</span> ;  <span class='color_blue'>realmObject != null</span> ;
+    <span class='color_blue'>standaloneObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>maxDepth = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>old_currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>cachedObject = @f$3 <span class='color_orange'>update:219</span>:void </span> ; 
+    <span class='color_blue'>old_cache = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>cachedObject|->{<span class='color_red'>io.realm.internal.RealmObjectProxy$CacheData.minDepth:@f$4 <span class='color_orange'>rearrange:223</span></span>} <span class='color_orange'>none</span>:class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)</span> ; 
+    <span class='color_red'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_red'>((@f$4 - currentDepth)  &lt;=  0)</span> ;  <span class='color_blue'>((currentDepth - old_maxDepth)  &lt;=  0)</span> ;  <span class='color_blue'>realmObject != null</span> *
+       <span class='color_blue'>realmObject = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>maxDepth = @f$1 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>currentDepth = @f$2 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>cache = <span class='color_red'>@f$5 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.get(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_red'>cache|->{} <span class='color_orange'>rearrange:(z)219</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+  

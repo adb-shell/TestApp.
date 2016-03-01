@@ -1,0 +1,1398 @@
+
+#### Start: Footprint Computation for MainActivity.<init>() ####
+#### [FUNCTION MainActivity.<init>()] ... OK #####
+#### Finished: Footprint Computation for MainActivity.<init>() (5 nodes containing 4 states) ####
+#### [FUNCTION MainActivity.<init>()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 1
+n1(s1).n22(s2).n23(s3).n2]
+old_this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = _t$0<initial>:void 
+[footprint
+   this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub )  ]
+
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub )
+Adding summary for MainActivity.<init>()
+  void MainActivity.<init>()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTPRINT
+  Dependency_map: 
+  TIME:0.014287 s FAILURE:NONE SYMOPS:8 CALLS:0,1
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 19] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$2<initial>:void 
+----------------------------------------------------------------
+
+Transition MainActivity.<init>() from footprint to re-exe
+Adding summary for MainActivity.<init>()
+  void MainActivity.<init>()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.014287 s FAILURE:NONE SYMOPS:8 CALLS:0,1
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited:] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub )
+
+----------------------------------------------------------------
+
+
+#### Start: Re-Execution for MainActivity.<init>() ####
+Finished re-execution for precondition 1 (5 nodes containing 4 states) (pass)
+#### [FUNCTION MainActivity.<init>()] ... OK #####
+#### Finished: Re-Execution for MainActivity.<init>() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR MainActivity.<init>(): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR MainActivity.<init>(): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) 
+
+Specs changed: added new post
+PROP 1 of 1:
+return = val$2<initial>:void 
+Adding summary for MainActivity.<init>()
+  void MainActivity.<init>()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.039744 s FAILURE:NONE SYMOPS:16 CALLS:0,1
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 19] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$2<initial>:void 
+----------------------------------------------------------------
+
+
+#### Start: Footprint Computation for void MainActivity.fillDummyValuesInSharedPreferences() ####
+#### [FUNCTION void MainActivity.fillDummyValuesInSharedPreferences()] ... OK #####
+#### Finished: Footprint Computation for void MainActivity.fillDummyValuesInSharedPreferences() (27 nodes containing 52 states) ####
+#### [FUNCTION void MainActivity.fillDummyValuesInSharedPreferences()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 6 of node 69
+(P7 + P8)(s43).n68(s44).n72(s45).n73(s46).n74(s47).n17where
+P2 = n16(s1).n51(s2).n52(s3).n53(s4).n54(s5).n55(s6).n56(s7).n57(s8).n58(s9).n59(s10).n60(s11).n61(s12).n62(s13).n63(s14).n64(s15).n65(s16).n66(s17).n69(s18).n67(s20).n70(s21).n71(s22).n69
+P1 = P2(s23).n67(s25).n70(s26).n71(s27).n69
+P3 = P4(s28).n67(s30).n70(s31).n71(s32).n69
+P5 = P6(s33).n67(s35).n70(s36).n71(s37).n69
+P7 = P8(s38).n67(s40).n70(s41).n71(s42).n69
+P4 = (P1 + P2)
+P6 = (P3 + P4)
+P8 = (P5 + P6)
+]
+old_this = @f$2<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{com.karthik.imager.MainActivity.mContext:@f$3<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   this = @f$2<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$1<none>:class android.content.SharedPreferences *( sub ) ; 
+   $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$0<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+   $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = @f$4<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+   $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+   $RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = @f$6<none>:_Bool ( sub ) ;
+   @f$0|->{}<rearrange:74>:class android.content.SharedPreferences$Editor ( sub ) ; 
+   @f$1|->{}<rearrange:71>:class android.content.SharedPreferences ( sub ) ; 
+   old_this|->{com.karthik.imager.MainActivity.mContext:@f$3<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub )  ]
+
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3<none>:class android.content.SharedPreferences *( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7<none>:_Bool ( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{}<rearrange:71>:class android.content.SharedPreferences ( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{}<rearrange:74>:class android.content.SharedPreferences$Editor ( sub )
+Adding summary for void MainActivity.fillDummyValuesInSharedPreferences()
+  void void MainActivity.fillDummyValuesInSharedPreferences()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTPRINT
+  Dependency_map: 
+  TIME:0.310546 s FAILURE:NONE SYMOPS:259 CALLS:1,5
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 69 70 71 72 73 74 76 77 78] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3<none>:class android.content.SharedPreferences *( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7<none>:_Bool ( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{}<rearrange:71>:class android.content.SharedPreferences ( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{}<rearrange:74>:class android.content.SharedPreferences$Editor ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$8<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+Transition void MainActivity.fillDummyValuesInSharedPreferences() from footprint to re-exe
+Adding summary for void MainActivity.fillDummyValuesInSharedPreferences()
+  void void MainActivity.fillDummyValuesInSharedPreferences()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.310546 s FAILURE:NONE SYMOPS:259 CALLS:1,5
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited:] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3<none>:class android.content.SharedPreferences *( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7<none>:_Bool ( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{}<rearrange:71>:class android.content.SharedPreferences ( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{}<rearrange:74>:class android.content.SharedPreferences$Editor ( sub )
+
+----------------------------------------------------------------
+
+
+#### Start: Re-Execution for void MainActivity.fillDummyValuesInSharedPreferences() ####
+Finished re-execution for precondition 1 (27 nodes containing 49 states) (pass)
+#### [FUNCTION void MainActivity.fillDummyValuesInSharedPreferences()] ... OK #####
+#### Finished: Re-Execution for void MainActivity.fillDummyValuesInSharedPreferences() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR void MainActivity.fillDummyValuesInSharedPreferences(): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3<none>:class android.content.SharedPreferences *( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7<none>:_Bool ( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{}<rearrange:71>:class android.content.SharedPreferences ( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{}<rearrange:74>:class android.content.SharedPreferences$Editor ( sub ) 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR void MainActivity.fillDummyValuesInSharedPreferences(): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub ) 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3<none>:class android.content.SharedPreferences *( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6<none>:class android.content.SharedPreferences$Editor *( sub ) ; 
+$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7<none>:_Bool ( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{}<rearrange:71>:class android.content.SharedPreferences ( sub ) ; 
+$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{}<rearrange:74>:class android.content.SharedPreferences$Editor ( sub )
+
+----------------------------------------------------------------
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub )
+Adding summary for void MainActivity.fillDummyValuesInSharedPreferences()
+  void void MainActivity.fillDummyValuesInSharedPreferences()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.530553 s FAILURE:NONE SYMOPS:495 CALLS:1,5
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 69 70 71 72 73 74 76 77 78] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)70>}<rearrange:(z)70>:class com.karthik.imager.MainActivity ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$3<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<formal(z)>}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+
+#### Start: Footprint Computation for void MainActivity.fillDummyValuesInDB() ####
+Adding summary for DummyObject.<init>(String,String)
+  void DummyObject.<init>(String,String)(class com.karthik.imager.APIService.DummyObject *this, class java.lang.String *dummyTitle, class java.lang.String *dummyDesc)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.000000 s FAILURE:NONE SYMOPS:36 CALLS:0,1
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 30 31 32 33] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+dummyTitle = val$4<formal>:class java.lang.String *( sub ) ; 
+dummyDesc = val$5<formal>:class java.lang.String *( sub ) ;
+this|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$2<rearrange:32>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$3<rearrange:(z)31>}<rearrange:(z)31>:class com.karthik.imager.APIService.DummyObject ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+return = val$6<initial>:void  ; 
+dummyTitle = val$4<formal>:class java.lang.String *( sub ) ; 
+dummyDesc = val$5<formal>:class java.lang.String *( sub ) ;
+this|->{com.karthik.imager.APIService.DummyObject.dummyDesc:dummyDesc<update:32>, com.karthik.imager.APIService.DummyObject.dummyTitle:dummyTitle<update:(z)31>}<formal(z)>:class com.karthik.imager.APIService.DummyObject ( sub )
+----------------------------------------------------------------
+
+#### [FUNCTION void MainActivity.fillDummyValuesInDB()] ... OK #####
+#### Finished: Footprint Computation for void MainActivity.fillDummyValuesInDB() (10 nodes containing 9 states) ####
+#### [FUNCTION void MainActivity.fillDummyValuesInDB()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 2 of node 25
+(P1{P2})(s5).n28(s6).n29(s7).n30(s8).n5where
+P2 = n13(s7).n25(s8).n26(s9).n27(s10).n28(s11).n14
+P1 = n4(s1).n24(s2).n25(s3).n26(s4).n27
+]
+old_this = @f$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{com.karthik.imager.MainActivity.mContext:@f$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   @f$0 != 0 *
+   this = @f$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$0<none>:class io.realm.Realm *( sub ) ; 
+   $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3<none>:class io.realm.RealmObject *( sub ) ;
+   @f$0|->{}<rearrange:59>:class io.realm.Realm ( sub ) ; 
+   old_this|->{com.karthik.imager.MainActivity.mContext:@f$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub )  ]
+
+Specs changed: added new pre
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3<none>:class io.realm.Realm *( sub ) ; 
+$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4<none>:class io.realm.RealmObject *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{}<rearrange:59>:class io.realm.Realm ( sub )
+Adding summary for void MainActivity.fillDummyValuesInDB()
+  void void MainActivity.fillDummyValuesInDB()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTPRINT
+  Dependency_map: 
+  TIME:0.040262 s FAILURE:NONE SYMOPS:39 CALLS:1,5
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 56 58 59 60 61 62] ---------------------------
+PRE:
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3<none>:class io.realm.Realm *( sub ) ; 
+$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4<none>:class io.realm.RealmObject *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{}<rearrange:59>:class io.realm.Realm ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$5<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+Transition void MainActivity.fillDummyValuesInDB() from footprint to re-exe
+Adding summary for void MainActivity.fillDummyValuesInDB()
+  void void MainActivity.fillDummyValuesInDB()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.040262 s FAILURE:NONE SYMOPS:39 CALLS:1,5
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited:] ---------------------------
+PRE:
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3<none>:class io.realm.Realm *( sub ) ; 
+$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4<none>:class io.realm.RealmObject *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{}<rearrange:59>:class io.realm.Realm ( sub )
+
+----------------------------------------------------------------
+
+
+#### Start: Re-Execution for void MainActivity.fillDummyValuesInDB() ####
+Finished re-execution for precondition 1 (10 nodes containing 9 states) (pass)
+#### [FUNCTION void MainActivity.fillDummyValuesInDB()] ... OK #####
+#### Finished: Re-Execution for void MainActivity.fillDummyValuesInDB() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR void MainActivity.fillDummyValuesInDB(): 
+================================================
+
+PROP 1:
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3<none>:class io.realm.Realm *( sub ) ; 
+$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4<none>:class io.realm.RealmObject *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{}<rearrange:59>:class io.realm.Realm ( sub ) 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR void MainActivity.fillDummyValuesInDB(): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub ) 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3<none>:class io.realm.Realm *( sub ) ; 
+$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4<none>:class io.realm.RealmObject *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{}<rearrange:59>:class io.realm.Realm ( sub )
+
+----------------------------------------------------------------
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub )
+Adding summary for void MainActivity.fillDummyValuesInDB()
+  void void MainActivity.fillDummyValuesInDB()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.064632 s FAILURE:NONE SYMOPS:78 CALLS:1,5
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 56 58 59 60 61 62] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:(z)58>}<rearrange:(z)58>:class com.karthik.imager.MainActivity ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$3<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<formal(z)>}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+
+#### Start: Footprint Computation for boolean MainActivity.onOptionsItemSelected(MenuItem) ####
+#### [FUNCTION boolean MainActivity.onOptionsItemSelected(MenuItem)] ... OK #####
+#### Finished: Footprint Computation for boolean MainActivity.onOptionsItemSelected(MenuItem) (9 nodes containing 9 states) ####
+#### [FUNCTION boolean MainActivity.onOptionsItemSelected(MenuItem)] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 10
+n10(s1).n42(s2).n43(s6).n45(s7).n11]
+old_this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = 1<update:88>:_Bool  ; 
+old_item = @f$1<formal>:class android.view.MenuItem *( sub ) ;
+old_item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+[footprint
+   this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   item = @f$1<formal>:class android.view.MenuItem *( sub ) ; 
+   $RET_android.view.MenuItem.getItemId():int|abductedRetvar = 2131558589<none>:int ( sub ) ;
+   old_item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )  ]
+PROP 2:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 10
+n10(s1).n42(s2).n44(s3).n46(s4).n47(s5).n11]
+UND<boolean Activity.onOptionsItemSelected(MenuItem)>:91(return) ;
+old_this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = @f$1<update:91>:_Bool  ; 
+old_item = @f$2<formal>:class android.view.MenuItem *( sub ) ;
+old_item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+[footprint
+   @f$3 != 2131558589 *
+   this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   item = @f$2<formal>:class android.view.MenuItem *( sub ) ; 
+   $RET_android.view.MenuItem.getItemId():int|abductedRetvar = @f$3<none>:int ( sub ) ; 
+   $RET_android.app.Activity.onOptionsItemSelected(android.view.MenuItem):boolean|abductedRetvar = @f$1<none>:_Bool ( sub ) ;
+   old_item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )  ]
+
+Specs changed: added new pre
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar != 2131558589 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.app.Activity.onOptionsItemSelected(android.view.MenuItem):boolean|abductedRetvar = val$4<none>:_Bool ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = 2131558589<none>:int ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+Adding summary for boolean MainActivity.onOptionsItemSelected(MenuItem)
+  _Bool boolean MainActivity.onOptionsItemSelected(MenuItem)(class com.karthik.imager.MainActivity *this, class android.view.MenuItem *item)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTPRINT
+  Dependency_map: 
+  TIME:0.016705 s FAILURE:NONE SYMOPS:36 CALLS:0,2
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 2 [nvisited: 82 84 87 91] ---------------------------
+PRE:
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar != 2131558589 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.app.Activity.onOptionsItemSelected(android.view.MenuItem):boolean|abductedRetvar = val$4<none>:_Bool ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+POST 1 of 1:
+UND<boolean Activity.onOptionsItemSelected(MenuItem)>:91(return) ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$4<update:91>:_Bool  ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+----------------------------------------------------------------
+--------------------------- 2 of 2 [nvisited: 82 84 87 88 91] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = 2131558589<none>:int ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = 1<update:88>:_Bool  ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+----------------------------------------------------------------
+
+Transition boolean MainActivity.onOptionsItemSelected(MenuItem) from footprint to re-exe
+Adding summary for boolean MainActivity.onOptionsItemSelected(MenuItem)
+  _Bool boolean MainActivity.onOptionsItemSelected(MenuItem)(class com.karthik.imager.MainActivity *this, class android.view.MenuItem *item)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.016705 s FAILURE:NONE SYMOPS:36 CALLS:0,2
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 2 [nvisited:] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = 2131558589<none>:int ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+
+----------------------------------------------------------------
+--------------------------- 2 of 2 [nvisited:] ---------------------------
+PRE:
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar != 2131558589 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.app.Activity.onOptionsItemSelected(android.view.MenuItem):boolean|abductedRetvar = val$4<none>:_Bool ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+
+----------------------------------------------------------------
+
+
+#### Start: Re-Execution for boolean MainActivity.onOptionsItemSelected(MenuItem) ####
+Finished re-execution for precondition 1 (9 nodes containing 6 states) (pass)
+Finished re-execution for precondition 2 (9 nodes containing 7 states) (pass)
+#### [FUNCTION boolean MainActivity.onOptionsItemSelected(MenuItem)] ... OK #####
+#### Finished: Re-Execution for boolean MainActivity.onOptionsItemSelected(MenuItem) ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR boolean MainActivity.onOptionsItemSelected(MenuItem): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = 2131558589<none>:int ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+PROP 2:
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar != 2131558589 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.app.Activity.onOptionsItemSelected(android.view.MenuItem):boolean|abductedRetvar = val$4<none>:_Bool ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub ) 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR boolean MainActivity.onOptionsItemSelected(MenuItem): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+PROP 2:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub ) 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = 2131558589<none>:int ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+
+----------------------------------------------------------------
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar != 2131558589 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ; 
+$RET_android.view.MenuItem.getItemId():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.app.Activity.onOptionsItemSelected(android.view.MenuItem):boolean|abductedRetvar = val$4<none>:_Bool ( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+
+----------------------------------------------------------------
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+Specs changed: added new post
+PROP 1 of 2:
+return = 1<update:88>:_Bool  ;
+val$2|->{}<formal(z)>:class android.view.MenuItem ( sub )
+PROP 2 of 2:
+UND<boolean Activity.onOptionsItemSelected(MenuItem)>:91(return) ;
+return = val$3<update:91>:_Bool  ;
+val$2|->{}<formal(z)>:class android.view.MenuItem ( sub )
+Adding summary for boolean MainActivity.onOptionsItemSelected(MenuItem)
+  _Bool boolean MainActivity.onOptionsItemSelected(MenuItem)(class com.karthik.imager.MainActivity *this, class android.view.MenuItem *item)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.036133 s FAILURE:NONE SYMOPS:84 CALLS:0,2
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 82 84 87 88 91] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<rearrange:(z)84>:class android.view.MenuItem ( sub )
+POST 1 of 2:
+UND<boolean Activity.onOptionsItemSelected(MenuItem)>:91(return) ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$3<update:91>:_Bool  ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<formal(z)>:class android.view.MenuItem ( sub )
+POST 2 of 2:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = 1<update:88>:_Bool  ; 
+item = val$2<formal>:class android.view.MenuItem *( sub ) ;
+item|->{}<formal(z)>:class android.view.MenuItem ( sub )
+----------------------------------------------------------------
+
+
+#### Start: Footprint Computation for boolean MainActivity.onCreateOptionsMenu(Menu) ####
+#### [FUNCTION boolean MainActivity.onCreateOptionsMenu(Menu)] ... OK #####
+#### Finished: Footprint Computation for boolean MainActivity.onCreateOptionsMenu(Menu) (6 nodes containing 5 states) ####
+#### [FUNCTION boolean MainActivity.onCreateOptionsMenu(Menu)] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 13
+n13(s1).n48(s2).n49(s3).n50(s4).n14]
+old_this = @f$2<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = 1<update:48>:_Bool  ; 
+old_menu = @f$1<formal>:class android.view.Menu *( sub ) ;
+old_this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   this = @f$2<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   menu = @f$1<formal>:class android.view.Menu *( sub ) ; 
+   $RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = @f$0<none>:class android.view.MenuInflater *( sub ) ;
+   @f$0|->{}<rearrange:47>:class android.view.MenuInflater ( sub ) ; 
+   old_this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub )  ]
+
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3<none>:class android.view.MenuInflater *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{}<rearrange:47>:class android.view.MenuInflater ( sub )
+Adding summary for boolean MainActivity.onCreateOptionsMenu(Menu)
+  _Bool boolean MainActivity.onCreateOptionsMenu(Menu)(class com.karthik.imager.MainActivity *this, class android.view.Menu *menu)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTPRINT
+  Dependency_map: 
+  TIME:0.033646 s FAILURE:NONE SYMOPS:19 CALLS:0,2
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 45 47 48] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3<none>:class android.view.MenuInflater *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{}<rearrange:47>:class android.view.MenuInflater ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = 1<update:48>:_Bool  ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+Transition boolean MainActivity.onCreateOptionsMenu(Menu) from footprint to re-exe
+Adding summary for boolean MainActivity.onCreateOptionsMenu(Menu)
+  _Bool boolean MainActivity.onCreateOptionsMenu(Menu)(class com.karthik.imager.MainActivity *this, class android.view.Menu *menu)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.033646 s FAILURE:NONE SYMOPS:19 CALLS:0,2
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited:] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3<none>:class android.view.MenuInflater *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{}<rearrange:47>:class android.view.MenuInflater ( sub )
+
+----------------------------------------------------------------
+
+
+#### Start: Re-Execution for boolean MainActivity.onCreateOptionsMenu(Menu) ####
+Finished re-execution for precondition 1 (6 nodes containing 5 states) (pass)
+#### [FUNCTION boolean MainActivity.onCreateOptionsMenu(Menu)] ... OK #####
+#### Finished: Re-Execution for boolean MainActivity.onCreateOptionsMenu(Menu) ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR boolean MainActivity.onCreateOptionsMenu(Menu): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3<none>:class android.view.MenuInflater *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{}<rearrange:47>:class android.view.MenuInflater ( sub ) 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR boolean MainActivity.onCreateOptionsMenu(Menu): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub ) 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar = val$3<none>:class android.view.MenuInflater *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v7.app.AppCompatActivity.getMenuInflater():android.view.MenuInflater|abductedRetvar|->{}<rearrange:47>:class android.view.MenuInflater ( sub )
+
+----------------------------------------------------------------
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub )
+Adding summary for boolean MainActivity.onCreateOptionsMenu(Menu)
+  _Bool boolean MainActivity.onCreateOptionsMenu(Menu)(class com.karthik.imager.MainActivity *this, class android.view.Menu *menu)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.043267 s FAILURE:NONE SYMOPS:38 CALLS:0,2
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 45 47 48] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ;
+this|->{}<rearrange:(z)47>:class com.karthik.imager.MainActivity ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = 1<update:48>:_Bool  ; 
+menu = val$2<formal>:class android.view.Menu *( sub ) ;
+this|->{}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+
+#### Start: Footprint Computation for void MainActivity.onCreate(Bundle) ####
+Adding summary for DashboardFragment.<init>()
+  void DashboardFragment.<init>()(class com.karthik.imager.Fragments.DashboardFragment *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.000000 s FAILURE:NONE SYMOPS:28 CALLS:0,1
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 50 51 69 71] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ;
+this|->{com.karthik.imager.Fragments.DashboardFragment.UNSPLASHBASEURL:val$2<rearrange:51>, com.karthik.imager.Fragments.DashboardFragment.unsplash_client_Id:val$3<rearrange:(z)50>}<rearrange:(z)50>:class com.karthik.imager.Fragments.DashboardFragment ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+return = val$4<initial>:void  ;
+this|->{com.karthik.imager.Fragments.DashboardFragment.UNSPLASHBASEURL:"https://api.unsplash.com/photos/"<update:51>, com.karthik.imager.Fragments.DashboardFragment.unsplash_client_Id:""<update:(z)50>}<formal(z)>:class com.karthik.imager.Fragments.DashboardFragment ( sub )
+----------------------------------------------------------------
+
+#### [FUNCTION void MainActivity.onCreate(Bundle)] ... OK #####
+#### Finished: Footprint Computation for void MainActivity.onCreate(Bundle) (18 nodes containing 19 states) ####
+#### [FUNCTION void MainActivity.onCreate(Bundle)] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 19
+n19(s1).n75(s2).n76(s3).n77(s4).n78(s5).n80(s6).n89(s7).n20]
+old_savedInstanceState != null ;
+old_this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+old_savedInstanceState = @f$1<formal>:class android.os.Bundle *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{com.karthik.imager.MainActivity.mContext:old_this<update:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   old_savedInstanceState != null *
+   this = @f$0<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   savedInstanceState = @f$1<formal>:class android.os.Bundle *( sub ) ;
+   old_this|->{com.karthik.imager.MainActivity.mContext:@f$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )  ]
+PROP 2:[path: linear paths: -1. max length: -1 has repetitions: 6 of node 67
+(P15{P16})(s13).n86(s14).n87(s15).n88(s16).n89(s17).n20where
+P4 = (P1{P2})(s14).n28(s15).n29(s16).n30(s17).n5
+P2 = n13(s7).n25(s8).n26(s9).n27(s10).n28(s11).n14
+P14 = (P11 + P12)(s95).n68(s96).n72(s97).n73(s98).n74(s99).n17
+P1 = n4(s10).n24(s11).n25(s12).n26(s13).n27
+P16 = n67(s7).n109(s8).n110(s9).n111(s10).n112(s11).n68
+P6 = n16(s53).n51(s54).n52(s55).n53(s56).n54(s57).n55(s58).n56(s59).n57(s60).n58(s61).n59(s62).n60(s63).n61(s64).n62(s65).n63(s66).n64(s67).n65(s68).n66(s69).n69(s70).n67(s72).n70(s73).n71(s74).n69
+P5 = P6(s75).n67(s77).n70(s78).n71(s79).n69
+P7 = P8(s80).n67(s82).n70(s83).n71(s84).n69
+P9 = P10(s85).n67(s87).n70(s88).n71(s89).n69
+P11 = P12(s90).n67(s92).n70(s93).n71(s94).n69
+P3 = n19(s1).n75(s2).n76(s3).n77(s4).n78(s5).n79(s8).n81
+P13 = (P3{P4})(s9).n82
+P15 = (P13{P14})(s10).n83(s11).n84(s12).n85
+P8 = (P5 + P6)
+P10 = (P7 + P8)
+P12 = (P9 + P10)
+]
+@f$3 != 0 ;  @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0 ;
+old_this = @f$4<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+old_savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{com.karthik.imager.MainActivity.mContext:old_this<formal(z)>}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   @f$1 != 0 ;  @f$0 != 0 *
+   this = @f$4<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+   $RET_android.support.v4.app.FragmentTransaction.commit():int|abductedRetvar = @f$6<none>:int ( sub ) ; 
+   $RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar = @f$3<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+   $RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar = @f$2<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+   $RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar = @f$0<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+   $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$1<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+   @f$0|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+   @f$1|->{}<rearrange:36>:class android.support.v4.app.FragmentManager ( sub ) ; 
+   @f$2|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+   @f$3|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+   old_this|->{com.karthik.imager.MainActivity.mContext:@f$5<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )  ]
+
+Specs changed: added new pre
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+Specs changed: added new pre
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.commit():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar = val$5<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar = val$6<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentManager ( sub )
+Adding summary for void MainActivity.onCreate(Bundle)
+  void void MainActivity.onCreate(Bundle)(class com.karthik.imager.MainActivity *this, class android.os.Bundle *savedInstanceState)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTPRINT
+  Dependency_map: void MainActivity.fillDummyValuesInDB()=0 void MainActivity.fillDummyValuesInSharedPreferences()=0 
+  TIME:0.109374 s FAILURE:NONE SYMOPS:90 CALLS:0,21
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 2 [nvisited: 25 27 28 29 31 42] ---------------------------
+PRE:
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+POST 1 of 1:
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ; 
+return = val$4<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:this<update:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+--------------------------- 2 of 2 [nvisited: 25 27 28 29 31 33 34 36 42] ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.commit():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar = val$5<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar = val$6<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentManager ( sub )
+POST 1 of 1:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+return = val$8<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:this<formal(z)>}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+Transition void MainActivity.onCreate(Bundle) from footprint to re-exe
+Adding summary for void MainActivity.onCreate(Bundle)
+  void void MainActivity.onCreate(Bundle)(class com.karthik.imager.MainActivity *this, class android.os.Bundle *savedInstanceState)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: void MainActivity.fillDummyValuesInDB()=-1 void MainActivity.fillDummyValuesInSharedPreferences()=-1 
+  TIME:0.109374 s FAILURE:NONE SYMOPS:90 CALLS:0,21
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 2 [nvisited:] ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.commit():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar = val$5<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar = val$6<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+--------------------------- 2 of 2 [nvisited:] ---------------------------
+PRE:
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+
+----------------------------------------------------------------
+
+
+#### Start: Re-Execution for void MainActivity.onCreate(Bundle) ####
+Finished re-execution for precondition 1 (18 nodes containing 17 states) (pass)
+Finished re-execution for precondition 2 (18 nodes containing 9 states) (pass)
+#### [FUNCTION void MainActivity.onCreate(Bundle)] ... OK #####
+#### Finished: Re-Execution for void MainActivity.onCreate(Bundle) ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR void MainActivity.onCreate(Bundle): 
+================================================
+
+PROP 1:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.commit():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar = val$5<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar = val$6<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentManager ( sub )
+PROP 2:
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub ) 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR void MainActivity.onCreate(Bundle): 
+================================================
+
+PROP 1:
+val$7 != 0 ;  val$6 != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+PROP 2:
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub ) 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.commit():int|abductedRetvar = val$3<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar = val$5<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar = val$6<none>:class android.support.v4.app.FragmentTransaction *( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.addToBackStack(java.lang.String):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentTransaction.add(int,android.support.v4.app.Fragment):android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.beginTransaction():android.support.v4.app.FragmentTransaction|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentTransaction ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:36>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+Specs changed: added new pre
+val$4 != 0 ;  val$3 != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+Specs changed: added new post
+PROP 1 of 1:
+val$3 != null ;
+return = val$4<initial>:void  ;
+val$1|->{com.karthik.imager.MainActivity.mContext:val$1<update:29>}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+Adding summary for void MainActivity.onCreate(Bundle)
+  void void MainActivity.onCreate(Bundle)(class com.karthik.imager.MainActivity *this, class android.os.Bundle *savedInstanceState)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: void MainActivity.fillDummyValuesInDB()=0 void MainActivity.fillDummyValuesInSharedPreferences()=0 
+  TIME:0.221649 s FAILURE:NONE SYMOPS:206 CALLS:0,21
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 2 [nvisited: 25 27 28 29 31 42] ---------------------------
+PRE:
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+POST 1 of 1:
+savedInstanceState != null ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = val$3<formal>:class android.os.Bundle *( sub ) ; 
+return = val$4<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:this<update:29>}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+--------------------------- 2 of 2 [nvisited: 25 27 28 29 31 33 34 36 42] ---------------------------
+PRE:
+val$4 != 0 ;  val$3 != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ;
+this|->{com.karthik.imager.MainActivity.mContext:val$2<rearrange:29>}<rearrange:(z)27>:class com.karthik.imager.MainActivity ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+savedInstanceState = null<formal>:class android.os.Bundle *( sub ) ; 
+return = val$5<initial>:void  ;
+this|->{com.karthik.imager.MainActivity.mContext:this<formal(z)>}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+
+#### Start: Footprint Computation for void MainActivity.onBackPressed() ####
+Adding summary for void DetailsFragment.onBackPressed()
+  void void DetailsFragment.onBackPressed()(class com.karthik.imager.Fragments.DetailsFragment *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: void DetailsFragment.hideRevealLayout()=0 
+  TIME:0.000000 s FAILURE:NONE SYMOPS:80 CALLS:0,21
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 2 [nvisited: 290 291 292 296] ---------------------------
+PRE:
+val$5 != 0 ;
+this = val$1<formal>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ;
+this|->{com.karthik.imager.Fragments.DetailsFragment.cancel_image:val$2<rearrange:(z)241>, com.karthik.imager.Fragments.DetailsFragment.fab:val$3<rearrange:256>, com.karthik.imager.Fragments.DetailsFragment.mContext:val$4<rearrange:253>, com.karthik.imager.Fragments.DetailsFragment.mRevealFlag:val$5<rearrange:(z)291>, com.karthik.imager.Fragments.DetailsFragment.non_reveal_layout:val$6<rearrange:261>, com.karthik.imager.Fragments.DetailsFragment.revealLayout:val$7<rearrange:259>, com.karthik.imager.Fragments.DetailsFragment.row3:val$8<rearrange:243>, com.karthik.imager.Fragments.DetailsFragment.wallpaper:val$9<rearrange:242>}<rearrange:(z)291>:class com.karthik.imager.Fragments.DetailsFragment ( sub ) ; 
+val$2|->{}<rearrange:(z)241>:class android.widget.ImageView ( sub ) ; 
+val$3|->{}<rearrange:(z)256>:class android.support.design.widget.FloatingActionButton ( sub ) ; 
+val$4|->{}<rearrange:(z)299>:class android.content.Context ( sub ) ; 
+val$6|->{}<rearrange:(z)261>:class android.widget.RelativeLayout ( sub ) ; 
+val$7|->{}<rearrange:(z)259>:class android.widget.LinearLayout ( sub ) ; 
+val$8|->{}<rearrange:(z)243>:class android.widget.RelativeLayout ( sub ) ; 
+val$9|->{}<rearrange:(z)242>:class android.widget.ImageView ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+return = val$10<initial>:void  ;
+this|->{com.karthik.imager.Fragments.DetailsFragment.cancel_image:val$2<formal(z)>, com.karthik.imager.Fragments.DetailsFragment.fab:val$3<formal>, com.karthik.imager.Fragments.DetailsFragment.mContext:val$4<formal>, com.karthik.imager.Fragments.DetailsFragment.mRevealFlag:0<update:292>, com.karthik.imager.Fragments.DetailsFragment.non_reveal_layout:val$6<formal>, com.karthik.imager.Fragments.DetailsFragment.revealLayout:val$7<formal>, com.karthik.imager.Fragments.DetailsFragment.row3:val$8<formal>, com.karthik.imager.Fragments.DetailsFragment.wallpaper:val$9<formal>}<formal(z)>:class com.karthik.imager.Fragments.DetailsFragment ( sub ) ; 
+val$2|->{}<formal(z)>:class android.widget.ImageView ( sub ) ; 
+val$3|->{}<formal(z)>:class android.support.design.widget.FloatingActionButton ( sub ) ; 
+val$4|->{}<formal(z)>:class android.content.Context ( sub ) ; 
+val$6|->{}<formal(z)>:class android.widget.RelativeLayout ( sub ) ; 
+val$7|->{}<formal(z)>:class android.widget.LinearLayout ( sub ) ; 
+val$8|->{}<formal(z)>:class android.widget.RelativeLayout ( sub ) ; 
+val$9|->{}<formal(z)>:class android.widget.ImageView ( sub )
+----------------------------------------------------------------
+--------------------------- 2 of 2 [nvisited: 290 291 294 296] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ;
+this|->{com.karthik.imager.Fragments.DetailsFragment.mRevealFlag:0<rearrange:(z)291>}<rearrange:(z)291>:class com.karthik.imager.Fragments.DetailsFragment ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.Fragments.DetailsFragment *( sub ) ; 
+return = val$2<initial>:void  ;
+this|->{com.karthik.imager.Fragments.DetailsFragment.mRevealFlag:0<formal(z)>}<formal(z)>:class com.karthik.imager.Fragments.DetailsFragment ( sub )
+----------------------------------------------------------------
+
+#### [FUNCTION void MainActivity.onBackPressed()] ... OK #####
+#### Finished: Footprint Computation for void MainActivity.onBackPressed() (14 nodes containing 19 states) ####
+#### [FUNCTION void MainActivity.onBackPressed()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 7
+n7(s1).n31(s2).n32(s3).n34(s4).n37(s5).n41(s6).n8]
+old_this = @f$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   this = @f$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 1<none>:int ( sub ) ; 
+   $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$0<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+   @f$0|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub ) ; 
+   old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )  ]
+PROP 2:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 7
+n7(s1).n31(s2).n32(s3).n33(s7).n35(s13).n41(s14).n8]
+old_this = @f$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   @f$2 != 1 ;  @f$2 != 2 *
+   this = @f$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = @f$2<none>:int ( sub ) ; 
+   $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$0<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+   @f$0|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub ) ; 
+   old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )  ]
+PROP 3:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 7
+(P1{P2})(s11).n41(s12).n8where
+P2 = n28(s10).n118(s11).n120(s12).n121(s13).n122(s14).n29
+P1 = n7(s1).n31(s2).n32(s3).n33(s7).n36(s8).n38(s9).n39(s10).n40
+]
+old_this = @f$3<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0 *
+   this = @f$3<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = @f$2<none>:class java.lang.Object *( sub ) ; 
+   $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = @f$0<none>:class java.util.List *( sub ) ; 
+   $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 2<none>:int ( sub ) ; 
+   $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$1<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+   @f$0|->{}<rearrange:103>:class java.util.List ( sub ) ; 
+   @f$1|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub ) ; 
+   old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )  ]
+PROP 4:[path: linear paths: -1. max length: -1 has repetitions: 2 of node 31
+(P10{P11})(s11).n41(s12).n8where
+P2 = n19(s19).n88(s20).n98(s21).n99(s22).n100(s23).n101(s24).n20
+P11 = (P8{P9})(s20).n122(s21).n29
+P9 = (P6{P7})(s36).n138(s37).n139(s38).n140(s39).n32
+P10 = n7(s1).n31(s2).n32(s3).n33(s7).n36(s8).n38(s9).n39(s10).n40
+P4 = n43(s6).n146(s7).n147(s8).n148(s9).n44
+P8 = n28(s17).n117(s19).n119
+P1 = n31(s21).n123
+P3 = (P1{P2})(s22).n124(s23).n125(s24).n126(s25).n127
+P5 = (P3{P4})(s26).n128
+P6 = (P5{P4})(s27).n129(s28).n130(s29).n131(s30).n132(s31).n133(s32).n134(s33).n135(s34).n136(s35).n137
+P7 = n262(s6).n268(s7).n269(s8).n270(s9).n263
+]
+old_this = @f$10<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = _t$0<initial>:void  ;
+old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+[footprint
+   @f$9 != 0 ;  @f$1 != 0 ;  @f$0 != 0 *
+   this = @f$10<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+   $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = @f$9<none>:class java.lang.Object *( sub ) ; 
+   $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = @f$0<none>:class java.util.List *( sub ) ; 
+   $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 2<none>:int ( sub ) ; 
+   $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$1<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+   @f$0|->{}<rearrange:103>:class java.util.List ( sub ) ; 
+   @f$1|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub ) ; 
+   old_this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )  ]
+
+Specs changed: added new pre
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 1 ;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 2 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$3<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 1<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$2<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+Specs changed: added new pre
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$2<none>:class java.lang.Object *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$3<none>:class java.util.List *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{}<rearrange:103>:class java.util.List ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+Adding summary for void MainActivity.onBackPressed()
+  void void MainActivity.onBackPressed()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTPRINT
+  Dependency_map: 
+  TIME:0.119081 s FAILURE:NONE SYMOPS:89 CALLS:0,7
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 3 [nvisited: 95 96 97 106] ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 1 ;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 2 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$3<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$4<initial>:void  ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+--------------------------- 2 of 3 [nvisited: 95 96 97 99 106] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 1<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$2<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$3<initial>:void  ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+--------------------------- 3 of 3 [nvisited: 95 96 97 103 106] ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$2<none>:class java.lang.Object *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$3<none>:class java.util.List *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{}<rearrange:103>:class java.util.List ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$5<initial>:void  ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+Transition void MainActivity.onBackPressed() from footprint to re-exe
+Adding summary for void MainActivity.onBackPressed()
+  void void MainActivity.onBackPressed()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.119081 s FAILURE:NONE SYMOPS:89 CALLS:0,7
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 3 [nvisited:] ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$2<none>:class java.lang.Object *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$3<none>:class java.util.List *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{}<rearrange:103>:class java.util.List ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+--------------------------- 2 of 3 [nvisited:] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 1<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$2<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+--------------------------- 3 of 3 [nvisited:] ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 1 ;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 2 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$3<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+
+
+#### Start: Re-Execution for void MainActivity.onBackPressed() ####
+Finished re-execution for precondition 1 (14 nodes containing 14 states) (pass)
+Finished re-execution for precondition 2 (14 nodes containing 8 states) (pass)
+Finished re-execution for precondition 3 (14 nodes containing 9 states) (pass)
+#### [FUNCTION void MainActivity.onBackPressed()] ... OK #####
+#### Finished: Re-Execution for void MainActivity.onBackPressed() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR void MainActivity.onBackPressed(): 
+================================================
+
+PROP 1:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$2<none>:class java.lang.Object *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$3<none>:class java.util.List *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{}<rearrange:103>:class java.util.List ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+PROP 2:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 1<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$2<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+PROP 3:
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 1 ;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 2 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$3<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub ) 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR void MainActivity.onBackPressed(): 
+================================================
+
+PROP 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+PROP 2:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+PROP 3:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$2<none>:class java.lang.Object *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$3<none>:class java.util.List *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$4<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{}<rearrange:103>:class java.util.List ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = 1<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$2<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 1 ;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar != 2 ;
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$2<none>:int ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$3<none>:class android.support.v4.app.FragmentManager *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub ) ; 
+$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{}<rearrange:97>:class android.support.v4.app.FragmentManager ( sub )
+
+----------------------------------------------------------------
+Specs changed: added new pre
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+Adding summary for void MainActivity.onBackPressed()
+  void void MainActivity.onBackPressed()(class com.karthik.imager.MainActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.259786 s FAILURE:NONE SYMOPS:218 CALLS:0,7
+  ERRORS: 
+WARNINGS: 
+--------------------------- 1 of 1 [nvisited: 95 96 97 103 106] ---------------------------
+PRE:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ;
+this|->{}<rearrange:(z)96>:class com.karthik.imager.MainActivity ( sub )
+POST 1 of 1:
+this = val$1<formal>:class com.karthik.imager.MainActivity *( sub ) ; 
+return = val$2<initial>:void  ;
+this|->{}<formal(z)>:class com.karthik.imager.MainActivity ( sub )
+----------------------------------------------------------------
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: mobile/src/main/java/com/karthik/imager/MainActivity.java  LOC: 108  VISITED: 81/88 SYMOPS: 1135
++  num_procs: 7 (7 ok, 0 timeouts, 0 errors, 0 warnings, 27 infos)
++  detail procs:
++    - No Errors and No Specs: 0
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 7
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:27
++  specs: 8
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:
+Interprocedural footprint analysis terminated in 1.238195 sec

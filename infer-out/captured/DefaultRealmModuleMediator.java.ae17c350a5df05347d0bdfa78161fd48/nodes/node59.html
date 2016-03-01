@@ -1,0 +1,884 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node59</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE112">59</a></h1></center>PROC:  <a href="./../io.realm.DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(java.lang.Class,io.realm.Realm,org.b6301b036b57a6597cd78390ad99d38d.html">RealmObject DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(Class,Realm,JSONObject,boolean)</a> LINE: <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE112">112</a>
+<br>PREDS:
+ <a href="./../nodes/node55.html"><span class='visited'>N_55<span class='expansion'>node55 preds:53 succs:59 exn:12 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_60<span class='expansion'>node60 preds:59 succs:11 exn:12 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_12<span class='expansion'>node12 preds: succs:11 exn:11 
+NOT VISITED</span></span><br>
+<span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 112];
+                          NULLIFY(&amp;json,false); [line 112];
+                          NULLIFY(&amp;realm,false); [line 112];
+                          NULLIFY(&amp;update,false); [line 112];
+                          n$15=*&amp;clazz:class java.lang.Class * [line 112];
+                          n$16=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$15:class java.lang.Class *) [line 112];
+                          *&amp;$irvar0:class io.realm.exceptions.RealmException *=n$16 [line 112];
+                          REMOVE_TEMPS(n$15,n$16); [line 112];
+                          NULLIFY(&amp;clazz,false); [line 112];
+                          </span><hr width="100%">
+ <a name="session5"href="./../nodes/node59.html#session5">node59#session5</a>( <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE112">112</a>)<LISTING><span class='color_black'>**** [FP:0] RealmObject DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(Class,Realm,JSONObject,boolean) Node: 59, Procedure: RealmObject DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(Class,Realm,JSONObject,boolean), Session: 5, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$5 = 0</span> ;
+  <span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+  <span class='color_red'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+  <span class='color_red'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>update:109</span>:void </span> ;
+  <span class='color_red'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$5 = 0</span> *
+     <span class='color_red'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+     <span class='color_red'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+     <span class='color_red'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+     <span class='color_red'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+     <span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+     <span class='color_red'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 112];
+  NULLIFY(&amp;json,false); [line 112];
+  NULLIFY(&amp;realm,false); [line 112];
+  NULLIFY(&amp;update,false); [line 112];
+  n$15=*&amp;clazz:class java.lang.Class * [line 112];
+  n$16=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$15:class java.lang.Class *) [line 112];
+  *&amp;$irvar0:class io.realm.exceptions.RealmException *=n$16 [line 112];
+  REMOVE_TEMPS(n$15,n$16); [line 112];
+  NULLIFY(&amp;clazz,false); [line 112];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;json,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;realm,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;update,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$15=*&amp;clazz:class java.lang.Class * [line 112]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;clazz
+    Prop: 
+    <span class='color_blue'>@f$5 = 0 ;
+    UND &lt; boolean Object.equals(Object) &gt; :109(0) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$17 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub ) ; 
+    old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$5 = 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;clazz
+    prop before:
+    <span class='color_blue'>@f$5 = 0 ;
+    UND &lt; boolean Object.equals(Object) &gt; :109(0) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$17 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub ) ; 
+    old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$5 = 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = n$17 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;  <span class='color_red'>n$15 = clazz</span> ;
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$16=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$15:class java.lang.Class *) [line 112]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</span>
+    Undefined function RealmException RealmProxyMediator.getMissingProxyClassException(Class), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$16 = @f$6
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$6 = 0</span> ;  <span class='color_blue'>n$15 = clazz</span> ;  <span class='color_red'>n$16 = @f$5</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112(@f$5)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$6 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_red'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$16 [line 112]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>@f$6 = 0 ;  n$15 = clazz ;  n$16 = @f$5 ;
+    @f$5 != 0 ;  UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112(@f$5) ;  UND &lt; boolean Object.equals(Object) &gt; :109(0) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$19 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub ) ; 
+    old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$6 = 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>@f$6 = 0 ;  n$15 = clazz ;  n$16 = @f$5 ;
+    @f$5 != 0 ;  UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112(@f$5) ;  UND &lt; boolean Object.equals(Object) &gt; :109(0) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$19 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub ) ; 
+    old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$6 = 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$6 = 0</span> ;  <span class='color_blue'>n$15 = clazz</span> ;  <span class='color_blue'>n$16 = @f$5</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112(@f$5)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = n$19 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$6 = 0</span> ;  <span class='color_blue'>n$15 = clazz</span> ;  <span class='color_blue'>n$16 = $irvar0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$5 <span class='color_orange'>update:112</span></span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$15,n$16); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$6 = 0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$5 <span class='color_orange'>update:112</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;clazz,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$6 = 0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$5 <span class='color_orange'>update:112</span>:void </span> ;
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$6 = 0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$5 <span class='color_orange'>update:112</span></span>:void </span> ;
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$6 = 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>this = @f$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_red'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)109</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session17"href="./../nodes/node59.html#session17">node59#session17</a>( <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE112">112</a>)<LISTING><span class='color_black'>**** [RE:0] RealmObject DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(Class,Realm,JSONObject,boolean) Node: 59, Procedure: RealmObject DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(Class,Realm,JSONObject,boolean), Session: 17, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+  <span class='color_red'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+  <span class='color_red'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>update:109</span>:void </span> ; 
+  <span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+  <span class='color_red'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 112];
+  NULLIFY(&amp;json,false); [line 112];
+  NULLIFY(&amp;realm,false); [line 112];
+  NULLIFY(&amp;update,false); [line 112];
+  n$15=*&amp;clazz:class java.lang.Class * [line 112];
+  n$16=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$15:class java.lang.Class *) [line 112];
+  *&amp;$irvar0:class io.realm.exceptions.RealmException *=n$16 [line 112];
+  REMOVE_TEMPS(n$15,n$16); [line 112];
+  NULLIFY(&amp;clazz,false); [line 112];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;json,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;realm,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;update,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$15=*&amp;clazz:class java.lang.Class * [line 112]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;clazz
+    Prop: 
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$17 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub ) ; 
+    old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub ) ;
+    clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$5 = clazz</span> ;
+    <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = <span class='color_red'>n$15 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = <span class='color_red'>n$15 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_red'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$16=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$15:class java.lang.Class *) [line 112]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</span>
+    Undefined function RealmException RealmProxyMediator.getMissingProxyClassException(Class), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$5 = clazz</span> ;  <span class='color_red'>val$6 = $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar</span> ;
+    <span class='color_red'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = n$15 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = n$15 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = <span class='color_red'>n$16 <span class='color_orange'>formal</span></span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$16 [line 112]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>val$5 = clazz ;  val$6 = $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar ;
+    $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar != 0 ;  UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar) ;  UND &lt; boolean Object.equals(Object) &gt; :109(0) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$19 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub ) ; 
+    old_clazz = n$15 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = n$15 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = n$16 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub ) ;
+    clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$5 = clazz</span> ;  <span class='color_blue'>val$6 = $RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = n$15 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = n$15 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$16 <span class='color_orange'>update:112</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = n$16 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$15,n$16); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = <span class='color_red'>val$5 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = <span class='color_red'>val$5 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$6 <span class='color_orange'>update:112</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = <span class='color_red'>val$6 <span class='color_orange'>formal</span></span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_red'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;clazz,false); [line 112]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = 0 <span class='color_orange'>nullify</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$6 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; RealmException RealmProxyMediator.getMissingProxyClassException(Class) &gt; :112($RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar)</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :109(0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$2 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_json = val$4 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$5 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$6 <span class='color_orange'>update:112</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.internal.RealmProxyMediator.getMissingProxyClassException(java.lang.Class):io.realm.exceptions.RealmException|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class io.realm.exceptions.RealmException *( sub )</span> ;
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    
+    
+  

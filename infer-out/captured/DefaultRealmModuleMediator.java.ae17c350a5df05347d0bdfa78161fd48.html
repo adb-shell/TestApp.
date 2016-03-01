@@ -1,0 +1,957 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File mobile/build/intermediates/classes/debug/io/realm/DefaultRealmModuleMediator.java</h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package io.realm;</td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import android.util.JsonReader;</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import io.realm.internal.ColumnInfo;</td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import io.realm.internal.ImplicitTransaction;</td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import io.realm.internal.RealmObjectProxy;</td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import io.realm.internal.RealmProxyMediator;</td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import io.realm.internal.Table;</td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import java.io.IOException;</td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import java.util.Collections;</td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import java.util.HashMap;</td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import java.util.HashSet;</td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import java.util.List;</td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import java.util.Map;</td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import java.util.Set;</td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import org.json.JSONException;</td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import org.json.JSONObject;</td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">import com.karthik.imager.APIService.DummyObject;</td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">@io.realm.annotations.RealmModule</td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">class DefaultRealmModuleMediator extends RealmProxyMediator { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node7.html"><span class='visitedproof'>S_7<span class='expansion'>node7 preds: succs:50 exn:8 Start
+DECLARE_LOCALS(&amp;return); [line 22];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node8.html"><span class='visitedproof'>E_8<span class='expansion'>node8 preds:51 9 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_9<span class='expansion'>node9 preds: succs:8 exn:8 Instructions
+APPLY_ABSTRACTION; [line 22];
+
+NOT VISITED</span></span> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node50.html"><span class='visitedproof'>I_50<span class='expansion'>node50 preds:7 succs:51 exn:9 Instructions
+n$0=*&amp;this:class io.realm.DefaultRealmModuleMediator * [line 22];
+_fun_RealmProxyMediator.&lt;init&gt;()(n$0:class io.realm.DefaultRealmModuleMediator *) [line 22];
+REMOVE_TEMPS(n$0); [line 22];
+NULLIFY(&amp;this,false); [line 22];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node51.html"><span class='visitedproof'>I_51<span class='expansion'>node51 preds:50 succs:8 exn:9 Instructions
+APPLY_ABSTRACTION; [line 22];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.<init>().9ce2c9c3e0999947cf0d5dce3bddc63e.html">DefaultRealmModuleMediator.&lt;init&gt;(): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmProxyMediator.<init>()</div></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">    private static final Set&lt;Class&lt;? extends RealmObject&gt;&gt; MODEL_CLASSES;</td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">    static {</td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">        Set&lt;Class&lt;? extends RealmObject&gt;&gt; modelClasses = new HashSet&lt;Class&lt;? extends RealmObject&gt;&gt;(); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node1.html"><span class='visitedproof'>S_1<span class='expansion'>node1 preds: succs:37 exn:2 Start
+DECLARE_LOCALS(&amp;return,&amp;modelClasses,&amp;$irvar0); [line 26];
+NULLIFY(&amp;$irvar0,false); [line 26];
+NULLIFY(&amp;field,false); [line 26];
+NULLIFY(&amp;modelClasses,false); [line 26];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node37.html"><span class='visitedproof'>I_37<span class='expansion'>node37 preds:1 succs:38 exn:3 Instructions
+n$0=_fun___new(sizeof(class java.util.HashSet ):class java.util.HashSet *) [line 26];
+_fun_HashSet.&lt;init&gt;()(n$0:class java.util.HashSet *) [line 26];
+*&amp;modelClasses:class java.util.HashSet *=n$0 [line 26];
+REMOVE_TEMPS(n$0); [line 26];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.<clinit>():void.cbd564d92c6dd4c3fa8fdb126e0a72de.html">void DefaultRealmModuleMediator.&lt;clinit&gt;(): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION HashSet.<init>()</div></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        modelClasses.add(DummyObject.class); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node38.html"><span class='visitedproof'>I_38<span class='expansion'>node38 preds:37 succs:39 exn:3 Instructions
+n$1=*&amp;modelClasses:class java.util.HashSet * [line 27];
+n$2=*n$1:class java.util.HashSet  [line 27];
+n$3=_fun_boolean HashSet.add(Object)(n$1:class java.util.HashSet *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 27];
+*&amp;$irvar0:_Bool =n$3 [line 27];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 27];
+NULLIFY(&amp;$irvar0,false); [line 27];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean HashSet.add(Object)</div></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">        MODEL_CLASSES = Collections.unmodifiableSet(modelClasses); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node39.html"><span class='visitedproof'>I_39<span class='expansion'>node39 preds:38 succs:40 exn:3 Instructions
+n$4=*&amp;modelClasses:class java.util.HashSet * [line 28];
+n$5=_fun_Set Collections.unmodifiableSet(Set)(n$4:class java.util.HashSet *) [line 28];
+*&amp;$irvar0:class java.util.Set *=n$5 [line 28];
+REMOVE_TEMPS(n$4,n$5); [line 28];
+NULLIFY(&amp;modelClasses,false); [line 28];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node40.html"><span class='visitedproof'>I_40<span class='expansion'>node40 preds:39 succs:41 exn:3 Instructions
+n$6=*&amp;$irvar0:class java.util.Set * [line 28];
+*&amp;#GB$io.realm.DefaultRealmModuleMediator.io.realm.DefaultRealmModuleMediator.MODEL_CLASSES:class io.realm.DefaultRealmModuleMediator =n$6 [line 28];
+REMOVE_TEMPS(n$6); [line 28];
+NULLIFY(&amp;$irvar0,false); [line 28];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Set Collections.unmodifiableSet(Set)</div></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">    } <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node2.html"><span class='visitedproof'>E_2<span class='expansion'>node2 preds:41 3 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_3<span class='expansion'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar0,false); [line 29];
+NULLIFY(&amp;modelClasses,false); [line 29];
+APPLY_ABSTRACTION; [line 29];
+
+NOT VISITED</span></span> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node41.html"><span class='visitedproof'>I_41<span class='expansion'>node41 preds:40 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">    public Table createTable(Class&lt;? extends RealmObject&gt; clazz, ImplicitTransaction transaction) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node28.html"><span class='visitedproof'>S_28<span class='expansion'>node28 preds: succs:98 exn:29 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 32];
+NULLIFY(&amp;$irvar0,false); [line 32];
+NULLIFY(&amp;this,false); [line 32];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.createTable(java.lang.Class,io.realm.internal.ImplicitTransactio.7858d5f4ffe8323a20dd0bcfc631dd9c.html">Table DefaultRealmModuleMediator.createTable(Class,ImplicitTransaction): 3 specs</a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">        checkClass(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node98.html"><span class='visitedproof'>I_98<span class='expansion'>node98 preds:28 succs:99 exn:30 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 33];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 33];
+REMOVE_TEMPS(n$0); [line 33];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)</div></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node99.html"><span class='visitedproof'>I_99<span class='expansion'>node99 preds:98 succs:100 101 exn:30 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 35];
+n$2=*n$1:class java.lang.Class  [line 35];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 35];
+*&amp;$irvar0:_Bool =n$3 [line 35];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 35];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node100.html"><span class='visitedproof'>C_100<span class='expansion'>node100 preds:99 succs:102 exn:30 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 35];
+PRUNE(!(n$4 == 0), true); [line 35];
+REMOVE_TEMPS(n$4); [line 35];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node101.html"><span class='visitedproof'>C_101<span class='expansion'>node101 preds:99 succs:104 exn:30 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 35];
+PRUNE((n$4 == 0), false); [line 35];
+REMOVE_TEMPS(n$4); [line 35];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">            return DummyObjectRealmProxy.initTable(transaction); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node102.html"><span class='visitedproof'>I_102<span class='expansion'>node102 preds:100 succs:103 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 36];
+NULLIFY(&amp;clazz,false); [line 36];
+n$5=*&amp;transaction:class io.realm.internal.ImplicitTransaction * [line 36];
+n$6=_fun_Table DummyObjectRealmProxy.initTable(ImplicitTransaction)(n$5:class io.realm.internal.ImplicitTransaction *) [line 36];
+*&amp;$irvar0:class io.realm.internal.Table *=n$6 [line 36];
+REMOVE_TEMPS(n$5,n$6); [line 36];
+NULLIFY(&amp;transaction,false); [line 36];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node103.html"><span class='visitedproof'>I_103<span class='expansion'>node103 preds:102 succs:29 exn:30 Instructions
+n$7=*&amp;$irvar0:class io.realm.internal.Table * [line 36];
+*&amp;return:class io.realm.internal.Table *=n$7 [line 36];
+REMOVE_TEMPS(n$7); [line 36];
+NULLIFY(&amp;$irvar0,false); [line 36];
+APPLY_ABSTRACTION; [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node29.html"><span class='visitedproof'>E_29<span class='expansion'>node29 preds:105 103 30 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node30.html"><span class='visitedproof'>I_30<span class='expansion'>node30 preds: succs:29 exn:29 Instructions
+NULLIFY(&amp;$irvar0,false); [line 38];
+NULLIFY(&amp;clazz,false); [line 38];
+NULLIFY(&amp;transaction,false); [line 38];
+APPLY_ABSTRACTION; [line 38];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node104.html"><span class='visitedproof'>I_104<span class='expansion'>node104 preds:101 succs:105 exn:30 Instructions
+NULLIFY(&amp;$irvar0,false); [line 38];
+NULLIFY(&amp;transaction,false); [line 38];
+n$8=*&amp;clazz:class java.lang.Class * [line 38];
+n$9=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$8:class java.lang.Class *) [line 38];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$9 [line 38];
+REMOVE_TEMPS(n$8,n$9); [line 38];
+NULLIFY(&amp;clazz,false); [line 38];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node105.html"><span class='visitedproof'>I_105<span class='expansion'>node105 preds:104 succs:29 exn:30 Instructions
+n$10=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 38];
+*&amp;return:class io.realm.internal.Table *=EXN n$10 [line 38];
+REMOVE_TEMPS(n$10); [line 38];
+NULLIFY(&amp;$irvar0,false); [line 38];
+APPLY_ABSTRACTION; [line 38];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">    public ColumnInfo validateTable(Class&lt;? extends RealmObject&gt; clazz, ImplicitTransaction transaction) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node19.html"><span class='visitedproof'>S_19<span class='expansion'>node19 preds: succs:72 exn:20 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 43];
+NULLIFY(&amp;$irvar0,false); [line 43];
+NULLIFY(&amp;this,false); [line 43];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.validateTable(java.lang.Class,io.realm.internal.ImplicitTransact.898a5f7a25e299a48c78cabc72968b3a.html">ColumnInfo DefaultRealmModuleMediator.validateTable(Class,ImplicitTransaction): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">        checkClass(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node72.html"><span class='visitedproof'>I_72<span class='expansion'>node72 preds:19 succs:73 exn:21 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 44];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 44];
+REMOVE_TEMPS(n$0); [line 44];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)</div></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node73.html"><span class='visitedproof'>I_73<span class='expansion'>node73 preds:72 succs:74 75 exn:21 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 46];
+n$2=*n$1:class java.lang.Class  [line 46];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 46];
+*&amp;$irvar0:_Bool =n$3 [line 46];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 46];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node74.html"><span class='visitedproof'>C_74<span class='expansion'>node74 preds:73 succs:76 exn:21 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 46];
+PRUNE(!(n$4 == 0), true); [line 46];
+REMOVE_TEMPS(n$4); [line 46];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node75.html"><span class='visitedproof'>C_75<span class='expansion'>node75 preds:73 succs:78 exn:21 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 46];
+PRUNE((n$4 == 0), false); [line 46];
+REMOVE_TEMPS(n$4); [line 46];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">            return DummyObjectRealmProxy.validateTable(transaction); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node76.html"><span class='visitedproof'>I_76<span class='expansion'>node76 preds:74 succs:77 exn:21 Instructions
+NULLIFY(&amp;$irvar0,false); [line 47];
+NULLIFY(&amp;clazz,false); [line 47];
+n$5=*&amp;transaction:class io.realm.internal.ImplicitTransaction * [line 47];
+n$6=_fun_DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)(n$5:class io.realm.internal.ImplicitTransaction *) [line 47];
+*&amp;$irvar0:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=n$6 [line 47];
+REMOVE_TEMPS(n$5,n$6); [line 47];
+NULLIFY(&amp;transaction,false); [line 47];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node77.html"><span class='visitedproof'>I_77<span class='expansion'>node77 preds:76 succs:20 exn:21 Instructions
+n$7=*&amp;$irvar0:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 47];
+*&amp;return:class io.realm.internal.ColumnInfo *=n$7 [line 47];
+REMOVE_TEMPS(n$7); [line 47];
+NULLIFY(&amp;$irvar0,false); [line 47];
+APPLY_ABSTRACTION; [line 47];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)</div></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node20.html"><span class='visitedproof'>E_20<span class='expansion'>node20 preds:79 77 21 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node21.html"><span class='visitedproof'>I_21<span class='expansion'>node21 preds: succs:20 exn:20 Instructions
+NULLIFY(&amp;$irvar0,false); [line 49];
+NULLIFY(&amp;clazz,false); [line 49];
+NULLIFY(&amp;transaction,false); [line 49];
+APPLY_ABSTRACTION; [line 49];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node78.html"><span class='visitedproof'>I_78<span class='expansion'>node78 preds:75 succs:79 exn:21 Instructions
+NULLIFY(&amp;$irvar0,false); [line 49];
+NULLIFY(&amp;transaction,false); [line 49];
+n$8=*&amp;clazz:class java.lang.Class * [line 49];
+n$9=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$8:class java.lang.Class *) [line 49];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$9 [line 49];
+REMOVE_TEMPS(n$8,n$9); [line 49];
+NULLIFY(&amp;clazz,false); [line 49];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node79.html"><span class='visitedproof'>I_79<span class='expansion'>node79 preds:78 succs:20 exn:21 Instructions
+n$10=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 49];
+*&amp;return:class io.realm.internal.ColumnInfo *=EXN n$10 [line 49];
+REMOVE_TEMPS(n$10); [line 49];
+NULLIFY(&amp;$irvar0,false); [line 49];
+APPLY_ABSTRACTION; [line 49];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">    public List&lt;String&gt; getFieldNames(Class&lt;? extends RealmObject&gt; clazz) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node34.html"><span class='visitedproof'>S_34<span class='expansion'>node34 preds: succs:122 exn:35 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 54];
+NULLIFY(&amp;$irvar0,false); [line 54];
+NULLIFY(&amp;this,false); [line 54];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.getFieldNames(java.lang.Class):java.util.List.03f439500c7ce9305730e267babca9f7.html">List DefaultRealmModuleMediator.getFieldNames(Class): 2 specs</a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">        checkClass(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node122.html"><span class='visitedproof'>I_122<span class='expansion'>node122 preds:34 succs:123 exn:36 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 55];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 55];
+REMOVE_TEMPS(n$0); [line 55];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)</div></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node123.html"><span class='visitedproof'>I_123<span class='expansion'>node123 preds:122 succs:124 125 exn:36 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 57];
+n$2=*n$1:class java.lang.Class  [line 57];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 57];
+*&amp;$irvar0:_Bool =n$3 [line 57];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 57];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node124.html"><span class='visitedproof'>C_124<span class='expansion'>node124 preds:123 succs:126 exn:36 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 57];
+PRUNE(!(n$4 == 0), true); [line 57];
+REMOVE_TEMPS(n$4); [line 57];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node125.html"><span class='visitedproof'>C_125<span class='expansion'>node125 preds:123 succs:128 exn:36 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 57];
+PRUNE((n$4 == 0), false); [line 57];
+REMOVE_TEMPS(n$4); [line 57];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">            return DummyObjectRealmProxy.getFieldNames(); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node126.html"><span class='visitedproof'>I_126<span class='expansion'>node126 preds:124 succs:127 exn:36 Instructions
+NULLIFY(&amp;$irvar0,false); [line 58];
+NULLIFY(&amp;clazz,false); [line 58];
+n$5=_fun_List DummyObjectRealmProxy.getFieldNames()() [line 58];
+*&amp;$irvar0:class java.util.List *=n$5 [line 58];
+REMOVE_TEMPS(n$5); [line 58];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node127.html"><span class='visitedproof'>I_127<span class='expansion'>node127 preds:126 succs:35 exn:36 Instructions
+n$6=*&amp;$irvar0:class java.util.List * [line 58];
+*&amp;return:class java.util.List *=n$6 [line 58];
+REMOVE_TEMPS(n$6); [line 58];
+NULLIFY(&amp;$irvar0,false); [line 58];
+APPLY_ABSTRACTION; [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node35.html"><span class='visitedproof'>E_35<span class='expansion'>node35 preds:129 127 36 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node36.html"><span class='visitedproof'>I_36<span class='expansion'>node36 preds: succs:35 exn:35 Instructions
+NULLIFY(&amp;$irvar0,false); [line 60];
+NULLIFY(&amp;clazz,false); [line 60];
+APPLY_ABSTRACTION; [line 60];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node128.html"><span class='visitedproof'>I_128<span class='expansion'>node128 preds:125 succs:129 exn:36 Instructions
+NULLIFY(&amp;$irvar0,false); [line 60];
+n$7=*&amp;clazz:class java.lang.Class * [line 60];
+n$8=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$7:class java.lang.Class *) [line 60];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$8 [line 60];
+REMOVE_TEMPS(n$7,n$8); [line 60];
+NULLIFY(&amp;clazz,false); [line 60];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node129.html"><span class='visitedproof'>I_129<span class='expansion'>node129 preds:128 succs:35 exn:36 Instructions
+n$9=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 60];
+*&amp;return:class java.util.List *=EXN n$9 [line 60];
+REMOVE_TEMPS(n$9); [line 60];
+NULLIFY(&amp;$irvar0,false); [line 60];
+APPLY_ABSTRACTION; [line 60];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">    public String getTableName(Class&lt;? extends RealmObject&gt; clazz) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node4.html"><span class='visitedproof'>S_4<span class='expansion'>node4 preds: succs:42 exn:5 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 65];
+NULLIFY(&amp;$irvar0,false); [line 65];
+NULLIFY(&amp;this,false); [line 65];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.getTableName(java.lang.Class):java.lang.String.1a45b6c11dadf3f6bd2cda78e7c5a122.html">String DefaultRealmModuleMediator.getTableName(Class): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">        checkClass(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node42.html"><span class='visitedproof'>I_42<span class='expansion'>node42 preds:4 succs:43 exn:6 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 66];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 66];
+REMOVE_TEMPS(n$0); [line 66];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)</div></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node43.html"><span class='visitedproof'>I_43<span class='expansion'>node43 preds:42 succs:44 45 exn:6 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 68];
+n$2=*n$1:class java.lang.Class  [line 68];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 68];
+*&amp;$irvar0:_Bool =n$3 [line 68];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 68];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node44.html"><span class='visitedproof'>C_44<span class='expansion'>node44 preds:43 succs:46 exn:6 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 68];
+PRUNE(!(n$4 == 0), true); [line 68];
+REMOVE_TEMPS(n$4); [line 68];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node45.html"><span class='visitedproof'>C_45<span class='expansion'>node45 preds:43 succs:48 exn:6 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 68];
+PRUNE((n$4 == 0), false); [line 68];
+REMOVE_TEMPS(n$4); [line 68];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">            return DummyObjectRealmProxy.getTableName(); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node46.html"><span class='visitedproof'>I_46<span class='expansion'>node46 preds:44 succs:47 exn:6 Instructions
+NULLIFY(&amp;$irvar0,false); [line 69];
+NULLIFY(&amp;clazz,false); [line 69];
+n$5=_fun_String DummyObjectRealmProxy.getTableName()() [line 69];
+*&amp;$irvar0:class java.lang.String *=n$5 [line 69];
+REMOVE_TEMPS(n$5); [line 69];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node47.html"><span class='visitedproof'>I_47<span class='expansion'>node47 preds:46 succs:5 exn:6 Instructions
+n$6=*&amp;$irvar0:class java.lang.String * [line 69];
+*&amp;return:class java.lang.String *=n$6 [line 69];
+REMOVE_TEMPS(n$6); [line 69];
+NULLIFY(&amp;$irvar0,false); [line 69];
+APPLY_ABSTRACTION; [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node5.html"><span class='visitedproof'>E_5<span class='expansion'>node5 preds:49 47 6 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node6.html"><span class='visitedproof'>I_6<span class='expansion'>node6 preds: succs:5 exn:5 Instructions
+NULLIFY(&amp;$irvar0,false); [line 71];
+NULLIFY(&amp;clazz,false); [line 71];
+APPLY_ABSTRACTION; [line 71];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node48.html"><span class='visitedproof'>I_48<span class='expansion'>node48 preds:45 succs:49 exn:6 Instructions
+NULLIFY(&amp;$irvar0,false); [line 71];
+n$7=*&amp;clazz:class java.lang.Class * [line 71];
+n$8=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$7:class java.lang.Class *) [line 71];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$8 [line 71];
+REMOVE_TEMPS(n$7,n$8); [line 71];
+NULLIFY(&amp;clazz,false); [line 71];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node49.html"><span class='visitedproof'>I_49<span class='expansion'>node49 preds:48 succs:5 exn:6 Instructions
+n$9=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 71];
+*&amp;return:class java.lang.String *=EXN n$9 [line 71];
+REMOVE_TEMPS(n$9); [line 71];
+NULLIFY(&amp;$irvar0,false); [line 71];
+APPLY_ABSTRACTION; [line 71];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">    public &lt;E extends RealmObject&gt; E newInstance(Class&lt;E&gt; clazz, ColumnInfo columnInfo) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node22.html"><span class='visitedproof'>S_22<span class='expansion'>node22 preds: succs:80 exn:23 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1); [line 76];
+NULLIFY(&amp;$irvar0,false); [line 76];
+NULLIFY(&amp;$irvar1,false); [line 76];
+NULLIFY(&amp;this,false); [line 76];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.newInstance(java.lang.Class,io.realm.internal.ColumnInfo):io.rea.4ac4ef4c620c656ee4af75aa3b990af7.html">RealmObject DefaultRealmModuleMediator.newInstance(Class,ColumnInfo): 2 specs</a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">        checkClass(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node80.html"><span class='visitedproof'>I_80<span class='expansion'>node80 preds:22 succs:81 exn:24 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 77];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 77];
+REMOVE_TEMPS(n$0); [line 77];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)</div></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node81.html"><span class='visitedproof'>I_81<span class='expansion'>node81 preds:80 succs:82 83 exn:24 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 79];
+n$2=*n$1:class java.lang.Class  [line 79];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 79];
+*&amp;$irvar0:_Bool =n$3 [line 79];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 79];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node82.html"><span class='visitedproof'>C_82<span class='expansion'>node82 preds:81 succs:84 exn:24 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 79];
+PRUNE(!(n$4 == 0), true); [line 79];
+REMOVE_TEMPS(n$4); [line 79];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node83.html"><span class='visitedproof'>C_83<span class='expansion'>node83 preds:81 succs:87 exn:24 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 79];
+PRUNE((n$4 == 0), false); [line 79];
+REMOVE_TEMPS(n$4); [line 79];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">            return clazz.cast(new DummyObjectRealmProxy(columnInfo)); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node84.html"><span class='visitedproof'>I_84<span class='expansion'>node84 preds:82 succs:85 exn:24 Instructions
+NULLIFY(&amp;$irvar0,false); [line 80];
+n$5=_fun___new(sizeof(class io.realm.DummyObjectRealmProxy ):class io.realm.DummyObjectRealmProxy *) [line 80];
+n$6=*&amp;columnInfo:class io.realm.internal.ColumnInfo * [line 80];
+_fun_DummyObjectRealmProxy.&lt;init&gt;(ColumnInfo)(n$5:class io.realm.DummyObjectRealmProxy *,n$6:class io.realm.internal.ColumnInfo *) [line 80];
+*&amp;$irvar0:class io.realm.DummyObjectRealmProxy *=n$5 [line 80];
+REMOVE_TEMPS(n$5,n$6); [line 80];
+NULLIFY(&amp;columnInfo,false); [line 80];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node85.html"><span class='visitedproof'>I_85<span class='expansion'>node85 preds:84 succs:86 exn:24 Instructions
+n$7=*&amp;clazz:class java.lang.Class * [line 80];
+n$8=*n$7:class java.lang.Class  [line 80];
+n$9=*&amp;$irvar0:class io.realm.DummyObjectRealmProxy * [line 80];
+n$10=_fun_Object Class.cast(Object)(n$7:class java.lang.Class *,n$9:class io.realm.DummyObjectRealmProxy *) virtual [line 80];
+*&amp;$irvar1:class java.lang.Object *=n$10 [line 80];
+REMOVE_TEMPS(n$7,n$8,n$9,n$10); [line 80];
+NULLIFY(&amp;$irvar0,false); [line 80];
+NULLIFY(&amp;clazz,false); [line 80];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node86.html"><span class='visitedproof'>I_86<span class='expansion'>node86 preds:85 succs:23 exn:24 Instructions
+n$11=*&amp;$irvar1:class java.lang.Object * [line 80];
+n$12=_fun___cast(n$11:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 80];
+*&amp;return:class io.realm.RealmObject *=n$12 [line 80];
+REMOVE_TEMPS(n$11,n$12); [line 80];
+NULLIFY(&amp;$irvar1,false); [line 80];
+APPLY_ABSTRACTION; [line 80];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object Class.cast(Object)</div></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node23.html"><span class='visitedproof'>E_23<span class='expansion'>node23 preds:88 86 24 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node24.html"><span class='visitedproof'>I_24<span class='expansion'>node24 preds: succs:23 exn:23 Instructions
+NULLIFY(&amp;$irvar0,false); [line 82];
+NULLIFY(&amp;$irvar1,false); [line 82];
+NULLIFY(&amp;clazz,false); [line 82];
+NULLIFY(&amp;columnInfo,false); [line 82];
+APPLY_ABSTRACTION; [line 82];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node87.html"><span class='visitedproof'>I_87<span class='expansion'>node87 preds:83 succs:88 exn:24 Instructions
+NULLIFY(&amp;$irvar0,false); [line 82];
+NULLIFY(&amp;columnInfo,false); [line 82];
+n$13=*&amp;clazz:class java.lang.Class * [line 82];
+n$14=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$13:class java.lang.Class *) [line 82];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$14 [line 82];
+REMOVE_TEMPS(n$13,n$14); [line 82];
+NULLIFY(&amp;clazz,false); [line 82];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node88.html"><span class='visitedproof'>I_88<span class='expansion'>node88 preds:87 succs:23 exn:24 Instructions
+n$15=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 82];
+*&amp;return:class io.realm.RealmObject *=EXN n$15 [line 82];
+REMOVE_TEMPS(n$15); [line 82];
+NULLIFY(&amp;$irvar0,false); [line 82];
+APPLY_ABSTRACTION; [line 82];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">    public Set&lt;Class&lt;? extends RealmObject&gt;&gt; getModelClasses() { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node13.html"><span class='visitedproof'>S_13<span class='expansion'>node13 preds: succs:61 exn:14 Start
+DECLARE_LOCALS(&amp;return); [line 87];
+NULLIFY(&amp;this,false); [line 87];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.getModelClasses():java.util.Set.8136d09731c477545572d27961a630f3.html">Set DefaultRealmModuleMediator.getModelClasses(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">        return MODEL_CLASSES; <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node14.html"><span class='visitedproof'>E_14<span class='expansion'>node14 preds:61 15 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_15<span class='expansion'>node15 preds: succs:14 exn:14 Instructions
+APPLY_ABSTRACTION; [line 88];
+
+NOT VISITED</span></span> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node61.html"><span class='visitedproof'>I_61<span class='expansion'>node61 preds:13 succs:14 exn:15 Instructions
+n$0=*&amp;#GB$io.realm.DefaultRealmModuleMediator.io.realm.DefaultRealmModuleMediator.MODEL_CLASSES:class io.realm.DefaultRealmModuleMediator  [line 88];
+*&amp;return:class java.util.Set *=n$0 [line 88];
+REMOVE_TEMPS(n$0); [line 88];
+APPLY_ABSTRACTION; [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">    public &lt;E extends RealmObject&gt; E copyOrUpdate(Realm realm, E obj, boolean update, Map&lt;RealmObject, RealmObjectProxy&gt; cache) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node31.html"><span class='visitedproof'>S_31<span class='expansion'>node31 preds: succs:106 107 exn:32 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$T0_21,&amp;clazz); [line 92];
+NULLIFY(&amp;$T0_21,false); [line 92];
+NULLIFY(&amp;$irvar0,false); [line 92];
+NULLIFY(&amp;$irvar1,false); [line 92];
+NULLIFY(&amp;clazz,false); [line 92];
+NULLIFY(&amp;this,false); [line 92];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.copyOrUpdate(io.realm.Realm,io.realm.RealmObject,boolean,java.ut.c55b345359c8398245a9abf7ff0eebb0.html">RealmObject DefaultRealmModuleMediator.copyOrUpdate(Realm,RealmObject,boolean,Map): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">        // This cast is correct because obj is either</td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">        // generated by RealmProxy or the original type extending directly from RealmObject</td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">        @SuppressWarnings(&quot;unchecked&quot;) Class&lt;E&gt; clazz = (Class&lt;E&gt;) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass()); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node106.html"><span class='visitedproof'>C_106<span class='expansion'>node106 preds:31 succs:108 exn:33 Conditional method_body
+n$0=*&amp;obj:class io.realm.RealmObject * [line 95];
+n$1=_fun___instanceof(n$0:class io.realm.RealmObject *,sizeof(class io.realm.internal.RealmObjectProxy ( sub )(instof)):void ) [line 95];
+PRUNE(!(n$1 == 0), true); [line 95];
+REMOVE_TEMPS(n$0,n$1); [line 95];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node107.html"><span class='visited'>C_107<span class='expansion'>node107 preds:31 succs:111 exn:33 Conditional method_body
+n$0=*&amp;obj:class io.realm.RealmObject * [line 95];
+n$1=_fun___instanceof(n$0:class io.realm.RealmObject *,sizeof(class io.realm.internal.RealmObjectProxy ( sub )(instof)):void ) [line 95];
+PRUNE((n$1 == 0), false); [line 95];
+REMOVE_TEMPS(n$0,n$1); [line 95];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node108.html"><span class='visitedproof'>I_108<span class='expansion'>node108 preds:106 succs:109 exn:33 Instructions
+n$2=*&amp;obj:class io.realm.RealmObject * [line 95];
+n$3=*n$2:class io.realm.RealmObject  [line 95];
+n$4=_fun_Class Object.getClass()(n$2:class io.realm.RealmObject *) virtual [line 95];
+*&amp;$irvar0:class java.lang.Class *=n$4 [line 95];
+REMOVE_TEMPS(n$2,n$3,n$4); [line 95];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node109.html"><span class='visitedproof'>I_109<span class='expansion'>node109 preds:108 succs:110 exn:33 Instructions
+n$5=*&amp;$irvar0:class java.lang.Class * [line 95];
+n$6=*n$5:class java.lang.Class  [line 95];
+n$7=_fun_Class Class.getSuperclass()(n$5:class java.lang.Class *) virtual [line 95];
+*&amp;$irvar1:class java.lang.Class *=n$7 [line 95];
+REMOVE_TEMPS(n$5,n$6,n$7); [line 95];
+NULLIFY(&amp;$irvar0,false); [line 95];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node110.html"><span class='visitedproof'>I_110<span class='expansion'>node110 preds:109 succs:113 exn:33 Instructions
+n$8=*&amp;$irvar1:class java.lang.Class * [line 95];
+*&amp;$T0_21:class java.lang.Class *=n$8 [line 95];
+REMOVE_TEMPS(n$8); [line 95];
+NULLIFY(&amp;$irvar1,false); [line 95];
+APPLY_ABSTRACTION; [line 95];
+</span></span></a> <span class='dangling'>I_111<span class='expansion'>node111 preds:107 succs:112 exn:33 Instructions
+n$9=*&amp;obj:class io.realm.RealmObject * [line 95];
+n$10=*n$9:class io.realm.RealmObject  [line 95];
+n$11=_fun_Class Object.getClass()(n$9:class io.realm.RealmObject *) virtual [line 95];
+*&amp;$irvar0:class java.lang.Class *=n$11 [line 95];
+REMOVE_TEMPS(n$9,n$10,n$11); [line 95];
+
+NOT VISITED</span></span> <span class='dangling'>I_112<span class='expansion'>node112 preds:111 succs:113 exn:33 Instructions
+n$12=*&amp;$irvar0:class java.lang.Class * [line 95];
+*&amp;$T0_21:class java.lang.Class *=n$12 [line 95];
+REMOVE_TEMPS(n$12); [line 95];
+NULLIFY(&amp;$irvar0,false); [line 95];
+APPLY_ABSTRACTION; [line 95];
+
+NOT VISITED</span></span> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node113.html"><span class='visitedproof'>I_113<span class='expansion'>node113 preds:112 110 succs:114 exn:33 Instructions
+n$13=*&amp;$T0_21:class java.lang.Class * [line 95];
+*&amp;clazz:class java.lang.Class *=n$13 [line 95];
+REMOVE_TEMPS(n$13); [line 95];
+NULLIFY(&amp;$T0_21,false); [line 95];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Class Class.getSuperclass()</div></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node114.html"><span class='visitedproof'>I_114<span class='expansion'>node114 preds:113 succs:115 116 exn:33 Instructions
+n$14=*&amp;clazz:class java.lang.Class * [line 97];
+n$15=*n$14:class java.lang.Class  [line 97];
+n$16=_fun_boolean Object.equals(Object)(n$14:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 97];
+*&amp;$irvar0:_Bool =n$16 [line 97];
+REMOVE_TEMPS(n$14,n$15,n$16); [line 97];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node115.html"><span class='visited'>C_115<span class='expansion'>node115 preds:114 succs:117 exn:33 Conditional method_body
+n$17=*&amp;$irvar0:_Bool  [line 97];
+PRUNE(!(n$17 == 0), true); [line 97];
+REMOVE_TEMPS(n$17); [line 97];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node116.html"><span class='visitedproof'>C_116<span class='expansion'>node116 preds:114 succs:120 exn:33 Conditional method_body
+n$17=*&amp;$irvar0:_Bool  [line 97];
+PRUNE((n$17 == 0), false); [line 97];
+REMOVE_TEMPS(n$17); [line 97];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">            return clazz.cast(DummyObjectRealmProxy.copyOrUpdate(realm, (DummyObject) obj, update, cache)); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node117.html"><span class='visited'>I_117<span class='expansion'>node117 preds:115 succs:118 exn:33 Instructions
+NULLIFY(&amp;$irvar0,false); [line 98];
+n$18=*&amp;realm:class io.realm.Realm * [line 98];
+n$19=*&amp;obj:class io.realm.RealmObject * [line 98];
+n$20=_fun___cast(n$19:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 98];
+n$21=*&amp;update:_Bool  [line 98];
+n$22=*&amp;cache:class java.util.Map * [line 98];
+n$23=_fun_DummyObject DummyObjectRealmProxy.copyOrUpdate(Realm,DummyObject,boolean,Map)(n$18:class io.realm.Realm *,n$20:class com.karthik.imager.APIService.DummyObject *,n$21:_Bool ,n$22:class java.util.Map *) [line 98];
+*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$23 [line 98];
+REMOVE_TEMPS(n$18,n$19,n$20,n$21,n$22,n$23); [line 98];
+NULLIFY(&amp;cache,false); [line 98];
+NULLIFY(&amp;obj,false); [line 98];
+NULLIFY(&amp;realm,false); [line 98];
+NULLIFY(&amp;update,false); [line 98];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node118.html"><span class='visited'>I_118<span class='expansion'>node118 preds:117 succs:119 exn:33 Instructions
+n$24=*&amp;clazz:class java.lang.Class * [line 98];
+n$25=*n$24:class java.lang.Class  [line 98];
+n$26=*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject * [line 98];
+n$27=_fun_Object Class.cast(Object)(n$24:class java.lang.Class *,n$26:class com.karthik.imager.APIService.DummyObject *) virtual [line 98];
+*&amp;$irvar1:class java.lang.Object *=n$27 [line 98];
+REMOVE_TEMPS(n$24,n$25,n$26,n$27); [line 98];
+NULLIFY(&amp;$irvar0,false); [line 98];
+NULLIFY(&amp;clazz,false); [line 98];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node119.html"><span class='visited'>I_119<span class='expansion'>node119 preds:118 succs:32 exn:33 Instructions
+n$28=*&amp;$irvar1:class java.lang.Object * [line 98];
+n$29=_fun___cast(n$28:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 98];
+*&amp;return:class io.realm.RealmObject *=n$29 [line 98];
+REMOVE_TEMPS(n$28,n$29); [line 98];
+NULLIFY(&amp;$irvar1,false); [line 98];
+APPLY_ABSTRACTION; [line 98];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">CLASS_CAST_EXCEPTION class io.realm.internal.RealmObjectProxy  cannot be cast to class com.karthik.imager.APIService.DummyObject   in expression obj  at line 98</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object Class.cast(Object)</div></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node32.html"><span class='visitedproof'>E_32<span class='expansion'>node32 preds:121 119 33 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node33.html"><span class='visitedproof'>I_33<span class='expansion'>node33 preds: succs:32 exn:32 Instructions
+NULLIFY(&amp;$T0_21,false); [line 100];
+NULLIFY(&amp;$irvar0,false); [line 100];
+NULLIFY(&amp;$irvar1,false); [line 100];
+NULLIFY(&amp;cache,false); [line 100];
+NULLIFY(&amp;clazz,false); [line 100];
+NULLIFY(&amp;obj,false); [line 100];
+NULLIFY(&amp;realm,false); [line 100];
+NULLIFY(&amp;update,false); [line 100];
+APPLY_ABSTRACTION; [line 100];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node120.html"><span class='visitedproof'>I_120<span class='expansion'>node120 preds:116 succs:121 exn:33 Instructions
+NULLIFY(&amp;$irvar0,false); [line 100];
+NULLIFY(&amp;cache,false); [line 100];
+NULLIFY(&amp;obj,false); [line 100];
+NULLIFY(&amp;realm,false); [line 100];
+NULLIFY(&amp;update,false); [line 100];
+n$30=*&amp;clazz:class java.lang.Class * [line 100];
+n$31=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$30:class java.lang.Class *) [line 100];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$31 [line 100];
+REMOVE_TEMPS(n$30,n$31); [line 100];
+NULLIFY(&amp;clazz,false); [line 100];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node121.html"><span class='visitedproof'>I_121<span class='expansion'>node121 preds:120 succs:32 exn:33 Instructions
+n$32=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 100];
+*&amp;return:class io.realm.RealmObject *=EXN n$32 [line 100];
+REMOVE_TEMPS(n$32); [line 100];
+NULLIFY(&amp;$irvar0,false); [line 100];
+APPLY_ABSTRACTION; [line 100];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">    public &lt;E extends RealmObject&gt; E createOrUpdateUsingJsonObject(Class&lt;E&gt; clazz, Realm realm, JSONObject json, boolean update) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node10.html"><span class='visitedproof'>S_10<span class='expansion'>node10 preds: succs:52 exn:11 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1); [line 105];
+NULLIFY(&amp;$irvar0,false); [line 105];
+NULLIFY(&amp;$irvar1,false); [line 105];
+NULLIFY(&amp;this,false); [line 105];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(java.lang.Class,io.realm.Realm,org.b6301b036b57a6597cd78390ad99d38d.html">RealmObject DefaultRealmModuleMediator.createOrUpdateUsingJsonObject(Class,Realm,JSONObject,boolean): 2 specs</a></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">        throws JSONException {</td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">        checkClass(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node52.html"><span class='visitedproof'>I_52<span class='expansion'>node52 preds:10 succs:53 exn:12 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 107];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 107];
+REMOVE_TEMPS(n$0); [line 107];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)</div></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node53.html"><span class='visitedproof'>I_53<span class='expansion'>node53 preds:52 succs:54 55 exn:12 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 109];
+n$2=*n$1:class java.lang.Class  [line 109];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 109];
+*&amp;$irvar0:_Bool =n$3 [line 109];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 109];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node54.html"><span class='visitedproof'>C_54<span class='expansion'>node54 preds:53 succs:56 exn:12 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 109];
+PRUNE(!(n$4 == 0), true); [line 109];
+REMOVE_TEMPS(n$4); [line 109];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node55.html"><span class='visitedproof'>C_55<span class='expansion'>node55 preds:53 succs:59 exn:12 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 109];
+PRUNE((n$4 == 0), false); [line 109];
+REMOVE_TEMPS(n$4); [line 109];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">            return clazz.cast(DummyObjectRealmProxy.createOrUpdateUsingJsonObject(realm, json, update)); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node56.html"><span class='visitedproof'>I_56<span class='expansion'>node56 preds:54 succs:57 exn:12 Instructions
+NULLIFY(&amp;$irvar0,false); [line 110];
+n$5=*&amp;realm:class io.realm.Realm * [line 110];
+n$6=*&amp;json:class org.json.JSONObject * [line 110];
+n$7=*&amp;update:_Bool  [line 110];
+n$8=_fun_DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean)(n$5:class io.realm.Realm *,n$6:class org.json.JSONObject *,n$7:_Bool ) [line 110];
+*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$8 [line 110];
+REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 110];
+NULLIFY(&amp;json,false); [line 110];
+NULLIFY(&amp;realm,false); [line 110];
+NULLIFY(&amp;update,false); [line 110];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node57.html"><span class='visitedproof'>I_57<span class='expansion'>node57 preds:56 succs:58 exn:12 Instructions
+n$9=*&amp;clazz:class java.lang.Class * [line 110];
+n$10=*n$9:class java.lang.Class  [line 110];
+n$11=*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject * [line 110];
+n$12=_fun_Object Class.cast(Object)(n$9:class java.lang.Class *,n$11:class com.karthik.imager.APIService.DummyObject *) virtual [line 110];
+*&amp;$irvar1:class java.lang.Object *=n$12 [line 110];
+REMOVE_TEMPS(n$9,n$10,n$11,n$12); [line 110];
+NULLIFY(&amp;$irvar0,false); [line 110];
+NULLIFY(&amp;clazz,false); [line 110];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node58.html"><span class='visitedproof'>I_58<span class='expansion'>node58 preds:57 succs:11 exn:12 Instructions
+n$13=*&amp;$irvar1:class java.lang.Object * [line 110];
+n$14=_fun___cast(n$13:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 110];
+*&amp;return:class io.realm.RealmObject *=n$14 [line 110];
+REMOVE_TEMPS(n$13,n$14); [line 110];
+NULLIFY(&amp;$irvar1,false); [line 110];
+APPLY_ABSTRACTION; [line 110];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object Class.cast(Object)</div></td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node11.html"><span class='visitedproof'>E_11<span class='expansion'>node11 preds:60 58 12 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node12.html"><span class='visitedproof'>I_12<span class='expansion'>node12 preds: succs:11 exn:11 Instructions
+NULLIFY(&amp;$irvar0,false); [line 112];
+NULLIFY(&amp;$irvar1,false); [line 112];
+NULLIFY(&amp;clazz,false); [line 112];
+NULLIFY(&amp;json,false); [line 112];
+NULLIFY(&amp;realm,false); [line 112];
+NULLIFY(&amp;update,false); [line 112];
+APPLY_ABSTRACTION; [line 112];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node59.html"><span class='visitedproof'>I_59<span class='expansion'>node59 preds:55 succs:60 exn:12 Instructions
+NULLIFY(&amp;$irvar0,false); [line 112];
+NULLIFY(&amp;json,false); [line 112];
+NULLIFY(&amp;realm,false); [line 112];
+NULLIFY(&amp;update,false); [line 112];
+n$15=*&amp;clazz:class java.lang.Class * [line 112];
+n$16=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$15:class java.lang.Class *) [line 112];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$16 [line 112];
+REMOVE_TEMPS(n$15,n$16); [line 112];
+NULLIFY(&amp;clazz,false); [line 112];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node60.html"><span class='visitedproof'>I_60<span class='expansion'>node60 preds:59 succs:11 exn:12 Instructions
+n$17=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 112];
+*&amp;return:class io.realm.RealmObject *=EXN n$17 [line 112];
+REMOVE_TEMPS(n$17); [line 112];
+NULLIFY(&amp;$irvar0,false); [line 112];
+APPLY_ABSTRACTION; [line 112];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">    public &lt;E extends RealmObject&gt; E createUsingJsonStream(Class&lt;E&gt; clazz, Realm realm, JsonReader reader) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node25.html"><span class='visitedproof'>S_25<span class='expansion'>node25 preds: succs:89 exn:26 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1); [line 117];
+NULLIFY(&amp;$irvar0,false); [line 117];
+NULLIFY(&amp;$irvar1,false); [line 117];
+NULLIFY(&amp;this,false); [line 117];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.createUsingJsonStream(java.lang.Class,io.realm.Realm,android.uti.3809d730b50cbddd3c323b8be9813ccb.html">RealmObject DefaultRealmModuleMediator.createUsingJsonStream(Class,Realm,JsonReader): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">        throws IOException {</td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">        checkClass(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node89.html"><span class='visitedproof'>I_89<span class='expansion'>node89 preds:25 succs:90 exn:27 Instructions
+n$0=*&amp;clazz:class java.lang.Class * [line 119];
+_fun_void RealmProxyMediator.checkClass(Class)(n$0:class java.lang.Class *) [line 119];
+REMOVE_TEMPS(n$0); [line 119];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)</div></td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node90.html"><span class='visitedproof'>I_90<span class='expansion'>node90 preds:89 succs:91 92 exn:27 Instructions
+n$1=*&amp;clazz:class java.lang.Class * [line 121];
+n$2=*n$1:class java.lang.Class  [line 121];
+n$3=_fun_boolean Object.equals(Object)(n$1:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 121];
+*&amp;$irvar0:_Bool =n$3 [line 121];
+REMOVE_TEMPS(n$1,n$2,n$3); [line 121];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node91.html"><span class='visitedproof'>C_91<span class='expansion'>node91 preds:90 succs:93 exn:27 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 121];
+PRUNE(!(n$4 == 0), true); [line 121];
+REMOVE_TEMPS(n$4); [line 121];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node92.html"><span class='visitedproof'>C_92<span class='expansion'>node92 preds:90 succs:96 exn:27 Conditional method_body
+n$4=*&amp;$irvar0:_Bool  [line 121];
+PRUNE((n$4 == 0), false); [line 121];
+REMOVE_TEMPS(n$4); [line 121];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">            return clazz.cast(DummyObjectRealmProxy.createUsingJsonStream(realm, reader)); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node93.html"><span class='visitedproof'>I_93<span class='expansion'>node93 preds:91 succs:94 exn:27 Instructions
+NULLIFY(&amp;$irvar0,false); [line 122];
+n$5=*&amp;realm:class io.realm.Realm * [line 122];
+n$6=*&amp;reader:class android.util.JsonReader * [line 122];
+n$7=_fun_DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)(n$5:class io.realm.Realm *,n$6:class android.util.JsonReader *) [line 122];
+*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$7 [line 122];
+REMOVE_TEMPS(n$5,n$6,n$7); [line 122];
+NULLIFY(&amp;reader,false); [line 122];
+NULLIFY(&amp;realm,false); [line 122];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node94.html"><span class='visitedproof'>I_94<span class='expansion'>node94 preds:93 succs:95 exn:27 Instructions
+n$8=*&amp;clazz:class java.lang.Class * [line 122];
+n$9=*n$8:class java.lang.Class  [line 122];
+n$10=*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject * [line 122];
+n$11=_fun_Object Class.cast(Object)(n$8:class java.lang.Class *,n$10:class com.karthik.imager.APIService.DummyObject *) virtual [line 122];
+*&amp;$irvar1:class java.lang.Object *=n$11 [line 122];
+REMOVE_TEMPS(n$8,n$9,n$10,n$11); [line 122];
+NULLIFY(&amp;$irvar0,false); [line 122];
+NULLIFY(&amp;clazz,false); [line 122];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node95.html"><span class='visitedproof'>I_95<span class='expansion'>node95 preds:94 succs:26 exn:27 Instructions
+n$12=*&amp;$irvar1:class java.lang.Object * [line 122];
+n$13=_fun___cast(n$12:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 122];
+*&amp;return:class io.realm.RealmObject *=n$13 [line 122];
+REMOVE_TEMPS(n$12,n$13); [line 122];
+NULLIFY(&amp;$irvar1,false); [line 122];
+APPLY_ABSTRACTION; [line 122];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object Class.cast(Object)</div></td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node26.html"><span class='visitedproof'>E_26<span class='expansion'>node26 preds:97 95 27 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node27.html"><span class='visitedproof'>I_27<span class='expansion'>node27 preds: succs:26 exn:26 Instructions
+NULLIFY(&amp;$irvar0,false); [line 124];
+NULLIFY(&amp;$irvar1,false); [line 124];
+NULLIFY(&amp;clazz,false); [line 124];
+NULLIFY(&amp;reader,false); [line 124];
+NULLIFY(&amp;realm,false); [line 124];
+APPLY_ABSTRACTION; [line 124];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node96.html"><span class='visitedproof'>I_96<span class='expansion'>node96 preds:92 succs:97 exn:27 Instructions
+NULLIFY(&amp;$irvar0,false); [line 124];
+NULLIFY(&amp;reader,false); [line 124];
+NULLIFY(&amp;realm,false); [line 124];
+n$14=*&amp;clazz:class java.lang.Class * [line 124];
+n$15=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$14:class java.lang.Class *) [line 124];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$15 [line 124];
+REMOVE_TEMPS(n$14,n$15); [line 124];
+NULLIFY(&amp;clazz,false); [line 124];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node97.html"><span class='visitedproof'>I_97<span class='expansion'>node97 preds:96 succs:26 exn:27 Instructions
+n$16=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 124];
+*&amp;return:class io.realm.RealmObject *=EXN n$16 [line 124];
+REMOVE_TEMPS(n$16); [line 124];
+NULLIFY(&amp;$irvar0,false); [line 124];
+APPLY_ABSTRACTION; [line 124];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">    public &lt;E extends RealmObject&gt; E createDetachedCopy(E realmObject, int maxDepth, Map&lt;RealmObject, RealmObjectProxy.CacheData&lt;RealmObject&gt;&gt; cache) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node16.html"><span class='visitedproof'>S_16<span class='expansion'>node16 preds: succs:62 exn:17 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;clazz,&amp;$irvar1); [line 129];
+NULLIFY(&amp;$irvar0,false); [line 129];
+NULLIFY(&amp;$irvar1,false); [line 129];
+NULLIFY(&amp;clazz,false); [line 129];
+NULLIFY(&amp;this,false); [line 129];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/io.realm.DefaultRealmModuleMediator.createDetachedCopy(io.realm.RealmObject,int,java.util.Map):io.re.6f88731fddaab9d5080dc853d96995e9.html">RealmObject DefaultRealmModuleMediator.createDetachedCopy(RealmObject,int,Map): 2 specs</a></td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line">        // This cast is correct because obj is either</td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">        // generated by RealmProxy or the original type extending directly from RealmObject</td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line">        @SuppressWarnings(&quot;unchecked&quot;) Class&lt;E&gt; clazz = (Class&lt;E&gt;) realmObject.getClass().getSuperclass(); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node62.html"><span class='visitedproof'>I_62<span class='expansion'>node62 preds:16 succs:63 exn:18 Instructions
+n$0=*&amp;realmObject:class io.realm.RealmObject * [line 132];
+n$1=*n$0:class io.realm.RealmObject  [line 132];
+n$2=_fun_Class Object.getClass()(n$0:class io.realm.RealmObject *) virtual [line 132];
+*&amp;$irvar0:class java.lang.Class *=n$2 [line 132];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 132];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node63.html"><span class='visitedproof'>I_63<span class='expansion'>node63 preds:62 succs:64 exn:18 Instructions
+n$3=*&amp;$irvar0:class java.lang.Class * [line 132];
+n$4=*n$3:class java.lang.Class  [line 132];
+n$5=_fun_Class Class.getSuperclass()(n$3:class java.lang.Class *) virtual [line 132];
+*&amp;clazz:class java.lang.Class *=n$5 [line 132];
+REMOVE_TEMPS(n$3,n$4,n$5); [line 132];
+NULLIFY(&amp;$irvar0,false); [line 132];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Class Class.getSuperclass()</div></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">        if (clazz.equals(DummyObject.class)) { <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node64.html"><span class='visitedproof'>I_64<span class='expansion'>node64 preds:63 succs:65 66 exn:18 Instructions
+n$6=*&amp;clazz:class java.lang.Class * [line 134];
+n$7=*n$6:class java.lang.Class  [line 134];
+n$8=_fun_boolean Object.equals(Object)(n$6:class java.lang.Class *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 134];
+*&amp;$irvar0:_Bool =n$8 [line 134];
+REMOVE_TEMPS(n$6,n$7,n$8); [line 134];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node65.html"><span class='visitedproof'>C_65<span class='expansion'>node65 preds:64 succs:67 exn:18 Conditional method_body
+n$9=*&amp;$irvar0:_Bool  [line 134];
+PRUNE(!(n$9 == 0), true); [line 134];
+REMOVE_TEMPS(n$9); [line 134];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node66.html"><span class='visitedproof'>C_66<span class='expansion'>node66 preds:64 succs:70 exn:18 Conditional method_body
+n$9=*&amp;$irvar0:_Bool  [line 134];
+PRUNE((n$9 == 0), false); [line 134];
+REMOVE_TEMPS(n$9); [line 134];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Object.equals(Object)</div></td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">            return clazz.cast(DummyObjectRealmProxy.createDetachedCopy((DummyObject) realmObject, 0, maxDepth, cache)); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node67.html"><span class='visitedproof'>I_67<span class='expansion'>node67 preds:65 succs:68 exn:18 Instructions
+NULLIFY(&amp;$irvar0,false); [line 135];
+n$10=*&amp;realmObject:class io.realm.RealmObject * [line 135];
+n$11=_fun___cast(n$10:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 135];
+n$12=*&amp;maxDepth:int  [line 135];
+n$13=*&amp;cache:class java.util.Map * [line 135];
+n$14=_fun_DummyObject DummyObjectRealmProxy.createDetachedCopy(DummyObject,int,int,Map)(n$11:class com.karthik.imager.APIService.DummyObject *,0:int ,n$12:int ,n$13:class java.util.Map *) [line 135];
+*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$14 [line 135];
+REMOVE_TEMPS(n$10,n$11,n$12,n$13,n$14); [line 135];
+NULLIFY(&amp;cache,false); [line 135];
+NULLIFY(&amp;maxDepth,false); [line 135];
+NULLIFY(&amp;realmObject,false); [line 135];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node68.html"><span class='visitedproof'>I_68<span class='expansion'>node68 preds:67 succs:69 exn:18 Instructions
+n$15=*&amp;clazz:class java.lang.Class * [line 135];
+n$16=*n$15:class java.lang.Class  [line 135];
+n$17=*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject * [line 135];
+n$18=_fun_Object Class.cast(Object)(n$15:class java.lang.Class *,n$17:class com.karthik.imager.APIService.DummyObject *) virtual [line 135];
+*&amp;$irvar1:class java.lang.Object *=n$18 [line 135];
+REMOVE_TEMPS(n$15,n$16,n$17,n$18); [line 135];
+NULLIFY(&amp;$irvar0,false); [line 135];
+NULLIFY(&amp;clazz,false); [line 135];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node69.html"><span class='visitedproof'>I_69<span class='expansion'>node69 preds:68 succs:17 exn:18 Instructions
+n$19=*&amp;$irvar1:class java.lang.Object * [line 135];
+n$20=_fun___cast(n$19:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 135];
+*&amp;return:class io.realm.RealmObject *=n$20 [line 135];
+REMOVE_TEMPS(n$19,n$20); [line 135];
+NULLIFY(&amp;$irvar1,false); [line 135];
+APPLY_ABSTRACTION; [line 135];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object Class.cast(Object)</div></td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">        } else {</td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line">            throw getMissingProxyClassException(clazz); <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node17.html"><span class='visitedproof'>E_17<span class='expansion'>node17 preds:71 69 18 succs: exn: Exit
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node18.html"><span class='visitedproof'>I_18<span class='expansion'>node18 preds: succs:17 exn:17 Instructions
+NULLIFY(&amp;$irvar0,false); [line 137];
+NULLIFY(&amp;$irvar1,false); [line 137];
+NULLIFY(&amp;cache,false); [line 137];
+NULLIFY(&amp;clazz,false); [line 137];
+NULLIFY(&amp;maxDepth,false); [line 137];
+NULLIFY(&amp;realmObject,false); [line 137];
+APPLY_ABSTRACTION; [line 137];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node70.html"><span class='visitedproof'>I_70<span class='expansion'>node70 preds:66 succs:71 exn:18 Instructions
+NULLIFY(&amp;$irvar0,false); [line 137];
+NULLIFY(&amp;cache,false); [line 137];
+NULLIFY(&amp;maxDepth,false); [line 137];
+NULLIFY(&amp;realmObject,false); [line 137];
+n$21=*&amp;clazz:class java.lang.Class * [line 137];
+n$22=_fun_RealmException RealmProxyMediator.getMissingProxyClassException(Class)(n$21:class java.lang.Class *) [line 137];
+*&amp;$irvar0:class io.realm.exceptions.RealmException *=n$22 [line 137];
+REMOVE_TEMPS(n$21,n$22); [line 137];
+NULLIFY(&amp;clazz,false); [line 137];
+</span></span></a> <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node71.html"><span class='visitedproof'>I_71<span class='expansion'>node71 preds:70 succs:17 exn:18 Instructions
+n$23=*&amp;$irvar0:class io.realm.exceptions.RealmException * [line 137];
+*&amp;return:class io.realm.RealmObject *=EXN n$23 [line 137];
+REMOVE_TEMPS(n$23); [line 137];
+NULLIFY(&amp;$irvar0,false); [line 137];
+APPLY_ABSTRACTION; [line 137];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)</div></td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">}</td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<br>CLASS_CAST_EXCEPTION class io.realm.internal.RealmObjectProxy  cannot be cast to class com.karthik.imager.APIService.DummyObject   in expression obj  at line 98  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node117.html#session42">node117#session42</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE98">98</a>)<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION Set Collections.unmodifiableSet(Set)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node39.html#session4">node39#session4</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE28">28</a>)<br>SKIP_FUNCTION Class Class.getSuperclass()  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node109.html#session5">node109#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE95">95</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node63.html#session3">node63#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE132">132</a>)<br>SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node104.html#session5">node104#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE38">38</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node78.html#session5">node78#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE49">49</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node128.html#session5">node128#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE60">60</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node48.html#session5">node48#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE71">71</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node87.html#session5">node87#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE82">82</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node120.html#session10">node120#session10</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE100">100</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node59.html#session5">node59#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE112">112</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node96.html#session5">node96#session5</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE124">124</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node70.html#session6">node70#session6</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE137">137</a>)<br>SKIP_FUNCTION boolean Object.equals(Object)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node99.html#session3">node99#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE35">35</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node73.html#session3">node73#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE46">46</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node123.html#session3">node123#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE57">57</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node43.html#session3">node43#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE68">68</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node81.html#session3">node81#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE79">79</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node114.html#session8">node114#session8</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE97">97</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node53.html#session3">node53#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE109">109</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node90.html#session3">node90#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE121">121</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node64.html#session4">node64#session4</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE134">134</a>)<br>SKIP_FUNCTION DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node93.html#session8">node93#session8</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">122</a>)<br>SKIP_FUNCTION DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node76.html#session8">node76#session8</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE47">47</a>)<br>SKIP_FUNCTION HashSet.<init>()  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node37.html#session2">node37#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE26">26</a>)<br>SKIP_FUNCTION boolean HashSet.add(Object)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node38.html#session3">node38#session3</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE27">27</a>)<br>SKIP_FUNCTION RealmProxyMediator.<init>()  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node50.html#session2">node50#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE22">22</a>)<br>SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node98.html#session2">node98#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE33">33</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node72.html#session2">node72#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE44">44</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node122.html#session2">node122#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE55">55</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node42.html#session2">node42#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE66">66</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node80.html#session2">node80#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE77">77</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node52.html#session2">node52#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE107">107</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node89.html#session2">node89#session2</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE119">119</a>)<br>SKIP_FUNCTION Object Class.cast(Object)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node85.html#session9">node85#session9</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE80">80</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node118.html#session14">node118#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE98">98</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node57.html#session9">node57#session9</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE110">110</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node94.html#session9">node94#session9</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">122</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node68.html#session10">node68#session10</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE135">135</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION void RealmProxyMediator.checkClass(Class)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node98.html#session13">node98#session13</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE33">33</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node72.html#session13">node72#session13</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE44">44</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node122.html#session13">node122#session13</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE55">55</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node42.html#session13">node42#session13</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE66">66</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node80.html#session14">node80#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE77">77</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node52.html#session14">node52#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE107">107</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node89.html#session14">node89#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE119">119</a>)<br>SKIP_FUNCTION Object Class.cast(Object)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node85.html#session28">node85#session28</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE80">80</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node57.html#session28">node57#session28</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE110">110</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node94.html#session28">node94#session28</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">122</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node68.html#session31">node68#session31</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE135">135</a>)<br>SKIP_FUNCTION Set Collections.unmodifiableSet(Set)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node39.html#session11">node39#session11</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE28">28</a>)<br>SKIP_FUNCTION boolean HashSet.add(Object)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node38.html#session10">node38#session10</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE27">27</a>)<br>SKIP_FUNCTION boolean Object.equals(Object)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node99.html#session14">node99#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE35">35</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node73.html#session14">node73#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE46">46</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node123.html#session14">node123#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE57">57</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node43.html#session14">node43#session14</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE68">68</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node81.html#session15">node81#session15</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE79">79</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node114.html#session25">node114#session25</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE97">97</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node53.html#session15">node53#session15</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE109">109</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node90.html#session15">node90#session15</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE121">121</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node64.html#session17">node64#session17</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE134">134</a>)<br>SKIP_FUNCTION RealmException RealmProxyMediator.getMissingProxyClassException(Class)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node104.html#session24">node104#session24</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE38">38</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node78.html#session16">node78#session16</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE49">49</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node128.html#session24">node128#session24</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE60">60</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node48.html#session16">node48#session16</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE71">71</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node87.html#session17">node87#session17</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE82">82</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node120.html#session27">node120#session27</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE100">100</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node59.html#session17">node59#session17</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE112">112</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node96.html#session17">node96#session17</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE124">124</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node70.html#session19">node70#session19</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE137">137</a>)<br>SKIP_FUNCTION DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node93.html#session27">node93#session27</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">122</a>)<br>SKIP_FUNCTION Class Class.getSuperclass()  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node109.html#session22">node109#session22</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE95">95</a>) <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node63.html#session16">node63#session16</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE132">132</a>)<br>SKIP_FUNCTION HashSet.<init>()  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node37.html#session9">node37#session9</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE26">26</a>)<br>SKIP_FUNCTION DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node76.html#session26">node76#session26</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE47">47</a>)<br>SKIP_FUNCTION RealmProxyMediator.<init>()  <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/nodes/node50.html#session6">node50#session6</a>( <a href="./DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48/../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE22">22</a>)</body>
+</html>

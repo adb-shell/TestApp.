@@ -1,0 +1,1812 @@
+digraph iCFG {
+370 [label="370:  throw \n   n$126=*&$irvar1:class io.realm.exceptions.RealmMigrationNeededException * [line 138]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$126 [line 138]\n  REMOVE_TEMPS(n$126); [line 138]\n  NULLIFY(&$irvar1,false); [line 138]\n  APPLY_ABSTRACTION; [line 138]\n " shape="box"]
+	
+
+	 370 -> 70 ;
+	 370 -> 71 [color="red" ];
+369 [label="369:  Call RealmMigrationNeededException.<init>(String,String) \n   n$124=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 138]\n  n$125=*&$irvar0:class java.lang.String * [line 138]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$124:class io.realm.exceptions.RealmMigrationNeededException *,n$125:class java.lang.String *,\"The DummyObject class is missing from the schema for this Realm.\":class java.lang.String *) [line 138]\n  *&$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$124 [line 138]\n  REMOVE_TEMPS(n$124,n$125); [line 138]\n  NULLIFY(&$irvar0,false); [line 138]\n " shape="box"]
+	
+
+	 369 -> 370 ;
+	 369 -> 71 [color="red" ];
+368 [label="368:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 138]\n  n$121=*&transaction:class io.realm.internal.ImplicitTransaction * [line 138]\n  n$122=*n$121:class io.realm.internal.ImplicitTransaction  [line 138]\n  n$123=_fun_String ImplicitTransaction.getPath()(n$121:class io.realm.internal.ImplicitTransaction *) virtual [line 138]\n  *&$irvar0:class java.lang.String *=n$123 [line 138]\n  REMOVE_TEMPS(n$121,n$122,n$123); [line 138]\n  NULLIFY(&transaction,false); [line 138]\n " shape="box"]
+	
+
+	 368 -> 369 ;
+	 368 -> 71 [color="red" ];
+367 [label="367:  method_body \n   NULLIFY(&$irvar0,false); [line 136]\n  NULLIFY(&transaction,false); [line 136]\n  n$120=*&columnInfo:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 136]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=n$120 [line 136]\n  REMOVE_TEMPS(n$120); [line 136]\n  NULLIFY(&columnInfo,false); [line 136]\n  APPLY_ABSTRACTION; [line 136]\n " shape="box"]
+	
+
+	 367 -> 70 ;
+	 367 -> 71 [color="red" ];
+366 [label="366:  throw \n   n$119=*&$irvar1:class io.realm.exceptions.RealmMigrationNeededException * [line 134]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$119 [line 134]\n  REMOVE_TEMPS(n$119); [line 134]\n  NULLIFY(&$irvar1,false); [line 134]\n  APPLY_ABSTRACTION; [line 134]\n " shape="box"]
+	
+
+	 366 -> 70 ;
+	 366 -> 71 [color="red" ];
+365 [label="365:  Call RealmMigrationNeededException.<init>(String,String) \n   n$117=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 134]\n  n$118=*&$irvar0:class java.lang.String * [line 134]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$117:class io.realm.exceptions.RealmMigrationNeededException *,n$118:class java.lang.String *,\"Field 'dummyDesc' is required. Either set @Required to field 'dummyDesc' or migrate using io.realm.internal.Table.convertColumnToNullable().\":class java.lang.String *) [line 134]\n  *&$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$117 [line 134]\n  REMOVE_TEMPS(n$117,n$118); [line 134]\n  NULLIFY(&$irvar0,false); [line 134]\n " shape="box"]
+	
+
+	 365 -> 366 ;
+	 365 -> 71 [color="red" ];
+364 [label="364:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 134]\n  NULLIFY(&columnInfo,false); [line 134]\n  n$114=*&transaction:class io.realm.internal.ImplicitTransaction * [line 134]\n  n$115=*n$114:class io.realm.internal.ImplicitTransaction  [line 134]\n  n$116=_fun_String ImplicitTransaction.getPath()(n$114:class io.realm.internal.ImplicitTransaction *) virtual [line 134]\n  *&$irvar0:class java.lang.String *=n$116 [line 134]\n  REMOVE_TEMPS(n$114,n$115,n$116); [line 134]\n  NULLIFY(&transaction,false); [line 134]\n " shape="box"]
+	
+
+	 364 -> 365 ;
+	 364 -> 71 [color="red" ];
+363 [label="363: Prune (false branch) \n   n$113=*&$irvar0:_Bool  [line 133]\n  PRUNE((n$113 != 0), false); [line 133]\n  REMOVE_TEMPS(n$113); [line 133]\n " shape="invhouse"]
+	
+
+	 363 -> 367 ;
+	 363 -> 71 [color="red" ];
+362 [label="362: Prune (true branch) \n   n$113=*&$irvar0:_Bool  [line 133]\n  PRUNE(!(n$113 != 0), true); [line 133]\n  REMOVE_TEMPS(n$113); [line 133]\n " shape="invhouse"]
+	
+
+	 362 -> 364 ;
+	 362 -> 71 [color="red" ];
+361 [label="361:  Call boolean Table.isColumnNullable(long) \n   NULLIFY(&$irvar0,false); [line 133]\n  n$108=*&table:class io.realm.internal.Table * [line 133]\n  n$109=*n$108:class io.realm.internal.Table  [line 133]\n  n$110=*&columnInfo:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 133]\n  n$111=*n$110.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyDescIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 133]\n  n$112=_fun_boolean Table.isColumnNullable(long)(n$108:class io.realm.internal.Table *,n$111:long ) virtual [line 133]\n  *&$irvar0:_Bool =n$112 [line 133]\n  REMOVE_TEMPS(n$108,n$109,n$110,n$111,n$112); [line 133]\n  NULLIFY(&table,false); [line 133]\n " shape="box"]
+	
+
+	 361 -> 362 ;
+	 361 -> 363 ;
+	 361 -> 71 [color="red" ];
+360 [label="360:  throw \n   n$107=*&$irvar1:class io.realm.exceptions.RealmMigrationNeededException * [line 131]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$107 [line 131]\n  REMOVE_TEMPS(n$107); [line 131]\n  NULLIFY(&$irvar1,false); [line 131]\n  APPLY_ABSTRACTION; [line 131]\n " shape="box"]
+	
+
+	 360 -> 70 ;
+	 360 -> 71 [color="red" ];
+359 [label="359:  Call RealmMigrationNeededException.<init>(String,String) \n   n$105=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 131]\n  n$106=*&$irvar0:class java.lang.String * [line 131]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$105:class io.realm.exceptions.RealmMigrationNeededException *,n$106:class java.lang.String *,\"Invalid type 'String' for field 'dummyDesc' in existing Realm file.\":class java.lang.String *) [line 131]\n  *&$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$105 [line 131]\n  REMOVE_TEMPS(n$105,n$106); [line 131]\n  NULLIFY(&$irvar0,false); [line 131]\n " shape="box"]
+	
+
+	 359 -> 360 ;
+	 359 -> 71 [color="red" ];
+358 [label="358:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 131]\n  NULLIFY(&columnInfo,false); [line 131]\n  NULLIFY(&table,false); [line 131]\n  n$102=*&transaction:class io.realm.internal.ImplicitTransaction * [line 131]\n  n$103=*n$102:class io.realm.internal.ImplicitTransaction  [line 131]\n  n$104=_fun_String ImplicitTransaction.getPath()(n$102:class io.realm.internal.ImplicitTransaction *) virtual [line 131]\n  *&$irvar0:class java.lang.String *=n$104 [line 131]\n  REMOVE_TEMPS(n$102,n$103,n$104); [line 131]\n  NULLIFY(&transaction,false); [line 131]\n " shape="box"]
+	
+
+	 358 -> 359 ;
+	 358 -> 71 [color="red" ];
+357 [label="357: Prune (false branch) \n   n$100=*&$irvar0:class java.lang.Object * [line 130]\n  n$101=*&#GB$io.realm.RealmFieldType.io.realm.RealmFieldType.STRING:class io.realm.RealmFieldType  [line 130]\n  PRUNE((n$100 == n$101), false); [line 130]\n  REMOVE_TEMPS(n$100,n$101); [line 130]\n " shape="invhouse"]
+	
+
+	 357 -> 361 ;
+	 357 -> 71 [color="red" ];
+356 [label="356: Prune (true branch) \n   n$100=*&$irvar0:class java.lang.Object * [line 130]\n  n$101=*&#GB$io.realm.RealmFieldType.io.realm.RealmFieldType.STRING:class io.realm.RealmFieldType  [line 130]\n  PRUNE(!(n$100 == n$101), true); [line 130]\n  REMOVE_TEMPS(n$100,n$101); [line 130]\n " shape="invhouse"]
+	
+
+	 356 -> 358 ;
+	 356 -> 71 [color="red" ];
+355 [label="355:  Call Object HashMap.get(Object) \n   NULLIFY(&$irvar0,false); [line 130]\n  n$97=*&columnTypes:class java.util.HashMap * [line 130]\n  n$98=*n$97:class java.util.HashMap  [line 130]\n  n$99=_fun_Object HashMap.get(Object)(n$97:class java.util.HashMap *,\"dummyDesc\":class java.lang.String *) virtual [line 130]\n  *&$irvar0:class java.lang.Object *=n$99 [line 130]\n  REMOVE_TEMPS(n$97,n$98,n$99); [line 130]\n  NULLIFY(&columnTypes,false); [line 130]\n " shape="box"]
+	
+
+	 355 -> 356 ;
+	 355 -> 357 ;
+	 355 -> 71 [color="red" ];
+354 [label="354:  throw \n   n$96=*&$irvar1:class io.realm.exceptions.RealmMigrationNeededException * [line 128]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$96 [line 128]\n  REMOVE_TEMPS(n$96); [line 128]\n  NULLIFY(&$irvar1,false); [line 128]\n  APPLY_ABSTRACTION; [line 128]\n " shape="box"]
+	
+
+	 354 -> 70 ;
+	 354 -> 71 [color="red" ];
+353 [label="353:  Call RealmMigrationNeededException.<init>(String,String) \n   n$94=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 128]\n  n$95=*&$irvar0:class java.lang.String * [line 128]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$94:class io.realm.exceptions.RealmMigrationNeededException *,n$95:class java.lang.String *,\"Missing field 'dummyDesc' in existing Realm file. Either remove field or migrate using io.realm.internal.Table.addColumn().\":class java.lang.String *) [line 128]\n  *&$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$94 [line 128]\n  REMOVE_TEMPS(n$94,n$95); [line 128]\n  NULLIFY(&$irvar0,false); [line 128]\n " shape="box"]
+	
+
+	 353 -> 354 ;
+	 353 -> 71 [color="red" ];
+352 [label="352:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 128]\n  NULLIFY(&columnInfo,false); [line 128]\n  NULLIFY(&columnTypes,false); [line 128]\n  NULLIFY(&table,false); [line 128]\n  n$91=*&transaction:class io.realm.internal.ImplicitTransaction * [line 128]\n  n$92=*n$91:class io.realm.internal.ImplicitTransaction  [line 128]\n  n$93=_fun_String ImplicitTransaction.getPath()(n$91:class io.realm.internal.ImplicitTransaction *) virtual [line 128]\n  *&$irvar0:class java.lang.String *=n$93 [line 128]\n  REMOVE_TEMPS(n$91,n$92,n$93); [line 128]\n  NULLIFY(&transaction,false); [line 128]\n " shape="box"]
+	
+
+	 352 -> 353 ;
+	 352 -> 71 [color="red" ];
+351 [label="351: Prune (false branch) \n   n$90=*&$irvar0:_Bool  [line 127]\n  PRUNE((n$90 != 0), false); [line 127]\n  REMOVE_TEMPS(n$90); [line 127]\n " shape="invhouse"]
+	
+
+	 351 -> 355 ;
+	 351 -> 71 [color="red" ];
+350 [label="350: Prune (true branch) \n   n$90=*&$irvar0:_Bool  [line 127]\n  PRUNE(!(n$90 != 0), true); [line 127]\n  REMOVE_TEMPS(n$90); [line 127]\n " shape="invhouse"]
+	
+
+	 350 -> 352 ;
+	 350 -> 71 [color="red" ];
+349 [label="349:  Call boolean HashMap.containsKey(Object) \n   NULLIFY(&$irvar0,false); [line 127]\n  n$87=*&columnTypes:class java.util.HashMap * [line 127]\n  n$88=*n$87:class java.util.HashMap  [line 127]\n  n$89=_fun_boolean HashMap.containsKey(Object)(n$87:class java.util.HashMap *,\"dummyDesc\":class java.lang.String *) virtual [line 127]\n  *&$irvar0:_Bool =n$89 [line 127]\n  REMOVE_TEMPS(n$87,n$88,n$89); [line 127]\n " shape="box"]
+	
+
+	 349 -> 350 ;
+	 349 -> 351 ;
+	 349 -> 71 [color="red" ];
+348 [label="348:  throw \n   n$86=*&$irvar1:class io.realm.exceptions.RealmMigrationNeededException * [line 125]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$86 [line 125]\n  REMOVE_TEMPS(n$86); [line 125]\n  NULLIFY(&$irvar1,false); [line 125]\n  APPLY_ABSTRACTION; [line 125]\n " shape="box"]
+	
+
+	 348 -> 70 ;
+	 348 -> 71 [color="red" ];
+347 [label="347:  Call RealmMigrationNeededException.<init>(String,String) \n   n$84=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 125]\n  n$85=*&$irvar0:class java.lang.String * [line 125]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$84:class io.realm.exceptions.RealmMigrationNeededException *,n$85:class java.lang.String *,\"Field 'dummyTitle' is required. Either set @Required to field 'dummyTitle' or migrate using io.realm.internal.Table.convertColumnToNullable().\":class java.lang.String *) [line 125]\n  *&$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$84 [line 125]\n  REMOVE_TEMPS(n$84,n$85); [line 125]\n  NULLIFY(&$irvar0,false); [line 125]\n " shape="box"]
+	
+
+	 347 -> 348 ;
+	 347 -> 71 [color="red" ];
+346 [label="346:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 125]\n  NULLIFY(&columnInfo,false); [line 125]\n  NULLIFY(&columnTypes,false); [line 125]\n  NULLIFY(&table,false); [line 125]\n  n$81=*&transaction:class io.realm.internal.ImplicitTransaction * [line 125]\n  n$82=*n$81:class io.realm.internal.ImplicitTransaction  [line 125]\n  n$83=_fun_String ImplicitTransaction.getPath()(n$81:class io.realm.internal.ImplicitTransaction *) virtual [line 125]\n  *&$irvar0:class java.lang.String *=n$83 [line 125]\n  REMOVE_TEMPS(n$81,n$82,n$83); [line 125]\n  NULLIFY(&transaction,false); [line 125]\n " shape="box"]
+	
+
+	 346 -> 347 ;
+	 346 -> 71 [color="red" ];
+345 [label="345: Prune (false branch) \n   n$80=*&$irvar0:_Bool  [line 124]\n  PRUNE((n$80 != 0), false); [line 124]\n  REMOVE_TEMPS(n$80); [line 124]\n " shape="invhouse"]
+	
+
+	 345 -> 349 ;
+	 345 -> 71 [color="red" ];
+344 [label="344: Prune (true branch) \n   n$80=*&$irvar0:_Bool  [line 124]\n  PRUNE(!(n$80 != 0), true); [line 124]\n  REMOVE_TEMPS(n$80); [line 124]\n " shape="invhouse"]
+	
+
+	 344 -> 346 ;
+	 344 -> 71 [color="red" ];
+343 [label="343:  Call boolean Table.isColumnNullable(long) \n   NULLIFY(&$irvar0,false); [line 124]\n  n$75=*&table:class io.realm.internal.Table * [line 124]\n  n$76=*n$75:class io.realm.internal.Table  [line 124]\n  n$77=*&columnInfo:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 124]\n  n$78=*n$77.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 124]\n  n$79=_fun_boolean Table.isColumnNullable(long)(n$75:class io.realm.internal.Table *,n$78:long ) virtual [line 124]\n  *&$irvar0:_Bool =n$79 [line 124]\n  REMOVE_TEMPS(n$75,n$76,n$77,n$78,n$79); [line 124]\n " shape="box"]
+	
+
+	 343 -> 344 ;
+	 343 -> 345 ;
+	 343 -> 71 [color="red" ];
+342 [label="342:  throw \n   n$74=*&$irvar1:class io.realm.exceptions.RealmMigrationNeededException * [line 122]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$74 [line 122]\n  REMOVE_TEMPS(n$74); [line 122]\n  NULLIFY(&$irvar1,false); [line 122]\n  APPLY_ABSTRACTION; [line 122]\n " shape="box"]
+	
+
+	 342 -> 70 ;
+	 342 -> 71 [color="red" ];
+341 [label="341:  Call RealmMigrationNeededException.<init>(String,String) \n   n$72=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 122]\n  n$73=*&$irvar0:class java.lang.String * [line 122]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$72:class io.realm.exceptions.RealmMigrationNeededException *,n$73:class java.lang.String *,\"Invalid type 'String' for field 'dummyTitle' in existing Realm file.\":class java.lang.String *) [line 122]\n  *&$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$72 [line 122]\n  REMOVE_TEMPS(n$72,n$73); [line 122]\n  NULLIFY(&$irvar0,false); [line 122]\n " shape="box"]
+	
+
+	 341 -> 342 ;
+	 341 -> 71 [color="red" ];
+340 [label="340:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 122]\n  NULLIFY(&columnInfo,false); [line 122]\n  NULLIFY(&columnTypes,false); [line 122]\n  NULLIFY(&table,false); [line 122]\n  n$69=*&transaction:class io.realm.internal.ImplicitTransaction * [line 122]\n  n$70=*n$69:class io.realm.internal.ImplicitTransaction  [line 122]\n  n$71=_fun_String ImplicitTransaction.getPath()(n$69:class io.realm.internal.ImplicitTransaction *) virtual [line 122]\n  *&$irvar0:class java.lang.String *=n$71 [line 122]\n  REMOVE_TEMPS(n$69,n$70,n$71); [line 122]\n  NULLIFY(&transaction,false); [line 122]\n " shape="box"]
+	
+
+	 340 -> 341 ;
+	 340 -> 71 [color="red" ];
+339 [label="339: Prune (false branch) \n   n$67=*&$irvar0:class java.lang.Object * [line 121]\n  n$68=*&#GB$io.realm.RealmFieldType.io.realm.RealmFieldType.STRING:class io.realm.RealmFieldType  [line 121]\n  PRUNE((n$67 == n$68), false); [line 121]\n  REMOVE_TEMPS(n$67,n$68); [line 121]\n " shape="invhouse"]
+	
+
+	 339 -> 343 ;
+	 339 -> 71 [color="red" ];
+338 [label="338: Prune (true branch) \n   n$67=*&$irvar0:class java.lang.Object * [line 121]\n  n$68=*&#GB$io.realm.RealmFieldType.io.realm.RealmFieldType.STRING:class io.realm.RealmFieldType  [line 121]\n  PRUNE(!(n$67 == n$68), true); [line 121]\n  REMOVE_TEMPS(n$67,n$68); [line 121]\n " shape="invhouse"]
+	
+
+	 338 -> 340 ;
+	 338 -> 71 [color="red" ];
+337 [label="337:  Call Object HashMap.get(Object) \n   NULLIFY(&$irvar0,false); [line 121]\n  n$64=*&columnTypes:class java.util.HashMap * [line 121]\n  n$65=*n$64:class java.util.HashMap  [line 121]\n  n$66=_fun_Object HashMap.get(Object)(n$64:class java.util.HashMap *,\"dummyTitle\":class java.lang.String *) virtual [line 121]\n  *&$irvar0:class java.lang.Object *=n$66 [line 121]\n  REMOVE_TEMPS(n$64,n$65,n$66); [line 121]\n " shape="box"]
+	
+
+	 337 -> 338 ;
+	 337 -> 339 ;
+	 337 -> 71 [color="red" ];
+336 [label="336:  throw \n   n$63=*&$irvar1:class io.realm.exceptions.RealmMigrationNeededException * [line 119]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$63 [line 119]\n  REMOVE_TEMPS(n$63); [line 119]\n  NULLIFY(&$irvar1,false); [line 119]\n  APPLY_ABSTRACTION; [line 119]\n " shape="box"]
+	
+
+	 336 -> 70 ;
+	 336 -> 71 [color="red" ];
+335 [label="335:  Call RealmMigrationNeededException.<init>(String,String) \n   n$61=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 119]\n  n$62=*&$irvar0:class java.lang.String * [line 119]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$61:class io.realm.exceptions.RealmMigrationNeededException *,n$62:class java.lang.String *,\"Missing field 'dummyTitle' in existing Realm file. Either remove field or migrate using io.realm.internal.Table.addColumn().\":class java.lang.String *) [line 119]\n  *&$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$61 [line 119]\n  REMOVE_TEMPS(n$61,n$62); [line 119]\n  NULLIFY(&$irvar0,false); [line 119]\n " shape="box"]
+	
+
+	 335 -> 336 ;
+	 335 -> 71 [color="red" ];
+334 [label="334:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 119]\n  NULLIFY(&columnInfo,false); [line 119]\n  NULLIFY(&columnTypes,false); [line 119]\n  NULLIFY(&table,false); [line 119]\n  n$58=*&transaction:class io.realm.internal.ImplicitTransaction * [line 119]\n  n$59=*n$58:class io.realm.internal.ImplicitTransaction  [line 119]\n  n$60=_fun_String ImplicitTransaction.getPath()(n$58:class io.realm.internal.ImplicitTransaction *) virtual [line 119]\n  *&$irvar0:class java.lang.String *=n$60 [line 119]\n  REMOVE_TEMPS(n$58,n$59,n$60); [line 119]\n  NULLIFY(&transaction,false); [line 119]\n " shape="box"]
+	
+
+	 334 -> 335 ;
+	 334 -> 71 [color="red" ];
+333 [label="333: Prune (false branch) \n   n$57=*&$irvar0:_Bool  [line 118]\n  PRUNE((n$57 != 0), false); [line 118]\n  REMOVE_TEMPS(n$57); [line 118]\n " shape="invhouse"]
+	
+
+	 333 -> 337 ;
+	 333 -> 71 [color="red" ];
+332 [label="332: Prune (true branch) \n   n$57=*&$irvar0:_Bool  [line 118]\n  PRUNE(!(n$57 != 0), true); [line 118]\n  REMOVE_TEMPS(n$57); [line 118]\n " shape="invhouse"]
+	
+
+	 332 -> 334 ;
+	 332 -> 71 [color="red" ];
+331 [label="331:  Call boolean HashMap.containsKey(Object) \n   n$54=*&columnTypes:class java.util.HashMap * [line 118]\n  n$55=*n$54:class java.util.HashMap  [line 118]\n  n$56=_fun_boolean HashMap.containsKey(Object)(n$54:class java.util.HashMap *,\"dummyTitle\":class java.lang.String *) virtual [line 118]\n  *&$irvar0:_Bool =n$56 [line 118]\n  REMOVE_TEMPS(n$54,n$55,n$56); [line 118]\n " shape="box"]
+	
+
+	 331 -> 332 ;
+	 331 -> 333 ;
+	 331 -> 71 [color="red" ];
+330 [label="330:  Call DummyObjectRealmProxy$DummyObjectColumnInfo.<init>(String,Table) \n   n$51=_fun___new(sizeof(class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ):class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *) [line 116]\n  n$52=*&$irvar0:class java.lang.String * [line 116]\n  n$53=*&table:class io.realm.internal.Table * [line 116]\n  _fun_DummyObjectRealmProxy$DummyObjectColumnInfo.<init>(String,Table)(n$51:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *,n$52:class java.lang.String *,n$53:class io.realm.internal.Table *) [line 116]\n  *&columnInfo:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=n$51 [line 116]\n  REMOVE_TEMPS(n$51,n$52,n$53); [line 116]\n  NULLIFY(&$irvar0,false); [line 116]\n " shape="box"]
+	
+
+	 330 -> 331 ;
+	 330 -> 71 [color="red" ];
+329 [label="329:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&i,false); [line 116]\n  n$48=*&transaction:class io.realm.internal.ImplicitTransaction * [line 116]\n  n$49=*n$48:class io.realm.internal.ImplicitTransaction  [line 116]\n  n$50=_fun_String ImplicitTransaction.getPath()(n$48:class io.realm.internal.ImplicitTransaction *) virtual [line 116]\n  *&$irvar0:class java.lang.String *=n$50 [line 116]\n  REMOVE_TEMPS(n$48,n$49,n$50); [line 116]\n " shape="box"]
+	
+
+	 329 -> 330 ;
+	 329 -> 71 [color="red" ];
+328 [label="328:  method_body \n   n$47=*&i:long  [line 112]\n  *&i:long =(n$47 + 1) [line 112]\n  REMOVE_TEMPS(n$47); [line 112]\n  APPLY_ABSTRACTION; [line 112]\n " shape="box"]
+	
+
+	 328 -> 324 ;
+	 328 -> 71 [color="red" ];
+327 [label="327:  Call Object HashMap.put(Object,Object) \n   n$42=*&columnTypes:class java.util.HashMap * [line 113]\n  n$43=*n$42:class java.util.HashMap  [line 113]\n  n$44=*&$irvar0:class java.lang.String * [line 113]\n  n$45=*&$irvar1:class io.realm.RealmFieldType * [line 113]\n  n$46=_fun_Object HashMap.put(Object,Object)(n$42:class java.util.HashMap *,n$44:class java.lang.String *,n$45:class io.realm.RealmFieldType *) virtual [line 113]\n  *&$irvar2:class java.lang.Object *=n$46 [line 113]\n  REMOVE_TEMPS(n$42,n$43,n$44,n$45,n$46); [line 113]\n  NULLIFY(&$irvar0,false); [line 113]\n  NULLIFY(&$irvar1,false); [line 113]\n  NULLIFY(&$irvar2,false); [line 113]\n " shape="box"]
+	
+
+	 327 -> 328 ;
+	 327 -> 71 [color="red" ];
+326 [label="326:  Call RealmFieldType Table.getColumnType(long) \n   n$38=*&table:class io.realm.internal.Table * [line 113]\n  n$39=*n$38:class io.realm.internal.Table  [line 113]\n  n$40=*&i:long  [line 113]\n  n$41=_fun_RealmFieldType Table.getColumnType(long)(n$38:class io.realm.internal.Table *,n$40:long ) virtual [line 113]\n  *&$irvar1:class io.realm.RealmFieldType *=n$41 [line 113]\n  REMOVE_TEMPS(n$38,n$39,n$40,n$41); [line 113]\n " shape="box"]
+	
+
+	 326 -> 327 ;
+	 326 -> 71 [color="red" ];
+325 [label="325:  Call String Table.getColumnName(long) \n   n$34=*&table:class io.realm.internal.Table * [line 113]\n  n$35=*n$34:class io.realm.internal.Table  [line 113]\n  n$36=*&i:long  [line 113]\n  n$37=_fun_String Table.getColumnName(long)(n$34:class io.realm.internal.Table *,n$36:long ) virtual [line 113]\n  *&$irvar0:class java.lang.String *=n$37 [line 113]\n  REMOVE_TEMPS(n$34,n$35,n$36,n$37); [line 113]\n " shape="box"]
+	
+
+	 325 -> 326 ;
+	 325 -> 71 [color="red" ];
+324 [label="324: + \n  " ]
+	
+
+	 324 -> 322 ;
+	 324 -> 323 ;
+323 [label="323: Prune (false branch) \n   n$33=*&i:long  [line 112]\n  PRUNE((n$33 >= 2), false); [line 112]\n  REMOVE_TEMPS(n$33); [line 112]\n " shape="invhouse"]
+	
+
+	 323 -> 329 ;
+	 323 -> 71 [color="red" ];
+322 [label="322: Prune (true branch) \n   n$33=*&i:long  [line 112]\n  PRUNE(!(n$33 >= 2), true); [line 112]\n  REMOVE_TEMPS(n$33); [line 112]\n " shape="invhouse"]
+	
+
+	 322 -> 325 ;
+	 322 -> 71 [color="red" ];
+321 [label="321:  method_body \n   *&i:long =0 [line 112]\n  APPLY_ABSTRACTION; [line 112]\n " shape="box"]
+	
+
+	 321 -> 324 ;
+	 321 -> 71 [color="red" ];
+320 [label="320:  Call HashMap.<init>() \n   NULLIFY(&$irvar0,false); [line 111]\n  n$32=_fun___new(sizeof(class java.util.HashMap ):class java.util.HashMap *) [line 111]\n  _fun_HashMap.<init>()(n$32:class java.util.HashMap *) [line 111]\n  *&columnTypes:class java.util.HashMap *=n$32 [line 111]\n  REMOVE_TEMPS(n$32); [line 111]\n " shape="box"]
+	
+
+	 320 -> 321 ;
+	 320 -> 71 [color="red" ];
+319 [label="319:  throw \n   n$31=*&$irvar6:class io.realm.exceptions.RealmMigrationNeededException * [line 109]\n  *&return:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *=EXN n$31 [line 109]\n  REMOVE_TEMPS(n$31); [line 109]\n  NULLIFY(&$irvar6,false); [line 109]\n  APPLY_ABSTRACTION; [line 109]\n " shape="box"]
+	
+
+	 319 -> 70 ;
+	 319 -> 71 [color="red" ];
+318 [label="318:  Call RealmMigrationNeededException.<init>(String,String) \n   n$28=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 109]\n  n$29=*&$irvar0:class java.lang.String * [line 109]\n  n$30=*&$irvar5:class java.lang.String * [line 109]\n  _fun_RealmMigrationNeededException.<init>(String,String)(n$28:class io.realm.exceptions.RealmMigrationNeededException *,n$29:class java.lang.String *,n$30:class java.lang.String *) [line 109]\n  *&$irvar6:class io.realm.exceptions.RealmMigrationNeededException *=n$28 [line 109]\n  REMOVE_TEMPS(n$28,n$29,n$30); [line 109]\n  NULLIFY(&$irvar0,false); [line 109]\n  NULLIFY(&$irvar5,false); [line 109]\n " shape="box"]
+	
+
+	 318 -> 319 ;
+	 318 -> 71 [color="red" ];
+317 [label="317:  Call String StringBuilder.toString() \n   n$25=*&$irvar4:class java.lang.StringBuilder * [line 109]\n  n$26=*n$25:class java.lang.StringBuilder  [line 109]\n  n$27=_fun_String StringBuilder.toString()(n$25:class java.lang.StringBuilder *) virtual [line 109]\n  *&$irvar5:class java.lang.String *=n$27 [line 109]\n  REMOVE_TEMPS(n$25,n$26,n$27); [line 109]\n  NULLIFY(&$irvar4,false); [line 109]\n " shape="box"]
+	
+
+	 317 -> 318 ;
+	 317 -> 71 [color="red" ];
+316 [label="316:  Call StringBuilder StringBuilder.append(long) \n   n$21=*&$irvar2:class java.lang.StringBuilder * [line 109]\n  n$22=*n$21:class java.lang.StringBuilder  [line 109]\n  n$23=*&$irvar3:long  [line 109]\n  n$24=_fun_StringBuilder StringBuilder.append(long)(n$21:class java.lang.StringBuilder *,n$23:long ) virtual [line 109]\n  *&$irvar4:class java.lang.StringBuilder *=n$24 [line 109]\n  REMOVE_TEMPS(n$21,n$22,n$23,n$24); [line 109]\n  NULLIFY(&$irvar2,false); [line 109]\n  NULLIFY(&$irvar3,false); [line 109]\n " shape="box"]
+	
+
+	 316 -> 317 ;
+	 316 -> 71 [color="red" ];
+315 [label="315:  Call long Table.getColumnCount() \n   n$18=*&table:class io.realm.internal.Table * [line 109]\n  n$19=*n$18:class io.realm.internal.Table  [line 109]\n  n$20=_fun_long Table.getColumnCount()(n$18:class io.realm.internal.Table *) virtual [line 109]\n  *&$irvar3:long =n$20 [line 109]\n  REMOVE_TEMPS(n$18,n$19,n$20); [line 109]\n  NULLIFY(&table,false); [line 109]\n " shape="box"]
+	
+
+	 315 -> 316 ;
+	 315 -> 71 [color="red" ];
+314 [label="314:  Call StringBuilder StringBuilder.append(String) \n   n$15=*&$irvar1:class java.lang.StringBuilder * [line 109]\n  n$16=*n$15:class java.lang.StringBuilder  [line 109]\n  n$17=_fun_StringBuilder StringBuilder.append(String)(n$15:class java.lang.StringBuilder *,\"Field count does not match - expected 2 but was \":class java.lang.String *) virtual [line 109]\n  *&$irvar2:class java.lang.StringBuilder *=n$17 [line 109]\n  REMOVE_TEMPS(n$15,n$16,n$17); [line 109]\n  NULLIFY(&$irvar1,false); [line 109]\n " shape="box"]
+	
+
+	 314 -> 315 ;
+	 314 -> 71 [color="red" ];
+313 [label="313:  Call StringBuilder.<init>() \n   n$14=_fun___new(sizeof(class java.lang.StringBuilder ):class java.lang.StringBuilder *) [line 109]\n  _fun_StringBuilder.<init>()(n$14:class java.lang.StringBuilder *) [line 109]\n  *&$irvar1:class java.lang.StringBuilder *=n$14 [line 109]\n  REMOVE_TEMPS(n$14); [line 109]\n " shape="box"]
+	
+
+	 313 -> 314 ;
+	 313 -> 71 [color="red" ];
+312 [label="312:  Call String ImplicitTransaction.getPath() \n   NULLIFY(&$irvar0,false); [line 109]\n  n$11=*&transaction:class io.realm.internal.ImplicitTransaction * [line 109]\n  n$12=*n$11:class io.realm.internal.ImplicitTransaction  [line 109]\n  n$13=_fun_String ImplicitTransaction.getPath()(n$11:class io.realm.internal.ImplicitTransaction *) virtual [line 109]\n  *&$irvar0:class java.lang.String *=n$13 [line 109]\n  REMOVE_TEMPS(n$11,n$12,n$13); [line 109]\n  NULLIFY(&transaction,false); [line 109]\n " shape="box"]
+	
+
+	 312 -> 313 ;
+	 312 -> 71 [color="red" ];
+311 [label="311: Prune (false branch) \n   n$10=*&$irvar0:long  [line 108]\n  PRUNE((n$10 == 2), false); [line 108]\n  REMOVE_TEMPS(n$10); [line 108]\n " shape="invhouse"]
+	
+
+	 311 -> 320 ;
+	 311 -> 71 [color="red" ];
+310 [label="310: Prune (true branch) \n   n$10=*&$irvar0:long  [line 108]\n  PRUNE(!(n$10 == 2), true); [line 108]\n  REMOVE_TEMPS(n$10); [line 108]\n " shape="invhouse"]
+	
+
+	 310 -> 312 ;
+	 310 -> 71 [color="red" ];
+309 [label="309:  Call long Table.getColumnCount() \n   n$7=*&table:class io.realm.internal.Table * [line 108]\n  n$8=*n$7:class io.realm.internal.Table  [line 108]\n  n$9=_fun_long Table.getColumnCount()(n$7:class io.realm.internal.Table *) virtual [line 108]\n  *&$irvar0:long =n$9 [line 108]\n  REMOVE_TEMPS(n$7,n$8,n$9); [line 108]\n " shape="box"]
+	
+
+	 309 -> 310 ;
+	 309 -> 311 ;
+	 309 -> 71 [color="red" ];
+308 [label="308:  Call Table Group.getTable(String) \n   NULLIFY(&$irvar0,false); [line 107]\n  n$4=*&transaction:class io.realm.internal.ImplicitTransaction * [line 107]\n  n$5=*n$4:class io.realm.internal.ImplicitTransaction  [line 107]\n  n$6=_fun_Table Group.getTable(String)(n$4:class io.realm.internal.ImplicitTransaction *,\"class_DummyObject\":class java.lang.String *) virtual [line 107]\n  *&table:class io.realm.internal.Table *=n$6 [line 107]\n  REMOVE_TEMPS(n$4,n$5,n$6); [line 107]\n " shape="box"]
+	
+
+	 308 -> 309 ;
+	 308 -> 71 [color="red" ];
+307 [label="307: Prune (false branch) \n   n$3=*&$irvar0:_Bool  [line 106]\n  PRUNE((n$3 == 0), false); [line 106]\n  REMOVE_TEMPS(n$3); [line 106]\n " shape="invhouse"]
+	
+
+	 307 -> 368 ;
+	 307 -> 71 [color="red" ];
+306 [label="306: Prune (true branch) \n   n$3=*&$irvar0:_Bool  [line 106]\n  PRUNE(!(n$3 == 0), true); [line 106]\n  REMOVE_TEMPS(n$3); [line 106]\n " shape="invhouse"]
+	
+
+	 306 -> 308 ;
+	 306 -> 71 [color="red" ];
+305 [label="305:  Call boolean Group.hasTable(String) \n   n$0=*&transaction:class io.realm.internal.ImplicitTransaction * [line 106]\n  n$1=*n$0:class io.realm.internal.ImplicitTransaction  [line 106]\n  n$2=_fun_boolean Group.hasTable(String)(n$0:class io.realm.internal.ImplicitTransaction *,\"class_DummyObject\":class java.lang.String *) virtual [line 106]\n  *&$irvar0:_Bool =n$2 [line 106]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 106]\n " shape="box"]
+	
+
+	 305 -> 306 ;
+	 305 -> 307 ;
+	 305 -> 71 [color="red" ];
+304 [label="304:  method_body \n   n$56=*&obj:class com.karthik.imager.APIService.DummyObject * [line 197]\n  *&return:class com.karthik.imager.APIService.DummyObject *=n$56 [line 197]\n  REMOVE_TEMPS(n$56); [line 197]\n  NULLIFY(&obj,false); [line 197]\n  APPLY_ABSTRACTION; [line 197]\n " shape="box"]
+	
+
+	 304 -> 67 ;
+	 304 -> 68 [color="red" ];
+303 [label="303:  Call void JsonReader.endObject() \n   NULLIFY(&$irvar0,false); [line 196]\n  n$54=*&reader:class android.util.JsonReader * [line 196]\n  n$55=*n$54:class android.util.JsonReader  [line 196]\n  _fun_void JsonReader.endObject()(n$54:class android.util.JsonReader *) virtual [line 196]\n  REMOVE_TEMPS(n$54,n$55); [line 196]\n  NULLIFY(&reader,false); [line 196]\n " shape="box"]
+	
+
+	 303 -> 304 ;
+	 303 -> 68 [color="red" ];
+302 [label="302:  Call void JsonReader.skipValue() \n   NULLIFY(&$irvar0,false); [line 193]\n  n$52=*&reader:class android.util.JsonReader * [line 193]\n  n$53=*n$52:class android.util.JsonReader  [line 193]\n  _fun_void JsonReader.skipValue()(n$52:class android.util.JsonReader *) virtual [line 193]\n  REMOVE_TEMPS(n$52,n$53); [line 193]\n  APPLY_ABSTRACTION; [line 193]\n " shape="box"]
+	
+
+	 302 -> 273 ;
+	 302 -> 68 [color="red" ];
+301 [label="301:  Call void DummyObject.setDummyDesc(String) \n   n$49=*&obj:class com.karthik.imager.APIService.DummyObject * [line 190]\n  n$50=*n$49:class com.karthik.imager.APIService.DummyObject  [line 190]\n  n$51=*&$irvar0:class java.lang.String * [line 190]\n  _fun_void DummyObject.setDummyDesc(String)(n$49:class com.karthik.imager.APIService.DummyObject *,n$51:class java.lang.String *) virtual [line 190]\n  REMOVE_TEMPS(n$49,n$50,n$51); [line 190]\n  NULLIFY(&$irvar0,false); [line 190]\n  APPLY_ABSTRACTION; [line 190]\n " shape="box"]
+	
+
+	 301 -> 273 ;
+	 301 -> 68 [color="red" ];
+300 [label="300:  Call String JsonReader.nextString() \n   NULLIFY(&$irvar0,false); [line 190]\n  n$46=*&reader:class android.util.JsonReader * [line 190]\n  n$47=*n$46:class android.util.JsonReader  [line 190]\n  n$48=_fun_String JsonReader.nextString()(n$46:class android.util.JsonReader *) virtual [line 190]\n  *&$irvar0:class java.lang.String *=n$48 [line 190]\n  REMOVE_TEMPS(n$46,n$47,n$48); [line 190]\n " shape="box"]
+	
+
+	 300 -> 301 ;
+	 300 -> 68 [color="red" ];
+299 [label="299:  Call void DummyObject.setDummyDesc(String) \n   n$44=*&obj:class com.karthik.imager.APIService.DummyObject * [line 188]\n  n$45=*n$44:class com.karthik.imager.APIService.DummyObject  [line 188]\n  _fun_void DummyObject.setDummyDesc(String)(n$44:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 188]\n  REMOVE_TEMPS(n$44,n$45); [line 188]\n  APPLY_ABSTRACTION; [line 188]\n " shape="box"]
+	
+
+	 299 -> 273 ;
+	 299 -> 68 [color="red" ];
+298 [label="298:  Call void JsonReader.skipValue() \n   NULLIFY(&$irvar0,false); [line 187]\n  n$42=*&reader:class android.util.JsonReader * [line 187]\n  n$43=*n$42:class android.util.JsonReader  [line 187]\n  _fun_void JsonReader.skipValue()(n$42:class android.util.JsonReader *) virtual [line 187]\n  REMOVE_TEMPS(n$42,n$43); [line 187]\n " shape="box"]
+	
+
+	 298 -> 299 ;
+	 298 -> 68 [color="red" ];
+297 [label="297: + \n  " ]
+	
+
+	 297 -> 295 ;
+	 297 -> 296 ;
+296 [label="296: Prune (false branch) \n   n$40=*&$irvar0:class android.util.JsonToken * [line 186]\n  n$41=*&#GB$android.util.JsonToken.android.util.JsonToken.NULL:class android.util.JsonToken  [line 186]\n  PRUNE((n$40 != n$41), false); [line 186]\n  REMOVE_TEMPS(n$40,n$41); [line 186]\n " shape="invhouse"]
+	
+
+	 296 -> 300 ;
+	 296 -> 68 [color="red" ];
+295 [label="295: Prune (true branch) \n   n$40=*&$irvar0:class android.util.JsonToken * [line 186]\n  n$41=*&#GB$android.util.JsonToken.android.util.JsonToken.NULL:class android.util.JsonToken  [line 186]\n  PRUNE(!(n$40 != n$41), true); [line 186]\n  REMOVE_TEMPS(n$40,n$41); [line 186]\n " shape="invhouse"]
+	
+
+	 295 -> 298 ;
+	 295 -> 68 [color="red" ];
+294 [label="294:  Call JsonToken JsonReader.peek() \n   NULLIFY(&$irvar0,false); [line 186]\n  n$37=*&reader:class android.util.JsonReader * [line 186]\n  n$38=*n$37:class android.util.JsonReader  [line 186]\n  n$39=_fun_JsonToken JsonReader.peek()(n$37:class android.util.JsonReader *) virtual [line 186]\n  *&$irvar0:class android.util.JsonToken *=n$39 [line 186]\n  REMOVE_TEMPS(n$37,n$38,n$39); [line 186]\n " shape="box"]
+	
+
+	 294 -> 297 ;
+	 294 -> 68 [color="red" ];
+293 [label="293: + \n  " ]
+	
+
+	 293 -> 291 ;
+	 293 -> 292 ;
+292 [label="292: Prune (false branch) \n   n$36=*&$irvar0:_Bool  [line 185]\n  PRUNE((n$36 == 0), false); [line 185]\n  REMOVE_TEMPS(n$36); [line 185]\n " shape="invhouse"]
+	
+
+	 292 -> 302 ;
+	 292 -> 68 [color="red" ];
+291 [label="291: Prune (true branch) \n   n$36=*&$irvar0:_Bool  [line 185]\n  PRUNE(!(n$36 == 0), true); [line 185]\n  REMOVE_TEMPS(n$36); [line 185]\n " shape="invhouse"]
+	
+
+	 291 -> 294 ;
+	 291 -> 68 [color="red" ];
+290 [label="290:  Call boolean String.equals(Object) \n   NULLIFY(&$irvar0,false); [line 185]\n  n$33=*&name:class java.lang.String * [line 185]\n  n$34=*n$33:class java.lang.String  [line 185]\n  n$35=_fun_boolean String.equals(Object)(n$33:class java.lang.String *,\"dummyDesc\":class java.lang.String *) virtual [line 185]\n  *&$irvar0:_Bool =n$35 [line 185]\n  REMOVE_TEMPS(n$33,n$34,n$35); [line 185]\n  NULLIFY(&name,false); [line 185]\n " shape="box"]
+	
+
+	 290 -> 293 ;
+	 290 -> 68 [color="red" ];
+289 [label="289:  Call void DummyObject.setDummyTitle(String) \n   n$30=*&obj:class com.karthik.imager.APIService.DummyObject * [line 183]\n  n$31=*n$30:class com.karthik.imager.APIService.DummyObject  [line 183]\n  n$32=*&$irvar0:class java.lang.String * [line 183]\n  _fun_void DummyObject.setDummyTitle(String)(n$30:class com.karthik.imager.APIService.DummyObject *,n$32:class java.lang.String *) virtual [line 183]\n  REMOVE_TEMPS(n$30,n$31,n$32); [line 183]\n  NULLIFY(&$irvar0,false); [line 183]\n  APPLY_ABSTRACTION; [line 183]\n " shape="box"]
+	
+
+	 289 -> 273 ;
+	 289 -> 68 [color="red" ];
+288 [label="288:  Call String JsonReader.nextString() \n   NULLIFY(&$irvar0,false); [line 183]\n  n$27=*&reader:class android.util.JsonReader * [line 183]\n  n$28=*n$27:class android.util.JsonReader  [line 183]\n  n$29=_fun_String JsonReader.nextString()(n$27:class android.util.JsonReader *) virtual [line 183]\n  *&$irvar0:class java.lang.String *=n$29 [line 183]\n  REMOVE_TEMPS(n$27,n$28,n$29); [line 183]\n " shape="box"]
+	
+
+	 288 -> 289 ;
+	 288 -> 68 [color="red" ];
+287 [label="287:  Call void DummyObject.setDummyTitle(String) \n   n$25=*&obj:class com.karthik.imager.APIService.DummyObject * [line 181]\n  n$26=*n$25:class com.karthik.imager.APIService.DummyObject  [line 181]\n  _fun_void DummyObject.setDummyTitle(String)(n$25:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 181]\n  REMOVE_TEMPS(n$25,n$26); [line 181]\n  APPLY_ABSTRACTION; [line 181]\n " shape="box"]
+	
+
+	 287 -> 273 ;
+	 287 -> 68 [color="red" ];
+286 [label="286:  Call void JsonReader.skipValue() \n   NULLIFY(&$irvar0,false); [line 180]\n  n$23=*&reader:class android.util.JsonReader * [line 180]\n  n$24=*n$23:class android.util.JsonReader  [line 180]\n  _fun_void JsonReader.skipValue()(n$23:class android.util.JsonReader *) virtual [line 180]\n  REMOVE_TEMPS(n$23,n$24); [line 180]\n " shape="box"]
+	
+
+	 286 -> 287 ;
+	 286 -> 68 [color="red" ];
+285 [label="285: + \n  " ]
+	
+
+	 285 -> 283 ;
+	 285 -> 284 ;
+284 [label="284: Prune (false branch) \n   n$21=*&$irvar0:class android.util.JsonToken * [line 179]\n  n$22=*&#GB$android.util.JsonToken.android.util.JsonToken.NULL:class android.util.JsonToken  [line 179]\n  PRUNE((n$21 != n$22), false); [line 179]\n  REMOVE_TEMPS(n$21,n$22); [line 179]\n " shape="invhouse"]
+	
+
+	 284 -> 288 ;
+	 284 -> 68 [color="red" ];
+283 [label="283: Prune (true branch) \n   n$21=*&$irvar0:class android.util.JsonToken * [line 179]\n  n$22=*&#GB$android.util.JsonToken.android.util.JsonToken.NULL:class android.util.JsonToken  [line 179]\n  PRUNE(!(n$21 != n$22), true); [line 179]\n  REMOVE_TEMPS(n$21,n$22); [line 179]\n " shape="invhouse"]
+	
+
+	 283 -> 286 ;
+	 283 -> 68 [color="red" ];
+282 [label="282:  Call JsonToken JsonReader.peek() \n   NULLIFY(&$irvar0,false); [line 179]\n  NULLIFY(&name,false); [line 179]\n  n$18=*&reader:class android.util.JsonReader * [line 179]\n  n$19=*n$18:class android.util.JsonReader  [line 179]\n  n$20=_fun_JsonToken JsonReader.peek()(n$18:class android.util.JsonReader *) virtual [line 179]\n  *&$irvar0:class android.util.JsonToken *=n$20 [line 179]\n  REMOVE_TEMPS(n$18,n$19,n$20); [line 179]\n " shape="box"]
+	
+
+	 282 -> 285 ;
+	 282 -> 68 [color="red" ];
+281 [label="281: + \n  " ]
+	
+
+	 281 -> 279 ;
+	 281 -> 280 ;
+280 [label="280: Prune (false branch) \n   n$17=*&$irvar0:_Bool  [line 178]\n  PRUNE((n$17 == 0), false); [line 178]\n  REMOVE_TEMPS(n$17); [line 178]\n " shape="invhouse"]
+	
+
+	 280 -> 290 ;
+	 280 -> 68 [color="red" ];
+279 [label="279: Prune (true branch) \n   n$17=*&$irvar0:_Bool  [line 178]\n  PRUNE(!(n$17 == 0), true); [line 178]\n  REMOVE_TEMPS(n$17); [line 178]\n " shape="invhouse"]
+	
+
+	 279 -> 282 ;
+	 279 -> 68 [color="red" ];
+278 [label="278:  Call boolean String.equals(Object) \n   n$14=*&name:class java.lang.String * [line 178]\n  n$15=*n$14:class java.lang.String  [line 178]\n  n$16=_fun_boolean String.equals(Object)(n$14:class java.lang.String *,\"dummyTitle\":class java.lang.String *) virtual [line 178]\n  *&$irvar0:_Bool =n$16 [line 178]\n  REMOVE_TEMPS(n$14,n$15,n$16); [line 178]\n " shape="box"]
+	
+
+	 278 -> 281 ;
+	 278 -> 68 [color="red" ];
+277 [label="277:  Call String JsonReader.nextName() \n   NULLIFY(&$irvar0,false); [line 177]\n  n$11=*&reader:class android.util.JsonReader * [line 177]\n  n$12=*n$11:class android.util.JsonReader  [line 177]\n  n$13=_fun_String JsonReader.nextName()(n$11:class android.util.JsonReader *) virtual [line 177]\n  *&name:class java.lang.String *=n$13 [line 177]\n  REMOVE_TEMPS(n$11,n$12,n$13); [line 177]\n " shape="box"]
+	
+
+	 277 -> 278 ;
+	 277 -> 68 [color="red" ];
+276 [label="276: + \n  " ]
+	
+
+	 276 -> 274 ;
+	 276 -> 275 ;
+275 [label="275: Prune (false branch) \n   n$10=*&$irvar0:_Bool  [line 176]\n  PRUNE((n$10 == 0), false); [line 176]\n  REMOVE_TEMPS(n$10); [line 176]\n " shape="invhouse"]
+	
+
+	 275 -> 303 ;
+	 275 -> 68 [color="red" ];
+274 [label="274: Prune (true branch) \n   n$10=*&$irvar0:_Bool  [line 176]\n  PRUNE(!(n$10 == 0), true); [line 176]\n  REMOVE_TEMPS(n$10); [line 176]\n " shape="invhouse"]
+	
+
+	 274 -> 277 ;
+	 274 -> 68 [color="red" ];
+273 [label="273:  Call boolean JsonReader.hasNext() \n   n$7=*&reader:class android.util.JsonReader * [line 176]\n  n$8=*n$7:class android.util.JsonReader  [line 176]\n  n$9=_fun_boolean JsonReader.hasNext()(n$7:class android.util.JsonReader *) virtual [line 176]\n  *&$irvar0:_Bool =n$9 [line 176]\n  REMOVE_TEMPS(n$7,n$8,n$9); [line 176]\n " shape="box"]
+	
+
+	 273 -> 276 ;
+	 273 -> 68 [color="red" ];
+272 [label="272:  Call void JsonReader.beginObject() \n   n$5=*&reader:class android.util.JsonReader * [line 175]\n  n$6=*n$5:class android.util.JsonReader  [line 175]\n  _fun_void JsonReader.beginObject()(n$5:class android.util.JsonReader *) virtual [line 175]\n  REMOVE_TEMPS(n$5,n$6); [line 175]\n  APPLY_ABSTRACTION; [line 175]\n " shape="box"]
+	
+
+	 272 -> 273 ;
+	 272 -> 68 [color="red" ];
+271 [label="271:  method_body \n   n$3=*&$irvar0:class io.realm.RealmObject * [line 174]\n  n$4=_fun___cast(n$3:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 174]\n  *&obj:class com.karthik.imager.APIService.DummyObject *=n$4 [line 174]\n  REMOVE_TEMPS(n$3,n$4); [line 174]\n  NULLIFY(&$irvar0,false); [line 174]\n " shape="box"]
+	
+
+	 271 -> 272 ;
+	 271 -> 68 [color="red" ];
+270 [label="270:  Call RealmObject Realm.createObject(Class) \n   n$0=*&realm:class io.realm.Realm * [line 174]\n  n$1=*n$0:class io.realm.Realm  [line 174]\n  n$2=_fun_RealmObject Realm.createObject(Class)(n$0:class io.realm.Realm *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 174]\n  *&$irvar0:class io.realm.RealmObject *=n$2 [line 174]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 174]\n  NULLIFY(&realm,false); [line 174]\n " shape="box"]
+	
+
+	 270 -> 271 ;
+	 270 -> 68 [color="red" ];
+269 [label="269:  method_body \n   n$10=*&$irvar0:class java.lang.String * [line 81]\n  *&return:class java.lang.String *=n$10 [line 81]\n  REMOVE_TEMPS(n$10); [line 81]\n  NULLIFY(&$irvar0,false); [line 81]\n  APPLY_ABSTRACTION; [line 81]\n " shape="box"]
+	
+
+	 269 -> 64 ;
+	 269 -> 65 [color="red" ];
+268 [label="268:  Call String Row.getString(long) \n   n$3=*&this:class io.realm.DummyObjectRealmProxy * [line 81]\n  n$4=*n$3.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 81]\n  n$5=*n$4:class io.realm.internal.Row  [line 81]\n  n$6=*&this:class io.realm.DummyObjectRealmProxy * [line 81]\n  n$7=*n$6.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 81]\n  n$8=*n$7.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyDescIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 81]\n  n$9=_fun_String Row.getString(long)(n$4:class io.realm.internal.Row *,n$8:long ) virtual [line 81]\n  *&$irvar0:class java.lang.String *=n$9 [line 81]\n  REMOVE_TEMPS(n$3,n$4,n$5,n$6,n$7,n$8,n$9); [line 81]\n  NULLIFY(&this,false); [line 81]\n " shape="box"]
+	
+
+	 268 -> 269 ;
+	 268 -> 65 [color="red" ];
+267 [label="267:  Call void BaseRealm.checkIfValid() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 80]\n  n$1=*n$0.io.realm.RealmObject.realm:class io.realm.DummyObjectRealmProxy  [line 80]\n  n$2=*n$1:class io.realm.BaseRealm  [line 80]\n  _fun_void BaseRealm.checkIfValid()(n$1:class io.realm.BaseRealm *) virtual [line 80]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 80]\n " shape="box"]
+	
+
+	 267 -> 268 ;
+	 267 -> 65 [color="red" ];
+266 [label="266:  method_body \n   n$21=*&$irvar0:class io.realm.internal.Table * [line 102]\n  *&return:class io.realm.internal.Table *=n$21 [line 102]\n  REMOVE_TEMPS(n$21); [line 102]\n  NULLIFY(&$irvar0,false); [line 102]\n  APPLY_ABSTRACTION; [line 102]\n " shape="box"]
+	
+
+	 266 -> 61 ;
+	 266 -> 62 [color="red" ];
+265 [label="265:  Call Table Group.getTable(String) \n   NULLIFY(&$irvar0,false); [line 102]\n  n$18=*&transaction:class io.realm.internal.ImplicitTransaction * [line 102]\n  n$19=*n$18:class io.realm.internal.ImplicitTransaction  [line 102]\n  n$20=_fun_Table Group.getTable(String)(n$18:class io.realm.internal.ImplicitTransaction *,\"class_DummyObject\":class java.lang.String *) virtual [line 102]\n  *&$irvar0:class io.realm.internal.Table *=n$20 [line 102]\n  REMOVE_TEMPS(n$18,n$19,n$20); [line 102]\n  NULLIFY(&transaction,false); [line 102]\n " shape="box"]
+	
+
+	 265 -> 266 ;
+	 265 -> 62 [color="red" ];
+264 [label="264:  method_body \n   n$17=*&table:class io.realm.internal.Table * [line 100]\n  *&return:class io.realm.internal.Table *=n$17 [line 100]\n  REMOVE_TEMPS(n$17); [line 100]\n  NULLIFY(&table,false); [line 100]\n  APPLY_ABSTRACTION; [line 100]\n " shape="box"]
+	
+
+	 264 -> 61 ;
+	 264 -> 62 [color="red" ];
+263 [label="263:  Call void Table.setPrimaryKey(String) \n   n$15=*&table:class io.realm.internal.Table * [line 99]\n  n$16=*n$15:class io.realm.internal.Table  [line 99]\n  _fun_void Table.setPrimaryKey(String)(n$15:class io.realm.internal.Table *,\"\":class java.lang.String *) virtual [line 99]\n  REMOVE_TEMPS(n$15,n$16); [line 99]\n " shape="box"]
+	
+
+	 263 -> 264 ;
+	 263 -> 62 [color="red" ];
+262 [label="262:  Call long Table.addColumn(RealmFieldType,String,boolean) \n   n$11=*&table:class io.realm.internal.Table * [line 98]\n  n$12=*n$11:class io.realm.internal.Table  [line 98]\n  n$13=*&#GB$io.realm.RealmFieldType.io.realm.RealmFieldType.STRING:class io.realm.RealmFieldType  [line 98]\n  n$14=_fun_long Table.addColumn(RealmFieldType,String,boolean)(n$11:class io.realm.internal.Table *,n$13:class io.realm.RealmFieldType *,\"dummyDesc\":class java.lang.String *,1:int ) virtual [line 98]\n  *&$irvar0:long =n$14 [line 98]\n  REMOVE_TEMPS(n$11,n$12,n$13,n$14); [line 98]\n  NULLIFY(&$irvar0,false); [line 98]\n " shape="box"]
+	
+
+	 262 -> 263 ;
+	 262 -> 62 [color="red" ];
+261 [label="261:  Call long Table.addColumn(RealmFieldType,String,boolean) \n   n$7=*&table:class io.realm.internal.Table * [line 97]\n  n$8=*n$7:class io.realm.internal.Table  [line 97]\n  n$9=*&#GB$io.realm.RealmFieldType.io.realm.RealmFieldType.STRING:class io.realm.RealmFieldType  [line 97]\n  n$10=_fun_long Table.addColumn(RealmFieldType,String,boolean)(n$7:class io.realm.internal.Table *,n$9:class io.realm.RealmFieldType *,\"dummyTitle\":class java.lang.String *,1:int ) virtual [line 97]\n  *&$irvar0:long =n$10 [line 97]\n  REMOVE_TEMPS(n$7,n$8,n$9,n$10); [line 97]\n  NULLIFY(&$irvar0,false); [line 97]\n " shape="box"]
+	
+
+	 261 -> 262 ;
+	 261 -> 62 [color="red" ];
+260 [label="260:  Call Table Group.getTable(String) \n   NULLIFY(&$irvar0,false); [line 96]\n  n$4=*&transaction:class io.realm.internal.ImplicitTransaction * [line 96]\n  n$5=*n$4:class io.realm.internal.ImplicitTransaction  [line 96]\n  n$6=_fun_Table Group.getTable(String)(n$4:class io.realm.internal.ImplicitTransaction *,\"class_DummyObject\":class java.lang.String *) virtual [line 96]\n  *&table:class io.realm.internal.Table *=n$6 [line 96]\n  REMOVE_TEMPS(n$4,n$5,n$6); [line 96]\n  NULLIFY(&transaction,false); [line 96]\n " shape="box"]
+	
+
+	 260 -> 261 ;
+	 260 -> 62 [color="red" ];
+259 [label="259: Prune (false branch) \n   n$3=*&$irvar0:_Bool  [line 95]\n  PRUNE((n$3 != 0), false); [line 95]\n  REMOVE_TEMPS(n$3); [line 95]\n " shape="invhouse"]
+	
+
+	 259 -> 265 ;
+	 259 -> 62 [color="red" ];
+258 [label="258: Prune (true branch) \n   n$3=*&$irvar0:_Bool  [line 95]\n  PRUNE(!(n$3 != 0), true); [line 95]\n  REMOVE_TEMPS(n$3); [line 95]\n " shape="invhouse"]
+	
+
+	 258 -> 260 ;
+	 258 -> 62 [color="red" ];
+257 [label="257:  Call boolean Group.hasTable(String) \n   n$0=*&transaction:class io.realm.internal.ImplicitTransaction * [line 95]\n  n$1=*n$0:class io.realm.internal.ImplicitTransaction  [line 95]\n  n$2=_fun_boolean Group.hasTable(String)(n$0:class io.realm.internal.ImplicitTransaction *,\"class_DummyObject\":class java.lang.String *) virtual [line 95]\n  *&$irvar0:_Bool =n$2 [line 95]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 95]\n " shape="box"]
+	
+
+	 257 -> 258 ;
+	 257 -> 259 ;
+	 257 -> 62 [color="red" ];
+256 [label="256:  method_body \n   n$56=*&$irvar0:class java.lang.String * [line 252]\n  *&return:class java.lang.String *=n$56 [line 252]\n  REMOVE_TEMPS(n$56); [line 252]\n  NULLIFY(&$irvar0,false); [line 252]\n  APPLY_ABSTRACTION; [line 252]\n " shape="box"]
+	
+
+	 256 -> 58 ;
+	 256 -> 59 [color="red" ];
+255 [label="255:  Call String StringBuilder.toString() \n   n$53=*&stringBuilder:class java.lang.StringBuilder * [line 252]\n  n$54=*n$53:class java.lang.StringBuilder  [line 252]\n  n$55=_fun_String StringBuilder.toString()(n$53:class java.lang.StringBuilder *) virtual [line 252]\n  *&$irvar0:class java.lang.String *=n$55 [line 252]\n  REMOVE_TEMPS(n$53,n$54,n$55); [line 252]\n  NULLIFY(&stringBuilder,false); [line 252]\n " shape="box"]
+	
+
+	 255 -> 256 ;
+	 255 -> 59 [color="red" ];
+254 [label="254:  Call StringBuilder StringBuilder.append(String) \n   n$50=*&stringBuilder:class java.lang.StringBuilder * [line 251]\n  n$51=*n$50:class java.lang.StringBuilder  [line 251]\n  n$52=_fun_StringBuilder StringBuilder.append(String)(n$50:class java.lang.StringBuilder *,\"]\":class java.lang.String *) virtual [line 251]\n  *&$irvar0:class java.lang.StringBuilder *=n$52 [line 251]\n  REMOVE_TEMPS(n$50,n$51,n$52); [line 251]\n  NULLIFY(&$irvar0,false); [line 251]\n " shape="box"]
+	
+
+	 254 -> 255 ;
+	 254 -> 59 [color="red" ];
+253 [label="253:  Call StringBuilder StringBuilder.append(String) \n   n$47=*&stringBuilder:class java.lang.StringBuilder * [line 250]\n  n$48=*n$47:class java.lang.StringBuilder  [line 250]\n  n$49=_fun_StringBuilder StringBuilder.append(String)(n$47:class java.lang.StringBuilder *,\"}\":class java.lang.String *) virtual [line 250]\n  *&$irvar0:class java.lang.StringBuilder *=n$49 [line 250]\n  REMOVE_TEMPS(n$47,n$48,n$49); [line 250]\n  NULLIFY(&$irvar0,false); [line 250]\n " shape="box"]
+	
+
+	 253 -> 254 ;
+	 253 -> 59 [color="red" ];
+252 [label="252:  Call StringBuilder StringBuilder.append(String) \n   n$43=*&$T1_86:class java.lang.StringBuilder * [line 249]\n  n$44=*n$43:class java.lang.StringBuilder  [line 249]\n  n$45=*&$T0_86:class java.lang.String * [line 249]\n  n$46=_fun_StringBuilder StringBuilder.append(String)(n$43:class java.lang.StringBuilder *,n$45:class java.lang.String *) virtual [line 249]\n  *&$irvar0:class java.lang.StringBuilder *=n$46 [line 249]\n  REMOVE_TEMPS(n$43,n$44,n$45,n$46); [line 249]\n  NULLIFY(&$T0_86,false); [line 249]\n  NULLIFY(&$T1_86,false); [line 249]\n  NULLIFY(&$irvar0,false); [line 249]\n " shape="box"]
+	
+
+	 252 -> 253 ;
+	 252 -> 59 [color="red" ];
+251 [label="251:  method_body \n   n$42=*&$T0_84:class java.lang.StringBuilder * [line 249]\n  *&$T1_86:class java.lang.StringBuilder *=n$42 [line 249]\n  REMOVE_TEMPS(n$42); [line 249]\n  NULLIFY(&$T0_84,false); [line 249]\n  APPLY_ABSTRACTION; [line 249]\n " shape="box"]
+	
+
+	 251 -> 252 ;
+	 251 -> 59 [color="red" ];
+250 [label="250:  method_body \n   NULLIFY(&$irvar0,false); [line 249]\n  NULLIFY(&this,false); [line 249]\n  *&$T0_86:class java.lang.String *=\"null\" [line 249]\n " shape="box"]
+	
+
+	 250 -> 251 ;
+	 250 -> 59 [color="red" ];
+249 [label="249:  method_body \n   n$41=*&stringBuilder:class java.lang.StringBuilder * [line 249]\n  *&$T1_86:class java.lang.StringBuilder *=n$41 [line 249]\n  REMOVE_TEMPS(n$41); [line 249]\n  APPLY_ABSTRACTION; [line 249]\n " shape="box"]
+	
+
+	 249 -> 252 ;
+	 249 -> 59 [color="red" ];
+248 [label="248:  method_body \n   n$40=*&$irvar0:class java.lang.String * [line 249]\n  *&$T0_86:class java.lang.String *=n$40 [line 249]\n  REMOVE_TEMPS(n$40); [line 249]\n  NULLIFY(&$irvar0,false); [line 249]\n " shape="box"]
+	
+
+	 248 -> 249 ;
+	 248 -> 59 [color="red" ];
+247 [label="247:  Call String DummyObjectRealmProxy.getDummyDesc() \n   NULLIFY(&$T0_84,false); [line 249]\n  NULLIFY(&$irvar0,false); [line 249]\n  n$37=*&this:class io.realm.DummyObjectRealmProxy * [line 249]\n  n$38=*n$37:class io.realm.DummyObjectRealmProxy  [line 249]\n  n$39=_fun_String DummyObjectRealmProxy.getDummyDesc()(n$37:class io.realm.DummyObjectRealmProxy *) virtual [line 249]\n  *&$irvar0:class java.lang.String *=n$39 [line 249]\n  REMOVE_TEMPS(n$37,n$38,n$39); [line 249]\n  NULLIFY(&this,false); [line 249]\n " shape="box"]
+	
+
+	 247 -> 248 ;
+	 247 -> 59 [color="red" ];
+246 [label="246: Prune (false branch) \n   n$36=*&$irvar0:class java.lang.String * [line 249]\n  PRUNE((n$36 == null), false); [line 249]\n  REMOVE_TEMPS(n$36); [line 249]\n " shape="invhouse"]
+	
+
+	 246 -> 250 ;
+	 246 -> 59 [color="red" ];
+245 [label="245: Prune (true branch) \n   n$36=*&$irvar0:class java.lang.String * [line 249]\n  PRUNE(!(n$36 == null), true); [line 249]\n  REMOVE_TEMPS(n$36); [line 249]\n " shape="invhouse"]
+	
+
+	 245 -> 247 ;
+	 245 -> 59 [color="red" ];
+244 [label="244:  method_body \n   n$35=*&stringBuilder:class java.lang.StringBuilder * [line 249]\n  *&$T0_84:class java.lang.StringBuilder *=n$35 [line 249]\n  REMOVE_TEMPS(n$35); [line 249]\n " shape="box"]
+	
+
+	 244 -> 245 ;
+	 244 -> 246 ;
+	 244 -> 59 [color="red" ];
+243 [label="243:  Call String DummyObjectRealmProxy.getDummyDesc() \n   n$32=*&this:class io.realm.DummyObjectRealmProxy * [line 249]\n  n$33=*n$32:class io.realm.DummyObjectRealmProxy  [line 249]\n  n$34=_fun_String DummyObjectRealmProxy.getDummyDesc()(n$32:class io.realm.DummyObjectRealmProxy *) virtual [line 249]\n  *&$irvar0:class java.lang.String *=n$34 [line 249]\n  REMOVE_TEMPS(n$32,n$33,n$34); [line 249]\n " shape="box"]
+	
+
+	 243 -> 244 ;
+	 243 -> 59 [color="red" ];
+242 [label="242:  Call StringBuilder StringBuilder.append(String) \n   n$29=*&stringBuilder:class java.lang.StringBuilder * [line 248]\n  n$30=*n$29:class java.lang.StringBuilder  [line 248]\n  n$31=_fun_StringBuilder StringBuilder.append(String)(n$29:class java.lang.StringBuilder *,\"{dummyDesc:\":class java.lang.String *) virtual [line 248]\n  *&$irvar0:class java.lang.StringBuilder *=n$31 [line 248]\n  REMOVE_TEMPS(n$29,n$30,n$31); [line 248]\n  NULLIFY(&$irvar0,false); [line 248]\n " shape="box"]
+	
+
+	 242 -> 243 ;
+	 242 -> 59 [color="red" ];
+241 [label="241:  Call StringBuilder StringBuilder.append(String) \n   n$26=*&stringBuilder:class java.lang.StringBuilder * [line 247]\n  n$27=*n$26:class java.lang.StringBuilder  [line 247]\n  n$28=_fun_StringBuilder StringBuilder.append(String)(n$26:class java.lang.StringBuilder *,\",\":class java.lang.String *) virtual [line 247]\n  *&$irvar0:class java.lang.StringBuilder *=n$28 [line 247]\n  REMOVE_TEMPS(n$26,n$27,n$28); [line 247]\n  NULLIFY(&$irvar0,false); [line 247]\n " shape="box"]
+	
+
+	 241 -> 242 ;
+	 241 -> 59 [color="red" ];
+240 [label="240:  Call StringBuilder StringBuilder.append(String) \n   n$23=*&stringBuilder:class java.lang.StringBuilder * [line 246]\n  n$24=*n$23:class java.lang.StringBuilder  [line 246]\n  n$25=_fun_StringBuilder StringBuilder.append(String)(n$23:class java.lang.StringBuilder *,\"}\":class java.lang.String *) virtual [line 246]\n  *&$irvar0:class java.lang.StringBuilder *=n$25 [line 246]\n  REMOVE_TEMPS(n$23,n$24,n$25); [line 246]\n  NULLIFY(&$irvar0,false); [line 246]\n " shape="box"]
+	
+
+	 240 -> 241 ;
+	 240 -> 59 [color="red" ];
+239 [label="239:  Call StringBuilder StringBuilder.append(String) \n   n$19=*&$T1_44:class java.lang.StringBuilder * [line 245]\n  n$20=*n$19:class java.lang.StringBuilder  [line 245]\n  n$21=*&$T0_44:class java.lang.String * [line 245]\n  n$22=_fun_StringBuilder StringBuilder.append(String)(n$19:class java.lang.StringBuilder *,n$21:class java.lang.String *) virtual [line 245]\n  *&$irvar0:class java.lang.StringBuilder *=n$22 [line 245]\n  REMOVE_TEMPS(n$19,n$20,n$21,n$22); [line 245]\n  NULLIFY(&$T0_44,false); [line 245]\n  NULLIFY(&$T1_44,false); [line 245]\n  NULLIFY(&$irvar0,false); [line 245]\n " shape="box"]
+	
+
+	 239 -> 240 ;
+	 239 -> 59 [color="red" ];
+238 [label="238:  method_body \n   n$18=*&$T0_42:class java.lang.StringBuilder * [line 245]\n  *&$T1_44:class java.lang.StringBuilder *=n$18 [line 245]\n  REMOVE_TEMPS(n$18); [line 245]\n  NULLIFY(&$T0_42,false); [line 245]\n  APPLY_ABSTRACTION; [line 245]\n " shape="box"]
+	
+
+	 238 -> 239 ;
+	 238 -> 59 [color="red" ];
+237 [label="237:  method_body \n   NULLIFY(&$irvar0,false); [line 245]\n  *&$T0_44:class java.lang.String *=\"null\" [line 245]\n " shape="box"]
+	
+
+	 237 -> 238 ;
+	 237 -> 59 [color="red" ];
+236 [label="236:  method_body \n   n$17=*&stringBuilder:class java.lang.StringBuilder * [line 245]\n  *&$T1_44:class java.lang.StringBuilder *=n$17 [line 245]\n  REMOVE_TEMPS(n$17); [line 245]\n  APPLY_ABSTRACTION; [line 245]\n " shape="box"]
+	
+
+	 236 -> 239 ;
+	 236 -> 59 [color="red" ];
+235 [label="235:  method_body \n   n$16=*&$irvar0:class java.lang.String * [line 245]\n  *&$T0_44:class java.lang.String *=n$16 [line 245]\n  REMOVE_TEMPS(n$16); [line 245]\n  NULLIFY(&$irvar0,false); [line 245]\n " shape="box"]
+	
+
+	 235 -> 236 ;
+	 235 -> 59 [color="red" ];
+234 [label="234:  Call String DummyObjectRealmProxy.getDummyTitle() \n   NULLIFY(&$T0_42,false); [line 245]\n  NULLIFY(&$irvar0,false); [line 245]\n  n$13=*&this:class io.realm.DummyObjectRealmProxy * [line 245]\n  n$14=*n$13:class io.realm.DummyObjectRealmProxy  [line 245]\n  n$15=_fun_String DummyObjectRealmProxy.getDummyTitle()(n$13:class io.realm.DummyObjectRealmProxy *) virtual [line 245]\n  *&$irvar0:class java.lang.String *=n$15 [line 245]\n  REMOVE_TEMPS(n$13,n$14,n$15); [line 245]\n " shape="box"]
+	
+
+	 234 -> 235 ;
+	 234 -> 59 [color="red" ];
+233 [label="233: Prune (false branch) \n   n$12=*&$irvar0:class java.lang.String * [line 245]\n  PRUNE((n$12 == null), false); [line 245]\n  REMOVE_TEMPS(n$12); [line 245]\n " shape="invhouse"]
+	
+
+	 233 -> 237 ;
+	 233 -> 59 [color="red" ];
+232 [label="232: Prune (true branch) \n   n$12=*&$irvar0:class java.lang.String * [line 245]\n  PRUNE(!(n$12 == null), true); [line 245]\n  REMOVE_TEMPS(n$12); [line 245]\n " shape="invhouse"]
+	
+
+	 232 -> 234 ;
+	 232 -> 59 [color="red" ];
+231 [label="231:  method_body \n   n$11=*&stringBuilder:class java.lang.StringBuilder * [line 245]\n  *&$T0_42:class java.lang.StringBuilder *=n$11 [line 245]\n  REMOVE_TEMPS(n$11); [line 245]\n " shape="box"]
+	
+
+	 231 -> 232 ;
+	 231 -> 233 ;
+	 231 -> 59 [color="red" ];
+230 [label="230:  Call String DummyObjectRealmProxy.getDummyTitle() \n   n$8=*&this:class io.realm.DummyObjectRealmProxy * [line 245]\n  n$9=*n$8:class io.realm.DummyObjectRealmProxy  [line 245]\n  n$10=_fun_String DummyObjectRealmProxy.getDummyTitle()(n$8:class io.realm.DummyObjectRealmProxy *) virtual [line 245]\n  *&$irvar0:class java.lang.String *=n$10 [line 245]\n  REMOVE_TEMPS(n$8,n$9,n$10); [line 245]\n " shape="box"]
+	
+
+	 230 -> 231 ;
+	 230 -> 59 [color="red" ];
+229 [label="229:  Call StringBuilder StringBuilder.append(String) \n   n$5=*&stringBuilder:class java.lang.StringBuilder * [line 244]\n  n$6=*n$5:class java.lang.StringBuilder  [line 244]\n  n$7=_fun_StringBuilder StringBuilder.append(String)(n$5:class java.lang.StringBuilder *,\"{dummyTitle:\":class java.lang.String *) virtual [line 244]\n  *&$irvar0:class java.lang.StringBuilder *=n$7 [line 244]\n  REMOVE_TEMPS(n$5,n$6,n$7); [line 244]\n  NULLIFY(&$irvar0,false); [line 244]\n " shape="box"]
+	
+
+	 229 -> 230 ;
+	 229 -> 59 [color="red" ];
+228 [label="228:  Call StringBuilder.<init>(String) \n   NULLIFY(&$irvar0,false); [line 243]\n  n$4=_fun___new(sizeof(class java.lang.StringBuilder ):class java.lang.StringBuilder *) [line 243]\n  _fun_StringBuilder.<init>(String)(n$4:class java.lang.StringBuilder *,\"DummyObject = [\":class java.lang.String *) [line 243]\n  *&stringBuilder:class java.lang.StringBuilder *=n$4 [line 243]\n  REMOVE_TEMPS(n$4); [line 243]\n " shape="box"]
+	
+
+	 228 -> 229 ;
+	 228 -> 59 [color="red" ];
+227 [label="227:  method_body \n   NULLIFY(&$irvar0,false); [line 241]\n  NULLIFY(&this,false); [line 241]\n  *&return:class java.lang.String *=\"Invalid object\" [line 241]\n  APPLY_ABSTRACTION; [line 241]\n " shape="box"]
+	
+
+	 227 -> 58 ;
+	 227 -> 59 [color="red" ];
+226 [label="226: Prune (false branch) \n   n$3=*&$irvar0:_Bool  [line 240]\n  PRUNE((n$3 != 0), false); [line 240]\n  REMOVE_TEMPS(n$3); [line 240]\n " shape="invhouse"]
+	
+
+	 226 -> 228 ;
+	 226 -> 59 [color="red" ];
+225 [label="225: Prune (true branch) \n   n$3=*&$irvar0:_Bool  [line 240]\n  PRUNE(!(n$3 != 0), true); [line 240]\n  REMOVE_TEMPS(n$3); [line 240]\n " shape="invhouse"]
+	
+
+	 225 -> 227 ;
+	 225 -> 59 [color="red" ];
+224 [label="224:  Call boolean RealmObject.isValid() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 240]\n  n$1=*n$0:class io.realm.DummyObjectRealmProxy  [line 240]\n  n$2=_fun_boolean RealmObject.isValid()(n$0:class io.realm.DummyObjectRealmProxy *) virtual [line 240]\n  *&$irvar0:_Bool =n$2 [line 240]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 240]\n " shape="box"]
+	
+
+	 224 -> 225 ;
+	 224 -> 226 ;
+	 224 -> 59 [color="red" ];
+223 [label="223:  method_body \n   n$20=*&$irvar0:class com.karthik.imager.APIService.DummyObject * [line 204]\n  *&return:class com.karthik.imager.APIService.DummyObject *=n$20 [line 204]\n  REMOVE_TEMPS(n$20); [line 204]\n  NULLIFY(&$irvar0,false); [line 204]\n  APPLY_ABSTRACTION; [line 204]\n " shape="box"]
+	
+
+	 223 -> 55 ;
+	 223 -> 56 [color="red" ];
+222 [label="222:  Call DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map) \n   NULLIFY(&$irvar2,false); [line 204]\n  n$15=*&realm:class io.realm.Realm * [line 204]\n  n$16=*&object:class com.karthik.imager.APIService.DummyObject * [line 204]\n  n$17=*&update:_Bool  [line 204]\n  n$18=*&cache:class java.util.Map * [line 204]\n  n$19=_fun_DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map)(n$15:class io.realm.Realm *,n$16:class com.karthik.imager.APIService.DummyObject *,n$17:_Bool ,n$18:class java.util.Map *) [line 204]\n  *&$irvar0:class com.karthik.imager.APIService.DummyObject *=n$19 [line 204]\n  REMOVE_TEMPS(n$15,n$16,n$17,n$18,n$19); [line 204]\n  NULLIFY(&cache,false); [line 204]\n  NULLIFY(&object,false); [line 204]\n  NULLIFY(&realm,false); [line 204]\n  NULLIFY(&update,false); [line 204]\n " shape="box"]
+	
+
+	 222 -> 223 ;
+	 222 -> 56 [color="red" ];
+221 [label="221:  method_body \n   NULLIFY(&$irvar2,false); [line 202]\n  NULLIFY(&cache,false); [line 202]\n  NULLIFY(&realm,false); [line 202]\n  NULLIFY(&update,false); [line 202]\n  n$14=*&object:class com.karthik.imager.APIService.DummyObject * [line 202]\n  *&return:class com.karthik.imager.APIService.DummyObject *=n$14 [line 202]\n  REMOVE_TEMPS(n$14); [line 202]\n  NULLIFY(&object,false); [line 202]\n  APPLY_ABSTRACTION; [line 202]\n " shape="box"]
+	
+
+	 221 -> 55 ;
+	 221 -> 56 [color="red" ];
+220 [label="220: Prune (false branch) \n   n$13=*&$irvar2:_Bool  [line 201]\n  PRUNE((n$13 == 0), false); [line 201]\n  REMOVE_TEMPS(n$13); [line 201]\n  APPLY_ABSTRACTION; [line 201]\n " shape="invhouse"]
+	
+
+	 220 -> 222 ;
+	 220 -> 56 [color="red" ];
+219 [label="219: Prune (true branch) \n   n$13=*&$irvar2:_Bool  [line 201]\n  PRUNE(!(n$13 == 0), true); [line 201]\n  REMOVE_TEMPS(n$13); [line 201]\n " shape="invhouse"]
+	
+
+	 219 -> 221 ;
+	 219 -> 56 [color="red" ];
+218 [label="218:  Call boolean String.equals(Object) \n   n$9=*&$irvar0:class java.lang.String * [line 201]\n  n$10=*n$9:class java.lang.String  [line 201]\n  n$11=*&$irvar1:class java.lang.String * [line 201]\n  n$12=_fun_boolean String.equals(Object)(n$9:class java.lang.String *,n$11:class java.lang.String *) virtual [line 201]\n  *&$irvar2:_Bool =n$12 [line 201]\n  REMOVE_TEMPS(n$9,n$10,n$11,n$12); [line 201]\n  NULLIFY(&$irvar0,false); [line 201]\n  NULLIFY(&$irvar1,false); [line 201]\n " shape="box"]
+	
+
+	 218 -> 219 ;
+	 218 -> 220 ;
+	 218 -> 56 [color="red" ];
+217 [label="217:  Call String Realm.getPath() \n   n$6=*&realm:class io.realm.Realm * [line 201]\n  n$7=*n$6:class io.realm.Realm  [line 201]\n  n$8=_fun_String Realm.getPath()(n$6:class io.realm.Realm *) virtual [line 201]\n  *&$irvar1:class java.lang.String *=n$8 [line 201]\n  REMOVE_TEMPS(n$6,n$7,n$8); [line 201]\n " shape="box"]
+	
+
+	 217 -> 218 ;
+	 217 -> 56 [color="red" ];
+216 [label="216:  Call String BaseRealm.getPath() \n   n$2=*&object:class com.karthik.imager.APIService.DummyObject * [line 201]\n  n$3=*n$2.io.realm.RealmObject.realm:class com.karthik.imager.APIService.DummyObject  [line 201]\n  n$4=*n$3:class io.realm.BaseRealm  [line 201]\n  n$5=_fun_String BaseRealm.getPath()(n$3:class io.realm.BaseRealm *) virtual [line 201]\n  *&$irvar0:class java.lang.String *=n$5 [line 201]\n  REMOVE_TEMPS(n$2,n$3,n$4,n$5); [line 201]\n " shape="box"]
+	
+
+	 216 -> 217 ;
+	 216 -> 56 [color="red" ];
+215 [label="215: Prune (false branch) \n   n$0=*&object:class com.karthik.imager.APIService.DummyObject * [line 201]\n  n$1=*n$0.io.realm.RealmObject.realm:class com.karthik.imager.APIService.DummyObject  [line 201]\n  PRUNE((n$1 == null), false); [line 201]\n  REMOVE_TEMPS(n$0,n$1); [line 201]\n  APPLY_ABSTRACTION; [line 201]\n " shape="invhouse"]
+	
+
+	 215 -> 222 ;
+	 215 -> 56 [color="red" ];
+214 [label="214: Prune (true branch) \n   n$0=*&object:class com.karthik.imager.APIService.DummyObject * [line 201]\n  n$1=*n$0.io.realm.RealmObject.realm:class com.karthik.imager.APIService.DummyObject  [line 201]\n  PRUNE(!(n$1 == null), true); [line 201]\n  REMOVE_TEMPS(n$0,n$1); [line 201]\n " shape="invhouse"]
+	
+
+	 214 -> 216 ;
+	 214 -> 56 [color="red" ];
+213 [label="213:  method_body \n   n$38=*&result:int  [line 265]\n  *&return:int =n$38 [line 265]\n  REMOVE_TEMPS(n$38); [line 265]\n  NULLIFY(&result,false); [line 265]\n  APPLY_ABSTRACTION; [line 265]\n " shape="box"]
+	
+
+	 213 -> 52 ;
+	 213 -> 53 [color="red" ];
+212 [label="212:  method_body \n   n$33=*&$T1_72:int  [line 263]\n  n$34=*&$T0_72:int  [line 263]\n  *&result:int =(n$33 + n$34) [line 263]\n  REMOVE_TEMPS(n$33,n$34); [line 263]\n  NULLIFY(&$T0_72,false); [line 263]\n  NULLIFY(&$T1_72,false); [line 263]\n " shape="box"]
+	
+
+	 212 -> 213 ;
+	 212 -> 53 [color="red" ];
+211 [label="211:  method_body \n   n$32=*&$T0_71:int  [line 263]\n  *&$T1_72:int =n$32 [line 263]\n  REMOVE_TEMPS(n$32); [line 263]\n  NULLIFY(&$T0_71,false); [line 263]\n  APPLY_ABSTRACTION; [line 263]\n " shape="box"]
+	
+
+	 211 -> 212 ;
+	 211 -> 53 [color="red" ];
+210 [label="210:  method_body \n   NULLIFY(&result,false); [line 263]\n  NULLIFY(&tableName,false); [line 263]\n  *&$T0_72:int =0 [line 263]\n " shape="box"]
+	
+
+	 210 -> 211 ;
+	 210 -> 53 [color="red" ];
+209 [label="209:  method_body \n   n$31=*&result:int  [line 263]\n  *&$T1_72:int =(31 * n$31) [line 263]\n  REMOVE_TEMPS(n$31); [line 263]\n  NULLIFY(&result,false); [line 263]\n  APPLY_ABSTRACTION; [line 263]\n " shape="box"]
+	
+
+	 209 -> 212 ;
+	 209 -> 53 [color="red" ];
+208 [label="208:  method_body \n   n$30=*&$irvar0:int  [line 263]\n  *&$T0_72:int =n$30 [line 263]\n  REMOVE_TEMPS(n$30); [line 263]\n  NULLIFY(&$irvar0,false); [line 263]\n " shape="box"]
+	
+
+	 208 -> 209 ;
+	 208 -> 53 [color="red" ];
+207 [label="207:  Call int String.hashCode() \n   NULLIFY(&$T0_71,false); [line 263]\n  n$27=*&tableName:class java.lang.String * [line 263]\n  n$28=*n$27:class java.lang.String  [line 263]\n  n$29=_fun_int String.hashCode()(n$27:class java.lang.String *) virtual [line 263]\n  *&$irvar0:int =n$29 [line 263]\n  REMOVE_TEMPS(n$27,n$28,n$29); [line 263]\n  NULLIFY(&tableName,false); [line 263]\n " shape="box"]
+	
+
+	 207 -> 208 ;
+	 207 -> 53 [color="red" ];
+206 [label="206: Prune (false branch) \n   n$26=*&tableName:class java.lang.String * [line 263]\n  PRUNE((n$26 == null), false); [line 263]\n  REMOVE_TEMPS(n$26); [line 263]\n " shape="invhouse"]
+	
+
+	 206 -> 210 ;
+	 206 -> 53 [color="red" ];
+205 [label="205: Prune (true branch) \n   n$26=*&tableName:class java.lang.String * [line 263]\n  PRUNE(!(n$26 == null), true); [line 263]\n  REMOVE_TEMPS(n$26); [line 263]\n " shape="invhouse"]
+	
+
+	 205 -> 207 ;
+	 205 -> 53 [color="red" ];
+204 [label="204:  method_body \n   n$25=*&result:int  [line 263]\n  *&$T0_71:int =(31 * n$25) [line 263]\n  REMOVE_TEMPS(n$25); [line 263]\n " shape="box"]
+	
+
+	 204 -> 205 ;
+	 204 -> 206 ;
+	 204 -> 53 [color="red" ];
+203 [label="203:  method_body \n   n$23=*&$T1_52:int  [line 262]\n  n$24=*&$T0_52:int  [line 262]\n  *&result:int =(n$23 + n$24) [line 262]\n  REMOVE_TEMPS(n$23,n$24); [line 262]\n  NULLIFY(&$T0_52,false); [line 262]\n  NULLIFY(&$T1_52,false); [line 262]\n " shape="box"]
+	
+
+	 203 -> 204 ;
+	 203 -> 53 [color="red" ];
+202 [label="202:  method_body \n   n$22=*&$T0_51:int  [line 262]\n  *&$T1_52:int =n$22 [line 262]\n  REMOVE_TEMPS(n$22); [line 262]\n  NULLIFY(&$T0_51,false); [line 262]\n  APPLY_ABSTRACTION; [line 262]\n " shape="box"]
+	
+
+	 202 -> 203 ;
+	 202 -> 53 [color="red" ];
+201 [label="201:  method_body \n   NULLIFY(&realmName,false); [line 262]\n  NULLIFY(&result,false); [line 262]\n  *&$T0_52:int =0 [line 262]\n " shape="box"]
+	
+
+	 201 -> 202 ;
+	 201 -> 53 [color="red" ];
+200 [label="200:  method_body \n   n$21=*&result:int  [line 262]\n  *&$T1_52:int =(31 * n$21) [line 262]\n  REMOVE_TEMPS(n$21); [line 262]\n  NULLIFY(&result,false); [line 262]\n  APPLY_ABSTRACTION; [line 262]\n " shape="box"]
+	
+
+	 200 -> 203 ;
+	 200 -> 53 [color="red" ];
+199 [label="199:  method_body \n   n$20=*&$irvar0:int  [line 262]\n  *&$T0_52:int =n$20 [line 262]\n  REMOVE_TEMPS(n$20); [line 262]\n  NULLIFY(&$irvar0,false); [line 262]\n " shape="box"]
+	
+
+	 199 -> 200 ;
+	 199 -> 53 [color="red" ];
+198 [label="198:  Call int String.hashCode() \n   NULLIFY(&$T0_51,false); [line 262]\n  n$17=*&realmName:class java.lang.String * [line 262]\n  n$18=*n$17:class java.lang.String  [line 262]\n  n$19=_fun_int String.hashCode()(n$17:class java.lang.String *) virtual [line 262]\n  *&$irvar0:int =n$19 [line 262]\n  REMOVE_TEMPS(n$17,n$18,n$19); [line 262]\n  NULLIFY(&realmName,false); [line 262]\n " shape="box"]
+	
+
+	 198 -> 199 ;
+	 198 -> 53 [color="red" ];
+197 [label="197: Prune (false branch) \n   n$16=*&realmName:class java.lang.String * [line 262]\n  PRUNE((n$16 == null), false); [line 262]\n  REMOVE_TEMPS(n$16); [line 262]\n " shape="invhouse"]
+	
+
+	 197 -> 201 ;
+	 197 -> 53 [color="red" ];
+196 [label="196: Prune (true branch) \n   n$16=*&realmName:class java.lang.String * [line 262]\n  PRUNE(!(n$16 == null), true); [line 262]\n  REMOVE_TEMPS(n$16); [line 262]\n " shape="invhouse"]
+	
+
+	 196 -> 198 ;
+	 196 -> 53 [color="red" ];
+195 [label="195:  method_body \n   n$15=*&result:int  [line 262]\n  *&$T0_51:int =(31 * n$15) [line 262]\n  REMOVE_TEMPS(n$15); [line 262]\n " shape="box"]
+	
+
+	 195 -> 196 ;
+	 195 -> 197 ;
+	 195 -> 53 [color="red" ];
+194 [label="194:  method_body \n   *&result:int =17 [line 261]\n " shape="box"]
+	
+
+	 194 -> 195 ;
+	 194 -> 53 [color="red" ];
+193 [label="193:  Call long Row.getIndex() \n   n$11=*&this:class io.realm.DummyObjectRealmProxy * [line 259]\n  n$12=*n$11.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 259]\n  n$13=*n$12:class io.realm.internal.Row  [line 259]\n  n$14=_fun_long Row.getIndex()(n$12:class io.realm.internal.Row *) virtual [line 259]\n  *&rowIndex:long =n$14 [line 259]\n  REMOVE_TEMPS(n$11,n$12,n$13,n$14); [line 259]\n  NULLIFY(&rowIndex,false); [line 259]\n  NULLIFY(&this,false); [line 259]\n " shape="box"]
+	
+
+	 193 -> 194 ;
+	 193 -> 53 [color="red" ];
+192 [label="192:  Call String Table.getName() \n   n$8=*&$irvar0:class io.realm.internal.Table * [line 258]\n  n$9=*n$8:class io.realm.internal.Table  [line 258]\n  n$10=_fun_String Table.getName()(n$8:class io.realm.internal.Table *) virtual [line 258]\n  *&tableName:class java.lang.String *=n$10 [line 258]\n  REMOVE_TEMPS(n$8,n$9,n$10); [line 258]\n  NULLIFY(&$irvar0,false); [line 258]\n " shape="box"]
+	
+
+	 192 -> 193 ;
+	 192 -> 53 [color="red" ];
+191 [label="191:  Call Table Row.getTable() \n   n$4=*&this:class io.realm.DummyObjectRealmProxy * [line 258]\n  n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 258]\n  n$6=*n$5:class io.realm.internal.Row  [line 258]\n  n$7=_fun_Table Row.getTable()(n$5:class io.realm.internal.Row *) virtual [line 258]\n  *&$irvar0:class io.realm.internal.Table *=n$7 [line 258]\n  REMOVE_TEMPS(n$4,n$5,n$6,n$7); [line 258]\n " shape="box"]
+	
+
+	 191 -> 192 ;
+	 191 -> 53 [color="red" ];
+190 [label="190:  Call String BaseRealm.getPath() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 257]\n  n$1=*n$0.io.realm.RealmObject.realm:class io.realm.DummyObjectRealmProxy  [line 257]\n  n$2=*n$1:class io.realm.BaseRealm  [line 257]\n  n$3=_fun_String BaseRealm.getPath()(n$1:class io.realm.BaseRealm *) virtual [line 257]\n  *&realmName:class java.lang.String *=n$3 [line 257]\n  REMOVE_TEMPS(n$0,n$1,n$2,n$3); [line 257]\n " shape="box"]
+	
+
+	 190 -> 191 ;
+	 190 -> 53 [color="red" ];
+189 [label="189:  method_body \n   APPLY_ABSTRACTION; [line 92]\n " shape="box"]
+	
+
+	 189 -> 49 ;
+	 189 -> 50 [color="red" ];
+188 [label="188:  Call void Row.setString(long,String) \n   n$10=*&this:class io.realm.DummyObjectRealmProxy * [line 91]\n  n$11=*n$10.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 91]\n  n$12=*n$11:class io.realm.internal.Row  [line 91]\n  n$13=*&this:class io.realm.DummyObjectRealmProxy * [line 91]\n  n$14=*n$13.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 91]\n  n$15=*n$14.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyDescIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 91]\n  n$16=*&value:class java.lang.String * [line 91]\n  _fun_void Row.setString(long,String)(n$11:class io.realm.internal.Row *,n$15:long ,n$16:class java.lang.String *) virtual [line 91]\n  REMOVE_TEMPS(n$10,n$11,n$12,n$13,n$14,n$15,n$16); [line 91]\n  NULLIFY(&this,false); [line 91]\n  NULLIFY(&value,false); [line 91]\n " shape="box"]
+	
+
+	 188 -> 189 ;
+	 188 -> 50 [color="red" ];
+187 [label="187:  method_body \n   APPLY_ABSTRACTION; [line 89]\n " shape="box"]
+	
+
+	 187 -> 49 ;
+	 187 -> 50 [color="red" ];
+186 [label="186:  Call void Row.setNull(long) \n   NULLIFY(&value,false); [line 88]\n  n$4=*&this:class io.realm.DummyObjectRealmProxy * [line 88]\n  n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 88]\n  n$6=*n$5:class io.realm.internal.Row  [line 88]\n  n$7=*&this:class io.realm.DummyObjectRealmProxy * [line 88]\n  n$8=*n$7.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 88]\n  n$9=*n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyDescIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 88]\n  _fun_void Row.setNull(long)(n$5:class io.realm.internal.Row *,n$9:long ) virtual [line 88]\n  REMOVE_TEMPS(n$4,n$5,n$6,n$7,n$8,n$9); [line 88]\n  NULLIFY(&this,false); [line 88]\n " shape="box"]
+	
+
+	 186 -> 187 ;
+	 186 -> 50 [color="red" ];
+185 [label="185: Prune (false branch) \n   n$3=*&value:class java.lang.String * [line 87]\n  PRUNE((n$3 != null), false); [line 87]\n  REMOVE_TEMPS(n$3); [line 87]\n " shape="invhouse"]
+	
+
+	 185 -> 188 ;
+	 185 -> 50 [color="red" ];
+184 [label="184: Prune (true branch) \n   n$3=*&value:class java.lang.String * [line 87]\n  PRUNE(!(n$3 != null), true); [line 87]\n  REMOVE_TEMPS(n$3); [line 87]\n " shape="invhouse"]
+	
+
+	 184 -> 186 ;
+	 184 -> 50 [color="red" ];
+183 [label="183:  Call void BaseRealm.checkIfValid() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 86]\n  n$1=*n$0.io.realm.RealmObject.realm:class io.realm.DummyObjectRealmProxy  [line 86]\n  n$2=*n$1:class io.realm.BaseRealm  [line 86]\n  _fun_void BaseRealm.checkIfValid()(n$1:class io.realm.BaseRealm *) virtual [line 86]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 86]\n " shape="box"]
+	
+
+	 183 -> 184 ;
+	 183 -> 185 ;
+	 183 -> 50 [color="red" ];
+182 [label="182:  method_body \n   n$23=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 212]\n  *&return:class com.karthik.imager.APIService.DummyObject *=n$23 [line 212]\n  REMOVE_TEMPS(n$23); [line 212]\n  NULLIFY(&realmObject,false); [line 212]\n  APPLY_ABSTRACTION; [line 212]\n " shape="box"]
+	
+
+	 182 -> 46 ;
+	 182 -> 47 [color="red" ];
+181 [label="181:  Call void DummyObject.setDummyDesc(String) \n   n$20=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 211]\n  n$21=*n$20:class com.karthik.imager.APIService.DummyObject  [line 211]\n  n$22=*&$irvar0:class java.lang.String * [line 211]\n  _fun_void DummyObject.setDummyDesc(String)(n$20:class com.karthik.imager.APIService.DummyObject *,n$22:class java.lang.String *) virtual [line 211]\n  REMOVE_TEMPS(n$20,n$21,n$22); [line 211]\n  NULLIFY(&$irvar0,false); [line 211]\n " shape="box"]
+	
+
+	 181 -> 182 ;
+	 181 -> 47 [color="red" ];
+180 [label="180:  Call String DummyObject.getDummyDesc() \n   n$17=*&newObject:class com.karthik.imager.APIService.DummyObject * [line 211]\n  n$18=*n$17:class com.karthik.imager.APIService.DummyObject  [line 211]\n  n$19=_fun_String DummyObject.getDummyDesc()(n$17:class com.karthik.imager.APIService.DummyObject *) virtual [line 211]\n  *&$irvar0:class java.lang.String *=n$19 [line 211]\n  REMOVE_TEMPS(n$17,n$18,n$19); [line 211]\n  NULLIFY(&newObject,false); [line 211]\n " shape="box"]
+	
+
+	 180 -> 181 ;
+	 180 -> 47 [color="red" ];
+179 [label="179:  Call void DummyObject.setDummyTitle(String) \n   n$14=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 210]\n  n$15=*n$14:class com.karthik.imager.APIService.DummyObject  [line 210]\n  n$16=*&$irvar0:class java.lang.String * [line 210]\n  _fun_void DummyObject.setDummyTitle(String)(n$14:class com.karthik.imager.APIService.DummyObject *,n$16:class java.lang.String *) virtual [line 210]\n  REMOVE_TEMPS(n$14,n$15,n$16); [line 210]\n  NULLIFY(&$irvar0,false); [line 210]\n " shape="box"]
+	
+
+	 179 -> 180 ;
+	 179 -> 47 [color="red" ];
+178 [label="178:  Call String DummyObject.getDummyTitle() \n   n$11=*&newObject:class com.karthik.imager.APIService.DummyObject * [line 210]\n  n$12=*n$11:class com.karthik.imager.APIService.DummyObject  [line 210]\n  n$13=_fun_String DummyObject.getDummyTitle()(n$11:class com.karthik.imager.APIService.DummyObject *) virtual [line 210]\n  *&$irvar0:class java.lang.String *=n$13 [line 210]\n  REMOVE_TEMPS(n$11,n$12,n$13); [line 210]\n " shape="box"]
+	
+
+	 178 -> 179 ;
+	 178 -> 47 [color="red" ];
+177 [label="177:  Call Object Map.put(Object,Object) \n   n$5=*&cache:class java.util.Map * [line 209]\n  n$6=*n$5:class java.util.Map  [line 209]\n  n$7=*&newObject:class com.karthik.imager.APIService.DummyObject * [line 209]\n  n$8=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 209]\n  n$9=_fun___cast(n$8:class com.karthik.imager.APIService.DummyObject *,sizeof(class io.realm.internal.RealmObjectProxy ( sub )(cast)):void ) [line 209]\n  n$10=_fun_Object Map.put(Object,Object)(n$5:class java.util.Map *,n$7:class com.karthik.imager.APIService.DummyObject *,n$9:class io.realm.internal.RealmObjectProxy *) virtual [line 209]\n  *&$irvar0:class java.lang.Object *=n$10 [line 209]\n  REMOVE_TEMPS(n$5,n$6,n$7,n$8,n$9,n$10); [line 209]\n  NULLIFY(&$irvar0,false); [line 209]\n  NULLIFY(&cache,false); [line 209]\n " shape="box"]
+	
+
+	 177 -> 178 ;
+	 177 -> 47 [color="red" ];
+176 [label="176:  method_body \n   n$3=*&$irvar0:class io.realm.RealmObject * [line 208]\n  n$4=_fun___cast(n$3:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 208]\n  *&realmObject:class com.karthik.imager.APIService.DummyObject *=n$4 [line 208]\n  REMOVE_TEMPS(n$3,n$4); [line 208]\n  NULLIFY(&$irvar0,false); [line 208]\n " shape="box"]
+	
+
+	 176 -> 177 ;
+	 176 -> 47 [color="red" ];
+175 [label="175:  Call RealmObject Realm.createObject(Class) \n   n$0=*&realm:class io.realm.Realm * [line 208]\n  n$1=*n$0:class io.realm.Realm  [line 208]\n  n$2=_fun_RealmObject Realm.createObject(Class)(n$0:class io.realm.Realm *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 208]\n  *&$irvar0:class io.realm.RealmObject *=n$2 [line 208]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 208]\n  NULLIFY(&realm,false); [line 208]\n " shape="box"]
+	
+
+	 175 -> 176 ;
+	 175 -> 47 [color="red" ];
+174 [label="174:  method_body \n   *&return:class java.lang.String *=\"class_DummyObject\" [line 143]\n  APPLY_ABSTRACTION; [line 143]\n " shape="box"]
+	
+
+	 174 -> 43 ;
+	 174 -> 44 [color="red" ];
+173 [label="173:  method_body \n   NULLIFY(&$irvar0,false); [line 168]\n  NULLIFY(&json,false); [line 168]\n  n$37=*&obj:class com.karthik.imager.APIService.DummyObject * [line 168]\n  *&return:class com.karthik.imager.APIService.DummyObject *=n$37 [line 168]\n  REMOVE_TEMPS(n$37); [line 168]\n  NULLIFY(&obj,false); [line 168]\n  APPLY_ABSTRACTION; [line 168]\n " shape="box"]
+	
+
+	 173 -> 40 ;
+	 173 -> 41 [color="red" ];
+172 [label="172:  Call void DummyObject.setDummyDesc(String) \n   n$34=*&obj:class com.karthik.imager.APIService.DummyObject * [line 165]\n  n$35=*n$34:class com.karthik.imager.APIService.DummyObject  [line 165]\n  n$36=*&$irvar0:class java.lang.String * [line 165]\n  _fun_void DummyObject.setDummyDesc(String)(n$34:class com.karthik.imager.APIService.DummyObject *,n$36:class java.lang.String *) virtual [line 165]\n  REMOVE_TEMPS(n$34,n$35,n$36); [line 165]\n  NULLIFY(&$irvar0,false); [line 165]\n  APPLY_ABSTRACTION; [line 165]\n " shape="box"]
+	
+
+	 172 -> 173 ;
+	 172 -> 41 [color="red" ];
+171 [label="171:  Call String JSONObject.getString(String) \n   NULLIFY(&$irvar0,false); [line 165]\n  n$31=*&json:class org.json.JSONObject * [line 165]\n  n$32=*n$31:class org.json.JSONObject  [line 165]\n  n$33=_fun_String JSONObject.getString(String)(n$31:class org.json.JSONObject *,\"dummyDesc\":class java.lang.String *) virtual [line 165]\n  *&$irvar0:class java.lang.String *=n$33 [line 165]\n  REMOVE_TEMPS(n$31,n$32,n$33); [line 165]\n  NULLIFY(&json,false); [line 165]\n " shape="box"]
+	
+
+	 171 -> 172 ;
+	 171 -> 41 [color="red" ];
+170 [label="170:  Call void DummyObject.setDummyDesc(String) \n   NULLIFY(&$irvar0,false); [line 163]\n  NULLIFY(&json,false); [line 163]\n  n$29=*&obj:class com.karthik.imager.APIService.DummyObject * [line 163]\n  n$30=*n$29:class com.karthik.imager.APIService.DummyObject  [line 163]\n  _fun_void DummyObject.setDummyDesc(String)(n$29:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 163]\n  REMOVE_TEMPS(n$29,n$30); [line 163]\n  APPLY_ABSTRACTION; [line 163]\n " shape="box"]
+	
+
+	 170 -> 173 ;
+	 170 -> 41 [color="red" ];
+169 [label="169: Prune (false branch) \n   n$28=*&$irvar0:_Bool  [line 162]\n  PRUNE((n$28 == 0), false); [line 162]\n  REMOVE_TEMPS(n$28); [line 162]\n " shape="invhouse"]
+	
+
+	 169 -> 171 ;
+	 169 -> 41 [color="red" ];
+168 [label="168: Prune (true branch) \n   n$28=*&$irvar0:_Bool  [line 162]\n  PRUNE(!(n$28 == 0), true); [line 162]\n  REMOVE_TEMPS(n$28); [line 162]\n " shape="invhouse"]
+	
+
+	 168 -> 170 ;
+	 168 -> 41 [color="red" ];
+167 [label="167:  Call boolean JSONObject.isNull(String) \n   NULLIFY(&$irvar0,false); [line 162]\n  n$25=*&json:class org.json.JSONObject * [line 162]\n  n$26=*n$25:class org.json.JSONObject  [line 162]\n  n$27=_fun_boolean JSONObject.isNull(String)(n$25:class org.json.JSONObject *,\"dummyDesc\":class java.lang.String *) virtual [line 162]\n  *&$irvar0:_Bool =n$27 [line 162]\n  REMOVE_TEMPS(n$25,n$26,n$27); [line 162]\n " shape="box"]
+	
+
+	 167 -> 168 ;
+	 167 -> 169 ;
+	 167 -> 41 [color="red" ];
+166 [label="166: Prune (false branch) \n   n$24=*&$irvar0:_Bool  [line 161]\n  PRUNE((n$24 == 0), false); [line 161]\n  REMOVE_TEMPS(n$24); [line 161]\n  APPLY_ABSTRACTION; [line 161]\n " shape="invhouse"]
+	
+
+	 166 -> 173 ;
+	 166 -> 41 [color="red" ];
+165 [label="165: Prune (true branch) \n   n$24=*&$irvar0:_Bool  [line 161]\n  PRUNE(!(n$24 == 0), true); [line 161]\n  REMOVE_TEMPS(n$24); [line 161]\n " shape="invhouse"]
+	
+
+	 165 -> 167 ;
+	 165 -> 41 [color="red" ];
+164 [label="164:  Call boolean JSONObject.has(String) \n   NULLIFY(&$irvar0,false); [line 161]\n  n$21=*&json:class org.json.JSONObject * [line 161]\n  n$22=*n$21:class org.json.JSONObject  [line 161]\n  n$23=_fun_boolean JSONObject.has(String)(n$21:class org.json.JSONObject *,\"dummyDesc\":class java.lang.String *) virtual [line 161]\n  *&$irvar0:_Bool =n$23 [line 161]\n  REMOVE_TEMPS(n$21,n$22,n$23); [line 161]\n " shape="box"]
+	
+
+	 164 -> 165 ;
+	 164 -> 166 ;
+	 164 -> 41 [color="red" ];
+163 [label="163:  Call void DummyObject.setDummyTitle(String) \n   n$18=*&obj:class com.karthik.imager.APIService.DummyObject * [line 158]\n  n$19=*n$18:class com.karthik.imager.APIService.DummyObject  [line 158]\n  n$20=*&$irvar0:class java.lang.String * [line 158]\n  _fun_void DummyObject.setDummyTitle(String)(n$18:class com.karthik.imager.APIService.DummyObject *,n$20:class java.lang.String *) virtual [line 158]\n  REMOVE_TEMPS(n$18,n$19,n$20); [line 158]\n  NULLIFY(&$irvar0,false); [line 158]\n  APPLY_ABSTRACTION; [line 158]\n " shape="box"]
+	
+
+	 163 -> 164 ;
+	 163 -> 41 [color="red" ];
+162 [label="162:  Call String JSONObject.getString(String) \n   NULLIFY(&$irvar0,false); [line 158]\n  n$15=*&json:class org.json.JSONObject * [line 158]\n  n$16=*n$15:class org.json.JSONObject  [line 158]\n  n$17=_fun_String JSONObject.getString(String)(n$15:class org.json.JSONObject *,\"dummyTitle\":class java.lang.String *) virtual [line 158]\n  *&$irvar0:class java.lang.String *=n$17 [line 158]\n  REMOVE_TEMPS(n$15,n$16,n$17); [line 158]\n " shape="box"]
+	
+
+	 162 -> 163 ;
+	 162 -> 41 [color="red" ];
+161 [label="161:  Call void DummyObject.setDummyTitle(String) \n   NULLIFY(&$irvar0,false); [line 156]\n  n$13=*&obj:class com.karthik.imager.APIService.DummyObject * [line 156]\n  n$14=*n$13:class com.karthik.imager.APIService.DummyObject  [line 156]\n  _fun_void DummyObject.setDummyTitle(String)(n$13:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 156]\n  REMOVE_TEMPS(n$13,n$14); [line 156]\n  APPLY_ABSTRACTION; [line 156]\n " shape="box"]
+	
+
+	 161 -> 164 ;
+	 161 -> 41 [color="red" ];
+160 [label="160: Prune (false branch) \n   n$12=*&$irvar0:_Bool  [line 155]\n  PRUNE((n$12 == 0), false); [line 155]\n  REMOVE_TEMPS(n$12); [line 155]\n " shape="invhouse"]
+	
+
+	 160 -> 162 ;
+	 160 -> 41 [color="red" ];
+159 [label="159: Prune (true branch) \n   n$12=*&$irvar0:_Bool  [line 155]\n  PRUNE(!(n$12 == 0), true); [line 155]\n  REMOVE_TEMPS(n$12); [line 155]\n " shape="invhouse"]
+	
+
+	 159 -> 161 ;
+	 159 -> 41 [color="red" ];
+158 [label="158:  Call boolean JSONObject.isNull(String) \n   NULLIFY(&$irvar0,false); [line 155]\n  n$9=*&json:class org.json.JSONObject * [line 155]\n  n$10=*n$9:class org.json.JSONObject  [line 155]\n  n$11=_fun_boolean JSONObject.isNull(String)(n$9:class org.json.JSONObject *,\"dummyTitle\":class java.lang.String *) virtual [line 155]\n  *&$irvar0:_Bool =n$11 [line 155]\n  REMOVE_TEMPS(n$9,n$10,n$11); [line 155]\n " shape="box"]
+	
+
+	 158 -> 159 ;
+	 158 -> 160 ;
+	 158 -> 41 [color="red" ];
+157 [label="157: Prune (false branch) \n   n$8=*&$irvar0:_Bool  [line 154]\n  PRUNE((n$8 == 0), false); [line 154]\n  REMOVE_TEMPS(n$8); [line 154]\n  APPLY_ABSTRACTION; [line 154]\n " shape="invhouse"]
+	
+
+	 157 -> 164 ;
+	 157 -> 41 [color="red" ];
+156 [label="156: Prune (true branch) \n   n$8=*&$irvar0:_Bool  [line 154]\n  PRUNE(!(n$8 == 0), true); [line 154]\n  REMOVE_TEMPS(n$8); [line 154]\n " shape="invhouse"]
+	
+
+	 156 -> 158 ;
+	 156 -> 41 [color="red" ];
+155 [label="155:  Call boolean JSONObject.has(String) \n   n$5=*&json:class org.json.JSONObject * [line 154]\n  n$6=*n$5:class org.json.JSONObject  [line 154]\n  n$7=_fun_boolean JSONObject.has(String)(n$5:class org.json.JSONObject *,\"dummyTitle\":class java.lang.String *) virtual [line 154]\n  *&$irvar0:_Bool =n$7 [line 154]\n  REMOVE_TEMPS(n$5,n$6,n$7); [line 154]\n " shape="box"]
+	
+
+	 155 -> 156 ;
+	 155 -> 157 ;
+	 155 -> 41 [color="red" ];
+154 [label="154:  method_body \n   n$3=*&$irvar0:class io.realm.RealmObject * [line 153]\n  n$4=_fun___cast(n$3:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 153]\n  *&obj:class com.karthik.imager.APIService.DummyObject *=n$4 [line 153]\n  REMOVE_TEMPS(n$3,n$4); [line 153]\n  NULLIFY(&$irvar0,false); [line 153]\n " shape="box"]
+	
+
+	 154 -> 155 ;
+	 154 -> 41 [color="red" ];
+153 [label="153:  Call RealmObject Realm.createObject(Class) \n   n$0=*&realm:class io.realm.Realm * [line 153]\n  n$1=*n$0:class io.realm.Realm  [line 153]\n  n$2=_fun_RealmObject Realm.createObject(Class)(n$0:class io.realm.Realm *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 153]\n  *&$irvar0:class io.realm.RealmObject *=n$2 [line 153]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 153]\n  NULLIFY(&realm,false); [line 153]\n " shape="box"]
+	
+
+	 153 -> 154 ;
+	 153 -> 41 [color="red" ];
+152 [label="152:  method_body \n   n$10=*&$irvar0:class java.lang.String * [line 64]\n  *&return:class java.lang.String *=n$10 [line 64]\n  REMOVE_TEMPS(n$10); [line 64]\n  NULLIFY(&$irvar0,false); [line 64]\n  APPLY_ABSTRACTION; [line 64]\n " shape="box"]
+	
+
+	 152 -> 37 ;
+	 152 -> 38 [color="red" ];
+151 [label="151:  Call String Row.getString(long) \n   n$3=*&this:class io.realm.DummyObjectRealmProxy * [line 64]\n  n$4=*n$3.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 64]\n  n$5=*n$4:class io.realm.internal.Row  [line 64]\n  n$6=*&this:class io.realm.DummyObjectRealmProxy * [line 64]\n  n$7=*n$6.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 64]\n  n$8=*n$7.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 64]\n  n$9=_fun_String Row.getString(long)(n$4:class io.realm.internal.Row *,n$8:long ) virtual [line 64]\n  *&$irvar0:class java.lang.String *=n$9 [line 64]\n  REMOVE_TEMPS(n$3,n$4,n$5,n$6,n$7,n$8,n$9); [line 64]\n  NULLIFY(&this,false); [line 64]\n " shape="box"]
+	
+
+	 151 -> 152 ;
+	 151 -> 38 [color="red" ];
+150 [label="150:  Call void BaseRealm.checkIfValid() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 63]\n  n$1=*n$0.io.realm.RealmObject.realm:class io.realm.DummyObjectRealmProxy  [line 63]\n  n$2=*n$1:class io.realm.BaseRealm  [line 63]\n  _fun_void BaseRealm.checkIfValid()(n$1:class io.realm.BaseRealm *) virtual [line 63]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 63]\n " shape="box"]
+	
+
+	 150 -> 151 ;
+	 150 -> 38 [color="red" ];
+149 [label="149:  method_body \n   APPLY_ABSTRACTION; [line 58]\n " shape="box"]
+	
+
+	 149 -> 34 ;
+	 149 -> 35 [color="red" ];
+148 [label="148:  method_body \n   n$1=*&this:class io.realm.DummyObjectRealmProxy * [line 57]\n  n$2=*&columnInfo:class io.realm.internal.ColumnInfo * [line 57]\n  n$3=_fun___cast(n$2:class io.realm.internal.ColumnInfo *,sizeof(class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)):void ) [line 57]\n  *n$1.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy =n$3 [line 57]\n  REMOVE_TEMPS(n$1,n$2,n$3); [line 57]\n  NULLIFY(&columnInfo,false); [line 57]\n  NULLIFY(&this,false); [line 57]\n " shape="box"]
+	
+
+	 148 -> 149 ;
+	 148 -> 35 [color="red" ];
+147 [label="147:  Call DummyObject.<init>() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 56]\n  _fun_DummyObject.<init>()(n$0:class io.realm.DummyObjectRealmProxy *) [line 56]\n  REMOVE_TEMPS(n$0); [line 56]\n " shape="box"]
+	
+
+	 147 -> 148 ;
+	 147 -> 35 [color="red" ];
+146 [label="146:  method_body \n   NULLIFY(&$irvar0,false); [line 284]\n  NULLIFY(&$irvar1,false); [line 284]\n  *&return:_Bool =1 [line 284]\n  APPLY_ABSTRACTION; [line 284]\n " shape="box"]
+	
+
+	 146 -> 31 ;
+	 146 -> 32 [color="red" ];
+145 [label="145:  method_body \n   NULLIFY(&$irvar0,false); [line 282]\n  NULLIFY(&$irvar1,false); [line 282]\n  *&return:_Bool =0 [line 282]\n  APPLY_ABSTRACTION; [line 282]\n " shape="box"]
+	
+
+	 145 -> 31 ;
+	 145 -> 32 [color="red" ];
+144 [label="144: Prune (false branch) \n   n$57=*&$irvar0:long  [line 282]\n  n$58=*&$irvar1:long  [line 282]\n  PRUNE((n$57 == n$58), false); [line 282]\n  REMOVE_TEMPS(n$57,n$58); [line 282]\n " shape="invhouse"]
+	
+
+	 144 -> 146 ;
+	 144 -> 32 [color="red" ];
+143 [label="143: Prune (true branch) \n   n$57=*&$irvar0:long  [line 282]\n  n$58=*&$irvar1:long  [line 282]\n  PRUNE(!(n$57 == n$58), true); [line 282]\n  REMOVE_TEMPS(n$57,n$58); [line 282]\n " shape="invhouse"]
+	
+
+	 143 -> 145 ;
+	 143 -> 32 [color="red" ];
+142 [label="142:  Call long Row.getIndex() \n   n$53=*&aDummyObject:class io.realm.DummyObjectRealmProxy * [line 282]\n  n$54=*n$53.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 282]\n  n$55=*n$54:class io.realm.internal.Row  [line 282]\n  n$56=_fun_long Row.getIndex()(n$54:class io.realm.internal.Row *) virtual [line 282]\n  *&$irvar1:long =n$56 [line 282]\n  REMOVE_TEMPS(n$53,n$54,n$55,n$56); [line 282]\n  NULLIFY(&aDummyObject,false); [line 282]\n " shape="box"]
+	
+
+	 142 -> 143 ;
+	 142 -> 144 ;
+	 142 -> 32 [color="red" ];
+141 [label="141:  Call long Row.getIndex() \n   NULLIFY(&$irvar0,false); [line 282]\n  NULLIFY(&otherTableName,false); [line 282]\n  NULLIFY(&tableName,false); [line 282]\n  n$49=*&this:class io.realm.DummyObjectRealmProxy * [line 282]\n  n$50=*n$49.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 282]\n  n$51=*n$50:class io.realm.internal.Row  [line 282]\n  n$52=_fun_long Row.getIndex()(n$50:class io.realm.internal.Row *) virtual [line 282]\n  *&$irvar0:long =n$52 [line 282]\n  REMOVE_TEMPS(n$49,n$50,n$51,n$52); [line 282]\n  NULLIFY(&this,false); [line 282]\n " shape="box"]
+	
+
+	 141 -> 142 ;
+	 141 -> 32 [color="red" ];
+140 [label="140:  method_body \n   NULLIFY(&$irvar0,false); [line 280]\n  NULLIFY(&otherTableName,false); [line 280]\n  NULLIFY(&tableName,false); [line 280]\n  NULLIFY(&aDummyObject,false); [line 280]\n  NULLIFY(&this,false); [line 280]\n  *&return:_Bool =0 [line 280]\n  APPLY_ABSTRACTION; [line 280]\n " shape="box"]
+	
+
+	 140 -> 31 ;
+	 140 -> 32 [color="red" ];
+139 [label="139: Prune (false branch) \n   n$48=*&otherTableName:class java.lang.String * [line 280]\n  PRUNE((n$48 == null), false); [line 280]\n  REMOVE_TEMPS(n$48); [line 280]\n  APPLY_ABSTRACTION; [line 280]\n " shape="invhouse"]
+	
+
+	 139 -> 141 ;
+	 139 -> 32 [color="red" ];
+138 [label="138: Prune (true branch) \n   n$48=*&otherTableName:class java.lang.String * [line 280]\n  PRUNE(!(n$48 == null), true); [line 280]\n  REMOVE_TEMPS(n$48); [line 280]\n  APPLY_ABSTRACTION; [line 280]\n " shape="invhouse"]
+	
+
+	 138 -> 140 ;
+	 138 -> 32 [color="red" ];
+137 [label="137: Prune (false branch) \n   n$47=*&$irvar0:_Bool  [line 280]\n  PRUNE((n$47 != 0), false); [line 280]\n  REMOVE_TEMPS(n$47); [line 280]\n  APPLY_ABSTRACTION; [line 280]\n " shape="invhouse"]
+	
+
+	 137 -> 141 ;
+	 137 -> 32 [color="red" ];
+136 [label="136: Prune (true branch) \n   n$47=*&$irvar0:_Bool  [line 280]\n  PRUNE(!(n$47 != 0), true); [line 280]\n  REMOVE_TEMPS(n$47); [line 280]\n  APPLY_ABSTRACTION; [line 280]\n " shape="invhouse"]
+	
+
+	 136 -> 140 ;
+	 136 -> 32 [color="red" ];
+135 [label="135:  Call boolean String.equals(Object) \n   n$43=*&tableName:class java.lang.String * [line 280]\n  n$44=*n$43:class java.lang.String  [line 280]\n  n$45=*&otherTableName:class java.lang.String * [line 280]\n  n$46=_fun_boolean String.equals(Object)(n$43:class java.lang.String *,n$45:class java.lang.String *) virtual [line 280]\n  *&$irvar0:_Bool =n$46 [line 280]\n  REMOVE_TEMPS(n$43,n$44,n$45,n$46); [line 280]\n  NULLIFY(&otherTableName,false); [line 280]\n  NULLIFY(&tableName,false); [line 280]\n " shape="box"]
+	
+
+	 135 -> 136 ;
+	 135 -> 137 ;
+	 135 -> 32 [color="red" ];
+134 [label="134: Prune (false branch) \n   n$42=*&tableName:class java.lang.String * [line 280]\n  PRUNE((n$42 == null), false); [line 280]\n  REMOVE_TEMPS(n$42); [line 280]\n " shape="invhouse"]
+	
+
+	 134 -> 138 ;
+	 134 -> 139 ;
+	 134 -> 32 [color="red" ];
+133 [label="133: Prune (true branch) \n   n$42=*&tableName:class java.lang.String * [line 280]\n  PRUNE(!(n$42 == null), true); [line 280]\n  REMOVE_TEMPS(n$42); [line 280]\n " shape="invhouse"]
+	
+
+	 133 -> 135 ;
+	 133 -> 32 [color="red" ];
+132 [label="132:  Call String Table.getName() \n   n$39=*&$irvar0:class io.realm.internal.Table * [line 279]\n  n$40=*n$39:class io.realm.internal.Table  [line 279]\n  n$41=_fun_String Table.getName()(n$39:class io.realm.internal.Table *) virtual [line 279]\n  *&otherTableName:class java.lang.String *=n$41 [line 279]\n  REMOVE_TEMPS(n$39,n$40,n$41); [line 279]\n  NULLIFY(&$irvar0,false); [line 279]\n " shape="box"]
+	
+
+	 132 -> 133 ;
+	 132 -> 134 ;
+	 132 -> 32 [color="red" ];
+131 [label="131:  Call Table Row.getTable() \n   n$35=*&aDummyObject:class io.realm.DummyObjectRealmProxy * [line 279]\n  n$36=*n$35.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 279]\n  n$37=*n$36:class io.realm.internal.Row  [line 279]\n  n$38=_fun_Table Row.getTable()(n$36:class io.realm.internal.Row *) virtual [line 279]\n  *&$irvar0:class io.realm.internal.Table *=n$38 [line 279]\n  REMOVE_TEMPS(n$35,n$36,n$37,n$38); [line 279]\n " shape="box"]
+	
+
+	 131 -> 132 ;
+	 131 -> 32 [color="red" ];
+130 [label="130:  Call String Table.getName() \n   n$32=*&$irvar0:class io.realm.internal.Table * [line 278]\n  n$33=*n$32:class io.realm.internal.Table  [line 278]\n  n$34=_fun_String Table.getName()(n$32:class io.realm.internal.Table *) virtual [line 278]\n  *&tableName:class java.lang.String *=n$34 [line 278]\n  REMOVE_TEMPS(n$32,n$33,n$34); [line 278]\n  NULLIFY(&$irvar0,false); [line 278]\n " shape="box"]
+	
+
+	 130 -> 131 ;
+	 130 -> 32 [color="red" ];
+129 [label="129:  Call Table Row.getTable() \n   NULLIFY(&$irvar0,false); [line 278]\n  NULLIFY(&path,false); [line 278]\n  NULLIFY(&otherPath,false); [line 278]\n  n$28=*&this:class io.realm.DummyObjectRealmProxy * [line 278]\n  n$29=*n$28.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 278]\n  n$30=*n$29:class io.realm.internal.Row  [line 278]\n  n$31=_fun_Table Row.getTable()(n$29:class io.realm.internal.Row *) virtual [line 278]\n  *&$irvar0:class io.realm.internal.Table *=n$31 [line 278]\n  REMOVE_TEMPS(n$28,n$29,n$30,n$31); [line 278]\n " shape="box"]
+	
+
+	 129 -> 130 ;
+	 129 -> 32 [color="red" ];
+128 [label="128:  method_body \n   NULLIFY(&$irvar0,false); [line 276]\n  NULLIFY(&otherPath,false); [line 276]\n  NULLIFY(&aDummyObject,false); [line 276]\n  NULLIFY(&this,false); [line 276]\n  NULLIFY(&path,false); [line 276]\n  *&return:_Bool =0 [line 276]\n  APPLY_ABSTRACTION; [line 276]\n " shape="box"]
+	
+
+	 128 -> 31 ;
+	 128 -> 32 [color="red" ];
+127 [label="127: Prune (false branch) \n   n$27=*&otherPath:class java.lang.String * [line 276]\n  PRUNE((n$27 == null), false); [line 276]\n  REMOVE_TEMPS(n$27); [line 276]\n  APPLY_ABSTRACTION; [line 276]\n " shape="invhouse"]
+	
+
+	 127 -> 129 ;
+	 127 -> 32 [color="red" ];
+126 [label="126: Prune (true branch) \n   n$27=*&otherPath:class java.lang.String * [line 276]\n  PRUNE(!(n$27 == null), true); [line 276]\n  REMOVE_TEMPS(n$27); [line 276]\n  APPLY_ABSTRACTION; [line 276]\n " shape="invhouse"]
+	
+
+	 126 -> 128 ;
+	 126 -> 32 [color="red" ];
+125 [label="125: Prune (false branch) \n   n$26=*&$irvar0:_Bool  [line 276]\n  PRUNE((n$26 != 0), false); [line 276]\n  REMOVE_TEMPS(n$26); [line 276]\n  APPLY_ABSTRACTION; [line 276]\n " shape="invhouse"]
+	
+
+	 125 -> 129 ;
+	 125 -> 32 [color="red" ];
+124 [label="124: Prune (true branch) \n   n$26=*&$irvar0:_Bool  [line 276]\n  PRUNE(!(n$26 != 0), true); [line 276]\n  REMOVE_TEMPS(n$26); [line 276]\n  APPLY_ABSTRACTION; [line 276]\n " shape="invhouse"]
+	
+
+	 124 -> 128 ;
+	 124 -> 32 [color="red" ];
+123 [label="123:  Call boolean String.equals(Object) \n   n$22=*&path:class java.lang.String * [line 276]\n  n$23=*n$22:class java.lang.String  [line 276]\n  n$24=*&otherPath:class java.lang.String * [line 276]\n  n$25=_fun_boolean String.equals(Object)(n$22:class java.lang.String *,n$24:class java.lang.String *) virtual [line 276]\n  *&$irvar0:_Bool =n$25 [line 276]\n  REMOVE_TEMPS(n$22,n$23,n$24,n$25); [line 276]\n  NULLIFY(&otherPath,false); [line 276]\n  NULLIFY(&path,false); [line 276]\n " shape="box"]
+	
+
+	 123 -> 124 ;
+	 123 -> 125 ;
+	 123 -> 32 [color="red" ];
+122 [label="122: Prune (false branch) \n   n$21=*&path:class java.lang.String * [line 276]\n  PRUNE((n$21 == null), false); [line 276]\n  REMOVE_TEMPS(n$21); [line 276]\n " shape="invhouse"]
+	
+
+	 122 -> 126 ;
+	 122 -> 127 ;
+	 122 -> 32 [color="red" ];
+121 [label="121: Prune (true branch) \n   n$21=*&path:class java.lang.String * [line 276]\n  PRUNE(!(n$21 == null), true); [line 276]\n  REMOVE_TEMPS(n$21); [line 276]\n " shape="invhouse"]
+	
+
+	 121 -> 123 ;
+	 121 -> 32 [color="red" ];
+120 [label="120:  Call String BaseRealm.getPath() \n   n$17=*&aDummyObject:class io.realm.DummyObjectRealmProxy * [line 275]\n  n$18=*n$17.io.realm.RealmObject.realm:class io.realm.DummyObjectRealmProxy  [line 275]\n  n$19=*n$18:class io.realm.BaseRealm  [line 275]\n  n$20=_fun_String BaseRealm.getPath()(n$18:class io.realm.BaseRealm *) virtual [line 275]\n  *&otherPath:class java.lang.String *=n$20 [line 275]\n  REMOVE_TEMPS(n$17,n$18,n$19,n$20); [line 275]\n " shape="box"]
+	
+
+	 120 -> 121 ;
+	 120 -> 122 ;
+	 120 -> 32 [color="red" ];
+119 [label="119:  Call String BaseRealm.getPath() \n   n$13=*&this:class io.realm.DummyObjectRealmProxy * [line 274]\n  n$14=*n$13.io.realm.RealmObject.realm:class io.realm.DummyObjectRealmProxy  [line 274]\n  n$15=*n$14:class io.realm.BaseRealm  [line 274]\n  n$16=_fun_String BaseRealm.getPath()(n$14:class io.realm.BaseRealm *) virtual [line 274]\n  *&path:class java.lang.String *=n$16 [line 274]\n  REMOVE_TEMPS(n$13,n$14,n$15,n$16); [line 274]\n " shape="box"]
+	
+
+	 119 -> 120 ;
+	 119 -> 32 [color="red" ];
+118 [label="118:  method_body \n   NULLIFY(&$irvar0,false); [line 272]\n  NULLIFY(&$irvar1,false); [line 272]\n  n$11=*&o:class java.lang.Object * [line 272]\n  n$12=_fun___cast(n$11:class java.lang.Object *,sizeof(class io.realm.DummyObjectRealmProxy ( sub )(cast)):void ) [line 272]\n  *&aDummyObject:class io.realm.DummyObjectRealmProxy *=n$12 [line 272]\n  REMOVE_TEMPS(n$11,n$12); [line 272]\n  NULLIFY(&o,false); [line 272]\n " shape="box"]
+	
+
+	 118 -> 119 ;
+	 118 -> 32 [color="red" ];
+117 [label="117:  method_body \n   NULLIFY(&$irvar0,false); [line 271]\n  NULLIFY(&$irvar1,false); [line 271]\n  NULLIFY(&o,false); [line 271]\n  NULLIFY(&this,false); [line 271]\n  *&return:_Bool =0 [line 271]\n  APPLY_ABSTRACTION; [line 271]\n " shape="box"]
+	
+
+	 117 -> 31 ;
+	 117 -> 32 [color="red" ];
+116 [label="116: Prune (false branch) \n   n$9=*&$irvar0:class java.lang.Class * [line 271]\n  n$10=*&$irvar1:class java.lang.Class * [line 271]\n  PRUNE((n$9 == n$10), false); [line 271]\n  REMOVE_TEMPS(n$9,n$10); [line 271]\n " shape="invhouse"]
+	
+
+	 116 -> 118 ;
+	 116 -> 32 [color="red" ];
+115 [label="115: Prune (true branch) \n   n$9=*&$irvar0:class java.lang.Class * [line 271]\n  n$10=*&$irvar1:class java.lang.Class * [line 271]\n  PRUNE(!(n$9 == n$10), true); [line 271]\n  REMOVE_TEMPS(n$9,n$10); [line 271]\n  APPLY_ABSTRACTION; [line 271]\n " shape="invhouse"]
+	
+
+	 115 -> 117 ;
+	 115 -> 32 [color="red" ];
+114 [label="114:  Call Class Object.getClass() \n   n$6=*&o:class java.lang.Object * [line 271]\n  n$7=*n$6:class java.lang.Object  [line 271]\n  n$8=_fun_Class Object.getClass()(n$6:class java.lang.Object *) virtual [line 271]\n  *&$irvar1:class java.lang.Class *=n$8 [line 271]\n  REMOVE_TEMPS(n$6,n$7,n$8); [line 271]\n " shape="box"]
+	
+
+	 114 -> 115 ;
+	 114 -> 116 ;
+	 114 -> 32 [color="red" ];
+113 [label="113:  Call Class Object.getClass() \n   n$3=*&this:class io.realm.DummyObjectRealmProxy * [line 271]\n  n$4=*n$3:class io.realm.DummyObjectRealmProxy  [line 271]\n  n$5=_fun_Class Object.getClass()(n$3:class io.realm.DummyObjectRealmProxy *) virtual [line 271]\n  *&$irvar0:class java.lang.Class *=n$5 [line 271]\n  REMOVE_TEMPS(n$3,n$4,n$5); [line 271]\n " shape="box"]
+	
+
+	 113 -> 114 ;
+	 113 -> 32 [color="red" ];
+112 [label="112: Prune (false branch) \n   n$2=*&o:class java.lang.Object * [line 271]\n  PRUNE((n$2 == null), false); [line 271]\n  REMOVE_TEMPS(n$2); [line 271]\n  APPLY_ABSTRACTION; [line 271]\n " shape="invhouse"]
+	
+
+	 112 -> 117 ;
+	 112 -> 32 [color="red" ];
+111 [label="111: Prune (true branch) \n   n$2=*&o:class java.lang.Object * [line 271]\n  PRUNE(!(n$2 == null), true); [line 271]\n  REMOVE_TEMPS(n$2); [line 271]\n " shape="invhouse"]
+	
+
+	 111 -> 113 ;
+	 111 -> 32 [color="red" ];
+110 [label="110:  method_body \n   NULLIFY(&o,false); [line 270]\n  NULLIFY(&this,false); [line 270]\n  *&return:_Bool =1 [line 270]\n  APPLY_ABSTRACTION; [line 270]\n " shape="box"]
+	
+
+	 110 -> 31 ;
+	 110 -> 32 [color="red" ];
+109 [label="109: Prune (false branch) \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 270]\n  n$1=*&o:class java.lang.Object * [line 270]\n  PRUNE((n$0 != n$1), false); [line 270]\n  REMOVE_TEMPS(n$0,n$1); [line 270]\n " shape="invhouse"]
+	
+
+	 109 -> 111 ;
+	 109 -> 112 ;
+	 109 -> 32 [color="red" ];
+108 [label="108: Prune (true branch) \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 270]\n  n$1=*&o:class java.lang.Object * [line 270]\n  PRUNE(!(n$0 != n$1), true); [line 270]\n  REMOVE_TEMPS(n$0,n$1); [line 270]\n " shape="invhouse"]
+	
+
+	 108 -> 110 ;
+	 108 -> 32 [color="red" ];
+107 [label="107:  method_body \n   APPLY_ABSTRACTION; [line 75]\n " shape="box"]
+	
+
+	 107 -> 28 ;
+	 107 -> 29 [color="red" ];
+106 [label="106:  Call void Row.setString(long,String) \n   n$10=*&this:class io.realm.DummyObjectRealmProxy * [line 74]\n  n$11=*n$10.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 74]\n  n$12=*n$11:class io.realm.internal.Row  [line 74]\n  n$13=*&this:class io.realm.DummyObjectRealmProxy * [line 74]\n  n$14=*n$13.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 74]\n  n$15=*n$14.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 74]\n  n$16=*&value:class java.lang.String * [line 74]\n  _fun_void Row.setString(long,String)(n$11:class io.realm.internal.Row *,n$15:long ,n$16:class java.lang.String *) virtual [line 74]\n  REMOVE_TEMPS(n$10,n$11,n$12,n$13,n$14,n$15,n$16); [line 74]\n  NULLIFY(&this,false); [line 74]\n  NULLIFY(&value,false); [line 74]\n " shape="box"]
+	
+
+	 106 -> 107 ;
+	 106 -> 29 [color="red" ];
+105 [label="105:  method_body \n   APPLY_ABSTRACTION; [line 72]\n " shape="box"]
+	
+
+	 105 -> 28 ;
+	 105 -> 29 [color="red" ];
+104 [label="104:  Call void Row.setNull(long) \n   NULLIFY(&value,false); [line 71]\n  n$4=*&this:class io.realm.DummyObjectRealmProxy * [line 71]\n  n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 71]\n  n$6=*n$5:class io.realm.internal.Row  [line 71]\n  n$7=*&this:class io.realm.DummyObjectRealmProxy * [line 71]\n  n$8=*n$7.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 71]\n  n$9=*n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 71]\n  _fun_void Row.setNull(long)(n$5:class io.realm.internal.Row *,n$9:long ) virtual [line 71]\n  REMOVE_TEMPS(n$4,n$5,n$6,n$7,n$8,n$9); [line 71]\n  NULLIFY(&this,false); [line 71]\n " shape="box"]
+	
+
+	 104 -> 105 ;
+	 104 -> 29 [color="red" ];
+103 [label="103: Prune (false branch) \n   n$3=*&value:class java.lang.String * [line 70]\n  PRUNE((n$3 != null), false); [line 70]\n  REMOVE_TEMPS(n$3); [line 70]\n " shape="invhouse"]
+	
+
+	 103 -> 106 ;
+	 103 -> 29 [color="red" ];
+102 [label="102: Prune (true branch) \n   n$3=*&value:class java.lang.String * [line 70]\n  PRUNE(!(n$3 != null), true); [line 70]\n  REMOVE_TEMPS(n$3); [line 70]\n " shape="invhouse"]
+	
+
+	 102 -> 104 ;
+	 102 -> 29 [color="red" ];
+101 [label="101:  Call void BaseRealm.checkIfValid() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy * [line 69]\n  n$1=*n$0.io.realm.RealmObject.realm:class io.realm.DummyObjectRealmProxy  [line 69]\n  n$2=*n$1:class io.realm.BaseRealm  [line 69]\n  _fun_void BaseRealm.checkIfValid()(n$1:class io.realm.BaseRealm *) virtual [line 69]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 69]\n " shape="box"]
+	
+
+	 101 -> 102 ;
+	 101 -> 103 ;
+	 101 -> 29 [color="red" ];
+100 [label="100:  method_body \n   n$42=*&standaloneObject:class com.karthik.imager.APIService.DummyObject * [line 235]\n  *&return:class com.karthik.imager.APIService.DummyObject *=n$42 [line 235]\n  REMOVE_TEMPS(n$42); [line 235]\n  NULLIFY(&standaloneObject,false); [line 235]\n  APPLY_ABSTRACTION; [line 235]\n " shape="box"]
+	
+
+	 100 -> 25 ;
+	 100 -> 26 [color="red" ];
+99 [label="99:  Call void DummyObject.setDummyDesc(String) \n   n$39=*&standaloneObject:class com.karthik.imager.APIService.DummyObject * [line 234]\n  n$40=*n$39:class com.karthik.imager.APIService.DummyObject  [line 234]\n  n$41=*&$irvar0:class java.lang.String * [line 234]\n  _fun_void DummyObject.setDummyDesc(String)(n$39:class com.karthik.imager.APIService.DummyObject *,n$41:class java.lang.String *) virtual [line 234]\n  REMOVE_TEMPS(n$39,n$40,n$41); [line 234]\n  NULLIFY(&$irvar0,false); [line 234]\n " shape="box"]
+	
+
+	 99 -> 100 ;
+	 99 -> 26 [color="red" ];
+98 [label="98:  Call String DummyObject.getDummyDesc() \n   n$36=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 234]\n  n$37=*n$36:class com.karthik.imager.APIService.DummyObject  [line 234]\n  n$38=_fun_String DummyObject.getDummyDesc()(n$36:class com.karthik.imager.APIService.DummyObject *) virtual [line 234]\n  *&$irvar0:class java.lang.String *=n$38 [line 234]\n  REMOVE_TEMPS(n$36,n$37,n$38); [line 234]\n  NULLIFY(&realmObject,false); [line 234]\n " shape="box"]
+	
+
+	 98 -> 99 ;
+	 98 -> 26 [color="red" ];
+97 [label="97:  Call void DummyObject.setDummyTitle(String) \n   n$33=*&standaloneObject:class com.karthik.imager.APIService.DummyObject * [line 233]\n  n$34=*n$33:class com.karthik.imager.APIService.DummyObject  [line 233]\n  n$35=*&$irvar0:class java.lang.String * [line 233]\n  _fun_void DummyObject.setDummyTitle(String)(n$33:class com.karthik.imager.APIService.DummyObject *,n$35:class java.lang.String *) virtual [line 233]\n  REMOVE_TEMPS(n$33,n$34,n$35); [line 233]\n  NULLIFY(&$irvar0,false); [line 233]\n " shape="box"]
+	
+
+	 97 -> 98 ;
+	 97 -> 26 [color="red" ];
+96 [label="96:  Call String DummyObject.getDummyTitle() \n   n$30=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 233]\n  n$31=*n$30:class com.karthik.imager.APIService.DummyObject  [line 233]\n  n$32=_fun_String DummyObject.getDummyTitle()(n$30:class com.karthik.imager.APIService.DummyObject *) virtual [line 233]\n  *&$irvar0:class java.lang.String *=n$32 [line 233]\n  REMOVE_TEMPS(n$30,n$31,n$32); [line 233]\n " shape="box"]
+	
+
+	 96 -> 97 ;
+	 96 -> 26 [color="red" ];
+95 [label="95:  Call Object Map.put(Object,Object) \n   n$25=*&cache:class java.util.Map * [line 231]\n  n$26=*n$25:class java.util.Map  [line 231]\n  n$27=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 231]\n  n$28=*&$irvar0:class io.realm.internal.RealmObjectProxy$CacheData * [line 231]\n  n$29=_fun_Object Map.put(Object,Object)(n$25:class java.util.Map *,n$27:class com.karthik.imager.APIService.DummyObject *,n$28:class io.realm.internal.RealmObjectProxy$CacheData *) virtual [line 231]\n  *&$irvar1:class java.lang.Object *=n$29 [line 231]\n  REMOVE_TEMPS(n$25,n$26,n$27,n$28,n$29); [line 231]\n  NULLIFY(&$irvar0,false); [line 231]\n  NULLIFY(&$irvar1,false); [line 231]\n  NULLIFY(&cache,false); [line 231]\n  APPLY_ABSTRACTION; [line 231]\n " shape="box"]
+	
+
+	 95 -> 96 ;
+	 95 -> 26 [color="red" ];
+94 [label="94:  Call RealmObjectProxy$CacheData.<init>(int,RealmObject) \n   n$22=_fun___new(sizeof(class io.realm.internal.RealmObjectProxy$CacheData ):class io.realm.internal.RealmObjectProxy$CacheData *) [line 231]\n  n$23=*&currentDepth:int  [line 231]\n  n$24=*&standaloneObject:class com.karthik.imager.APIService.DummyObject * [line 231]\n  _fun_RealmObjectProxy$CacheData.<init>(int,RealmObject)(n$22:class io.realm.internal.RealmObjectProxy$CacheData *,n$23:int ,n$24:class com.karthik.imager.APIService.DummyObject *) [line 231]\n  *&$irvar0:class io.realm.internal.RealmObjectProxy$CacheData *=n$22 [line 231]\n  REMOVE_TEMPS(n$22,n$23,n$24); [line 231]\n  NULLIFY(&currentDepth,false); [line 231]\n " shape="box"]
+	
+
+	 94 -> 95 ;
+	 94 -> 26 [color="red" ];
+93 [label="93:  Call DummyObject.<init>() \n   NULLIFY(&cachedObject,false); [line 230]\n  n$21=_fun___new(sizeof(class com.karthik.imager.APIService.DummyObject ):class com.karthik.imager.APIService.DummyObject *) [line 230]\n  _fun_DummyObject.<init>()(n$21:class com.karthik.imager.APIService.DummyObject *) [line 230]\n  *&standaloneObject:class com.karthik.imager.APIService.DummyObject *=n$21 [line 230]\n  REMOVE_TEMPS(n$21); [line 230]\n " shape="box"]
+	
+
+	 93 -> 94 ;
+	 93 -> 26 [color="red" ];
+92 [label="92:  method_body \n   n$19=*&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 227]\n  n$20=*&currentDepth:int  [line 227]\n  *n$19.io.realm.internal.RealmObjectProxy$CacheData.minDepth:class io.realm.internal.RealmObjectProxy$CacheData =n$20 [line 227]\n  REMOVE_TEMPS(n$19,n$20); [line 227]\n  NULLIFY(&cachedObject,false); [line 227]\n  NULLIFY(&currentDepth,false); [line 227]\n  APPLY_ABSTRACTION; [line 227]\n " shape="box"]
+	
+
+	 92 -> 96 ;
+	 92 -> 26 [color="red" ];
+91 [label="91:  method_body \n   NULLIFY(&cache,false); [line 226]\n  n$16=*&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 226]\n  n$17=*n$16.io.realm.internal.RealmObjectProxy$CacheData.object:class io.realm.internal.RealmObjectProxy$CacheData  [line 226]\n  n$18=_fun___cast(n$17:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 226]\n  *&standaloneObject:class com.karthik.imager.APIService.DummyObject *=n$18 [line 226]\n  REMOVE_TEMPS(n$16,n$17,n$18); [line 226]\n " shape="box"]
+	
+
+	 91 -> 92 ;
+	 91 -> 26 [color="red" ];
+90 [label="90:  method_body \n   NULLIFY(&currentDepth,false); [line 224]\n  NULLIFY(&realmObject,false); [line 224]\n  NULLIFY(&cache,false); [line 224]\n  n$13=*&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 224]\n  n$14=*n$13.io.realm.internal.RealmObjectProxy$CacheData.object:class io.realm.internal.RealmObjectProxy$CacheData  [line 224]\n  n$15=_fun___cast(n$14:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 224]\n  *&return:class com.karthik.imager.APIService.DummyObject *=n$15 [line 224]\n  REMOVE_TEMPS(n$13,n$14,n$15); [line 224]\n  NULLIFY(&cachedObject,false); [line 224]\n  APPLY_ABSTRACTION; [line 224]\n " shape="box"]
+	
+
+	 90 -> 25 ;
+	 90 -> 26 [color="red" ];
+89 [label="89: Prune (false branch) \n   n$10=*&currentDepth:int  [line 223]\n  n$11=*&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 223]\n  n$12=*n$11.io.realm.internal.RealmObjectProxy$CacheData.minDepth:class io.realm.internal.RealmObjectProxy$CacheData  [line 223]\n  PRUNE((n$10 < n$12), false); [line 223]\n  REMOVE_TEMPS(n$10,n$11,n$12); [line 223]\n " shape="invhouse"]
+	
+
+	 89 -> 91 ;
+	 89 -> 26 [color="red" ];
+88 [label="88: Prune (true branch) \n   n$10=*&currentDepth:int  [line 223]\n  n$11=*&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 223]\n  n$12=*n$11.io.realm.internal.RealmObjectProxy$CacheData.minDepth:class io.realm.internal.RealmObjectProxy$CacheData  [line 223]\n  PRUNE(!(n$10 < n$12), true); [line 223]\n  REMOVE_TEMPS(n$10,n$11,n$12); [line 223]\n " shape="invhouse"]
+	
+
+	 88 -> 90 ;
+	 88 -> 26 [color="red" ];
+87 [label="87: Prune (false branch) \n   n$9=*&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 221]\n  PRUNE((n$9 == null), false); [line 221]\n  REMOVE_TEMPS(n$9); [line 221]\n " shape="invhouse"]
+	
+
+	 87 -> 93 ;
+	 87 -> 26 [color="red" ];
+86 [label="86: Prune (true branch) \n   n$9=*&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData * [line 221]\n  PRUNE(!(n$9 == null), true); [line 221]\n  REMOVE_TEMPS(n$9); [line 221]\n " shape="invhouse"]
+	
+
+	 86 -> 88 ;
+	 86 -> 89 ;
+	 86 -> 26 [color="red" ];
+85 [label="85:  method_body \n   n$7=*&$irvar0:class java.lang.Object * [line 219]\n  n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class io.realm.internal.RealmObjectProxy$CacheData ( sub )(cast)):void ) [line 219]\n  *&cachedObject:class io.realm.internal.RealmObjectProxy$CacheData *=n$8 [line 219]\n  REMOVE_TEMPS(n$7,n$8); [line 219]\n  NULLIFY(&$irvar0,false); [line 219]\n " shape="box"]
+	
+
+	 85 -> 86 ;
+	 85 -> 87 ;
+	 85 -> 26 [color="red" ];
+84 [label="84:  Call Object Map.get(Object) \n   NULLIFY(&maxDepth,false); [line 219]\n  n$3=*&cache:class java.util.Map * [line 219]\n  n$4=*n$3:class java.util.Map  [line 219]\n  n$5=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 219]\n  n$6=_fun_Object Map.get(Object)(n$3:class java.util.Map *,n$5:class com.karthik.imager.APIService.DummyObject *) virtual [line 219]\n  *&$irvar0:class java.lang.Object *=n$6 [line 219]\n  REMOVE_TEMPS(n$3,n$4,n$5,n$6); [line 219]\n " shape="box"]
+	
+
+	 84 -> 85 ;
+	 84 -> 26 [color="red" ];
+83 [label="83:  method_body \n   NULLIFY(&maxDepth,false); [line 217]\n  NULLIFY(&cache,false); [line 217]\n  NULLIFY(&currentDepth,false); [line 217]\n  NULLIFY(&realmObject,false); [line 217]\n  *&return:class com.karthik.imager.APIService.DummyObject *=null [line 217]\n  APPLY_ABSTRACTION; [line 217]\n " shape="box"]
+	
+
+	 83 -> 25 ;
+	 83 -> 26 [color="red" ];
+82 [label="82: Prune (false branch) \n   n$2=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 216]\n  PRUNE((n$2 != null), false); [line 216]\n  REMOVE_TEMPS(n$2); [line 216]\n " shape="invhouse"]
+	
+
+	 82 -> 84 ;
+	 82 -> 26 [color="red" ];
+81 [label="81: Prune (true branch) \n   n$2=*&realmObject:class com.karthik.imager.APIService.DummyObject * [line 216]\n  PRUNE(!(n$2 != null), true); [line 216]\n  REMOVE_TEMPS(n$2); [line 216]\n  APPLY_ABSTRACTION; [line 216]\n " shape="invhouse"]
+	
+
+	 81 -> 83 ;
+	 81 -> 26 [color="red" ];
+80 [label="80: Prune (false branch) \n   n$0=*&currentDepth:int  [line 216]\n  n$1=*&maxDepth:int  [line 216]\n  PRUNE((n$0 > n$1), false); [line 216]\n  REMOVE_TEMPS(n$0,n$1); [line 216]\n  APPLY_ABSTRACTION; [line 216]\n " shape="invhouse"]
+	
+
+	 80 -> 83 ;
+	 80 -> 26 [color="red" ];
+79 [label="79: Prune (true branch) \n   n$0=*&currentDepth:int  [line 216]\n  n$1=*&maxDepth:int  [line 216]\n  PRUNE(!(n$0 > n$1), true); [line 216]\n  REMOVE_TEMPS(n$0,n$1); [line 216]\n " shape="invhouse"]
+	
+
+	 79 -> 81 ;
+	 79 -> 82 ;
+	 79 -> 26 [color="red" ];
+78 [label="78:  method_body \n   n$0=*&#GB$io.realm.DummyObjectRealmProxy.io.realm.DummyObjectRealmProxy.FIELD_NAMES:class io.realm.DummyObjectRealmProxy  [line 147]\n  *&return:class java.util.List *=n$0 [line 147]\n  REMOVE_TEMPS(n$0); [line 147]\n  APPLY_ABSTRACTION; [line 147]\n " shape="box"]
+	
+
+	 78 -> 22 ;
+	 78 -> 23 [color="red" ];
+77 [label="77:  method_body \n   APPLY_ABSTRACTION; [line 54]\n " shape="box"]
+	
+
+	 77 -> 19 ;
+	 77 -> 20 [color="red" ];
+76 [label="76:  method_body \n   n$9=*&$irvar0:class java.util.List * [line 53]\n  *&#GB$io.realm.DummyObjectRealmProxy.io.realm.DummyObjectRealmProxy.FIELD_NAMES:class io.realm.DummyObjectRealmProxy =n$9 [line 53]\n  REMOVE_TEMPS(n$9); [line 53]\n  NULLIFY(&$irvar0,false); [line 53]\n " shape="box"]
+	
+
+	 76 -> 77 ;
+	 76 -> 20 [color="red" ];
+75 [label="75:  Call List Collections.unmodifiableList(List) \n   n$7=*&fieldNames:class java.util.ArrayList * [line 53]\n  n$8=_fun_List Collections.unmodifiableList(List)(n$7:class java.util.ArrayList *) [line 53]\n  *&$irvar0:class java.util.List *=n$8 [line 53]\n  REMOVE_TEMPS(n$7,n$8); [line 53]\n  NULLIFY(&fieldNames,false); [line 53]\n " shape="box"]
+	
+
+	 75 -> 76 ;
+	 75 -> 20 [color="red" ];
+74 [label="74:  Call boolean ArrayList.add(Object) \n   n$4=*&fieldNames:class java.util.ArrayList * [line 52]\n  n$5=*n$4:class java.util.ArrayList  [line 52]\n  n$6=_fun_boolean ArrayList.add(Object)(n$4:class java.util.ArrayList *,\"dummyDesc\":class java.lang.String *) virtual [line 52]\n  *&$irvar0:_Bool =n$6 [line 52]\n  REMOVE_TEMPS(n$4,n$5,n$6); [line 52]\n  NULLIFY(&$irvar0,false); [line 52]\n " shape="box"]
+	
+
+	 74 -> 75 ;
+	 74 -> 20 [color="red" ];
+73 [label="73:  Call boolean ArrayList.add(Object) \n   n$1=*&fieldNames:class java.util.ArrayList * [line 51]\n  n$2=*n$1:class java.util.ArrayList  [line 51]\n  n$3=_fun_boolean ArrayList.add(Object)(n$1:class java.util.ArrayList *,\"dummyTitle\":class java.lang.String *) virtual [line 51]\n  *&$irvar0:_Bool =n$3 [line 51]\n  REMOVE_TEMPS(n$1,n$2,n$3); [line 51]\n  NULLIFY(&$irvar0,false); [line 51]\n " shape="box"]
+	
+
+	 73 -> 74 ;
+	 73 -> 20 [color="red" ];
+72 [label="72:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(class java.util.ArrayList ):class java.util.ArrayList *) [line 50]\n  _fun_ArrayList.<init>()(n$0:class java.util.ArrayList *) [line 50]\n  *&fieldNames:class java.util.ArrayList *=n$0 [line 50]\n  REMOVE_TEMPS(n$0); [line 50]\n " shape="box"]
+	
+
+	 72 -> 73 ;
+	 72 -> 20 [color="red" ];
+71 [label="71:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 138]\n  NULLIFY(&$irvar1,false); [line 138]\n  NULLIFY(&$irvar2,false); [line 138]\n  NULLIFY(&$irvar3,false); [line 138]\n  NULLIFY(&$irvar4,false); [line 138]\n  NULLIFY(&$irvar5,false); [line 138]\n  NULLIFY(&$irvar6,false); [line 138]\n  NULLIFY(&columnInfo,false); [line 138]\n  NULLIFY(&columnTypes,false); [line 138]\n  NULLIFY(&i,false); [line 138]\n  NULLIFY(&table,false); [line 138]\n  NULLIFY(&transaction,false); [line 138]\n  APPLY_ABSTRACTION; [line 138]\n " shape="box"]
+	
+
+	 71 -> 70 ;
+70 [label="70: Exit DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction) \n  " color=yellow style=filled]
+	
+
+69 [label="69: Start DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)\nFormals:  transaction:class io.realm.internal.ImplicitTransaction *\nLocals:  $irvar0:void  table:void  $irvar1:void  $irvar2:void  $irvar3:void  $irvar4:void  $irvar5:void  $irvar6:void  columnTypes:void  i:void  columnInfo:void  \n   DECLARE_LOCALS(&return,&$irvar0,&table,&$irvar1,&$irvar2,&$irvar3,&$irvar4,&$irvar5,&$irvar6,&columnTypes,&i,&columnInfo); [line 105]\n  NULLIFY(&$irvar0,false); [line 105]\n  NULLIFY(&$irvar1,false); [line 105]\n  NULLIFY(&$irvar2,false); [line 105]\n  NULLIFY(&$irvar3,false); [line 105]\n  NULLIFY(&$irvar4,false); [line 105]\n  NULLIFY(&$irvar5,false); [line 105]\n  NULLIFY(&$irvar6,false); [line 105]\n  NULLIFY(&columnInfo,false); [line 105]\n  NULLIFY(&columnTypes,false); [line 105]\n  NULLIFY(&i,false); [line 105]\n  NULLIFY(&table,false); [line 105]\n " color=yellow style=filled]
+	
+
+	 69 -> 305 ;
+68 [label="68:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 197]\n  NULLIFY(&name,false); [line 197]\n  NULLIFY(&obj,false); [line 197]\n  NULLIFY(&reader,false); [line 197]\n  APPLY_ABSTRACTION; [line 197]\n " shape="box"]
+	
+
+	 68 -> 67 ;
+67 [label="67: Exit DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) \n  " color=yellow style=filled]
+	
+
+66 [label="66: Start DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)\nFormals:  realm:class io.realm.Realm * reader:class android.util.JsonReader *\nLocals:  $irvar0:void  obj:void  name:void  \n   DECLARE_LOCALS(&return,&$irvar0,&obj,&name); [line 172]\n  NULLIFY(&$irvar0,false); [line 172]\n  NULLIFY(&name,false); [line 172]\n  NULLIFY(&obj,false); [line 172]\n " color=yellow style=filled]
+	
+
+	 66 -> 270 ;
+65 [label="65:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 81]\n  NULLIFY(&this,false); [line 81]\n  APPLY_ABSTRACTION; [line 81]\n " shape="box"]
+	
+
+	 65 -> 64 ;
+64 [label="64: Exit String DummyObjectRealmProxy.getDummyDesc() \n  " color=yellow style=filled]
+	
+
+63 [label="63: Start String DummyObjectRealmProxy.getDummyDesc()\nFormals:  this:class io.realm.DummyObjectRealmProxy *\nLocals:  $irvar0:void  \n   DECLARE_LOCALS(&return,&$irvar0); [line 79]\n  NULLIFY(&$irvar0,false); [line 79]\n " color=yellow style=filled]
+	
+
+	 63 -> 267 ;
+62 [label="62:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 102]\n  NULLIFY(&table,false); [line 102]\n  NULLIFY(&transaction,false); [line 102]\n  APPLY_ABSTRACTION; [line 102]\n " shape="box"]
+	
+
+	 62 -> 61 ;
+61 [label="61: Exit Table DummyObjectRealmProxy.initTable(ImplicitTransaction) \n  " color=yellow style=filled]
+	
+
+60 [label="60: Start Table DummyObjectRealmProxy.initTable(ImplicitTransaction)\nFormals:  transaction:class io.realm.internal.ImplicitTransaction *\nLocals:  $irvar0:void  table:void  \n   DECLARE_LOCALS(&return,&$irvar0,&table); [line 94]\n  NULLIFY(&$irvar0,false); [line 94]\n  NULLIFY(&table,false); [line 94]\n " color=yellow style=filled]
+	
+
+	 60 -> 257 ;
+59 [label="59:  exceptions sink \n   NULLIFY(&$T0_42,false); [line 252]\n  NULLIFY(&$T0_44,false); [line 252]\n  NULLIFY(&$T0_84,false); [line 252]\n  NULLIFY(&$T0_86,false); [line 252]\n  NULLIFY(&$T1_44,false); [line 252]\n  NULLIFY(&$T1_86,false); [line 252]\n  NULLIFY(&$irvar0,false); [line 252]\n  NULLIFY(&stringBuilder,false); [line 252]\n  NULLIFY(&this,false); [line 252]\n  APPLY_ABSTRACTION; [line 252]\n " shape="box"]
+	
+
+	 59 -> 58 ;
+58 [label="58: Exit String DummyObjectRealmProxy.toString() \n  " color=yellow style=filled]
+	
+
+57 [label="57: Start String DummyObjectRealmProxy.toString()\nFormals:  this:class io.realm.DummyObjectRealmProxy *\nLocals:  $irvar0:void  stringBuilder:void  $T0_42:void  $T0_44:void  $T1_44:void  $T0_84:void  $T0_86:void  $T1_86:void  \n   DECLARE_LOCALS(&return,&$irvar0,&stringBuilder,&$T0_42,&$T0_44,&$T1_44,&$T0_84,&$T0_86,&$T1_86); [line 239]\n  NULLIFY(&$T0_42,false); [line 239]\n  NULLIFY(&$T0_44,false); [line 239]\n  NULLIFY(&$T0_84,false); [line 239]\n  NULLIFY(&$T0_86,false); [line 239]\n  NULLIFY(&$T1_44,false); [line 239]\n  NULLIFY(&$T1_86,false); [line 239]\n  NULLIFY(&$irvar0,false); [line 239]\n  NULLIFY(&stringBuilder,false); [line 239]\n " color=yellow style=filled]
+	
+
+	 57 -> 224 ;
+56 [label="56:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 204]\n  NULLIFY(&$irvar1,false); [line 204]\n  NULLIFY(&$irvar2,false); [line 204]\n  NULLIFY(&cache,false); [line 204]\n  NULLIFY(&object,false); [line 204]\n  NULLIFY(&realm,false); [line 204]\n  NULLIFY(&update,false); [line 204]\n  APPLY_ABSTRACTION; [line 204]\n " shape="box"]
+	
+
+	 56 -> 55 ;
+55 [label="55: Exit DummyObject DummyObjectRealmProxy.copyOrUpdate(Realm,DummyObject,boolean,Map) \n  " color=yellow style=filled]
+	
+
+54 [label="54: Start DummyObject DummyObjectRealmProxy.copyOrUpdate(Realm,DummyObject,boolean,Map)\nFormals:  realm:class io.realm.Realm * object:class com.karthik.imager.APIService.DummyObject * update:_Bool  cache:class java.util.Map *\nLocals:  $irvar0:void  $irvar1:void  $irvar2:void  \n   DECLARE_LOCALS(&return,&$irvar0,&$irvar1,&$irvar2); [line 200]\n  NULLIFY(&$irvar0,false); [line 200]\n  NULLIFY(&$irvar1,false); [line 200]\n  NULLIFY(&$irvar2,false); [line 200]\n " color=yellow style=filled]
+	
+
+	 54 -> 214 ;
+	 54 -> 215 ;
+53 [label="53:  exceptions sink \n   NULLIFY(&$T0_51,false); [line 265]\n  NULLIFY(&$T0_52,false); [line 265]\n  NULLIFY(&$T0_71,false); [line 265]\n  NULLIFY(&$T0_72,false); [line 265]\n  NULLIFY(&$T1_52,false); [line 265]\n  NULLIFY(&$T1_72,false); [line 265]\n  NULLIFY(&$irvar0,false); [line 265]\n  NULLIFY(&realmName,false); [line 265]\n  NULLIFY(&result,false); [line 265]\n  NULLIFY(&tableName,false); [line 265]\n  NULLIFY(&this,false); [line 265]\n  APPLY_ABSTRACTION; [line 265]\n " shape="box"]
+	
+
+	 53 -> 52 ;
+52 [label="52: Exit int DummyObjectRealmProxy.hashCode() \n  " color=yellow style=filled]
+	
+
+51 [label="51: Start int DummyObjectRealmProxy.hashCode()\nFormals:  this:class io.realm.DummyObjectRealmProxy *\nLocals:  realmName:void  $irvar0:void  tableName:void  rowIndex:void  result:void  $T0_51:void  $T0_52:void  $T1_52:void  $T0_71:void  $T0_72:void  $T1_72:void  \n   DECLARE_LOCALS(&return,&realmName,&$irvar0,&tableName,&rowIndex,&result,&$T0_51,&$T0_52,&$T1_52,&$T0_71,&$T0_72,&$T1_72); [line 256]\n  NULLIFY(&$T0_51,false); [line 256]\n  NULLIFY(&$T0_52,false); [line 256]\n  NULLIFY(&$T0_71,false); [line 256]\n  NULLIFY(&$T0_72,false); [line 256]\n  NULLIFY(&$T1_52,false); [line 256]\n  NULLIFY(&$T1_72,false); [line 256]\n  NULLIFY(&$irvar0,false); [line 256]\n  NULLIFY(&realmName,false); [line 256]\n  NULLIFY(&result,false); [line 256]\n  NULLIFY(&rowIndex,false); [line 256]\n  NULLIFY(&tableName,false); [line 256]\n " color=yellow style=filled]
+	
+
+	 51 -> 190 ;
+50 [label="50:  exceptions sink \n   NULLIFY(&this,false); [line 92]\n  NULLIFY(&value,false); [line 92]\n  APPLY_ABSTRACTION; [line 92]\n " shape="box"]
+	
+
+	 50 -> 49 ;
+49 [label="49: Exit void DummyObjectRealmProxy.setDummyDesc(String) \n  " color=yellow style=filled]
+	
+
+48 [label="48: Start void DummyObjectRealmProxy.setDummyDesc(String)\nFormals:  this:class io.realm.DummyObjectRealmProxy * value:class java.lang.String *\nLocals:  \n   DECLARE_LOCALS(&return); [line 85]\n " color=yellow style=filled]
+	
+
+	 48 -> 183 ;
+47 [label="47:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 212]\n  NULLIFY(&cache,false); [line 212]\n  NULLIFY(&newObject,false); [line 212]\n  NULLIFY(&realmObject,false); [line 212]\n  APPLY_ABSTRACTION; [line 212]\n " shape="box"]
+	
+
+	 47 -> 46 ;
+46 [label="46: Exit DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map) \n  " color=yellow style=filled]
+	
+
+45 [label="45: Start DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map)\nFormals:  realm:class io.realm.Realm * newObject:class com.karthik.imager.APIService.DummyObject * update:_Bool  cache:class java.util.Map *\nLocals:  $irvar0:void  realmObject:void  \n   DECLARE_LOCALS(&return,&$irvar0,&realmObject); [line 207]\n  NULLIFY(&$irvar0,false); [line 207]\n  NULLIFY(&realmObject,false); [line 207]\n  NULLIFY(&update,false); [line 207]\n " color=yellow style=filled]
+	
+
+	 45 -> 175 ;
+44 [label="44:  exceptions sink \n   APPLY_ABSTRACTION; [line 143]\n " shape="box"]
+	
+
+	 44 -> 43 ;
+43 [label="43: Exit String DummyObjectRealmProxy.getTableName() \n  " color=yellow style=filled]
+	
+
+42 [label="42: Start String DummyObjectRealmProxy.getTableName()\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 142]\n " color=yellow style=filled]
+	
+
+	 42 -> 174 ;
+41 [label="41:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 168]\n  NULLIFY(&json,false); [line 168]\n  NULLIFY(&obj,false); [line 168]\n  APPLY_ABSTRACTION; [line 168]\n " shape="box"]
+	
+
+	 41 -> 40 ;
+40 [label="40: Exit DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean) \n  " color=yellow style=filled]
+	
+
+39 [label="39: Start DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean)\nFormals:  realm:class io.realm.Realm * json:class org.json.JSONObject * update:_Bool \nLocals:  $irvar0:void  obj:void  \n   DECLARE_LOCALS(&return,&$irvar0,&obj); [line 151]\n  NULLIFY(&$irvar0,false); [line 151]\n  NULLIFY(&obj,false); [line 151]\n  NULLIFY(&update,false); [line 151]\n " color=yellow style=filled]
+	
+
+	 39 -> 153 ;
+38 [label="38:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 64]\n  NULLIFY(&this,false); [line 64]\n  APPLY_ABSTRACTION; [line 64]\n " shape="box"]
+	
+
+	 38 -> 37 ;
+37 [label="37: Exit String DummyObjectRealmProxy.getDummyTitle() \n  " color=yellow style=filled]
+	
+
+36 [label="36: Start String DummyObjectRealmProxy.getDummyTitle()\nFormals:  this:class io.realm.DummyObjectRealmProxy *\nLocals:  $irvar0:void  \n   DECLARE_LOCALS(&return,&$irvar0); [line 62]\n  NULLIFY(&$irvar0,false); [line 62]\n " color=yellow style=filled]
+	
+
+	 36 -> 150 ;
+35 [label="35:  exceptions sink \n   NULLIFY(&columnInfo,false); [line 58]\n  NULLIFY(&this,false); [line 58]\n  APPLY_ABSTRACTION; [line 58]\n " shape="box"]
+	
+
+	 35 -> 34 ;
+34 [label="34: Exit DummyObjectRealmProxy.<init>(ColumnInfo) \n  " color=yellow style=filled]
+	
+
+33 [label="33: Start DummyObjectRealmProxy.<init>(ColumnInfo)\nFormals:  this:class io.realm.DummyObjectRealmProxy * columnInfo:class io.realm.internal.ColumnInfo *\nLocals:  \n   DECLARE_LOCALS(&return); [line 56]\n " color=yellow style=filled]
+	
+
+	 33 -> 147 ;
+32 [label="32:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 284]\n  NULLIFY(&$irvar1,false); [line 284]\n  NULLIFY(&aDummyObject,false); [line 284]\n  NULLIFY(&o,false); [line 284]\n  NULLIFY(&otherPath,false); [line 284]\n  NULLIFY(&otherTableName,false); [line 284]\n  NULLIFY(&path,false); [line 284]\n  NULLIFY(&tableName,false); [line 284]\n  NULLIFY(&this,false); [line 284]\n  APPLY_ABSTRACTION; [line 284]\n " shape="box"]
+	
+
+	 32 -> 31 ;
+31 [label="31: Exit boolean DummyObjectRealmProxy.equals(Object) \n  " color=yellow style=filled]
+	
+
+30 [label="30: Start boolean DummyObjectRealmProxy.equals(Object)\nFormals:  this:class io.realm.DummyObjectRealmProxy * o:class java.lang.Object *\nLocals:  $irvar0:void  $irvar1:void  aDummyObject:void  path:void  otherPath:void  tableName:void  otherTableName:void  \n   DECLARE_LOCALS(&return,&$irvar0,&$irvar1,&aDummyObject,&path,&otherPath,&tableName,&otherTableName); [line 269]\n  NULLIFY(&$irvar0,false); [line 269]\n  NULLIFY(&$irvar1,false); [line 269]\n  NULLIFY(&aDummyObject,false); [line 269]\n  NULLIFY(&otherPath,false); [line 269]\n  NULLIFY(&otherTableName,false); [line 269]\n  NULLIFY(&path,false); [line 269]\n  NULLIFY(&tableName,false); [line 269]\n " color=yellow style=filled]
+	
+
+	 30 -> 108 ;
+	 30 -> 109 ;
+29 [label="29:  exceptions sink \n   NULLIFY(&this,false); [line 75]\n  NULLIFY(&value,false); [line 75]\n  APPLY_ABSTRACTION; [line 75]\n " shape="box"]
+	
+
+	 29 -> 28 ;
+28 [label="28: Exit void DummyObjectRealmProxy.setDummyTitle(String) \n  " color=yellow style=filled]
+	
+
+27 [label="27: Start void DummyObjectRealmProxy.setDummyTitle(String)\nFormals:  this:class io.realm.DummyObjectRealmProxy * value:class java.lang.String *\nLocals:  \n   DECLARE_LOCALS(&return); [line 68]\n " color=yellow style=filled]
+	
+
+	 27 -> 101 ;
+26 [label="26:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 235]\n  NULLIFY(&cache,false); [line 235]\n  NULLIFY(&cachedObject,false); [line 235]\n  NULLIFY(&currentDepth,false); [line 235]\n  NULLIFY(&realmObject,false); [line 235]\n  NULLIFY(&standaloneObject,false); [line 235]\n  APPLY_ABSTRACTION; [line 235]\n " shape="box"]
+	
+
+	 26 -> 25 ;
+25 [label="25: Exit DummyObject DummyObjectRealmProxy.createDetachedCopy(DummyObject,int,int,Map) \n  " color=yellow style=filled]
+	
+
+24 [label="24: Start DummyObject DummyObjectRealmProxy.createDetachedCopy(DummyObject,int,int,Map)\nFormals:  realmObject:class com.karthik.imager.APIService.DummyObject * currentDepth:int  maxDepth:int  cache:class java.util.Map *\nLocals:  $irvar0:void  cachedObject:void  standaloneObject:void  $irvar1:void  \n   DECLARE_LOCALS(&return,&$irvar0,&cachedObject,&standaloneObject,&$irvar1); [line 215]\n  NULLIFY(&$irvar0,false); [line 215]\n  NULLIFY(&$irvar1,false); [line 215]\n  NULLIFY(&cachedObject,false); [line 215]\n  NULLIFY(&standaloneObject,false); [line 215]\n " color=yellow style=filled]
+	
+
+	 24 -> 79 ;
+	 24 -> 80 ;
+23 [label="23:  exceptions sink \n   APPLY_ABSTRACTION; [line 147]\n " shape="box"]
+	
+
+	 23 -> 22 ;
+22 [label="22: Exit List DummyObjectRealmProxy.getFieldNames() \n  " color=yellow style=filled]
+	
+
+21 [label="21: Start List DummyObjectRealmProxy.getFieldNames()\nFormals: \nLocals:  \n   DECLARE_LOCALS(&return); [line 146]\n " color=yellow style=filled]
+	
+
+	 21 -> 78 ;
+20 [label="20:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 54]\n  NULLIFY(&fieldNames,false); [line 54]\n  APPLY_ABSTRACTION; [line 54]\n " shape="box"]
+	
+
+	 20 -> 19 ;
+19 [label="19: Exit void DummyObjectRealmProxy.<clinit>() \n  " color=yellow style=filled]
+	
+
+18 [label="18: Start void DummyObjectRealmProxy.<clinit>()\nFormals:  field:class java.lang.String *\nLocals:  fieldNames:void  $irvar0:void  \n   DECLARE_LOCALS(&return,&fieldNames,&$irvar0); [line 50]\n  NULLIFY(&$irvar0,false); [line 50]\n  NULLIFY(&field,false); [line 50]\n  NULLIFY(&fieldNames,false); [line 50]\n " color=yellow style=filled]
+	
+
+	 18 -> 72 ;
+17 [label="17:  method_body \n   APPLY_ABSTRACTION; [line 44]\n " shape="box"]
+	
+
+	 17 -> 2 ;
+	 17 -> 3 [color="red" ];
+16 [label="16:  Call void ColumnInfo.setIndicesMap(Map) \n   n$32=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 43]\n  n$33=*n$32:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 43]\n  n$34=*&indicesMap:class java.util.HashMap * [line 43]\n  _fun_void ColumnInfo.setIndicesMap(Map)(n$32:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *,n$34:class java.util.HashMap *) virtual [line 43]\n  REMOVE_TEMPS(n$32,n$33,n$34); [line 43]\n  NULLIFY(&indicesMap,false); [line 43]\n  NULLIFY(&this,false); [line 43]\n " shape="box"]
+	
+
+	 16 -> 17 ;
+	 16 -> 3 [color="red" ];
+15 [label="15:  Call Object HashMap.put(Object,Object) \n   n$28=*&indicesMap:class java.util.HashMap * [line 41]\n  n$29=*n$28:class java.util.HashMap  [line 41]\n  n$30=*&$irvar1:class java.lang.Long * [line 41]\n  n$31=_fun_Object HashMap.put(Object,Object)(n$28:class java.util.HashMap *,\"dummyDesc\":class java.lang.String *,n$30:class java.lang.Long *) virtual [line 41]\n  *&$irvar2:class java.lang.Object *=n$31 [line 41]\n  REMOVE_TEMPS(n$28,n$29,n$30,n$31); [line 41]\n  NULLIFY(&$irvar1,false); [line 41]\n  NULLIFY(&$irvar2,false); [line 41]\n " shape="box"]
+	
+
+	 15 -> 16 ;
+	 15 -> 3 [color="red" ];
+14 [label="14:  Call Long Long.valueOf(long) \n   n$26=*&$irvar0:long  [line 41]\n  n$27=_fun_Long Long.valueOf(long)(n$26:long ) [line 41]\n  *&$irvar1:class java.lang.Long *=n$27 [line 41]\n  REMOVE_TEMPS(n$26,n$27); [line 41]\n  NULLIFY(&$irvar0,false); [line 41]\n " shape="box"]
+	
+
+	 14 -> 15 ;
+	 14 -> 3 [color="red" ];
+13 [label="13:  method_body \n   n$24=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 41]\n  n$25=*n$24.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyDescIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 41]\n  *&$irvar0:long =n$25 [line 41]\n  REMOVE_TEMPS(n$24,n$25); [line 41]\n " shape="box"]
+	
+
+	 13 -> 14 ;
+	 13 -> 3 [color="red" ];
+12 [label="12:  method_body \n   n$22=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 40]\n  n$23=*&$irvar0:long  [line 40]\n  *n$22.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyDescIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo =n$23 [line 40]\n  REMOVE_TEMPS(n$22,n$23); [line 40]\n  NULLIFY(&$irvar0,false); [line 40]\n " shape="box"]
+	
+
+	 12 -> 13 ;
+	 12 -> 3 [color="red" ];
+11 [label="11:  Call long ColumnInfo.getValidColumnIndex(String,Table,String,String) \n   n$17=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 40]\n  n$18=*n$17:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 40]\n  n$19=*&path:class java.lang.String * [line 40]\n  n$20=*&table:class io.realm.internal.Table * [line 40]\n  n$21=_fun_long ColumnInfo.getValidColumnIndex(String,Table,String,String)(n$17:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *,n$19:class java.lang.String *,n$20:class io.realm.internal.Table *,\"DummyObject\":class java.lang.String *,\"dummyDesc\":class java.lang.String *) virtual [line 40]\n  *&$irvar0:long =n$21 [line 40]\n  REMOVE_TEMPS(n$17,n$18,n$19,n$20,n$21); [line 40]\n  NULLIFY(&path,false); [line 40]\n  NULLIFY(&table,false); [line 40]\n " shape="box"]
+	
+
+	 11 -> 12 ;
+	 11 -> 3 [color="red" ];
+10 [label="10:  Call Object HashMap.put(Object,Object) \n   n$13=*&indicesMap:class java.util.HashMap * [line 38]\n  n$14=*n$13:class java.util.HashMap  [line 38]\n  n$15=*&$irvar1:class java.lang.Long * [line 38]\n  n$16=_fun_Object HashMap.put(Object,Object)(n$13:class java.util.HashMap *,\"dummyTitle\":class java.lang.String *,n$15:class java.lang.Long *) virtual [line 38]\n  *&$irvar2:class java.lang.Object *=n$16 [line 38]\n  REMOVE_TEMPS(n$13,n$14,n$15,n$16); [line 38]\n  NULLIFY(&$irvar1,false); [line 38]\n  NULLIFY(&$irvar2,false); [line 38]\n " shape="box"]
+	
+
+	 10 -> 11 ;
+	 10 -> 3 [color="red" ];
+9 [label="9:  Call Long Long.valueOf(long) \n   n$11=*&$irvar0:long  [line 38]\n  n$12=_fun_Long Long.valueOf(long)(n$11:long ) [line 38]\n  *&$irvar1:class java.lang.Long *=n$12 [line 38]\n  REMOVE_TEMPS(n$11,n$12); [line 38]\n  NULLIFY(&$irvar0,false); [line 38]\n " shape="box"]
+	
+
+	 9 -> 10 ;
+	 9 -> 3 [color="red" ];
+8 [label="8:  method_body \n   n$9=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 38]\n  n$10=*n$9.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 38]\n  *&$irvar0:long =n$10 [line 38]\n  REMOVE_TEMPS(n$9,n$10); [line 38]\n " shape="box"]
+	
+
+	 8 -> 9 ;
+	 8 -> 3 [color="red" ];
+7 [label="7:  method_body \n   n$7=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 37]\n  n$8=*&$irvar0:long  [line 37]\n  *n$7.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo =n$8 [line 37]\n  REMOVE_TEMPS(n$7,n$8); [line 37]\n  NULLIFY(&$irvar0,false); [line 37]\n " shape="box"]
+	
+
+	 7 -> 8 ;
+	 7 -> 3 [color="red" ];
+6 [label="6:  Call long ColumnInfo.getValidColumnIndex(String,Table,String,String) \n   n$2=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 37]\n  n$3=*n$2:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 37]\n  n$4=*&path:class java.lang.String * [line 37]\n  n$5=*&table:class io.realm.internal.Table * [line 37]\n  n$6=_fun_long ColumnInfo.getValidColumnIndex(String,Table,String,String)(n$2:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *,n$4:class java.lang.String *,n$5:class io.realm.internal.Table *,\"DummyObject\":class java.lang.String *,\"dummyTitle\":class java.lang.String *) virtual [line 37]\n  *&$irvar0:long =n$6 [line 37]\n  REMOVE_TEMPS(n$2,n$3,n$4,n$5,n$6); [line 37]\n " shape="box"]
+	
+
+	 6 -> 7 ;
+	 6 -> 3 [color="red" ];
+5 [label="5:  Call HashMap.<init>(int) \n   n$1=_fun___new(sizeof(class java.util.HashMap ):class java.util.HashMap *) [line 36]\n  _fun_HashMap.<init>(int)(n$1:class java.util.HashMap *,2:int ) [line 36]\n  *&indicesMap:class java.util.HashMap *=n$1 [line 36]\n  REMOVE_TEMPS(n$1); [line 36]\n " shape="box"]
+	
+
+	 5 -> 6 ;
+	 5 -> 3 [color="red" ];
+4 [label="4:  Call ColumnInfo.<init>() \n   n$0=*&this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * [line 35]\n  _fun_ColumnInfo.<init>()(n$0:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *) [line 35]\n  REMOVE_TEMPS(n$0); [line 35]\n " shape="box"]
+	
+
+	 4 -> 5 ;
+	 4 -> 3 [color="red" ];
+3 [label="3:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 44]\n  NULLIFY(&$irvar1,false); [line 44]\n  NULLIFY(&indicesMap,false); [line 44]\n  NULLIFY(&path,false); [line 44]\n  NULLIFY(&table,false); [line 44]\n  NULLIFY(&this,false); [line 44]\n  APPLY_ABSTRACTION; [line 44]\n " shape="box"]
+	
+
+	 3 -> 2 ;
+2 [label="2: Exit DummyObjectRealmProxy$DummyObjectColumnInfo.<init>(String,Table) \n  " color=yellow style=filled]
+	
+
+1 [label="1: Start DummyObjectRealmProxy$DummyObjectColumnInfo.<init>(String,Table)\nFormals:  this:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * path:class java.lang.String * table:class io.realm.internal.Table *\nLocals:  indicesMap:void  $irvar0:void  $irvar1:void  $irvar2:void  \n   DECLARE_LOCALS(&return,&indicesMap,&$irvar0,&$irvar1,&$irvar2); [line 35]\n  NULLIFY(&$irvar0,false); [line 35]\n  NULLIFY(&$irvar1,false); [line 35]\n  NULLIFY(&$irvar2,false); [line 35]\n  NULLIFY(&indicesMap,false); [line 35]\n " color=yellow style=filled]
+	
+
+	 1 -> 4 ;
+}

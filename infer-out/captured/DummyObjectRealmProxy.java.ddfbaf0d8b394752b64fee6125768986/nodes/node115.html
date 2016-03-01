@@ -1,0 +1,729 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node115</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE271">115</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.equals(java.lang.Object):boolean.7cb68514c8d50bd85767a9fc55099150.html">boolean DummyObjectRealmProxy.equals(Object)</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE271">271</a>
+<br>PREDS:
+ <a href="./../nodes/node114.html"><span class='visited'>N_114<span class='expansion'>node114 preds:113 succs:115 116 exn:32 </span></span></a><br>SUCCS: 
+ <a href="./../nodes/node117.html"><span class='visited'>N_117<span class='expansion'>node117 preds:115 112 succs:31 exn:32 </span></span></a><br>EXN: 
+ <span class='dangling'>N_32<span class='expansion'>node32 preds: succs:31 exn:31 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$9=*&amp;$irvar0:class java.lang.Class * [line 271];
+                          n$10=*&amp;$irvar1:class java.lang.Class * [line 271];
+                          PRUNE(!(n$9 == n$10), true); [line 271];
+                          REMOVE_TEMPS(n$9,n$10); [line 271];
+                          APPLY_ABSTRACTION; [line 271];
+                          </span><hr width="100%">
+ <a name="session9"href="./../nodes/node115.html#session9">node115#session9</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE271">271</a>)<LISTING><span class='color_black'>**** [FP:0] boolean DummyObjectRealmProxy.equals(Object) Node: 115, Procedure: boolean DummyObjectRealmProxy.equals(Object), Session: 9, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_red'>o != this</span> ;  <span class='color_red'>o != null</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+  <span class='color_red'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = _t$3 <span class='color_orange'>update:271</span>:void </span> ;
+  <span class='color_red'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+  <span class='color_red'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+  <span class='color_red'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+  <span class='color_red'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+  [footprint
+     <span class='color_red'>o != this</span> ;  <span class='color_red'>o != null</span> *
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+     <span class='color_red'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+     <span class='color_red'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+     <span class='color_red'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$9=*&amp;$irvar0:class java.lang.Class * [line 271];
+  n$10=*&amp;$irvar1:class java.lang.Class * [line 271];
+  PRUNE(!(n$9 == n$10), true); [line 271];
+  REMOVE_TEMPS(n$9,n$10); [line 271];
+  APPLY_ABSTRACTION; [line 271];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$9=*&amp;$irvar0:class java.lang.Class * [line 271]</span>
+    in vpath_find exp:n$42
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$42
+    in vpath_find exp:n$41
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$41
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$44) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$43) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;  o != this ;  o != null ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$40 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$41 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = n$42 <span class='color_orange'>update:271</span>:void  ;
+    this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub ) ; 
+    $irvar1|->{java.lang.Class.name:n$43 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar0|->{java.lang.Class.name:n$44 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class 
+    [footprint
+       o != this ;  o != null *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+       o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$44) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$43) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;  o != this ;  o != null ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$40 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$41 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = n$42 <span class='color_orange'>update:271</span>:void  ;
+    this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub ) ; 
+    $irvar1|->{java.lang.Class.name:n$43 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar0|->{java.lang.Class.name:n$44 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class 
+    [footprint
+       o != this ;  o != null *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+       o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$44)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$43)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$40 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$41 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$42 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:n$43 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:n$44 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18</span>(_t$3)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$9 <span class='color_orange'>update:271</span></span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_red'>$irvar0|->{java.lang.Class.name:_t$3 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$10=*&amp;$irvar1:class java.lang.Class * [line 271]</span>
+    in vpath_find exp:n$46
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$46
+    in vpath_find exp:n$9
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$9
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$48) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$47) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;  o != this ;  o != null ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$45 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$46 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = n$9 <span class='color_orange'>update:271</span>:void  ;
+    this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub ) ; 
+    $irvar0|->{java.lang.Class.name:n$47 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar1|->{java.lang.Class.name:n$48 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class 
+    [footprint
+       o != this ;  o != null *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+       o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar1
+    prop before:
+    <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$48) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$47) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;  o != this ;  o != null ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$45 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$46 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = n$9 <span class='color_orange'>update:271</span>:void  ;
+    this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub ) ; 
+    $irvar0|->{java.lang.Class.name:n$47 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar1|->{java.lang.Class.name:n$48 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class 
+    [footprint
+       o != this ;  o != null *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+       o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$48)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(n$47)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$45 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$46 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$9 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:n$47 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:n$48 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18</span>(_t$1)</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$10 <span class='color_orange'>update:271</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$9 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:<span class='color_red'>_t$2 <span class='color_orange'>update:271</span></span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_red'>$irvar1|->{java.lang.Class.name:_t$1 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>PRUNE(!(n$9 == n$10), true); [line 271]</span>
+    in vpath_find exp:n$10
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$10
+    in vpath_find exp:n$9
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$9
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$10 != n$9
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$1)</span> ;  <span class='color_blue'>$irvar1 != <span class='color_red'>$irvar0</span></span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$10 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$9 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$1 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$9,n$10); [line 271]</span>
+    in vpath_find exp:n$10
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$10
+    in vpath_find exp:n$9
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$9
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_red'>$irvar0 != $irvar1</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'><span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span></span>($irvar1)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; Class Object.getClass() &gt; </span>($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>_t$1 <span class='color_orange'>update:271</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>_t$3 <span class='color_orange'>update:271</span></span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_red'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 271]</span>
+    in vpath_find exp:_t$3
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find _t$1
+    <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4) ;  $irvar0 != $irvar1 ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;  o != this ;  o != null ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = _t$0 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = _t$1 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = _t$3 <span class='color_orange'>update:271</span>:void  ;
+    this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub ) ; 
+    $irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class 
+    [footprint
+       o != this ;  o != null *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+       o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )  ]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_blue'>$irvar0 != $irvar1</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = _t$3 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_blue'>$irvar0 != <span class='color_red'>$irvar1</span></span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = _t$3 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    [footprint
+       <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+       <span class='color_blue'>o = @f$1 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)271</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>o|->{} <span class='color_orange'>rearrange:271</span>:class java.lang.Object ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session33"href="./../nodes/node115.html#session33">node115#session33</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE271">271</a>)<LISTING><span class='color_black'>**** [RE:0] boolean DummyObjectRealmProxy.equals(Object) Node: 115, Procedure: boolean DummyObjectRealmProxy.equals(Object), Session: 33, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_red'>o != this</span> ;  <span class='color_red'>o != null</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+  <span class='color_red'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = _t$3 <span class='color_orange'>update:271</span>:void </span> ;
+  <span class='color_red'>this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+  <span class='color_red'>o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span> ; 
+  <span class='color_red'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+  <span class='color_red'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$9=*&amp;$irvar0:class java.lang.Class * [line 271];
+  n$10=*&amp;$irvar1:class java.lang.Class * [line 271];
+  PRUNE(!(n$9 == n$10), true); [line 271];
+  REMOVE_TEMPS(n$9,n$10); [line 271];
+  APPLY_ABSTRACTION; [line 271];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$9=*&amp;$irvar0:class java.lang.Class * [line 271]</span>
+    in vpath_find exp:n$59
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$59
+    in vpath_find exp:n$58
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$58
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>o != this ;  o != null ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$61) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$60) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$57 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$58 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = n$59 <span class='color_orange'>update:271</span>:void  ;
+    $irvar1|->{java.lang.Class.name:n$60 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar0|->{java.lang.Class.name:n$61 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18</span>(_t$3)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$9 <span class='color_orange'>update:271</span></span>:void </span> ;
+    <span class='color_red'>$irvar0|->{java.lang.Class.name:_t$3 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span></span>
+    
+    Instruction <span class='color_green'>n$10=*&amp;$irvar1:class java.lang.Class * [line 271]</span>
+    in vpath_find exp:n$63
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$63
+    in vpath_find exp:n$9
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$9
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>o != this ;  o != null ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$65) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(n$64) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$62 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$63 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = n$9 <span class='color_orange'>update:271</span>:void  ;
+    $irvar0|->{java.lang.Class.name:n$64 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar1|->{java.lang.Class.name:n$65 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18</span>(_t$1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$10 <span class='color_orange'>update:271</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$9 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:<span class='color_red'>_t$2 <span class='color_orange'>update:271</span></span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_red'>$irvar1|->{java.lang.Class.name:_t$1 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span></span>
+    
+    Instruction <span class='color_green'>PRUNE(!(n$9 == n$10), true); [line 271]</span>
+    in vpath_find exp:n$10
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$10
+    in vpath_find exp:n$9
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$9
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;  <span class='color_blue'>$irvar1 != <span class='color_red'>$irvar0</span></span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$10 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$9 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$1 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$9,n$10); [line 271]</span>
+    in vpath_find exp:n$10
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$10
+    in vpath_find exp:n$9
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find n$9
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_red'>$irvar0 != $irvar1</span> ;  <span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_red'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'><span class='color_red'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span></span>($irvar1)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; Class Object.getClass() &gt; </span>($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>_t$1 <span class='color_orange'>update:271</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>_t$3 <span class='color_orange'>update:271</span></span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_red'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 271]</span>
+    in vpath_find exp:_t$3
+    vpath_find do_sexp: no match on Eexp &amp;$irvar0
+    vpath_find: cannot find _t$3
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find _t$1
+    <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4) ;  $irvar0 != $irvar1 ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0) ;  RET &lt; Class Object.getClass() &gt; ($irvar0) ;  UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2) ;  MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  RET &lt; Class Object.getClass() &gt; ($irvar1) ;  o != this ;  o != null ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    tableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = _t$0 <span class='color_orange'>initial</span>:_Bool  ; 
+    path = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherTableName = 0 <span class='color_orange'>nullify</span>:void  ; 
+    otherPath = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    aDummyObject = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = _t$1 <span class='color_orange'>update:271</span>:void  ; 
+    $irvar0 = _t$3 <span class='color_orange'>update:271</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub ) ; 
+    $irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class  ; 
+    $irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_blue'>$irvar0 != $irvar1</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = _t$3 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$4)</span> ;  <span class='color_blue'>$irvar0 != <span class='color_red'>$irvar1</span></span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar0)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar0)</span> ;  <span class='color_blue'>UND &lt; String InferUndefined.string_undefined() &gt; :18(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; Class Object.getClass():271 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>RET &lt; Class Object.getClass() &gt; ($irvar1)</span> ;  <span class='color_blue'>o != this</span> ;  <span class='color_blue'>o != null</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>tableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>path = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherTableName = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>otherPath = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>o = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>aDummyObject = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:271</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = _t$3 <span class='color_orange'>update:271</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>o|->{} <span class='color_orange'>formal</span>:class java.lang.Object ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{java.lang.Class.name:_t$2 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span> ; 
+    <span class='color_blue'>$irvar0|->{java.lang.Class.name:_t$4 <span class='color_orange'>update:271</span>} <span class='color_orange'>alloc</span>:class java.lang.Class </span></span>
+    
+    
+    
+  

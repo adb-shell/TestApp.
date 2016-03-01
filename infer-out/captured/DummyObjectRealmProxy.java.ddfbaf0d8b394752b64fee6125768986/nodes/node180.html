@@ -1,0 +1,1455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node180</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE211">180</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.copy(io.realm.Realm,com.karthik.imager.APIService.DummyObject,boolean.1f7353eb4add344712ea2ec6b1ad655c.html">DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map)</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE211">211</a>
+<br>PREDS:
+ <a href="./../nodes/node179.html"><span class='visited'>N_179<span class='expansion'>node179 preds:178 succs:180 exn:47 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_181<span class='expansion'>node181 preds:180 succs:182 exn:47 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_47<span class='expansion'>node47 preds: succs:46 exn:46 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$17=*&amp;newObject:class com.karthik.imager.APIService.DummyObject * [line 211];
+                          n$18=*n$17:class com.karthik.imager.APIService.DummyObject  [line 211];
+                          n$19=_fun_String DummyObject.getDummyDesc()(n$17:class com.karthik.imager.APIService.DummyObject *) virtual [line 211];
+                          *&amp;$irvar0:class java.lang.String *=n$19 [line 211];
+                          REMOVE_TEMPS(n$17,n$18,n$19); [line 211];
+                          NULLIFY(&amp;newObject,false); [line 211];
+                          </span><hr width="100%">
+ <a name="session7"href="./../nodes/node180.html#session7">node180#session7</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE211">211</a>)<LISTING><span class='color_black'>**** [FP:0] DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map) Node: 180, Procedure: DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map), Session: 7, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$6 != 0</span> ;  <span class='color_red'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6)</span> ;  <span class='color_red'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_red'>realmObject != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+  <span class='color_red'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+  <span class='color_red'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+  <span class='color_red'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+  <span class='color_red'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+  <span class='color_red'>old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+  <span class='color_red'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+  <span class='color_red'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+  <span class='color_red'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+  <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$6 != 0</span> ;  <span class='color_red'>realmObject != 0</span> *
+     <span class='color_red'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+     <span class='color_red'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+     <span class='color_red'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+     <span class='color_red'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+     <span class='color_red'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+     <span class='color_red'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+     <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$17=*&amp;newObject:class com.karthik.imager.APIService.DummyObject * [line 211];
+  n$18=*n$17:class com.karthik.imager.APIService.DummyObject  [line 211];
+  n$19=_fun_String DummyObject.getDummyDesc()(n$17:class com.karthik.imager.APIService.DummyObject *) virtual [line 211];
+  *&amp;$irvar0:class java.lang.String *=n$19 [line 211];
+  REMOVE_TEMPS(n$17,n$18,n$19); [line 211];
+  NULLIFY(&amp;newObject,false); [line 211];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$17=*&amp;newObject:class com.karthik.imager.APIService.DummyObject * [line 211]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;newObject
+    Prop: 
+    <span class='color_blue'>@f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$26 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$6 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;newObject
+    prop before:
+    <span class='color_blue'>@f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$26 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$6 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$26 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$17 = newObject</span> ;
+    <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$18=*n$17:class com.karthik.imager.APIService.DummyObject  [line 211]</span>
+    .... Rearrangement Start ....
+    Exp: @f$4
+    Prop: 
+    <span class='color_blue'>n$17 = newObject ;
+    @f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$6 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$4
+    prop before:
+    <span class='color_blue'>n$17 = newObject ;
+    @f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$6 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$17 = newObject</span> ;
+    <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$27 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$17 = newObject</span> ;
+    <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$6 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$19=_fun_String DummyObject.getDummyDesc()(n$17:class com.karthik.imager.APIService.DummyObject *) virtual [line 211]</span>
+    Found 1 specs for function String DummyObject.getDummyDesc()
+    START EXECUTING SPECS FOR String DummyObject.getDummyDesc() from state
+    <span class='color_blue'>n$17 = newObject ;
+    @f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$6 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    EXECUTING SPEC 1/1
+    ACTUAL PRECONDITION =
+      <span class='color_blue'>n$17 = newObject ;
+      @f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+      old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = @f$4 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+      old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+      cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+      old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+      newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+      old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+      [footprint
+         @f$6 != 0 ;  realmObject != 0 *
+         update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+         realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+         newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+         cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+         $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+         $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+         old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+         newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+         old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    SPEC =
+      --------------------------- ---------- ---------------------------
+      PRE:
+      <span class='color_blue'><span class='color_blue'>this|callee = _t$65 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      POST 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = _t$66 <span class='color_orange'>update:13</span>:class java.lang.String *</span> ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:return|callee <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      ----------------------------------------------------------------
+    pre_check_pure_implication
+    pi1:
+      n$17 = @f$4 ;  @f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  @f$1 != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(@f$1)
+    pi2:
+      
+    returns
+    sub1: 
+      n$17 = @f$4
+    sub2: 
+      
+    Current Implication
+    SUB:
+      n$17 = @f$4
+    <span class='color_blue'>@f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;  newObject = newObject ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    this|callee = @f$4 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$6 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    |-
+    <span class='color_blue'>this|callee = _t$65 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+    this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    
+      do_imply @f$4 _t$65
+        Current Implication
+        SUB:
+          n$17 = @f$4
+        <span class='color_blue'>@f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;  newObject = newObject ;
+        old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+        return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+        realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+        old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+        realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+        old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+        newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+        old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+        cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+        $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+        realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+        old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+        newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+        old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+        [footprint
+           @f$6 != 0 ;  realmObject != 0 *
+           update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+           realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+           newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+           cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+           $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+           $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+           old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+           newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+           old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+        [SUB: 
+          _t$65 = @f$4]
+        |-
+        <span class='color_blue'>@f$4|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+        
+            Final Implication
+            SUB:
+              n$17 = @f$4
+            <span class='color_blue'>@f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;  newObject = newObject ;
+            old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+            return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+            realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+            old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+            realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+            old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+            newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+            old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+            cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+            $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+            realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+            old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+            old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+            [footprint
+               @f$6 != 0 ;  realmObject != 0 *
+               update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+               realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+               newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+               cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+               $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+               $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+               old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+               newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+               old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+            [SUB: 
+              _t$65 = @f$4 ;  _t$66 = @f$8
+            MISSING FLD: 
+              @f$4|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )]
+            |-
+            <span class='color_blue'></span>
+            [FRAME FLD:
+              @f$4|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )]
+            [FRAME TYPING:
+              @f$4: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    Result of Abduction
+      SUB:
+        n$17 = @f$4
+      <span class='color_blue'>@f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;  newObject = newObject ;
+      old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = @f$4 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+      old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+      cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+      old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+      newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+      old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+      [footprint
+         @f$6 != 0 ;  realmObject != 0 *
+         update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+         realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+         newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+         cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+         $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+         $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+         old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+         newObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>rearrange:(z)210</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+         old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+      [SUB: 
+        _t$65 = @f$4 ;  _t$66 = @f$8
+      MISSING FLD: 
+        @f$4|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )]
+      |-
+      <span class='color_blue'>this|callee = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$8 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      [FRAME FLD:
+        @f$4|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )]
+      [FRAME TYPING:
+        @f$4: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    returning TRUE
+      New footprint:
+      
+      Frame fld:
+      @f$4|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )
+      Frame typ:
+      @f$4: class com.karthik.imager.APIService.DummyObject ( sub ) 
+      Missing fld:
+      @f$4|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$8 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )
+      Instantiated frame:
+      &amp;old_update|->@f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;update|->0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      &amp;return|->n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      &amp;realmObject|->@f$1 <span class='color_orange'>update:208</span>:void  ; 
+      &amp;old_realm|->@f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      &amp;realm|->0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      &amp;old_newObject|->@f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      &amp;newObject|->@f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      &amp;old_cache|->@f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+      &amp;cache|->0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+      &amp;$irvar0|->0 <span class='color_orange'>nullify</span>:void  ; 
+      @f$1|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+      @f$3|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+      @f$5|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+      Instantiated post:
+      PROP 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = @f$8 <span class='color_orange'>update:211</span>:class java.lang.String *</span> ;
+      <span class='color_red'>@f$4|->{com.karthik.imager.APIService.DummyObject.dummyDesc:return|callee <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      
+    ***** RESULTS FUNCTION CALL *******
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$17 = newObject</span> ;  <span class='color_red'>n$19 = @f$5</span> ;
+    <span class='color_red'>@f$7 != 0</span> ;  <span class='color_red'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = <span class='color_red'>@f$6 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>formal(z)</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$7 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = <span class='color_red'>@f$6 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>@f$7 <span class='color_orange'>none</span></span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>rearrange:(z)13</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    ***** END RESULTS FUNCTION CALL *******
+    pvar: realmObject
+    <span class='color_red'>found error in dereference</span>
+    spec_pre:
+    <span class='color_blue'>n$17 = newObject ;  n$19 = @f$8 ;
+    @f$6 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$6) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$8 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$6 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$5 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$6 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$8 <span class='color_orange'>rearrange:(z)13</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    exp @f$1 desc: 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$17 = newObject</span> ;  <span class='color_red'>n$19 = @f$5</span> ;
+    <span class='color_red'>@f$7 != 0</span> ;  <span class='color_red'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7)</span> ;  <span class='color_red'>RET &lt; String DummyObject.getDummyDesc() &gt; (@f$5)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = <span class='color_red'>@f$6 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>formal(z)</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$7 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = <span class='color_red'>@f$6 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>@f$7 <span class='color_orange'>none</span></span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>rearrange:(z)13</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class java.lang.String *=n$19 [line 211]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>n$17 = newObject ;  n$19 = @f$5 ;
+    @f$7 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7) ;  RET &lt; String DummyObject.getDummyDesc() &gt; (@f$5) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$7 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>rearrange:(z)13</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>n$17 = newObject ;  n$19 = @f$5 ;
+    @f$7 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7) ;  RET &lt; String DummyObject.getDummyDesc() &gt; (@f$5) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2) ;  realmObject != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = @f$1 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )
+    [footprint
+       @f$7 != 0 ;  realmObject != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+       cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+       $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub ) ; 
+       newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>rearrange:(z)13</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+       old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$17 = newObject</span> ;  <span class='color_blue'>n$19 = @f$5</span> ;
+    <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyDesc() &gt; (@f$5)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$29 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:@f$5 <span class='color_orange'>rearrange:(z)13</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$17 = newObject</span> ;  <span class='color_blue'>n$19 = $irvar0</span> ;
+    <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$5 <span class='color_orange'>update:211</span></span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>rearrange:(z)13</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$17,n$18,n$19); [line 211]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$5 <span class='color_orange'>update:211</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>rearrange:(z)13</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;newObject,false); [line 211]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = @f$5 <span class='color_orange'>update:211</span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$7 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = @f$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = @f$7 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>old_newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>rearrange:(z)13</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_blue'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$7 != 0</span> ;  <span class='color_red'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(@f$7)</span> ;  <span class='color_red'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (@f$2)</span> ;  <span class='color_blue'>realmObject != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208(realmObject)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = @f$1 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = <span class='color_red'>@f$6 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$5 <span class='color_orange'>update:211</span></span>:void </span> ;
+    <span class='color_blue'>realmObject|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_newObject|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$7 != 0</span> ;  <span class='color_blue'>realmObject != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>newObject = @f$4 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+       <span class='color_blue'>cache = <span class='color_red'>@f$6 <span class='color_orange'>formal</span></span>:class java.util.Map *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>@f$7 <span class='color_orange'>none</span></span>:class java.lang.Object *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)208</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>old_newObject|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>rearrange:(z)13</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:@f$2 <span class='color_orange'>rearrange:(z)21</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+       <span class='color_red'>old_cache|->{} <span class='color_orange'>rearrange:(z)209</span>:class java.util.Map ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session17"href="./../nodes/node180.html#session17">node180#session17</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE211">211</a>)<LISTING><span class='color_black'>**** [RE:0] DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map) Node: 180, Procedure: DummyObject DummyObjectRealmProxy.copy(Realm,DummyObject,boolean,Map), Session: 17, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_red'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_red'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;
+  <span class='color_red'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+  <span class='color_red'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+  <span class='color_red'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>old_newObject = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+  <span class='color_red'>newObject = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+  <span class='color_red'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+  <span class='color_red'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+  <span class='color_red'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+  <span class='color_red'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+  <span class='color_red'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$17=*&amp;newObject:class com.karthik.imager.APIService.DummyObject * [line 211];
+  n$18=*n$17:class com.karthik.imager.APIService.DummyObject  [line 211];
+  n$19=_fun_String DummyObject.getDummyDesc()(n$17:class com.karthik.imager.APIService.DummyObject *) virtual [line 211];
+  *&amp;$irvar0:class java.lang.String *=n$19 [line 211];
+  REMOVE_TEMPS(n$17,n$18,n$19); [line 211];
+  NULLIFY(&amp;newObject,false); [line 211];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$17=*&amp;newObject:class com.karthik.imager.APIService.DummyObject * [line 211]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;newObject
+    Prop: 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$26 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$3 = newObject</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = <span class='color_red'>n$17 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = <span class='color_red'>n$17 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_red'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$18=*n$17:class com.karthik.imager.APIService.DummyObject  [line 211]</span>
+    .... Rearrangement Start ....
+    Exp: n$17
+    Prop: 
+    <span class='color_blue'>val$3 = newObject ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = newObject</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$19=_fun_String DummyObject.getDummyDesc()(n$17:class com.karthik.imager.APIService.DummyObject *) virtual [line 211]</span>
+    Found 1 specs for function String DummyObject.getDummyDesc()
+    START EXECUTING SPECS FOR String DummyObject.getDummyDesc() from state
+    <span class='color_blue'>val$3 = newObject ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    EXECUTING SPEC 1/1
+    ACTUAL PRECONDITION =
+      <span class='color_blue'>val$3 = newObject ;
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;
+      old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = n$17 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+      old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+      cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+      newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+      old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+      old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    SPEC =
+      --------------------------- ---------- ---------------------------
+      PRE:
+      <span class='color_blue'><span class='color_blue'>this|callee = _t$65 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      POST 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = _t$66 <span class='color_orange'>update:13</span>:class java.lang.String *</span> ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:return|callee <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      ----------------------------------------------------------------
+    pre_check_pure_implication
+    pi1:
+      val$3 = n$17 ;  val$8 != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208(val$8) ;  val$7 != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209(val$7) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)
+    pi2:
+      
+    returns
+    sub1: 
+      val$3 = n$17
+    sub2: 
+      val$3 = n$17
+    Current Implication
+    SUB:
+      val$3 = n$17
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;  newObject = newObject ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    this|callee = n$17 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    [SUB: 
+      val$3 = n$17]
+    |-
+    <span class='color_blue'>this|callee = _t$65 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+    this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    
+      do_imply n$17 _t$65
+        Current Implication
+        SUB:
+          val$3 = n$17
+        <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;  newObject = newObject ;
+        old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+        return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+        realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+        old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+        realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+        old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+        newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+        old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+        cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+        $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+        $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+        $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+        newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+        old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+        old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+        $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+        [SUB: 
+          val$3 = n$17 ;  _t$65 = n$17]
+        |-
+        <span class='color_blue'>n$17|->{com.karthik.imager.APIService.DummyObject.dummyDesc:_t$66 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+        
+          do_imply val$4 _t$66
+            Final Implication
+            SUB:
+              val$3 = n$17
+            <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;  newObject = newObject ;
+            old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+            return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+            realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+            old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+            realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+            old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+            newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+            old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+            cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+            $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+            $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+            $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+            old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+            old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+            $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+            [SUB: 
+              val$3 = n$17 ;  _t$65 = n$17 ;  _t$66 = val$4]
+            |-
+            <span class='color_blue'></span>
+            [FRAME FLD:
+              n$17|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )]
+            [FRAME TYPING:
+              n$17: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    Result of Abduction
+      SUB:
+        val$3 = n$17
+      <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;  newObject = newObject ;
+      old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = n$17 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+      old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+      cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+      newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+      old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+      old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      [SUB: 
+        val$3 = n$17 ;  _t$65 = n$17 ;  _t$66 = val$4]
+      |-
+      <span class='color_blue'>this|callee = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$4 <span class='color_orange'>rearrange:(z)13</span>} <span class='color_orange'>rearrange:(z)13</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      [FRAME FLD:
+        n$17|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )]
+      [FRAME TYPING:
+        n$17: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    returning TRUE
+      New footprint:
+      
+      Frame fld:
+      n$17|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )
+      Frame typ:
+      n$17: class com.karthik.imager.APIService.DummyObject ( sub ) 
+      Missing fld:
+      
+      Instantiated frame:
+      &amp;old_update|->val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;update|->0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      &amp;return|->n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      &amp;realmObject|->val$8 <span class='color_orange'>update:208</span>:void  ; 
+      &amp;old_realm|->val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      &amp;realm|->0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      &amp;old_newObject|->n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      &amp;newObject|->n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      &amp;old_cache|->val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+      &amp;cache|->0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+      &amp;$irvar0|->0 <span class='color_orange'>nullify</span>:void  ; 
+      &amp;$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar|->val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+      &amp;$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ; 
+      val$2|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+      val$6|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+      val$8|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )
+      Instantiated post:
+      PROP 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = val$4 <span class='color_orange'>update:211</span>:class java.lang.String *</span> ;
+      <span class='color_red'>n$17|->{com.karthik.imager.APIService.DummyObject.dummyDesc:return|callee <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      
+    ***** RESULTS FUNCTION CALL *******
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = newObject</span> ;  <span class='color_red'>val$4 = n$19</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:<span class='color_red'>n$19 <span class='color_orange'>formal(z)</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    ***** END RESULTS FUNCTION CALL *******
+    pvar: $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject
+    <span class='color_red'>found error in dereference</span>
+    spec_pre:
+    <span class='color_blue'>val$3 = newObject ;  val$4 = n$19 ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:n$19 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    exp val$8 desc: 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = newObject</span> ;  <span class='color_red'>val$4 = n$19</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;  <span class='color_red'>RET &lt; String DummyObject.getDummyDesc() &gt; (n$19)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:<span class='color_red'>n$19 <span class='color_orange'>formal(z)</span></span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class java.lang.String *=n$19 [line 211]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>val$3 = newObject ;  val$4 = n$19 ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar) ;  RET &lt; String DummyObject.getDummyTitle() &gt; (val$5) ;  RET &lt; String DummyObject.getDummyDesc() &gt; (n$19) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    realmObject = val$8 <span class='color_orange'>update:208</span>:void  ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub ) ; 
+    cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:n$19 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = newObject</span> ;  <span class='color_blue'>val$4 = $irvar0</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = n$17 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$19 <span class='color_orange'>update:211</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$17,n$18,n$19); [line 211]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$4 <span class='color_orange'>update:211</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_red'>newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;newObject,false); [line 211]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = val$4 <span class='color_orange'>update:211</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :208($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object AbstractMap.put(Object,Object) &gt; :209($RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DummyObject.getDummyTitle() &gt; (val$5)</span> ;  <span class='color_red'>RET &lt; String DummyObject.getDummyDesc() &gt; ($irvar0)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>realmObject = val$8 <span class='color_orange'>update:208</span>:void </span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_newObject = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>newObject = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ; 
+    <span class='color_blue'>old_cache = val$6 <span class='color_orange'>formal</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>cache = 0 <span class='color_orange'>nullify</span>:class java.util.Map *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$4 <span class='color_orange'>update:211</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractMap.put(java.lang.Object,java.lang.Object):java.lang.Object|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_newObject|->{com.karthik.imager.APIService.DummyObject.dummyDesc:$irvar0 <span class='color_orange'>formal(z)</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_cache|->{} <span class='color_orange'>formal(z)</span>:class java.util.Map ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:val$5 <span class='color_orange'>update:(z)210</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    
+    
+  

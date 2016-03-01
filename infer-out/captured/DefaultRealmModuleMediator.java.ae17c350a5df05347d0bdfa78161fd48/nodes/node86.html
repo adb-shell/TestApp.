@@ -1,0 +1,709 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node86</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE80">86</a></h1></center>PROC:  <a href="./../io.realm.DefaultRealmModuleMediator.newInstance(java.lang.Class,io.realm.internal.ColumnInfo):io.rea.4ac4ef4c620c656ee4af75aa3b990af7.html">RealmObject DefaultRealmModuleMediator.newInstance(Class,ColumnInfo)</a> LINE: <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE80">80</a>
+<br>PREDS:
+ <a href="./../nodes/node85.html"><span class='visited'>N_85<span class='expansion'>node85 preds:84 succs:86 exn:24 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_23<span class='expansion'>node23 preds:88 86 24 succs: exn: 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_24<span class='expansion'>node24 preds: succs:23 exn:23 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$11=*&amp;$irvar1:class java.lang.Object * [line 80];
+                          n$12=_fun___cast(n$11:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 80];
+                          *&amp;return:class io.realm.RealmObject *=n$12 [line 80];
+                          REMOVE_TEMPS(n$11,n$12); [line 80];
+                          NULLIFY(&amp;$irvar1,false); [line 80];
+                          APPLY_ABSTRACTION; [line 80];
+                          </span><hr width="100%">
+ <a name="session10"href="./../nodes/node86.html#session10">node86#session10</a>( <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE80">80</a>)<LISTING><span class='color_black'>**** [FP:0] RealmObject DefaultRealmModuleMediator.newInstance(Class,ColumnInfo) Node: 86, Procedure: RealmObject DefaultRealmModuleMediator.newInstance(Class,ColumnInfo), Session: 10, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_red'>$irvar1 != 0</span> ;  <span class='color_red'>UND &lt; Object Class.cast(Object) &gt; :80($irvar1)</span> ;  <span class='color_red'>old_columnInfo != 0</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+  <span class='color_red'>old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+  <span class='color_red'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+  <span class='color_red'>old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>$irvar1 = @f$3 <span class='color_orange'>update:80</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+  <span class='color_red'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>old_columnInfo != 0</span> *
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+     <span class='color_red'>columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+     <span class='color_red'>clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+     <span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+     <span class='color_red'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+     <span class='color_red'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$11=*&amp;$irvar1:class java.lang.Object * [line 80];
+  n$12=_fun___cast(n$11:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 80];
+  *&amp;return:class io.realm.RealmObject *=n$12 [line 80];
+  REMOVE_TEMPS(n$11,n$12); [line 80];
+  NULLIFY(&amp;$irvar1,false); [line 80];
+  APPLY_ABSTRACTION; [line 80];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$11=*&amp;$irvar1:class java.lang.Object * [line 80]</span>
+    in vpath_find exp:n$35
+    vpath_find: cannot find n$35
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$35) ;  @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79(@f$4) ;  $irvar1 != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80($irvar1) ;  old_columnInfo != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$34 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = @f$3 <span class='color_orange'>update:80</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 ;  old_columnInfo != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+       clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+       old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar1
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$35) ;  @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79(@f$4) ;  $irvar1 != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80($irvar1) ;  old_columnInfo != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$34 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = @f$3 <span class='color_orange'>update:80</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 ;  old_columnInfo != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+       clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+       old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$35)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($irvar1)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = n$34 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = @f$3 <span class='color_orange'>update:80</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$11 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($irvar1)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = @f$3 <span class='color_orange'>update:80</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$12=_fun___cast(n$11:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 80]</span>
+    in vpath_find exp:n$37
+    vpath_find: cannot find n$37
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$11 = $irvar1</span> ;  <span class='color_red'>n$12 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($irvar1)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = @f$3 <span class='color_orange'>update:80</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;return:class io.realm.RealmObject *=n$12 [line 80]</span>
+    in vpath_find exp:n$39
+    vpath_find: cannot find n$39
+    .... Rearrangement Start ....
+    Exp: &amp;return
+    Prop: 
+    <span class='color_blue'>n$11 = $irvar1 ;  n$12 = $irvar1 ;
+    MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$39) ;  @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79(@f$4) ;  $irvar1 != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80($irvar1) ;  old_columnInfo != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$38 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = @f$3 <span class='color_orange'>update:80</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)
+    [footprint
+       @f$4 != 0 ;  old_columnInfo != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+       clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+       old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;return
+    prop before:
+    <span class='color_blue'>n$11 = $irvar1 ;  n$12 = $irvar1 ;
+    MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$39) ;  @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79(@f$4) ;  $irvar1 != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80($irvar1) ;  old_columnInfo != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$38 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = @f$3 <span class='color_orange'>update:80</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub ) ; 
+    $irvar1|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)
+    [footprint
+       @f$4 != 0 ;  old_columnInfo != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+       clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+       old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$11 = $irvar1</span> ;  <span class='color_blue'>n$12 = $irvar1</span> ;
+    <span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$39)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($irvar1)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = n$38 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = @f$3 <span class='color_orange'>update:80</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = @f$1 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$2 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$11 = <span class='color_red'>$irvar1</span></span> ;  <span class='color_blue'>n$12 = <span class='color_red'>$irvar1</span></span> ;
+    <span class='color_red'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_red'>old_columnInfo != 0</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Object Class.cast(Object) &gt; :80</span>($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>@f$1 <span class='color_orange'>update:80</span></span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>@f$1 <span class='color_orange'>update:80</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_red'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>@f$1 <span class='color_orange'>none</span></span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_red'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$11,n$12); [line 80]</span>
+    in vpath_find exp:_t$0
+    vpath_find: cannot find _t$0
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;  <span class='color_blue'>$irvar1 != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($irvar1)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = @f$1 <span class='color_orange'>update:80</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = @f$1 <span class='color_orange'>update:80</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>$irvar1|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 80]</span>
+    in vpath_find exp:_t$0
+    vpath_find: cannot find _t$0
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;  <span class='color_blue'>return != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80(return)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = @f$1 <span class='color_orange'>update:80</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>return|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 80]</span>
+    in vpath_find exp:_t$0
+    vpath_find: cannot find _t$0
+    <span class='color_blue'>@f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79(@f$4) ;  old_columnInfo != 0 ;  return != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80(return) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = @f$1 <span class='color_orange'>update:80</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    return|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast) ; 
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 ;  old_columnInfo != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+       clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+       old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )  ]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;  <span class='color_blue'>return != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80(return)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = @f$1 <span class='color_orange'>update:80</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>return|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = @f$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_blue'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79(@f$4)</span> ;  <span class='color_red'>old_columnInfo != 0</span> ;  <span class='color_blue'>return != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; Object Class.cast(Object) &gt; :80</span>(return)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>@f$1 <span class='color_orange'>update:80</span></span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>return|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_red'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_red'>old_columnInfo != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>columnInfo = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+       <span class='color_blue'>clazz = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>@f$1 <span class='color_orange'>none</span></span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>none</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+       <span class='color_red'>old_clazz|->{} <span class='color_orange'>rearrange:(z)79</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session29"href="./../nodes/node86.html#session29">node86#session29</a>( <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE80">80</a>)<LISTING><span class='color_black'>**** [RE:0] RealmObject DefaultRealmModuleMediator.newInstance(Class,ColumnInfo) Node: 86, Procedure: RealmObject DefaultRealmModuleMediator.newInstance(Class,ColumnInfo), Session: 29, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_red'>old_columnInfo != 0</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+  <span class='color_red'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+  <span class='color_red'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+  <span class='color_red'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>$irvar1 = val$5 <span class='color_orange'>update:80</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+  <span class='color_red'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+  <span class='color_red'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$11=*&amp;$irvar1:class java.lang.Object * [line 80];
+  n$12=_fun___cast(n$11:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 80];
+  *&amp;return:class io.realm.RealmObject *=n$12 [line 80];
+  REMOVE_TEMPS(n$11,n$12); [line 80];
+  NULLIFY(&amp;$irvar1,false); [line 80];
+  APPLY_ABSTRACTION; [line 80];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$11=*&amp;$irvar1:class java.lang.Object * [line 80]</span>
+    in vpath_find exp:n$45
+    vpath_find: cannot find n$45
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar) ;  $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar) ;  old_columnInfo != 0 ;  MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$45) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$44 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = val$5 <span class='color_orange'>update:80</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$5 = $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;  <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$11 <span class='color_orange'>update:80</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>n$11 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$12=_fun___cast(n$11:class java.lang.Object *,sizeof(class io.realm.RealmObject ( sub )(cast)):void ) [line 80]</span>
+    in vpath_find exp:n$47
+    vpath_find: cannot find n$47
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$12 = $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar</span> ;  <span class='color_blue'>val$5 = $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;  <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = n$11 <span class='color_orange'>update:80</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = n$11 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;return:class io.realm.RealmObject *=n$12 [line 80]</span>
+    in vpath_find exp:n$49
+    vpath_find: cannot find n$49
+    .... Rearrangement Start ....
+    Exp: &amp;return
+    Prop: 
+    <span class='color_blue'>n$12 = $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar ;  val$5 = $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar ;
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar) ;  old_columnInfo != 0 ;  MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(n$49) ;  $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$48 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = n$11 <span class='color_orange'>update:80</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = n$11 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast) ; 
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$12 = $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar</span> ;  <span class='color_blue'>val$5 = $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_red'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;  <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>n$11 <span class='color_orange'>update:80</span></span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = n$11 <span class='color_orange'>update:80</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = n$11 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$11,n$12); [line 80]</span>
+    in vpath_find exp:_t$0
+    vpath_find: cannot find _t$0
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span> ;  <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>val$5 <span class='color_orange'>update:80</span></span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>val$5 <span class='color_orange'>update:80</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = <span class='color_red'>val$5 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span> ; 
+    <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 80]</span>
+    in vpath_find exp:_t$0
+    vpath_find: cannot find _t$0
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:80 &gt;  <span class='color_orange'>{vpath: }</span>(_t$0)</span> ;  <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = val$5 <span class='color_orange'>update:80</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 80]</span>
+    in vpath_find exp:_t$0
+    vpath_find: cannot find _t$0
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar) ;  $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar) ;  old_columnInfo != 0 ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = val$5 <span class='color_orange'>update:80</span>:class io.realm.RealmObject * ; 
+    old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub ) ; 
+    old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast) ; 
+    old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub ) ; 
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = val$5 <span class='color_orange'>update:80</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Class.cast(Object) &gt; :80($RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :79($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>old_columnInfo != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>val$5 <span class='color_orange'>update:80</span></span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_columnInfo = val$2 <span class='color_orange'>formal</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ColumnInfo *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = 0 <span class='color_orange'>nullify</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>old_columnInfo|->{} <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span> ; 
+    <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class io.realm.RealmObject ( sub )(cast)</span></span>
+    
+    
+    
+  

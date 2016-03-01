@@ -1,0 +1,1011 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node27</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE41">27</a></h1></center>PROC:  <a href="./../com.karthik.imager.Animutils.AnimatorPath.moveTo(float,float):void.52fd077c538b71536b90f8e197acbb33.html">void AnimatorPath.moveTo(float,float)</a> LINE: <a href="./../../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE41">41</a>
+<br>PREDS:
+ <a href="./../nodes/node26.html"><span class='visited'>N_26<span class='expansion'>node26 preds:25 succs:27 exn:12 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_28<span class='expansion'>node28 preds:27 succs:11 exn:12 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_12<span class='expansion'>node12 preds: succs:11 exn:11 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$5=*&amp;$irvar0:class java.util.ArrayList * [line 41];
+                          n$6=*n$5:class java.util.ArrayList  [line 41];
+                          n$7=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 41];
+                          n$8=_fun_boolean ArrayList.add(Object)(n$5:class java.util.ArrayList *,n$7:class com.karthik.imager.Animutils.PathPoint *) virtual [line 41];
+                          *&amp;$irvar2:_Bool =n$8 [line 41];
+                          REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 41];
+                          NULLIFY(&amp;$irvar0,false); [line 41];
+                          NULLIFY(&amp;$irvar1,false); [line 41];
+                          NULLIFY(&amp;$irvar2,false); [line 41];
+                          </span><hr width="100%">
+ <a name="session4"href="./../nodes/node27.html#session4">node27#session4</a>( <a href="./../../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE41">41</a>)<LISTING><span class='color_black'>**** [FP:0] void AnimatorPath.moveTo(float,float) Node: 27, Procedure: void AnimatorPath.moveTo(float,float), Session: 4, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+  <span class='color_red'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+  <span class='color_red'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+  <span class='color_red'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+  <span class='color_red'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+  <span class='color_red'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+  [footprint
+     <span class='color_red'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+     <span class='color_red'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+     <span class='color_red'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ;
+     <span class='color_red'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$5=*&amp;$irvar0:class java.util.ArrayList * [line 41];
+  n$6=*n$5:class java.util.ArrayList  [line 41];
+  n$7=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 41];
+  n$8=_fun_boolean ArrayList.add(Object)(n$5:class java.util.ArrayList *,n$7:class com.karthik.imager.Animutils.PathPoint *) virtual [line 41];
+  *&amp;$irvar2:_Bool =n$8 [line 41];
+  REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 41];
+  NULLIFY(&amp;$irvar0,false); [line 41];
+  NULLIFY(&amp;$irvar1,false); [line 41];
+  NULLIFY(&amp;$irvar2,false); [line 41];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$5=*&amp;$irvar0:class java.util.ArrayList * [line 41]</span>
+    in vpath_find exp:n$10
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$10
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$9 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$10 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = @f$3 <span class='color_orange'>update:41</span>:void  ;
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+    [footprint
+       y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ;
+       old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$9 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$10 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = @f$3 <span class='color_orange'>update:41</span>:void  ;
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+    [footprint
+       y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ;
+       old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = n$9 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$10 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$5 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$6=*n$5:class java.util.ArrayList  [line 41]</span>
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$12
+    .... Rearrangement Start ....
+    Exp: @f$3
+    Prop: 
+    <span class='color_blue'>n$5 = $irvar0 ;
+    MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$11 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$12 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = @f$3 <span class='color_orange'>update:41</span>:void  ;
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+    [footprint
+       y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ;
+       old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_red'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_red'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$7=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 41]</span>
+    in vpath_find exp:n$14
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$14
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>n$5 = $irvar0 ;
+    MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$13 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = @f$3 <span class='color_orange'>update:41</span>:void  ;
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+    [footprint
+       y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ;
+       old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+       $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar1
+    prop before:
+    <span class='color_blue'>n$5 = $irvar0 ;
+    MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$13 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = @f$3 <span class='color_orange'>update:41</span>:void  ;
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+    [footprint
+       y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ;
+       old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+       $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = n$13 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$14 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = $irvar0</span> ;
+    <span class='color_red'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$7 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$8=_fun_boolean ArrayList.add(Object)(n$5:class java.util.ArrayList *,n$7:class com.karthik.imager.Animutils.PathPoint *) virtual [line 41]</span>
+    in vpath_find exp:n$7
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$7
+    <span class='color_blue'>INFO: SKIP_FUNCTION boolean ArrayList.add(Object)</span>
+    Undefined function boolean ArrayList.add(Object), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$8 = @f$4
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = $irvar0</span> ;  <span class='color_red'>n$8 = @f$4</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :41(@f$4)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$7 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar2:_Bool =n$8 [line 41]</span>
+    in vpath_find exp:n$7
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$7
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>n$5 = $irvar0 ;  n$8 = @f$4 ;
+    MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  UND &lt; boolean ArrayList.add(Object) &gt; :41(@f$4) ;
+    old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$16 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$7 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = @f$3 <span class='color_orange'>update:41</span>:void  ;
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+    [footprint
+       y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+       $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar2
+    prop before:
+    <span class='color_blue'>n$5 = $irvar0 ;  n$8 = @f$4 ;
+    MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;  UND &lt; boolean ArrayList.add(Object) &gt; :41(@f$4) ;
+    old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$16 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$7 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = @f$3 <span class='color_orange'>update:41</span>:void  ;
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+    [footprint
+       y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+       $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+       $irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = $irvar0</span> ;  <span class='color_blue'>n$8 = @f$4</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41(@f$4)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = n$16 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$7 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = $irvar0</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($irvar2)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>@f$4 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$7 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 41]</span>
+    in vpath_find exp:n$7
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$7
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($irvar2)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$4 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>_t$1 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:41</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>$irvar0|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 41]</span>
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($irvar2)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$4 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 41]</span>
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find _t$1
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;  UND &lt; boolean ArrayList.add(Object) &gt; :41($irvar2) ;
+      old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+      y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+      old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+      x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+      old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      $irvar2 = @f$4 <span class='color_orange'>update:41</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+      @f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub ) ; 
+      _t$1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+      [footprint
+         y = @f$0 <span class='color_orange'>formal</span>:float ( sub ) ; 
+         x = @f$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+         this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+         $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+         old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+         @f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )  ]</span>
+      PREDICATE:
+      _t$1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:@f$1 <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:@f$0 <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+      ATTRIBUTE: MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 41]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($irvar2)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$4 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 41]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41(@f$4)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :41(@f$4)</span> ;
+    <span class='color_blue'>old_y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_red'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>
+    [footprint
+       <span class='color_blue'>y = @f$0 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>x = @f$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+       <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:@f$3 <span class='color_orange'>rearrange:(z)41</span>} <span class='color_orange'>rearrange:(z)41</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+       <span class='color_red'>@f$3|->{} <span class='color_orange'>rearrange:(z)41</span>:class java.util.ArrayList ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session10"href="./../nodes/node27.html#session10">node27#session10</a>( <a href="./../../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE41">41</a>)<LISTING><span class='color_black'>**** [RE:0] void AnimatorPath.moveTo(float,float) Node: 27, Procedure: void AnimatorPath.moveTo(float,float), Session: 10, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+  <span class='color_red'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+  <span class='color_red'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+  <span class='color_red'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+  <span class='color_red'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = val$4 <span class='color_orange'>update:41</span>:void </span> ; 
+  <span class='color_red'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+  <span class='color_red'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+  <span class='color_red'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$5=*&amp;$irvar0:class java.util.ArrayList * [line 41];
+  n$6=*n$5:class java.util.ArrayList  [line 41];
+  n$7=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 41];
+  n$8=_fun_boolean ArrayList.add(Object)(n$5:class java.util.ArrayList *,n$7:class com.karthik.imager.Animutils.PathPoint *) virtual [line 41];
+  *&amp;$irvar2:_Bool =n$8 [line 41];
+  REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 41];
+  NULLIFY(&amp;$irvar0,false); [line 41];
+  NULLIFY(&amp;$irvar1,false); [line 41];
+  NULLIFY(&amp;$irvar2,false); [line 41];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$5=*&amp;$irvar0:class java.util.ArrayList * [line 41]</span>
+    in vpath_find exp:n$10
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$10
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = val$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = val$2 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$9 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$10 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = val$4 <span class='color_orange'>update:41</span>:void  ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint  ; 
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$4 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$5 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_red'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:<span class='color_red'>$irvar0 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span></span>
+    
+    Instruction <span class='color_green'>n$6=*n$5:class java.util.ArrayList  [line 41]</span>
+    in vpath_find exp:n$12
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$12
+    .... Rearrangement Start ....
+    Exp: n$5
+    Prop: 
+    <span class='color_blue'>val$4 = $irvar0 ;
+    MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = val$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = val$2 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$11 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$12 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = n$5 <span class='color_orange'>update:41</span>:void  ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint  ; 
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$5 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span></span>
+    
+    Instruction <span class='color_green'>n$7=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 41]</span>
+    in vpath_find exp:n$14
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$14
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>val$4 = $irvar0 ;
+    MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = val$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = val$2 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$13 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$14 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = n$5 <span class='color_orange'>update:41</span>:void  ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint  ; 
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $irvar0</span> ;
+    <span class='color_red'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$7 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$5 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$8=_fun_boolean ArrayList.add(Object)(n$5:class java.util.ArrayList *,n$7:class com.karthik.imager.Animutils.PathPoint *) virtual [line 41]</span>
+    in vpath_find exp:n$7
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$7
+    <span class='color_blue'>INFO: SKIP_FUNCTION boolean ArrayList.add(Object)</span>
+    Undefined function boolean ArrayList.add(Object), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $irvar0</span> ;  <span class='color_red'>val$5 = $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar</span> ;
+    <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$7 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$5 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>n$8 <span class='color_orange'>formal</span></span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar2:_Bool =n$8 [line 41]</span>
+    in vpath_find exp:n$7
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$7
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>val$4 = $irvar0 ;  val$5 = $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar ;
+    UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar) ;  MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1) ;
+    old_y = val$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_x = val$2 <span class='color_orange'>formal</span>:float ( sub ) ; 
+    x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+    old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+    return = n$16 <span class='color_orange'>initial</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = n$7 <span class='color_orange'>update:41</span>:void  ; 
+    $irvar0 = n$5 <span class='color_orange'>update:41</span>:void  ; 
+    $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = n$8 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    $irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub ) ; 
+    $irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint  ; 
+    old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $irvar0</span> ;  <span class='color_blue'>val$5 = $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar</span> ;
+    <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$8 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = n$7 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = n$5 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = n$8 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 41]</span>
+    in vpath_find exp:n$7
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$7
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>val$5 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>_t$1 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$4 <span class='color_orange'>update:41</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>val$5 <span class='color_orange'>formal</span></span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:<span class='color_red'>$irvar0 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_red'>$irvar0|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 41]</span>
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = val$5 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 41]</span>
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find _t$1
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1) ;  UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar) ;
+      old_y = val$1 <span class='color_orange'>formal</span>:float ( sub ) ; 
+      y = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+      old_x = val$2 <span class='color_orange'>formal</span>:float ( sub ) ; 
+      x = 0 <span class='color_orange'>nullify</span>:float ( sub ) ; 
+      old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      $irvar2 = val$5 <span class='color_orange'>update:41</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+      old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub ) ; 
+      val$4|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub ) ; 
+      _t$1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:old_x <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:old_y <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint </span>
+      PREDICATE:
+      _t$1|->{com.karthik.imager.Animutils.PathPoint.mControl0X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl0Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1X:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mControl1Y:0.000000 <span class='color_orange'>alloc</span>, com.karthik.imager.Animutils.PathPoint.mOperation:0 <span class='color_orange'>update:(z)41</span>, com.karthik.imager.Animutils.PathPoint.mX:val$2 <span class='color_orange'>update:41</span>, com.karthik.imager.Animutils.PathPoint.mY:val$1 <span class='color_orange'>update:41</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Animutils.PathPoint 
+      ATTRIBUTE: MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;$irvar1,false); [line 41]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = val$5 <span class='color_orange'>update:41</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 41]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; PathPoint PathPoint.moveTo(float,float):41 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>UND &lt; boolean ArrayList.add(Object) &gt; :41($RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_y = val$1 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_x = val$2 <span class='color_orange'>formal</span>:float ( sub )</span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:float ( sub )</span> ; 
+    <span class='color_blue'>old_this = val$3 <span class='color_orange'>formal</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Animutils.AnimatorPath *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.ArrayList.add(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Animutils.AnimatorPath.mPoints:val$4 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Animutils.AnimatorPath ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class java.util.ArrayList ( sub )</span></span>
+    
+    
+    
+  

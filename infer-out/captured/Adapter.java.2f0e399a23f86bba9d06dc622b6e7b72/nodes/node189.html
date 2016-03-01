@@ -1,0 +1,738 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node189</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE65">189</a></h1></center>PROC:  <a href="./../com.karthik.imager.Adapter.onCreateViewHolder(android.view.ViewGroup,int):android.support.v7.widget..97e46fa39272689fb2b6631c60a3e78a.html">RecyclerView$ViewHolder Adapter.onCreateViewHolder(ViewGroup,int)</a> LINE: <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE65">65</a>
+<br>PREDS:
+ <a href="./../nodes/node188.html"><span class='visited'>N_188<span class='expansion'>node188 preds:187 succs:189 exn:52 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_51<span class='expansion'>node51 preds:195 194 189 52 succs: exn: 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_52<span class='expansion'>node52 preds: succs:51 exn:51 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$13=*&amp;viewHolder:class com.karthik.imager.Adapter$ViewHolder * [line 65];
+                          *&amp;return:class android.support.v7.widget.RecyclerView$ViewHolder *=n$13 [line 65];
+                          REMOVE_TEMPS(n$13); [line 65];
+                          NULLIFY(&amp;viewHolder,false); [line 65];
+                          APPLY_ABSTRACTION; [line 65];
+                          </span><hr width="100%">
+ <a name="session7"href="./../nodes/node189.html#session7">node189#session7</a>( <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE65">65</a>)<LISTING><span class='color_black'>**** [FP:0] RecyclerView$ViewHolder Adapter.onCreateViewHolder(ViewGroup,int) Node: 189, Procedure: RecyclerView$ViewHolder Adapter.onCreateViewHolder(ViewGroup,int), Session: 7, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$5 = 0</span> ;
+  <span class='color_red'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder)</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+  <span class='color_red'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+  <span class='color_red'>viewHolder = _t$1 <span class='color_orange'>update:64</span>:void </span> ; 
+  <span class='color_red'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+  <span class='color_red'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+  <span class='color_red'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+  <span class='color_red'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+  <span class='color_red'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+  <span class='color_red'>viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+  [footprint
+     <span class='color_red'>@f$5 = 0</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>@f$0 != 0</span> *
+     <span class='color_red'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+     <span class='color_red'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+     <span class='color_red'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+     <span class='color_red'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+     <span class='color_red'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+     <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+     <span class='color_red'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$13=*&amp;viewHolder:class com.karthik.imager.Adapter$ViewHolder * [line 65];
+  *&amp;return:class android.support.v7.widget.RecyclerView$ViewHolder *=n$13 [line 65];
+  REMOVE_TEMPS(n$13); [line 65];
+  NULLIFY(&amp;viewHolder,false); [line 65];
+  APPLY_ABSTRACTION; [line 65];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$13=*&amp;viewHolder:class com.karthik.imager.Adapter$ViewHolder * [line 65]</span>
+    in vpath_find exp:n$20
+    vpath_find: found viewHolder : void 
+    .... Rearrangement Start ....
+    Exp: &amp;viewHolder
+    Prop: 
+    <span class='color_blue'>@f$5 = 0 ;
+    MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder) ;  @f$4 != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4) ;  @f$0 != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = n$20 <span class='color_orange'>update:64</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$21 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+    old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder 
+    [footprint
+       @f$5 = 0 ;  @f$4 != 0 ;  @f$0 != 0 *
+       viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+       $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub ) ; 
+       $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+       old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;viewHolder
+    prop before:
+    <span class='color_blue'>@f$5 = 0 ;
+    MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder) ;  @f$4 != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4) ;  @f$0 != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = n$20 <span class='color_orange'>update:64</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$21 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+    old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder 
+    [footprint
+       @f$5 = 0 ;  @f$4 != 0 ;  @f$0 != 0 *
+       viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+       $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub ) ; 
+       $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+       old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = n$20 <span class='color_orange'>update:64</span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = n$21 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_red'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>n$13 <span class='color_orange'>update:64</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_red'>viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;return:class android.support.v7.widget.RecyclerView$ViewHolder *=n$13 [line 65]</span>
+    in vpath_find exp:n$13
+    vpath_find: found viewHolder : void 
+    .... Rearrangement Start ....
+    Exp: &amp;return
+    Prop: 
+    <span class='color_blue'>@f$5 = 0 ;
+    MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder) ;  @f$4 != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4) ;  @f$0 != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = n$13 <span class='color_orange'>update:64</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$22 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+    old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder 
+    [footprint
+       @f$5 = 0 ;  @f$4 != 0 ;  @f$0 != 0 *
+       viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+       $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub ) ; 
+       $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+       old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;return
+    prop before:
+    <span class='color_blue'>@f$5 = 0 ;
+    MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder) ;  @f$4 != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4) ;  @f$0 != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = n$13 <span class='color_orange'>update:64</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$22 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+    old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder 
+    [footprint
+       @f$5 = 0 ;  @f$4 != 0 ;  @f$0 != 0 *
+       viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+       $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub ) ; 
+       $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+       old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = n$13 <span class='color_orange'>update:64</span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = n$22 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(return)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = n$13 <span class='color_orange'>update:64</span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>n$13 <span class='color_orange'>update:65</span></span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$13); [line 65]</span>
+    in vpath_find exp:n$13
+    vpath_find: found viewHolder : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_red'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(return)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>_t$0 <span class='color_orange'>update:64</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>update:65</span></span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_red'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;viewHolder,false); [line 65]</span>
+    in vpath_find exp:_t$0
+    vpath_find: found viewHolder : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(return)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>update:65</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$5 = 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 65]</span>
+    in vpath_find exp:_t$0
+    vpath_find: found return : class android.support.v7.widget.RecyclerView$ViewHolder *
+    <span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: return}</span>(return) ;  @f$4 != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4) ;  @f$0 != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = _t$0 <span class='color_orange'>update:65</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+    old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder 
+    [footprint
+       @f$4 != 0 ;  @f$0 != 0 *
+       viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+       parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+       $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub ) ; 
+       $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub ) ; 
+       old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )  ]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: return}</span>(return)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>update:65</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: return}</span>(return)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62(@f$4)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62(@f$0)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>update:65</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_red'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$0 != 0</span> *
+       <span class='color_blue'>viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+       <span class='color_blue'>parent = @f$1 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.view.View *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.view.LayoutInflater *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:62</span>:class android.view.LayoutInflater ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:@f$3 <span class='color_orange'>rearrange:(z)62</span>} <span class='color_orange'>rearrange:(z)62</span>:class com.karthik.imager.Adapter ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session35"href="./../nodes/node189.html#session35">node189#session35</a>( <a href="./../../Adapter.java.2f0e399a23f86bba9d06dc622b6e7b72.html#LINE65">65</a>)<LISTING><span class='color_black'>**** [RE:0] RecyclerView$ViewHolder Adapter.onCreateViewHolder(ViewGroup,int) Node: 189, Procedure: RecyclerView$ViewHolder Adapter.onCreateViewHolder(ViewGroup,int), Session: 35, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder)</span> ;  <span class='color_red'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar)</span> ;
+  <span class='color_red'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+  <span class='color_red'>viewHolder = _t$0 <span class='color_orange'>update:64</span>:void </span> ; 
+  <span class='color_red'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+  <span class='color_red'>return = _t$1 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+  <span class='color_red'>old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+  <span class='color_red'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+  <span class='color_red'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub )</span> ; 
+  <span class='color_red'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub )</span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+  <span class='color_red'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span> ; 
+  <span class='color_red'>viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$13=*&amp;viewHolder:class com.karthik.imager.Adapter$ViewHolder * [line 65];
+  *&amp;return:class android.support.v7.widget.RecyclerView$ViewHolder *=n$13 [line 65];
+  REMOVE_TEMPS(n$13); [line 65];
+  NULLIFY(&amp;viewHolder,false); [line 65];
+  APPLY_ABSTRACTION; [line 65];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$13=*&amp;viewHolder:class com.karthik.imager.Adapter$ViewHolder * [line 65]</span>
+    in vpath_find exp:n$55
+    vpath_find: found viewHolder : void 
+    .... Rearrangement Start ....
+    Exp: &amp;viewHolder
+    Prop: 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar) ;  $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar) ;  MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = n$55 <span class='color_orange'>update:64</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$56 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub ) ; 
+    $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub ) ;
+    viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder  ; 
+    old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar)</span> ;  <span class='color_red'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>n$13 <span class='color_orange'>update:64</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub )</span> ;
+    <span class='color_red'>viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;return:class android.support.v7.widget.RecyclerView$ViewHolder *=n$13 [line 65]</span>
+    in vpath_find exp:n$13
+    vpath_find: found viewHolder : void 
+    .... Rearrangement Start ....
+    Exp: &amp;return
+    Prop: 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar) ;  $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar) ;  MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(viewHolder) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = n$13 <span class='color_orange'>update:64</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = n$57 <span class='color_orange'>initial</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub ) ; 
+    $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub ) ;
+    viewHolder|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder  ; 
+    old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar)</span> ;  <span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(return)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = n$13 <span class='color_orange'>update:64</span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>n$13 <span class='color_orange'>update:65</span></span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub )</span> ;
+    <span class='color_blue'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$13); [line 65]</span>
+    in vpath_find exp:n$13
+    vpath_find: found viewHolder : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(return)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>_t$0 <span class='color_orange'>update:64</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>update:65</span></span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_red'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;viewHolder,false); [line 65]</span>
+    in vpath_find exp:_t$0
+    vpath_find: found viewHolder : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: viewHolder}</span>(return)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>update:65</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 65]</span>
+    in vpath_find exp:_t$0
+    vpath_find: found return : class android.support.v7.widget.RecyclerView$ViewHolder *
+    <span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: return}</span>(return) ;  $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0 ;  UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar) ;  $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0 ;  UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar) ;
+    old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    viewType = 0 <span class='color_orange'>nullify</span>:int ( sub ) ; 
+    viewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    v = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub ) ; 
+    return = _t$0 <span class='color_orange'>update:65</span>:class android.support.v7.widget.RecyclerView$ViewHolder * ; 
+    old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub ) ; 
+    parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub ) ; 
+    fullViewHolder = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub ) ; 
+    $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub ) ;
+    old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub ) ; 
+    $RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub ) ; 
+    return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: return}</span>(return)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>update:65</span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:64 &gt;  <span class='color_orange'>{vpath: return}</span>(return)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; LayoutInflater LayoutInflater.from(Context) &gt; :62($RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; View LayoutInflater.inflate(int,ViewGroup,boolean) &gt; :62($RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar)</span> ;
+    <span class='color_blue'>old_viewType = 0 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewType = 0 <span class='color_orange'>nullify</span>:int ( sub )</span> ; 
+    <span class='color_blue'>viewHolder = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>v = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.Adapter *( sub )</span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>update:65</span></span>:class android.support.v7.widget.RecyclerView$ViewHolder *</span> ; 
+    <span class='color_blue'>old_parent = val$3 <span class='color_orange'>formal</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>parent = 0 <span class='color_orange'>nullify</span>:class android.view.ViewGroup *( sub )</span> ; 
+    <span class='color_blue'>fullViewHolder = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.inflate(int,android.view.ViewGroup,boolean):android.view.View|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.view.View *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.view.LayoutInflater *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.Adapter.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Adapter ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.view.LayoutInflater.from(android.content.Context):android.view.LayoutInflater|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.view.LayoutInflater ( sub )</span> ; 
+    <span class='color_blue'>return|->{android.support.v7.widget.RecyclerView$ViewHolder.itemView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mFlags:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mInChangeScrap:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mIsRecyclableCount:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemId:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mItemViewType:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOldPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mOwnerRecyclerView:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mPreLayoutPosition:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mScrapContainer:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowedHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mShadowingHolder:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mUnmodifiedPayloads:0 <span class='color_orange'>alloc</span>, android.support.v7.widget.RecyclerView$ViewHolder.mWasImportantForAccessibilityBeforeHidden:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.heartLike:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.imageView:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.shimmerFrameLayout:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Adapter$ViewHolder.this$0:old_this <span class='color_orange'>update:(z)64</span>, com.karthik.imager.Adapter$ViewHolder.txtView:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Adapter$ViewHolder </span></span>
+    
+    
+    
+  

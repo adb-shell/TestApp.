@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File mobile/src/main/java/com/karthik/imager/Animutils/AnimatorPath.java</h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">/*</td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> * Copyright (C) 2012 The Android Open Source Project</td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line"> *</td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line"> * you may not use this file except in compliance with the License.</td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line"> * You may obtain a copy of the License at</td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line"> *</td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line"> *      http://www.apache.org/licenses/LICENSE-2.0</td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line"> *</td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line"> * Unless required by applicable law or agreed to in writing, software</td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line"> * See the License for the specific language governing permissions and</td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line"> * limitations under the License.</td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> */</td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">package com.karthik.imager.Animutils;</td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import java.util.ArrayList;</td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">import java.util.Collection;</td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">/**</td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line"> * A simple Path object that holds information about the points along</td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line"> * a path. The API allows you to specify a move location (which essentially</td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"> * jumps from the previous point in the path to the new one), a line location</td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line"> * (which creates a line segment from the previous location) and a curve</td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line"> * location (which creates a cubic B&#239;&#191;&#189;zier curve from the previous location).</td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line"> */</td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">public class AnimatorPath { <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node1.html"><span class='visitedproof'>S_1<span class='expansion'>node1 preds: succs:16 exn:2 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 28];
+NULLIFY(&amp;$irvar0,false); [line 28];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node16.html"><span class='visitedproof'>I_16<span class='expansion'>node16 preds:1 succs:17 exn:3 Instructions
+n$0=*&amp;this:class com.karthik.imager.Animutils.AnimatorPath * [line 28];
+_fun_Object.&lt;init&gt;()(n$0:class com.karthik.imager.Animutils.AnimatorPath *) [line 28];
+REMOVE_TEMPS(n$0); [line 28];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/com.karthik.imager.Animutils.AnimatorPath.<init>().f7ca2a5f32025d775e45b11d99b1e70e.html">AnimatorPath.&lt;init&gt;(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">    </td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">    // The points in the path</td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">    ArrayList&lt;PathPoint&gt; mPoints = new ArrayList&lt;PathPoint&gt;(); <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node2.html"><span class='visitedproof'>E_2<span class='expansion'>node2 preds:19 3 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_3<span class='expansion'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar0,false); [line 31];
+NULLIFY(&amp;this,false); [line 31];
+APPLY_ABSTRACTION; [line 31];
+
+NOT VISITED</span></span> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node17.html"><span class='visitedproof'>I_17<span class='expansion'>node17 preds:16 succs:18 exn:3 Instructions
+n$1=_fun___new(sizeof(class java.util.ArrayList ):class java.util.ArrayList *) [line 31];
+_fun_ArrayList.&lt;init&gt;()(n$1:class java.util.ArrayList *) [line 31];
+*&amp;$irvar0:class java.util.ArrayList *=n$1 [line 31];
+REMOVE_TEMPS(n$1); [line 31];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node18.html"><span class='visitedproof'>I_18<span class='expansion'>node18 preds:17 succs:19 exn:3 Instructions
+n$2=*&amp;this:class com.karthik.imager.Animutils.AnimatorPath * [line 31];
+n$3=*&amp;$irvar0:class java.util.ArrayList * [line 31];
+*n$2.com.karthik.imager.Animutils.AnimatorPath.mPoints:class com.karthik.imager.Animutils.AnimatorPath =n$3 [line 31];
+REMOVE_TEMPS(n$2,n$3); [line 31];
+NULLIFY(&amp;$irvar0,false); [line 31];
+NULLIFY(&amp;this,false); [line 31];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node19.html"><span class='visitedproof'>I_19<span class='expansion'>node19 preds:18 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 31];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION ArrayList.<init>()</div></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">    /**</td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">     * Move from the current path point to the new one</td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">     * specified by x and y. This will create a discontinuity if this point is</td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">     * neither the first point in the path nor the same as the previous point</td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">     * in the path.</td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">     */</td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">    public void moveTo(float x, float y) {</td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">        mPoints.add(PathPoint.moveTo(x, y)); <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node10.html"><span class='visitedproof'>S_10<span class='expansion'>node10 preds: succs:25 exn:11 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2); [line 41];
+NULLIFY(&amp;$irvar0,false); [line 41];
+NULLIFY(&amp;$irvar1,false); [line 41];
+NULLIFY(&amp;$irvar2,false); [line 41];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node25.html"><span class='visitedproof'>I_25<span class='expansion'>node25 preds:10 succs:26 exn:12 Instructions
+n$0=*&amp;this:class com.karthik.imager.Animutils.AnimatorPath * [line 41];
+n$1=*n$0.com.karthik.imager.Animutils.AnimatorPath.mPoints:class com.karthik.imager.Animutils.AnimatorPath  [line 41];
+*&amp;$irvar0:class java.util.ArrayList *=n$1 [line 41];
+REMOVE_TEMPS(n$0,n$1); [line 41];
+NULLIFY(&amp;this,false); [line 41];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node26.html"><span class='visitedproof'>I_26<span class='expansion'>node26 preds:25 succs:27 exn:12 Instructions
+n$2=*&amp;x:float  [line 41];
+n$3=*&amp;y:float  [line 41];
+n$4=_fun_PathPoint PathPoint.moveTo(float,float)(n$2:float ,n$3:float ) [line 41];
+*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint *=n$4 [line 41];
+REMOVE_TEMPS(n$2,n$3,n$4); [line 41];
+NULLIFY(&amp;x,false); [line 41];
+NULLIFY(&amp;y,false); [line 41];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node27.html"><span class='visitedproof'>I_27<span class='expansion'>node27 preds:26 succs:28 exn:12 Instructions
+n$5=*&amp;$irvar0:class java.util.ArrayList * [line 41];
+n$6=*n$5:class java.util.ArrayList  [line 41];
+n$7=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 41];
+n$8=_fun_boolean ArrayList.add(Object)(n$5:class java.util.ArrayList *,n$7:class com.karthik.imager.Animutils.PathPoint *) virtual [line 41];
+*&amp;$irvar2:_Bool =n$8 [line 41];
+REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 41];
+NULLIFY(&amp;$irvar0,false); [line 41];
+NULLIFY(&amp;$irvar1,false); [line 41];
+NULLIFY(&amp;$irvar2,false); [line 41];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/com.karthik.imager.Animutils.AnimatorPath.moveTo(float,float):void.52fd077c538b71536b90f8e197acbb33.html">void AnimatorPath.moveTo(float,float): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean ArrayList.add(Object)</div></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">    } <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node11.html"><span class='visitedproof'>E_11<span class='expansion'>node11 preds:28 12 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_12<span class='expansion'>node12 preds: succs:11 exn:11 Instructions
+NULLIFY(&amp;$irvar0,false); [line 42];
+NULLIFY(&amp;$irvar1,false); [line 42];
+NULLIFY(&amp;x,false); [line 42];
+NULLIFY(&amp;y,false); [line 42];
+APPLY_ABSTRACTION; [line 42];
+
+NOT VISITED</span></span> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node28.html"><span class='visitedproof'>I_28<span class='expansion'>node28 preds:27 succs:11 exn:12 Instructions
+APPLY_ABSTRACTION; [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">    /**</td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">     * Create a straight line from the current path point to the new one</td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">     * specified by x and y.</td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">     */</td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">    public void lineTo(float x, float y) {</td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">        mPoints.add(PathPoint.lineTo(x, y)); <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node13.html"><span class='visitedproof'>S_13<span class='expansion'>node13 preds: succs:29 exn:14 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2); [line 49];
+NULLIFY(&amp;$irvar0,false); [line 49];
+NULLIFY(&amp;$irvar1,false); [line 49];
+NULLIFY(&amp;$irvar2,false); [line 49];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node29.html"><span class='visitedproof'>I_29<span class='expansion'>node29 preds:13 succs:30 exn:15 Instructions
+n$0=*&amp;this:class com.karthik.imager.Animutils.AnimatorPath * [line 49];
+n$1=*n$0.com.karthik.imager.Animutils.AnimatorPath.mPoints:class com.karthik.imager.Animutils.AnimatorPath  [line 49];
+*&amp;$irvar0:class java.util.ArrayList *=n$1 [line 49];
+REMOVE_TEMPS(n$0,n$1); [line 49];
+NULLIFY(&amp;this,false); [line 49];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node30.html"><span class='visitedproof'>I_30<span class='expansion'>node30 preds:29 succs:31 exn:15 Instructions
+n$2=*&amp;x:float  [line 49];
+n$3=*&amp;y:float  [line 49];
+n$4=_fun_PathPoint PathPoint.lineTo(float,float)(n$2:float ,n$3:float ) [line 49];
+*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint *=n$4 [line 49];
+REMOVE_TEMPS(n$2,n$3,n$4); [line 49];
+NULLIFY(&amp;x,false); [line 49];
+NULLIFY(&amp;y,false); [line 49];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node31.html"><span class='visitedproof'>I_31<span class='expansion'>node31 preds:30 succs:32 exn:15 Instructions
+n$5=*&amp;$irvar0:class java.util.ArrayList * [line 49];
+n$6=*n$5:class java.util.ArrayList  [line 49];
+n$7=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 49];
+n$8=_fun_boolean ArrayList.add(Object)(n$5:class java.util.ArrayList *,n$7:class com.karthik.imager.Animutils.PathPoint *) virtual [line 49];
+*&amp;$irvar2:_Bool =n$8 [line 49];
+REMOVE_TEMPS(n$5,n$6,n$7,n$8); [line 49];
+NULLIFY(&amp;$irvar0,false); [line 49];
+NULLIFY(&amp;$irvar1,false); [line 49];
+NULLIFY(&amp;$irvar2,false); [line 49];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/com.karthik.imager.Animutils.AnimatorPath.lineTo(float,float):void.02b4b80f7187bfbfc0e6972f1b5adaa0.html">void AnimatorPath.lineTo(float,float): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean ArrayList.add(Object)</div></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">    } <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node14.html"><span class='visitedproof'>E_14<span class='expansion'>node14 preds:32 15 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_15<span class='expansion'>node15 preds: succs:14 exn:14 Instructions
+NULLIFY(&amp;$irvar0,false); [line 50];
+NULLIFY(&amp;$irvar1,false); [line 50];
+NULLIFY(&amp;x,false); [line 50];
+NULLIFY(&amp;y,false); [line 50];
+APPLY_ABSTRACTION; [line 50];
+
+NOT VISITED</span></span> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node32.html"><span class='visitedproof'>I_32<span class='expansion'>node32 preds:31 succs:14 exn:15 Instructions
+APPLY_ABSTRACTION; [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">    /**</td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">     * Create a cubic B&#239;&#191;&#189;zier curve from the current path point to the new one</td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">     * specified by x and y. The curve uses the current path location as the first anchor</td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">     * point, the control points (c0X, c0Y) and (c1X, c1Y), and (x, y) as the end anchor point.</td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">     */</td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">    public void curveTo(float c0X, float c0Y, float c1X, float c1Y, float x, float y) {</td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">        mPoints.add(PathPoint.curveTo(c0X, c0Y, c1X, c1Y, x, y)); <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node4.html"><span class='visitedproof'>S_4<span class='expansion'>node4 preds: succs:20 exn:5 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2); [line 58];
+NULLIFY(&amp;$irvar0,false); [line 58];
+NULLIFY(&amp;$irvar1,false); [line 58];
+NULLIFY(&amp;$irvar2,false); [line 58];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node20.html"><span class='visitedproof'>I_20<span class='expansion'>node20 preds:4 succs:21 exn:6 Instructions
+n$0=*&amp;this:class com.karthik.imager.Animutils.AnimatorPath * [line 58];
+n$1=*n$0.com.karthik.imager.Animutils.AnimatorPath.mPoints:class com.karthik.imager.Animutils.AnimatorPath  [line 58];
+*&amp;$irvar0:class java.util.ArrayList *=n$1 [line 58];
+REMOVE_TEMPS(n$0,n$1); [line 58];
+NULLIFY(&amp;this,false); [line 58];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node21.html"><span class='visitedproof'>I_21<span class='expansion'>node21 preds:20 succs:22 exn:6 Instructions
+n$2=*&amp;c0X:float  [line 58];
+n$3=*&amp;c0Y:float  [line 58];
+n$4=*&amp;c1X:float  [line 58];
+n$5=*&amp;c1Y:float  [line 58];
+n$6=*&amp;x:float  [line 58];
+n$7=*&amp;y:float  [line 58];
+n$8=_fun_PathPoint PathPoint.curveTo(float,float,float,float,float,float)(n$2:float ,n$3:float ,n$4:float ,n$5:float ,n$6:float ,n$7:float ) [line 58];
+*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint *=n$8 [line 58];
+REMOVE_TEMPS(n$2,n$3,n$4,n$5,n$6,n$7,n$8); [line 58];
+NULLIFY(&amp;c0X,false); [line 58];
+NULLIFY(&amp;c0Y,false); [line 58];
+NULLIFY(&amp;c1X,false); [line 58];
+NULLIFY(&amp;c1Y,false); [line 58];
+NULLIFY(&amp;x,false); [line 58];
+NULLIFY(&amp;y,false); [line 58];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node22.html"><span class='visitedproof'>I_22<span class='expansion'>node22 preds:21 succs:23 exn:6 Instructions
+n$9=*&amp;$irvar0:class java.util.ArrayList * [line 58];
+n$10=*n$9:class java.util.ArrayList  [line 58];
+n$11=*&amp;$irvar1:class com.karthik.imager.Animutils.PathPoint * [line 58];
+n$12=_fun_boolean ArrayList.add(Object)(n$9:class java.util.ArrayList *,n$11:class com.karthik.imager.Animutils.PathPoint *) virtual [line 58];
+*&amp;$irvar2:_Bool =n$12 [line 58];
+REMOVE_TEMPS(n$9,n$10,n$11,n$12); [line 58];
+NULLIFY(&amp;$irvar0,false); [line 58];
+NULLIFY(&amp;$irvar1,false); [line 58];
+NULLIFY(&amp;$irvar2,false); [line 58];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/com.karthik.imager.Animutils.AnimatorPath.curveTo(float,float,float,float,float,float):void.66b7c0cf72f29fb9239592e70cd17dd5.html">void AnimatorPath.curveTo(float,float,float,float,float,float): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean ArrayList.add(Object)</div></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">    } <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node5.html"><span class='visitedproof'>E_5<span class='expansion'>node5 preds:23 6 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_6<span class='expansion'>node6 preds: succs:5 exn:5 Instructions
+NULLIFY(&amp;$irvar0,false); [line 59];
+NULLIFY(&amp;$irvar1,false); [line 59];
+NULLIFY(&amp;c0X,false); [line 59];
+NULLIFY(&amp;c0Y,false); [line 59];
+NULLIFY(&amp;c1X,false); [line 59];
+NULLIFY(&amp;c1Y,false); [line 59];
+NULLIFY(&amp;x,false); [line 59];
+NULLIFY(&amp;y,false); [line 59];
+APPLY_ABSTRACTION; [line 59];
+
+NOT VISITED</span></span> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node23.html"><span class='visitedproof'>I_23<span class='expansion'>node23 preds:22 succs:5 exn:6 Instructions
+APPLY_ABSTRACTION; [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">    /**</td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">     * Returns a Collection of PathPoint objects that describe all points in the path.</td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">     */</td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">    public Collection&lt;PathPoint&gt; getPoints() { <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node7.html"><span class='visitedproof'>S_7<span class='expansion'>node7 preds: succs:24 exn:8 Start
+DECLARE_LOCALS(&amp;return); [line 64];
+</span></span></a> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/com.karthik.imager.Animutils.AnimatorPath.getPoints():java.util.Collection.f89e6b5194156a3a8ebb5a6f25a5c460.html">Collection AnimatorPath.getPoints(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">        return mPoints; <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node8.html"><span class='visitedproof'>E_8<span class='expansion'>node8 preds:24 9 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_9<span class='expansion'>node9 preds: succs:8 exn:8 Instructions
+APPLY_ABSTRACTION; [line 65];
+
+NOT VISITED</span></span> <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node24.html"><span class='visitedproof'>I_24<span class='expansion'>node24 preds:7 succs:8 exn:9 Instructions
+n$0=*&amp;this:class com.karthik.imager.Animutils.AnimatorPath * [line 65];
+n$1=*n$0.com.karthik.imager.Animutils.AnimatorPath.mPoints:class com.karthik.imager.Animutils.AnimatorPath  [line 65];
+*&amp;return:class java.util.Collection *=n$1 [line 65];
+REMOVE_TEMPS(n$0,n$1); [line 65];
+NULLIFY(&amp;this,false); [line 65];
+APPLY_ABSTRACTION; [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">}</td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION ArrayList.<init>()  <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node17.html#session3">node17#session3</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE31">31</a>)<br>SKIP_FUNCTION boolean ArrayList.add(Object)  <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node27.html#session4">node27#session4</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE41">41</a>) <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node31.html#session4">node31#session4</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE49">49</a>) <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node22.html#session4">node22#session4</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE58">58</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION ArrayList.<init>()  <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node17.html#session9">node17#session9</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE31">31</a>)<br>SKIP_FUNCTION boolean ArrayList.add(Object)  <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node27.html#session10">node27#session10</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE41">41</a>) <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node31.html#session10">node31#session10</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE49">49</a>) <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/nodes/node22.html#session10">node22#session10</a>( <a href="./AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835/../AnimatorPath.java.7e94b9b45ac435a1b52ec76c1f92d835.html#LINE58">58</a>)</body>
+</html>

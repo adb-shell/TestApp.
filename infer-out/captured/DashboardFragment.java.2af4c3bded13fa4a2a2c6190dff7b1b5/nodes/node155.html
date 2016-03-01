@@ -1,0 +1,891 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node155</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE154">155</a></h1></center>PROC:  <a href="./../com.karthik.imager.Fragments.DashboardFragment.getFivehunService():void.95e14555baf96eca59f9ed49559ecf73.html">void DashboardFragment.getFivehunService()</a> LINE: <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE154">154</a>
+<br>PREDS:
+ <a href="./../nodes/node154.html"><span class='visited'>N_154<span class='expansion'>node154 preds:153 succs:155 exn:84 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_156<span class='expansion'>node156 preds:155 succs:157 exn:84 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_84<span class='expansion'>node84 preds: succs:83 exn:83 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$7=*&amp;$irvar2:class java.lang.Object * [line 154];
+                          n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154];
+                          *&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154];
+                          REMOVE_TEMPS(n$7,n$8); [line 154];
+                          NULLIFY(&amp;$irvar2,false); [line 154];
+                          </span><hr width="100%">
+ <a name="session5"href="./../nodes/node155.html#session5">node155#session5</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE154">154</a>)<LISTING><span class='color_black'>**** [FP:0] void DashboardFragment.getFivehunService() Node: 155, Procedure: void DashboardFragment.getFivehunService(), Session: 5, Todo: 2 ****
+  PROP 1 of 2:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$1)</span> ;  <span class='color_red'>$irvar2 != 0</span> ;  <span class='color_red'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+  [footprint
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+     <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+     <span class='color_red'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+  PROP 2 of 2:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$irvar2 != 0</span> ;  <span class='color_red'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;  <span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+  [footprint
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+     <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+     <span class='color_red'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$7=*&amp;$irvar2:class java.lang.Object * [line 154];
+  n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154];
+  *&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154];
+  REMOVE_TEMPS(n$7,n$8); [line 154];
+  NULLIFY(&amp;$irvar2,false); [line 154];
+  </span>
+  
+  Processing prop 1/2
+    Instruction <span class='color_green'>n$7=*&amp;$irvar2:class java.lang.Object * [line 154]</span>
+    in vpath_find exp:n$29
+    vpath_find: cannot find n$29
+    in vpath_find exp:n$28
+    vpath_find: cannot find n$28
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$29) ;  MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$28) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$28) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar2
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$29) ;  MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$28) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$28) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$29)</span> ;  <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$28)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$28)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$27 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$7 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154]</span>
+    in vpath_find exp:n$32
+    vpath_find: cannot find n$32
+    in vpath_find exp:n$31
+    vpath_find: cannot find n$31
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = $irvar2</span> ;  <span class='color_red'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154]</span>
+    in vpath_find exp:n$35
+    vpath_find: cannot find n$35
+    in vpath_find exp:n$34
+    vpath_find: cannot find n$34
+    .... Rearrangement Start ....
+    Exp: &amp;fiveHunResponse
+    Prop: 
+    <span class='color_blue'>n$7 = $irvar2 ;  n$8 = $irvar2 ;
+    MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$35) ;  MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$34) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$34) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$33 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+    $irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;fiveHunResponse
+    prop before:
+    <span class='color_blue'>n$7 = $irvar2 ;  n$8 = $irvar2 ;
+    MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$35) ;  MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$34) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$34) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$33 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+    $irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = $irvar2</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$35)</span> ;  <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$34)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$34)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$33 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = $irvar2</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>@f$1 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$7,n$8); [line 154]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; </span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 154]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; </span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>fiveHunResponse != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154(fiveHunResponse)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>fiveHunResponse|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; </span>(_t$1)</span> ;  <span class='color_blue'>fiveHunResponse != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154(fiveHunResponse)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>@f$1 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>fiveHunResponse|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    
+    
+  Processing prop 2/2
+    Instruction <span class='color_green'>n$7=*&amp;$irvar2:class java.lang.Object * [line 154]</span>
+    in vpath_find exp:n$37
+    vpath_find: cannot find n$37
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$37) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$36 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar2
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$37) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$36 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$37)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$36 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$7 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154]</span>
+    in vpath_find exp:n$39
+    vpath_find: cannot find n$39
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = $irvar2</span> ;  <span class='color_red'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154]</span>
+    in vpath_find exp:n$41
+    vpath_find: cannot find n$41
+    .... Rearrangement Start ....
+    Exp: &amp;fiveHunResponse
+    Prop: 
+    <span class='color_blue'>n$7 = $irvar2 ;  n$8 = $irvar2 ;
+    MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$41) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$40 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+    $irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;fiveHunResponse
+    prop before:
+    <span class='color_blue'>n$7 = $irvar2 ;  n$8 = $irvar2 ;
+    MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$41) ;  $irvar2 != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$40 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+    $irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+       $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub ) ;
+       this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = $irvar2</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$41)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = n$40 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = $irvar2</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>@f$1 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$7,n$8); [line 154]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($irvar2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 154]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>fiveHunResponse != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154(fiveHunResponse)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = @f$1 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>fiveHunResponse|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>fiveHunResponse != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154(fiveHunResponse)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>@f$1 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>fiveHunResponse|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+       <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.Object *( sub )</span> ;
+       <span class='color_blue'>this|->{} <span class='color_orange'>rearrange:(z)162</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session13"href="./../nodes/node155.html#session13">node155#session13</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE154">154</a>)<LISTING><span class='color_black'>**** [RE:0] void DashboardFragment.getFivehunService() Node: 155, Procedure: void DashboardFragment.getFivehunService(), Session: 13, Todo: 2 ****
+  PROP 1 of 2:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$1)</span> ;  <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = val$2 <span class='color_orange'>update:154</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+  <span class='color_red'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+  PROP 2 of 2:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;  <span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = val$2 <span class='color_orange'>update:154</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+  <span class='color_red'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$7=*&amp;$irvar2:class java.lang.Object * [line 154];
+  n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154];
+  *&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154];
+  REMOVE_TEMPS(n$7,n$8); [line 154];
+  NULLIFY(&amp;$irvar2,false); [line 154];
+  </span>
+  
+  Processing prop 1/2
+    Instruction <span class='color_green'>n$7=*&amp;$irvar2:class java.lang.Object * [line 154]</span>
+    in vpath_find exp:n$29
+    vpath_find: cannot find n$29
+    in vpath_find exp:n$28
+    vpath_find: cannot find n$28
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar) ;  MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$29) ;  MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$28) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$28) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = val$2 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$7 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = <span class='color_red'>n$7 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154]</span>
+    in vpath_find exp:n$32
+    vpath_find: cannot find n$32
+    in vpath_find exp:n$31
+    vpath_find: cannot find n$31
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$8 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;  <span class='color_blue'>val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$7 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span> ; 
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154]</span>
+    in vpath_find exp:n$35
+    vpath_find: cannot find n$35
+    in vpath_find exp:n$34
+    vpath_find: cannot find n$34
+    .... Rearrangement Start ....
+    Exp: &amp;fiveHunResponse
+    Prop: 
+    <span class='color_blue'>n$8 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar ;  val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar ;
+    MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$35) ;  MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(n$34) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (n$34) ;  $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$33 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$7 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast) ; 
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$8 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;  <span class='color_blue'>val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>n$7 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$7 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span> ; 
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$7,n$8); [line 154]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; </span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>val$2 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>val$2 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 154]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; </span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = val$2 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; String DashboardFragment.loadJSONFromAsset():154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'><span class='color_red'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; </span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>val$2 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span></span>
+    
+    
+    
+  Processing prop 2/2
+    Instruction <span class='color_green'>n$7=*&amp;$irvar2:class java.lang.Object * [line 154]</span>
+    in vpath_find exp:n$37
+    vpath_find: cannot find n$37
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar) ;  MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$37) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$36 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = val$2 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$7 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = <span class='color_red'>n$7 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154]</span>
+    in vpath_find exp:n$39
+    vpath_find: cannot find n$39
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$8 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;  <span class='color_blue'>val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$7 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span> ; 
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154]</span>
+    in vpath_find exp:n$41
+    vpath_find: cannot find n$41
+    .... Rearrangement Start ....
+    Exp: &amp;fiveHunResponse
+    Prop: 
+    <span class='color_blue'>n$8 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar ;  val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar ;
+    MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(n$41) ;  $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0 ;  UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar) ;  RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub ) ; 
+    return = n$40 <span class='color_orange'>initial</span>:void  ; 
+    fiveHunResponse = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$7 <span class='color_orange'>update:154</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ;
+    $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast) ; 
+    this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$8 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;  <span class='color_blue'>val$2 = $RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>n$7 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$7 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span> ; 
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$7,n$8); [line 154]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>val$2 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>val$2 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 154]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = val$2 <span class='color_orange'>update:154</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:154 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Object Gson.fromJson(String,Class) &gt; :154($RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar)</span> ;  <span class='color_blue'>RET &lt; String DashboardFragment.loadJSONFromAsset() &gt; (null)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>fiveHunResponse = <span class='color_red'>val$2 <span class='color_orange'>update:154</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ;
+    <span class='color_blue'>this|->{} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_red'>$RET_com.google.gson.Gson.fromJson(java.lang.String,java.lang.Class):java.lang.Object|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)</span></span>
+    
+    
+    
+  

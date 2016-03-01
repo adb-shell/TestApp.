@@ -1,0 +1,964 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node72</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE76">72</a></h1></center>PROC:  <a href="./../com.karthik.imager.MainActivity.fillDummyValuesInSharedPreferences():void.fed37179c306a9fd7438c915500a091f.html">void MainActivity.fillDummyValuesInSharedPreferences()</a> LINE: <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE76">76</a>
+<br>PREDS:
+ <a href="./../nodes/node68.html"><span class='visited'>N_68<span class='expansion'>node68 preds:69 succs:72 exn:18 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_73<span class='expansion'>node73 preds:72 succs:74 exn:18 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_18<span class='expansion'>node18 preds: succs:17 exn:17 
+NOT VISITED</span></span><br>
+<span class='color_green'>NULLIFY(&amp;i,false); [line 76];
+                          NULLIFY(&amp;strings,false); [line 76];
+                          n$32=*&amp;editor:class android.content.SharedPreferences$Editor * [line 76];
+                          n$33=*n$32:class android.content.SharedPreferences$Editor  [line 76];
+                          n$34=_fun_SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)(n$32:class android.content.SharedPreferences$Editor *,"String":class java.lang.String *,"This is awesome":class java.lang.String *) virtual [line 76];
+                          *&amp;$irvar0:class android.content.SharedPreferences$Editor *=n$34 [line 76];
+                          REMOVE_TEMPS(n$32,n$33,n$34); [line 76];
+                          NULLIFY(&amp;$irvar0,false); [line 76];
+                          </span><hr width="100%">
+ <a name="session45"href="./../nodes/node72.html#session45">node72#session45</a>( <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE76">76</a>)<LISTING><span class='color_black'>**** [FP:0] void MainActivity.fillDummyValuesInSharedPreferences() Node: 72, Procedure: void MainActivity.fillDummyValuesInSharedPreferences(), Session: 45, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>(9  &lt;  i)</span> ;  <span class='color_red'>(i  &lt;=  9223372036854774807)</span> ;  <span class='color_red'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(strings)</span> ;  <span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5)</span> ;  <span class='color_red'>editor != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+  <span class='color_red'>old_this = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>strings = _t$1 <span class='color_orange'>update:72</span>:void </span> ; 
+  <span class='color_red'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>i = @f$2 <span class='color_orange'>update:73</span>:void </span> ; 
+  <span class='color_red'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+  <span class='color_red'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+  <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$4 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+  <span class='color_red'>strings|->[10|0:_t$2 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]</span>
+  [footprint
+     <span class='color_red'>(9  &lt;  i)</span> *
+     <span class='color_red'>this = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+     <span class='color_red'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+     <span class='color_red'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+     <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+     <span class='color_red'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+     <span class='color_red'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+     <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$4 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;i,false); [line 76];
+  NULLIFY(&amp;strings,false); [line 76];
+  n$32=*&amp;editor:class android.content.SharedPreferences$Editor * [line 76];
+  n$33=*n$32:class android.content.SharedPreferences$Editor  [line 76];
+  n$34=_fun_SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)(n$32:class android.content.SharedPreferences$Editor *,"String":class java.lang.String *,"This is awesome":class java.lang.String *) virtual [line 76];
+  *&amp;$irvar0:class android.content.SharedPreferences$Editor *=n$34 [line 76];
+  REMOVE_TEMPS(n$32,n$33,n$34); [line 76];
+  NULLIFY(&amp;$irvar0,false); [line 76];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;i,false); [line 76]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found strings : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(9  &lt;  @f$5)</span> ;  <span class='color_red'>(@f$5  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(strings)</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = _t$1 <span class='color_orange'>update:72</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>strings|->[10|0:_t$2 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]</span>
+    [footprint
+       <span class='color_red'>(9  &lt;  @f$5)</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>@f$4 <span class='color_orange'>none</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;strings,false); [line 76]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found strings : void 
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>(9  &lt;  @f$5) ;  (@f$5  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(_t$1) ;  @f$4 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4) ;  editor != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor) ;  @f$0 != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0) ;
+      old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+      strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+      sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      i = 0 <span class='color_orange'>nullify</span>:void  ; 
+      editor = @f$1 <span class='color_orange'>update:71</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+      editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+      old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+      _t$1|->[10|0:_t$2 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]
+      [footprint
+         (9  &lt;  @f$5) *
+         this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+         $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub ) ; 
+         $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+         $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ;
+         @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+         editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+         old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+      PREDICATE:
+      _t$1|->[10|0:_t$2 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]
+      ATTRIBUTE: MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;strings,false); [line 76]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(9  &lt;  @f$5)</span> ;  <span class='color_blue'>(@f$5  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(_t$1)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$5)</span> *
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$32=*&amp;editor:class android.content.SharedPreferences$Editor * [line 76]</span>
+    in vpath_find exp:n$253
+    vpath_find: cannot find n$253
+    .... Rearrangement Start ....
+    Exp: &amp;editor
+    Prop: 
+    <span class='color_blue'>(9  &lt;  @f$5) ;  (@f$5  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$253) ;  @f$4 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4) ;  editor != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor) ;  @f$0 != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0) ;
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$252 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = @f$1 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+    editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       (9  &lt;  @f$5) *
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub ) ; 
+       $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+       editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;editor
+    prop before:
+    <span class='color_blue'>(9  &lt;  @f$5) ;  (@f$5  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$253) ;  @f$4 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4) ;  editor != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor) ;  @f$0 != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0) ;
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$252 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = @f$1 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+    editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       (9  &lt;  @f$5) *
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub ) ; 
+       $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+       editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(9  &lt;  @f$5)</span> ;  <span class='color_blue'>(@f$5  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$253)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$252 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$5)</span> *
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$32 = editor</span> ;
+    <span class='color_blue'>(9  &lt;  @f$5)</span> ;  <span class='color_blue'>(@f$5  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$5)</span> *
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$33=*n$32:class android.content.SharedPreferences$Editor  [line 76]</span>
+    in vpath_find exp:n$255
+    vpath_find: cannot find n$255
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>n$32 = editor ;
+    (9  &lt;  @f$5) ;  (@f$5  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$255) ;  @f$4 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4) ;  editor != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor) ;  @f$0 != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0) ;
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$254 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = @f$1 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+    editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       (9  &lt;  @f$5) *
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub ) ; 
+       $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+       editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$1
+    prop before:
+    <span class='color_blue'>n$32 = editor ;
+    (9  &lt;  @f$5) ;  (@f$5  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$255) ;  @f$4 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4) ;  editor != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor) ;  @f$0 != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0) ;
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$254 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = @f$1 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+    editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       (9  &lt;  @f$5) *
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub ) ; 
+       $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+       editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$32 = editor</span> ;
+    <span class='color_blue'>(9  &lt;  @f$5)</span> ;  <span class='color_blue'>(@f$5  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$255)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$254 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$5)</span> *
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$32 = editor</span> ;
+    <span class='color_blue'>(9  &lt;  @f$5)</span> ;  <span class='color_blue'>(@f$5  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$5)</span> *
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$34=_fun_SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)(n$32:class android.content.SharedPreferences$Editor *,"String":class java.lang.String *,"This is awesome":class java.lang.String *) virtual [line 76]</span>
+    in vpath_find exp:n$257
+    vpath_find: cannot find n$257
+    <span class='color_blue'>INFO: SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)</span>
+    Undefined function SharedPreferences$Editor SharedPreferences$Editor.putString(String,String), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$34 = @f$34
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$32 = editor</span> ;  <span class='color_red'>n$34 = @f$4</span> ;
+    <span class='color_red'>(9  &lt;  @f$6)</span> ;  <span class='color_red'>(@f$6  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76</span>(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_red'>(9  &lt;  @f$6)</span> *
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>@f$5 <span class='color_orange'>none</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class android.content.SharedPreferences$Editor *=n$34 [line 76]</span>
+    in vpath_find exp:n$259
+    vpath_find: cannot find n$259
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>n$32 = editor ;  n$34 = @f$4 ;
+    (9  &lt;  @f$6) ;  (@f$6  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$259) ;  @f$5 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5) ;  @f$4 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76(@f$4) ;  editor != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor) ;  @f$0 != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0) ;
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$258 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = @f$1 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+    editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       (9  &lt;  @f$6) *
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub ) ; 
+       $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+       editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>n$32 = editor ;  n$34 = @f$4 ;
+    (9  &lt;  @f$6) ;  (@f$6  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$259) ;  @f$5 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5) ;  @f$4 != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76(@f$4) ;  editor != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor) ;  @f$0 != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0) ;
+    old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$258 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = @f$1 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+    editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )
+    [footprint
+       (9  &lt;  @f$6) *
+       this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub ) ; 
+       $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+       $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub ) ;
+       @f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub ) ; 
+       editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$32 = editor</span> ;  <span class='color_blue'>n$34 = @f$4</span> ;
+    <span class='color_blue'>(9  &lt;  @f$6)</span> ;  <span class='color_blue'>(@f$6  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$259)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$258 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$6)</span> *
+       <span class='color_blue'>this = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$32 = <span class='color_red'>editor</span></span> ;  <span class='color_blue'>n$34 = <span class='color_red'>$irvar0</span></span> ;
+    <span class='color_blue'>(9  &lt;  @f$6)</span> ;  <span class='color_blue'>(@f$6  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5)</span> ;  <span class='color_red'>editor != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76</span>($irvar0)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = <span class='color_red'>@f$2 <span class='color_orange'>update:71</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$1 <span class='color_orange'>update:76</span></span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$4 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$6)</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>@f$1 <span class='color_orange'>none</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$4 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$32,n$33,n$34); [line 76]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(9  &lt;  @f$6)</span> ;  <span class='color_blue'>(@f$6  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76($irvar0)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = @f$2 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:76</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$4 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$6)</span> *
+       <span class='color_blue'>this = @f$3 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$4 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 76]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(9  &lt;  @f$6)</span> ;  <span class='color_blue'>(@f$6  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5)</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71</span>(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = <span class='color_red'>@f$1 <span class='color_orange'>update:71</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_red'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{<span class='color_red'>com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span></span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_blue'>(9  &lt;  @f$6)</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>@f$1 <span class='color_orange'>none</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>@f$4 <span class='color_orange'>none</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_red'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_blue'>old_this|->{<span class='color_red'>com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span></span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(9  &lt;  @f$6)</span> ;  <span class='color_red'>(@f$6  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74(@f$5)</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76(@f$4)</span> ;  <span class='color_blue'>editor != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71(editor)</span> ;  <span class='color_blue'>@f$0 != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>editor = @f$1 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_red'>(9  &lt;  @f$6)</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = @f$0 <span class='color_orange'>none</span>:class android.content.SharedPreferences *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class android.content.SharedPreferences$Editor *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:71</span>:class android.content.SharedPreferences ( sub )</span> ; 
+       <span class='color_blue'>editor|->{} <span class='color_orange'>rearrange:74</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+       <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$3 <span class='color_orange'>rearrange:(z)70</span>} <span class='color_orange'>rearrange:(z)70</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session97"href="./../nodes/node72.html#session97">node72#session97</a>( <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE76">76</a>)<LISTING><span class='color_black'>**** [RE:0] void MainActivity.fillDummyValuesInSharedPreferences() Node: 72, Procedure: void MainActivity.fillDummyValuesInSharedPreferences(), Session: 97, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>(9  &lt;  i)</span> ;  <span class='color_red'>(i  &lt;=  9223372036854774807)</span> ;  <span class='color_red'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(strings)</span> ;  <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>strings = _t$0 <span class='color_orange'>update:72</span>:void </span> ; 
+  <span class='color_red'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>return = _t$2 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>i = _t$3 <span class='color_orange'>update:73</span>:void </span> ; 
+  <span class='color_red'>editor = val$4 <span class='color_orange'>update:71</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+  <span class='color_red'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span> ; 
+  <span class='color_red'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+  <span class='color_red'>strings|->[10|0:_t$1 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;i,false); [line 76];
+  NULLIFY(&amp;strings,false); [line 76];
+  n$32=*&amp;editor:class android.content.SharedPreferences$Editor * [line 76];
+  n$33=*n$32:class android.content.SharedPreferences$Editor  [line 76];
+  n$34=_fun_SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)(n$32:class android.content.SharedPreferences$Editor *,"String":class java.lang.String *,"This is awesome":class java.lang.String *) virtual [line 76];
+  *&amp;$irvar0:class android.content.SharedPreferences$Editor *=n$34 [line 76];
+  REMOVE_TEMPS(n$32,n$33,n$34); [line 76];
+  NULLIFY(&amp;$irvar0,false); [line 76];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;i,false); [line 76]</span>
+    in vpath_find exp:_t$0
+    vpath_find: found strings : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(9  &lt;  _t$3)</span> ;  <span class='color_blue'>(_t$3  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(strings)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = _t$0 <span class='color_orange'>update:72</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$2 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>editor = val$4 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>strings|->[10|0:_t$1 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;strings,false); [line 76]</span>
+    in vpath_find exp:_t$0
+    vpath_find: found strings : void 
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>(9  &lt;  _t$3) ;  (_t$3  &lt;=  9223372036854774807) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(_t$0) ;  $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar) ;  $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar) ;  $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar) ;
+      old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+      this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+      strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+      sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+      return = _t$2 <span class='color_orange'>initial</span>:void  ; 
+      i = 0 <span class='color_orange'>nullify</span>:void  ; 
+      editor = val$4 <span class='color_orange'>update:71</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub ) ; 
+      $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+      $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+      $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+      $RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+      old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+      $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub ) ; 
+      $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+      _t$0|->[10|0:_t$1 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]</span>
+      PREDICATE:
+      _t$0|->[10|0:_t$1 <span class='color_orange'>rearrange:73</span>] <span class='color_orange'>alloc</span>:class java.lang.String *[10]
+      ATTRIBUTE: MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;strings,false); [line 76]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(9  &lt;  _t$1)</span> ;  <span class='color_red'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_red'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: strings}</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = val$4 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$32=*&amp;editor:class android.content.SharedPreferences$Editor * [line 76]</span>
+    in vpath_find exp:n$271
+    vpath_find: cannot find n$271
+    .... Rearrangement Start ....
+    Exp: &amp;editor
+    Prop: 
+    <span class='color_blue'>(9  &lt;  n$270) ;  (n$270  &lt;=  9223372036854774807) ;  $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar) ;  $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar) ;  $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$271) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$269 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = val$4 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub ) ; 
+    $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub ) ; 
+    $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar</span> ;
+    <span class='color_blue'>(9  &lt;  _t$1)</span> ;  <span class='color_blue'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = <span class='color_red'>n$32 <span class='color_orange'>update:71</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>n$32 <span class='color_orange'>formal</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_red'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$33=*n$32:class android.content.SharedPreferences$Editor  [line 76]</span>
+    in vpath_find exp:n$274
+    vpath_find: cannot find n$274
+    .... Rearrangement Start ....
+    Exp: n$32
+    Prop: 
+    <span class='color_blue'>val$4 = $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar ;
+    (9  &lt;  n$273) ;  (n$273  &lt;=  9223372036854774807) ;  $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar) ;  $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$274) ;  $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$272 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = n$32 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub ) ; 
+    $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = n$32 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar</span> ;
+    <span class='color_blue'>(9  &lt;  _t$1)</span> ;  <span class='color_blue'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = n$32 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = n$32 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$34=_fun_SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)(n$32:class android.content.SharedPreferences$Editor *,"String":class java.lang.String *,"This is awesome":class java.lang.String *) virtual [line 76]</span>
+    in vpath_find exp:n$277
+    vpath_find: cannot find n$277
+    <span class='color_blue'>INFO: SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)</span>
+    Undefined function SharedPreferences$Editor SharedPreferences$Editor.putString(String,String), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar</span> ;  <span class='color_red'>val$5 = $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar</span> ;
+    <span class='color_blue'>(9  &lt;  _t$1)</span> ;  <span class='color_blue'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76($RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = n$32 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = n$32 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>n$34 <span class='color_orange'>formal</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class android.content.SharedPreferences$Editor *=n$34 [line 76]</span>
+    in vpath_find exp:n$280
+    vpath_find: cannot find n$280
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>val$4 = $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar ;  val$5 = $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar ;
+    (9  &lt;  n$279) ;  (n$279  &lt;=  9223372036854774807) ;  $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar) ;  $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0 ;  UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar) ;  MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(n$280) ;  $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76($RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar) ;  $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0 ;  UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    strings = 0 <span class='color_orange'>nullify</span>:void  ; 
+    sharedPreferences = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$278 <span class='color_orange'>initial</span>:void  ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    editor = n$32 <span class='color_orange'>update:71</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub ) ; 
+    $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = n$32 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = n$34 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub ) ; 
+    $RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    $RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$4 = $RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar</span> ;  <span class='color_blue'>val$5 = $RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar</span> ;
+    <span class='color_blue'>(9  &lt;  _t$1)</span> ;  <span class='color_blue'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76($RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = n$32 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$34 <span class='color_orange'>update:76</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = n$32 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = n$34 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$32,n$33,n$34); [line 76]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(9  &lt;  _t$1)</span> ;  <span class='color_blue'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76($RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = <span class='color_red'>val$4 <span class='color_orange'>update:71</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$5 <span class='color_orange'>update:76</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>val$4 <span class='color_orange'>formal</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = <span class='color_red'>val$5 <span class='color_orange'>formal</span></span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_red'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 76]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(9  &lt;  _t$1)</span> ;  <span class='color_blue'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_blue'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76($RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>editor = val$4 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>(9  &lt;  _t$1)</span> ;  <span class='color_red'>(_t$1  &lt;=  9223372036854774807)</span> ;  <span class='color_red'>MEMna &lt; new[]:72 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) &gt; :74($RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) &gt; :76($RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences$Editor SharedPreferences.edit() &gt; :71($RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) &gt; :70($RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>strings = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>sharedPreferences = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = <span class='color_red'>_t$0 <span class='color_orange'>initial</span></span>:void </span> ; 
+    <span class='color_blue'>i = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>editor = val$4 <span class='color_orange'>update:71</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class android.content.SharedPreferences *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putString(java.lang.String,java.lang.String):android.content.SharedPreferences$Editor|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.putInt(java.lang.String,int):android.content.SharedPreferences$Editor|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences$Editor.commit():boolean|abductedRetvar = val$7 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.preference.PreferenceManager.getDefaultSharedPreferences(android.content.Context):android.content.SharedPreferences|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.content.SharedPreferences.edit():android.content.SharedPreferences$Editor|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.content.SharedPreferences$Editor ( sub )</span></span>
+    
+    
+    
+  

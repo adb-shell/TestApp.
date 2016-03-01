@@ -1,0 +1,624 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node68</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">68</a></h1></center>PROC:  <a href="./../com.karthik.imager.Recycler.LikeButtonView.onTouchEvent(android.view.MotionEvent):boolean.cce3ddbd87a050de24931a143f3f13d5.html">boolean LikeButtonView.onTouchEvent(MotionEvent)</a> LINE: <a href="./../../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">147</a>
+<br>PREDS:
+ <a href="./../nodes/node63.html"><span class='visited'>N_63<span class='expansion'>node63 preds:61 succs:68 exn:30 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_69<span class='expansion'>node69 preds:68 succs:70 exn:30 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_30<span class='expansion'>node30 preds: succs:29 exn:29 
+NOT VISITED</span></span><br>
+<span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 147];
+                          NULLIFY(&amp;event,false); [line 147];
+                          n$6=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 147];
+                          n$7=*n$6.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 147];
+                          n$8=*n$7:class android.widget.ImageView  [line 147];
+                          n$9=_fun_ViewPropertyAnimator View.animate()(n$7:class android.widget.ImageView *) virtual [line 147];
+                          *&amp;$irvar0:class android.view.ViewPropertyAnimator *=n$9 [line 147];
+                          REMOVE_TEMPS(n$6,n$7,n$8,n$9); [line 147];
+                          </span><hr width="100%">
+ <a name="session4"href="./../nodes/node68.html#session4">node68#session4</a>( <a href="./../../LikeButtonView.java.8da61c1e48505c04547af5f2a3514fca.html#LINE147">147</a>)<LISTING><span class='color_black'>**** [FP:0] boolean LikeButtonView.onTouchEvent(MotionEvent) Node: 68, Procedure: boolean LikeButtonView.onTouchEvent(MotionEvent), Session: 4, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$2 = 0</span> ;
+  <span class='color_red'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+  <span class='color_red'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+  <span class='color_red'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+  <span class='color_red'>event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>update:145</span>:void </span> ; 
+  <span class='color_red'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$2 = 0</span> *
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+     <span class='color_red'>event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+     <span class='color_red'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+     <span class='color_red'>event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 147];
+  NULLIFY(&amp;event,false); [line 147];
+  n$6=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 147];
+  n$7=*n$6.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 147];
+  n$8=*n$7:class android.widget.ImageView  [line 147];
+  n$9=_fun_ViewPropertyAnimator View.animate()(n$7:class android.widget.ImageView *) virtual [line 147];
+  *&amp;$irvar0:class android.view.ViewPropertyAnimator *=n$9 [line 147];
+  REMOVE_TEMPS(n$6,n$7,n$8,n$9); [line 147];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 147]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;event,false); [line 147]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$6=*&amp;this:class com.karthik.imager.Recycler.LikeButtonView * [line 147]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>@f$2 = 0 ;
+    UND &lt; int MotionEvent.getAction() &gt; :145(0) ;
+    y = 0 <span class='color_orange'>nullify</span>:void  ; 
+    x = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    return = n$10 <span class='color_orange'>initial</span>:_Bool  ; 
+    isInside = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+    event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub ) ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $T0_117 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )
+    [footprint
+       @f$2 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+       event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+       $RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub ) ;
+       old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;this
+    prop before:
+    <span class='color_blue'>@f$2 = 0 ;
+    UND &lt; int MotionEvent.getAction() &gt; :145(0) ;
+    y = 0 <span class='color_orange'>nullify</span>:void  ; 
+    x = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    return = n$10 <span class='color_orange'>initial</span>:_Bool  ; 
+    isInside = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+    event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub ) ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $T0_117 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )
+    [footprint
+       @f$2 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+       event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+       $RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub ) ;
+       old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = n$10 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;  <span class='color_red'>n$6 = this</span> ;
+    <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$7=*n$6.com.karthik.imager.Recycler.LikeButtonView.ivStar:class com.karthik.imager.Recycler.LikeButtonView  [line 147]</span>
+    .... Rearrangement Start ....
+    Exp: @f$0.com.karthik.imager.Recycler.LikeButtonView.ivStar
+    Prop: 
+    <span class='color_blue'>@f$2 = 0 ;  n$6 = this ;
+    UND &lt; int MotionEvent.getAction() &gt; :145(0) ;
+    y = 0 <span class='color_orange'>nullify</span>:void  ; 
+    x = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    return = n$11 <span class='color_orange'>initial</span>:_Bool  ; 
+    isInside = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+    event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub ) ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $T0_117 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )
+    [footprint
+       @f$2 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+       event = @f$1 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+       $RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub ) ;
+       old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$0|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$3 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$3 = 0</span> ;  <span class='color_blue'>n$6 = this</span> ;  <span class='color_red'>n$7 = @f$1</span> ;
+    <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_red'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_red'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_red'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+       <span class='color_red'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$8=*n$7:class android.widget.ImageView  [line 147]</span>
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>@f$3 = 0 ;  n$6 = this ;  n$7 = @f$1 ;
+    UND &lt; int MotionEvent.getAction() &gt; :145(0) ;
+    y = 0 <span class='color_orange'>nullify</span>:void  ; 
+    x = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    return = n$12 <span class='color_orange'>initial</span>:_Bool  ; 
+    isInside = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+    event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub ) ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $T0_117 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+    old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )
+    [footprint
+       @f$3 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+       event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+       $RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub ) ;
+       this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+       old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = 0</span> ;  <span class='color_blue'>n$6 = this</span> ;  <span class='color_blue'>n$7 = @f$1</span> ;
+    <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+       <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$9=_fun_ViewPropertyAnimator View.animate()(n$7:class android.widget.ImageView *) virtual [line 147]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION ViewPropertyAnimator View.animate()</span>
+    Undefined function ViewPropertyAnimator View.animate(), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$9 = @f$4
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$4 = 0</span> ;  <span class='color_blue'>n$6 = this</span> ;  <span class='color_blue'>n$7 = @f$1</span> ;  <span class='color_red'>n$9 = @f$3</span> ;
+    <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; ViewPropertyAnimator View.animate() &gt; :147(@f$3)</span> ;  <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_red'>$RET_android.view.View.animate():android.view.ViewPropertyAnimator|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.view.ViewPropertyAnimator *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class android.view.ViewPropertyAnimator *=n$9 [line 147]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>@f$4 = 0 ;  n$6 = this ;  n$7 = @f$1 ;  n$9 = @f$3 ;
+    @f$3 != 0 ;  UND &lt; ViewPropertyAnimator View.animate() &gt; :147(@f$3) ;  UND &lt; int MotionEvent.getAction() &gt; :145(0) ;
+    y = 0 <span class='color_orange'>nullify</span>:void  ; 
+    x = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    return = n$14 <span class='color_orange'>initial</span>:_Bool  ; 
+    isInside = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+    event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub ) ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $T0_117 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub ) ; 
+    old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )
+    [footprint
+       @f$4 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+       event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+       $RET_android.view.View.animate():android.view.ViewPropertyAnimator|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.view.ViewPropertyAnimator *( sub ) ; 
+       $RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub ) ;
+       this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub ) ; 
+       old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>@f$4 = 0 ;  n$6 = this ;  n$7 = @f$1 ;  n$9 = @f$3 ;
+    @f$3 != 0 ;  UND &lt; ViewPropertyAnimator View.animate() &gt; :147(@f$3) ;  UND &lt; int MotionEvent.getAction() &gt; :145(0) ;
+    y = 0 <span class='color_orange'>nullify</span>:void  ; 
+    x = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+    return = n$14 <span class='color_orange'>initial</span>:_Bool  ; 
+    isInside = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+    event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub ) ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $T0_117 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub ) ; 
+    old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )
+    [footprint
+       @f$4 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub ) ; 
+       event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub ) ; 
+       $RET_android.view.View.animate():android.view.ViewPropertyAnimator|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.view.ViewPropertyAnimator *( sub ) ; 
+       $RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub ) ;
+       this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub ) ; 
+       old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 = 0</span> ;  <span class='color_blue'>n$6 = this</span> ;  <span class='color_blue'>n$7 = @f$1</span> ;  <span class='color_blue'>n$9 = @f$3</span> ;
+    <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; ViewPropertyAnimator View.animate() &gt; :147(@f$3)</span> ;  <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = n$14 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.View.animate():android.view.ViewPropertyAnimator|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.view.ViewPropertyAnimator *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 = 0</span> ;  <span class='color_blue'>n$6 = this</span> ;  <span class='color_blue'>n$7 = @f$1</span> ;  <span class='color_blue'>n$9 = $irvar0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; ViewPropertyAnimator View.animate() &gt; :147($irvar0)</span> ;  <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$3 <span class='color_orange'>update:147</span></span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.View.animate():android.view.ViewPropertyAnimator|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.view.ViewPropertyAnimator *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$6,n$7,n$8,n$9); [line 147]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 = 0</span> ;
+    <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; ViewPropertyAnimator View.animate() &gt; :147($irvar0)</span> ;  <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = 0 <span class='color_orange'>nullify</span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$3 <span class='color_orange'>update:147</span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = @f$2 <span class='color_orange'>formal</span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.View.animate():android.view.ViewPropertyAnimator|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.view.ViewPropertyAnimator *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+       <span class='color_blue'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$4 = 0</span> ;
+    <span class='color_red'>$irvar0 != 0</span> ;  <span class='color_red'>UND &lt; ViewPropertyAnimator View.animate() &gt; :147($irvar0)</span> ;  <span class='color_blue'>UND &lt; int MotionEvent.getAction() &gt; :145(0)</span> ;
+    <span class='color_blue'>y = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>x = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:_Bool </span> ; 
+    <span class='color_blue'>isInside = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_event = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>event = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.view.MotionEvent *( sub )</span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$3 <span class='color_orange'>update:147</span></span>:void </span> ; 
+    <span class='color_blue'>$T0_117 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_red'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+    <span class='color_red'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Recycler.LikeButtonView *( sub )</span> ; 
+       <span class='color_blue'>event = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class android.view.MotionEvent *( sub )</span> ; 
+       <span class='color_red'>$RET_android.view.View.animate():android.view.ViewPropertyAnimator|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.view.ViewPropertyAnimator *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.view.MotionEvent.getAction():int|abductedRetvar = 0 <span class='color_orange'>none</span>:int ( sub )</span> ;
+       <span class='color_red'>this|->{com.karthik.imager.Recycler.LikeButtonView.ivStar:@f$1 <span class='color_orange'>rearrange:(z)147</span>} <span class='color_orange'>rearrange:(z)147</span>:class com.karthik.imager.Recycler.LikeButtonView ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)147</span>:class android.widget.ImageView ( sub )</span> ; 
+       <span class='color_red'>old_event|->{} <span class='color_orange'>rearrange:(z)145</span>:class android.view.MotionEvent ( sub )</span>  ]</span>
+    
+    
+    
+  

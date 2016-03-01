@@ -1,0 +1,49 @@
+digraph iCFG {
+11 [label="11:  method_body \n   APPLY_ABSTRACTION; [line 6]\n " shape="box"]
+	
+
+	 11 -> 5 ;
+	 11 -> 6 [color="red" ];
+10 [label="10:  Call Object.<init>() \n   n$0=*&this:class com.karthik.imager.BuildConfig * [line 6]\n  _fun_Object.<init>()(n$0:class com.karthik.imager.BuildConfig *) [line 6]\n  REMOVE_TEMPS(n$0); [line 6]\n  NULLIFY(&this,false); [line 6]\n " shape="box"]
+	
+
+	 10 -> 11 ;
+	 10 -> 6 [color="red" ];
+9 [label="9:  method_body \n   APPLY_ABSTRACTION; [line 7]\n " shape="box"]
+	
+
+	 9 -> 2 ;
+	 9 -> 3 [color="red" ];
+8 [label="8:  method_body \n   n$1=*&$irvar0:_Bool  [line 7]\n  *&#GB$com.karthik.imager.BuildConfig.com.karthik.imager.BuildConfig.DEBUG:class com.karthik.imager.BuildConfig =n$1 [line 7]\n  REMOVE_TEMPS(n$1); [line 7]\n  NULLIFY(&$irvar0,false); [line 7]\n " shape="box"]
+	
+
+	 8 -> 9 ;
+	 8 -> 3 [color="red" ];
+7 [label="7:  Call boolean Boolean.parseBoolean(String) \n   n$0=_fun_boolean Boolean.parseBoolean(String)(\"true\":class java.lang.String *) [line 7]\n  *&$irvar0:_Bool =n$0 [line 7]\n  REMOVE_TEMPS(n$0); [line 7]\n " shape="box"]
+	
+
+	 7 -> 8 ;
+	 7 -> 3 [color="red" ];
+6 [label="6:  exceptions sink \n   APPLY_ABSTRACTION; [line 6]\n " shape="box"]
+	
+
+	 6 -> 5 ;
+5 [label="5: Exit BuildConfig.<init>() \n  " color=yellow style=filled]
+	
+
+4 [label="4: Start BuildConfig.<init>()\nFormals:  this:class com.karthik.imager.BuildConfig *\nLocals:  \n   DECLARE_LOCALS(&return); [line 6]\n " color=yellow style=filled]
+	
+
+	 4 -> 10 ;
+3 [label="3:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 7]\n  APPLY_ABSTRACTION; [line 7]\n " shape="box"]
+	
+
+	 3 -> 2 ;
+2 [label="2: Exit void BuildConfig.<clinit>() \n  " color=yellow style=filled]
+	
+
+1 [label="1: Start void BuildConfig.<clinit>()\nFormals:  field:class java.lang.String *\nLocals:  $irvar0:void  \n   DECLARE_LOCALS(&return,&$irvar0); [line 7]\n  NULLIFY(&$irvar0,false); [line 7]\n  NULLIFY(&field,false); [line 7]\n " color=yellow style=filled]
+	
+
+	 1 -> 7 ;
+}

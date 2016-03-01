@@ -1,0 +1,27 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: mobile/src/main/java/com/karthik/imager/Adapter.java  LOC: 274  VISITED: 332/363 SYMOPS: 4620
++  num_procs: 33 (31 ok, 1 timeouts, 1 errors, 1 warnings, 70 infos)
++  detail procs:
++    - No Errors and No Specs: 1
++    - Some Errors and No Specs: 1
++    - No Errors and Some Specs: 31
++    - Some Errors and Some Specs: 0
++  errors:  CLASS_CAST_EXCEPTION:1
++  warnings:  ANALYSIS_STOPS:1
++  infos:  SKIP_FUNCTION:70
++  specs: 38
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+mobile/src/main/java/com/karthik/imager/Adapter.java:158: ERROR: CLASS_CAST_EXCEPTION class com.karthik.imager.Adapter$ViewHolder * cannot be cast to class android.support.v7.widget.RecyclerView$ViewHolder *  in expression &holder  in call to onPhotoClick(...) at line 158(file backend/tabulation.ml line 1122 column 76)
+
+Detailed errors during re-execution phase:
+mobile/src/main/java/com/karthik/imager/Adapter.java:79: ERROR: CLASS_CAST_EXCEPTION class com.karthik.imager.Adapter$FullViewHolder  cannot be cast to class com.karthik.imager.Adapter$ViewHolder   in expression holder  at line 79(file backend/symExec.ml line 1877 column 17)
+mobile/src/main/java/com/karthik/imager/Adapter.java:82: ERROR: CLASS_CAST_EXCEPTION class com.karthik.imager.Adapter$ViewHolder  cannot be cast to class com.karthik.imager.Adapter$FullViewHolder   in expression holder  at line 82(file backend/symExec.ml line 1877 column 17)
+
+Detailed warnings during footprint phase:
+mobile/src/main/java/com/karthik/imager/Adapter.java:158: WARNING: ANALYSIS_STOPS exception: CLASS_CAST_EXCEPTION(file backend/tabulation.ml line 1122 column 76)
+
+Detailed warnings during re-execution phase:
+mobile/src/main/java/com/karthik/imager/Adapter.java:79: WARNING: PRECONDITION_NOT_MET in call to bindViewholder(...) at line 79(file backend/tabulation.ml line 1151 column 72)

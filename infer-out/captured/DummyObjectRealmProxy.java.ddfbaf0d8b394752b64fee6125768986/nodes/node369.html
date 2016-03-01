@@ -1,0 +1,490 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node369</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE138">369</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.validateTable(io.realm.internal.ImplicitTransaction):io.realm.DummyOb.1d3c6cdd7f6739c44249a5f9f37a504b.html">DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE138">138</a>
+<br>PREDS:
+ <a href="./../nodes/node368.html"><span class='visited'>N_368<span class='expansion'>node368 preds:307 succs:369 exn:71 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_370<span class='expansion'>node370 preds:369 succs:70 exn:71 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_71<span class='expansion'>node71 preds: succs:70 exn:70 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$124=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 138];
+                          n$125=*&amp;$irvar0:class java.lang.String * [line 138];
+                          _fun_RealmMigrationNeededException.&lt;init&gt;(String,String)(n$124:class io.realm.exceptions.RealmMigrationNeededException *,n$125:class java.lang.String *,"The DummyObject class is missing from the schema for this Realm.":class java.lang.String *) [line 138];
+                          *&amp;$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$124 [line 138];
+                          REMOVE_TEMPS(n$124,n$125); [line 138];
+                          NULLIFY(&amp;$irvar0,false); [line 138];
+                          </span><hr width="100%">
+ <a name="session5"href="./../nodes/node369.html#session5">node369#session5</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE138">138</a>)<LISTING><span class='color_black'>**** [FP:0] DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction) Node: 369, Procedure: DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction), Session: 5, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$2 = 0</span> ;
+  <span class='color_red'>$irvar0 != 0</span> ;  <span class='color_red'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_red'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+  <span class='color_red'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+  <span class='color_red'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+  <span class='color_red'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+  <span class='color_red'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+  <span class='color_red'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$2 = 0</span> *
+     <span class='color_red'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+     <span class='color_red'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$124=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 138];
+  n$125=*&amp;$irvar0:class java.lang.String * [line 138];
+  _fun_RealmMigrationNeededException.&lt;init&gt;(String,String)(n$124:class io.realm.exceptions.RealmMigrationNeededException *,n$125:class java.lang.String *,"The DummyObject class is missing from the schema for this Realm.":class java.lang.String *) [line 138];
+  *&amp;$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$124 [line 138];
+  REMOVE_TEMPS(n$124,n$125); [line 138];
+  NULLIFY(&amp;$irvar0,false); [line 138];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$124=_fun___new(sizeof(class io.realm.exceptions.RealmMigrationNeededException ):class io.realm.exceptions.RealmMigrationNeededException *) [line 138]</span>
+    found array with sizeof(..) size
+    converting original hpred: _t$35|->[sizeof(class io.realm.exceptions.RealmMigrationNeededException )|] <span class='color_orange'>alloc</span>:char [sizeof(class io.realm.exceptions.RealmMigrationNeededException )]
+    into the following: _t$35|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_red'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_red'>n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$125=*&amp;$irvar0:class java.lang.String * [line 138]</span>
+    in vpath_find exp:n$124
+    vpath_find: cannot find n$124
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>@f$2 = 0 ;
+    MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124) ;  $irvar0 != 0 ;  UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0) ;  UND &lt; boolean Group.hasTable(String) &gt; :106(0) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$129 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnTypes = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:138</span>:void  ;
+    old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException 
+    [footprint
+       @f$2 = 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>@f$2 = 0 ;
+    MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124) ;  $irvar0 != 0 ;  UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0) ;  UND &lt; boolean Group.hasTable(String) &gt; :106(0) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$129 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnTypes = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:138</span>:void  ;
+    old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException 
+    [footprint
+       @f$2 = 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$129 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;  <span class='color_red'>n$125 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>_fun_RealmMigrationNeededException.&lt;init&gt;(String,String)(n$124:class io.realm.exceptions.RealmMigrationNeededException *,n$125:class java.lang.String *,"The DummyObject class is missing from the schema for this Realm.":class java.lang.String *) [line 138]</span>
+    in vpath_find exp:n$124
+    vpath_find: cannot find n$124
+    <span class='color_blue'>INFO: SKIP_FUNCTION RealmMigrationNeededException.<init>(String,String)</span>
+    Undefined function RealmMigrationNeededException.<init>(String,String), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;  <span class='color_blue'>n$125 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar1:class io.realm.exceptions.RealmMigrationNeededException *=n$124 [line 138]</span>
+    in vpath_find exp:n$124
+    vpath_find: cannot find n$124
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar1
+    Prop: 
+    <span class='color_blue'>@f$2 = 0 ;  n$125 = $irvar0 ;
+    MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124) ;  $irvar0 != 0 ;  UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0) ;  UND &lt; boolean Group.hasTable(String) &gt; :106(0) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$131 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnTypes = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:138</span>:void  ;
+    old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException 
+    [footprint
+       @f$2 = 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar1
+    prop before:
+    <span class='color_blue'>@f$2 = 0 ;  n$125 = $irvar0 ;
+    MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124) ;  $irvar0 != 0 ;  UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0) ;  UND &lt; boolean Group.hasTable(String) &gt; :106(0) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = 0 <span class='color_orange'>nullify</span>:void  ; 
+    return = n$131 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnTypes = 0 <span class='color_orange'>nullify</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = @f$1 <span class='color_orange'>update:138</span>:void  ;
+    old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException 
+    [footprint
+       @f$2 = 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;  <span class='color_blue'>n$125 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>(n$124)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = n$131 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>n$124|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;  <span class='color_blue'>n$125 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>n$124 <span class='color_orange'>update:138</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$124,n$125); [line 138]</span>
+    in vpath_find exp:n$124
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find n$124
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_red'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138($irvar0)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>_t$1 <span class='color_orange'>update:138</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:138</span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 138]</span>
+    in vpath_find exp:_t$1
+    vpath_find do_sexp: no match on Eexp &amp;$irvar1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138(@f$1)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = _t$1 <span class='color_orange'>update:138</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>$irvar1|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = 0</span> ;
+    <span class='color_red'>MEMne &lt; new:138 &gt;  <span class='color_orange'>{vpath: }</span>($irvar1)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;  <span class='color_blue'>UND &lt; String ImplicitTransaction.getPath() &gt; :138(@f$1)</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(0)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = 0 <span class='color_orange'>nullify</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = <span class='color_red'>_t$1 <span class='color_orange'>update:138</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_red'>$irvar1|->{io.realm.exceptions.RealmMigrationNeededException.canonicalRealmPath:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.cause:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.detailMessage:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackState:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.stackTrace:0 <span class='color_orange'>alloc</span>, java.lang.Throwable.suppressedExceptions:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class io.realm.exceptions.RealmMigrationNeededException </span>
+    [footprint
+       <span class='color_blue'>@f$2 = 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.ImplicitTransaction.getPath():java.lang.String|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span>  ]</span>
+    
+    
+    
+  

@@ -1,0 +1,870 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node104</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE71">104</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.setDummyTitle(java.lang.String):void.b2b19528f569a0d04563773ac5ac7431.html">void DummyObjectRealmProxy.setDummyTitle(String)</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE71">71</a>
+<br>PREDS:
+ <a href="./../nodes/node102.html"><span class='visited'>N_102<span class='expansion'>node102 preds:101 succs:104 exn:29 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_105<span class='expansion'>node105 preds:104 succs:28 exn:29 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_29<span class='expansion'>node29 preds: succs:28 exn:28 
+NOT VISITED</span></span><br>
+<span class='color_green'>NULLIFY(&amp;value,false); [line 71];
+                          n$4=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71];
+                          n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 71];
+                          n$6=*n$5:class io.realm.internal.Row  [line 71];
+                          n$7=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71];
+                          n$8=*n$7.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 71];
+                          n$9=*n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 71];
+                          _fun_void Row.setNull(long)(n$5:class io.realm.internal.Row *,n$9:long ) virtual [line 71];
+                          REMOVE_TEMPS(n$4,n$5,n$6,n$7,n$8,n$9); [line 71];
+                          NULLIFY(&amp;this,false); [line 71];
+                          </span><hr width="100%">
+ <a name="session7"href="./../nodes/node104.html#session7">node104#session7</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE71">71</a>)<LISTING><span class='color_black'>**** [FP:0] void DummyObjectRealmProxy.setDummyTitle(String) Node: 104, Procedure: void DummyObjectRealmProxy.setDummyTitle(String), Session: 7, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$2 = null</span> ;
+  <span class='color_red'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+  <span class='color_red'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+  <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$2 = null</span> *
+     <span class='color_red'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+     <span class='color_red'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+     <span class='color_red'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;value,false); [line 71];
+  n$4=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71];
+  n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 71];
+  n$6=*n$5:class io.realm.internal.Row  [line 71];
+  n$7=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71];
+  n$8=*n$7.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 71];
+  n$9=*n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 71];
+  _fun_void Row.setNull(long)(n$5:class io.realm.internal.Row *,n$9:long ) virtual [line 71];
+  REMOVE_TEMPS(n$4,n$5,n$6,n$7,n$8,n$9); [line 71];
+  NULLIFY(&amp;this,false); [line 71];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;value,false); [line 71]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = null</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$4=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>@f$2 = null ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )
+    [footprint
+       @f$2 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;this
+    prop before:
+    <span class='color_blue'>@f$2 = null ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$27 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )
+    [footprint
+       @f$2 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = null</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = n$27 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = null</span> ;  <span class='color_red'>n$4 = this</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: @f$0.io.realm.RealmObject.row
+    Prop: 
+    <span class='color_blue'>@f$2 = null ;  n$4 = this ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )
+    [footprint
+       @f$2 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$0.io.realm.RealmObject.row
+    prop before:
+    <span class='color_blue'>@f$2 = null ;  n$4 = this ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$28 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )
+    [footprint
+       @f$2 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = n$28 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, <span class='color_red'>io.realm.RealmObject.row:@f$29 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, <span class='color_red'>io.realm.RealmObject.row:@f$29 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$3 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_red'>n$5 = @f$2</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, <span class='color_red'>io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$3 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, <span class='color_red'>io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$6=*n$5:class io.realm.internal.Row  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: @f$2
+    Prop: 
+    <span class='color_blue'>@f$3 = null ;  n$4 = this ;  n$5 = @f$2 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )
+    [footprint
+       @f$3 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_blue'>n$5 = @f$2</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$7=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>@f$3 = null ;  n$4 = this ;  n$5 = @f$2 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$30 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )
+    [footprint
+       @f$3 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;this
+    prop before:
+    <span class='color_blue'>@f$3 = null ;  n$4 = this ;  n$5 = @f$2 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$30 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )
+    [footprint
+       @f$3 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_blue'>n$5 = @f$2</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = n$30 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_blue'>n$5 = @f$2</span> ;  <span class='color_red'>n$7 = this</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$8=*n$7.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: @f$0.io.realm.DummyObjectRealmProxy.columnInfo
+    Prop: 
+    <span class='color_blue'>@f$3 = null ;  n$4 = this ;  n$5 = @f$2 ;  n$7 = this ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$31 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )
+    [footprint
+       @f$3 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$0.io.realm.DummyObjectRealmProxy.columnInfo
+    prop before:
+    <span class='color_blue'>@f$3 = null ;  n$4 = this ;  n$5 = @f$2 ;  n$7 = this ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$31 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )
+    [footprint
+       @f$3 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_blue'>n$5 = @f$2</span> ;  <span class='color_blue'>n$7 = this</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = n$31 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{<span class='color_red'>io.realm.DummyObjectRealmProxy.columnInfo:@f$32 <span class='color_orange'>rearrange:71</span></span>, io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{<span class='color_red'>io.realm.DummyObjectRealmProxy.columnInfo:@f$32 <span class='color_orange'>rearrange:71</span></span>, io.realm.RealmObject.realm:@f$1 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$2 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$4 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_blue'>n$5 = <span class='color_red'>@f$3</span></span> ;  <span class='color_blue'>n$7 = this</span> ;  <span class='color_red'>n$8 = @f$1</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{<span class='color_red'>io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span></span>, io.realm.RealmObject.realm:<span class='color_red'>@f$2 <span class='color_orange'>rearrange:(z)69</span></span>, io.realm.RealmObject.row:<span class='color_red'>@f$3 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_red'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$4 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{<span class='color_red'>io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span></span>, io.realm.RealmObject.realm:<span class='color_red'>@f$2 <span class='color_orange'>rearrange:(z)69</span></span>, io.realm.RealmObject.row:<span class='color_red'>@f$3 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_red'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$9=*n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: @f$1.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex
+    Prop: 
+    <span class='color_blue'>@f$4 = null ;  n$4 = this ;  n$5 = @f$3 ;  n$7 = this ;  n$8 = @f$1 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$32 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    @f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+    @f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )
+    [footprint
+       @f$4 = null *
+       value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ;
+       this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+       @f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub ) ; 
+       @f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$5 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$5 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_blue'>n$5 = @f$3</span> ;  <span class='color_blue'>n$7 = this</span> ;  <span class='color_blue'>n$8 = @f$1</span> ;  <span class='color_red'>n$9 = @f$4</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_red'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$5 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_red'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>_fun_void Row.setNull(long)(n$5:class io.realm.internal.Row *,n$9:long ) virtual [line 71]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION void Row.setNull(long)</span>
+    Undefined function void Row.setNull(long), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = null</span> ;  <span class='color_blue'>n$4 = this</span> ;  <span class='color_blue'>n$5 = @f$3</span> ;  <span class='color_blue'>n$7 = this</span> ;  <span class='color_blue'>n$8 = @f$1</span> ;  <span class='color_blue'>n$9 = @f$4</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$4,n$5,n$6,n$7,n$8,n$9); [line 71]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = null</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;this,false); [line 71]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 = null</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>old_this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>old_this|->{io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span>, io.realm.RealmObject.realm:@f$2 <span class='color_orange'>rearrange:(z)69</span>, io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+       <span class='color_blue'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_blue'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$5 = null</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>old_this|->{<span class='color_red'>io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span></span>, io.realm.RealmObject.realm:<span class='color_red'>@f$2 <span class='color_orange'>rearrange:(z)69</span></span>, <span class='color_red'>io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{<span class='color_red'>io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span></span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_red'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$5 = null</span> *
+       <span class='color_blue'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ;
+       <span class='color_blue'>old_this|->{<span class='color_red'>io.realm.DummyObjectRealmProxy.columnInfo:@f$1 <span class='color_orange'>rearrange:71</span></span>, io.realm.RealmObject.realm:<span class='color_red'>@f$2 <span class='color_orange'>rearrange:(z)69</span></span>, <span class='color_red'>io.realm.RealmObject.row:@f$3 <span class='color_orange'>rearrange:71</span></span>} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{<span class='color_red'>io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:@f$4 <span class='color_orange'>rearrange:(z)71</span></span>} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+       <span class='color_red'>@f$2|->{} <span class='color_orange'>rearrange:(z)69</span>:class io.realm.BaseRealm ( sub )</span> ; 
+       <span class='color_red'>@f$3|->{} <span class='color_orange'>rearrange:(z)71</span>:class io.realm.internal.Row ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session14"href="./../nodes/node104.html#session14">node104#session14</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE71">71</a>)<LISTING><span class='color_black'>**** [RE:0] void DummyObjectRealmProxy.setDummyTitle(String) Node: 104, Procedure: void DummyObjectRealmProxy.setDummyTitle(String), Session: 14, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+  <span class='color_red'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+  <span class='color_red'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+  <span class='color_red'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span> ; 
+  <span class='color_red'>val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;value,false); [line 71];
+  n$4=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71];
+  n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 71];
+  n$6=*n$5:class io.realm.internal.Row  [line 71];
+  n$7=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71];
+  n$8=*n$7.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 71];
+  n$9=*n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 71];
+  _fun_void Row.setNull(long)(n$5:class io.realm.internal.Row *,n$9:long ) virtual [line 71];
+  REMOVE_TEMPS(n$4,n$5,n$6,n$7,n$8,n$9); [line 71];
+  NULLIFY(&amp;this,false); [line 71];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;value,false); [line 71]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$4=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$11 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub ) ; 
+    val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$1 = this</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = <span class='color_red'>n$4 <span class='color_orange'>formal</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>n$4 <span class='color_orange'>formal</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_red'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$5=*n$4.io.realm.RealmObject.row:class io.realm.DummyObjectRealmProxy  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: n$4.io.realm.RealmObject.row
+    Prop: 
+    <span class='color_blue'>val$1 = this ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$12 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub ) ; 
+    val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$1 = this</span> ;  <span class='color_red'>val$4 = n$5</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:<span class='color_red'>n$5 <span class='color_orange'>formal</span></span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_red'>n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$6=*n$5:class io.realm.internal.Row  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: n$5
+    Prop: 
+    <span class='color_blue'>val$1 = this ;  val$4 = n$5 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$13 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub ) ; 
+    val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$4 = n$5</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$7=*&amp;this:class io.realm.DummyObjectRealmProxy * [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>val$1 = this ;  val$4 = n$5 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$14 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub ) ; 
+    val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$7 = this</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$4 = n$5</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$8=*n$7.io.realm.DummyObjectRealmProxy.columnInfo:class io.realm.DummyObjectRealmProxy  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: n$4.io.realm.DummyObjectRealmProxy.columnInfo
+    Prop: 
+    <span class='color_blue'>n$7 = this ;  val$1 = this ;  val$4 = n$5 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$15 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub ) ; 
+    val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = this</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_red'>val$2 = n$8</span> ;  <span class='color_blue'>val$4 = n$5</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:<span class='color_red'>n$8 <span class='color_orange'>formal</span></span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span> ; 
+    <span class='color_red'>n$8|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$9=*n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo  [line 71]</span>
+    .... Rearrangement Start ....
+    Exp: n$8.io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex
+    Prop: 
+    <span class='color_blue'>n$7 = this ;  val$1 = this ;  val$2 = n$8 ;  val$4 = n$5 ;
+    old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub ) ; 
+    old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub ) ; 
+    return = n$16 <span class='color_orange'>initial</span>:void  ;
+    this|->{io.realm.DummyObjectRealmProxy.columnInfo:n$8 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub ) ; 
+    n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub ) ; 
+    n$8|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = this</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$8</span> ;  <span class='color_blue'>val$4 = n$5</span> ;  <span class='color_red'>val$5 = n$9</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:n$8 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span> ; 
+    <span class='color_blue'>n$8|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:<span class='color_red'>n$9 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span></span>
+    
+    Instruction <span class='color_green'>_fun_void Row.setNull(long)(n$5:class io.realm.internal.Row *,n$9:long ) virtual [line 71]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION void Row.setNull(long)</span>
+    Undefined function void Row.setNull(long), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$7 = this</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$8</span> ;  <span class='color_blue'>val$4 = n$5</span> ;  <span class='color_blue'>val$5 = n$9</span> ;
+    <span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = n$4 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:n$8 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:n$5 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>n$5|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span> ; 
+    <span class='color_blue'>n$8|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:n$9 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$4,n$5,n$6,n$7,n$8,n$9); [line 71]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_red'>this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_red'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_red'>val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;this,false); [line 71]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>old_this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_value = null <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>value = 0 <span class='color_orange'>nullify</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.DummyObjectRealmProxy *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ;
+    <span class='color_blue'>old_this|->{io.realm.DummyObjectRealmProxy.columnInfo:val$2 <span class='color_orange'>formal</span>, io.realm.RealmObject.realm:val$3 <span class='color_orange'>formal(z)</span>, io.realm.RealmObject.row:val$4 <span class='color_orange'>formal</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo.dummyTitleIndex:val$5 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class io.realm.BaseRealm ( sub )</span> ; 
+    <span class='color_blue'>val$4|->{} <span class='color_orange'>formal(z)</span>:class io.realm.internal.Row ( sub )</span></span>
+    
+    
+    
+  

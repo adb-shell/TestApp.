@@ -1,0 +1,1183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node41</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE139">41</a></h1></center>PROC:  <a href="./../com.karthik.imager.Fragments.DashboardFragment$1.onResponse(okhttp3.Call,okhttp3.Response):void.9f6a4a09bcc47ff8c0f0c346597ca264.html">void DashboardFragment$1.onResponse(Call,Response)</a> LINE: <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE139">139</a>
+<br>PREDS:
+ <a href="./../nodes/node30.html"><span class='visited'>N_30<span class='expansion'>node30 preds:28 succs:41 exn:19 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_42<span class='expansion'>node42 preds:41 succs:43 exn:19 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_19<span class='expansion'>node19 preds: succs:18 exn:18 
+NOT VISITED</span></span><br>
+<span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 139];
+                          NULLIFY(&amp;PhotoList,false); [line 139];
+                          NULLIFY(&amp;gson,false); [line 139];
+                          NULLIFY(&amp;response,false); [line 139];
+                          n$36=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment$1 * [line 139];
+                          n$37=*n$36.com.karthik.imager.Fragments.DashboardFragment$1.this$0:class com.karthik.imager.Fragments.DashboardFragment$1  [line 139];
+                          *&amp;$irvar0:class com.karthik.imager.Fragments.DashboardFragment *=n$37 [line 139];
+                          REMOVE_TEMPS(n$36,n$37); [line 139];
+                          </span><hr width="100%">
+ <a name="session6"href="./../nodes/node41.html#session6">node41#session6</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE139">139</a>)<LISTING><span class='color_black'>**** [FP:0] void DashboardFragment$1.onResponse(Call,Response) Node: 41, Procedure: void DashboardFragment$1.onResponse(Call,Response), Session: 6, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$3 = 0</span> ;
+  <span class='color_red'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(PhotoList)</span> ;  <span class='color_red'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson)</span> ;  <span class='color_red'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+  <span class='color_red'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+  <span class='color_red'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>gson = _t$1 <span class='color_orange'>update:122</span>:void </span> ; 
+  <span class='color_red'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+  <span class='color_red'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+  <span class='color_red'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>PhotoList = _t$2 <span class='color_orange'>update:123</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>update:125</span>:void </span> ;
+  <span class='color_red'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span> ; 
+  <span class='color_red'>gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson </span> ; 
+  <span class='color_red'>PhotoList|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:this <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 </span>
+  [footprint
+     <span class='color_red'>@f$3 = 0</span> *
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+     <span class='color_red'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+     <span class='color_red'>call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+     <span class='color_red'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+     <span class='color_red'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 139];
+  NULLIFY(&amp;PhotoList,false); [line 139];
+  NULLIFY(&amp;gson,false); [line 139];
+  NULLIFY(&amp;response,false); [line 139];
+  n$36=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment$1 * [line 139];
+  n$37=*n$36.com.karthik.imager.Fragments.DashboardFragment$1.this$0:class com.karthik.imager.Fragments.DashboardFragment$1  [line 139];
+  *&amp;$irvar0:class com.karthik.imager.Fragments.DashboardFragment *=n$37 [line 139];
+  REMOVE_TEMPS(n$36,n$37); [line 139];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: found PhotoList : void 
+    in vpath_find exp:_t$1
+    vpath_find: found gson : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(PhotoList)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = _t$1 <span class='color_orange'>update:122</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = _t$2 <span class='color_orange'>update:123</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span> ; 
+    <span class='color_blue'>gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson </span> ; 
+    <span class='color_blue'>PhotoList|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:this <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 </span>
+    [footprint
+       <span class='color_blue'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;PhotoList,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: found PhotoList : void 
+    in vpath_find exp:_t$1
+    vpath_find: found gson : void 
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>@f$3 = 0 ;
+      MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(_t$2) ;  MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+      old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      gson = _t$1 <span class='color_orange'>update:122</span>:void  ; 
+      charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+      old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+      call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+      body = 0 <span class='color_orange'>nullify</span>:void  ; 
+      PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub ) ; 
+      gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson  ; 
+      _t$2|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:this <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 
+      [footprint
+         @f$3 = 0 *
+         this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+         response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+         call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+         $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+         response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )  ]</span>
+      PREDICATE:
+      _t$2|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:@f$0 <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 
+      ATTRIBUTE: MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;PhotoList,false); [line 139]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = _t$1 <span class='color_orange'>update:122</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span> ; 
+    <span class='color_blue'>gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson </span>
+    [footprint
+       <span class='color_blue'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;gson,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: found gson : void 
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>@f$3 = 0 ;
+      MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2) ;  MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(_t$1) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+      old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+      charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+      old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+      call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+      body = 0 <span class='color_orange'>nullify</span>:void  ; 
+      PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub ) ; 
+      _t$1|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson 
+      [footprint
+         @f$3 = 0 *
+         this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+         response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+         call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+         $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+         response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )  ]</span>
+      PREDICATE:
+      _t$1|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson 
+      ATTRIBUTE: MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;gson,false); [line 139]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;response,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$36=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment$1 * [line 139]</span>
+    in vpath_find exp:n$40
+    vpath_find: cannot find n$40
+    in vpath_find exp:n$39
+    vpath_find: cannot find n$39
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>@f$3 = 0 ;
+    MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$40) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$39) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$38 <span class='color_orange'>initial</span>:void  ; 
+    old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )
+    [footprint
+       @f$3 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+       response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+       call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+       $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;this
+    prop before:
+    <span class='color_blue'>@f$3 = 0 ;
+    MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$40) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$39) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$38 <span class='color_orange'>initial</span>:void  ; 
+    old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )
+    [footprint
+       @f$3 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+       response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+       call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+       $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$40)</span> ;  <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$39)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = n$38 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = 0</span> ;  <span class='color_red'>n$36 = this</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$37=*n$36.com.karthik.imager.Fragments.DashboardFragment$1.this$0:class com.karthik.imager.Fragments.DashboardFragment$1  [line 139]</span>
+    in vpath_find exp:n$43
+    vpath_find: cannot find n$43
+    in vpath_find exp:n$42
+    vpath_find: cannot find n$42
+    .... Rearrangement Start ....
+    Exp: @f$0.com.karthik.imager.Fragments.DashboardFragment$1.this$0
+    Prop: 
+    <span class='color_blue'>@f$3 = 0 ;  n$36 = this ;
+    MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$43) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$42) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$41 <span class='color_orange'>initial</span>:void  ; 
+    old_response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )
+    [footprint
+       @f$3 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+       response = @f$1 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+       call = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+       $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$0|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$4 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$4 = 0</span> ;  <span class='color_blue'>n$36 = this</span> ;  <span class='color_red'>n$37 = @f$1</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_red'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_red'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_red'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+       <span class='color_red'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class com.karthik.imager.Fragments.DashboardFragment *=n$37 [line 139]</span>
+    in vpath_find exp:n$46
+    vpath_find: cannot find n$46
+    in vpath_find exp:n$45
+    vpath_find: cannot find n$45
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>@f$4 = 0 ;  n$36 = this ;  n$37 = @f$1 ;
+    MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$46) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$45) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$44 <span class='color_orange'>initial</span>:void  ; 
+    old_response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+    old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )
+    [footprint
+       @f$4 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+       response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+       call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+       $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+       old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>@f$4 = 0 ;  n$36 = this ;  n$37 = @f$1 ;
+    MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$46) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$45) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$44 <span class='color_orange'>initial</span>:void  ; 
+    old_response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+    old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )
+    [footprint
+       @f$4 = 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+       response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+       call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+       $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+       old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 = 0</span> ;  <span class='color_blue'>n$36 = this</span> ;  <span class='color_blue'>n$37 = @f$1</span> ;
+    <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$46)</span> ;  <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$45)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = n$44 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:@f$1 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+       <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 = 0</span> ;  <span class='color_blue'>n$36 = this</span> ;  <span class='color_blue'>n$37 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$1 <span class='color_orange'>update:139</span></span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+       <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$36,n$37); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$1 <span class='color_orange'>update:139</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = @f$2 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = @f$3 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+       <span class='color_blue'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$4 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$1 <span class='color_orange'>update:139</span></span>:void </span> ;
+    <span class='color_red'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_red'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$4 = 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+       <span class='color_blue'>response = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class okhttp3.Response *( sub )</span> ; 
+       <span class='color_blue'>call = <span class='color_red'>@f$3 <span class='color_orange'>formal</span></span>:class okhttp3.Call *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_red'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>rearrange:(z)139</span>} <span class='color_orange'>rearrange:(z)139</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+       <span class='color_red'>old_response|->{} <span class='color_orange'>rearrange:(z)125</span>:class okhttp3.Response ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session47"href="./../nodes/node41.html#session47">node41#session47</a>( <a href="./../../DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5.html#LINE139">139</a>)<LISTING><span class='color_black'>**** [RE:0] void DashboardFragment$1.onResponse(Call,Response) Node: 41, Procedure: void DashboardFragment$1.onResponse(Call,Response), Session: 47, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(PhotoList)</span> ;  <span class='color_red'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson)</span> ;  <span class='color_red'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+  <span class='color_red'>response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+  <span class='color_red'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>gson = _t$1 <span class='color_orange'>update:122</span>:void </span> ; 
+  <span class='color_red'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+  <span class='color_red'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+  <span class='color_red'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>PhotoList = _t$2 <span class='color_orange'>update:123</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>update:125</span>:void </span> ; 
+  <span class='color_red'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+  <span class='color_red'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+  <span class='color_red'>val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+  <span class='color_red'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+  <span class='color_red'>response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span> ; 
+  <span class='color_red'>gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson </span> ; 
+  <span class='color_red'>PhotoList|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:this <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 </span></span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 139];
+  NULLIFY(&amp;PhotoList,false); [line 139];
+  NULLIFY(&amp;gson,false); [line 139];
+  NULLIFY(&amp;response,false); [line 139];
+  n$36=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment$1 * [line 139];
+  n$37=*n$36.com.karthik.imager.Fragments.DashboardFragment$1.this$0:class com.karthik.imager.Fragments.DashboardFragment$1  [line 139];
+  *&amp;$irvar0:class com.karthik.imager.Fragments.DashboardFragment *=n$37 [line 139];
+  REMOVE_TEMPS(n$36,n$37); [line 139];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: found PhotoList : void 
+    in vpath_find exp:_t$1
+    vpath_find: found gson : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(PhotoList)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = _t$1 <span class='color_orange'>update:122</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = _t$2 <span class='color_orange'>update:123</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span> ; 
+    <span class='color_blue'>gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson </span> ; 
+    <span class='color_blue'>PhotoList|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:this <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;PhotoList,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: found PhotoList : void 
+    in vpath_find exp:_t$1
+    vpath_find: found gson : void 
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(_t$2) ;  MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+      old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      gson = _t$1 <span class='color_orange'>update:122</span>:void  ; 
+      charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+      old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+      call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+      body = 0 <span class='color_orange'>nullify</span>:void  ; 
+      PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+      this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+      val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+      val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub ) ; 
+      response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub ) ; 
+      gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson  ; 
+      _t$2|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:this <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 </span>
+      PREDICATE:
+      _t$2|->{com.google.gson.reflect.TypeToken.hashCode:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.rawType:0 <span class='color_orange'>alloc</span>, com.google.gson.reflect.TypeToken.type:0 <span class='color_orange'>alloc</span>, com.karthik.imager.Fragments.DashboardFragment$1$2.this$1:val$1 <span class='color_orange'>update:(z)123</span>} <span class='color_orange'>alloc</span>:class com.karthik.imager.Fragments.DashboardFragment$1$2 
+      ATTRIBUTE: MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;PhotoList,false); [line 139]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: PhotoList}</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(gson)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = _t$1 <span class='color_orange'>update:122</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span> ; 
+    <span class='color_blue'>gson|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson </span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;gson,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: found gson : void 
+    .... Prop with garbage in normal part ....
+      PROP:
+      <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2) ;  MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(_t$1) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+      old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+      return = _t$0 <span class='color_orange'>initial</span>:void  ; 
+      old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+      photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+      charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+      old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+      call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+      body = 0 <span class='color_orange'>nullify</span>:void  ; 
+      PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+      this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+      val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+      val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub ) ; 
+      response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub ) ; 
+      _t$1|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson </span>
+      PREDICATE:
+      _t$1|->{com.google.gson.Gson.calls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.constructorConstructor:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.deserializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.factories:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.generateNonExecutableJson:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.htmlSafe:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.lenient:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.prettyPrinting:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializationContext:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.serializeNulls:0 <span class='color_orange'>alloc</span>, com.google.gson.Gson.typeTokenCache:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class com.google.gson.Gson 
+      ATTRIBUTE: MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>
+      explain_leak: case not matched in instr <span class='color_green'>NULLIFY(&amp;gson,false); [line 139]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: gson}</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;response,false); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$36=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment$1 * [line 139]</span>
+    in vpath_find exp:n$189
+    vpath_find: cannot find n$189
+    in vpath_find exp:n$188
+    vpath_find: cannot find n$188
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$189) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$188) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$187 <span class='color_orange'>initial</span>:void  ; 
+    old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+    val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub ) ; 
+    old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$1 = this</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>n$36 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>n$36 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$37=*n$36.com.karthik.imager.Fragments.DashboardFragment$1.this$0:class com.karthik.imager.Fragments.DashboardFragment$1  [line 139]</span>
+    in vpath_find exp:n$192
+    vpath_find: cannot find n$192
+    in vpath_find exp:n$191
+    vpath_find: cannot find n$191
+    .... Rearrangement Start ....
+    Exp: n$36.com.karthik.imager.Fragments.DashboardFragment$1.this$0
+    Prop: 
+    <span class='color_blue'>val$1 = this ;
+    MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$192) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$191) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$190 <span class='color_orange'>initial</span>:void  ; 
+    old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+    val$2|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub ) ; 
+    old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$1 = this</span> ;  <span class='color_red'>val$2 = n$37</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:<span class='color_red'>n$37 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_red'>n$37|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class com.karthik.imager.Fragments.DashboardFragment *=n$37 [line 139]</span>
+    in vpath_find exp:n$195
+    vpath_find: cannot find n$195
+    in vpath_find exp:n$194
+    vpath_find: cannot find n$194
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>val$1 = this ;  val$2 = n$37 ;
+    MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(n$195) ;  MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(n$194) ;  UND &lt; boolean Response.isSuccessful() &gt; :125(0) ;
+    old_this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub ) ; 
+    return = n$193 <span class='color_orange'>initial</span>:void  ; 
+    old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub ) ; 
+    response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub ) ; 
+    photoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    gson = 0 <span class='color_orange'>nullify</span>:void  ; 
+    charStream = 0 <span class='color_orange'>nullify</span>:void  ; 
+    old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub ) ; 
+    call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub ) ; 
+    body = 0 <span class='color_orange'>nullify</span>:void  ; 
+    PhotoList = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ;
+    this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:n$37 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub ) ; 
+    n$37|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub ) ; 
+    val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub ) ; 
+    old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = n$36 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$37 <span class='color_orange'>update:139</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$36,n$37); [line 139]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = 0 <span class='color_orange'>nullify</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$2 <span class='color_orange'>update:139</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_red'>$irvar0|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:123 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:122 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>UND &lt; boolean Response.isSuccessful() &gt; :125(0)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.Fragments.DashboardFragment$1 *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>old_response = val$4 <span class='color_orange'>formal</span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>response = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class okhttp3.Response *( sub )</span> ; 
+    <span class='color_blue'>photoList = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>gson = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>charStream = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>old_call = val$5 <span class='color_orange'>formal</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>call = 0 <span class='color_orange'>nullify</span>:class okhttp3.Call *( sub )</span> ; 
+    <span class='color_blue'>body = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>PhotoList = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$2 <span class='color_orange'>update:139</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.Response.isSuccessful():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.os.Handler.post(java.lang.Runnable):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.Fragments.DashboardFragment$1.this$0:$irvar0 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment$1 ( sub )</span> ; 
+    <span class='color_blue'>$irvar0|->{com.karthik.imager.Fragments.DashboardFragment.mainUIThread:val$3 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.Fragments.DashboardFragment ( sub )</span> ; 
+    <span class='color_blue'>val$3|->{} <span class='color_orange'>formal(z)</span>:class android.os.Handler ( sub )</span> ; 
+    <span class='color_blue'>old_response|->{} <span class='color_orange'>formal(z)</span>:class okhttp3.Response ( sub )</span></span>
+    
+    
+    
+  

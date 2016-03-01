@@ -1,0 +1,423 @@
+digraph iCFG {
+89 [label="89:  method_body \n   NULLIFY(&savedInstanceState,false); [line 42]\n  NULLIFY(&this,false); [line 42]\n  APPLY_ABSTRACTION; [line 42]\n " shape="box"]
+	
+
+	 89 -> 20 ;
+	 89 -> 21 [color="red" ];
+88 [label="88:  Call int FragmentTransaction.commit() \n   n$25=*&$irvar4:class android.support.v4.app.FragmentTransaction * [line 36]\n  n$26=*n$25:class android.support.v4.app.FragmentTransaction  [line 36]\n  n$27=_fun_int FragmentTransaction.commit()(n$25:class android.support.v4.app.FragmentTransaction *) virtual [line 36]\n  *&$irvar5:int =n$27 [line 36]\n  REMOVE_TEMPS(n$25,n$26,n$27); [line 36]\n  NULLIFY(&$irvar4,false); [line 36]\n  NULLIFY(&$irvar5,false); [line 36]\n  APPLY_ABSTRACTION; [line 36]\n " shape="box"]
+	
+
+	 88 -> 89 ;
+	 88 -> 21 [color="red" ];
+87 [label="87:  Call FragmentTransaction FragmentTransaction.addToBackStack(String) \n   n$22=*&$irvar3:class android.support.v4.app.FragmentTransaction * [line 36]\n  n$23=*n$22:class android.support.v4.app.FragmentTransaction  [line 36]\n  n$24=_fun_FragmentTransaction FragmentTransaction.addToBackStack(String)(n$22:class android.support.v4.app.FragmentTransaction *,\"\":class java.lang.String *) virtual [line 36]\n  *&$irvar4:class android.support.v4.app.FragmentTransaction *=n$24 [line 36]\n  REMOVE_TEMPS(n$22,n$23,n$24); [line 36]\n  NULLIFY(&$irvar3,false); [line 36]\n " shape="box"]
+	
+
+	 87 -> 88 ;
+	 87 -> 21 [color="red" ];
+86 [label="86:  Call FragmentTransaction FragmentTransaction.add(int,Fragment) \n   n$18=*&$irvar1:class android.support.v4.app.FragmentTransaction * [line 36]\n  n$19=*n$18:class android.support.v4.app.FragmentTransaction  [line 36]\n  n$20=*&$irvar2:class com.karthik.imager.Fragments.DashboardFragment * [line 36]\n  n$21=_fun_FragmentTransaction FragmentTransaction.add(int,Fragment)(n$18:class android.support.v4.app.FragmentTransaction *,2131558541:int ,n$20:class com.karthik.imager.Fragments.DashboardFragment *) virtual [line 36]\n  *&$irvar3:class android.support.v4.app.FragmentTransaction *=n$21 [line 36]\n  REMOVE_TEMPS(n$18,n$19,n$20,n$21); [line 36]\n  NULLIFY(&$irvar1,false); [line 36]\n  NULLIFY(&$irvar2,false); [line 36]\n " shape="box"]
+	
+
+	 86 -> 87 ;
+	 86 -> 21 [color="red" ];
+85 [label="85:  Call DashboardFragment.<init>() \n   n$17=_fun___new(sizeof(class com.karthik.imager.Fragments.DashboardFragment ):class com.karthik.imager.Fragments.DashboardFragment *) [line 36]\n  _fun_DashboardFragment.<init>()(n$17:class com.karthik.imager.Fragments.DashboardFragment *) [line 36]\n  *&$irvar2:class com.karthik.imager.Fragments.DashboardFragment *=n$17 [line 36]\n  REMOVE_TEMPS(n$17); [line 36]\n " shape="box"]
+	
+
+	 85 -> 86 ;
+	 85 -> 21 [color="red" ];
+84 [label="84:  Call FragmentTransaction FragmentManager.beginTransaction() \n   n$14=*&$irvar0:class android.support.v4.app.FragmentManager * [line 36]\n  n$15=*n$14:class android.support.v4.app.FragmentManager  [line 36]\n  n$16=_fun_FragmentTransaction FragmentManager.beginTransaction()(n$14:class android.support.v4.app.FragmentManager *) virtual [line 36]\n  *&$irvar1:class android.support.v4.app.FragmentTransaction *=n$16 [line 36]\n  REMOVE_TEMPS(n$14,n$15,n$16); [line 36]\n  NULLIFY(&$irvar0,false); [line 36]\n " shape="box"]
+	
+
+	 84 -> 85 ;
+	 84 -> 21 [color="red" ];
+83 [label="83:  Call FragmentManager FragmentActivity.getSupportFragmentManager() \n   n$11=*&this:class com.karthik.imager.MainActivity * [line 36]\n  n$12=*n$11:class com.karthik.imager.MainActivity  [line 36]\n  n$13=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$11:class com.karthik.imager.MainActivity *) virtual [line 36]\n  *&$irvar0:class android.support.v4.app.FragmentManager *=n$13 [line 36]\n  REMOVE_TEMPS(n$11,n$12,n$13); [line 36]\n  NULLIFY(&this,false); [line 36]\n " shape="box"]
+	
+
+	 83 -> 84 ;
+	 83 -> 21 [color="red" ];
+82 [label="82:  Call void MainActivity.fillDummyValuesInSharedPreferences() \n   n$10=*&this:class com.karthik.imager.MainActivity * [line 34]\n  _fun_void MainActivity.fillDummyValuesInSharedPreferences()(n$10:class com.karthik.imager.MainActivity *) [line 34]\n  REMOVE_TEMPS(n$10); [line 34]\n " shape="box"]
+	
+
+	 82 -> 83 ;
+	 82 -> 21 [color="red" ];
+81 [label="81:  Call void MainActivity.fillDummyValuesInDB() \n   NULLIFY(&savedInstanceState,false); [line 33]\n  n$8=*&this:class com.karthik.imager.MainActivity * [line 33]\n  n$9=*n$8:class com.karthik.imager.MainActivity  [line 33]\n  _fun_void MainActivity.fillDummyValuesInDB()(n$8:class com.karthik.imager.MainActivity *) virtual [line 33]\n  REMOVE_TEMPS(n$8,n$9); [line 33]\n " shape="box"]
+	
+
+	 81 -> 82 ;
+	 81 -> 21 [color="red" ];
+80 [label="80: Prune (false branch) \n   n$7=*&savedInstanceState:class android.os.Bundle * [line 31]\n  PRUNE((n$7 != null), false); [line 31]\n  REMOVE_TEMPS(n$7); [line 31]\n  APPLY_ABSTRACTION; [line 31]\n " shape="invhouse"]
+	
+
+	 80 -> 89 ;
+	 80 -> 21 [color="red" ];
+79 [label="79: Prune (true branch) \n   n$7=*&savedInstanceState:class android.os.Bundle * [line 31]\n  PRUNE(!(n$7 != null), true); [line 31]\n  REMOVE_TEMPS(n$7); [line 31]\n " shape="invhouse"]
+	
+
+	 79 -> 81 ;
+	 79 -> 21 [color="red" ];
+78 [label="78:  method_body \n   n$5=*&this:class com.karthik.imager.MainActivity * [line 29]\n  n$6=*&this:class com.karthik.imager.MainActivity * [line 29]\n  *n$5.com.karthik.imager.MainActivity.mContext:class com.karthik.imager.MainActivity =n$6 [line 29]\n  REMOVE_TEMPS(n$5,n$6); [line 29]\n " shape="box"]
+	
+
+	 78 -> 79 ;
+	 78 -> 80 ;
+	 78 -> 21 [color="red" ];
+77 [label="77:  Call void ButterKnife.bind(Activity) \n   n$4=*&this:class com.karthik.imager.MainActivity * [line 28]\n  _fun_void ButterKnife.bind(Activity)(n$4:class com.karthik.imager.MainActivity *) [line 28]\n  REMOVE_TEMPS(n$4); [line 28]\n " shape="box"]
+	
+
+	 77 -> 78 ;
+	 77 -> 21 [color="red" ];
+76 [label="76:  Call void AppCompatActivity.setContentView(int) \n   n$2=*&this:class com.karthik.imager.MainActivity * [line 27]\n  n$3=*n$2:class com.karthik.imager.MainActivity  [line 27]\n  _fun_void AppCompatActivity.setContentView(int)(n$2:class com.karthik.imager.MainActivity *,2130968601:int ) virtual [line 27]\n  REMOVE_TEMPS(n$2,n$3); [line 27]\n " shape="box"]
+	
+
+	 76 -> 77 ;
+	 76 -> 21 [color="red" ];
+75 [label="75:  Call void AppCompatActivity.onCreate(Bundle) \n   n$0=*&this:class com.karthik.imager.MainActivity * [line 25]\n  n$1=*&savedInstanceState:class android.os.Bundle * [line 25]\n  _fun_void AppCompatActivity.onCreate(Bundle)(n$0:class com.karthik.imager.MainActivity *,n$1:class android.os.Bundle *) [line 25]\n  REMOVE_TEMPS(n$0,n$1); [line 25]\n " shape="box"]
+	
+
+	 75 -> 76 ;
+	 75 -> 21 [color="red" ];
+74 [label="74:  method_body \n   APPLY_ABSTRACTION; [line 78]\n " shape="box"]
+	
+
+	 74 -> 17 ;
+	 74 -> 18 [color="red" ];
+73 [label="73:  Call boolean SharedPreferences$Editor.commit() \n   n$35=*&editor:class android.content.SharedPreferences$Editor * [line 77]\n  n$36=*n$35:class android.content.SharedPreferences$Editor  [line 77]\n  n$37=_fun_boolean SharedPreferences$Editor.commit()(n$35:class android.content.SharedPreferences$Editor *) virtual [line 77]\n  *&$irvar0:_Bool =n$37 [line 77]\n  REMOVE_TEMPS(n$35,n$36,n$37); [line 77]\n  NULLIFY(&$irvar0,false); [line 77]\n  NULLIFY(&editor,false); [line 77]\n " shape="box"]
+	
+
+	 73 -> 74 ;
+	 73 -> 18 [color="red" ];
+72 [label="72:  Call SharedPreferences$Editor SharedPreferences$Editor.putString(String,String) \n   NULLIFY(&i,false); [line 76]\n  NULLIFY(&strings,false); [line 76]\n  n$32=*&editor:class android.content.SharedPreferences$Editor * [line 76]\n  n$33=*n$32:class android.content.SharedPreferences$Editor  [line 76]\n  n$34=_fun_SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)(n$32:class android.content.SharedPreferences$Editor *,\"String\":class java.lang.String *,\"This is awesome\":class java.lang.String *) virtual [line 76]\n  *&$irvar0:class android.content.SharedPreferences$Editor *=n$34 [line 76]\n  REMOVE_TEMPS(n$32,n$33,n$34); [line 76]\n  NULLIFY(&$irvar0,false); [line 76]\n " shape="box"]
+	
+
+	 72 -> 73 ;
+	 72 -> 18 [color="red" ];
+71 [label="71:  method_body \n   n$31=*&i:int  [line 73]\n  *&i:int =(n$31 + 1) [line 73]\n  REMOVE_TEMPS(n$31); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 71 -> 69 ;
+	 71 -> 18 [color="red" ];
+70 [label="70:  Call SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int) \n   n$23=*&editor:class android.content.SharedPreferences$Editor * [line 74]\n  n$24=*n$23:class android.content.SharedPreferences$Editor  [line 74]\n  n$25=*&strings:class java.lang.String *(*)[_t$0] [line 74]\n  n$27=*n$25:class java.lang.String *[_t$1] [line 74]\n  n$26=*&i:int  [line 74]\n  n$28=*n$25[n$26]:class java.lang.String * [line 74]\n  n$29=*&i:int  [line 74]\n  n$30=_fun_SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int)(n$23:class android.content.SharedPreferences$Editor *,n$28:class java.lang.String *,n$29:int ) virtual [line 74]\n  *&$irvar0:class android.content.SharedPreferences$Editor *=n$30 [line 74]\n  REMOVE_TEMPS(n$23,n$24,n$25,n$26,n$27,n$28,n$29,n$30); [line 74]\n  NULLIFY(&$irvar0,false); [line 74]\n " shape="box"]
+	
+
+	 70 -> 71 ;
+	 70 -> 18 [color="red" ];
+69 [label="69: + \n  " ]
+	
+
+	 69 -> 67 ;
+	 69 -> 68 ;
+68 [label="68: Prune (false branch) \n   n$19=*&i:int  [line 73]\n  n$20=*&strings:class java.lang.String *(*)[_t$0] [line 73]\n  n$21=*n$20:class java.lang.String *[_t$0] [line 73]\n  n$22=_fun___get_array_size(n$20:class java.lang.String *(*)[_t$0]) [line 73]\n  PRUNE((n$19 >= n$22), false); [line 73]\n  REMOVE_TEMPS(n$19,n$20,n$21,n$22); [line 73]\n " shape="invhouse"]
+	
+
+	 68 -> 72 ;
+	 68 -> 18 [color="red" ];
+67 [label="67: Prune (true branch) \n   n$19=*&i:int  [line 73]\n  n$20=*&strings:class java.lang.String *(*)[_t$0] [line 73]\n  n$21=*n$20:class java.lang.String *[_t$0] [line 73]\n  n$22=_fun___get_array_size(n$20:class java.lang.String *(*)[_t$0]) [line 73]\n  PRUNE(!(n$19 >= n$22), true); [line 73]\n  REMOVE_TEMPS(n$19,n$20,n$21,n$22); [line 73]\n " shape="invhouse"]
+	
+
+	 67 -> 70 ;
+	 67 -> 18 [color="red" ];
+66 [label="66:  method_body \n   *&i:int =0 [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 66 -> 69 ;
+	 66 -> 18 [color="red" ];
+65 [label="65:  method_body \n   n$18=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *&strings:class java.lang.String *(*)[_t$0]=n$18 [line 72]\n  REMOVE_TEMPS(n$18); [line 72]\n  NULLIFY(&$irvar0,false); [line 72]\n " shape="box"]
+	
+
+	 65 -> 66 ;
+	 65 -> 18 [color="red" ];
+64 [label="64:  method_body \n   n$17=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$17[9]:class java.lang.String *[_t$0]=\"ten\" [line 72]\n  REMOVE_TEMPS(n$17); [line 72]\n " shape="box"]
+	
+
+	 64 -> 65 ;
+	 64 -> 18 [color="red" ];
+63 [label="63:  method_body \n   n$16=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$16[8]:class java.lang.String *[_t$0]=\"nine\" [line 72]\n  REMOVE_TEMPS(n$16); [line 72]\n " shape="box"]
+	
+
+	 63 -> 64 ;
+	 63 -> 18 [color="red" ];
+62 [label="62:  method_body \n   n$15=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$15[7]:class java.lang.String *[_t$0]=\"eight\" [line 72]\n  REMOVE_TEMPS(n$15); [line 72]\n " shape="box"]
+	
+
+	 62 -> 63 ;
+	 62 -> 18 [color="red" ];
+61 [label="61:  method_body \n   n$14=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$14[6]:class java.lang.String *[_t$0]=\"seven\" [line 72]\n  REMOVE_TEMPS(n$14); [line 72]\n " shape="box"]
+	
+
+	 61 -> 62 ;
+	 61 -> 18 [color="red" ];
+60 [label="60:  method_body \n   n$13=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$13[5]:class java.lang.String *[_t$0]=\"six\" [line 72]\n  REMOVE_TEMPS(n$13); [line 72]\n " shape="box"]
+	
+
+	 60 -> 61 ;
+	 60 -> 18 [color="red" ];
+59 [label="59:  method_body \n   n$12=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$12[4]:class java.lang.String *[_t$0]=\"five\" [line 72]\n  REMOVE_TEMPS(n$12); [line 72]\n " shape="box"]
+	
+
+	 59 -> 60 ;
+	 59 -> 18 [color="red" ];
+58 [label="58:  method_body \n   n$11=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$11[3]:class java.lang.String *[_t$0]=\"four\" [line 72]\n  REMOVE_TEMPS(n$11); [line 72]\n " shape="box"]
+	
+
+	 58 -> 59 ;
+	 58 -> 18 [color="red" ];
+57 [label="57:  method_body \n   n$10=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$10[2]:class java.lang.String *[_t$0]=\"three\" [line 72]\n  REMOVE_TEMPS(n$10); [line 72]\n " shape="box"]
+	
+
+	 57 -> 58 ;
+	 57 -> 18 [color="red" ];
+56 [label="56:  method_body \n   n$9=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$9[1]:class java.lang.String *[_t$0]=\"two\" [line 72]\n  REMOVE_TEMPS(n$9); [line 72]\n " shape="box"]
+	
+
+	 56 -> 57 ;
+	 56 -> 18 [color="red" ];
+55 [label="55:  method_body \n   n$8=*&$irvar0:class java.lang.String *(*)[_t$0] [line 72]\n  *n$8[0]:class java.lang.String *[_t$0]=\"one\" [line 72]\n  REMOVE_TEMPS(n$8); [line 72]\n " shape="box"]
+	
+
+	 55 -> 56 ;
+	 55 -> 18 [color="red" ];
+54 [label="54:  method_body \n   n$7=_fun___new_array(sizeof(class java.lang.String *[10]):class java.lang.String *(*)[_t$0]) [line 72]\n  *&$irvar0:class java.lang.String *(*)[_t$0]=n$7 [line 72]\n  REMOVE_TEMPS(n$7); [line 72]\n " shape="box"]
+	
+
+	 54 -> 55 ;
+	 54 -> 18 [color="red" ];
+53 [label="53:  Call SharedPreferences$Editor SharedPreferences.edit() \n   n$4=*&sharedPreferences:class android.content.SharedPreferences * [line 71]\n  n$5=*n$4:class android.content.SharedPreferences  [line 71]\n  n$6=_fun_SharedPreferences$Editor SharedPreferences.edit()(n$4:class android.content.SharedPreferences *) virtual [line 71]\n  *&editor:class android.content.SharedPreferences$Editor *=n$6 [line 71]\n  REMOVE_TEMPS(n$4,n$5,n$6); [line 71]\n  NULLIFY(&sharedPreferences,false); [line 71]\n " shape="box"]
+	
+
+	 53 -> 54 ;
+	 53 -> 18 [color="red" ];
+52 [label="52:  Call SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context) \n   n$2=*&$irvar0:class android.content.Context * [line 70]\n  n$3=_fun_SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context)(n$2:class android.content.Context *) [line 70]\n  *&sharedPreferences:class android.content.SharedPreferences *=n$3 [line 70]\n  REMOVE_TEMPS(n$2,n$3); [line 70]\n  NULLIFY(&$irvar0,false); [line 70]\n " shape="box"]
+	
+
+	 52 -> 53 ;
+	 52 -> 18 [color="red" ];
+51 [label="51:  method_body \n   n$0=*&this:class com.karthik.imager.MainActivity * [line 70]\n  n$1=*n$0.com.karthik.imager.MainActivity.mContext:class com.karthik.imager.MainActivity  [line 70]\n  *&$irvar0:class android.content.Context *=n$1 [line 70]\n  REMOVE_TEMPS(n$0,n$1); [line 70]\n  NULLIFY(&this,false); [line 70]\n " shape="box"]
+	
+
+	 51 -> 52 ;
+	 51 -> 18 [color="red" ];
+50 [label="50:  method_body \n   *&return:_Bool =1 [line 48]\n  APPLY_ABSTRACTION; [line 48]\n " shape="box"]
+	
+
+	 50 -> 14 ;
+	 50 -> 15 [color="red" ];
+49 [label="49:  Call void MenuInflater.inflate(int,Menu) \n   n$3=*&$irvar0:class android.view.MenuInflater * [line 47]\n  n$4=*n$3:class android.view.MenuInflater  [line 47]\n  n$5=*&menu:class android.view.Menu * [line 47]\n  _fun_void MenuInflater.inflate(int,Menu)(n$3:class android.view.MenuInflater *,2131623936:int ,n$5:class android.view.Menu *) virtual [line 47]\n  REMOVE_TEMPS(n$3,n$4,n$5); [line 47]\n  NULLIFY(&$irvar0,false); [line 47]\n  NULLIFY(&menu,false); [line 47]\n " shape="box"]
+	
+
+	 49 -> 50 ;
+	 49 -> 15 [color="red" ];
+48 [label="48:  Call MenuInflater AppCompatActivity.getMenuInflater() \n   n$0=*&this:class com.karthik.imager.MainActivity * [line 47]\n  n$1=*n$0:class com.karthik.imager.MainActivity  [line 47]\n  n$2=_fun_MenuInflater AppCompatActivity.getMenuInflater()(n$0:class com.karthik.imager.MainActivity *) virtual [line 47]\n  *&$irvar0:class android.view.MenuInflater *=n$2 [line 47]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 47]\n  NULLIFY(&this,false); [line 47]\n " shape="box"]
+	
+
+	 48 -> 49 ;
+	 48 -> 15 [color="red" ];
+47 [label="47:  method_body \n   n$7=*&$irvar0:_Bool  [line 91]\n  *&return:_Bool =n$7 [line 91]\n  REMOVE_TEMPS(n$7); [line 91]\n  NULLIFY(&$irvar0,false); [line 91]\n  APPLY_ABSTRACTION; [line 91]\n " shape="box"]
+	
+
+	 47 -> 11 ;
+	 47 -> 12 [color="red" ];
+46 [label="46:  Call boolean Activity.onOptionsItemSelected(MenuItem) \n   NULLIFY(&id,false); [line 91]\n  n$4=*&this:class com.karthik.imager.MainActivity * [line 91]\n  n$5=*&item:class android.view.MenuItem * [line 91]\n  n$6=_fun_boolean Activity.onOptionsItemSelected(MenuItem)(n$4:class com.karthik.imager.MainActivity *,n$5:class android.view.MenuItem *) [line 91]\n  *&$irvar0:_Bool =n$6 [line 91]\n  REMOVE_TEMPS(n$4,n$5,n$6); [line 91]\n  NULLIFY(&item,false); [line 91]\n  NULLIFY(&this,false); [line 91]\n " shape="box"]
+	
+
+	 46 -> 47 ;
+	 46 -> 12 [color="red" ];
+45 [label="45:  method_body \n   NULLIFY(&id,false); [line 88]\n  NULLIFY(&item,false); [line 88]\n  NULLIFY(&this,false); [line 88]\n  *&return:_Bool =1 [line 88]\n  APPLY_ABSTRACTION; [line 88]\n " shape="box"]
+	
+
+	 45 -> 11 ;
+	 45 -> 12 [color="red" ];
+44 [label="44: Prune (false branch) \n   n$3=*&id:int  [line 87]\n  PRUNE((n$3 != 2131558589), false); [line 87]\n  REMOVE_TEMPS(n$3); [line 87]\n " shape="invhouse"]
+	
+
+	 44 -> 46 ;
+	 44 -> 12 [color="red" ];
+43 [label="43: Prune (true branch) \n   n$3=*&id:int  [line 87]\n  PRUNE(!(n$3 != 2131558589), true); [line 87]\n  REMOVE_TEMPS(n$3); [line 87]\n " shape="invhouse"]
+	
+
+	 43 -> 45 ;
+	 43 -> 12 [color="red" ];
+42 [label="42:  Call int MenuItem.getItemId() \n   n$0=*&item:class android.view.MenuItem * [line 84]\n  n$1=*n$0:class android.view.MenuItem  [line 84]\n  n$2=_fun_int MenuItem.getItemId()(n$0:class android.view.MenuItem *) virtual [line 84]\n  *&id:int =n$2 [line 84]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 84]\n " shape="box"]
+	
+
+	 42 -> 43 ;
+	 42 -> 44 ;
+	 42 -> 12 [color="red" ];
+41 [label="41:  method_body \n   NULLIFY(&$irvar0,false); [line 106]\n  NULLIFY(&this,false); [line 106]\n  NULLIFY(&fragmentManager,false); [line 106]\n  APPLY_ABSTRACTION; [line 106]\n " shape="box"]
+	
+
+	 41 -> 8 ;
+	 41 -> 9 [color="red" ];
+40 [label="40:  Call void DetailsFragment.onBackPressed() \n   n$16=*&$irvar1:class java.lang.Object * [line 103]\n  n$17=_fun___cast(n$16:class java.lang.Object *,sizeof(class com.karthik.imager.Fragments.DetailsFragment ( sub )(cast)):void ) [line 103]\n  n$18=*n$17:class com.karthik.imager.Fragments.DetailsFragment  [line 103]\n  _fun_void DetailsFragment.onBackPressed()(n$17:class com.karthik.imager.Fragments.DetailsFragment *) virtual [line 103]\n  REMOVE_TEMPS(n$16,n$17,n$18); [line 103]\n  NULLIFY(&$irvar1,false); [line 103]\n  APPLY_ABSTRACTION; [line 103]\n " shape="box"]
+	
+
+	 40 -> 41 ;
+	 40 -> 9 [color="red" ];
+39 [label="39:  Call Object List.get(int) \n   n$13=*&$irvar0:class java.util.List * [line 103]\n  n$14=*n$13:class java.util.List  [line 103]\n  n$15=_fun_Object List.get(int)(n$13:class java.util.List *,1:int ) virtual [line 103]\n  *&$irvar1:class java.lang.Object *=n$15 [line 103]\n  REMOVE_TEMPS(n$13,n$14,n$15); [line 103]\n  NULLIFY(&$irvar0,false); [line 103]\n " shape="box"]
+	
+
+	 39 -> 40 ;
+	 39 -> 9 [color="red" ];
+38 [label="38:  Call List FragmentManager.getFragments() \n   NULLIFY(&$irvar0,false); [line 103]\n  NULLIFY(&this,false); [line 103]\n  n$10=*&fragmentManager:class android.support.v4.app.FragmentManager * [line 103]\n  n$11=*n$10:class android.support.v4.app.FragmentManager  [line 103]\n  n$12=_fun_List FragmentManager.getFragments()(n$10:class android.support.v4.app.FragmentManager *) virtual [line 103]\n  *&$irvar0:class java.util.List *=n$12 [line 103]\n  REMOVE_TEMPS(n$10,n$11,n$12); [line 103]\n  NULLIFY(&fragmentManager,false); [line 103]\n " shape="box"]
+	
+
+	 38 -> 39 ;
+	 38 -> 9 [color="red" ];
+37 [label="37:  Call void Activity.finish() \n   NULLIFY(&$irvar0,false); [line 99]\n  NULLIFY(&fragmentManager,false); [line 99]\n  n$8=*&this:class com.karthik.imager.MainActivity * [line 99]\n  n$9=*n$8:class com.karthik.imager.MainActivity  [line 99]\n  _fun_void Activity.finish()(n$8:class com.karthik.imager.MainActivity *) virtual [line 99]\n  REMOVE_TEMPS(n$8,n$9); [line 99]\n  NULLIFY(&this,false); [line 99]\n  APPLY_ABSTRACTION; [line 99]\n " shape="box"]
+	
+
+	 37 -> 41 ;
+	 37 -> 9 [color="red" ];
+36 [label="36: Prune (false branch) \n   n$7=*&$irvar0:int  [line 97]\n  PRUNE((n$7 == 2), false); [line 97]\n  REMOVE_TEMPS(n$7); [line 97]\n " shape="invhouse"]
+	
+
+	 36 -> 38 ;
+	 36 -> 9 [color="red" ];
+35 [label="35: Prune (true branch) \n   n$7=*&$irvar0:int  [line 97]\n  PRUNE(!(n$7 == 2), true); [line 97]\n  REMOVE_TEMPS(n$7); [line 97]\n  APPLY_ABSTRACTION; [line 97]\n " shape="invhouse"]
+	
+
+	 35 -> 41 ;
+	 35 -> 9 [color="red" ];
+34 [label="34: Prune (false branch) \n   n$6=*&$irvar0:int  [line 97]\n  PRUNE((n$6 == 1), false); [line 97]\n  REMOVE_TEMPS(n$6); [line 97]\n " shape="invhouse"]
+	
+
+	 34 -> 37 ;
+	 34 -> 9 [color="red" ];
+33 [label="33: Prune (true branch) \n   n$6=*&$irvar0:int  [line 97]\n  PRUNE(!(n$6 == 1), true); [line 97]\n  REMOVE_TEMPS(n$6); [line 97]\n " shape="invhouse"]
+	
+
+	 33 -> 35 ;
+	 33 -> 36 ;
+	 33 -> 9 [color="red" ];
+32 [label="32:  Call int FragmentManager.getBackStackEntryCount() \n   n$3=*&fragmentManager:class android.support.v4.app.FragmentManager * [line 97]\n  n$4=*n$3:class android.support.v4.app.FragmentManager  [line 97]\n  n$5=_fun_int FragmentManager.getBackStackEntryCount()(n$3:class android.support.v4.app.FragmentManager *) virtual [line 97]\n  *&$irvar0:int =n$5 [line 97]\n  REMOVE_TEMPS(n$3,n$4,n$5); [line 97]\n " shape="box"]
+	
+
+	 32 -> 33 ;
+	 32 -> 34 ;
+	 32 -> 9 [color="red" ];
+31 [label="31:  Call FragmentManager FragmentActivity.getSupportFragmentManager() \n   n$0=*&this:class com.karthik.imager.MainActivity * [line 96]\n  n$1=*n$0:class com.karthik.imager.MainActivity  [line 96]\n  n$2=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$0:class com.karthik.imager.MainActivity *) virtual [line 96]\n  *&fragmentManager:class android.support.v4.app.FragmentManager *=n$2 [line 96]\n  REMOVE_TEMPS(n$0,n$1,n$2); [line 96]\n " shape="box"]
+	
+
+	 31 -> 32 ;
+	 31 -> 9 [color="red" ];
+30 [label="30:  method_body \n   APPLY_ABSTRACTION; [line 62]\n " shape="box"]
+	
+
+	 30 -> 5 ;
+	 30 -> 6 [color="red" ];
+29 [label="29:  Call void Realm.commitTransaction() \n   n$11=*&realm:class io.realm.Realm * [line 61]\n  n$12=*n$11:class io.realm.Realm  [line 61]\n  _fun_void Realm.commitTransaction()(n$11:class io.realm.Realm *) virtual [line 61]\n  REMOVE_TEMPS(n$11,n$12); [line 61]\n  NULLIFY(&realm,false); [line 61]\n " shape="box"]
+	
+
+	 29 -> 30 ;
+	 29 -> 6 [color="red" ];
+28 [label="28:  Call RealmObject Realm.copyToRealm(RealmObject) \n   n$7=*&realm:class io.realm.Realm * [line 60]\n  n$8=*n$7:class io.realm.Realm  [line 60]\n  n$9=*&$irvar0:class com.karthik.imager.APIService.DummyObject * [line 60]\n  n$10=_fun_RealmObject Realm.copyToRealm(RealmObject)(n$7:class io.realm.Realm *,n$9:class com.karthik.imager.APIService.DummyObject *) virtual [line 60]\n  *&$irvar1:class io.realm.RealmObject *=n$10 [line 60]\n  REMOVE_TEMPS(n$7,n$8,n$9,n$10); [line 60]\n  NULLIFY(&$irvar0,false); [line 60]\n  NULLIFY(&$irvar1,false); [line 60]\n " shape="box"]
+	
+
+	 28 -> 29 ;
+	 28 -> 6 [color="red" ];
+27 [label="27:  Call DummyObject.<init>(String,String) \n   n$6=_fun___new(sizeof(class com.karthik.imager.APIService.DummyObject ):class com.karthik.imager.APIService.DummyObject *) [line 60]\n  _fun_DummyObject.<init>(String,String)(n$6:class com.karthik.imager.APIService.DummyObject *,\"DummyTitle\":class java.lang.String *,\"DummyDesc\":class java.lang.String *) [line 60]\n  *&$irvar0:class com.karthik.imager.APIService.DummyObject *=n$6 [line 60]\n  REMOVE_TEMPS(n$6); [line 60]\n " shape="box"]
+	
+
+	 27 -> 28 ;
+	 27 -> 6 [color="red" ];
+26 [label="26:  Call void Realm.beginTransaction() \n   n$4=*&realm:class io.realm.Realm * [line 59]\n  n$5=*n$4:class io.realm.Realm  [line 59]\n  _fun_void Realm.beginTransaction()(n$4:class io.realm.Realm *) virtual [line 59]\n  REMOVE_TEMPS(n$4,n$5); [line 59]\n " shape="box"]
+	
+
+	 26 -> 27 ;
+	 26 -> 6 [color="red" ];
+25 [label="25:  Call Realm Realm.getInstance(Context) \n   n$2=*&$irvar0:class android.content.Context * [line 58]\n  n$3=_fun_Realm Realm.getInstance(Context)(n$2:class android.content.Context *) [line 58]\n  *&realm:class io.realm.Realm *=n$3 [line 58]\n  REMOVE_TEMPS(n$2,n$3); [line 58]\n  NULLIFY(&$irvar0,false); [line 58]\n " shape="box"]
+	
+
+	 25 -> 26 ;
+	 25 -> 6 [color="red" ];
+24 [label="24:  method_body \n   n$0=*&this:class com.karthik.imager.MainActivity * [line 58]\n  n$1=*n$0.com.karthik.imager.MainActivity.mContext:class com.karthik.imager.MainActivity  [line 58]\n  *&$irvar0:class android.content.Context *=n$1 [line 58]\n  REMOVE_TEMPS(n$0,n$1); [line 58]\n  NULLIFY(&this,false); [line 58]\n " shape="box"]
+	
+
+	 24 -> 25 ;
+	 24 -> 6 [color="red" ];
+23 [label="23:  method_body \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 23 -> 2 ;
+	 23 -> 3 [color="red" ];
+22 [label="22:  Call AppCompatActivity.<init>() \n   n$0=*&this:class com.karthik.imager.MainActivity * [line 19]\n  _fun_AppCompatActivity.<init>()(n$0:class com.karthik.imager.MainActivity *) [line 19]\n  REMOVE_TEMPS(n$0); [line 19]\n  NULLIFY(&this,false); [line 19]\n " shape="box"]
+	
+
+	 22 -> 23 ;
+	 22 -> 3 [color="red" ];
+21 [label="21:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 42]\n  NULLIFY(&$irvar1,false); [line 42]\n  NULLIFY(&$irvar2,false); [line 42]\n  NULLIFY(&$irvar3,false); [line 42]\n  NULLIFY(&$irvar4,false); [line 42]\n  NULLIFY(&savedInstanceState,false); [line 42]\n  NULLIFY(&this,false); [line 42]\n  APPLY_ABSTRACTION; [line 42]\n " shape="box"]
+	
+
+	 21 -> 20 ;
+20 [label="20: Exit void MainActivity.onCreate(Bundle) \n  " color=yellow style=filled]
+	
+
+19 [label="19: Start void MainActivity.onCreate(Bundle)\nFormals:  this:class com.karthik.imager.MainActivity * savedInstanceState:class android.os.Bundle *\nLocals:  $irvar0:void  $irvar1:void  $irvar2:void  $irvar3:void  $irvar4:void  $irvar5:void  \n   DECLARE_LOCALS(&return,&$irvar0,&$irvar1,&$irvar2,&$irvar3,&$irvar4,&$irvar5); [line 25]\n  NULLIFY(&$irvar0,false); [line 25]\n  NULLIFY(&$irvar1,false); [line 25]\n  NULLIFY(&$irvar2,false); [line 25]\n  NULLIFY(&$irvar3,false); [line 25]\n  NULLIFY(&$irvar4,false); [line 25]\n  NULLIFY(&$irvar5,false); [line 25]\n " color=yellow style=filled]
+	
+
+	 19 -> 75 ;
+18 [label="18:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 78]\n  NULLIFY(&editor,false); [line 78]\n  NULLIFY(&i,false); [line 78]\n  NULLIFY(&sharedPreferences,false); [line 78]\n  NULLIFY(&strings,false); [line 78]\n  APPLY_ABSTRACTION; [line 78]\n " shape="box"]
+	
+
+	 18 -> 17 ;
+17 [label="17: Exit void MainActivity.fillDummyValuesInSharedPreferences() \n  " color=yellow style=filled]
+	
+
+16 [label="16: Start void MainActivity.fillDummyValuesInSharedPreferences()\nFormals:  this:class com.karthik.imager.MainActivity *\nLocals:  sharedPreferences:void  $irvar0:void  editor:void  strings:void  i:void  \n   DECLARE_LOCALS(&return,&sharedPreferences,&$irvar0,&editor,&strings,&i); [line 69]\n  NULLIFY(&$irvar0,false); [line 69]\n  NULLIFY(&editor,false); [line 69]\n  NULLIFY(&i,false); [line 69]\n  NULLIFY(&sharedPreferences,false); [line 69]\n  NULLIFY(&strings,false); [line 69]\n " color=yellow style=filled]
+	
+
+	 16 -> 51 ;
+15 [label="15:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 48]\n  NULLIFY(&menu,false); [line 48]\n  APPLY_ABSTRACTION; [line 48]\n " shape="box"]
+	
+
+	 15 -> 14 ;
+14 [label="14: Exit boolean MainActivity.onCreateOptionsMenu(Menu) \n  " color=yellow style=filled]
+	
+
+13 [label="13: Start boolean MainActivity.onCreateOptionsMenu(Menu)\nFormals:  this:class com.karthik.imager.MainActivity * menu:class android.view.Menu *\nLocals:  $irvar0:void  \n   DECLARE_LOCALS(&return,&$irvar0); [line 45]\n  NULLIFY(&$irvar0,false); [line 45]\n " color=yellow style=filled]
+	
+
+	 13 -> 48 ;
+12 [label="12:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 91]\n  NULLIFY(&id,false); [line 91]\n  NULLIFY(&item,false); [line 91]\n  NULLIFY(&this,false); [line 91]\n  APPLY_ABSTRACTION; [line 91]\n " shape="box"]
+	
+
+	 12 -> 11 ;
+11 [label="11: Exit boolean MainActivity.onOptionsItemSelected(MenuItem) \n  " color=yellow style=filled]
+	
+
+10 [label="10: Start boolean MainActivity.onOptionsItemSelected(MenuItem)\nFormals:  this:class com.karthik.imager.MainActivity * item:class android.view.MenuItem *\nLocals:  id:void  $irvar0:void  \n   DECLARE_LOCALS(&return,&id,&$irvar0); [line 82]\n  NULLIFY(&$irvar0,false); [line 82]\n  NULLIFY(&id,false); [line 82]\n " color=yellow style=filled]
+	
+
+	 10 -> 42 ;
+9 [label="9:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 106]\n  NULLIFY(&$irvar1,false); [line 106]\n  NULLIFY(&fragmentManager,false); [line 106]\n  NULLIFY(&this,false); [line 106]\n  APPLY_ABSTRACTION; [line 106]\n " shape="box"]
+	
+
+	 9 -> 8 ;
+8 [label="8: Exit void MainActivity.onBackPressed() \n  " color=yellow style=filled]
+	
+
+7 [label="7: Start void MainActivity.onBackPressed()\nFormals:  this:class com.karthik.imager.MainActivity *\nLocals:  fragmentManager:void  $irvar0:void  $irvar1:void  \n   DECLARE_LOCALS(&return,&fragmentManager,&$irvar0,&$irvar1); [line 95]\n  NULLIFY(&$irvar0,false); [line 95]\n  NULLIFY(&$irvar1,false); [line 95]\n  NULLIFY(&fragmentManager,false); [line 95]\n " color=yellow style=filled]
+	
+
+	 7 -> 31 ;
+6 [label="6:  exceptions sink \n   NULLIFY(&$irvar0,false); [line 62]\n  NULLIFY(&realm,false); [line 62]\n  APPLY_ABSTRACTION; [line 62]\n " shape="box"]
+	
+
+	 6 -> 5 ;
+5 [label="5: Exit void MainActivity.fillDummyValuesInDB() \n  " color=yellow style=filled]
+	
+
+4 [label="4: Start void MainActivity.fillDummyValuesInDB()\nFormals:  this:class com.karthik.imager.MainActivity *\nLocals:  realm:void  $irvar0:void  $irvar1:void  \n   DECLARE_LOCALS(&return,&realm,&$irvar0,&$irvar1); [line 56]\n  NULLIFY(&$irvar0,false); [line 56]\n  NULLIFY(&$irvar1,false); [line 56]\n  NULLIFY(&realm,false); [line 56]\n " color=yellow style=filled]
+	
+
+	 4 -> 24 ;
+3 [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 3 -> 2 ;
+2 [label="2: Exit MainActivity.<init>() \n  " color=yellow style=filled]
+	
+
+1 [label="1: Start MainActivity.<init>()\nFormals:  this:class com.karthik.imager.MainActivity *\nLocals:  \n   DECLARE_LOCALS(&return); [line 19]\n " color=yellow style=filled]
+	
+
+	 1 -> 22 ;
+}

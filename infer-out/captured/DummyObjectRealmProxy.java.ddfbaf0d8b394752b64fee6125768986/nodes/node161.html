@@ -1,0 +1,1423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node161</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE156">161</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.createOrUpdateUsingJsonObject(io.realm.Realm,org.json.JSONObject,bool.39a77d6c1901c495f04e66754b12efe9.html">DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean)</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE156">156</a>
+<br>PREDS:
+ <a href="./../nodes/node159.html"><span class='visited'>N_159<span class='expansion'>node159 preds:158 succs:161 exn:41 </span></span></a><br>SUCCS: 
+ <a href="./../nodes/node164.html"><span class='visited'>N_164<span class='expansion'>node164 preds:163 161 157 succs:165 166 exn:41 </span></span></a><br>EXN: 
+ <span class='dangling'>N_41<span class='expansion'>node41 preds: succs:40 exn:40 
+NOT VISITED</span></span><br>
+<span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 156];
+                          n$13=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 156];
+                          n$14=*n$13:class com.karthik.imager.APIService.DummyObject  [line 156];
+                          _fun_void DummyObject.setDummyTitle(String)(n$13:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 156];
+                          REMOVE_TEMPS(n$13,n$14); [line 156];
+                          APPLY_ABSTRACTION; [line 156];
+                          </span><hr width="100%">
+ <a name="session36"href="./../nodes/node161.html#session36">node161#session36</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE156">156</a>)<LISTING><span class='color_black'>**** [FP:0] DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean) Node: 161, Procedure: DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean), Session: 36, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_red'>$irvar0 != 0</span> ;  <span class='color_red'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($irvar0)</span> ;  <span class='color_red'>obj != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+  <span class='color_red'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+  <span class='color_red'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+  <span class='color_red'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = @f$4 <span class='color_orange'>update:155</span>:void </span> ;
+  <span class='color_red'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+  <span class='color_red'>obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+  <span class='color_red'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>$irvar0 != 0</span> *
+     <span class='color_red'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+     <span class='color_red'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+     <span class='color_red'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+     <span class='color_red'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+     <span class='color_red'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 156];
+  n$13=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 156];
+  n$14=*n$13:class com.karthik.imager.APIService.DummyObject  [line 156];
+  _fun_void DummyObject.setDummyTitle(String)(n$13:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 156];
+  REMOVE_TEMPS(n$13,n$14); [line 156];
+  APPLY_ABSTRACTION; [line 156];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 156]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$13=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 156]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;obj
+    Prop: 
+    <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$116 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;obj
+    prop before:
+    <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$116 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$116 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$13 = obj</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$14=*n$13:class com.karthik.imager.APIService.DummyObject  [line 156]</span>
+    .... Rearrangement Start ....
+    Exp: @f$2
+    Prop: 
+    <span class='color_blue'>n$13 = obj ;
+    @f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$117 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    
+    <span class='color_orange'>WARNING: Cannot extend </span>@f$2 in
+    <span class='color_blue'>n$13 = obj ;
+    @f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$117 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    in prop_iter_extend_ptsto lexp: @f$2
+    prop before:
+    <span class='color_blue'>n$13 = obj ;
+    @f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$117 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$13 = obj</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$117 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$13 = obj</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>_fun_void DummyObject.setDummyTitle(String)(n$13:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 156]</span>
+    Found 1 specs for function void DummyObject.setDummyTitle(String)
+    START EXECUTING SPECS FOR void DummyObject.setDummyTitle(String) from state
+    <span class='color_blue'>n$13 = obj ;
+    @f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    EXECUTING SPEC 1/1
+    ACTUAL PRECONDITION =
+      <span class='color_blue'>n$13 = obj ;
+      @f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+      old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = @f$2 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+      old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+      obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+      json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+      [footprint
+         @f$5 != 0 ;  @f$4 != 0 *
+         update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+         realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+         json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+         $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+         $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+         $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+         old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+         json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    SPEC =
+      --------------------------- ---------- ---------------------------
+      PRE:
+      <span class='color_blue'><span class='color_blue'>this|callee = _t$240 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      dummyTitle|callee = _t$241 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$242 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      POST 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = _t$243 <span class='color_orange'>initial</span>:void </span> ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:<span class='color_red'>dummyTitle|callee <span class='color_orange'>update:(z)25</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      ----------------------------------------------------------------
+    pre_check_pure_implication
+    pi1:
+      n$13 = @f$2 ;  @f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  @f$2 != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(@f$2)
+    pi2:
+      
+    returns
+    sub1: 
+      n$13 = @f$2
+    sub2: 
+      
+    Current Implication
+    SUB:
+      n$13 = @f$2
+    <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;  obj = obj ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    this|callee = @f$2 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    |-
+    <span class='color_blue'>this|callee = _t$240 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    dummyTitle|callee = _t$241 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+    this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$242 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    
+      do_imply @f$2 _t$240
+        Current Implication
+        SUB:
+          n$13 = @f$2
+        <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;  obj = obj ;
+        old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+        return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+        old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+        realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+        obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+        old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+        json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+        dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+        $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+        old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+        obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+        json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+        [footprint
+           @f$5 != 0 ;  @f$4 != 0 *
+           update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+           realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+           json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+           $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+           $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+           $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+           old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+           json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+        [SUB: 
+          _t$240 = @f$2]
+        |-
+        <span class='color_blue'>dummyTitle|callee = _t$241 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+        @f$2|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$242 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+        
+          do_imply null _t$241
+            Current Implication
+            SUB:
+              n$13 = @f$2
+            <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;  obj = obj ;
+            old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+            return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+            old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+            realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+            obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+            old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+            json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+            $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+            old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+            obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+            json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+            [footprint
+               @f$5 != 0 ;  @f$4 != 0 *
+               update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+               realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+               json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+               $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+               $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+               $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+               old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+               json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+            [SUB: 
+              _t$240 = @f$2 ;  _t$241 = null]
+            |-
+            <span class='color_blue'>@f$2|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$242 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+            
+                Final Implication
+                SUB:
+                  n$13 = @f$2
+                <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;  obj = obj ;
+                old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+                update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+                return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+                old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+                realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+                obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+                old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+                json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+                $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+                old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+                json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+                [footprint
+                   @f$5 != 0 ;  @f$4 != 0 *
+                   update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+                   realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+                   json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+                   $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+                   $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+                   $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+                   old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+                   json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+                [SUB: 
+                  _t$240 = @f$2 ;  _t$241 = null ;  _t$242 = @f$18
+                MISSING FLD: 
+                  @f$2|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$242 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)]
+                |-
+                <span class='color_blue'></span>
+                [FRAME TYPING:
+                  @f$2: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    Result of Abduction
+      SUB:
+        n$13 = @f$2
+      <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;  obj = obj ;
+      old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = @f$2 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+      old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+      old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+      obj|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+      json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+      [footprint
+         @f$5 != 0 ;  @f$4 != 0 *
+         update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+         realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+         json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+         $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+         $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+         $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+         old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+         json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+      [SUB: 
+        _t$240 = @f$2 ;  _t$241 = null ;  _t$242 = @f$18
+      MISSING FLD: 
+        @f$2|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$242 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)]
+      |-
+      <span class='color_blue'>this|callee = @f$2 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      dummyTitle|callee = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$18 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      [FRAME TYPING:
+        @f$2: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    returning TRUE
+    pvar: this
+    parameter number: 1
+    exp_rv_dexp: normal var n$13
+    find_normal_variable_letderef defining &amp;obj
+    exp_lv_dexp: program var &amp;obj
+    lookup: found Dpvar 
+    <span class='color_red'>found error in dereference</span>
+    spec_pre:
+    <span class='color_blue'>this|callee = _t$240 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    dummyTitle|callee = _t$241 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+    this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$242 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    exp _t$240 desc: object obj last assigned on line 153 could be assigned by a call to skip function createObject(...)at line 153 and is dereferenced or freed at line 156
+      New footprint:
+      
+      Frame fld:
+      
+      Frame typ:
+      @f$2: class com.karthik.imager.APIService.DummyObject ( sub ) 
+      Missing fld:
+      @f$2|->{com.karthik.imager.APIService.DummyObject.dummyTitle:@f$18 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)
+      Instantiated frame:
+      &amp;old_update|->@f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;update|->0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      &amp;return|->n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      &amp;old_realm|->@f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      &amp;realm|->0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      &amp;obj|->@f$2 <span class='color_orange'>update:153</span>:void  ; 
+      &amp;old_json|->@f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      &amp;json|->@f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      &amp;$irvar0|->0 <span class='color_orange'>nullify</span>:void  ; 
+      @f$1|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+      @f$3|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+      Instantiated post:
+      PROP 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = _t$243 <span class='color_orange'>initial</span>:void </span> ;
+      <span class='color_red'>@f$2|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      
+    ***** RESULTS FUNCTION CALL *******
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$13 = obj</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    ***** END RESULTS FUNCTION CALL *******
+    pvar: obj
+    <span class='color_red'>found error in dereference</span>
+    spec_pre:
+    <span class='color_blue'>n$13 = obj ;
+    @f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$118 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    exp @f$2 desc: 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$13 = obj</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_red'>obj != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$13,n$14); [line 156]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>obj != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 156]</span>
+    <span class='color_blue'>@f$5 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4) ;  obj != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj) ;
+    old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = @f$2 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+    obj|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )
+    [footprint
+       @f$5 != 0 ;  @f$4 != 0 ;  obj != 0 *
+       update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+       $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+       json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )  ]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>obj != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155(@f$4)</span> ;  <span class='color_blue'>obj != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(obj)</span> ;
+    <span class='color_blue'>old_update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = @f$2 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>obj|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_red'>obj != 0</span> *
+       <span class='color_blue'>update = @f$0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>json = @f$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_blue'>json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session80"href="./../nodes/node161.html#session80">node161#session80</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE156">156</a>)<LISTING><span class='color_black'>**** [RE:0] DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean) Node: 161, Procedure: DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean), Session: 80, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_red'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_red'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;
+  <span class='color_red'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+  <span class='color_red'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>obj = val$8 <span class='color_orange'>update:153</span>:void </span> ; 
+  <span class='color_red'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+  <span class='color_red'>$irvar0 = val$4 <span class='color_orange'>update:155</span>:void </span> ; 
+  <span class='color_red'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+  <span class='color_red'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+  <span class='color_red'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 156];
+  n$13=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 156];
+  n$14=*n$13:class com.karthik.imager.APIService.DummyObject  [line 156];
+  _fun_void DummyObject.setDummyTitle(String)(n$13:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 156];
+  REMOVE_TEMPS(n$13,n$14); [line 156];
+  APPLY_ABSTRACTION; [line 156];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 156]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = val$8 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span></span>
+    
+    Instruction <span class='color_green'>n$13=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 156]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;obj
+    Prop: 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$83 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = val$8 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = <span class='color_red'>n$13 <span class='color_orange'>update:153</span></span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = <span class='color_red'>n$13 <span class='color_orange'>formal</span></span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$14=*n$13:class com.karthik.imager.APIService.DummyObject  [line 156]</span>
+    .... Rearrangement Start ....
+    Exp: n$13
+    Prop: 
+    <span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$84 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = n$13 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>_fun_void DummyObject.setDummyTitle(String)(n$13:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 156]</span>
+    Found 1 specs for function void DummyObject.setDummyTitle(String)
+    START EXECUTING SPECS FOR void DummyObject.setDummyTitle(String) from state
+    <span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+    EXECUTING SPEC 1/1
+    ACTUAL PRECONDITION =
+      <span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+      $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;
+      old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = n$13 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+      old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+      old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+      json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+    SPEC =
+      --------------------------- ---------- ---------------------------
+      PRE:
+      <span class='color_blue'><span class='color_blue'>this|callee = _t$200 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      dummyTitle|callee = _t$201 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$202 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      POST 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = _t$203 <span class='color_orange'>initial</span>:void </span> ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:<span class='color_red'>dummyTitle|callee <span class='color_orange'>update:(z)25</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      ----------------------------------------------------------------
+    pre_check_pure_implication
+    pi1:
+      val$8 = n$13 ;  val$7 != 0 ;  val$6 != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154(val$6) ;  val$5 != 0 ;  val$4 != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155(val$4) ;  n$13 != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153(n$13)
+    pi2:
+      
+    returns
+    sub1: 
+      val$8 = n$13
+    sub2: 
+      val$8 = n$13
+    Current Implication
+    SUB:
+      val$8 = n$13
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    this|callee = n$13 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+    [SUB: 
+      val$8 = n$13]
+    |-
+    <span class='color_blue'>this|callee = _t$200 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    dummyTitle|callee = _t$201 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+    this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$202 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    
+      do_imply n$13 _t$200
+        Current Implication
+        SUB:
+          val$8 = n$13
+        <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+        old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+        return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+        old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+        realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+        obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+        old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+        json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+        dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+        $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+        $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+        $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+        $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+        $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+        old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+        json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+        [SUB: 
+          val$8 = n$13 ;  _t$200 = n$13]
+        |-
+        <span class='color_blue'>dummyTitle|callee = _t$201 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+        n$13|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$202 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+        
+          do_imply null _t$201
+            Current Implication
+            SUB:
+              val$8 = n$13
+            <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+            old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+            return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+            old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+            realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+            obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+            old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+            json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+            $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+            $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+            $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+            $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+            $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+            old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+            json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+            [SUB: 
+              val$8 = n$13 ;  _t$200 = n$13 ;  _t$201 = null]
+            |-
+            <span class='color_blue'>n$13|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$202 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+            
+                Final Implication
+                SUB:
+                  val$8 = n$13
+                <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+                old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+                update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+                return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+                old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+                realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+                obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+                old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+                json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+                $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+                $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+                $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+                $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+                $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+                $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+                $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+                old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+                json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+                [SUB: 
+                  val$8 = n$13 ;  _t$200 = n$13 ;  _t$201 = null ;  _t$202 = %path%n13_com.karthik.imager.APIService.DummyObject.dummyTitle$-3
+                MISSING FLD: 
+                  n$13|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$202 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)]
+                |-
+                <span class='color_blue'></span>
+                [FRAME TYPING:
+                  n$13: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    Result of Abduction
+      SUB:
+        val$8 = n$13
+      <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+      old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      this|callee = n$13 <span class='color_orange'>actual_precondition</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+      old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      dummyTitle|callee = null <span class='color_orange'>actual_precondition</span>:class java.lang.Object * ; 
+      $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+      $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+      $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast) ; 
+      old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+      json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+      [SUB: 
+        val$8 = n$13 ;  _t$200 = n$13 ;  _t$201 = null ;  _t$202 = %path%n13_com.karthik.imager.APIService.DummyObject.dummyTitle$-3
+      MISSING FLD: 
+        n$13|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$202 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)]
+      |-
+      <span class='color_blue'>this|callee = n$13 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+      dummyTitle|callee = null <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+      this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:%path%n13_com.karthik.imager.APIService.DummyObject.dummyTitle$-3 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+      [FRAME TYPING:
+        n$13: class com.karthik.imager.APIService.DummyObject ( sub ) ]
+    returning TRUE
+    pvar: this
+    parameter number: 1
+    exp_rv_dexp: normal var n$13
+    find_normal_variable_letderef defining &amp;obj
+    exp_lv_dexp: program var &amp;obj
+    lookup: found Dpvar 
+    <span class='color_red'>found error in dereference</span>
+    spec_pre:
+    <span class='color_blue'>this|callee = _t$200 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ; 
+    dummyTitle|callee = _t$201 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ;
+    this|callee|->{com.karthik.imager.APIService.DummyObject.dummyTitle:_t$202 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>rearrange:(z)25</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    exp _t$200 desc: object obj last assigned on line 153 could be assigned by a call to skip function createObject(...)at line 153 and is dereferenced or freed at line 156
+    <span class='color_orange'>WARNING: Missing fields hpred has non-footprint vars: </span>n$13|->{com.karthik.imager.APIService.DummyObject.dummyTitle:%path%n13_com.karthik.imager.APIService.DummyObject.dummyTitle$-3 <span class='color_orange'>rearrange:(z)25</span>} <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject ( sub )(cast)
+      New footprint:
+      
+      Frame fld:
+      
+      Frame typ:
+      n$13: class com.karthik.imager.APIService.DummyObject ( sub ) 
+      Missing fld:
+      
+      Instantiated frame:
+      &amp;old_update|->val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;update|->0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+      &amp;return|->n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+      &amp;old_realm|->val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+      &amp;realm|->0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+      &amp;obj|->n$13 <span class='color_orange'>update:153</span>:void  ; 
+      &amp;old_json|->val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      &amp;json|->val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+      &amp;$irvar0|->0 <span class='color_orange'>nullify</span>:void  ; 
+      &amp;$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar|->0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar|->val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar|->val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar|->val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+      &amp;$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar|->val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+      &amp;$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ; 
+      val$2|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+      val$3|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )
+      Instantiated post:
+      PROP 1 of 1:
+      <span class='color_blue'><span class='color_red'>return|callee = _t$203 <span class='color_orange'>initial</span>:void </span> ;
+      <span class='color_red'>n$13|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+      
+    ***** RESULTS FUNCTION CALL *******
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = n$13 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span></span>
+    ***** END RESULTS FUNCTION CALL *******
+    pvar: $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject
+    <span class='color_red'>found error in dereference</span>
+    spec_pre:
+    <span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar ;
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;  $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = n$85 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = n$13 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub ) ; 
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span>
+    exp n$13 desc: 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$8 = $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = n$13 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = n$13 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span> ; 
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$13,n$14); [line 156]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = <span class='color_red'>val$8 <span class='color_orange'>update:153</span></span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = <span class='color_red'>val$8 <span class='color_orange'>formal</span></span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+    <span class='color_red'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    Instruction <span class='color_green'>APPLY_ABSTRACTION; [line 156]</span>
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar) ;  $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0 ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar) ;  $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0 ;  $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0 ;  UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar) ;
+    old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub ) ; 
+    return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject * ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub ) ; 
+    obj = val$8 <span class='color_orange'>update:153</span>:void  ; 
+    old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub ) ; 
+    json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub ) ; 
+    $RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = val$8 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153($RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.has(String) &gt; :154($RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean JSONObject.isNull(String) &gt; :155($RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>update = 0 <span class='color_orange'>nullify</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = 0 <span class='color_orange'>nullify</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>obj = val$8 <span class='color_orange'>update:153</span>:void </span> ; 
+    <span class='color_blue'>old_json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.isNull(java.lang.String):boolean|abductedRetvar = val$4 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.has(java.lang.String):boolean|abductedRetvar = val$6 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_org.json.JSONObject.getString(java.lang.String):java.lang.String|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class java.lang.String *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.createObject(java.lang.Class):io.realm.RealmObject|abductedRetvar|->{<span class='color_red'>com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span></span>
+    
+    
+    
+  

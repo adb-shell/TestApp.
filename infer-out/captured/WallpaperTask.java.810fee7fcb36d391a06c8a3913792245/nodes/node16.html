@@ -1,0 +1,1519 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node16</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../WallpaperTask.java.810fee7fcb36d391a06c8a3913792245.html#LINE45">16</a></h1></center>PROC:  <a href="./../com.karthik.imager.WallpaperTask.onPostExecute(java.lang.Boolean):void.10c83e324e12bd2fb30555177da9a908.html">void WallpaperTask.onPostExecute(Boolean)</a> LINE: <a href="./../../WallpaperTask.java.810fee7fcb36d391a06c8a3913792245.html#LINE45">45</a>
+<br>PREDS:
+ <a href="./../nodes/node1.html"><span class='visited'>N_1<span class='expansion'>node1 preds: succs:16 exn:2 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_17<span class='expansion'>node17 preds:16 succs:18 19 exn:3 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_3<span class='expansion'>node3 preds: succs:2 exn:2 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45];
+                          n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45];
+                          n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45];
+                          n$3=*n$2:class com.karthik.imager.MainActivity  [line 45];
+                          n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45];
+                          *&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45];
+                          REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45];
+                          NULLIFY(&amp;this,false); [line 45];
+                          </span><hr width="100%">
+ <a name="session2"href="./../nodes/node16.html#session2">node16#session2</a>( <a href="./../../WallpaperTask.java.810fee7fcb36d391a06c8a3913792245.html#LINE45">45</a>)<LISTING><span class='color_black'>**** [FP:0] void WallpaperTask.onPostExecute(Boolean) Node: 16, Procedure: void WallpaperTask.onPostExecute(Boolean), Session: 2, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>old_success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span>
+  [footprint
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+     <span class='color_red'>success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45];
+  n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45];
+  n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45];
+  n$3=*n$2:class com.karthik.imager.MainActivity  [line 45];
+  n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45];
+  *&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45];
+  REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45];
+  NULLIFY(&amp;this,false); [line 45];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$5 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+       success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;this
+    prop before:
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$5 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+       success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = n$5 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$0 = this</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: @f$0.com.karthik.imager.WallpaperTask.mContext
+    Prop: 
+    <span class='color_blue'>n$0 = this ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$6 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void 
+    [footprint
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+       success = @f$1 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$0|->{com.karthik.imager.WallpaperTask.mContext:@f$2 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = this</span> ;  <span class='color_red'>n$1 = @f$1</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span>
+    [footprint
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class java.lang.Boolean *( sub )</span> ;
+       <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = this</span> ;  <span class='color_blue'>n$1 = @f$1</span> ;  <span class='color_red'>n$2 = @f$1</span> ;
+    <span class='color_red'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_red'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_red'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$3=*n$2:class com.karthik.imager.MainActivity  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>n$0 = this ;  n$1 = @f$1 ;  n$2 = @f$1 ;
+    @f$1 != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$8 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)
+    [footprint
+       @f$1 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+       success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ;
+       this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$1
+    prop before:
+    <span class='color_blue'>n$0 = this ;  n$1 = @f$1 ;  n$2 = @f$1 ;
+    @f$1 != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$8 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)
+    [footprint
+       @f$1 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+       success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ;
+       this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = this</span> ;  <span class='color_blue'>n$1 = @f$1</span> ;  <span class='color_blue'>n$2 = @f$1</span> ;
+    <span class='color_blue'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = n$8 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = this</span> ;  <span class='color_blue'>n$1 = @f$1</span> ;  <span class='color_blue'>n$2 = @f$1</span> ;
+    <span class='color_blue'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION FragmentManager FragmentActivity.getSupportFragmentManager()</span>
+    Undefined function FragmentManager FragmentActivity.getSupportFragmentManager(), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$4 = @f$3
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = this</span> ;  <span class='color_blue'>n$1 = @f$1</span> ;  <span class='color_blue'>n$2 = @f$1</span> ;  <span class='color_red'>n$4 = @f$3</span> ;
+    <span class='color_red'>@f$3 != 0</span> ;  <span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(@f$3)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+       <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;manager
+    Prop: 
+    <span class='color_blue'>n$0 = this ;  n$1 = @f$1 ;  n$2 = @f$1 ;  n$4 = @f$3 ;
+    @f$3 != 0 ;  UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(@f$3) ;  @f$1 != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$10 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)
+    [footprint
+       @f$1 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+       success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+       $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+       this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;manager
+    prop before:
+    <span class='color_blue'>n$0 = this ;  n$1 = @f$1 ;  n$2 = @f$1 ;  n$4 = @f$3 ;
+    @f$3 != 0 ;  UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(@f$3) ;  @f$1 != 0 ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$10 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)
+    [footprint
+       @f$1 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+       success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+       $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+       this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+       @f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = this</span> ;  <span class='color_blue'>n$1 = @f$1</span> ;  <span class='color_blue'>n$2 = @f$1</span> ;  <span class='color_blue'>n$4 = @f$3</span> ;
+    <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(@f$3)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = n$10 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$0 = this</span> ;  <span class='color_blue'>n$1 = @f$1</span> ;  <span class='color_blue'>n$2 = @f$1</span> ;  <span class='color_blue'>n$4 = manager</span> ;
+    <span class='color_blue'>manager != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(manager)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>@f$3 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>manager != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(manager)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = @f$3 <span class='color_orange'>update:45</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;this,false); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>manager != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(manager)</span> ;  <span class='color_blue'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = @f$3 <span class='color_orange'>update:45</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_blue'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = @f$2 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+       <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_blue'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>manager != 0</span> ;  <span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45(manager)</span> ;  <span class='color_red'>@f$1 != 0</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>@f$3 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_red'>old_this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>
+    [footprint
+       <span class='color_red'>@f$1 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+       <span class='color_blue'>success = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class java.lang.Boolean *( sub )</span> ; 
+       <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+       <span class='color_red'>old_this|->{com.karthik.imager.WallpaperTask.mContext:@f$1 <span class='color_orange'>rearrange:(z)45</span>} <span class='color_orange'>rearrange:(z)45</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+       <span class='color_red'>@f$1|->{} <span class='color_orange'>none</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session15"href="./../nodes/node16.html#session15">node16#session15</a>( <a href="./../../WallpaperTask.java.810fee7fcb36d391a06c8a3913792245.html#LINE45">45</a>)<LISTING><span class='color_black'>**** [RE:0] void WallpaperTask.onPostExecute(Boolean) Node: 16, Procedure: void WallpaperTask.onPostExecute(Boolean), Session: 15, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>val$2 != 0</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+  <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+  <span class='color_red'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+  <span class='color_red'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45];
+  n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45];
+  n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45];
+  n$3=*n$2:class com.karthik.imager.MainActivity  [line 45];
+  n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45];
+  *&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45];
+  REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45];
+  NULLIFY(&amp;this,false); [line 45];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  val$2 != 0 ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$5 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$1 = this</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: n$0.com.karthik.imager.WallpaperTask.mContext
+    Prop: 
+    <span class='color_blue'>val$1 = this ;
+    (1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  val$2 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$6 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:<span class='color_red'>n$1 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$3=*n$2:class com.karthik.imager.MainActivity  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: n$1
+    Prop: 
+    <span class='color_blue'>n$2 = n$1 ;  val$1 = this ;  val$2 = n$1 ;
+    (1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  n$1 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$8 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION FragmentManager FragmentActivity.getSupportFragmentManager()</span>
+    Undefined function FragmentManager FragmentActivity.getSupportFragmentManager(), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;  <span class='color_blue'>val$7 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = <span class='color_red'>n$4 <span class='color_orange'>formal</span></span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;manager
+    Prop: 
+    <span class='color_blue'>n$2 = n$1 ;  val$1 = this ;  val$2 = n$1 ;  val$7 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar ;
+    (1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar) ;  n$1 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$10 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = n$4 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub ) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;  <span class='color_blue'>val$7 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>n$4 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = n$4 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>val$7 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = <span class='color_red'>val$7 <span class='color_orange'>formal</span></span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;this,false); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = val$7 <span class='color_orange'>update:45</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45</span>($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>val$7 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = 0 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$6 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session27"href="./../nodes/node16.html#session27">node16#session27</a>( <a href="./../../WallpaperTask.java.810fee7fcb36d391a06c8a3913792245.html#LINE45">45</a>)<LISTING><span class='color_black'>**** [RE:0] void WallpaperTask.onPostExecute(Boolean) Node: 16, Procedure: void WallpaperTask.onPostExecute(Boolean), Session: 27, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>val$2 != 0</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+  <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+  <span class='color_red'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+  <span class='color_red'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45];
+  n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45];
+  n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45];
+  n$3=*n$2:class com.karthik.imager.MainActivity  [line 45];
+  n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45];
+  *&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45];
+  REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45];
+  NULLIFY(&amp;this,false); [line 45];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  val$2 != 0 ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$38 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$1 = this</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: n$0.com.karthik.imager.WallpaperTask.mContext
+    Prop: 
+    <span class='color_blue'>val$1 = this ;
+    (1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  val$2 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$39 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:<span class='color_red'>n$1 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$3=*n$2:class com.karthik.imager.MainActivity  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: n$1
+    Prop: 
+    <span class='color_blue'>n$2 = n$1 ;  val$1 = this ;  val$2 = n$1 ;
+    (1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  n$1 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$41 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45]</span>
+    Undefined function FragmentManager FragmentActivity.getSupportFragmentManager(), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;  <span class='color_blue'>val$8 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = <span class='color_red'>n$4 <span class='color_orange'>formal</span></span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;manager
+    Prop: 
+    <span class='color_blue'>n$2 = n$1 ;  val$1 = this ;  val$2 = n$1 ;  val$8 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar ;
+    (1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar) ;  $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0 ;  $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0 ;  $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0 ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar) ;  n$1 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$43 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = n$4 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub ) ; 
+    success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub ) ; 
+    $RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;  <span class='color_blue'>val$8 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar</span> ;
+    <span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>n$4 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = n$4 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>val$8 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = <span class='color_red'>val$8 <span class='color_orange'>formal</span></span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;this,false); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = val$8 <span class='color_orange'>update:45</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>(1  &lt;  $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45</span>($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar != 0</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>val$8 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.util.AbstractList.get(int):java.lang.Object|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Boolean.booleanValue():boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.util.List *( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$7 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$8 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>success|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Boolean ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getFragments():java.util.List|abductedRetvar|->{} <span class='color_orange'>formal</span>:class java.util.List ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session39"href="./../nodes/node16.html#session39">node16#session39</a>( <a href="./../../WallpaperTask.java.810fee7fcb36d391a06c8a3913792245.html#LINE45">45</a>)<LISTING><span class='color_black'>**** [RE:0] void WallpaperTask.onPostExecute(Boolean) Node: 16, Procedure: void WallpaperTask.onPostExecute(Boolean), Session: 39, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_red'>val$2 != 0</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+  <span class='color_red'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+  <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+  <span class='color_red'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45];
+  n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45];
+  n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45];
+  n$3=*n$2:class com.karthik.imager.MainActivity  [line 45];
+  n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45];
+  *&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45];
+  REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45];
+  NULLIFY(&amp;this,false); [line 45];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$0=*&amp;this:class com.karthik.imager.WallpaperTask * [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;this
+    Prop: 
+    <span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1) ;  val$2 != 0 ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$71 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$1 = this</span> ;
+    <span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>n$0 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$1=*n$0.com.karthik.imager.WallpaperTask.mContext:class com.karthik.imager.WallpaperTask  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: n$0.com.karthik.imager.WallpaperTask.mContext
+    Prop: 
+    <span class='color_blue'>val$1 = this ;
+    ($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1) ;  val$2 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$72 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_red'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:<span class='color_red'>n$1 <span class='color_orange'>formal(z)</span></span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$2=_fun___cast(n$1:class android.content.Context *,sizeof(class com.karthik.imager.MainActivity ( sub )(cast)):void ) [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$3=*n$2:class com.karthik.imager.MainActivity  [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: n$1
+    Prop: 
+    <span class='color_blue'>n$2 = n$1 ;  val$1 = this ;  val$2 = n$1 ;
+    ($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1) ;  n$1 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$74 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;
+    <span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$4=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$2:class com.karthik.imager.MainActivity *) virtual [line 45]</span>
+    Undefined function FragmentManager FragmentActivity.getSupportFragmentManager(), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;  <span class='color_red'>val$5 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar</span> ;
+    <span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = <span class='color_red'>n$4 <span class='color_orange'>formal</span></span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;manager:class android.support.v4.app.FragmentManager *=n$4 [line 45]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;manager
+    Prop: 
+    <span class='color_blue'>n$2 = n$1 ;  val$1 = this ;  val$2 = n$1 ;  val$5 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar ;
+    ($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1) ;  $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0 ;  UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar) ;  n$1 != 0 ;
+    old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub ) ; 
+    old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub ) ; 
+    return = n$76 <span class='color_orange'>initial</span>:void  ; 
+    manager = 0 <span class='color_orange'>nullify</span>:void  ; 
+    detailsFragment = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub ) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = n$4 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub ) ;
+    this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub ) ; 
+    n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast) ; 
+    $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$2 = n$1</span> ;  <span class='color_blue'>val$1 = this</span> ;  <span class='color_blue'>val$2 = n$1</span> ;  <span class='color_blue'>val$5 = $RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar</span> ;
+    <span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>n$1 != 0</span> ;
+    <span class='color_blue'>old_this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = n$0 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>n$4 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = n$4 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.WallpaperTask.mContext:n$1 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>n$1|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$0,n$1,n$2,n$3,n$4); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>val$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>val$5 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = <span class='color_red'>val$5 <span class='color_orange'>formal</span></span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_red'>this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_red'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;this,false); [line 45]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = val$5 <span class='color_orange'>update:45</span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>($RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar  &lt;=  1)</span> ;  <span class='color_red'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; FragmentManager FragmentActivity.getSupportFragmentManager() &gt; :45($RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar)</span> ;  <span class='color_blue'>val$2 != 0</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class com.karthik.imager.WallpaperTask *( sub )</span> ; 
+    <span class='color_blue'>old_success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>success = val$3 <span class='color_orange'>formal</span>:class java.lang.Boolean *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>manager = <span class='color_red'>val$5 <span class='color_orange'>update:45</span></span>:void </span> ; 
+    <span class='color_blue'>detailsFragment = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentManager.getBackStackEntryCount():int|abductedRetvar = val$4 <span class='color_orange'>formal</span>:int ( sub )</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar = val$5 <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.WallpaperTask.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.WallpaperTask ( sub )</span> ; 
+    <span class='color_blue'>val$2|->{} <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity ( sub )(cast)</span> ; 
+    <span class='color_blue'>$RET_android.support.v4.app.FragmentActivity.getSupportFragmentManager():android.support.v4.app.FragmentManager|abductedRetvar|->{} <span class='color_orange'>formal</span>:class android.support.v4.app.FragmentManager ( sub )</span></span>
+    
+    
+    
+  

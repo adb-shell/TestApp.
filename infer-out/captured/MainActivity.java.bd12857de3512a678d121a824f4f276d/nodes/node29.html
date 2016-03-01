@@ -1,0 +1,518 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node29</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE61">29</a></h1></center>PROC:  <a href="./../com.karthik.imager.MainActivity.fillDummyValuesInDB():void.67dd67e84f1ce8596642484b53258006.html">void MainActivity.fillDummyValuesInDB()</a> LINE: <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE61">61</a>
+<br>PREDS:
+ <a href="./../nodes/node28.html"><span class='visited'>N_28<span class='expansion'>node28 preds:27 succs:29 exn:6 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_30<span class='expansion'>node30 preds:29 succs:5 exn:6 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_6<span class='expansion'>node6 preds: succs:5 exn:5 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$11=*&amp;realm:class io.realm.Realm * [line 61];
+                          n$12=*n$11:class io.realm.Realm  [line 61];
+                          _fun_void Realm.commitTransaction()(n$11:class io.realm.Realm *) virtual [line 61];
+                          REMOVE_TEMPS(n$11,n$12); [line 61];
+                          NULLIFY(&amp;realm,false); [line 61];
+                          </span><hr width="100%">
+ <a name="session7"href="./../nodes/node29.html#session7">node29#session7</a>( <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE61">61</a>)<LISTING><span class='color_black'>**** [FP:0] void MainActivity.fillDummyValuesInDB() Node: 29, Procedure: void MainActivity.fillDummyValuesInDB(), Session: 7, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>@f$3 != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_red'>realm != 0</span> ;  <span class='color_red'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>realm = @f$2 <span class='color_orange'>update:58</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+  <span class='color_red'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>
+  [footprint
+     <span class='color_red'>realm != 0</span> *
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+     <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+     <span class='color_red'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$11=*&amp;realm:class io.realm.Realm * [line 61];
+  n$12=*n$11:class io.realm.Realm  [line 61];
+  _fun_void Realm.commitTransaction()(n$11:class io.realm.Realm *) virtual [line 61];
+  REMOVE_TEMPS(n$11,n$12); [line 61];
+  NULLIFY(&amp;realm,false); [line 61];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$11=*&amp;realm:class io.realm.Realm * [line 61]</span>
+    in vpath_find exp:n$23
+    vpath_find: cannot find n$23
+    .... Rearrangement Start ....
+    Exp: &amp;realm
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$23) ;  @f$3 != 0 ;  UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3) ;  realm != 0 ;  UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$22 <span class='color_orange'>initial</span>:void  ; 
+    realm = @f$2 <span class='color_orange'>update:58</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )
+    [footprint
+       realm != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub ) ; 
+       $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+       realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;realm
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$23) ;  @f$3 != 0 ;  UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3) ;  realm != 0 ;  UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$22 <span class='color_orange'>initial</span>:void  ; 
+    realm = @f$2 <span class='color_orange'>update:58</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )
+    [footprint
+       realm != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub ) ; 
+       $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+       realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$23)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_blue'>realm != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = n$22 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>
+    [footprint
+       <span class='color_blue'>realm != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$11 = realm</span> ;
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_blue'>realm != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>
+    [footprint
+       <span class='color_blue'>realm != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$12=*n$11:class io.realm.Realm  [line 61]</span>
+    in vpath_find exp:n$25
+    vpath_find: cannot find n$25
+    .... Rearrangement Start ....
+    Exp: @f$2
+    Prop: 
+    <span class='color_blue'>n$11 = realm ;
+    MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$25) ;  @f$3 != 0 ;  UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3) ;  realm != 0 ;  UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$24 <span class='color_orange'>initial</span>:void  ; 
+    realm = @f$2 <span class='color_orange'>update:58</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )
+    [footprint
+       realm != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub ) ; 
+       $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+       realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$2
+    prop before:
+    <span class='color_blue'>n$11 = realm ;
+    MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$25) ;  @f$3 != 0 ;  UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3) ;  realm != 0 ;  UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$24 <span class='color_orange'>initial</span>:void  ; 
+    realm = @f$2 <span class='color_orange'>update:58</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )
+    [footprint
+       realm != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+       $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub ) ; 
+       $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub ) ;
+       old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+       realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$11 = realm</span> ;
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$25)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_blue'>realm != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = n$24 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>
+    [footprint
+       <span class='color_blue'>realm != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$11 = realm</span> ;
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_blue'>realm != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>
+    [footprint
+       <span class='color_blue'>realm != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>_fun_void Realm.commitTransaction()(n$11:class io.realm.Realm *) virtual [line 61]</span>
+    in vpath_find exp:n$27
+    vpath_find: cannot find n$27
+    <span class='color_blue'>INFO: SKIP_FUNCTION void Realm.commitTransaction()</span>
+    Undefined function void Realm.commitTransaction(), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$11 = realm</span> ;
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_blue'>realm != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>
+    [footprint
+       <span class='color_blue'>realm != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$11,n$12); [line 61]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_blue'>realm != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(realm)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = @f$2 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>
+    [footprint
+       <span class='color_blue'>realm != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$1 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+       <span class='color_blue'>realm|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;realm,false); [line 61]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$2 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$0 != 0</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$2 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60(@f$3)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; Realm Realm.getInstance(Context) &gt; :58(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$2 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$0 != 0</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$1 <span class='color_orange'>formal</span></span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmObject *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:59</span>:class io.realm.Realm ( sub )</span> ; 
+       <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:@f$2 <span class='color_orange'>rearrange:(z)58</span>} <span class='color_orange'>rearrange:(z)58</span>:class com.karthik.imager.MainActivity ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session16"href="./../nodes/node29.html#session16">node29#session16</a>( <a href="./../../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE61">61</a>)<LISTING><span class='color_black'>**** [RE:0] void MainActivity.fillDummyValuesInDB() Node: 29, Procedure: void MainActivity.fillDummyValuesInDB(), Session: 16, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_red'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+  <span class='color_red'>realm = val$3 <span class='color_orange'>update:58</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+  <span class='color_red'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$11=*&amp;realm:class io.realm.Realm * [line 61];
+  n$12=*n$11:class io.realm.Realm  [line 61];
+  _fun_void Realm.commitTransaction()(n$11:class io.realm.Realm *) virtual [line 61];
+  REMOVE_TEMPS(n$11,n$12); [line 61];
+  NULLIFY(&amp;realm,false); [line 61];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$11=*&amp;realm:class io.realm.Realm * [line 61]</span>
+    in vpath_find exp:n$23
+    vpath_find: cannot find n$23
+    .... Rearrangement Start ....
+    Exp: &amp;realm
+    Prop: 
+    <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar) ;  $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0 ;  UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar) ;  MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$23) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$22 <span class='color_orange'>initial</span>:void  ; 
+    realm = val$3 <span class='color_orange'>update:58</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub ) ; 
+    $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_red'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>n$11 <span class='color_orange'>update:58</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = <span class='color_red'>n$11 <span class='color_orange'>formal</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_red'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$12=*n$11:class io.realm.Realm  [line 61]</span>
+    in vpath_find exp:n$25
+    vpath_find: cannot find n$25
+    .... Rearrangement Start ....
+    Exp: n$11
+    Prop: 
+    <span class='color_blue'>val$3 = $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar ;
+    $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0 ;  UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar) ;  MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(n$25) ;  $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0 ;  UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub ) ; 
+    return = n$24 <span class='color_orange'>initial</span>:void  ; 
+    realm = n$11 <span class='color_orange'>update:58</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = n$11 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    $RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub ) ;
+    $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub ) ; 
+    old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = n$11 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = n$11 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span></span>
+    
+    Instruction <span class='color_green'>_fun_void Realm.commitTransaction()(n$11:class io.realm.Realm *) virtual [line 61]</span>
+    in vpath_find exp:n$27
+    vpath_find: cannot find n$27
+    <span class='color_blue'>INFO: SKIP_FUNCTION void Realm.commitTransaction()</span>
+    Undefined function void Realm.commitTransaction(), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = n$11 <span class='color_orange'>update:58</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = n$11 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span> ; 
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$11,n$12); [line 61]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>val$3 <span class='color_orange'>update:58</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_red'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;realm,false); [line 61]</span>
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:60 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; RealmObject Realm.copyToRealm(RealmObject) &gt; :60($RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; Realm Realm.getInstance(Context) &gt; :58($RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class com.karthik.imager.MainActivity *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:void </span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.copyToRealm(io.realm.RealmObject):io.realm.RealmObject|abductedRetvar = val$4 <span class='color_orange'>formal</span>:class io.realm.RealmObject *( sub )</span> ;
+    <span class='color_blue'>old_this|->{com.karthik.imager.MainActivity.mContext:val$2 <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.MainActivity ( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.Realm.getInstance(android.content.Context):io.realm.Realm|abductedRetvar|->{} <span class='color_orange'>formal</span>:class io.realm.Realm ( sub )</span></span>
+    
+    
+    
+  

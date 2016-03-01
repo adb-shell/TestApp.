@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>io.realm.DummyObjectRealmProxy.createOrUpdateUsingJsonObject(io.realm.Realm,org.json.JSONObject,bool.39a77d6c1901c495f04e66754b12efe9</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Procedure  <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE151">DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean)</a></h1></center>
+ <a href="./nodes/node39.html"><span class='visited'>S_39<span class='expansion'>node39 preds: succs:153 exn:40 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;obj); [line 151];
+NULLIFY(&amp;$irvar0,false); [line 151];
+NULLIFY(&amp;obj,false); [line 151];
+NULLIFY(&amp;update,false); [line 151];
+</span></span></a> <a href="./nodes/node40.html"><span class='visited'>E_40<span class='expansion'>node40 preds:173 41 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_41<span class='expansion'>node41 preds: succs:40 exn:40 Instructions
+NULLIFY(&amp;$irvar0,false); [line 168];
+NULLIFY(&amp;json,false); [line 168];
+NULLIFY(&amp;obj,false); [line 168];
+APPLY_ABSTRACTION; [line 168];
+
+NOT VISITED</span></span> <a href="./nodes/node153.html"><span class='visited'>I_153<span class='expansion'>node153 preds:39 succs:154 exn:41 Instructions
+n$0=*&amp;realm:class io.realm.Realm * [line 153];
+n$1=*n$0:class io.realm.Realm  [line 153];
+n$2=_fun_RealmObject Realm.createObject(Class)(n$0:class io.realm.Realm *,com.karthik.imager.APIService.DummyObject:class java.lang.Class *) virtual [line 153];
+*&amp;$irvar0:class io.realm.RealmObject *=n$2 [line 153];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 153];
+NULLIFY(&amp;realm,false); [line 153];
+</span></span></a> <a href="./nodes/node154.html"><span class='visited'>I_154<span class='expansion'>node154 preds:153 succs:155 exn:41 Instructions
+n$3=*&amp;$irvar0:class io.realm.RealmObject * [line 153];
+n$4=_fun___cast(n$3:class io.realm.RealmObject *,sizeof(class com.karthik.imager.APIService.DummyObject ( sub )(cast)):void ) [line 153];
+*&amp;obj:class com.karthik.imager.APIService.DummyObject *=n$4 [line 153];
+REMOVE_TEMPS(n$3,n$4); [line 153];
+NULLIFY(&amp;$irvar0,false); [line 153];
+</span></span></a> <a href="./nodes/node155.html"><span class='visited'>I_155<span class='expansion'>node155 preds:154 succs:156 157 exn:41 Instructions
+n$5=*&amp;json:class org.json.JSONObject * [line 154];
+n$6=*n$5:class org.json.JSONObject  [line 154];
+n$7=_fun_boolean JSONObject.has(String)(n$5:class org.json.JSONObject *,"dummyTitle":class java.lang.String *) virtual [line 154];
+*&amp;$irvar0:_Bool =n$7 [line 154];
+REMOVE_TEMPS(n$5,n$6,n$7); [line 154];
+</span></span></a> <a href="./nodes/node156.html"><span class='visited'>C_156<span class='expansion'>node156 preds:155 succs:158 exn:41 Conditional method_body
+n$8=*&amp;$irvar0:_Bool  [line 154];
+PRUNE(!(n$8 == 0), true); [line 154];
+REMOVE_TEMPS(n$8); [line 154];
+</span></span></a> <a href="./nodes/node157.html"><span class='visited'>C_157<span class='expansion'>node157 preds:155 succs:164 exn:41 Conditional method_body
+n$8=*&amp;$irvar0:_Bool  [line 154];
+PRUNE((n$8 == 0), false); [line 154];
+REMOVE_TEMPS(n$8); [line 154];
+APPLY_ABSTRACTION; [line 154];
+</span></span></a> <a href="./nodes/node158.html"><span class='visited'>I_158<span class='expansion'>node158 preds:156 succs:159 160 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 155];
+n$9=*&amp;json:class org.json.JSONObject * [line 155];
+n$10=*n$9:class org.json.JSONObject  [line 155];
+n$11=_fun_boolean JSONObject.isNull(String)(n$9:class org.json.JSONObject *,"dummyTitle":class java.lang.String *) virtual [line 155];
+*&amp;$irvar0:_Bool =n$11 [line 155];
+REMOVE_TEMPS(n$9,n$10,n$11); [line 155];
+</span></span></a> <a href="./nodes/node159.html"><span class='visited'>C_159<span class='expansion'>node159 preds:158 succs:161 exn:41 Conditional method_body
+n$12=*&amp;$irvar0:_Bool  [line 155];
+PRUNE(!(n$12 == 0), true); [line 155];
+REMOVE_TEMPS(n$12); [line 155];
+</span></span></a> <a href="./nodes/node160.html"><span class='visited'>C_160<span class='expansion'>node160 preds:158 succs:162 exn:41 Conditional method_body
+n$12=*&amp;$irvar0:_Bool  [line 155];
+PRUNE((n$12 == 0), false); [line 155];
+REMOVE_TEMPS(n$12); [line 155];
+</span></span></a> <a href="./nodes/node161.html"><span class='visited'>I_161<span class='expansion'>node161 preds:159 succs:164 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 156];
+n$13=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 156];
+n$14=*n$13:class com.karthik.imager.APIService.DummyObject  [line 156];
+_fun_void DummyObject.setDummyTitle(String)(n$13:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 156];
+REMOVE_TEMPS(n$13,n$14); [line 156];
+APPLY_ABSTRACTION; [line 156];
+</span></span></a> <a href="./nodes/node162.html"><span class='visited'>I_162<span class='expansion'>node162 preds:160 succs:163 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 158];
+n$15=*&amp;json:class org.json.JSONObject * [line 158];
+n$16=*n$15:class org.json.JSONObject  [line 158];
+n$17=_fun_String JSONObject.getString(String)(n$15:class org.json.JSONObject *,"dummyTitle":class java.lang.String *) virtual [line 158];
+*&amp;$irvar0:class java.lang.String *=n$17 [line 158];
+REMOVE_TEMPS(n$15,n$16,n$17); [line 158];
+</span></span></a> <a href="./nodes/node163.html"><span class='visited'>I_163<span class='expansion'>node163 preds:162 succs:164 exn:41 Instructions
+n$18=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 158];
+n$19=*n$18:class com.karthik.imager.APIService.DummyObject  [line 158];
+n$20=*&amp;$irvar0:class java.lang.String * [line 158];
+_fun_void DummyObject.setDummyTitle(String)(n$18:class com.karthik.imager.APIService.DummyObject *,n$20:class java.lang.String *) virtual [line 158];
+REMOVE_TEMPS(n$18,n$19,n$20); [line 158];
+NULLIFY(&amp;$irvar0,false); [line 158];
+APPLY_ABSTRACTION; [line 158];
+</span></span></a> <a href="./nodes/node164.html"><span class='visited'>I_164<span class='expansion'>node164 preds:163 161 157 succs:165 166 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 161];
+n$21=*&amp;json:class org.json.JSONObject * [line 161];
+n$22=*n$21:class org.json.JSONObject  [line 161];
+n$23=_fun_boolean JSONObject.has(String)(n$21:class org.json.JSONObject *,"dummyDesc":class java.lang.String *) virtual [line 161];
+*&amp;$irvar0:_Bool =n$23 [line 161];
+REMOVE_TEMPS(n$21,n$22,n$23); [line 161];
+</span></span></a> <a href="./nodes/node165.html"><span class='visited'>C_165<span class='expansion'>node165 preds:164 succs:167 exn:41 Conditional method_body
+n$24=*&amp;$irvar0:_Bool  [line 161];
+PRUNE(!(n$24 == 0), true); [line 161];
+REMOVE_TEMPS(n$24); [line 161];
+</span></span></a> <a href="./nodes/node166.html"><span class='visited'>C_166<span class='expansion'>node166 preds:164 succs:173 exn:41 Conditional method_body
+n$24=*&amp;$irvar0:_Bool  [line 161];
+PRUNE((n$24 == 0), false); [line 161];
+REMOVE_TEMPS(n$24); [line 161];
+APPLY_ABSTRACTION; [line 161];
+</span></span></a> <a href="./nodes/node167.html"><span class='visited'>I_167<span class='expansion'>node167 preds:165 succs:168 169 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 162];
+n$25=*&amp;json:class org.json.JSONObject * [line 162];
+n$26=*n$25:class org.json.JSONObject  [line 162];
+n$27=_fun_boolean JSONObject.isNull(String)(n$25:class org.json.JSONObject *,"dummyDesc":class java.lang.String *) virtual [line 162];
+*&amp;$irvar0:_Bool =n$27 [line 162];
+REMOVE_TEMPS(n$25,n$26,n$27); [line 162];
+</span></span></a> <a href="./nodes/node168.html"><span class='visited'>C_168<span class='expansion'>node168 preds:167 succs:170 exn:41 Conditional method_body
+n$28=*&amp;$irvar0:_Bool  [line 162];
+PRUNE(!(n$28 == 0), true); [line 162];
+REMOVE_TEMPS(n$28); [line 162];
+</span></span></a> <a href="./nodes/node169.html"><span class='visited'>C_169<span class='expansion'>node169 preds:167 succs:171 exn:41 Conditional method_body
+n$28=*&amp;$irvar0:_Bool  [line 162];
+PRUNE((n$28 == 0), false); [line 162];
+REMOVE_TEMPS(n$28); [line 162];
+</span></span></a> <a href="./nodes/node170.html"><span class='visited'>I_170<span class='expansion'>node170 preds:168 succs:173 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 163];
+NULLIFY(&amp;json,false); [line 163];
+n$29=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 163];
+n$30=*n$29:class com.karthik.imager.APIService.DummyObject  [line 163];
+_fun_void DummyObject.setDummyDesc(String)(n$29:class com.karthik.imager.APIService.DummyObject *,null:class java.lang.Object *) virtual [line 163];
+REMOVE_TEMPS(n$29,n$30); [line 163];
+APPLY_ABSTRACTION; [line 163];
+</span></span></a> <a href="./nodes/node171.html"><span class='visited'>I_171<span class='expansion'>node171 preds:169 succs:172 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 165];
+n$31=*&amp;json:class org.json.JSONObject * [line 165];
+n$32=*n$31:class org.json.JSONObject  [line 165];
+n$33=_fun_String JSONObject.getString(String)(n$31:class org.json.JSONObject *,"dummyDesc":class java.lang.String *) virtual [line 165];
+*&amp;$irvar0:class java.lang.String *=n$33 [line 165];
+REMOVE_TEMPS(n$31,n$32,n$33); [line 165];
+NULLIFY(&amp;json,false); [line 165];
+</span></span></a> <a href="./nodes/node172.html"><span class='visited'>I_172<span class='expansion'>node172 preds:171 succs:173 exn:41 Instructions
+n$34=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 165];
+n$35=*n$34:class com.karthik.imager.APIService.DummyObject  [line 165];
+n$36=*&amp;$irvar0:class java.lang.String * [line 165];
+_fun_void DummyObject.setDummyDesc(String)(n$34:class com.karthik.imager.APIService.DummyObject *,n$36:class java.lang.String *) virtual [line 165];
+REMOVE_TEMPS(n$34,n$35,n$36); [line 165];
+NULLIFY(&amp;$irvar0,false); [line 165];
+APPLY_ABSTRACTION; [line 165];
+</span></span></a> <a href="./nodes/node173.html"><span class='visited'>I_173<span class='expansion'>node173 preds:172 170 166 succs:40 exn:41 Instructions
+NULLIFY(&amp;$irvar0,false); [line 168];
+NULLIFY(&amp;json,false); [line 168];
+n$37=*&amp;obj:class com.karthik.imager.APIService.DummyObject * [line 168];
+*&amp;return:class com.karthik.imager.APIService.DummyObject *=n$37 [line 168];
+REMOVE_TEMPS(n$37); [line 168];
+NULLIFY(&amp;obj,false); [line 168];
+APPLY_ABSTRACTION; [line 168];
+</span></span></a><span class='color_black'>
+class com.karthik.imager.APIService.DummyObject *DummyObject DummyObjectRealmProxy.createOrUpdateUsingJsonObject(Realm,JSONObject,boolean)(class io.realm.Realm *realm, class org.json.JSONObject *json, _Bool update)
+Timestamp: 1
+Status: INACTIVE
+Phase: RE_EXECUTION
+Dependency_map: 
+</span><hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION String JSONObject.getString(String)  <a href="./nodes/node162.html#session21">node162#session21</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE158">158</a>) <a href="./nodes/node171.html#session12">node171#session12</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE165">165</a>)<br>SKIP_FUNCTION boolean JSONObject.isNull(String)  <a href="./nodes/node158.html#session19">node158#session19</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE155">155</a>) <a href="./nodes/node167.html#session10">node167#session10</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE162">162</a>)<br>SKIP_FUNCTION RealmObject Realm.createObject(Class)  <a href="./nodes/node153.html#session2">node153#session2</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE153">153</a>)<br>SKIP_FUNCTION boolean JSONObject.has(String)  <a href="./nodes/node155.html#session4">node155#session4</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE154">154</a>) <a href="./nodes/node164.html#session6">node164#session6</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE161">161</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION boolean JSONObject.has(String)  <a href="./nodes/node155.html#session53">node155#session53</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE154">154</a>) <a href="./nodes/node164.html#session60">node164#session60</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE161">161</a>)<br>SKIP_FUNCTION RealmObject Realm.createObject(Class)  <a href="./nodes/node153.html#session51">node153#session51</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE153">153</a>)<br>SKIP_FUNCTION String JSONObject.getString(String)  <a href="./nodes/node162.html#session58">node162#session58</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE158">158</a>) <a href="./nodes/node171.html#session65">node171#session65</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE165">165</a>)<br>SKIP_FUNCTION boolean JSONObject.isNull(String)  <a href="./nodes/node158.html#session56">node158#session56</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE155">155</a>) <a href="./nodes/node167.html#session63">node167#session63</a>( <a href="./../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE162">162</a>)<hr width="100%">
+<LISTING>
+--------------------------- 1 of 1 [nvisited: 151 153 154 155 156 158 161 162 165 168] ---------------------------
+PRE:
+<span class='color_blue'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub ) ;
+realm|->{} <span class='color_orange'>rearrange:(z)153</span>:class io.realm.Realm ( sub ) ; 
+json|->{} <span class='color_orange'>rearrange:(z)154</span>:class org.json.JSONObject ( sub )</span>
+POST 1 of 3:
+<span class='color_red'>val$5 != 0</span> ;  <span class='color_red'>UND &lt; String JSONObject.getString(String) &gt; :165(val$5)</span> ;  <span class='color_red'>return != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(return)</span> ;
+<span class='color_blue'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+<span class='color_red'>return = val$4 <span class='color_orange'>update:168</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+<span class='color_blue'>realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+<span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ;
+<span class='color_blue'>realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+<span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+<span class='color_red'>return|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$5 <span class='color_orange'>update:(z)165</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+POST 2 of 3:
+<span class='color_red'>val$6 != 0</span> ;  <span class='color_red'>UND &lt; String JSONObject.getString(String) &gt; :158(val$6)</span> ;  <span class='color_red'>val$5 != 0</span> ;  <span class='color_red'>UND &lt; String JSONObject.getString(String) &gt; :165(val$5)</span> ;  <span class='color_red'>return != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(return)</span> ;
+<span class='color_blue'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+<span class='color_red'>return = val$4 <span class='color_orange'>update:168</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+<span class='color_blue'>realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+<span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ;
+<span class='color_blue'>realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+<span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+<span class='color_red'>return|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$5 <span class='color_orange'>update:(z)165</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:val$6 <span class='color_orange'>update:(z)158</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+POST 3 of 3:
+<span class='color_red'>val$5 != 0</span> ;  <span class='color_red'>UND &lt; String JSONObject.getString(String) &gt; :165(val$5)</span> ;  <span class='color_red'>return != 0</span> ;  <span class='color_red'>UND &lt; RealmObject Realm.createObject(Class) &gt; :153(return)</span> ;
+<span class='color_blue'>update = val$1 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+<span class='color_red'>return = val$4 <span class='color_orange'>update:168</span>:class com.karthik.imager.APIService.DummyObject *</span> ; 
+<span class='color_blue'>realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+<span class='color_blue'>json = val$3 <span class='color_orange'>formal</span>:class org.json.JSONObject *( sub )</span> ;
+<span class='color_blue'>realm|->{} <span class='color_orange'>formal(z)</span>:class io.realm.Realm ( sub )</span> ; 
+<span class='color_blue'>json|->{} <span class='color_orange'>formal(z)</span>:class org.json.JSONObject ( sub )</span> ; 
+<span class='color_red'>return|->{com.karthik.imager.APIService.DummyObject.dummyDesc:val$5 <span class='color_orange'>update:(z)165</span>, com.karthik.imager.APIService.DummyObject.dummyTitle:null <span class='color_orange'>update:(z)156</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.APIService.DummyObject ( sub )</span>
+----------------------------------------------------------------<br>
+</LISTING>
+</body>
+</html>

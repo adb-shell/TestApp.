@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node27</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE30">27</a></h1></center>PROC:  <a href="./../com.karthik.imager.ImagerApp.getOkHttpInstance():okhttp3.OkHttpClient.7b7c112244cf11d1aa30906c22574769.html">OkHttpClient ImagerApp.getOkHttpInstance()</a> LINE: <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE30">30</a>
+<br>PREDS:
+ <a href="./../nodes/node26.html"><span class='visited'>N_26<span class='expansion'>node26 preds:25 succs:27 exn:9 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_28<span class='expansion'>node28 preds:27 succs:29 exn:9 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_9<span class='expansion'>node9 preds: succs:8 exn:8 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$8=*&amp;$irvar2:class okhttp3.OkHttpClient$Builder * [line 30];
+                          n$9=*n$8:class okhttp3.OkHttpClient$Builder  [line 30];
+                          n$10=_fun_OkHttpClient OkHttpClient$Builder.build()(n$8:class okhttp3.OkHttpClient$Builder *) virtual [line 30];
+                          *&amp;$irvar3:class okhttp3.OkHttpClient *=n$10 [line 30];
+                          REMOVE_TEMPS(n$8,n$9,n$10); [line 30];
+                          NULLIFY(&amp;$irvar2,false); [line 30];
+                          </span><hr width="100%">
+ <a name="session8"href="./../nodes/node27.html#session8">node27#session8</a>( <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE30">30</a>)<LISTING><span class='color_black'>**** [FP:0] OkHttpClient ImagerApp.getOkHttpInstance() Node: 27, Procedure: OkHttpClient ImagerApp.getOkHttpInstance(), Session: 8, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>@f$2 = null</span> ;
+  <span class='color_red'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$irvar2 != 0</span> ;  <span class='color_red'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+  [footprint
+     <span class='color_red'>@f$2 = null</span> *
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+     <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+     <span class='color_red'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$8=*&amp;$irvar2:class okhttp3.OkHttpClient$Builder * [line 30];
+  n$9=*n$8:class okhttp3.OkHttpClient$Builder  [line 30];
+  n$10=_fun_OkHttpClient OkHttpClient$Builder.build()(n$8:class okhttp3.OkHttpClient$Builder *) virtual [line 30];
+  *&amp;$irvar3:class okhttp3.OkHttpClient *=n$10 [line 30];
+  REMOVE_TEMPS(n$8,n$9,n$10); [line 30];
+  NULLIFY(&amp;$irvar2,false); [line 30];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$8=*&amp;$irvar2:class okhttp3.OkHttpClient$Builder * [line 30]</span>
+    in vpath_find exp:n$41
+    vpath_find: cannot find n$41
+    in vpath_find exp:n$40
+    vpath_find: cannot find n$40
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>@f$2 = null ;
+    MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$41) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$40) ;  $irvar2 != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$39 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )
+    [footprint
+       @f$2 = null *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+       $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+       this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar2
+    prop before:
+    <span class='color_blue'>@f$2 = null ;
+    MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$41) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$40) ;  $irvar2 != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$39 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )
+    [footprint
+       @f$2 = null *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+       $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+       this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = null</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$41)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$40)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = n$39 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = null</span> ;  <span class='color_red'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$9=*n$8:class okhttp3.OkHttpClient$Builder  [line 30]</span>
+    in vpath_find exp:n$44
+    vpath_find: cannot find n$44
+    in vpath_find exp:n$43
+    vpath_find: cannot find n$43
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>@f$2 = null ;  n$8 = $irvar2 ;
+    MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$44) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$43) ;  $irvar2 != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$42 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )
+    [footprint
+       @f$2 = null *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+       $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+       this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )  ]</span>
+    
+    ++++ Adding footprint frame
+    <span class='color_blue'>@f$1|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$2 = null</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$2 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+       <span class='color_red'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$10=_fun_OkHttpClient OkHttpClient$Builder.build()(n$8:class okhttp3.OkHttpClient$Builder *) virtual [line 30]</span>
+    in vpath_find exp:n$47
+    vpath_find: cannot find n$47
+    in vpath_find exp:n$46
+    vpath_find: cannot find n$46
+    <span class='color_blue'>INFO: SKIP_FUNCTION OkHttpClient OkHttpClient$Builder.build()</span>
+    Undefined function OkHttpClient OkHttpClient$Builder.build(), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$10 = @f$3
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$3 = null</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;  <span class='color_red'>n$10 = @f$2</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30(@f$2)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$3 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+       <span class='color_blue'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar3:class okhttp3.OkHttpClient *=n$10 [line 30]</span>
+    in vpath_find exp:n$50
+    vpath_find: cannot find n$50
+    in vpath_find exp:n$49
+    vpath_find: cannot find n$49
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar3
+    Prop: 
+    <span class='color_blue'>@f$3 = null ;  n$8 = $irvar2 ;  n$10 = @f$2 ;
+    MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$50) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$49) ;  @f$2 != 0 ;  UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30(@f$2) ;  $irvar2 != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$48 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub ) ; 
+    $irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )
+    [footprint
+       @f$3 = null *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+       $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient *( sub ) ; 
+       $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+       this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub ) ; 
+       $irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar3
+    prop before:
+    <span class='color_blue'>@f$3 = null ;  n$8 = $irvar2 ;  n$10 = @f$2 ;
+    MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$50) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$49) ;  @f$2 != 0 ;  UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30(@f$2) ;  $irvar2 != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$48 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = @f$1 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub ) ; 
+    $irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )
+    [footprint
+       @f$3 = null *
+       this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+       $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient *( sub ) ; 
+       $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+       this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub ) ; 
+       $irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;  <span class='color_blue'>n$8 = $irvar2</span> ;  <span class='color_blue'>n$10 = @f$2</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$50)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$49)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30(@f$2)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = n$48 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+       <span class='color_blue'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;  <span class='color_blue'>n$8 = <span class='color_red'>$irvar2</span></span> ;  <span class='color_blue'>n$10 = <span class='color_red'>$irvar3</span></span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30</span>($irvar2)</span> ;  <span class='color_blue'>$irvar3 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30</span>($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>@f$1 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>@f$2 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_red'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = <span class='color_red'>@f$1 <span class='color_orange'>none</span></span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = <span class='color_red'>@f$2 <span class='color_orange'>none</span></span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+       <span class='color_red'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$8,n$9,n$10); [line 30]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar2 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($irvar2)</span> ;  <span class='color_blue'>$irvar3 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($irvar3)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = @f$2 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+       <span class='color_blue'>$irvar2|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 30]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$3 = null</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar3 != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($irvar3)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = @f$1 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+    <span class='color_blue'>this|->{<span class='color_red'>com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span></span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$3 = null</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+       <span class='color_blue'>this|->{<span class='color_red'>com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span></span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$3 = null</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$irvar3 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30</span>($irvar3)</span> ;  <span class='color_red'>@f$0 != 0</span> ;  <span class='color_red'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30(@f$0)</span> ;
+    <span class='color_blue'>old_this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>@f$1 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+    <span class='color_red'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$3 = null</span> *
+       <span class='color_blue'>this = <span class='color_red'>@f$2 <span class='color_orange'>formal</span></span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+       <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+       <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = <span class='color_red'>@f$0 <span class='color_orange'>none</span></span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+       <span class='color_blue'>@f$0|->{} <span class='color_orange'>rearrange:30</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+       <span class='color_red'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>rearrange:(z)29</span>} <span class='color_orange'>rearrange:(z)29</span>:class com.karthik.imager.ImagerApp ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session18"href="./../nodes/node27.html#session18">node27#session18</a>( <a href="./../../ImagerApp.java.06547a3292c0fc44eadd035148d4cfc2.html#LINE30">30</a>)<LISTING><span class='color_black'>**** [RE:0] OkHttpClient ImagerApp.getOkHttpInstance() Node: 27, Procedure: OkHttpClient ImagerApp.getOkHttpInstance(), Session: 18, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_red'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = val$3 <span class='color_orange'>update:30</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+  <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+  <span class='color_red'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+  <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>n$8=*&amp;$irvar2:class okhttp3.OkHttpClient$Builder * [line 30];
+  n$9=*n$8:class okhttp3.OkHttpClient$Builder  [line 30];
+  n$10=_fun_OkHttpClient OkHttpClient$Builder.build()(n$8:class okhttp3.OkHttpClient$Builder *) virtual [line 30];
+  *&amp;$irvar3:class okhttp3.OkHttpClient *=n$10 [line 30];
+  REMOVE_TEMPS(n$8,n$9,n$10); [line 30];
+  NULLIFY(&amp;$irvar2,false); [line 30];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$8=*&amp;$irvar2:class okhttp3.OkHttpClient$Builder * [line 30]</span>
+    in vpath_find exp:n$28
+    vpath_find: cannot find n$28
+    in vpath_find exp:n$27
+    vpath_find: cannot find n$27
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar2
+    Prop: 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$28) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$27) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$26 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = val$3 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub ) ; 
+    $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub ) ; 
+    $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>n$8 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = <span class='color_red'>n$8 <span class='color_orange'>formal</span></span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+    <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$9=*n$8:class okhttp3.OkHttpClient$Builder  [line 30]</span>
+    in vpath_find exp:n$31
+    vpath_find: cannot find n$31
+    in vpath_find exp:n$30
+    vpath_find: cannot find n$30
+    .... Rearrangement Start ....
+    Exp: n$8
+    Prop: 
+    <span class='color_blue'>val$3 = $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar ;
+    MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$31) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$30) ;  $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$29 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$8 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub ) ; 
+    $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = n$8 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+    $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub ) ; 
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$3 = $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$8 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = n$8 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$10=_fun_OkHttpClient OkHttpClient$Builder.build()(n$8:class okhttp3.OkHttpClient$Builder *) virtual [line 30]</span>
+    in vpath_find exp:n$34
+    vpath_find: cannot find n$34
+    in vpath_find exp:n$33
+    vpath_find: cannot find n$33
+    <span class='color_blue'>INFO: SKIP_FUNCTION OkHttpClient OkHttpClient$Builder.build()</span>
+    Undefined function OkHttpClient OkHttpClient$Builder.build(), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar</span> ;  <span class='color_blue'>val$3 = $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$8 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = <span class='color_red'>n$10 <span class='color_orange'>formal</span></span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = n$8 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar3:class okhttp3.OkHttpClient *=n$10 [line 30]</span>
+    in vpath_find exp:n$37
+    vpath_find: cannot find n$37
+    in vpath_find exp:n$36
+    vpath_find: cannot find n$36
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar3
+    Prop: 
+    <span class='color_blue'>val$2 = $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar ;  val$3 = $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar ;
+    MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$37) ;  MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(n$36) ;  $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar != 0 ;  UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar) ;  $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0 ;  UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub ) ; 
+    return = n$35 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient * ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = n$8 <span class='color_orange'>update:30</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub ) ; 
+    $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = n$8 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub ) ;
+    $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub ) ; 
+    this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = $RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar</span> ;  <span class='color_blue'>val$3 = $RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar</span> ;
+    <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>n$10 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = n$8 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = n$10 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = n$8 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span> ; 
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$8,n$9,n$10); [line 30]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>val$2 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>val$3 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar2,false); [line 30]</span>
+    in vpath_find exp:_t$2
+    vpath_find: cannot find _t$2
+    in vpath_find exp:_t$1
+    vpath_find: cannot find _t$1
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = val$2 <span class='color_orange'>update:30</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$2)</span> ;  <span class='color_blue'>MEMne &lt; new:30 &gt;  <span class='color_orange'>{vpath: }</span>(_t$1)</span> ;  <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; OkHttpClient$Builder OkHttpClient$Builder.addNetworkInterceptor(Interceptor) &gt; :30($RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar)</span> ;  <span class='color_red'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; OkHttpClient OkHttpClient$Builder.build() &gt; :30($RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>this = val$1 <span class='color_orange'>formal</span>:class com.karthik.imager.ImagerApp *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class okhttp3.OkHttpClient *</span> ; 
+    <span class='color_blue'>$irvar3 = <span class='color_red'>val$2 <span class='color_orange'>update:30</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.build():okhttp3.OkHttpClient|abductedRetvar = val$2 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient *( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar = val$3 <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder *( sub )</span> ;
+    <span class='color_blue'>this|->{com.karthik.imager.ImagerApp.client:null <span class='color_orange'>formal(z)</span>} <span class='color_orange'>formal(z)</span>:class com.karthik.imager.ImagerApp ( sub )</span> ; 
+    <span class='color_blue'>$RET_okhttp3.OkHttpClient$Builder.addNetworkInterceptor(okhttp3.Interceptor):okhttp3.OkHttpClient$Builder|abductedRetvar|->{} <span class='color_orange'>formal</span>:class okhttp3.OkHttpClient$Builder ( sub )</span></span>
+    
+    
+    
+  

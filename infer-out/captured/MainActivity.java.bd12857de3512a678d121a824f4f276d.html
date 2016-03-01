@@ -1,0 +1,668 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>MainActivity.java.bd12857de3512a678d121a824f4f276d</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>File mobile/src/main/java/com/karthik/imager/MainActivity.java</h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.karthik.imager;</td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import com.karthik.imager.APIService.DummyObject;</td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import com.karthik.imager.Fragments.DashboardFragment;</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import com.karthik.imager.Fragments.DetailsFragment;</td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import android.content.Context;</td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import android.content.SharedPreferences;</td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import android.os.Bundle;</td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import android.preference.PreferenceManager;</td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import android.support.v4.app.FragmentManager;</td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import android.support.v7.app.AppCompatActivity;</td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import android.view.Menu;</td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import android.view.MenuItem;</td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import android.widget.Toast;</td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import butterknife.ButterKnife;</td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import io.realm.Realm;</td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">public class MainActivity extends AppCompatActivity{ <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node1.html"><span class='visitedproof'>S_1<span class='expansion'>node1 preds: succs:22 exn:2 Start
+DECLARE_LOCALS(&amp;return); [line 19];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node2.html"><span class='visitedproof'>E_2<span class='expansion'>node2 preds:23 3 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_3<span class='expansion'>node3 preds: succs:2 exn:2 Instructions
+APPLY_ABSTRACTION; [line 19];
+
+NOT VISITED</span></span> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node22.html"><span class='visitedproof'>I_22<span class='expansion'>node22 preds:1 succs:23 exn:3 Instructions
+n$0=*&amp;this:class com.karthik.imager.MainActivity * [line 19];
+_fun_AppCompatActivity.&lt;init&gt;()(n$0:class com.karthik.imager.MainActivity *) [line 19];
+REMOVE_TEMPS(n$0); [line 19];
+NULLIFY(&amp;this,false); [line 19];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node23.html"><span class='visitedproof'>I_23<span class='expansion'>node23 preds:22 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 19];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/com.karthik.imager.MainActivity.<init>().d24f4e2a8612b27670ee70fa4af9c86c.html">MainActivity.&lt;init&gt;(): 1 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION AppCompatActivity.<init>()</div></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">    private Context mContext;</td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">    protected void onCreate(Bundle savedInstanceState) {</td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">        super.onCreate(savedInstanceState); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node19.html"><span class='visitedproof'>S_19<span class='expansion'>node19 preds: succs:75 exn:20 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0,&amp;$irvar1,&amp;$irvar2,&amp;$irvar3,&amp;$irvar4,&amp;$irvar5); [line 25];
+NULLIFY(&amp;$irvar0,false); [line 25];
+NULLIFY(&amp;$irvar1,false); [line 25];
+NULLIFY(&amp;$irvar2,false); [line 25];
+NULLIFY(&amp;$irvar3,false); [line 25];
+NULLIFY(&amp;$irvar4,false); [line 25];
+NULLIFY(&amp;$irvar5,false); [line 25];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node75.html"><span class='visitedproof'>I_75<span class='expansion'>node75 preds:19 succs:76 exn:21 Instructions
+n$0=*&amp;this:class com.karthik.imager.MainActivity * [line 25];
+n$1=*&amp;savedInstanceState:class android.os.Bundle * [line 25];
+_fun_void AppCompatActivity.onCreate(Bundle)(n$0:class com.karthik.imager.MainActivity *,n$1:class android.os.Bundle *) [line 25];
+REMOVE_TEMPS(n$0,n$1); [line 25];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/com.karthik.imager.MainActivity.onCreate(android.os.Bundle):void.b7be65b94c85dc6b67ae639e9e474f09.html">void MainActivity.onCreate(Bundle): 2 specs</a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void AppCompatActivity.onCreate(Bundle)</div></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">        setContentView(R.layout.activity_main); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node76.html"><span class='visitedproof'>I_76<span class='expansion'>node76 preds:75 succs:77 exn:21 Instructions
+n$2=*&amp;this:class com.karthik.imager.MainActivity * [line 27];
+n$3=*n$2:class com.karthik.imager.MainActivity  [line 27];
+_fun_void AppCompatActivity.setContentView(int)(n$2:class com.karthik.imager.MainActivity *,2130968601:int ) virtual [line 27];
+REMOVE_TEMPS(n$2,n$3); [line 27];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void AppCompatActivity.setContentView(int)</div></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">        ButterKnife.bind(this); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node77.html"><span class='visitedproof'>I_77<span class='expansion'>node77 preds:76 succs:78 exn:21 Instructions
+n$4=*&amp;this:class com.karthik.imager.MainActivity * [line 28];
+_fun_void ButterKnife.bind(Activity)(n$4:class com.karthik.imager.MainActivity *) [line 28];
+REMOVE_TEMPS(n$4); [line 28];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void ButterKnife.bind(Activity)</div></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">        mContext = this; <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node78.html"><span class='visitedproof'>I_78<span class='expansion'>node78 preds:77 succs:79 80 exn:21 Instructions
+n$5=*&amp;this:class com.karthik.imager.MainActivity * [line 29];
+n$6=*&amp;this:class com.karthik.imager.MainActivity * [line 29];
+*n$5.com.karthik.imager.MainActivity.mContext:class com.karthik.imager.MainActivity =n$6 [line 29];
+REMOVE_TEMPS(n$5,n$6); [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">        if(savedInstanceState==null){ <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node79.html"><span class='visitedproof'>C_79<span class='expansion'>node79 preds:78 succs:81 exn:21 Conditional method_body
+n$7=*&amp;savedInstanceState:class android.os.Bundle * [line 31];
+PRUNE(!(n$7 != null), true); [line 31];
+REMOVE_TEMPS(n$7); [line 31];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node80.html"><span class='visitedproof'>C_80<span class='expansion'>node80 preds:78 succs:89 exn:21 Conditional method_body
+n$7=*&amp;savedInstanceState:class android.os.Bundle * [line 31];
+PRUNE((n$7 != null), false); [line 31];
+REMOVE_TEMPS(n$7); [line 31];
+APPLY_ABSTRACTION; [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">            //dummy methods</td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">            fillDummyValuesInDB(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node81.html"><span class='visitedproof'>I_81<span class='expansion'>node81 preds:79 succs:82 exn:21 Instructions
+NULLIFY(&amp;savedInstanceState,false); [line 33];
+n$8=*&amp;this:class com.karthik.imager.MainActivity * [line 33];
+n$9=*n$8:class com.karthik.imager.MainActivity  [line 33];
+_fun_void MainActivity.fillDummyValuesInDB()(n$8:class com.karthik.imager.MainActivity *) virtual [line 33];
+REMOVE_TEMPS(n$8,n$9); [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">            fillDummyValuesInSharedPreferences(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node82.html"><span class='visitedproof'>I_82<span class='expansion'>node82 preds:81 succs:83 exn:21 Instructions
+n$10=*&amp;this:class com.karthik.imager.MainActivity * [line 34];
+_fun_void MainActivity.fillDummyValuesInSharedPreferences()(n$10:class com.karthik.imager.MainActivity *) [line 34];
+REMOVE_TEMPS(n$10); [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">            getSupportFragmentManager().beginTransaction() <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node83.html"><span class='visitedproof'>I_83<span class='expansion'>node83 preds:82 succs:84 exn:21 Instructions
+n$11=*&amp;this:class com.karthik.imager.MainActivity * [line 36];
+n$12=*n$11:class com.karthik.imager.MainActivity  [line 36];
+n$13=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$11:class com.karthik.imager.MainActivity *) virtual [line 36];
+*&amp;$irvar0:class android.support.v4.app.FragmentManager *=n$13 [line 36];
+REMOVE_TEMPS(n$11,n$12,n$13); [line 36];
+NULLIFY(&amp;this,false); [line 36];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node84.html"><span class='visitedproof'>I_84<span class='expansion'>node84 preds:83 succs:85 exn:21 Instructions
+n$14=*&amp;$irvar0:class android.support.v4.app.FragmentManager * [line 36];
+n$15=*n$14:class android.support.v4.app.FragmentManager  [line 36];
+n$16=_fun_FragmentTransaction FragmentManager.beginTransaction()(n$14:class android.support.v4.app.FragmentManager *) virtual [line 36];
+*&amp;$irvar1:class android.support.v4.app.FragmentTransaction *=n$16 [line 36];
+REMOVE_TEMPS(n$14,n$15,n$16); [line 36];
+NULLIFY(&amp;$irvar0,false); [line 36];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node85.html"><span class='visitedproof'>I_85<span class='expansion'>node85 preds:84 succs:86 exn:21 Instructions
+n$17=_fun___new(sizeof(class com.karthik.imager.Fragments.DashboardFragment ):class com.karthik.imager.Fragments.DashboardFragment *) [line 36];
+_fun_DashboardFragment.&lt;init&gt;()(n$17:class com.karthik.imager.Fragments.DashboardFragment *) [line 36];
+*&amp;$irvar2:class com.karthik.imager.Fragments.DashboardFragment *=n$17 [line 36];
+REMOVE_TEMPS(n$17); [line 36];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node86.html"><span class='visitedproof'>I_86<span class='expansion'>node86 preds:85 succs:87 exn:21 Instructions
+n$18=*&amp;$irvar1:class android.support.v4.app.FragmentTransaction * [line 36];
+n$19=*n$18:class android.support.v4.app.FragmentTransaction  [line 36];
+n$20=*&amp;$irvar2:class com.karthik.imager.Fragments.DashboardFragment * [line 36];
+n$21=_fun_FragmentTransaction FragmentTransaction.add(int,Fragment)(n$18:class android.support.v4.app.FragmentTransaction *,2131558541:int ,n$20:class com.karthik.imager.Fragments.DashboardFragment *) virtual [line 36];
+*&amp;$irvar3:class android.support.v4.app.FragmentTransaction *=n$21 [line 36];
+REMOVE_TEMPS(n$18,n$19,n$20,n$21); [line 36];
+NULLIFY(&amp;$irvar1,false); [line 36];
+NULLIFY(&amp;$irvar2,false); [line 36];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node87.html"><span class='visitedproof'>I_87<span class='expansion'>node87 preds:86 succs:88 exn:21 Instructions
+n$22=*&amp;$irvar3:class android.support.v4.app.FragmentTransaction * [line 36];
+n$23=*n$22:class android.support.v4.app.FragmentTransaction  [line 36];
+n$24=_fun_FragmentTransaction FragmentTransaction.addToBackStack(String)(n$22:class android.support.v4.app.FragmentTransaction *,"":class java.lang.String *) virtual [line 36];
+*&amp;$irvar4:class android.support.v4.app.FragmentTransaction *=n$24 [line 36];
+REMOVE_TEMPS(n$22,n$23,n$24); [line 36];
+NULLIFY(&amp;$irvar3,false); [line 36];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node88.html"><span class='visitedproof'>I_88<span class='expansion'>node88 preds:87 succs:89 exn:21 Instructions
+n$25=*&amp;$irvar4:class android.support.v4.app.FragmentTransaction * [line 36];
+n$26=*n$25:class android.support.v4.app.FragmentTransaction  [line 36];
+n$27=_fun_int FragmentTransaction.commit()(n$25:class android.support.v4.app.FragmentTransaction *) virtual [line 36];
+*&amp;$irvar5:int =n$27 [line 36];
+REMOVE_TEMPS(n$25,n$26,n$27); [line 36];
+NULLIFY(&amp;$irvar4,false); [line 36];
+NULLIFY(&amp;$irvar5,false); [line 36];
+APPLY_ABSTRACTION; [line 36];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FragmentManager FragmentActivity.getSupportFragmentManager()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FragmentTransaction FragmentManager.beginTransaction()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FragmentTransaction FragmentTransaction.add(int,Fragment)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FragmentTransaction FragmentTransaction.addToBackStack(String)</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int FragmentTransaction.commit()</div></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">                    .add(R.id.container,new DashboardFragment())</td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">                    .addToBackStack(&quot;&quot;)</td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">                    .commit();</td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">    } <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node20.html"><span class='visitedproof'>E_20<span class='expansion'>node20 preds:89 21 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_21<span class='expansion'>node21 preds: succs:20 exn:20 Instructions
+NULLIFY(&amp;$irvar0,false); [line 42];
+NULLIFY(&amp;$irvar1,false); [line 42];
+NULLIFY(&amp;$irvar2,false); [line 42];
+NULLIFY(&amp;$irvar3,false); [line 42];
+NULLIFY(&amp;$irvar4,false); [line 42];
+NULLIFY(&amp;savedInstanceState,false); [line 42];
+NULLIFY(&amp;this,false); [line 42];
+APPLY_ABSTRACTION; [line 42];
+
+NOT VISITED</span></span> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node89.html"><span class='visitedproof'>I_89<span class='expansion'>node89 preds:88 80 succs:20 exn:21 Instructions
+NULLIFY(&amp;savedInstanceState,false); [line 42];
+NULLIFY(&amp;this,false); [line 42];
+APPLY_ABSTRACTION; [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">    public boolean onCreateOptionsMenu(Menu menu) { <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node13.html"><span class='visitedproof'>S_13<span class='expansion'>node13 preds: succs:48 exn:14 Start
+DECLARE_LOCALS(&amp;return,&amp;$irvar0); [line 45];
+NULLIFY(&amp;$irvar0,false); [line 45];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/com.karthik.imager.MainActivity.onCreateOptionsMenu(android.view.Menu):boolean.cdd869b88d21341a872afd8d17e2ca7c.html">boolean MainActivity.onCreateOptionsMenu(Menu): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">        // Inflate the menu; this adds items to the action bar if it is present.</td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">        getMenuInflater().inflate(R.menu.menu_main, menu); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node48.html"><span class='visitedproof'>I_48<span class='expansion'>node48 preds:13 succs:49 exn:15 Instructions
+n$0=*&amp;this:class com.karthik.imager.MainActivity * [line 47];
+n$1=*n$0:class com.karthik.imager.MainActivity  [line 47];
+n$2=_fun_MenuInflater AppCompatActivity.getMenuInflater()(n$0:class com.karthik.imager.MainActivity *) virtual [line 47];
+*&amp;$irvar0:class android.view.MenuInflater *=n$2 [line 47];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 47];
+NULLIFY(&amp;this,false); [line 47];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node49.html"><span class='visitedproof'>I_49<span class='expansion'>node49 preds:48 succs:50 exn:15 Instructions
+n$3=*&amp;$irvar0:class android.view.MenuInflater * [line 47];
+n$4=*n$3:class android.view.MenuInflater  [line 47];
+n$5=*&amp;menu:class android.view.Menu * [line 47];
+_fun_void MenuInflater.inflate(int,Menu)(n$3:class android.view.MenuInflater *,2131623936:int ,n$5:class android.view.Menu *) virtual [line 47];
+REMOVE_TEMPS(n$3,n$4,n$5); [line 47];
+NULLIFY(&amp;$irvar0,false); [line 47];
+NULLIFY(&amp;menu,false); [line 47];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION MenuInflater AppCompatActivity.getMenuInflater()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void MenuInflater.inflate(int,Menu)</div></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">        return true; <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node14.html"><span class='visitedproof'>E_14<span class='expansion'>node14 preds:50 15 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_15<span class='expansion'>node15 preds: succs:14 exn:14 Instructions
+NULLIFY(&amp;$irvar0,false); [line 48];
+NULLIFY(&amp;menu,false); [line 48];
+APPLY_ABSTRACTION; [line 48];
+
+NOT VISITED</span></span> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node50.html"><span class='visitedproof'>I_50<span class='expansion'>node50 preds:49 succs:14 exn:15 Instructions
+*&amp;return:_Bool =1 [line 48];
+APPLY_ABSTRACTION; [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">    /**</td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">     This method is used to demonstrate stetho functionality</td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">     such that we view values in the storage of chrome inspector</td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">     as such it has no significance.</td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">     **/</td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">    public void fillDummyValuesInDB(){ <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node4.html"><span class='visitedproof'>S_4<span class='expansion'>node4 preds: succs:24 exn:5 Start
+DECLARE_LOCALS(&amp;return,&amp;realm,&amp;$irvar0,&amp;$irvar1); [line 56];
+NULLIFY(&amp;$irvar0,false); [line 56];
+NULLIFY(&amp;$irvar1,false); [line 56];
+NULLIFY(&amp;realm,false); [line 56];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/com.karthik.imager.MainActivity.fillDummyValuesInDB():void.67dd67e84f1ce8596642484b53258006.html">void MainActivity.fillDummyValuesInDB(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">        //caching the response values.</td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">        Realm realm = Realm.getInstance(mContext); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node24.html"><span class='visitedproof'>I_24<span class='expansion'>node24 preds:4 succs:25 exn:6 Instructions
+n$0=*&amp;this:class com.karthik.imager.MainActivity * [line 58];
+n$1=*n$0.com.karthik.imager.MainActivity.mContext:class com.karthik.imager.MainActivity  [line 58];
+*&amp;$irvar0:class android.content.Context *=n$1 [line 58];
+REMOVE_TEMPS(n$0,n$1); [line 58];
+NULLIFY(&amp;this,false); [line 58];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node25.html"><span class='visitedproof'>I_25<span class='expansion'>node25 preds:24 succs:26 exn:6 Instructions
+n$2=*&amp;$irvar0:class android.content.Context * [line 58];
+n$3=_fun_Realm Realm.getInstance(Context)(n$2:class android.content.Context *) [line 58];
+*&amp;realm:class io.realm.Realm *=n$3 [line 58];
+REMOVE_TEMPS(n$2,n$3); [line 58];
+NULLIFY(&amp;$irvar0,false); [line 58];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Realm Realm.getInstance(Context)</div></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">        realm.beginTransaction(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node26.html"><span class='visitedproof'>I_26<span class='expansion'>node26 preds:25 succs:27 exn:6 Instructions
+n$4=*&amp;realm:class io.realm.Realm * [line 59];
+n$5=*n$4:class io.realm.Realm  [line 59];
+_fun_void Realm.beginTransaction()(n$4:class io.realm.Realm *) virtual [line 59];
+REMOVE_TEMPS(n$4,n$5); [line 59];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Realm.beginTransaction()</div></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">        realm.copyToRealm(new DummyObject(&quot;DummyTitle&quot;,&quot;DummyDesc&quot;)); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node27.html"><span class='visitedproof'>I_27<span class='expansion'>node27 preds:26 succs:28 exn:6 Instructions
+n$6=_fun___new(sizeof(class com.karthik.imager.APIService.DummyObject ):class com.karthik.imager.APIService.DummyObject *) [line 60];
+_fun_DummyObject.&lt;init&gt;(String,String)(n$6:class com.karthik.imager.APIService.DummyObject *,"DummyTitle":class java.lang.String *,"DummyDesc":class java.lang.String *) [line 60];
+*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$6 [line 60];
+REMOVE_TEMPS(n$6); [line 60];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node28.html"><span class='visitedproof'>I_28<span class='expansion'>node28 preds:27 succs:29 exn:6 Instructions
+n$7=*&amp;realm:class io.realm.Realm * [line 60];
+n$8=*n$7:class io.realm.Realm  [line 60];
+n$9=*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject * [line 60];
+n$10=_fun_RealmObject Realm.copyToRealm(RealmObject)(n$7:class io.realm.Realm *,n$9:class com.karthik.imager.APIService.DummyObject *) virtual [line 60];
+*&amp;$irvar1:class io.realm.RealmObject *=n$10 [line 60];
+REMOVE_TEMPS(n$7,n$8,n$9,n$10); [line 60];
+NULLIFY(&amp;$irvar0,false); [line 60];
+NULLIFY(&amp;$irvar1,false); [line 60];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION RealmObject Realm.copyToRealm(RealmObject)</div></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">        realm.commitTransaction(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node29.html"><span class='visitedproof'>I_29<span class='expansion'>node29 preds:28 succs:30 exn:6 Instructions
+n$11=*&amp;realm:class io.realm.Realm * [line 61];
+n$12=*n$11:class io.realm.Realm  [line 61];
+_fun_void Realm.commitTransaction()(n$11:class io.realm.Realm *) virtual [line 61];
+REMOVE_TEMPS(n$11,n$12); [line 61];
+NULLIFY(&amp;realm,false); [line 61];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Realm.commitTransaction()</div></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">    } <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node5.html"><span class='visitedproof'>E_5<span class='expansion'>node5 preds:30 6 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_6<span class='expansion'>node6 preds: succs:5 exn:5 Instructions
+NULLIFY(&amp;$irvar0,false); [line 62];
+NULLIFY(&amp;realm,false); [line 62];
+APPLY_ABSTRACTION; [line 62];
+
+NOT VISITED</span></span> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node30.html"><span class='visitedproof'>I_30<span class='expansion'>node30 preds:29 succs:5 exn:6 Instructions
+APPLY_ABSTRACTION; [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">    /**</td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">     This method is used to demonstrate particular stetho functionality.</td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">     such that we view values in the local storage of chrome inspector</td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">     as such it has no significance.</td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">     **/</td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">    private void fillDummyValuesInSharedPreferences(){ <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node16.html"><span class='visitedproof'>S_16<span class='expansion'>node16 preds: succs:51 exn:17 Start
+DECLARE_LOCALS(&amp;return,&amp;sharedPreferences,&amp;$irvar0,&amp;editor,&amp;strings,&amp;i); [line 69];
+NULLIFY(&amp;$irvar0,false); [line 69];
+NULLIFY(&amp;editor,false); [line 69];
+NULLIFY(&amp;i,false); [line 69];
+NULLIFY(&amp;sharedPreferences,false); [line 69];
+NULLIFY(&amp;strings,false); [line 69];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/com.karthik.imager.MainActivity.fillDummyValuesInSharedPreferences():void.fed37179c306a9fd7438c915500a091f.html">void MainActivity.fillDummyValuesInSharedPreferences(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContext); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node51.html"><span class='visitedproof'>I_51<span class='expansion'>node51 preds:16 succs:52 exn:18 Instructions
+n$0=*&amp;this:class com.karthik.imager.MainActivity * [line 70];
+n$1=*n$0.com.karthik.imager.MainActivity.mContext:class com.karthik.imager.MainActivity  [line 70];
+*&amp;$irvar0:class android.content.Context *=n$1 [line 70];
+REMOVE_TEMPS(n$0,n$1); [line 70];
+NULLIFY(&amp;this,false); [line 70];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node52.html"><span class='visitedproof'>I_52<span class='expansion'>node52 preds:51 succs:53 exn:18 Instructions
+n$2=*&amp;$irvar0:class android.content.Context * [line 70];
+n$3=_fun_SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context)(n$2:class android.content.Context *) [line 70];
+*&amp;sharedPreferences:class android.content.SharedPreferences *=n$3 [line 70];
+REMOVE_TEMPS(n$2,n$3); [line 70];
+NULLIFY(&amp;$irvar0,false); [line 70];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context)</div></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">        SharedPreferences.Editor editor = sharedPreferences.edit(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node53.html"><span class='visitedproof'>I_53<span class='expansion'>node53 preds:52 succs:54 exn:18 Instructions
+n$4=*&amp;sharedPreferences:class android.content.SharedPreferences * [line 71];
+n$5=*n$4:class android.content.SharedPreferences  [line 71];
+n$6=_fun_SharedPreferences$Editor SharedPreferences.edit()(n$4:class android.content.SharedPreferences *) virtual [line 71];
+*&amp;editor:class android.content.SharedPreferences$Editor *=n$6 [line 71];
+REMOVE_TEMPS(n$4,n$5,n$6); [line 71];
+NULLIFY(&amp;sharedPreferences,false); [line 71];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION SharedPreferences$Editor SharedPreferences.edit()</div></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">        String[] strings = new String[]{&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;,&quot;seven&quot;,&quot;eight&quot;,&quot;nine&quot;,&quot;ten&quot;}; <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node54.html"><span class='visitedproof'>I_54<span class='expansion'>node54 preds:53 succs:55 exn:18 Instructions
+n$7=_fun___new_array(sizeof(class java.lang.String *[10]):class java.lang.String *(*)[_t$0]) [line 72];
+*&amp;$irvar0:class java.lang.String *(*)[_t$0]=n$7 [line 72];
+REMOVE_TEMPS(n$7); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node55.html"><span class='visitedproof'>I_55<span class='expansion'>node55 preds:54 succs:56 exn:18 Instructions
+n$8=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$8[0]:class java.lang.String *[_t$0]="one" [line 72];
+REMOVE_TEMPS(n$8); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node56.html"><span class='visitedproof'>I_56<span class='expansion'>node56 preds:55 succs:57 exn:18 Instructions
+n$9=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$9[1]:class java.lang.String *[_t$0]="two" [line 72];
+REMOVE_TEMPS(n$9); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node57.html"><span class='visitedproof'>I_57<span class='expansion'>node57 preds:56 succs:58 exn:18 Instructions
+n$10=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$10[2]:class java.lang.String *[_t$0]="three" [line 72];
+REMOVE_TEMPS(n$10); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node58.html"><span class='visitedproof'>I_58<span class='expansion'>node58 preds:57 succs:59 exn:18 Instructions
+n$11=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$11[3]:class java.lang.String *[_t$0]="four" [line 72];
+REMOVE_TEMPS(n$11); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node59.html"><span class='visitedproof'>I_59<span class='expansion'>node59 preds:58 succs:60 exn:18 Instructions
+n$12=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$12[4]:class java.lang.String *[_t$0]="five" [line 72];
+REMOVE_TEMPS(n$12); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node60.html"><span class='visitedproof'>I_60<span class='expansion'>node60 preds:59 succs:61 exn:18 Instructions
+n$13=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$13[5]:class java.lang.String *[_t$0]="six" [line 72];
+REMOVE_TEMPS(n$13); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node61.html"><span class='visitedproof'>I_61<span class='expansion'>node61 preds:60 succs:62 exn:18 Instructions
+n$14=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$14[6]:class java.lang.String *[_t$0]="seven" [line 72];
+REMOVE_TEMPS(n$14); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node62.html"><span class='visitedproof'>I_62<span class='expansion'>node62 preds:61 succs:63 exn:18 Instructions
+n$15=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$15[7]:class java.lang.String *[_t$0]="eight" [line 72];
+REMOVE_TEMPS(n$15); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node63.html"><span class='visitedproof'>I_63<span class='expansion'>node63 preds:62 succs:64 exn:18 Instructions
+n$16=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$16[8]:class java.lang.String *[_t$0]="nine" [line 72];
+REMOVE_TEMPS(n$16); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node64.html"><span class='visitedproof'>I_64<span class='expansion'>node64 preds:63 succs:65 exn:18 Instructions
+n$17=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*n$17[9]:class java.lang.String *[_t$0]="ten" [line 72];
+REMOVE_TEMPS(n$17); [line 72];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node65.html"><span class='visitedproof'>I_65<span class='expansion'>node65 preds:64 succs:66 exn:18 Instructions
+n$18=*&amp;$irvar0:class java.lang.String *(*)[_t$0] [line 72];
+*&amp;strings:class java.lang.String *(*)[_t$0]=n$18 [line 72];
+REMOVE_TEMPS(n$18); [line 72];
+NULLIFY(&amp;$irvar0,false); [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">        for(int i=0;i&lt;strings.length;i++){ <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node66.html"><span class='visitedproof'>I_66<span class='expansion'>node66 preds:65 succs:69 exn:18 Instructions
+*&amp;i:int =0 [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node67.html"><span class='visitedproof'>C_67<span class='expansion'>node67 preds:69 succs:70 exn:18 Conditional method_body
+n$19=*&amp;i:int  [line 73];
+n$20=*&amp;strings:class java.lang.String *(*)[_t$0] [line 73];
+n$21=*n$20:class java.lang.String *[_t$0] [line 73];
+n$22=_fun___get_array_size(n$20:class java.lang.String *(*)[_t$0]) [line 73];
+PRUNE(!(n$19  &gt;=  n$22), true); [line 73];
+REMOVE_TEMPS(n$19,n$20,n$21,n$22); [line 73];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node68.html"><span class='visitedproof'>C_68<span class='expansion'>node68 preds:69 succs:72 exn:18 Conditional method_body
+n$19=*&amp;i:int  [line 73];
+n$20=*&amp;strings:class java.lang.String *(*)[_t$0] [line 73];
+n$21=*n$20:class java.lang.String *[_t$0] [line 73];
+n$22=_fun___get_array_size(n$20:class java.lang.String *(*)[_t$0]) [line 73];
+PRUNE((n$19  &gt;=  n$22), false); [line 73];
+REMOVE_TEMPS(n$19,n$20,n$21,n$22); [line 73];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node69.html"><span class='visitedproof'>J_69<span class='expansion'>node69 preds:71 66 succs:67 68 exn: Join
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node71.html"><span class='visitedproof'>I_71<span class='expansion'>node71 preds:70 succs:69 exn:18 Instructions
+n$31=*&amp;i:int  [line 73];
+*&amp;i:int =(n$31 + 1) [line 73];
+REMOVE_TEMPS(n$31); [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">            editor.putInt(strings[i], i); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node70.html"><span class='visitedproof'>I_70<span class='expansion'>node70 preds:67 succs:71 exn:18 Instructions
+n$23=*&amp;editor:class android.content.SharedPreferences$Editor * [line 74];
+n$24=*n$23:class android.content.SharedPreferences$Editor  [line 74];
+n$25=*&amp;strings:class java.lang.String *(*)[_t$0] [line 74];
+n$27=*n$25:class java.lang.String *[_t$1] [line 74];
+n$26=*&amp;i:int  [line 74];
+n$28=*n$25[n$26]:class java.lang.String * [line 74];
+n$29=*&amp;i:int  [line 74];
+n$30=_fun_SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int)(n$23:class android.content.SharedPreferences$Editor *,n$28:class java.lang.String *,n$29:int ) virtual [line 74];
+*&amp;$irvar0:class android.content.SharedPreferences$Editor *=n$30 [line 74];
+REMOVE_TEMPS(n$23,n$24,n$25,n$26,n$27,n$28,n$29,n$30); [line 74];
+NULLIFY(&amp;$irvar0,false); [line 74];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int)</div></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">        editor.putString(&quot;String&quot;,&quot;This is awesome&quot;); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node72.html"><span class='visitedproof'>I_72<span class='expansion'>node72 preds:68 succs:73 exn:18 Instructions
+NULLIFY(&amp;i,false); [line 76];
+NULLIFY(&amp;strings,false); [line 76];
+n$32=*&amp;editor:class android.content.SharedPreferences$Editor * [line 76];
+n$33=*n$32:class android.content.SharedPreferences$Editor  [line 76];
+n$34=_fun_SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)(n$32:class android.content.SharedPreferences$Editor *,"String":class java.lang.String *,"This is awesome":class java.lang.String *) virtual [line 76];
+*&amp;$irvar0:class android.content.SharedPreferences$Editor *=n$34 [line 76];
+REMOVE_TEMPS(n$32,n$33,n$34); [line 76];
+NULLIFY(&amp;$irvar0,false); [line 76];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)</div></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">        editor.commit(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node73.html"><span class='visitedproof'>I_73<span class='expansion'>node73 preds:72 succs:74 exn:18 Instructions
+n$35=*&amp;editor:class android.content.SharedPreferences$Editor * [line 77];
+n$36=*n$35:class android.content.SharedPreferences$Editor  [line 77];
+n$37=_fun_boolean SharedPreferences$Editor.commit()(n$35:class android.content.SharedPreferences$Editor *) virtual [line 77];
+*&amp;$irvar0:_Bool =n$37 [line 77];
+REMOVE_TEMPS(n$35,n$36,n$37); [line 77];
+NULLIFY(&amp;$irvar0,false); [line 77];
+NULLIFY(&amp;editor,false); [line 77];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean SharedPreferences$Editor.commit()</div></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">    } <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node17.html"><span class='visitedproof'>E_17<span class='expansion'>node17 preds:74 18 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_18<span class='expansion'>node18 preds: succs:17 exn:17 Instructions
+NULLIFY(&amp;$irvar0,false); [line 78];
+NULLIFY(&amp;editor,false); [line 78];
+NULLIFY(&amp;i,false); [line 78];
+NULLIFY(&amp;sharedPreferences,false); [line 78];
+NULLIFY(&amp;strings,false); [line 78];
+APPLY_ABSTRACTION; [line 78];
+
+NOT VISITED</span></span> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node74.html"><span class='visitedproof'>I_74<span class='expansion'>node74 preds:73 succs:17 exn:18 Instructions
+APPLY_ABSTRACTION; [line 78];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">    public boolean onOptionsItemSelected(MenuItem item) { <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node10.html"><span class='visitedproof'>S_10<span class='expansion'>node10 preds: succs:42 exn:11 Start
+DECLARE_LOCALS(&amp;return,&amp;id,&amp;$irvar0); [line 82];
+NULLIFY(&amp;$irvar0,false); [line 82];
+NULLIFY(&amp;id,false); [line 82];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/com.karthik.imager.MainActivity.onOptionsItemSelected(android.view.MenuItem):boolean.cc114ff5a96f0a5a30db37b16b4e546f.html">boolean MainActivity.onOptionsItemSelected(MenuItem): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">        int id = item.getItemId(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node42.html"><span class='visitedproof'>I_42<span class='expansion'>node42 preds:10 succs:43 44 exn:12 Instructions
+n$0=*&amp;item:class android.view.MenuItem * [line 84];
+n$1=*n$0:class android.view.MenuItem  [line 84];
+n$2=_fun_int MenuItem.getItemId()(n$0:class android.view.MenuItem *) virtual [line 84];
+*&amp;id:int =n$2 [line 84];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 84];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int MenuItem.getItemId()</div></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">        //noinspection SimplifiableIfStatement</td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">        if (id == R.id.action_settings) { <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node43.html"><span class='visitedproof'>C_43<span class='expansion'>node43 preds:42 succs:45 exn:12 Conditional method_body
+n$3=*&amp;id:int  [line 87];
+PRUNE(!(n$3 != 2131558589), true); [line 87];
+REMOVE_TEMPS(n$3); [line 87];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node44.html"><span class='visitedproof'>C_44<span class='expansion'>node44 preds:42 succs:46 exn:12 Conditional method_body
+n$3=*&amp;id:int  [line 87];
+PRUNE((n$3 != 2131558589), false); [line 87];
+REMOVE_TEMPS(n$3); [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">            return true; <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node45.html"><span class='visitedproof'>I_45<span class='expansion'>node45 preds:43 succs:11 exn:12 Instructions
+NULLIFY(&amp;id,false); [line 88];
+NULLIFY(&amp;item,false); [line 88];
+NULLIFY(&amp;this,false); [line 88];
+*&amp;return:_Bool =1 [line 88];
+APPLY_ABSTRACTION; [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">        return super.onOptionsItemSelected(item); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node11.html"><span class='visitedproof'>E_11<span class='expansion'>node11 preds:47 45 12 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_12<span class='expansion'>node12 preds: succs:11 exn:11 Instructions
+NULLIFY(&amp;$irvar0,false); [line 91];
+NULLIFY(&amp;id,false); [line 91];
+NULLIFY(&amp;item,false); [line 91];
+NULLIFY(&amp;this,false); [line 91];
+APPLY_ABSTRACTION; [line 91];
+
+NOT VISITED</span></span> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node46.html"><span class='visitedproof'>I_46<span class='expansion'>node46 preds:44 succs:47 exn:12 Instructions
+NULLIFY(&amp;id,false); [line 91];
+n$4=*&amp;this:class com.karthik.imager.MainActivity * [line 91];
+n$5=*&amp;item:class android.view.MenuItem * [line 91];
+n$6=_fun_boolean Activity.onOptionsItemSelected(MenuItem)(n$4:class com.karthik.imager.MainActivity *,n$5:class android.view.MenuItem *) [line 91];
+*&amp;$irvar0:_Bool =n$6 [line 91];
+REMOVE_TEMPS(n$4,n$5,n$6); [line 91];
+NULLIFY(&amp;item,false); [line 91];
+NULLIFY(&amp;this,false); [line 91];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node47.html"><span class='visitedproof'>I_47<span class='expansion'>node47 preds:46 succs:11 exn:12 Instructions
+n$7=*&amp;$irvar0:_Bool  [line 91];
+*&amp;return:_Bool =n$7 [line 91];
+REMOVE_TEMPS(n$7); [line 91];
+NULLIFY(&amp;$irvar0,false); [line 91];
+APPLY_ABSTRACTION; [line 91];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION boolean Activity.onOptionsItemSelected(MenuItem)</div></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">    @Override</td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">    public void onBackPressed() { <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node7.html"><span class='visitedproof'>S_7<span class='expansion'>node7 preds: succs:31 exn:8 Start
+DECLARE_LOCALS(&amp;return,&amp;fragmentManager,&amp;$irvar0,&amp;$irvar1); [line 95];
+NULLIFY(&amp;$irvar0,false); [line 95];
+NULLIFY(&amp;$irvar1,false); [line 95];
+NULLIFY(&amp;fragmentManager,false); [line 95];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/com.karthik.imager.MainActivity.onBackPressed():void.c82e8e4c9100720e74d1f09ca10cfc01.html">void MainActivity.onBackPressed(): 1 specs</a></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">        FragmentManager fragmentManager = getSupportFragmentManager(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node31.html"><span class='visitedproof'>I_31<span class='expansion'>node31 preds:7 succs:32 exn:9 Instructions
+n$0=*&amp;this:class com.karthik.imager.MainActivity * [line 96];
+n$1=*n$0:class com.karthik.imager.MainActivity  [line 96];
+n$2=_fun_FragmentManager FragmentActivity.getSupportFragmentManager()(n$0:class com.karthik.imager.MainActivity *) virtual [line 96];
+*&amp;fragmentManager:class android.support.v4.app.FragmentManager *=n$2 [line 96];
+REMOVE_TEMPS(n$0,n$1,n$2); [line 96];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION FragmentManager FragmentActivity.getSupportFragmentManager()</div></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">        switch (fragmentManager.getBackStackEntryCount()){ <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node32.html"><span class='visitedproof'>I_32<span class='expansion'>node32 preds:31 succs:33 34 exn:9 Instructions
+n$3=*&amp;fragmentManager:class android.support.v4.app.FragmentManager * [line 97];
+n$4=*n$3:class android.support.v4.app.FragmentManager  [line 97];
+n$5=_fun_int FragmentManager.getBackStackEntryCount()(n$3:class android.support.v4.app.FragmentManager *) virtual [line 97];
+*&amp;$irvar0:int =n$5 [line 97];
+REMOVE_TEMPS(n$3,n$4,n$5); [line 97];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node33.html"><span class='visitedproof'>C_33<span class='expansion'>node33 preds:32 succs:35 36 exn:9 Conditional method_body
+n$6=*&amp;$irvar0:int  [line 97];
+PRUNE(!(n$6 == 1), true); [line 97];
+REMOVE_TEMPS(n$6); [line 97];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node34.html"><span class='visited'>C_34<span class='expansion'>node34 preds:32 succs:37 exn:9 Conditional method_body
+n$6=*&amp;$irvar0:int  [line 97];
+PRUNE((n$6 == 1), false); [line 97];
+REMOVE_TEMPS(n$6); [line 97];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node35.html"><span class='visited'>C_35<span class='expansion'>node35 preds:33 succs:41 exn:9 Conditional method_body
+n$7=*&amp;$irvar0:int  [line 97];
+PRUNE(!(n$7 == 2), true); [line 97];
+REMOVE_TEMPS(n$7); [line 97];
+APPLY_ABSTRACTION; [line 97];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node36.html"><span class='visitedproof'>C_36<span class='expansion'>node36 preds:33 succs:38 exn:9 Conditional method_body
+n$7=*&amp;$irvar0:int  [line 97];
+PRUNE((n$7 == 2), false); [line 97];
+REMOVE_TEMPS(n$7); [line 97];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION int FragmentManager.getBackStackEntryCount()</div></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">            case 1:</td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">                finish(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node37.html"><span class='visited'>I_37<span class='expansion'>node37 preds:34 succs:41 exn:9 Instructions
+NULLIFY(&amp;$irvar0,false); [line 99];
+NULLIFY(&amp;fragmentManager,false); [line 99];
+n$8=*&amp;this:class com.karthik.imager.MainActivity * [line 99];
+n$9=*n$8:class com.karthik.imager.MainActivity  [line 99];
+_fun_void Activity.finish()(n$8:class com.karthik.imager.MainActivity *) virtual [line 99];
+REMOVE_TEMPS(n$8,n$9); [line 99];
+NULLIFY(&amp;this,false); [line 99];
+APPLY_ABSTRACTION; [line 99];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION void Activity.finish()</div></td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">                break;</td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">            case 2:</td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">                //callback to the detail fragment on back pressed.</td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">                ((DetailsFragment)fragmentManager.getFragments().get(1)).onBackPressed(); <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node38.html"><span class='visitedproof'>I_38<span class='expansion'>node38 preds:36 succs:39 exn:9 Instructions
+NULLIFY(&amp;$irvar0,false); [line 103];
+NULLIFY(&amp;this,false); [line 103];
+n$10=*&amp;fragmentManager:class android.support.v4.app.FragmentManager * [line 103];
+n$11=*n$10:class android.support.v4.app.FragmentManager  [line 103];
+n$12=_fun_List FragmentManager.getFragments()(n$10:class android.support.v4.app.FragmentManager *) virtual [line 103];
+*&amp;$irvar0:class java.util.List *=n$12 [line 103];
+REMOVE_TEMPS(n$10,n$11,n$12); [line 103];
+NULLIFY(&amp;fragmentManager,false); [line 103];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node39.html"><span class='visitedproof'>I_39<span class='expansion'>node39 preds:38 succs:40 exn:9 Instructions
+n$13=*&amp;$irvar0:class java.util.List * [line 103];
+n$14=*n$13:class java.util.List  [line 103];
+n$15=_fun_Object List.get(int)(n$13:class java.util.List *,1:int ) virtual [line 103];
+*&amp;$irvar1:class java.lang.Object *=n$15 [line 103];
+REMOVE_TEMPS(n$13,n$14,n$15); [line 103];
+NULLIFY(&amp;$irvar0,false); [line 103];
+</span></span></a> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node40.html"><span class='visitedproof'>I_40<span class='expansion'>node40 preds:39 succs:41 exn:9 Instructions
+n$16=*&amp;$irvar1:class java.lang.Object * [line 103];
+n$17=_fun___cast(n$16:class java.lang.Object *,sizeof(class com.karthik.imager.Fragments.DetailsFragment ( sub )(cast)):void ) [line 103];
+n$18=*n$17:class com.karthik.imager.Fragments.DetailsFragment  [line 103];
+_fun_void DetailsFragment.onBackPressed()(n$17:class com.karthik.imager.Fragments.DetailsFragment *) virtual [line 103];
+REMOVE_TEMPS(n$16,n$17,n$18); [line 103];
+NULLIFY(&amp;$irvar1,false); [line 103];
+APPLY_ABSTRACTION; [line 103];
+</span></span></a>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION List FragmentManager.getFragments()</div>
+<div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object AbstractList.get(int)</div></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">                break;</td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">        }</td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">    } <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node8.html"><span class='visitedproof'>E_8<span class='expansion'>node8 preds:41 9 succs: exn: Exit
+</span></span></a> <span class='dangling'>I_9<span class='expansion'>node9 preds: succs:8 exn:8 Instructions
+NULLIFY(&amp;$irvar0,false); [line 106];
+NULLIFY(&amp;$irvar1,false); [line 106];
+NULLIFY(&amp;fragmentManager,false); [line 106];
+NULLIFY(&amp;this,false); [line 106];
+APPLY_ABSTRACTION; [line 106];
+
+NOT VISITED</span></span> <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node41.html"><span class='visitedproof'>I_41<span class='expansion'>node41 preds:40 37 35 succs:8 exn:9 Instructions
+NULLIFY(&amp;$irvar0,false); [line 106];
+NULLIFY(&amp;this,false); [line 106];
+NULLIFY(&amp;fragmentManager,false); [line 106];
+APPLY_ABSTRACTION; [line 106];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line"></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">}</td></tr>
+</table>
+<hr width="100%">
+ERRORS DURING FOOTPRINT
+<hr width="100%">
+ERRORS DURING RE-EXECUTION
+<hr width="100%">
+WARNINGS DURING FOOTPRINT
+<hr width="100%">
+WARNINGS DURING RE-EXECUTION
+<hr width="100%">
+INFOS DURING FOOTPRINT
+<br>SKIP_FUNCTION FragmentTransaction FragmentTransaction.add(int,Fragment)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node86.html#session14">node86#session14</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)<br>SKIP_FUNCTION SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node52.html#session3">node52#session3</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE70">70</a>)<br>SKIP_FUNCTION FragmentTransaction FragmentTransaction.addToBackStack(String)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node87.html#session15">node87#session15</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)<br>SKIP_FUNCTION int FragmentTransaction.commit()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node88.html#session16">node88#session16</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)<br>SKIP_FUNCTION Object AbstractList.get(int)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node39.html#session10">node39#session10</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE103">103</a>)<br>SKIP_FUNCTION List FragmentManager.getFragments()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node38.html#session9">node38#session9</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE103">103</a>)<br>SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node70.html#session21">node70#session21</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE74">74</a>)<br>SKIP_FUNCTION void MenuInflater.inflate(int,Menu)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node49.html#session3">node49#session3</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">47</a>)<br>SKIP_FUNCTION int MenuItem.getItemId()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node42.html#session2">node42#session2</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE84">84</a>)<br>SKIP_FUNCTION RealmObject Realm.copyToRealm(RealmObject)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node28.html#session6">node28#session6</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE60">60</a>)<br>SKIP_FUNCTION int FragmentManager.getBackStackEntryCount()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node32.html#session3">node32#session3</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE97">97</a>)<br>SKIP_FUNCTION boolean SharedPreferences$Editor.commit()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node73.html#session46">node73#session46</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE77">77</a>)<br>SKIP_FUNCTION FragmentTransaction FragmentManager.beginTransaction()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node84.html#session12">node84#session12</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)<br>SKIP_FUNCTION AppCompatActivity.<init>()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node22.html#session2">node22#session2</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE19">19</a>)<br>SKIP_FUNCTION boolean Activity.onOptionsItemSelected(MenuItem)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node46.html#session4">node46#session4</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE91">91</a>)<br>SKIP_FUNCTION SharedPreferences$Editor SharedPreferences.edit()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node53.html#session4">node53#session4</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE71">71</a>)<br>SKIP_FUNCTION MenuInflater AppCompatActivity.getMenuInflater()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node48.html#session2">node48#session2</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">47</a>)<br>SKIP_FUNCTION Realm Realm.getInstance(Context)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node25.html#session3">node25#session3</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE58">58</a>)<br>SKIP_FUNCTION void Realm.beginTransaction()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node26.html#session4">node26#session4</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE59">59</a>)<br>SKIP_FUNCTION void Realm.commitTransaction()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node29.html#session7">node29#session7</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE61">61</a>)<br>SKIP_FUNCTION FragmentManager FragmentActivity.getSupportFragmentManager()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node83.html#session11">node83#session11</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>) <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node31.html#session2">node31#session2</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE96">96</a>)<br>SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node72.html#session45">node72#session45</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE76">76</a>)<br>SKIP_FUNCTION void Activity.finish()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node37.html#session5">node37#session5</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE99">99</a>)<br>SKIP_FUNCTION void AppCompatActivity.setContentView(int)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node76.html#session3">node76#session3</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE27">27</a>)<br>SKIP_FUNCTION void ButterKnife.bind(Activity)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node77.html#session4">node77#session4</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE28">28</a>)<br>SKIP_FUNCTION void AppCompatActivity.onCreate(Bundle)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node75.html#session2">node75#session2</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE25">25</a>)<hr width="100%">
+INFOS DURING RE-EXECUTION
+<br>SKIP_FUNCTION void AppCompatActivity.setContentView(int)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node76.html#session21">node76#session21</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE27">27</a>)<br>SKIP_FUNCTION void ButterKnife.bind(Activity)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node77.html#session22">node77#session22</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE28">28</a>)<br>SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putString(String,String)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node72.html#session97">node72#session97</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE76">76</a>)<br>SKIP_FUNCTION FragmentTransaction FragmentManager.beginTransaction()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node84.html#session29">node84#session29</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)<br>SKIP_FUNCTION MenuInflater AppCompatActivity.getMenuInflater()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node48.html#session7">node48#session7</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">47</a>)<br>SKIP_FUNCTION void AppCompatActivity.onCreate(Bundle)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node75.html#session20">node75#session20</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE25">25</a>)<br>SKIP_FUNCTION FragmentTransaction FragmentTransaction.addToBackStack(String)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node87.html#session32">node87#session32</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)<br>SKIP_FUNCTION RealmObject Realm.copyToRealm(RealmObject)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node28.html#session15">node28#session15</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE60">60</a>)<br>SKIP_FUNCTION FragmentTransaction FragmentTransaction.add(int,Fragment)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node86.html#session31">node86#session31</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)<br>SKIP_FUNCTION AppCompatActivity.<init>()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node22.html#session6">node22#session6</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE19">19</a>)<br>SKIP_FUNCTION SharedPreferences PreferenceManager.getDefaultSharedPreferences(Context)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node52.html#session55">node52#session55</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE70">70</a>)<br>SKIP_FUNCTION Object AbstractList.get(int)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node39.html#session23">node39#session23</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE103">103</a>)<br>SKIP_FUNCTION int FragmentManager.getBackStackEntryCount()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node32.html#session18">node32#session18</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE97">97</a>)<br>SKIP_FUNCTION List FragmentManager.getFragments()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node38.html#session22">node38#session22</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE103">103</a>)<br>SKIP_FUNCTION void Realm.beginTransaction()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node26.html#session13">node26#session13</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE59">59</a>)<br>SKIP_FUNCTION FragmentManager FragmentActivity.getSupportFragmentManager()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node83.html#session28">node83#session28</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>) <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node31.html#session17">node31#session17</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE96">96</a>)<br>SKIP_FUNCTION SharedPreferences$Editor SharedPreferences.edit()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node53.html#session56">node53#session56</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE71">71</a>)<br>SKIP_FUNCTION boolean Activity.onOptionsItemSelected(MenuItem)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node46.html#session18">node46#session18</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE91">91</a>)<br>SKIP_FUNCTION void Realm.commitTransaction()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node29.html#session16">node29#session16</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE61">61</a>)<br>SKIP_FUNCTION int MenuItem.getItemId()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node42.html#session10">node42#session10</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE84">84</a>)<br>SKIP_FUNCTION SharedPreferences$Editor SharedPreferences$Editor.putInt(String,int)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node70.html#session73">node70#session73</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE74">74</a>)<br>SKIP_FUNCTION void MenuInflater.inflate(int,Menu)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node49.html#session8">node49#session8</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE47">47</a>)<br>SKIP_FUNCTION void Activity.finish()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node37.html#session32">node37#session32</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE99">99</a>)<br>SKIP_FUNCTION boolean SharedPreferences$Editor.commit()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node73.html#session98">node73#session98</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE77">77</a>)<br>SKIP_FUNCTION Realm Realm.getInstance(Context)  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node25.html#session12">node25#session12</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE58">58</a>)<br>SKIP_FUNCTION int FragmentTransaction.commit()  <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/nodes/node88.html#session33">node88#session33</a>( <a href="./MainActivity.java.bd12857de3512a678d121a824f4f276d/../MainActivity.java.bd12857de3512a678d121a824f4f276d.html#LINE36">36</a>)</body>
+</html>

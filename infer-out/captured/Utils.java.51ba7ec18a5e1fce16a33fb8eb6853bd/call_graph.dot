@@ -1,0 +1,11 @@
+digraph {
+"java.lang.Object.<init>().dfab4f0d99f94f824a6db190f40d78c9" [shape=box,label="Object.<init>() | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.karthik.imager.Recycler.Utils.<init>().fa1710c650f57ebfad96e746a065da2a" [shape=box,label="Utils.<init>() | calls=0 1 | specs=-1)",color=green,shape=box]
+"com.karthik.imager.Recycler.Utils.clamp(double,double,double):double.0da66021ebf419c99959dacf24065e21" [shape=box,label="double Utils.clamp(double,double,double) | calls=0 2 | specs=-1)",color=green,shape=box]
+"com.karthik.imager.Recycler.Utils.mapValueFromRangeToRange(double,double,double,double,double):doubl.a37c8928fa5af9dda1070aa629e9ad74" [shape=box,label="double Utils.mapValueFromRangeToRange(double,double,double,double,double) | calls=0 0 | specs=-1)",color=green,shape=box]
+"java.lang.Math.max(double,double):double.6ab583b5625e42ee03cbcbef9fa2f03b" [shape=box,label="double Math.max(double,double) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"java.lang.Math.min(double,double):double.090e6c2e24f3b1d78d39b919c9a75d0a" [shape=box,label="double Math.min(double,double) | calls=1 0 | specs=-1)",color=green,shape=diamond]
+"com.karthik.imager.Recycler.Utils.clamp(double,double,double):double.0da66021ebf419c99959dacf24065e21" -> "java.lang.Math.min(double,double):double.090e6c2e24f3b1d78d39b919c9a75d0a"
+"com.karthik.imager.Recycler.Utils.clamp(double,double,double):double.0da66021ebf419c99959dacf24065e21" -> "java.lang.Math.max(double,double):double.6ab583b5625e42ee03cbcbef9fa2f03b"
+"com.karthik.imager.Recycler.Utils.<init>().fa1710c650f57ebfad96e746a065da2a" -> "java.lang.Object.<init>().dfab4f0d99f94f824a6db190f40d78c9"
+}

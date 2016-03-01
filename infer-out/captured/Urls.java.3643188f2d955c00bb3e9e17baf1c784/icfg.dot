@@ -1,0 +1,23 @@
+digraph iCFG {
+5 [label="5:  method_body \n   APPLY_ABSTRACTION; [line 6]\n " shape="box"]
+	
+
+	 5 -> 2 ;
+	 5 -> 3 [color="red" ];
+4 [label="4:  Call Object.<init>() \n   n$0=*&this:class com.karthik.imager.APIService.Unsplash.Model.Urls * [line 6]\n  _fun_Object.<init>()(n$0:class com.karthik.imager.APIService.Unsplash.Model.Urls *) [line 6]\n  REMOVE_TEMPS(n$0); [line 6]\n  NULLIFY(&this,false); [line 6]\n " shape="box"]
+	
+
+	 4 -> 5 ;
+	 4 -> 3 [color="red" ];
+3 [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 6]\n " shape="box"]
+	
+
+	 3 -> 2 ;
+2 [label="2: Exit Urls.<init>() \n  " color=yellow style=filled]
+	
+
+1 [label="1: Start Urls.<init>()\nFormals:  this:class com.karthik.imager.APIService.Unsplash.Model.Urls *\nLocals:  \n   DECLARE_LOCALS(&return); [line 6]\n " color=yellow style=filled]
+	
+
+	 1 -> 4 ;
+}

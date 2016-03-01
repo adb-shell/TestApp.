@@ -1,0 +1,864 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node93</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">93</a></h1></center>PROC:  <a href="./../io.realm.DefaultRealmModuleMediator.createUsingJsonStream(java.lang.Class,io.realm.Realm,android.uti.3809d730b50cbddd3c323b8be9813ccb.html">RealmObject DefaultRealmModuleMediator.createUsingJsonStream(Class,Realm,JsonReader)</a> LINE: <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">122</a>
+<br>PREDS:
+ <a href="./../nodes/node91.html"><span class='visited'>N_91<span class='expansion'>node91 preds:90 succs:93 exn:27 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_94<span class='expansion'>node94 preds:93 succs:95 exn:27 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_27<span class='expansion'>node27 preds: succs:26 exn:26 
+NOT VISITED</span></span><br>
+<span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 122];
+                          n$5=*&amp;realm:class io.realm.Realm * [line 122];
+                          n$6=*&amp;reader:class android.util.JsonReader * [line 122];
+                          n$7=_fun_DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)(n$5:class io.realm.Realm *,n$6:class android.util.JsonReader *) [line 122];
+                          *&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$7 [line 122];
+                          REMOVE_TEMPS(n$5,n$6,n$7); [line 122];
+                          NULLIFY(&amp;reader,false); [line 122];
+                          NULLIFY(&amp;realm,false); [line 122];
+                          </span><hr width="100%">
+ <a name="session8"href="./../nodes/node93.html#session8">node93#session8</a>( <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">122</a>)<LISTING><span class='color_black'>**** [FP:0] RealmObject DefaultRealmModuleMediator.createUsingJsonStream(Class,Realm,JsonReader) Node: 93, Procedure: RealmObject DefaultRealmModuleMediator.createUsingJsonStream(Class,Realm,JsonReader), Session: 8, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$irvar0 != 0</span> ;  <span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :121($irvar0)</span> ;
+  <span class='color_red'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+  <span class='color_red'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+  <span class='color_red'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+  <span class='color_red'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = @f$4 <span class='color_orange'>update:121</span>:void </span> ;
+  <span class='color_red'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+  [footprint
+     <span class='color_red'>$irvar0 != 0</span> *
+     <span class='color_red'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+     <span class='color_red'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+     <span class='color_red'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+     <span class='color_red'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+     <span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+     <span class='color_red'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 122];
+  n$5=*&amp;realm:class io.realm.Realm * [line 122];
+  n$6=*&amp;reader:class android.util.JsonReader * [line 122];
+  n$7=_fun_DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)(n$5:class io.realm.Realm *,n$6:class android.util.JsonReader *) [line 122];
+  *&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$7 [line 122];
+  REMOVE_TEMPS(n$5,n$6,n$7); [line 122];
+  NULLIFY(&amp;reader,false); [line 122];
+  NULLIFY(&amp;realm,false); [line 122];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$5=*&amp;realm:class io.realm.Realm * [line 122]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;realm
+    Prop: 
+    <span class='color_blue'>@f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$23 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+       clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;realm
+    prop before:
+    <span class='color_blue'>@f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$23 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+       clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = n$23 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$5 = realm</span> ;
+    <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$6=*&amp;reader:class android.util.JsonReader * [line 122]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;reader
+    Prop: 
+    <span class='color_blue'>n$5 = realm ;
+    @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$24 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+       clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;reader
+    prop before:
+    <span class='color_blue'>n$5 = realm ;
+    @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$24 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+       clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = realm</span> ;
+    <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = n$24 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = realm</span> ;  <span class='color_red'>n$6 = reader</span> ;
+    <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$7=_fun_DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)(n$5:class io.realm.Realm *,n$6:class android.util.JsonReader *) [line 122]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)</span>
+    Undefined function DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$7 = @f$6
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = realm</span> ;  <span class='color_blue'>n$6 = reader</span> ;  <span class='color_red'>n$7 = @f$5</span> ;
+    <span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_red'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$7 [line 122]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>n$5 = realm ;  n$6 = reader ;  n$7 = @f$5 ;
+    @f$5 != 0 ;  UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$26 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+       clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>n$5 = realm ;  n$6 = reader ;  n$7 = @f$5 ;
+    @f$5 != 0 ;  UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122(@f$5) ;  @f$4 != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121(@f$4) ;
+    old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$26 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )
+    [footprint
+       @f$4 != 0 *
+       this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+       realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+       reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+       clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+       $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+       clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = realm</span> ;  <span class='color_blue'>n$6 = reader</span> ;  <span class='color_blue'>n$7 = @f$5</span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122(@f$5)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$4)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = n$26 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$5 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$5 = realm</span> ;  <span class='color_blue'>n$6 = reader</span> ;  <span class='color_blue'>n$7 = <span class='color_red'>$irvar0</span></span> ;
+    <span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :121</span>(@f$5)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122</span>($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$4 <span class='color_orange'>update:122</span></span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$5 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>@f$5 <span class='color_orange'>none</span></span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = <span class='color_red'>@f$4 <span class='color_orange'>none</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5,n$6,n$7); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$5)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$4 <span class='color_orange'>update:122</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;reader,false); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$5)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$4 <span class='color_orange'>update:122</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;realm,false); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>@f$5 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$5)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = 0 <span class='color_orange'>nullify</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$4 <span class='color_orange'>update:122</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_blue'>@f$5 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = @f$5 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>@f$5 != 0</span> ;  <span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :121(@f$5)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122</span>($irvar0)</span> ;
+    <span class='color_blue'>old_this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$4 <span class='color_orange'>update:122</span>:void </span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>
+    [footprint
+       <span class='color_red'>@f$5 != 0</span> *
+       <span class='color_blue'>this = @f$0 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+       <span class='color_blue'>realm = @f$1 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+       <span class='color_blue'>reader = @f$2 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+       <span class='color_blue'>clazz = @f$3 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+       <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = <span class='color_red'>@f$5 <span class='color_orange'>none</span></span>:_Bool ( sub )</span> ; 
+       <span class='color_red'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = @f$4 <span class='color_orange'>none</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+       <span class='color_blue'>clazz|->{} <span class='color_orange'>rearrange:(z)121</span>:class java.lang.Class ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session27"href="./../nodes/node93.html#session27">node93#session27</a>( <a href="./../../DefaultRealmModuleMediator.java.ae17c350a5df05347d0bdfa78161fd48.html#LINE122">122</a>)<LISTING><span class='color_black'>**** [RE:0] RealmObject DefaultRealmModuleMediator.createUsingJsonStream(Class,Realm,JsonReader) Node: 93, Procedure: RealmObject DefaultRealmModuleMediator.createUsingJsonStream(Class,Realm,JsonReader), Session: 27, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+  <span class='color_red'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+  <span class='color_red'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+  <span class='color_red'>old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+  <span class='color_red'>reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+  <span class='color_red'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = val$5 <span class='color_orange'>update:121</span>:void </span> ; 
+  <span class='color_red'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+  <span class='color_red'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+  <span class='color_red'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+  <span class='color_red'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+  .... Instructions: .... 
+  <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 122];
+  n$5=*&amp;realm:class io.realm.Realm * [line 122];
+  n$6=*&amp;reader:class android.util.JsonReader * [line 122];
+  n$7=_fun_DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)(n$5:class io.realm.Realm *,n$6:class android.util.JsonReader *) [line 122];
+  *&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$7 [line 122];
+  REMOVE_TEMPS(n$5,n$6,n$7); [line 122];
+  NULLIFY(&amp;reader,false); [line 122];
+  NULLIFY(&amp;realm,false); [line 122];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>NULLIFY(&amp;$irvar0,false); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$5=*&amp;realm:class io.realm.Realm * [line 122]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;realm
+    Prop: 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$33 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+    clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>val$2 = realm</span> ;
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = <span class='color_red'>n$5 <span class='color_orange'>formal</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>n$5 <span class='color_orange'>formal</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$6=*&amp;reader:class android.util.JsonReader * [line 122]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;reader
+    Prop: 
+    <span class='color_blue'>val$2 = realm ;
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$34 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+    clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = realm</span> ;  <span class='color_red'>val$3 = reader</span> ;
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = <span class='color_red'>n$6 <span class='color_orange'>formal</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = <span class='color_red'>n$6 <span class='color_orange'>formal</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>n$7=_fun_DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)(n$5:class io.realm.Realm *,n$6:class android.util.JsonReader *) [line 122]</span>
+    <span class='color_blue'>INFO: SKIP_FUNCTION DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader)</span>
+    Undefined function DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = realm</span> ;  <span class='color_blue'>val$3 = reader</span> ;  <span class='color_red'>val$7 = $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_red'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = n$6 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = n$6 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = <span class='color_red'>n$7 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class com.karthik.imager.APIService.DummyObject *=n$7 [line 122]</span>
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>val$2 = realm ;  val$3 = reader ;  val$7 = $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar ;
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0 ;  UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar) ;  $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar != 0 ;  UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar) ;
+    old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub ) ; 
+    return = n$36 <span class='color_orange'>initial</span>:class io.realm.RealmObject * ; 
+    old_realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub ) ; 
+    old_reader = n$6 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    reader = n$6 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub ) ; 
+    old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub ) ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub ) ; 
+    $RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub ) ; 
+    $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub ) ;
+    clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span>
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>val$2 = realm</span> ;  <span class='color_blue'>val$3 = reader</span> ;  <span class='color_blue'>val$7 = $RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar</span> ;
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;  <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = n$5 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = n$6 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = n$6 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$7 <span class='color_orange'>update:122</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = n$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$5,n$6,n$7); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>val$2 <span class='color_orange'>formal</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = <span class='color_red'>val$3 <span class='color_orange'>formal</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$7 <span class='color_orange'>update:122</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = <span class='color_red'>val$7 <span class='color_orange'>formal</span></span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;reader,false); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$7 <span class='color_orange'>update:122</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    Instruction <span class='color_green'>NULLIFY(&amp;realm,false); [line 122]</span>
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = 0 <span class='color_orange'>nullify</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = val$7 <span class='color_orange'>update:122</span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar != 0</span> ;  <span class='color_red'>UND &lt; DummyObject DummyObjectRealmProxy.createUsingJsonStream(Realm,JsonReader) &gt; :122($RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar)</span> ;  <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar != 0</span> ;  <span class='color_blue'>UND &lt; boolean Object.equals(Object) &gt; :121($RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar)</span> ;
+    <span class='color_blue'>old_this = val$1 <span class='color_orange'>formal</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>this = 0 <span class='color_orange'>nullify</span>:class io.realm.DefaultRealmModuleMediator *( sub )</span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.RealmObject *</span> ; 
+    <span class='color_blue'>old_realm = val$2 <span class='color_orange'>formal</span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>realm = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class io.realm.Realm *( sub )</span> ; 
+    <span class='color_blue'>old_reader = val$3 <span class='color_orange'>formal</span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>reader = <span class='color_red'>0 <span class='color_orange'>nullify</span></span>:class android.util.JsonReader *( sub )</span> ; 
+    <span class='color_blue'>old_clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>clazz = val$4 <span class='color_orange'>formal</span>:class java.lang.Class *( sub )</span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>val$7 <span class='color_orange'>update:122</span></span>:void </span> ; 
+    <span class='color_blue'>$RET_java.lang.Object.equals(java.lang.Object):boolean|abductedRetvar = val$5 <span class='color_orange'>formal</span>:_Bool ( sub )</span> ; 
+    <span class='color_blue'>$RET_java.lang.Class.cast(java.lang.Object):java.lang.Object|abductedRetvar = val$6 <span class='color_orange'>formal</span>:class java.lang.Object *( sub )</span> ; 
+    <span class='color_blue'>$RET_io.realm.DummyObjectRealmProxy.createUsingJsonStream(io.realm.Realm,android.util.JsonReader):com.karthik.imager.APIService.DummyObject|abductedRetvar = val$7 <span class='color_orange'>formal</span>:class com.karthik.imager.APIService.DummyObject *( sub )</span> ;
+    <span class='color_blue'>clazz|->{} <span class='color_orange'>formal(z)</span>:class java.lang.Class ( sub )</span></span>
+    
+    
+    
+  

@@ -1,0 +1,1401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>node325</title>
+<style type="text/css">
+body { color:#000000; background-color:#ffffff }
+body { font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; }
+.code { font-family: "Andale Mono", monospace; font-size:10pt }
+.code { line-height: 1.2em }
+.comment { color: green; font-style: oblique }
+.keyword { color: blue }
+.string_literal { color: red }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_red { color: red }
+.color_orange { color: orange }
+.directive { color: darkmagenta }
+.expansion { display: none; }
+.visited:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visited { color: darkmagenta; background-color:LemonChiffon; position: relative }
+.visitedproof:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.visitedproof { color: darkmagenta; background-color:lightgreen; position: relative }
+.dangling:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 }
+.dangling { color: gray; background-color:white; position: relative }
+.num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+.num { text-align:right; font-size: smaller }
+.num { color:#444444 }
+.line { padding-left: 1ex; border-left: 3px solid #ccc }
+.line { white-space: pre }
+.msg { background-color:#fff8b4; color:#000000 }
+.msg { -webkit-box-shadow:1px 1px 7px #000 }
+.msg { -webkit-border-radius:5px }
+.msg { font-family:Helvetica, sans-serif; font-size: smaller }
+.msg { font-weight: bold }
+.msg { float:left }
+.msg { padding:0.5em 1ex 0.5em 1ex }
+.msg { margin-top:10px; margin-bottom:10px }
+.msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap;}
+.mrange { background-color:#dfddf3 }
+.mrange { border-bottom:1px solid #6F9DBE }
+.PathIndex { font-weight: bold }
+table.simpletable {
+padding: 5px;
+font-size:12pt;
+margin:20px;
+border-collapse: collapse; border-spacing: 0px;
+}
+td.rowname {
+text-align:right; font-weight:bold; color:#444444;
+padding-right:2ex; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node  <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE113">325</a></h1></center>PROC:  <a href="./../io.realm.DummyObjectRealmProxy.validateTable(io.realm.internal.ImplicitTransaction):io.realm.DummyOb.1d3c6cdd7f6739c44249a5f9f37a504b.html">DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction)</a> LINE: <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE113">113</a>
+<br>PREDS:
+ <a href="./../nodes/node322.html"><span class='visited'>N_322<span class='expansion'>node322 preds:324 succs:325 exn:71 </span></span></a><br>SUCCS: 
+ <span class='dangling'>N_326<span class='expansion'>node326 preds:325 succs:327 exn:71 
+NOT VISITED</span></span><br>EXN: 
+ <span class='dangling'>N_71<span class='expansion'>node71 preds: succs:70 exn:70 
+NOT VISITED</span></span><br>
+<span class='color_green'>n$34=*&amp;table:class io.realm.internal.Table * [line 113];
+                          n$35=*n$34:class io.realm.internal.Table  [line 113];
+                          n$36=*&amp;i:long  [line 113];
+                          n$37=_fun_String Table.getColumnName(long)(n$34:class io.realm.internal.Table *,n$36:long ) virtual [line 113];
+                          *&amp;$irvar0:class java.lang.String *=n$37 [line 113];
+                          REMOVE_TEMPS(n$34,n$35,n$36,n$37); [line 113];
+                          </span><hr width="100%">
+ <a name="session16"href="./../nodes/node325.html#session16">node325#session16</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE113">113</a>)<LISTING><span class='color_black'>**** [FP:0] DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction) Node: 325, Procedure: DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction), Session: 16, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_red'>@f$2 != 0</span> ;  <span class='color_red'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2)</span> ;  <span class='color_red'>table != 0</span> ;  <span class='color_red'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+  <span class='color_red'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+  <span class='color_red'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+  <span class='color_red'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+  <span class='color_red'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+  <span class='color_red'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+  <span class='color_red'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+  <span class='color_red'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+  <span class='color_red'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+  [footprint
+     <span class='color_red'>@f$2 != 0</span> ;  <span class='color_red'>table != 0</span> *
+     <span class='color_red'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+     <span class='color_red'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+     <span class='color_red'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$34=*&amp;table:class io.realm.internal.Table * [line 113];
+  n$35=*n$34:class io.realm.internal.Table  [line 113];
+  n$36=*&amp;i:long  [line 113];
+  n$37=_fun_String Table.getColumnName(long)(n$34:class io.realm.internal.Table *,n$36:long ) virtual [line 113];
+  *&amp;$irvar0:class java.lang.String *=n$37 [line 113];
+  REMOVE_TEMPS(n$34,n$35,n$36,n$37); [line 113];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$34=*&amp;table:class io.realm.internal.Table * [line 113]</span>
+    in vpath_find exp:n$161
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: &amp;table
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$2 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$160 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$161 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;table
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$2 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$160 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$161 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$160 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$161 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$35=*n$34:class io.realm.internal.Table  [line 113]</span>
+    in vpath_find exp:n$163
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$2 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$162 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$163 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$1
+    prop before:
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$2 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$162 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$163 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$162 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$163 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$36=*&amp;i:long  [line 113]</span>
+    in vpath_find exp:n$165
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: &amp;i
+    Prop: 
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$2 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$164 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$165 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;i
+    prop before:
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$2 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$164 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$165 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$164 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$165 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_red'>n$36 = 0</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$2 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$37=_fun_String Table.getColumnName(long)(n$34:class io.realm.internal.Table *,n$36:long ) virtual [line 113]</span>
+    in vpath_find exp:n$167
+    vpath_find: found columnTypes : void 
+    <span class='color_blue'>INFO: SKIP_FUNCTION String Table.getColumnName(long)</span>
+    Undefined function String Table.getColumnName(long), returning undefined value.
+    <span class='color_orange'>WARNING: dropping non-footprint </span>n$37 = @f$5
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_blue'>n$36 = 0</span> ;  <span class='color_red'>n$37 = @f$2</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_red'>@f$3 != 0</span> ;  <span class='color_red'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; String Table.getColumnName(long) &gt; :113</span>(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_red'>@f$3 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_red'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = <span class='color_red'>@f$3 <span class='color_orange'>none</span></span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class java.lang.String *=n$37 [line 113]</span>
+    in vpath_find exp:n$169
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>n$34 = table ;  n$36 = 0 ;  n$37 = @f$2 ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$3 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$168 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$169 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$3 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$3 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>n$34 = table ;  n$36 = 0 ;  n$37 = @f$2 ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$3 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$168 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 0 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$169 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$3 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$3 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_blue'>n$36 = 0</span> ;  <span class='color_blue'>n$37 = @f$2</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$168 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$169 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$3 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_blue'>n$36 = 0</span> ;  <span class='color_blue'>n$37 = $irvar0</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$3)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113($irvar0)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$2 <span class='color_orange'>update:113</span></span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$3 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$34,n$35,n$36,n$37); [line 113]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found columnTypes : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$3)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113($irvar0)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = @f$2 <span class='color_orange'>update:113</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$3 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_red'>@f$3 != 0</span> ;  <span class='color_red'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$3)</span> ;  <span class='color_blue'>$irvar0 != 0</span> ;  <span class='color_blue'><span class='color_red'>UND &lt; String Table.getColumnName(long) &gt; :113</span>($irvar0)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 0 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>@f$2 <span class='color_orange'>update:113</span></span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:null <span class='color_orange'>update:(z)111</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:111</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_red'>@f$3 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_red'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = <span class='color_red'>@f$3 <span class='color_orange'>none</span></span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+  <hr width="100%">
+ <a name="session23"href="./../nodes/node325.html#session23">node325#session23</a>( <a href="./../../DummyObjectRealmProxy.java.ddfbaf0d8b394752b64fee6125768986.html#LINE113">113</a>)<LISTING><span class='color_black'>**** [FP:0] DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction) Node: 325, Procedure: DummyObjectRealmProxy$DummyObjectColumnInfo DummyObjectRealmProxy.validateTable(ImplicitTransaction), Session: 23, Todo: 1 ****
+  PROP 1 of 1:
+  <span class='color_blue'><span class='color_red'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_red'>@f$3 != 0</span> ;  <span class='color_red'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_red'>@f$2 != 0</span> ;  <span class='color_red'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_red'>table != 0</span> ;  <span class='color_red'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+  <span class='color_red'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+  <span class='color_red'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+  <span class='color_red'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+  <span class='color_red'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+  <span class='color_red'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+  <span class='color_red'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+  <span class='color_red'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+  <span class='color_red'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+  <span class='color_red'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+  <span class='color_red'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+  <span class='color_red'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+  [footprint
+     <span class='color_red'>@f$4 != 0</span> ;  <span class='color_red'>@f$3 != 0</span> ;  <span class='color_red'>@f$2 != 0</span> ;  <span class='color_red'>table != 0</span> *
+     <span class='color_red'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+     <span class='color_red'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+     <span class='color_red'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+     <span class='color_red'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+  .... Instructions: .... 
+  <span class='color_green'>n$34=*&amp;table:class io.realm.internal.Table * [line 113];
+  n$35=*n$34:class io.realm.internal.Table  [line 113];
+  n$36=*&amp;i:long  [line 113];
+  n$37=_fun_String Table.getColumnName(long)(n$34:class io.realm.internal.Table *,n$36:long ) virtual [line 113];
+  *&amp;$irvar0:class java.lang.String *=n$37 [line 113];
+  REMOVE_TEMPS(n$34,n$35,n$36,n$37); [line 113];
+  </span>
+  
+  Processing prop 1/1
+    Instruction <span class='color_green'>n$34=*&amp;table:class io.realm.internal.Table * [line 113]</span>
+    in vpath_find exp:n$207
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: &amp;table
+    Prop: 
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$206 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$207 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;table
+    prop before:
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$206 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$207 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$206 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$207 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$35=*n$34:class io.realm.internal.Table  [line 113]</span>
+    in vpath_find exp:n$209
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: @f$1
+    Prop: 
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$208 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$209 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: @f$1
+    prop before:
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$208 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$209 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$208 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$209 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$36=*&amp;i:long  [line 113]</span>
+    in vpath_find exp:n$211
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: &amp;i
+    Prop: 
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$210 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$211 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;i
+    prop before:
+    <span class='color_blue'>n$34 = table ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$210 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$211 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$210 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$211 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_red'>n$36 = 1</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>n$37=_fun_String Table.getColumnName(long)(n$34:class io.realm.internal.Table *,n$36:long ) virtual [line 113]</span>
+    in vpath_find exp:n$213
+    vpath_find: found columnTypes : void 
+    Undefined function String Table.getColumnName(long), returning undefined value.
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_blue'>n$36 = 1</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_red'>UND &lt; String Table.getColumnName(long) &gt; :113(n$37)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>*&amp;$irvar0:class java.lang.String *=n$37 [line 113]</span>
+    in vpath_find exp:n$215
+    vpath_find: found columnTypes : void 
+    .... Rearrangement Start ....
+    Exp: &amp;$irvar0
+    Prop: 
+    <span class='color_blue'>n$34 = table ;  n$36 = 1 ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  UND &lt; String Table.getColumnName(long) &gt; :113(n$37) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$214 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$215 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    in prop_iter_extend_ptsto lexp: &amp;$irvar0
+    prop before:
+    <span class='color_blue'>n$34 = table ;  n$36 = 1 ;
+    MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes) ;  UND &lt; String Table.getColumnName(long) &gt; :113(n$37) ;  @f$4 != 0 ;  UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4) ;  @f$3 != 0 ;  UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3) ;  @f$2 != 0 ;  UND &lt; String Table.getColumnName(long) &gt; :113(@f$2) ;  table != 0 ;  UND &lt; Table Group.getTable(String) &gt; :107(table) ;
+    old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+    table = @f$1 <span class='color_orange'>update:107</span>:void  ; 
+    return = n$214 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo * ; 
+    i = 1 <span class='color_orange'>update:112</span>:void  ; 
+    columnTypes = n$215 <span class='color_orange'>update:111</span>:void  ; 
+    columnInfo = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar6 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar5 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar4 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar3 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar2 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar1 = 0 <span class='color_orange'>nullify</span>:void  ; 
+    $irvar0 = 0 <span class='color_orange'>nullify</span>:void  ;
+    transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+    table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub ) ; 
+    columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap 
+    [footprint
+       @f$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  table != 0 *
+       transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub ) ; 
+       $RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub ) ; 
+       $RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub ) ; 
+       $RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub ) ;
+       transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub ) ; 
+       table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )  ]</span>
+    
+    
+    prop list after:
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_blue'>n$36 = 1</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(n$37)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = n$214 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = n$215 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = 0 <span class='color_orange'>nullify</span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_blue'>n$34 = table</span> ;  <span class='color_blue'>n$36 = 1</span> ;
+    <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113($irvar0)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>n$37 <span class='color_orange'>update:113</span></span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    Instruction <span class='color_green'>REMOVE_TEMPS(n$34,n$35,n$36,n$37); [line 113]</span>
+    in vpath_find exp:_t$1
+    vpath_find: found columnTypes : void 
+    Instruction Returns
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>UND &lt; String Table.getColumnName(long) &gt; :113($irvar0)</span> ;  <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>_t$2 <span class='color_orange'>update:113</span></span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    .... After Symbolic Execution ....
+    PROP 1 of 1:
+    <span class='color_blue'><span class='color_red'>UND &lt; String Table.getColumnName(long) &gt; :113($irvar0)</span> ;  <span class='color_blue'>MEMne &lt; new:111 &gt;  <span class='color_orange'>{vpath: columnTypes}</span>(columnTypes)</span> ;  <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>UND &lt; boolean Group.hasTable(String) &gt; :106(@f$4)</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>UND &lt; RealmFieldType Table.getColumnType(long) &gt; :113(@f$3)</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>UND &lt; String Table.getColumnName(long) &gt; :113(@f$2)</span> ;  <span class='color_blue'>table != 0</span> ;  <span class='color_blue'>UND &lt; Table Group.getTable(String) &gt; :107(table)</span> ;
+    <span class='color_blue'>old_transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+    <span class='color_blue'>table = @f$1 <span class='color_orange'>update:107</span>:void </span> ; 
+    <span class='color_blue'>return = _t$0 <span class='color_orange'>initial</span>:class io.realm.DummyObjectRealmProxy$DummyObjectColumnInfo *</span> ; 
+    <span class='color_blue'>i = 1 <span class='color_orange'>update:112</span>:void </span> ; 
+    <span class='color_blue'>columnTypes = _t$1 <span class='color_orange'>update:111</span>:void </span> ; 
+    <span class='color_blue'>columnInfo = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar6 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar5 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar4 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar3 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar2 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar1 = 0 <span class='color_orange'>nullify</span>:void </span> ; 
+    <span class='color_blue'>$irvar0 = <span class='color_red'>_t$2 <span class='color_orange'>update:113</span></span>:void </span> ;
+    <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+    <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span> ; 
+    <span class='color_blue'>columnTypes|->{java.util.AbstractMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.AbstractMap.valuesCollection:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entryForNullKey:0 <span class='color_orange'>alloc</span>, java.util.HashMap.entrySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.keySet:0 <span class='color_orange'>alloc</span>, java.util.HashMap.lastKey1:@f$2 <span class='color_orange'>update:(z)113</span>, java.util.HashMap.lastKey2:null <span class='color_orange'>update:113</span>, java.util.HashMap.modCount:0 <span class='color_orange'>alloc</span>, java.util.HashMap.size:0 <span class='color_orange'>alloc</span>, java.util.HashMap.table:0 <span class='color_orange'>alloc</span>, java.util.HashMap.threshold:0 <span class='color_orange'>alloc</span>, java.util.HashMap.values:0 <span class='color_orange'>alloc</span>} <span class='color_orange'>alloc</span>:class java.util.HashMap </span>
+    [footprint
+       <span class='color_blue'>@f$4 != 0</span> ;  <span class='color_blue'>@f$3 != 0</span> ;  <span class='color_blue'>@f$2 != 0</span> ;  <span class='color_blue'>table != 0</span> *
+       <span class='color_blue'>transaction = @f$0 <span class='color_orange'>formal</span>:class io.realm.internal.ImplicitTransaction *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnType(long):io.realm.RealmFieldType|abductedRetvar = @f$3 <span class='color_orange'>none</span>:class io.realm.RealmFieldType *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnName(long):java.lang.String|abductedRetvar = @f$2 <span class='color_orange'>none</span>:class java.lang.String *( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Table.getColumnCount():long|abductedRetvar = 2 <span class='color_orange'>none</span>:long ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.hasTable(java.lang.String):boolean|abductedRetvar = @f$4 <span class='color_orange'>none</span>:_Bool ( sub )</span> ; 
+       <span class='color_blue'>$RET_io.realm.internal.Group.getTable(java.lang.String):io.realm.internal.Table|abductedRetvar = @f$1 <span class='color_orange'>none</span>:class io.realm.internal.Table *( sub )</span> ;
+       <span class='color_blue'>transaction|->{} <span class='color_orange'>rearrange:(z)106</span>:class io.realm.internal.ImplicitTransaction ( sub )</span> ; 
+       <span class='color_blue'>table|->{} <span class='color_orange'>rearrange:108</span>:class io.realm.internal.Table ( sub )</span>  ]</span>
+    
+    
+    
+  

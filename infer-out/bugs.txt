@@ -1,0 +1,48 @@
+
+Found 5 issues
+
+mobile/build/intermediates/classes/debug/io/realm/DummyObjectRealmProxy.java:38: warning: RETURN_VALUE_IGNORED (backend/symExec.ml:1504:64)
+  after call to put(...) at line 38
+  36.               final Map<String, Long> indicesMap = new HashMap<String, Long>(2);
+  37.               this.dummyTitleIndex = getValidColumnIndex(path, table, "DummyObject", "dummyTitle");
+  38. >             indicesMap.put("dummyTitle", this.dummyTitleIndex);
+  39.   
+  40.               this.dummyDescIndex = getValidColumnIndex(path, table, "DummyObject", "dummyDesc");
+
+mobile/build/intermediates/classes/debug/io/realm/DummyObjectRealmProxy.java:41: warning: RETURN_VALUE_IGNORED (backend/symExec.ml:1504:64)
+  after call to put(...) at line 41
+  39.   
+  40.               this.dummyDescIndex = getValidColumnIndex(path, table, "DummyObject", "dummyDesc");
+  41. >             indicesMap.put("dummyDesc", this.dummyDescIndex);
+  42.   
+  43.               setIndicesMap(indicesMap);
+
+mobile/build/intermediates/classes/debug/io/realm/DummyObjectRealmProxy.java:113: warning: RETURN_VALUE_IGNORED (backend/symExec.ml:1504:64)
+  after call to put(...) at line 113
+  111.               Map<String, RealmFieldType> columnTypes = new HashMap<String, RealmFieldType>();
+  112.               for (long i = 0; i < 2; i++) {
+  113. >                 columnTypes.put(table.getColumnName(i), table.getColumnType(i));
+  114.               }
+  115.   
+
+mobile/src/main/java/com/karthik/imager/Adapter.java:158: warning: ANALYSIS_STOPS (backend/tabulation.ml:1122:76)
+  exception: CLASS_CAST_EXCEPTION
+  156.               @Override
+  157.               public void onClick(View v) {
+  158. >                 photoClickListner.onPhotoClick(holder, position);
+  159.               }
+  160.           });
+
+mobile/src/main/java/com/karthik/imager/Adapter.java:158: error: CLASS_CAST_EXCEPTION (backend/tabulation.ml:1122:76)
+  class com.karthik.imager.Adapter$ViewHolder * cannot be cast to class android.support.v7.widget.RecyclerView$ViewHolder *  in expression &holder  in call to onPhotoClick(...) at line 158
+  156.               @Override
+  157.               public void onClick(View v) {
+  158. >                 photoClickListner.onPhotoClick(holder, position);
+  159.               }
+  160.           });
+
+Summary of the reports:
+
+  RETURN_VALUE_IGNORED: 3
+  CLASS_CAST_EXCEPTION: 1
+        ANALYSIS_STOPS: 1
