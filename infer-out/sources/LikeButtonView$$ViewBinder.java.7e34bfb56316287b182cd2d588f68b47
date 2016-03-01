@@ -1,0 +1,24 @@
+// Generated code from Butter Knife. Do not modify!
+package com.karthik.imager.Recycler;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class LikeButtonView$$ViewBinder<T extends com.karthik.imager.Recycler.LikeButtonView> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131558588, "field 'ivStar'");
+    target.ivStar = finder.castView(view, 2131558588, "field 'ivStar'");
+    view = finder.findRequiredView(source, 2131558586, "field 'vDotsView'");
+    target.vDotsView = finder.castView(view, 2131558586, "field 'vDotsView'");
+    view = finder.findRequiredView(source, 2131558587, "field 'vCircle'");
+    target.vCircle = finder.castView(view, 2131558587, "field 'vCircle'");
+  }
+
+  @Override public void unbind(T target) {
+    target.ivStar = null;
+    target.vDotsView = null;
+    target.vCircle = null;
+  }
+}
