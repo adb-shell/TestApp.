@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity{
             editor.putInt(strings[i], i);
         }
         editor.putString("String","This is awesome");
-        editor.commit();
+        //writes to the persistant storage quickly faster than commit
+        editor.apply();
     }
 
 
