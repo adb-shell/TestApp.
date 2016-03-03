@@ -23,6 +23,8 @@ Facebook  Stetho library is also implemented.<br/>
 ![alt tag](https://github.com/callmekarthik/AnimationsDemo/blob/master/Art-gif/stetho-network.gif)<br/>
 ![alt tag](https://github.com/callmekarthik/AnimationsDemo/blob/master/Art-gif/stetho-inspect1.gif)<br/>
 
+Few static code analysis results are also added in this repo.<br/>
+For Facebook Infer Infer-out folder contains the result of the analysis and where as Android Lint analysis results are found in the Lint-results folder.
 
 For more watch the youtube video https://www.youtube.com/watch?v=-isCsgFN5XI
 #WIP(Work in progress)<br/>
