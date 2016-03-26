@@ -50,7 +50,7 @@ import okhttp3.ResponseBody;
 public class DashboardFragment extends Fragment implements PhotoClickListner{
 
     //register your application at unsplash.com and get the client id
-    private final String unsplash_client_Id = "ac86565306b813a0190fd19e8b9600022dd58b6e40dc1dca43f9712819d5893a";
+    private final String unsplash_client_Id = "";
     private final String UNSPLASHBASEURL = "https://api.unsplash.com/photos/";
 
 
