@@ -14,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 import butterknife.ButterKnife;
-import io.realm.Realm;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity{
 
         if(savedInstanceState==null){
             //dummy methods
-            fillDummyValuesInDB();
             fillDummyValuesInSharedPreferences();
 
             getSupportFragmentManager().beginTransaction()
@@ -48,18 +46,7 @@ public class MainActivity extends AppCompatActivity{
         return true;
     }
 
-    /**
-     This method is used to demonstrate stetho functionality
-     such that we view values in the storage of chrome inspector
-     as such it has no significance.
-     **/
-    public void fillDummyValuesInDB(){
-        //caching the response values.
-        Realm realm = Realm.getInstance(mContext);
-        realm.beginTransaction();
-        realm.copyToRealm(new DummyObject("DummyTitle","DummyDesc"));
-        realm.commitTransaction();
-    }
+
 
     /**
      This method is used to demonstrate particular stetho functionality.

@@ -8,6 +8,8 @@ import com.karthik.imager.APIService.Unsplash.Model.Photos;
 import com.karthik.imager.Adapter;
 import com.karthik.imager.DetailsTransition;
 import com.karthik.imager.ImagerApp;
+import com.karthik.imager.Injection.Components.DaggerNetworkComponent;
+import com.karthik.imager.Injection.Modules.NetworkModule;
 import com.karthik.imager.MainActivity;
 import com.karthik.imager.R;
 import com.karthik.imager.Recycler.GridItemDividerDecoration;
@@ -19,6 +21,8 @@ import java.io.InputStream;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.inject.Inject;
 
 import android.content.Context;
 import android.os.Handler;
@@ -34,7 +38,6 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import io.realm.Realm;
 import okhttp3.Call;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
@@ -47,7 +50,7 @@ import okhttp3.ResponseBody;
 public class DashboardFragment extends Fragment implements PhotoClickListner{
 
     //register your application at unsplash.com and get the client id
-    private final String unsplash_client_Id = "";
+    private final String unsplash_client_Id = "ac86565306b813a0190fd19e8b9600022dd58b6e40dc1dca43f9712819d5893a";
     private final String UNSPLASHBASEURL = "https://api.unsplash.com/photos/";
 
 
@@ -62,6 +65,9 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
     @Bind(R.id.avloadingIndicatorView)
     AVLoadingIndicatorView progressView;
 
+    //injecting okhttp client
+    @Inject OkHttpClient client;
+
     //workaround: keep reference so that shared animation works else each new view/adapter loaded.
     //TODO find a better soloution for this piece of code.
     View rootView;
@@ -73,6 +79,13 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        DaggerNetworkComponent.builder()
+                .applicationComponent(ImagerApp.get(getActivity()).getComponent())
+                .networkModule(new NetworkModule(getActivity()))
+                .build()
+                .inject(this);
+
         if(rootView==null){
             rootView =  inflater.inflate(R.layout.fragment_main, container, false);
 
@@ -94,8 +107,6 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
 
 
     private void getUnspalashService(){
-
-        OkHttpClient client = ((ImagerApp)((MainActivity)mContext).getApplication()).getOkHttpInstance();
 
         //adding query parameters.
         HttpUrl.Builder urlBuilder = HttpUrl.parse(UNSPLASHBASEURL).newBuilder();
@@ -177,7 +188,7 @@ public class DashboardFragment extends Fragment implements PhotoClickListner{
     private void loadData(){
 
         //for the first time when grid adapter is not set
-        gridAdapter = new Adapter(gridItems,mContext,this);
+        gridAdapter = new Adapter(gridItems,mContext,this,client);
         recyclerView.addItemDecoration(new GridItemDividerDecoration(gridAdapter.getDividedViewHolderClasses(),
                 mContext, R.dimen.divider_height, R.color.divider));
 

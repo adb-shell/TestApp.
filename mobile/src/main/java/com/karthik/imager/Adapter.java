@@ -42,12 +42,12 @@ public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private String SHIMMER_BACKGROUND = "#D7D7D7";
     private String SHIMMER_BACKGROUND_TRANSPARENT = "#00000000";
 
-    public Adapter(List<GridItem> photosList,Context context,PhotoClickListner  listner){
+    public Adapter(List<GridItem> photosList,Context context,PhotoClickListner  listner,OkHttpClient client){
         super();
         this.photosList = photosList;
         mContext = context;
         photoClickListner = listner;
-        okHttpClient = ((ImagerApp)((MainActivity)mContext).getApplication()).getOkHttpInstance();
+        okHttpClient = client;
         picasso = new Picasso.Builder(mContext)
                 .downloader(new OkHttp3Downloader(okHttpClient))
                 .build();

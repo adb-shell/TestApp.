@@ -1,12 +1,11 @@
 package com.karthik.imager.APIService;
 
-import io.realm.Realm;
-import io.realm.RealmObject;
+
 
 /**
  * Created by karthikrk on 27/02/16.
  */
-public class DummyObject extends RealmObject {
+public class DummyObject{
     private String dummyTitle;
 
     public String getDummyDesc() {
