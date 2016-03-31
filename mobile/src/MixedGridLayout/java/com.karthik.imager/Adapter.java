@@ -3,7 +3,7 @@ package com.karthik.imager;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.github.florent37.materialimageloading.MaterialImageLoading;
 import com.jakewharton.picasso.OkHttp3Downloader;
-import com.karthik.imager.APIService.GridItem;
+import com.karthik.imager.APIModels.GridItem;
 import com.karthik.imager.Recycler.LikeButtonView;
 import com.karthik.imager.Recycler.PhotoClickListner;
 import com.squareup.picasso.Callback;

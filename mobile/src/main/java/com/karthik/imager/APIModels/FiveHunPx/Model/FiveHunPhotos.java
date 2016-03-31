@@ -1,4 +1,4 @@
-package com.karthik.imager.APIService.FiveHunPx.Model;
+package com.karthik.imager.APIModels.FiveHunPx.Model;
 
 import com.google.gson.annotations.SerializedName;
 

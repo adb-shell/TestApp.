@@ -59,10 +59,13 @@ padding-right:2ex; }
 <tr><td class="num" id="LINE1">1</td><td class="line">package com.karthik.imager.Fragments;</td></tr>
 <tr><td class="num" id="LINE2">2</td><td class="line">import com.google.gson.Gson;</td></tr>
 <tr><td class="num" id="LINE3">3</td><td class="line">import com.google.gson.reflect.TypeToken;</td></tr>
-<tr><td class="num" id="LINE4">4</td><td class="line">import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos;</td></tr>
-<tr><td class="num" id="LINE5">5</td><td class="line">import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse;</td></tr>
-<tr><td class="num" id="LINE6">6</td><td class="line">import com.karthik.imager.APIService.GridItem;</td></tr>
-<tr><td class="num" id="LINE7">7</td><td class="line">import com.karthik.imager.APIService.Unsplash.Model.Photos;</td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import
+    com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos;</td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import
+    com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse;</td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import com.karthik.imager.APIModels.GridItem;</td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import
+    com.karthik.imager.APIModels.Unsplash.Model.Photos;</td></tr>
 <tr><td class="num" id="LINE8">8</td><td class="line">import com.karthik.imager.Adapter;</td></tr>
 <tr><td class="num" id="LINE9">9</td><td class="line">import com.karthik.imager.DetailsTransition;</td></tr>
 <tr><td class="num" id="LINE10">10</td><td class="line">import com.karthik.imager.ImagerApp;</td></tr>
@@ -1001,15 +1004,15 @@ REMOVE_TEMPS(n$1,n$2); [line 154];
 n$3=*&amp;$irvar0:class com.google.gson.Gson * [line 154];
 n$4=*n$3:class com.google.gson.Gson  [line 154];
 n$5=*&amp;$irvar1:class java.lang.String * [line 154];
-n$6=_fun_Object Gson.fromJson(String,Class)(n$3:class com.google.gson.Gson *,n$5:class java.lang.String *,com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse:class java.lang.Class *) virtual [line 154];
+n$6=_fun_Object Gson.fromJson(String,Class)(n$3:class com.google.gson.Gson *,n$5:class java.lang.String *,com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse:class java.lang.Class *) virtual [line 154];
 *&amp;$irvar2:class java.lang.Object *=n$6 [line 154];
 REMOVE_TEMPS(n$3,n$4,n$5,n$6); [line 154];
 NULLIFY(&amp;$irvar0,false); [line 154];
 NULLIFY(&amp;$irvar1,false); [line 154];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node155.html"><span class='visited'>I_155<span class='expansion'>node155 preds:154 succs:156 exn:84 Instructions
 n$7=*&amp;$irvar2:class java.lang.Object * [line 154];
-n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154];
-*&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154];
+n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse ( sub )(cast)):void ) [line 154];
+*&amp;fiveHunResponse:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse *=n$8 [line 154];
 REMOVE_TEMPS(n$7,n$8); [line 154];
 NULLIFY(&amp;$irvar2,false); [line 154];
 </span></span></a>
@@ -1017,14 +1020,15 @@ NULLIFY(&amp;$irvar2,false); [line 154];
 <div class="msg" style="margin-left:9ex">SKIP_FUNCTION Object Gson.fromJson(String,Class)</div></td></tr>
 <tr><td class="num" id="LINE155">155</td><td class="line">        convertFiveHunGridItems(fiveHunResponse.photoList); <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node156.html"><span class='visited'>I_156<span class='expansion'>node156 preds:155 succs:157 exn:84 Instructions
 n$9=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment * [line 155];
-n$10=*&amp;fiveHunResponse:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse * [line 155];
-n$11=*n$10.com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse.photoList:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse  [line 155];
+n$10=*&amp;fiveHunResponse:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse * [line 155];
+n$11=*n$10.com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse.photoList:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse  [line 155];
 _fun_void DashboardFragment.convertFiveHunGridItems(List)(n$9:class com.karthik.imager.Fragments.DashboardFragment *,n$11:class java.util.ArrayList *) [line 155];
 REMOVE_TEMPS(n$9,n$10,n$11); [line 155];
 NULLIFY(&amp;fiveHunResponse,false); [line 155];
 NULLIFY(&amp;this,false); [line 155];
 </span></span></a>
-<div class="msg" style="margin-left:9ex">Missing_fld com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse.photoList</div>
+<div class="msg" style="margin-left:9ex">Missing_fld
+    com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse.photoList</div>
 <div class="msg" style="margin-left:9ex">SKIP_FUNCTION void DashboardFragment.convertFiveHunGridItems(List)</div></td></tr>
 <tr><td class="num" id="LINE156">156</td><td class="line"></td></tr>
 <tr><td class="num" id="LINE157">157</td><td class="line">    } <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node83.html"><span class='visited'>E_83<span class='expansion'>node83 preds:157 84 succs: exn: Exit
@@ -1471,39 +1475,39 @@ n$19=_fun_Object Iterator.next()(n$17:class java.util.Iterator *) virtual [line 
 REMOVE_TEMPS(n$17,n$18,n$19); [line 218];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node210.html"><span class='visited'>I_210<span class='expansion'>node210 preds:209 succs:211 exn:99 Instructions
 n$20=*&amp;$irvar0:class java.lang.Object * [line 218];
-n$21=_fun___cast(n$20:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.Unsplash.Model.Photos ( sub )(cast)):void ) [line 218];
-*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos *=n$21 [line 218];
+n$21=_fun___cast(n$20:class java.lang.Object *,sizeof(class com.karthik.imager.APIModels.Unsplash.Model.Photos ( sub )(cast)):void ) [line 218];
+*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos *=n$21 [line 218];
 REMOVE_TEMPS(n$20,n$21); [line 218];
 NULLIFY(&amp;$irvar0,false); [line 218];
 </span></span></a>
 <div class="msg" style="margin-left:9ex">SKIP_FUNCTION Iterator AbstractList.iterator()</div></td></tr>
 <tr><td class="num" id="LINE219">219</td><td class="line">                GridItem gridItem = new GridItem(photo.id,photo.user.name,getBestPossibleImage(photo),photo.urls.full); <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node211.html"><span class='visited'>I_211<span class='expansion'>node211 preds:210 succs:212 exn:99 Instructions
-n$22=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 219];
-n$23=*n$22.com.karthik.imager.APIService.Unsplash.Model.Photos.user:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 219];
-n$24=*n$23.com.karthik.imager.APIService.Unsplash.Model.User.name:class com.karthik.imager.APIService.Unsplash.Model.User  [line 219];
+n$22=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 219];
+n$23=*n$22.com.karthik.imager.APIModels.Unsplash.Model.Photos.user:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 219];
+n$24=*n$23.com.karthik.imager.APIModels.Unsplash.Model.User.name:class com.karthik.imager.APIModels.Unsplash.Model.User  [line 219];
 *&amp;$irvar2:class java.lang.String *=n$24 [line 219];
 REMOVE_TEMPS(n$22,n$23,n$24); [line 219];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node212.html"><span class='visited'>I_212<span class='expansion'>node212 preds:211 succs:213 exn:99 Instructions
-n$25=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 219];
-n$26=*n$25.com.karthik.imager.APIService.Unsplash.Model.Photos.id:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 219];
+n$25=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 219];
+n$26=*n$25.com.karthik.imager.APIModels.Unsplash.Model.Photos.id:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 219];
 *&amp;$irvar1:class java.lang.String *=n$26 [line 219];
 REMOVE_TEMPS(n$25,n$26); [line 219];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node213.html"><span class='visited'>I_213<span class='expansion'>node213 preds:212 succs:214 exn:99 Instructions
 n$27=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment * [line 219];
-n$28=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 219];
-n$29=_fun_String DashboardFragment.getBestPossibleImage(Photos)(n$27:class com.karthik.imager.Fragments.DashboardFragment *,n$28:class com.karthik.imager.APIService.Unsplash.Model.Photos *) [line 219];
+n$28=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 219];
+n$29=_fun_String DashboardFragment.getBestPossibleImage(Photos)(n$27:class com.karthik.imager.Fragments.DashboardFragment *,n$28:class com.karthik.imager.APIModels.Unsplash.Model.Photos *) [line 219];
 *&amp;$irvar0:class java.lang.String *=n$29 [line 219];
 REMOVE_TEMPS(n$27,n$28,n$29); [line 219];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node214.html"><span class='visited'>I_214<span class='expansion'>node214 preds:213 succs:215 exn:99 Instructions
-n$30=_fun___new(sizeof(class com.karthik.imager.APIService.GridItem ):class com.karthik.imager.APIService.GridItem *) [line 219];
+n$30=_fun___new(sizeof(class com.karthik.imager.APIModels.GridItem ):class com.karthik.imager.APIModels.GridItem *) [line 219];
 n$31=*&amp;$irvar1:class java.lang.String * [line 219];
 n$32=*&amp;$irvar2:class java.lang.String * [line 219];
 n$33=*&amp;$irvar0:class java.lang.String * [line 219];
-n$34=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 219];
-n$35=*n$34.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 219];
-n$36=*n$35.com.karthik.imager.APIService.Unsplash.Model.Urls.full:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 219];
-_fun_GridItem.&lt;init&gt;(String,String,String,String)(n$30:class com.karthik.imager.APIService.GridItem *,n$31:class java.lang.String *,n$32:class java.lang.String *,n$33:class java.lang.String *,n$36:class java.lang.String *) [line 219];
-*&amp;gridItem:class com.karthik.imager.APIService.GridItem *=n$30 [line 219];
+n$34=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 219];
+n$35=*n$34.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 219];
+n$36=*n$35.com.karthik.imager.APIModels.Unsplash.Model.Urls.full:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 219];
+_fun_GridItem.&lt;init&gt;(String,String,String,String)(n$30:class com.karthik.imager.APIModels.GridItem *,n$31:class java.lang.String *,n$32:class java.lang.String *,n$33:class java.lang.String *,n$36:class java.lang.String *) [line 219];
+*&amp;gridItem:class com.karthik.imager.APIModels.GridItem *=n$30 [line 219];
 REMOVE_TEMPS(n$30,n$31,n$32,n$33,n$34,n$35,n$36); [line 219];
 NULLIFY(&amp;$irvar0,false); [line 219];
 NULLIFY(&amp;$irvar1,false); [line 219];
@@ -1514,8 +1518,8 @@ NULLIFY(&amp;photo,false); [line 219];
 n$37=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment * [line 220];
 n$38=*n$37.com.karthik.imager.Fragments.DashboardFragment.gridItems:class com.karthik.imager.Fragments.DashboardFragment  [line 220];
 n$39=*n$38:class java.util.List  [line 220];
-n$40=*&amp;gridItem:class com.karthik.imager.APIService.GridItem * [line 220];
-n$41=_fun_boolean List.add(Object)(n$38:class java.util.List *,n$40:class com.karthik.imager.APIService.GridItem *) virtual [line 220];
+n$40=*&amp;gridItem:class com.karthik.imager.APIModels.GridItem * [line 220];
+n$41=_fun_boolean List.add(Object)(n$38:class java.util.List *,n$40:class com.karthik.imager.APIModels.GridItem *) virtual [line 220];
 *&amp;$irvar0:_Bool =n$41 [line 220];
 REMOVE_TEMPS(n$37,n$38,n$39,n$40,n$41); [line 220];
 NULLIFY(&amp;$irvar0,false); [line 220];
@@ -1645,25 +1649,25 @@ n$19=_fun_Object Iterator.next()(n$17:class java.util.Iterator *) virtual [line 
 REMOVE_TEMPS(n$17,n$18,n$19); [line 238];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node173.html"><span class='visited'>I_173<span class='expansion'>node173 preds:172 succs:174 exn:87 Instructions
 n$20=*&amp;$irvar0:class java.lang.Object * [line 238];
-n$21=_fun___cast(n$20:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos ( sub )(cast)):void ) [line 238];
-*&amp;photo:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos *=n$21 [line 238];
+n$21=_fun___cast(n$20:class java.lang.Object *,sizeof(class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos ( sub )(cast)):void ) [line 238];
+*&amp;photo:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos *=n$21 [line 238];
 REMOVE_TEMPS(n$20,n$21); [line 238];
 NULLIFY(&amp;$irvar0,false); [line 238];
 </span></span></a>
 <div class="msg" style="margin-left:9ex">SKIP_FUNCTION Iterator AbstractList.iterator()</div></td></tr>
 <tr><td class="num" id="LINE239">239</td><td class="line">                GridItem gridItem = new GridItem(photo.id,photo.user.username,photo.image_url,photo.image_url); <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node174.html"><span class='visited'>I_174<span class='expansion'>node174 preds:173 succs:175 exn:87 Instructions
-n$22=_fun___new(sizeof(class com.karthik.imager.APIService.GridItem ):class com.karthik.imager.APIService.GridItem *) [line 239];
-n$23=*&amp;photo:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos * [line 239];
-n$24=*n$23.com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos.id:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos  [line 239];
-n$25=*&amp;photo:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos * [line 239];
-n$26=*n$25.com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos.user:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos  [line 239];
-n$27=*n$26.com.karthik.imager.APIService.FiveHunPx.Model.User.username:class com.karthik.imager.APIService.FiveHunPx.Model.User  [line 239];
-n$28=*&amp;photo:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos * [line 239];
-n$29=*n$28.com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos.image_url:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos  [line 239];
-n$30=*&amp;photo:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos * [line 239];
-n$31=*n$30.com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos.image_url:class com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos  [line 239];
-_fun_GridItem.&lt;init&gt;(String,String,String,String)(n$22:class com.karthik.imager.APIService.GridItem *,n$24:class java.lang.String *,n$27:class java.lang.String *,n$29:class java.lang.String *,n$31:class java.lang.String *) [line 239];
-*&amp;gridItem:class com.karthik.imager.APIService.GridItem *=n$22 [line 239];
+n$22=_fun___new(sizeof(class com.karthik.imager.APIModels.GridItem ):class com.karthik.imager.APIModels.GridItem *) [line 239];
+n$23=*&amp;photo:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos * [line 239];
+n$24=*n$23.com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos.id:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos  [line 239];
+n$25=*&amp;photo:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos * [line 239];
+n$26=*n$25.com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos.user:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos  [line 239];
+n$27=*n$26.com.karthik.imager.APIModels.FiveHunPx.Model.User.username:class com.karthik.imager.APIModels.FiveHunPx.Model.User  [line 239];
+n$28=*&amp;photo:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos * [line 239];
+n$29=*n$28.com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos.image_url:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos  [line 239];
+n$30=*&amp;photo:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos * [line 239];
+n$31=*n$30.com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos.image_url:class com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos  [line 239];
+_fun_GridItem.&lt;init&gt;(String,String,String,String)(n$22:class com.karthik.imager.APIModels.GridItem *,n$24:class java.lang.String *,n$27:class java.lang.String *,n$29:class java.lang.String *,n$31:class java.lang.String *) [line 239];
+*&amp;gridItem:class com.karthik.imager.APIModels.GridItem *=n$22 [line 239];
 REMOVE_TEMPS(n$22,n$23,n$24,n$25,n$26,n$27,n$28,n$29,n$30,n$31); [line 239];
 NULLIFY(&amp;photo,false); [line 239];
 </span></span></a></td></tr>
@@ -1671,8 +1675,8 @@ NULLIFY(&amp;photo,false); [line 239];
 n$32=*&amp;this:class com.karthik.imager.Fragments.DashboardFragment * [line 240];
 n$33=*n$32.com.karthik.imager.Fragments.DashboardFragment.gridItems:class com.karthik.imager.Fragments.DashboardFragment  [line 240];
 n$34=*n$33:class java.util.List  [line 240];
-n$35=*&amp;gridItem:class com.karthik.imager.APIService.GridItem * [line 240];
-n$36=_fun_boolean List.add(Object)(n$33:class java.util.List *,n$35:class com.karthik.imager.APIService.GridItem *) virtual [line 240];
+n$35=*&amp;gridItem:class com.karthik.imager.APIModels.GridItem * [line 240];
+n$36=_fun_boolean List.add(Object)(n$33:class java.util.List *,n$35:class com.karthik.imager.APIModels.GridItem *) virtual [line 240];
 *&amp;$irvar0:_Bool =n$36 [line 240];
 REMOVE_TEMPS(n$32,n$33,n$34,n$35,n$36); [line 240];
 NULLIFY(&amp;$irvar0,false); [line 240];
@@ -1720,35 +1724,35 @@ DECLARE_LOCALS(&amp;return); [line 252];
 NULLIFY(&amp;this,false); [line 252];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/com.karthik.imager.Fragments.DashboardFragment.getBestPossibleImage(com.karthik.imager.APIService.Un.37618fd074dc079ae6e2754c20d00b30.html">String DashboardFragment.getBestPossibleImage(Photos): 3 specs</a></td></tr>
 <tr><td class="num" id="LINE253">253</td><td class="line">        if(photo.urls.small==null){ <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node145.html"><span class='visitedproof'>C_145<span class='expansion'>node145 preds:79 succs:147 148 exn:81 Conditional method_body
-n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253];
-n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253];
-n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253];
+n$0=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 253];
+n$1=*n$0.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 253];
+n$2=*n$1.com.karthik.imager.APIModels.Unsplash.Model.Urls.small:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 253];
 PRUNE(!(n$2 != null), true); [line 253];
 REMOVE_TEMPS(n$0,n$1,n$2); [line 253];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node146.html"><span class='visitedproof'>C_146<span class='expansion'>node146 preds:79 succs:151 exn:81 Conditional method_body
-n$0=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 253];
-n$1=*n$0.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 253];
-n$2=*n$1.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 253];
+n$0=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 253];
+n$1=*n$0.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 253];
+n$2=*n$1.com.karthik.imager.APIModels.Unsplash.Model.Urls.small:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 253];
 PRUNE((n$2 != null), false); [line 253];
 REMOVE_TEMPS(n$0,n$1,n$2); [line 253];
 </span></span></a></td></tr>
 <tr><td class="num" id="LINE254">254</td><td class="line">            if(photo.urls.regular!=null) <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node147.html"><span class='visitedproof'>C_147<span class='expansion'>node147 preds:145 succs:149 exn:81 Conditional method_body
-n$3=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 254];
-n$4=*n$3.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 254];
-n$5=*n$4.com.karthik.imager.APIService.Unsplash.Model.Urls.regular:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 254];
+n$3=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 254];
+n$4=*n$3.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 254];
+n$5=*n$4.com.karthik.imager.APIModels.Unsplash.Model.Urls.regular:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 254];
 PRUNE(!(n$5 == null), true); [line 254];
 REMOVE_TEMPS(n$3,n$4,n$5); [line 254];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node148.html"><span class='visitedproof'>C_148<span class='expansion'>node148 preds:145 succs:150 exn:81 Conditional method_body
-n$3=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 254];
-n$4=*n$3.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 254];
-n$5=*n$4.com.karthik.imager.APIService.Unsplash.Model.Urls.regular:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 254];
+n$3=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 254];
+n$4=*n$3.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 254];
+n$5=*n$4.com.karthik.imager.APIModels.Unsplash.Model.Urls.regular:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 254];
 PRUNE((n$5 == null), false); [line 254];
 REMOVE_TEMPS(n$3,n$4,n$5); [line 254];
 </span></span></a></td></tr>
 <tr><td class="num" id="LINE255">255</td><td class="line">                return photo.urls.regular; <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node149.html"><span class='visitedproof'>I_149<span class='expansion'>node149 preds:147 succs:80 exn:81 Instructions
-n$6=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 255];
-n$7=*n$6.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 255];
-n$8=*n$7.com.karthik.imager.APIService.Unsplash.Model.Urls.regular:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 255];
+n$6=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 255];
+n$7=*n$6.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 255];
+n$8=*n$7.com.karthik.imager.APIModels.Unsplash.Model.Urls.regular:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 255];
 *&amp;return:class java.lang.String *=n$8 [line 255];
 REMOVE_TEMPS(n$6,n$7,n$8); [line 255];
 NULLIFY(&amp;photo,false); [line 255];
@@ -1756,9 +1760,9 @@ APPLY_ABSTRACTION; [line 255];
 </span></span></a></td></tr>
 <tr><td class="num" id="LINE256">256</td><td class="line">            else</td></tr>
 <tr><td class="num" id="LINE257">257</td><td class="line">                return photo.urls.full; <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node150.html"><span class='visitedproof'>I_150<span class='expansion'>node150 preds:148 succs:80 exn:81 Instructions
-n$9=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 257];
-n$10=*n$9.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 257];
-n$11=*n$10.com.karthik.imager.APIService.Unsplash.Model.Urls.full:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 257];
+n$9=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 257];
+n$10=*n$9.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 257];
+n$11=*n$10.com.karthik.imager.APIModels.Unsplash.Model.Urls.full:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 257];
 *&amp;return:class java.lang.String *=n$11 [line 257];
 REMOVE_TEMPS(n$9,n$10,n$11); [line 257];
 NULLIFY(&amp;photo,false); [line 257];
@@ -1771,9 +1775,9 @@ NULLIFY(&amp;photo,false); [line 259];
 APPLY_ABSTRACTION; [line 259];
 
 NOT VISITED</span></span> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node151.html"><span class='visitedproof'>I_151<span class='expansion'>node151 preds:146 succs:80 exn:81 Instructions
-n$12=*&amp;photo:class com.karthik.imager.APIService.Unsplash.Model.Photos * [line 259];
-n$13=*n$12.com.karthik.imager.APIService.Unsplash.Model.Photos.urls:class com.karthik.imager.APIService.Unsplash.Model.Photos  [line 259];
-n$14=*n$13.com.karthik.imager.APIService.Unsplash.Model.Urls.small:class com.karthik.imager.APIService.Unsplash.Model.Urls  [line 259];
+n$12=*&amp;photo:class com.karthik.imager.APIModels.Unsplash.Model.Photos * [line 259];
+n$13=*n$12.com.karthik.imager.APIModels.Unsplash.Model.Photos.urls:class com.karthik.imager.APIModels.Unsplash.Model.Photos  [line 259];
+n$14=*n$13.com.karthik.imager.APIModels.Unsplash.Model.Urls.small:class com.karthik.imager.APIModels.Unsplash.Model.Urls  [line 259];
 *&amp;return:class java.lang.String *=n$14 [line 259];
 REMOVE_TEMPS(n$12,n$13,n$14); [line 259];
 NULLIFY(&amp;photo,false); [line 259];
@@ -1821,9 +1825,9 @@ n$6=_fun_Object List.get(int)(n$3:class java.util.List *,n$5:int ) virtual [line
 REMOVE_TEMPS(n$2,n$3,n$4,n$5,n$6); [line 269];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node221.html"><span class='visitedproof'>I_221<span class='expansion'>node221 preds:220 succs:222 exn:105 Instructions
 n$7=*&amp;$irvar0:class java.lang.Object * [line 269];
-n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.GridItem ( sub )(cast)):void ) [line 269];
-n$9=*n$8:class com.karthik.imager.APIService.GridItem  [line 269];
-n$10=_fun_String GridItem.getImageUrl()(n$8:class com.karthik.imager.APIService.GridItem *) virtual [line 269];
+n$8=_fun___cast(n$7:class java.lang.Object *,sizeof(class com.karthik.imager.APIModels.GridItem ( sub )(cast)):void ) [line 269];
+n$9=*n$8:class com.karthik.imager.APIModels.GridItem  [line 269];
+n$10=_fun_String GridItem.getImageUrl()(n$8:class com.karthik.imager.APIModels.GridItem *) virtual [line 269];
 *&amp;$irvar2:class java.lang.String *=n$10 [line 269];
 REMOVE_TEMPS(n$7,n$8,n$9,n$10); [line 269];
 NULLIFY(&amp;$irvar0,false); [line 269];
@@ -1853,9 +1857,9 @@ n$20=_fun_Object List.get(int)(n$17:class java.util.List *,n$19:int ) virtual [l
 REMOVE_TEMPS(n$16,n$17,n$18,n$19,n$20); [line 270];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node225.html"><span class='visitedproof'>I_225<span class='expansion'>node225 preds:224 succs:226 exn:105 Instructions
 n$21=*&amp;$irvar0:class java.lang.Object * [line 270];
-n$22=_fun___cast(n$21:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.GridItem ( sub )(cast)):void ) [line 270];
-n$23=*n$22:class com.karthik.imager.APIService.GridItem  [line 270];
-n$24=_fun_String GridItem.getUsername()(n$22:class com.karthik.imager.APIService.GridItem *) virtual [line 270];
+n$22=_fun___cast(n$21:class java.lang.Object *,sizeof(class com.karthik.imager.APIModels.GridItem ( sub )(cast)):void ) [line 270];
+n$23=*n$22:class com.karthik.imager.APIModels.GridItem  [line 270];
+n$24=_fun_String GridItem.getUsername()(n$22:class com.karthik.imager.APIModels.GridItem *) virtual [line 270];
 *&amp;$irvar2:class java.lang.String *=n$24 [line 270];
 REMOVE_TEMPS(n$21,n$22,n$23,n$24); [line 270];
 NULLIFY(&amp;$irvar0,false); [line 270];
@@ -1886,9 +1890,9 @@ REMOVE_TEMPS(n$30,n$31,n$32,n$33,n$34); [line 271];
 NULLIFY(&amp;position,false); [line 271];
 </span></span></a> <a href="./DashboardFragment.java.2af4c3bded13fa4a2a2c6190dff7b1b5/nodes/node229.html"><span class='visitedproof'>I_229<span class='expansion'>node229 preds:228 succs:230 exn:105 Instructions
 n$35=*&amp;$irvar0:class java.lang.Object * [line 271];
-n$36=_fun___cast(n$35:class java.lang.Object *,sizeof(class com.karthik.imager.APIService.GridItem ( sub )(cast)):void ) [line 271];
-n$37=*n$36:class com.karthik.imager.APIService.GridItem  [line 271];
-n$38=_fun_String GridItem.getFullImageUrl()(n$36:class com.karthik.imager.APIService.GridItem *) virtual [line 271];
+n$36=_fun___cast(n$35:class java.lang.Object *,sizeof(class com.karthik.imager.APIModels.GridItem ( sub )(cast)):void ) [line 271];
+n$37=*n$36:class com.karthik.imager.APIModels.GridItem  [line 271];
+n$38=_fun_String GridItem.getFullImageUrl()(n$36:class com.karthik.imager.APIModels.GridItem *) virtual [line 271];
 *&amp;$irvar2:class java.lang.String *=n$38 [line 271];
 REMOVE_TEMPS(n$35,n$36,n$37,n$38); [line 271];
 NULLIFY(&amp;$irvar0,false); [line 271];

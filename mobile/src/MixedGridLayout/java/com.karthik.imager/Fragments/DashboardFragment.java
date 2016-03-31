@@ -1,16 +1,17 @@
 package com.karthik.imager.Fragments;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunPhotos;
-import com.karthik.imager.APIService.FiveHunPx.Model.FiveHunResponse;
-import com.karthik.imager.APIService.GridItem;
-import com.karthik.imager.APIService.Unsplash.Model.Photos;
+import com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunPhotos;
+import com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse;
+import com.karthik.imager.APIModels.GridItem;
+import com.karthik.imager.APIModels.Unsplash.Model.Photos;
 import com.karthik.imager.Adapter;
 import com.karthik.imager.DetailsTransition;
+import com.karthik.imager.Fragments.DetailsFragment;
 import com.karthik.imager.ImagerApp;
 import com.karthik.imager.Injection.Components.DaggerNetworkComponent;
 import com.karthik.imager.Injection.Modules.NetworkModule;
-import com.karthik.imager.MainActivity;
 import com.karthik.imager.R;
 import com.karthik.imager.Recycler.GridItemDividerDecoration;
 import com.karthik.imager.Recycler.PhotoClickListner;
@@ -25,13 +26,12 @@ import java.util.List;
 import javax.inject.Inject;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.transition.Fade;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -1,4 +1,4 @@
-package com.karthik.imager.APIService.Unsplash.Model;
+package com.karthik.imager.APIModels.Unsplash.Model;
 
 import com.google.gson.annotations.SerializedName;
 

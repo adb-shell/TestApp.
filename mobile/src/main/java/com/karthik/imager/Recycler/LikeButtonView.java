@@ -1,6 +1,5 @@
 package com.karthik.imager.Recycler;
 
-import com.karthik.imager.Adapter;
 import com.karthik.imager.R;
 
 import android.animation.Animator;
@@ -13,7 +12,6 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
-import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;

@@ -1,9 +1,8 @@
 package com.karthik.imager.Injection.Components;
-
 import com.karthik.imager.Fragments.DashboardFragment;
 import com.karthik.imager.Injection.Modules.NetworkModule;
 import com.karthik.imager.Injection.PerActivity;
-import com.karthik.imager.MainActivity;
+
 
 import dagger.Component;
 

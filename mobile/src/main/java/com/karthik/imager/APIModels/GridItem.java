@@ -1,4 +1,4 @@
-package com.karthik.imager.APIService;
+package com.karthik.imager.APIModels;
 
 /**
  * Created by karthikrk on 27/12/15.

@@ -1,8 +1,9 @@
 package com.karthik.imager;
 
-import com.karthik.imager.APIService.DummyObject;
 import com.karthik.imager.Fragments.DashboardFragment;
 import com.karthik.imager.Fragments.DetailsFragment;
+
+
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,7 +13,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity{
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity{
         mContext = this;
 
         if(savedInstanceState==null){
-            //dummy methods
+            //dummy method to fill the value to shared preferences.
             fillDummyValuesInSharedPreferences();
 
             getSupportFragmentManager().beginTransaction()

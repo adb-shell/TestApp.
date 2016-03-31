@@ -1,4 +1,4 @@
-package com.karthik.imager.APIService;
+package com.karthik.imager.APIModels;
 
 
 

@@ -1,4 +1,4 @@
-package com.karthik.imager.APIService.Unsplash.Model;
+package com.karthik.imager.APIModels.Unsplash.Model;
 
 /**
  * Created by karthikrk on 20/12/15.
