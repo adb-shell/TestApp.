@@ -7,6 +7,7 @@ import com.karthik.imager.APIModels.FiveHunPx.Model.FiveHunResponse;
 import com.karthik.imager.APIModels.GridItem;
 import com.karthik.imager.APIModels.Unsplash.Model.Photos;
 import com.karthik.imager.Adapter;
+import com.karthik.imager.BuildConfig;
 import com.karthik.imager.DetailsTransition;
 import com.karthik.imager.Fragments.DetailsFragment;
 import com.karthik.imager.ImagerApp;
@@ -50,7 +51,7 @@ import okhttp3.ResponseBody;
 public class DashboardFragment extends Fragment implements PhotoClickListner{
 
     //register your application at unsplash.com and get the client id
-    private final String unsplash_client_Id = "";
+    private final String unsplash_client_Id = BuildConfig.API_KEY;;
     private final String UNSPLASHBASEURL = "https://api.unsplash.com/photos/";
 
 
